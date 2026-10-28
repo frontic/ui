@@ -26,8 +26,10 @@ defineOptions({
 
 const props = withDefaults(
   defineProps<
-    DialogContentProps & {
+    Omit<DialogContentProps, 'forceMount'> & {
       class?: HTMLAttributes['class']
+      /** Keeps the content mounted; you control its visibility (render it with v-if). */
+      forceMount?: boolean
       /** Screen-reader text of the close button in the dialog's top corner. */
       closeLabel?: string
     }

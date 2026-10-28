@@ -20,8 +20,10 @@ defineOptions({
 
 const props = withDefaults(
   defineProps<
-    AlertDialogContentProps & {
+    Omit<AlertDialogContentProps, 'forceMount'> & {
       class?: HTMLAttributes['class']
+      /** Keeps the content mounted; you control its visibility (render it with v-if). */
+      forceMount?: boolean
       /** The dialog width: `sm` stays narrow, `md` widens on larger screens. */
       size?: 'md' | 'sm'
     }

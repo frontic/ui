@@ -18,6 +18,8 @@ import SheetOverlay from './SheetOverlay.vue'
 
 interface SheetContentProps extends DialogContentProps {
   class?: HTMLAttributes['class']
+  /** Keeps the content mounted; you control its visibility (render it with v-if). */
+  forceMount?: boolean
   /** The edge the sheet slides in from; `start` and `end` follow the reading direction, so `end` is the right in a left-to-right page and the left in a right-to-left one. */
   side?: 'top' | 'right' | 'bottom' | 'left' | 'start' | 'end'
   /** Shows the close button in the top corner on the end side. */

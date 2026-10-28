@@ -82,6 +82,19 @@ describe('an item api', () => {
     expect(Object.entries(apis).flatMap(([item, api]) => api.parts.flatMap((p) => p.props.filter((prop) => !prop.description).map((prop) => `${item}/${p.name}.${prop.name}`)))).toEqual([])
   })
 
+  it("tells an overlay's forceMount that visibility is the caller's", () => {
+    const contents = [
+      ['dialog', 'DialogContent'],
+      ['dialog', 'DialogScrollContent'],
+      ['sheet', 'SheetContent'],
+      ['alert-dialog', 'AlertDialogContent'],
+      ['drawer', 'DrawerContent'],
+    ] as const
+    expect(contents.map(([item, name]) => part(item, name).props.find((p) => p.name === 'forceMount')?.description)).toEqual(
+      contents.map(() => 'Keeps the content mounted; you control its visibility (render it with v-if).'),
+    )
+  })
+
   it('lists class on a part that styles its own element with a recipe', () => {
     expect(part('avatar', 'AvatarImage').props.map((p) => p.name)).toContain('class')
   })

@@ -144,3 +144,22 @@ describe('a dropdown menu open from the start, closing after a pointer', () => {
     expect(moves).toEqual([{ preventScroll: true, focusVisible: false }])
   })
 })
+
+describe('a force-mounted drawer rendered with v-if, closed by a press outside', () => {
+  it('gives focus back to its trigger after the press has moved focus to the page', async () => {
+    const render = (open: boolean) =>
+      h(Drawer, { open }, () => [
+        h(DrawerTrigger, null, () => 'Compare'),
+        open ? h(DrawerContent, { forceMount: true }, () => [h(DrawerTitle, null, () => 'Compare jackets'), h(DrawerDescription, null, () => 'Side by side.')]) : null,
+      ])
+    const { shown, moves, trigger } = await mountOpen(render, 'drawer')
+    pressOutside(0)
+    shown.value = false
+    for (let i = 0; i < 3; i++) await nextTick()
+    // The browser's own mousedown, after the press closed the drawer, moves focus to where it landed.
+    ;(document.activeElement as HTMLElement | null)?.blur()
+    await settle()
+    expect(document.activeElement).toBe(trigger)
+    expect(moves.at(-1)).toEqual({ preventScroll: true, focusVisible: false })
+  })
+})

@@ -54,7 +54,8 @@ function focusSelf(event: Event) {
 }
 
 // A drawer gives focus back to its trigger unless told otherwise; a non-modal one leaves focus where an outside click or focus took it.
-const returnFocus = useReturnFocus(() => root.triggerElement.value, { counts: () => root.modal.value !== true, when: () => props.finalFocus === true })
+// A task later: a drawer that unmounts inside the press that closes it would otherwise lose focus to that press.
+const returnFocus = useReturnFocus(() => root.triggerElement.value, { counts: () => root.modal.value !== true, when: () => props.finalFocus === true, defer: true })
 </script>
 
 <template>
