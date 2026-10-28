@@ -7,12 +7,12 @@ export default {}
 
 <script setup lang="ts">
 import type { AlertDialogContentEmits, AlertDialogContentProps } from 'reka-ui'
-import type { HTMLAttributes } from 'vue'
+import type { HTMLAttributes, TransitionProps } from 'vue'
 import { reactiveOmit } from '@vueuse/core'
 import { nextTick } from 'vue'
 import { cva } from 'class-variance-authority'
 import { AlertDialogContent, AlertDialogOverlay, AlertDialogPortal, injectDialogRootContext, Presence, useForwardPropsEmits } from 'reka-ui'
-import { usingKeyboard, useReturnFocus } from '@library/lib/focus'
+import { OverlayTransition, usingKeyboard, useReturnFocus } from '@library/lib/focus'
 
 defineOptions({
   inheritAttrs: false,
@@ -26,6 +26,8 @@ const props = withDefaults(
       forceMount?: boolean
       /** The dialog width: `sm` stays narrow, `md` widens on larger screens. */
       size?: 'md' | 'sm'
+      /** Animates the alert dialog in and out with Vue's Transition in place of its own animation: a name, classes or JavaScript hooks. Focus goes back to the trigger once it has left. */
+      transition?: TransitionProps
     }
   >(),
   {
@@ -39,7 +41,7 @@ const content = cva('fui-alert-dialog-content group/alert-dialog-content @contai
   defaultVariants: { size: 'md' },
 })
 
-const delegatedProps = reactiveOmit(props, 'class', 'size')
+const delegatedProps = reactiveOmit(props, 'class', 'size', 'transition')
 
 const forwarded = useForwardPropsEmits(delegatedProps, emits)
 const root = injectDialogRootContext()
@@ -53,7 +55,7 @@ function focusDialog(event: Event) {
 }
 
 // Reka's content is always mounted here, so Reka focuses the trigger as the alert dialog closes.
-const returnFocus = useReturnFocus(() => root.triggerElement.value, { open: () => root.open.value, keptMounted: () => true })
+const returnFocus = useReturnFocus(() => root.triggerElement.value, { open: () => root.open.value, keptMounted: () => true, leaves: () => !!props.transition })
 </script>
 
 <template>
@@ -62,26 +64,31 @@ const returnFocus = useReturnFocus(() => root.triggerElement.value, { open: () =
       data-slot="alert-dialog-overlay"
       class="fui-alert-dialog-overlay data-open:animate-in data-closed:animate-out data-open:fade-in-0 data-closed:fade-out-0 duration-100 fixed inset-0 z-50 supports-backdrop-filter:backdrop-blur-sm"
     />
-    <Presence v-slot="{ present }" :present="root.open.value" :force-mount="props.forceMount || !root.unmountOnHide.value">
-      <div
-        v-show="props.forceMount || root.unmountOnHide.value || present"
-        data-slot="alert-dialog-frame"
-        :data-state="root.open.value ? 'open' : 'closed'"
-        class="pointer-events-none fixed inset-0 z-50 @container data-open:animate-in data-closed:animate-out data-open:fade-in-0 data-closed:fade-out-0 data-open:zoom-in-95 data-closed:zoom-out-95 duration-100"
-      >
-        <AlertDialogContent
-          data-slot="alert-dialog-content"
-          :data-size="size"
-          :data-size-sm="size === 'sm' ? '' : undefined"
-          v-bind="{ ...$attrs, ...forwarded }"
-          force-mount
-          :class="[content({ size }), props.class]"
-          @open-auto-focus="focusDialog"
-          @close-auto-focus="returnFocus.onCloseAutoFocus"
+    <OverlayTransition :transition="props.transition" :left="returnFocus.afterLeave">
+      <Presence v-if="!props.transition || root.open.value" v-slot="{ present }" :present="root.open.value" :force-mount="!!props.transition || props.forceMount || !root.unmountOnHide.value">
+        <div
+          v-show="props.transition || props.forceMount || root.unmountOnHide.value || present"
+          data-slot="alert-dialog-frame"
+          :data-state="root.open.value ? 'open' : 'closed'"
+          :class="[
+            'pointer-events-none fixed inset-0 z-50 @container',
+            !props.transition && 'data-open:animate-in data-closed:animate-out data-open:fade-in-0 data-closed:fade-out-0 data-open:zoom-in-95 data-closed:zoom-out-95 duration-100',
+          ]"
         >
-          <slot />
-        </AlertDialogContent>
-      </div>
-    </Presence>
+          <AlertDialogContent
+            data-slot="alert-dialog-content"
+            :data-size="size"
+            :data-size-sm="size === 'sm' ? '' : undefined"
+            v-bind="{ ...$attrs, ...forwarded }"
+            force-mount
+            :class="[content({ size }), props.class]"
+            @open-auto-focus="focusDialog"
+            @close-auto-focus="returnFocus.onCloseAutoFocus"
+          >
+            <slot />
+          </AlertDialogContent>
+        </div>
+      </Presence>
+    </OverlayTransition>
   </AlertDialogPortal>
 </template>

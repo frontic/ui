@@ -33,11 +33,11 @@ const dialogLike =
     ])
 
 const alertDialog =
-  (rootProps = {}) =>
+  (rootProps = {}, contentProps = {}) =>
   (open: boolean) =>
     h(AlertDialog, { open, ...rootProps }, () => [
       h(AlertDialogTrigger, null, () => 'Delete address'),
-      h(AlertDialogContent, null, () => [
+      h(AlertDialogContent, contentProps, () => [
         h(AlertDialogTitle, null, () => 'Delete this address?'),
         h(AlertDialogDescription, null, () => 'It leaves your address book.'),
         h(AlertDialogFooter, null, () => [h(AlertDialogCancel, null, () => 'Cancel')]),
@@ -161,5 +161,67 @@ describe('a force-mounted drawer rendered with v-if, closed by a press outside',
     await settle()
     expect(document.activeElement).toBe(trigger)
     expect(moves.at(-1)).toEqual({ preventScroll: true, focusVisible: false })
+  })
+})
+
+// A leave held open until the test finishes it, as a JavaScript animation would.
+const held = () => {
+  const leave = { finish: () => {} }
+  return { leave, transition: { onLeave: (_: Element, done: () => void) => (leave.finish = done) } }
+}
+
+const TRANSITIONED: [string, string, (contentProps: object) => (open: boolean) => ReturnType<typeof h>][] = [
+  ['dialog', 'dialog', (contentProps) => dialogLike(Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription, {}, contentProps)],
+  ['scrolling dialog', 'dialog', (contentProps) => dialogLike(Dialog, DialogTrigger, DialogScrollContent, DialogTitle, DialogDescription, {}, contentProps)],
+  ['sheet', 'sheet', (contentProps) => dialogLike(Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription, {}, contentProps)],
+  ['alert-dialog', 'alert-dialog', (contentProps) => alertDialog({}, contentProps)],
+]
+
+describe.each(TRANSITIONED)('a %s with a transition, closing', (_, slot, render) => {
+  it('after a pointer, gives focus back to its trigger once it has left, without a focus ring', async () => {
+    const { leave, transition } = held()
+    const { shown, moves, trigger } = await mountOpen(render({ transition }), slot)
+    dispatchEvent(new Event('pointerdown'))
+    shown.value = false
+    await settle()
+    expect([document.querySelector(`[data-slot="${slot}-content"]`) !== null, moves]).toEqual([true, []])
+    leave.finish()
+    await settle()
+    expect([document.querySelector(`[data-slot="${slot}-content"]`), moves]).toEqual([null, [{ preventScroll: true, focusVisible: false }]])
+    expect(document.activeElement).toBe(trigger)
+  })
+
+  it('after a key, gives focus back once it has left, as the browser decides, which shows the ring', async () => {
+    const { leave, transition } = held()
+    const { shown, focus } = await mountOpen(render({ transition }), slot)
+    dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }))
+    shown.value = false
+    await settle()
+    expect(focus).not.toHaveBeenCalled()
+    leave.finish()
+    await settle()
+    expect(focus).toHaveBeenCalled()
+    expect(focus).not.toHaveBeenCalledWith(expect.objectContaining({ focusVisible: false }))
+  })
+
+  it('after a close the caller kept focus on, still waits for the next close to have left', async () => {
+    const { leave, transition } = held()
+    let keep = true
+    const onCloseAutoFocus = (event: Event) => keep && event.preventDefault()
+    const { shown, moves } = await mountOpen(render({ transition, onCloseAutoFocus }), slot)
+    shown.value = false
+    await settle()
+    leave.finish()
+    await settle()
+    keep = false
+    shown.value = true
+    await settle()
+    dispatchEvent(new Event('pointerdown'))
+    shown.value = false
+    await settle()
+    expect([document.querySelector(`[data-slot="${slot}-content"]`) !== null, moves]).toEqual([true, []])
+    leave.finish()
+    await settle()
+    expect(moves).toEqual([{ preventScroll: true, focusVisible: false }])
   })
 })
