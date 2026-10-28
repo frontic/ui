@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { HTMLAttributes, InjectionKey } from 'vue'
 import type { SwatchShape, SwatchSize } from '@library/components/ui/swatch'
 

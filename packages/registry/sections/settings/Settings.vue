@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the shopper turn grouped options on or off, then save or reset the changes. */
 export default {}

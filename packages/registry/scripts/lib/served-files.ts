@@ -5,6 +5,7 @@ import { format, type FormatOptions, type OxfmtOverrideConfig } from 'oxfmt'
 import { transform } from 'vue-metamorph'
 import { sourceIconProblems } from './icon-imports'
 import { sourcePath, type SourceItem } from './items'
+import { licenceLines } from './licence'
 import { makeTransformIconsPlugin } from './transform-icons'
 
 const CONFIG = new URL('../../../../.oxfmtrc.json', import.meta.url)
@@ -34,16 +35,17 @@ export async function servedFiles(item: SourceItem): Promise<Record<string, stri
   const problems = Object.entries(item.files).flatMap(([file, text]) => sourceIconProblems(at(file), text))
   if (problems.length) throw new Error(problems.join('\n'))
   const files: Record<string, string> = {}
+  const licensed = (file: string, text: string) => `${licenceLines(item, file).join('\n')}\n${text}`
   for (const [file, text] of Object.entries(item.files)) {
     if (!text.includes('IconPlaceholder')) {
-      files[file] = text
+      files[file] = licensed(file, text)
       continue
     }
     const { code } = transform(text, file, [makeTransformIconsPlugin()])
     const { code: served, errors } = await format(file, code, formatOptionsFor(at(file)))
     if (errors.length) throw new Error(`${at(file)} failed to format: ${errors.map((e) => e.message).join('; ')}`)
     if (/IconPlaceholder|icon-placeholder/.test(served)) throw new Error(`${at(file)} still names IconPlaceholder after the transform`)
-    files[file] = served
+    files[file] = licensed(file, served)
   }
   return files
 }

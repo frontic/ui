@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows filter groups with a price range and in-stock switch, and a result count. */
 export default {}

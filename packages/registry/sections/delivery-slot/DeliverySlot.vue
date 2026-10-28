@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the shopper pick standard or express delivery, a day and a delivery window. */
 export default {}

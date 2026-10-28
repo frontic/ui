@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Opens the search overlay; focus returns to it when the overlay closes, also after a click that never focused it. */
 export default {}

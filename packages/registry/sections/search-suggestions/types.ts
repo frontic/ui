@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { PriceType } from '@library/components/ui/price'
 
 export interface SearchProduct {

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Opens a side sheet with the cart's items, quantity controls, free-shipping progress and checkout. */
 export default {}

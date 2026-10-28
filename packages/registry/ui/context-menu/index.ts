@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 export { default as ContextMenu } from './ContextMenu.vue'
 export { default as ContextMenuCheckboxItem } from './ContextMenuCheckboxItem.vue'
 export { default as ContextMenuContent } from './ContextMenuContent.vue'

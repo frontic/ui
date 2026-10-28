@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows the search in an overlay: near the top on wide screens, full screen on phones with a Cancel button. */
 export default {}

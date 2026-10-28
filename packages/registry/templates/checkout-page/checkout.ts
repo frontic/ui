@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 export type { AppliedDiscount } from '@library/lib/cart'
 export interface CheckoutValues {
   email: string

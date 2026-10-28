@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import { defaultWindow } from '@vueuse/core'
 import { type FunctionalComponent, h, Transition, type TransitionProps, watch } from 'vue'
 

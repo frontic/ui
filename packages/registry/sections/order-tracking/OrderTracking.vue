@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows when a parcel arrives and its delivery steps as a timeline, with the tracking number and link. */
 export default {}

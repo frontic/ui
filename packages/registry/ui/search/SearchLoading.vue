@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Skeleton rows and "Searching…" while the shop's search answers; shows only while Search is loading. */
 export default {}

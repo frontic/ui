@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows a product with its image beside its details and price, with an add-to-cart button. */
 export default {}

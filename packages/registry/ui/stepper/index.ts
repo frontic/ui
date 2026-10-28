@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 export { default as Stepper } from './Stepper.vue'
 export { default as StepperDescription } from './StepperDescription.vue'
 export { default as StepperIndicator } from './StepperIndicator.vue'

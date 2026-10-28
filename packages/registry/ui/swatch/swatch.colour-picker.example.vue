@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { ref } from 'vue'
 import { SwatchGroup } from '@library/components/ui/swatch-group'

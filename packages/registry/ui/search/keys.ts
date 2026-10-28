@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { InjectionKey, Ref } from 'vue'
 
 export interface SearchContext {

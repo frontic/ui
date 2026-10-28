@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the user type a start and an end date, or pick both from a calendar the button beside them opens. */
 export default {}

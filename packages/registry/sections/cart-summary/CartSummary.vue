@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows the cart's lines with subtotal, shipping and total, and a button to check out. */
 export default {}

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Opens a popover with the cart's first items, subtotal and checkout. */
 export default {}

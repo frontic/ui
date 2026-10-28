@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** The first row while the shopper types: "Search for …", which submits the query to the results page. */
 export default {}

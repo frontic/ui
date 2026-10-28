@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 export { default as Card } from './Card.vue'
 export { default as CardAction } from './CardAction.vue'
 export { default as CardContent } from './CardContent.vue'

@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 /** Up to two initials from a name's words, upper case; `override` wins when given. */
 export function initials(name: string, override?: string): string {
   if (override) return override

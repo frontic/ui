@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows a product list with filters in a slide-in sheet, plus sorting and search. */
 export default {}

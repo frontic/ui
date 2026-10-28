@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** A line of text in the panel, such as "No results for …"; the shop decides when it shows. */
 export default {}

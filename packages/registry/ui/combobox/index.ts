@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 export { default as Combobox } from './Combobox.vue'
 export { default as ComboboxAnchor } from './ComboboxAnchor.vue'
 export { default as ComboboxEmpty } from './ComboboxEmpty.vue'

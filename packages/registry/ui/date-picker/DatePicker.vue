@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the user type a date, or pick it from a calendar the button beside it opens. */
 export default {}

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** A one-page checkout: contact, delivery, shipping method and payment beside an order summary that folds into a bar on narrow screens. */
 export default {}

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lists team members with roles, and lets the user invite, change roles and remove members. */
 export default {}

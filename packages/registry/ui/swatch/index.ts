@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 export { default as Swatch } from './Swatch.vue'
 export { default as SwatchRoot } from './SwatchRoot.vue'
 export { default as SwatchImage } from './SwatchImage.vue'

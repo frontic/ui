@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows store navigation with full-width flyouts of link columns and featured tiles, laid out beside, above or captioned, plus a mobile menu. */
 export default {}

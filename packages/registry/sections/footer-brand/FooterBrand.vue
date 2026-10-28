@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows the brand with link groups, a newsletter signup, social links and legal links. */
 export default {}

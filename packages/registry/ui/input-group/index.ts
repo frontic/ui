@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 import type { HTMLAttributes } from 'vue'
 import type { Button } from '@library/components/ui/button'
 

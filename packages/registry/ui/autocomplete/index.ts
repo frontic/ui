@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 export { default as Autocomplete } from './Autocomplete.vue'
 export { default as AutocompleteAnchor } from './AutocompleteAnchor.vue'
 export { default as AutocompleteCancel } from './AutocompleteCancel.vue'

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Holds one suggestion; picking it fills the input with its text. */
 export default {}

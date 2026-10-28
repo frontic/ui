@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <!--
   The Visa mark from datatrans/payment-logos, https://github.com/datatrans/payment-logos, assets/cards/visa.svg.
   Licensed CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/. Changed: set into a Vue component, without its fixed width and height.

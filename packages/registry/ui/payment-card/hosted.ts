@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { PaymentCardBrand } from './card'
 
 /** What a payment provider's hosted field reports from its events, such as Stripe Elements' `change` event. */

@@ -3,6 +3,7 @@ import { beforeAll, describe, expect, it } from 'vitest'
 import { EXAMPLE_WIDTH, exampleUsage } from '@frontic/registry-client/api'
 import { servedItems } from '../../scripts/build'
 import type { ServedItem } from '../../scripts/lib/served'
+import { withoutLicence } from '../../scripts/lib/licence'
 
 const root = join(import.meta.dirname, '../..')
 let served: ServedItem[]
@@ -19,15 +20,15 @@ const overflow = (path: string, text: string) =>
   text.split('\n').flatMap((line, i) => (line.length > EXAMPLE_WIDTH && !UNBREAKABLE.some((re) => re.test(line.trim())) ? [`${path}:${i + 1}: ${line}`] : []))
 
 describe('example code', () => {
-  it('fits the docs code pane as served: no line over 80 columns but a single string', () => {
+  it('fits the docs code pane as served: no line over 80 columns but a single string, the licence lines the build adds aside', () => {
     const examples = served.flatMap((item) => item.files.filter((file) => file.type === 'registry:example'))
     expect(examples.length).toBeGreaterThan(100)
-    expect(examples.flatMap((file) => overflow(file.path, file.content))).toEqual([])
+    expect(examples.flatMap((file) => overflow(file.path, withoutLicence(file.content)))).toEqual([])
   })
 
   it('fits it as the Code pane and the markdown show it, imported from the install aliases', () => {
     const examples = served.flatMap((item) => item.files.filter((file) => file.type === 'registry:example'))
-    expect(examples.flatMap((file) => overflow(file.path, exampleUsage(file.path, file.content)))).toEqual([])
+    expect(examples.flatMap((file) => overflow(file.path, exampleUsage(file.path, withoutLicence(file.content))))).toEqual([])
   })
 
   it('counts a long string as unbreakable and long code as overflow', () => {

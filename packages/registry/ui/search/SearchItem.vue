@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** One row of the panel that opens something: a link, so middle-click and open-in-new-tab work. */
 export default {}

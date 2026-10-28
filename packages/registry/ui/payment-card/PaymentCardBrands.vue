@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** The card marks at the end of a number field: all it offers until the number shows its brand, then that brand's alone. */
 export default {}

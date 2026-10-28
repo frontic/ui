@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** The calendar button at the end of a DatePicker's or DateRangePicker's field. */
 export default {}

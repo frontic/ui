@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Frames a payment provider's hosted field inside a card part and joins it to a Field around it, through a hidden input the Field validates. */
 export default {}

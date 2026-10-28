@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** A storefront search: products, categories and brands while the shopper types, suggestions and curated picks before. */
 export default {}

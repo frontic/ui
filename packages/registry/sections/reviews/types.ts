@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 export interface ReviewsShare {
   /** The star rating, 1 to 5. */
   stars: number

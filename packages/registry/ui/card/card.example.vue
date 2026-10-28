@@ -1,5 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script setup lang="ts">
 import { IconPlaceholder } from '@registry/icon-placeholder'
 import { Badge } from '@library/components/ui/badge'

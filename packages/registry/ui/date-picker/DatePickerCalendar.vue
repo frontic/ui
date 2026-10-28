@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** The calendar a date picker opens: our Calendar, driven by the picker's date and settings. */
 export default {}

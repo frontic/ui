@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { ref } from 'vue'
 import { ProductOptions, type ProductColour, type ProductSize } from '.'

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Groups tags the user moves through with the arrow keys, and can select or remove. */
 export default {}

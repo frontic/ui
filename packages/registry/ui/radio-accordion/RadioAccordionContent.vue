@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Holds the details its option reveals while selected, such as a card form or a delivery window. */
 export default {}

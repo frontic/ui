@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Takes the text the user types; the suggestions filter as it changes. */
 export default {}

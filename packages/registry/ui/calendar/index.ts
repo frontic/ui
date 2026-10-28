@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 export { default as Calendar } from './Calendar.vue'
 export { default as CalendarCell } from './CalendarCell.vue'
 export { default as CalendarCellTrigger } from './CalendarCellTrigger.vue'

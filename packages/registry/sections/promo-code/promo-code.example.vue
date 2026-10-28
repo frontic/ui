@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { PromoCode, type AppliedDiscount } from '.'

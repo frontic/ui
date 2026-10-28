@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Text with every match of the search terms in bold; the terms default to the typed query. */
 export default {}

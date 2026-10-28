@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Groups all parts of the search: a field whose panel offers results, suggestions and a "Search for" row. */
 export default {}

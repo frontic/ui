@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import { type DateValue, DateFormatter } from '@internationalized/date'
 import { NumberFormatter } from '@internationalized/number'
 

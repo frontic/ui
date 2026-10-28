@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { NavigationCategory, NavigationLink } from '@library/components/sections/navigation-shop'
 
 export type { Product } from '@library/components/sections/product-card-gallery'

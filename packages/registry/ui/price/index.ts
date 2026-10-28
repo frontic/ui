@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { ComputedRef, InjectionKey } from 'vue'
 
 export { default as Price } from './Price.vue'

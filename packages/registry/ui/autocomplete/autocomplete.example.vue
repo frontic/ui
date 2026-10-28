@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { IconPlaceholder } from '@registry/icon-placeholder'
 import { InputGroupAddon } from '@library/components/ui/input-group'
