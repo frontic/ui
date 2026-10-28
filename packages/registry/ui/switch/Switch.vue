@@ -15,7 +15,7 @@ import { useTemplateRef } from 'vue'
 import { useFieldControl } from '@library/composables/use-field-control'
 
 const root = cva(
-  'fui-switch peer group/switch relative outline-none transition-all after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:fui-focus-ring aria-invalid:fui-invalid data-disabled:cursor-not-allowed data-disabled:fui-disabled rtl:-scale-x-100',
+  'fui-switch peer group/switch relative outline-none transition-all after:absolute after:inset-x-0 after:-inset-y-2 focus-visible:fui-focus-ring aria-invalid:fui-invalid data-disabled:cursor-not-allowed data-disabled:fui-disabled rtl:-scale-x-100',
   {
     variants: {
       size: { md: 'fui-switch-md', sm: 'fui-switch-sm' },
