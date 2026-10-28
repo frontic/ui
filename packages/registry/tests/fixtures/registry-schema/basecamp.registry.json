@@ -1,0 +1,520 @@
+{
+  "$schema": "https://registry.ui.frontic.com/registry.schema.json",
+  "name": "library",
+  "homepage": "",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "The pill call to action: primary for the one action a view asks for, inverse on photography, ghost as a text link.",
+      "files": [
+        {
+          "path": "components/ui/button/Button.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/button/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/button/button.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "frontic": {
+          "props": [
+            {
+              "name": "variant",
+              "kind": "style",
+              "type": "\"primary\" | \"secondary\" | \"outline\" | \"inverse\" | \"ghost\" | null | undefined",
+              "required": false,
+              "default": "\"primary\"",
+              "values": ["primary", "secondary", "outline", "inverse", "ghost"]
+            },
+            {
+              "name": "size",
+              "kind": "style",
+              "type": "\"default\" | \"sm\" | \"bare\" | null | undefined",
+              "required": false,
+              "default": "\"default\"",
+              "values": ["default", "sm", "bare"]
+            },
+            {
+              "name": "block",
+              "kind": "behaviour",
+              "type": "boolean | undefined",
+              "required": false,
+              "default": "false"
+            },
+            {
+              "name": "disabled",
+              "kind": "behaviour",
+              "type": "boolean | undefined",
+              "required": false,
+              "default": "false"
+            },
+            {
+              "name": "href",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "undefined"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "The stock pill over a product image, shown at ten or fewer left.",
+      "files": [
+        {
+          "path": "components/ui/badge/Badge.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/badge/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/badge/badge.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "frontic": {
+          "props": [
+            {
+              "name": "variant",
+              "kind": "style",
+              "type": "\"stock\" | null | undefined",
+              "required": false,
+              "default": "\"stock\"",
+              "values": ["stock"]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "stock-label",
+      "type": "registry:ui",
+      "title": "Stock label",
+      "description": "Availability as coloured text beside the size picker: in stock, low, sold out.",
+      "files": [
+        {
+          "path": "components/ui/stock-label/StockLabel.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/stock-label/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/stock-label/stock-label.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "frontic": {
+          "props": [
+            {
+              "name": "variant",
+              "kind": "style",
+              "type": "\"in\" | \"low\" | \"out\" | null | undefined",
+              "required": false,
+              "default": "\"in\"",
+              "values": ["in", "low", "out"]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "price",
+      "type": "registry:ui",
+      "title": "Price",
+      "description": "A price in the shop currency, regular weight, never struck through.",
+      "files": [
+        {
+          "path": "components/ui/price/Price.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/price/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/price/price.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "frontic": {
+          "props": [
+            {
+              "name": "amount",
+              "kind": "behaviour",
+              "type": "number",
+              "required": true
+            },
+            {
+              "name": "currency",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"EUR\""
+            },
+            {
+              "name": "locale",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"de-DE\""
+            },
+            {
+              "name": "variant",
+              "kind": "style",
+              "type": "\"default\" | \"lg\" | null | undefined",
+              "required": false,
+              "default": "\"default\"",
+              "values": ["default", "lg"]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "A square 42px text field outlined in the input line.",
+      "files": [
+        {
+          "path": "components/ui/input/Input.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/input/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/input/input.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "frontic": {
+          "props": [
+            {
+              "name": "placeholder",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"\""
+            },
+            {
+              "name": "type",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"text\""
+            },
+            {
+              "name": "disabled",
+              "kind": "behaviour",
+              "type": "boolean | undefined",
+              "required": false,
+              "default": "false"
+            },
+            {
+              "name": "modelValue",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "size-chip",
+      "type": "registry:ui",
+      "title": "Size chip",
+      "description": "An outlined size pill; selected fills ink, unavailable greys out.",
+      "files": [
+        {
+          "path": "components/ui/size-chip/SizeChip.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/size-chip/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/size-chip/size-chip.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "frontic": {
+          "props": [
+            {
+              "name": "selected",
+              "kind": "behaviour",
+              "type": "boolean | undefined",
+              "required": false,
+              "default": "false"
+            },
+            {
+              "name": "disabled",
+              "kind": "behaviour",
+              "type": "boolean | undefined",
+              "required": false,
+              "default": "false"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "swatch",
+      "type": "registry:ui",
+      "title": "Swatch",
+      "description": "A 28px colour disc with an inset white ring.",
+      "files": [
+        {
+          "path": "components/ui/swatch/Swatch.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/swatch/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/swatch/swatch.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "meta": {
+        "frontic": {
+          "props": [
+            {
+              "name": "color",
+              "kind": "behaviour",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "label",
+              "kind": "behaviour",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "selected",
+              "kind": "behaviour",
+              "type": "boolean | undefined",
+              "required": false,
+              "default": "false"
+            },
+            {
+              "name": "disabled",
+              "kind": "behaviour",
+              "type": "boolean | undefined",
+              "required": false,
+              "default": "false"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Image well on paper, name and price on one baseline, colour dots and a meta line; the whole card is one link.",
+      "files": [
+        {
+          "path": "components/ui/card/Card.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/card/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/card/card.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "registryDependencies": ["badge", "price"],
+      "meta": {
+        "frontic": {
+          "props": [
+            {
+              "name": "name",
+              "kind": "behaviour",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "price",
+              "kind": "behaviour",
+              "type": "number",
+              "required": true
+            },
+            {
+              "name": "image",
+              "kind": "behaviour",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "href",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"#\""
+            },
+            {
+              "name": "meta",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"\""
+            },
+            {
+              "name": "colors",
+              "kind": "behaviour",
+              "type": "string[] | undefined",
+              "required": false,
+              "default": "[]"
+            },
+            {
+              "name": "stock",
+              "kind": "behaviour",
+              "type": "number | undefined",
+              "required": false,
+              "default": "undefined"
+            },
+            {
+              "name": "lowStockLabel",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"Only\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "hero",
+      "type": "registry:component",
+      "title": "Hero",
+      "description": "A full-bleed photograph under a bottom-weighted scrim with an eyebrow, a display title and an inverse button.",
+      "files": [
+        {
+          "path": "components/sections/hero/Hero.vue",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/sections/hero/index.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/sections/hero/hero.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "registryDependencies": ["button"],
+      "meta": {
+        "frontic": {
+          "props": [
+            {
+              "name": "title",
+              "kind": "behaviour",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "image",
+              "kind": "behaviour",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "eyebrow",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"\""
+            },
+            {
+              "name": "cta",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"\""
+            },
+            {
+              "name": "href",
+              "kind": "behaviour",
+              "type": "string | undefined",
+              "required": false,
+              "default": "\"#\""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "product-card",
+      "type": "registry:component",
+      "title": "Product card",
+      "description": "A ProductCard record as a card: its name, price, cover image and link.",
+      "files": [
+        {
+          "path": "components/sections/product-card/ProductCard.vue",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/sections/product-card/index.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/sections/product-card/product-card.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "registryDependencies": ["card"]
+    },
+    {
+      "name": "product-slider",
+      "type": "registry:block",
+      "title": "Product slider",
+      "description": "A titled row of product cards that scrolls sideways and snaps: four across on a wide container, two on a medium one, one on a narrow one.",
+      "files": [
+        {
+          "path": "components/templates/product-slider/ProductSlider.vue",
+          "type": "registry:block"
+        },
+        {
+          "path": "components/templates/product-slider/index.ts",
+          "type": "registry:block"
+        },
+        {
+          "path": "components/templates/product-slider/product-slider.example.vue",
+          "type": "registry:example"
+        }
+      ],
+      "registryDependencies": ["product-card"]
+    }
+  ]
+}

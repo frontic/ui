@@ -1,0 +1,61 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Table",
+  "description": "Rows and columns of data such as orders, with header, footer, caption and an empty state; a wide table scrolls in its box and takes keyboard focus to do so.",
+  "recipes": {
+    "table": {
+      "composes": ["focus-ring"],
+      "base": {
+        "typography": "{typography.small}",
+        "width": "full"
+      }
+    },
+    "table-caption": {
+      "base": {
+        "marginTop": "{spacing.4}",
+        "extends": "hint"
+      }
+    },
+    "table-cell": {
+      "base": {
+        "padding": "{spacing.3}"
+      }
+    },
+    "table-empty": {
+      "base": {
+        "paddingX": "{spacing.4}",
+        "paddingY": "{spacing.14}",
+        "extends": "hint"
+      }
+    },
+    "table-footer": {
+      "base": {
+        "backgroundColor": "{colors.muted/50}",
+        "borderTop": "{border.default}",
+        "fontWeight": "medium"
+      }
+    },
+    "table-head": {
+      "base": {
+        "extends": "label",
+        "textColor": "{colors.muted-foreground}",
+        "fontWeight": "medium",
+        "letterSpacing": "wider",
+        "height": "{spacing.12}",
+        "paddingX": "{spacing.3}",
+        "textAlign": "start"
+      }
+    },
+    "table-row": {
+      "base": {
+        "borderBottom": "{border.default}",
+        "hover": {
+          "backgroundColor": "{colors.muted/50}"
+        },
+        "selected": {
+          "backgroundColor": "{colors.muted}"
+        }
+      }
+    }
+  }
+}

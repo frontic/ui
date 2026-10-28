@@ -1,0 +1,22 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Cart Item Compact",
+  "description": "Cart lines with a quantity field and a remove button.",
+  "categories": ["cart"],
+  "recipes": {
+    "cart-item-compact": {
+      "composes": ["line-title", "meta", "quiet-action"],
+      "base": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "{spacing.5}"
+      }
+    },
+    "cart-item-compact-image": {
+      "base": {
+        "extends": "thumbnail",
+        "size": "{spacing.18}"
+      }
+    }
+  }
+}

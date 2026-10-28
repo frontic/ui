@@ -1,0 +1,202 @@
+# approximate: dialog-frame #2
+dialog-body | E | margin-bottom: -8px
+dialog-body | E | margin-left: -24px [phone]
+dialog-body | E | margin-left: -32px [desktop,band]
+dialog-body | E | margin-right: -24px [phone]
+dialog-body | E | margin-right: -32px [desktop,band]
+dialog-body | E | margin-top: -8px
+dialog-body | E | min-height: 0px
+dialog-body | E | overflow-y: auto
+dialog-body | E | padding-bottom: 8px
+dialog-body | E | padding-left: 24px [phone]
+dialog-body | E | padding-left: 32px [desktop,band]
+dialog-body | E | padding-right: 24px [phone]
+dialog-body | E | padding-right: 32px [desktop,band]
+dialog-body | E | padding-top: 8px
+dialog-close > [0] #2 | E | inset-inline-end: 16px
+dialog-close > [0] #2 | E | position: absolute
+dialog-close > [0] #2 | E | top: 16px
+dialog-close > [0] | E | inset-inline-end: 20px
+dialog-close > [0] | E | position: absolute
+dialog-close > [0] | E | top: 20px
+dialog-close > [1] #2 | E | border-bottom-width: 0
+dialog-close > [1] #2 | E | border-left-width: 0
+dialog-close > [1] #2 | E | border-right-width: 0
+dialog-close > [1] #2 | E | border-top-width: 0
+dialog-close > [1] #2 | E | clip-path: inset(50%)
+dialog-close > [1] #2 | E | height: 1px
+dialog-close > [1] #2 | E | margin-bottom: -1px
+dialog-close > [1] #2 | E | margin-left: -1px
+dialog-close > [1] #2 | E | margin-right: -1px
+dialog-close > [1] #2 | E | margin-top: -1px
+dialog-close > [1] #2 | E | overflow: hidden
+dialog-close > [1] #2 | E | padding-bottom: 0
+dialog-close > [1] #2 | E | padding-left: 0
+dialog-close > [1] #2 | E | padding-right: 0
+dialog-close > [1] #2 | E | padding-top: 0
+dialog-close > [1] #2 | E | position: absolute
+dialog-close > [1] #2 | E | white-space: nowrap
+dialog-close > [1] #2 | E | width: 1px
+dialog-close > [1] | E | border-bottom-width: 0
+dialog-close > [1] | E | border-left-width: 0
+dialog-close > [1] | E | border-right-width: 0
+dialog-close > [1] | E | border-top-width: 0
+dialog-close > [1] | E | clip-path: inset(50%)
+dialog-close > [1] | E | height: 1px
+dialog-close > [1] | E | margin-bottom: -1px
+dialog-close > [1] | E | margin-left: -1px
+dialog-close > [1] | E | margin-right: -1px
+dialog-close > [1] | E | margin-top: -1px
+dialog-close > [1] | E | overflow: hidden
+dialog-close > [1] | E | padding-bottom: 0
+dialog-close > [1] | E | padding-left: 0
+dialog-close > [1] | E | padding-right: 0
+dialog-close > [1] | E | padding-top: 0
+dialog-close > [1] | E | position: absolute
+dialog-close > [1] | E | white-space: nowrap
+dialog-close > [1] | E | width: 1px
+dialog-content #2 | E | background-color: #ffffff
+dialog-content #2 | E | border-bottom-left-radius: 0px
+dialog-content #2 | E | border-bottom-right-radius: 0px
+dialog-content #2 | E | border-top-left-radius: 0px
+dialog-content #2 | E | border-top-right-radius: 0px
+dialog-content #2 | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+dialog-content #2 | E | container-type: inline-size
+dialog-content #2 | E | display: grid
+dialog-content #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+dialog-content #2 | E | font-feature-settings: normal
+dialog-content #2 | E | font-size: 14px
+dialog-content #2 | E | font-variation-settings: normal
+dialog-content #2 | E | font-weight: 400
+dialog-content #2 | E | gap: 24px
+dialog-content #2 | E | letter-spacing: normal
+dialog-content #2 | E | line-height: 1.43
+dialog-content #2 | E | max-width: 512px
+dialog-content #2 | E | padding-bottom: 24px [phone]
+dialog-content #2 | E | padding-bottom: 32px [desktop,band]
+dialog-content #2 | E | padding-left: 24px [phone]
+dialog-content #2 | E | padding-left: 32px [desktop,band]
+dialog-content #2 | E | padding-right: 24px [phone]
+dialog-content #2 | E | padding-right: 32px [desktop,band]
+dialog-content #2 | E | padding-top: 24px [phone]
+dialog-content #2 | E | padding-top: 32px [desktop,band]
+dialog-content #2 | E | position: relative
+dialog-content #2 | E | ring: 1px color-mix(in oklab, #09090b 10%, transparent)
+dialog-content #2 | E | width: 100%
+dialog-content #2 | E | z-index: 50
+dialog-content | E | background-color: #ffffff
+dialog-content | E | border-bottom-left-radius: 0px
+dialog-content | E | border-bottom-right-radius: 0px
+dialog-content | E | border-top-left-radius: 0px
+dialog-content | E | border-top-right-radius: 0px
+dialog-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+dialog-content | E | container-type: inline-size
+dialog-content | E | display: flex
+dialog-content | E | flex-direction: column
+dialog-content | E | font-family: 'Inter Variable', Inter, sans-serif
+dialog-content | E | font-feature-settings: normal
+dialog-content | E | font-size: 14px
+dialog-content | E | font-variation-settings: normal
+dialog-content | E | font-weight: 400
+dialog-content | E | gap: 24px
+dialog-content | E | letter-spacing: normal
+dialog-content | E | line-height: 1.43
+dialog-content | E | max-height: 100%
+dialog-content | E | max-width: 448px [desktop]
+dialog-content | E | overflow-y: auto
+dialog-content | E | padding-bottom: 24px [phone]
+dialog-content | E | padding-bottom: 32px [desktop,band]
+dialog-content | E | padding-left: 24px [phone]
+dialog-content | E | padding-left: 32px [desktop,band]
+dialog-content | E | padding-right: 24px [phone]
+dialog-content | E | padding-right: 32px [desktop,band]
+dialog-content | E | padding-top: 24px [phone]
+dialog-content | E | padding-top: 32px [desktop,band]
+dialog-content | E | pointer-events: auto
+dialog-content | E | position: relative
+dialog-content | E | ring: 1px color-mix(in oklab, #09090b 10%, transparent)
+dialog-content | E | width: 100%
+dialog-content | E | z-index: 50
+dialog-description | E a | text-decoration-line: underline
+dialog-description | E a:hover | color: #09090b
+dialog-description | E | color: #66666f
+dialog-description | E | font-family: 'Inter Variable', Inter, sans-serif
+dialog-description | E | font-feature-settings: normal
+dialog-description | E | font-size: 14px
+dialog-description | E | font-variation-settings: normal
+dialog-description | E | font-weight: 400
+dialog-description | E | letter-spacing: normal
+dialog-description | E | line-height: 1.625
+dialog-description | E | margin-top: 2px
+dialog-footer | E | display: flex
+dialog-footer | E | flex-direction: column-reverse [phone]
+dialog-footer | E | flex-direction: row [desktop,band]
+dialog-footer | E | gap: 8px
+dialog-footer | E | justify-content: flex-end [desktop,band]
+dialog-frame #2 | E | container-type: inline-size
+dialog-frame #2 | E | display: grid
+dialog-frame #2 | E | inset: 0px
+dialog-frame #2 | E | overflow-y: auto
+dialog-frame #2 | E | padding-bottom: 32px
+dialog-frame #2 | E | padding-top: 32px
+dialog-frame #2 | E | place-items: center
+dialog-frame #2 | E | pointer-events: none
+dialog-frame #2 | E | position: fixed
+dialog-frame #2 | E | transition-duration: 100ms
+dialog-frame #2 | E | z-index: 50
+dialog-frame #2 | E:closed | --tw-exit-opacity: 0
+dialog-frame #2 | E:closed | --tw-exit-scale: .95
+dialog-frame #2 | E:closed | animation: exit 100ms ease 0s 1 normal none
+dialog-frame #2 | E:open | --tw-enter-opacity: 0
+dialog-frame #2 | E:open | --tw-enter-scale: .95
+dialog-frame #2 | E:open | animation: enter 100ms ease 0s 1 normal none
+dialog-frame | E | container-type: inline-size
+dialog-frame | E | display: grid
+dialog-frame | E | inset: 0px
+dialog-frame | E | padding-bottom: 16px
+dialog-frame | E | padding-left: 16px
+dialog-frame | E | padding-right: 16px
+dialog-frame | E | padding-top: 16px
+dialog-frame | E | place-items: center
+dialog-frame | E | pointer-events: none
+dialog-frame | E | position: fixed
+dialog-frame | E | transition-duration: 100ms
+dialog-frame | E | z-index: 50
+dialog-frame | E:closed | --tw-exit-opacity: 0
+dialog-frame | E:closed | --tw-exit-scale: .95
+dialog-frame | E:closed | animation: exit 100ms ease 0s 1 normal none
+dialog-frame | E:open | --tw-enter-opacity: 0
+dialog-frame | E:open | --tw-enter-scale: .95
+dialog-frame | E:open | animation: enter 100ms ease 0s 1 normal none
+dialog-header | E | display: flex
+dialog-header | E | flex-direction: column
+dialog-header | E | gap: 8px
+dialog-overlay #2 | E | background-color: color-mix(in oklab, #09090b 20%, transparent)
+dialog-overlay #2 | E | inset: 0px
+dialog-overlay #2 | E | position: fixed
+dialog-overlay #2 | E | transition-duration: 100ms
+dialog-overlay #2 | E | z-index: 50
+dialog-overlay #2 | E:closed | --tw-exit-opacity: 0
+dialog-overlay #2 | E:closed | animation: exit 100ms ease 0s 1 normal none
+dialog-overlay #2 | E:open | --tw-enter-opacity: 0
+dialog-overlay #2 | E:open | animation: enter 100ms ease 0s 1 normal none
+dialog-overlay | E | -webkit-backdrop-filter: blur(8px)
+dialog-overlay | E | backdrop-filter: blur(8px)
+dialog-overlay | E | background-color: color-mix(in oklab, #09090b 20%, transparent)
+dialog-overlay | E | inset: 0px
+dialog-overlay | E | isolation: isolate
+dialog-overlay | E | position: fixed
+dialog-overlay | E | transition-duration: 100ms
+dialog-overlay | E | z-index: 50
+dialog-overlay | E:closed | --tw-exit-opacity: 0
+dialog-overlay | E:closed | animation: exit 100ms ease 0s 1 normal none
+dialog-overlay | E:open | --tw-enter-opacity: 0
+dialog-overlay | E:open | animation: enter 100ms ease 0s 1 normal none
+dialog-title | E | font-family: 'Inter Variable', Inter, sans-serif
+dialog-title | E | font-feature-settings: normal
+dialog-title | E | font-size: 18px
+dialog-title | E | font-variation-settings: normal
+dialog-title | E | font-weight: 600
+dialog-title | E | letter-spacing: 0.05em
+dialog-title | E | line-height: 1
+dialog-title | E | text-transform: uppercase

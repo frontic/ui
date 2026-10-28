@@ -1,0 +1,105 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Tabs",
+  "description": "Switches between panels of related content, such as a product's description and details; a filled or underlined list, in a row or a column, mirrored in a right-to-left page.",
+  "recipes": {
+    "tabs": {
+      "base": {
+        "display": "flex",
+        "gap": "{spacing.2}"
+      }
+    },
+    "tabs-content": {
+      "base": {
+        "typography": "{typography.small}",
+        "flex": "1"
+      }
+    },
+    "tabs-list": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "rounded": "{rounded.none}",
+        "height": "{spacing.10}",
+        "padding": "{spacing.1}",
+        "display": "inline-flex",
+        "width": "fit",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "variants": {
+        "variant": {
+          "default": {
+            "backgroundColor": "{colors.muted}"
+          },
+          "line": {
+            "backgroundColor": "transparent",
+            "gap": "{spacing.1}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "default"
+      }
+    },
+    "tabs-trigger": {
+      "composes": ["disabled"],
+      "base": {
+        "textColor": "{colors.foreground/60}",
+        "border": "{border.default}",
+        "borderColor": "transparent",
+        "rounded": "{rounded.none}",
+        "typography": "{typography.caption}",
+        "fontWeight": "semibold",
+        "letterSpacing": "wider",
+        "textTransform": "uppercase",
+        "gap": "{spacing.2}",
+        "paddingX": "{spacing.4}",
+        "paddingY": "{spacing.1.5}",
+        "display": "inline-flex",
+        "height": "full",
+        "flex": "1",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        },
+        "iconStart": {
+          "paddingStart": "{spacing.2.5}"
+        },
+        "iconEnd": {
+          "paddingEnd": "{spacing.2.5}"
+        },
+        "hover": {
+          "textColor": "{colors.foreground}"
+        },
+        "focus": {
+          "borderColor": "{colors.ring}",
+          "outline": "{ring.hairline}",
+          "outlineColor": "{colors.ring}"
+        },
+        "selected": {
+          "backgroundColor": "{colors.background}",
+          "textColor": "{colors.foreground}"
+        }
+      },
+      "variants": {
+        "variant": {
+          "default": {},
+          "line": {
+            "selected": {
+              "backgroundColor": "transparent"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "variant": "default"
+      }
+    },
+    "tabs-trigger-indicator": {
+      "base": {
+        "backgroundColor": "{colors.foreground}"
+      }
+    }
+  }
+}

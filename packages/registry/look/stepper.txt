@@ -1,0 +1,148 @@
+stepper | E | container-type: inline-size
+stepper | E | display: flex
+stepper | E | flex-wrap: wrap
+stepper | E | position: relative
+stepper | E | row-gap: 12px
+stepper | E[data-vertical] | flex-direction: column
+stepper | E[data-vertical] | flex-wrap: nowrap
+stepper | E[data-vertical] | row-gap: 0px
+stepper-description | E | color: #66666f
+stepper-description | E | font-family: 'Inter Variable', Inter, sans-serif
+stepper-description | E | font-feature-settings: normal
+stepper-description | E | font-size: 12px
+stepper-description | E | font-variation-settings: normal
+stepper-description | E | font-weight: 400
+stepper-description | E | letter-spacing: normal
+stepper-description | E | line-height: 1.33
+stepper-description | E:is(:where(GROUP)[data-vertical] *) | grid-column-start: 1
+stepper-description | E:is(:where(GROUP)[data-vertical] *) | grid-row-start: 2
+stepper-description | E:is(:where(GROUP)[data-vertical] *) | translate: 0 2px
+stepper-indicator | E ICON | height: 16px
+stepper-indicator | E ICON | width: 16px
+stepper-indicator | E | align-items: center
+stepper-indicator | E | background-color: #09090b [state=completed]
+stepper-indicator | E | background-color: #7008e7 [state=active]
+stepper-indicator | E | background-color: #ffffff [state=inactive]
+stepper-indicator | E | border-bottom-color: #a1a1aa [state=inactive]
+stepper-indicator | E | border-bottom-left-radius: 9999px
+stepper-indicator | E | border-bottom-right-radius: 9999px
+stepper-indicator | E | border-bottom-style: solid [state=inactive]
+stepper-indicator | E | border-bottom-width: 1px [state=inactive]
+stepper-indicator | E | border-left-color: #a1a1aa [state=inactive]
+stepper-indicator | E | border-left-style: solid [state=inactive]
+stepper-indicator | E | border-left-width: 1px [state=inactive]
+stepper-indicator | E | border-right-color: #a1a1aa [state=inactive]
+stepper-indicator | E | border-right-style: solid [state=inactive]
+stepper-indicator | E | border-right-width: 1px [state=inactive]
+stepper-indicator | E | border-top-color: #a1a1aa [state=inactive]
+stepper-indicator | E | border-top-left-radius: 9999px
+stepper-indicator | E | border-top-right-radius: 9999px
+stepper-indicator | E | border-top-style: solid [state=inactive]
+stepper-indicator | E | border-top-width: 1px [state=inactive]
+stepper-indicator | E | color: #66666f [state=inactive]
+stepper-indicator | E | color: #f5f3ff [state=active]
+stepper-indicator | E | color: #ffffff [state=completed]
+stepper-indicator | E | display: inline-flex
+stepper-indicator | E | height: 32px
+stepper-indicator | E | justify-content: center
+stepper-indicator | E | position: relative
+stepper-indicator | E | width: 32px
+stepper-indicator | E | z-index: 10
+stepper-indicator | E:is(:where(GROUP)[data-vertical] *) | grid-column-end: 1
+stepper-indicator | E:is(:where(GROUP)[data-vertical] *) | grid-row-start: 1
+stepper-indicator | E:is(:where(GROUP)[data-vertical] *) | grid-row: span 2 / span 2
+stepper-item | E | align-items: center
+stepper-item | E | display: flex
+stepper-item | E:disabled | pointer-events: none
+stepper-item | E:is(:where(E\/stepper)[data-horizontal] *) | align-items: flex-start [desktop]
+stepper-item | E:is(:where(E\/stepper)[data-horizontal] *) | flex: 1 [desktop]
+stepper-item | E:is(:where(E\/stepper)[data-horizontal] *) | justify-content: center [desktop]
+stepper-item | E:is(:where(E\/stepper)[data-horizontal] *) | position: relative [desktop]
+stepper-item | E:is(:where(E\/stepper)[data-horizontal] *):has([data-slot="stepper-separator"]) | flex: 1
+stepper-item | E:is(:where(E\/stepper)[data-vertical] *) | align-items: stretch
+stepper-item | E:is(:where(E\/stepper)[data-vertical] *) | flex-direction: column
+stepper-item | E:is(:where(E\/stepper)[data-vertical] *) | position: relative
+stepper-item | E:is(:where(E\/stepper)[data-vertical] *):has([data-slot="stepper-separator"]) | padding-bottom: 12px
+stepper-separator | E | flex: 1
+stepper-separator | E | height: 1px
+stepper-separator | E | margin-left: 4px
+stepper-separator | E | margin-right: 4px
+stepper-separator | E | position: relative
+stepper-separator | E:is(:where(GROUP)[data-horizontal] *) | inset-inline-start: calc(1 / 2 * 100%) [desktop]
+stepper-separator | E:is(:where(GROUP)[data-horizontal] *) | margin-left: 0px [desktop]
+stepper-separator | E:is(:where(GROUP)[data-horizontal] *) | margin-right: 0px [desktop]
+stepper-separator | E:is(:where(GROUP)[data-horizontal] *) | position: absolute [desktop]
+stepper-separator | E:is(:where(GROUP)[data-horizontal] *) | top: 20px [desktop]
+stepper-separator | E:is(:where(GROUP)[data-horizontal] *) | width: 100% [desktop]
+stepper-separator | E:is(:where(GROUP)[data-vertical] *) | height: 100%
+stepper-separator | E:is(:where(GROUP)[data-vertical] *) | inset-inline-start: 20px
+stepper-separator | E:is(:where(GROUP)[data-vertical] *) | margin-left: 0px
+stepper-separator | E:is(:where(GROUP)[data-vertical] *) | margin-right: 0px
+stepper-separator | E:is(:where(GROUP)[data-vertical] *) | position: absolute
+stepper-separator | E:is(:where(GROUP)[data-vertical] *) | top: 20px
+stepper-separator | E:is(:where(GROUP)[data-vertical] *) | width: 1px
+stepper-separator-fill | E | background-color: #09090b
+stepper-separator-fill | E | inset: 0px
+stepper-separator-fill | E | position: absolute
+stepper-separator-fill | E | scale: 0% 1
+stepper-separator-fill | E | transform-origin: 0
+stepper-separator-fill | E | transition-duration: 500ms
+stepper-separator-fill | E | transition-property: transform, translate, scale, rotate
+stepper-separator-fill | E | transition-timing-function: cubic-bezier(0, 0, 0.2, 1)
+stepper-separator-fill | E:is(:where(GROUP)[data-horizontal] *):where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | transform-origin: 100%
+stepper-separator-fill | E:is(:where(GROUP)[data-vertical] *) | scale: 100% 0%
+stepper-separator-fill | E:is(:where(GROUP)[data-vertical] *) | transform-origin: top
+stepper-separator-fill | E:is(:where(GROUP)[data-vertical] *)[data-filled] | scale: 100% 100%
+stepper-separator-fill | E[data-filled] | scale: 100% 1
+stepper-separator-track | E | background-color: #e4e4e7
+stepper-separator-track | E | inset: 0px
+stepper-separator-track | E | position: absolute
+stepper-status | E | color: #66666f
+stepper-status | E | display: none [desktop]
+stepper-status | E | flex-basis: 100%
+stepper-status | E | font-family: 'Inter Variable', Inter, sans-serif
+stepper-status | E | font-feature-settings: normal
+stepper-status | E | font-size: 12px
+stepper-status | E | font-variation-settings: normal
+stepper-status | E | font-weight: 500
+stepper-status | E | letter-spacing: normal
+stepper-status | E | line-height: 1.33
+stepper-status | E | order: 9999
+stepper-status | E | text-align: end
+stepper-title | E | color: #66666f [state=inactive]
+stepper-title | E | font-family: 'Inter Variable', Inter, sans-serif
+stepper-title | E | font-feature-settings: normal
+stepper-title | E | font-size: 14px
+stepper-title | E | font-variation-settings: normal
+stepper-title | E | font-weight: 500 [state=inactive,completed]
+stepper-title | E | font-weight: 600 [state=active]
+stepper-title | E | letter-spacing: normal
+stepper-title | E | line-height: 1.43
+stepper-title | E | white-space: nowrap
+stepper-title | E:is(:where(GROUP)[data-vertical] *) | grid-column-start: 1
+stepper-title | E:is(:where(GROUP)[data-vertical] *) | grid-row-start: 1
+stepper-title | E:is(:where(GROUP)[data-vertical] *) | translate: 0 6px
+stepper-trigger | E | align-items: center
+stepper-trigger | E | border-bottom-left-radius: 0px
+stepper-trigger | E | border-bottom-right-radius: 0px
+stepper-trigger | E | border-top-left-radius: 0px
+stepper-trigger | E | border-top-right-radius: 0px
+stepper-trigger | E | display: flex
+stepper-trigger | E | flex-direction: column
+stepper-trigger | E | gap: 8px
+stepper-trigger | E | outline-style: none
+stepper-trigger | E | padding-bottom: 4px
+stepper-trigger | E | padding-left: 4px
+stepper-trigger | E | padding-right: 4px
+stepper-trigger | E | padding-top: 4px
+stepper-trigger | E | text-align: center
+stepper-trigger | E:focus | border-bottom-color: #71717a
+stepper-trigger | E:focus | border-left-color: #71717a
+stepper-trigger | E:focus | border-right-color: #71717a
+stepper-trigger | E:focus | border-top-color: #71717a
+stepper-trigger | E:focus | ring: 2px #71717a
+stepper-trigger | E:is(:where(GROUP)[data-vertical] *) | align-items: flex-start
+stepper-trigger | E:is(:where(GROUP)[data-vertical] *) | display: grid
+stepper-trigger | E:is(:where(GROUP)[data-vertical] *) | grid-auto-columns: min-content
+stepper-trigger | E:is(:where(GROUP)[data-vertical] *) | grid-template-columns: repeat(1, minmax(0, 1fr))
+stepper-trigger | E:is(:where(GROUP)[data-vertical] *) | text-align: start

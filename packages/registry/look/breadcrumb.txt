@@ -1,0 +1,52 @@
+breadcrumb-ellipsis > [0] | E | border-bottom-width: 0
+breadcrumb-ellipsis > [0] | E | border-left-width: 0
+breadcrumb-ellipsis > [0] | E | border-right-width: 0
+breadcrumb-ellipsis > [0] | E | border-top-width: 0
+breadcrumb-ellipsis > [0] | E | clip-path: inset(50%)
+breadcrumb-ellipsis > [0] | E | height: 1px
+breadcrumb-ellipsis > [0] | E | margin-bottom: -1px
+breadcrumb-ellipsis > [0] | E | margin-left: -1px
+breadcrumb-ellipsis > [0] | E | margin-right: -1px
+breadcrumb-ellipsis > [0] | E | margin-top: -1px
+breadcrumb-ellipsis > [0] | E | overflow: hidden
+breadcrumb-ellipsis > [0] | E | padding-bottom: 0
+breadcrumb-ellipsis > [0] | E | padding-left: 0
+breadcrumb-ellipsis > [0] | E | padding-right: 0
+breadcrumb-ellipsis > [0] | E | padding-top: 0
+breadcrumb-ellipsis > [0] | E | position: absolute
+breadcrumb-ellipsis > [0] | E | white-space: nowrap
+breadcrumb-ellipsis > [0] | E | width: 1px
+breadcrumb-ellipsis | E ICON | height: 16px
+breadcrumb-ellipsis | E ICON | width: 16px
+breadcrumb-ellipsis | E | align-items: center
+breadcrumb-ellipsis | E | display: flex
+breadcrumb-ellipsis | E | height: 20px
+breadcrumb-ellipsis | E | justify-content: center
+breadcrumb-ellipsis | E | width: 20px
+breadcrumb-item | E | align-items: center
+breadcrumb-item | E | display: inline-flex
+breadcrumb-item | E | gap: 6px
+breadcrumb-link | E | transition-duration: 150ms
+breadcrumb-link | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+breadcrumb-link | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+breadcrumb-link | E:hover | color: #09090b
+breadcrumb-list | E | align-items: center
+breadcrumb-list | E | color: #66666f
+breadcrumb-list | E | display: flex
+breadcrumb-list | E | flex-wrap: wrap
+breadcrumb-list | E | font-family: 'Inter Variable', Inter, sans-serif
+breadcrumb-list | E | font-feature-settings: normal
+breadcrumb-list | E | font-size: 12px
+breadcrumb-list | E | font-variation-settings: normal
+breadcrumb-list | E | font-weight: 400
+breadcrumb-list | E | gap: 10px [desktop]
+breadcrumb-list | E | gap: 6px [phone]
+breadcrumb-list | E | letter-spacing: 0.025em
+breadcrumb-list | E | line-height: 1.33
+breadcrumb-list | E | overflow-wrap: break-word
+breadcrumb-list | E | text-transform: uppercase
+breadcrumb-page | E | color: #09090b
+breadcrumb-page | E | font-weight: 400
+breadcrumb-separator > [0] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1
+breadcrumb-separator | E ICON | height: 14px
+breadcrumb-separator | E ICON | width: 14px

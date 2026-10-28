@@ -1,0 +1,52 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Mega Menu",
+  "description": "Store navigation whose flyouts span the bar's full width, for link columns and featured tiles; panels slide between categories and the height follows.",
+  "recipes": {
+    "mega-menu": {
+      "composes": ["focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "mega-menu-content": {
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "borderTop": "{border.default}",
+        "borderColor": "{colors.border}",
+        "width": "full"
+      }
+    },
+    "mega-menu-item": {
+      "base": {
+        "display": "flex"
+      }
+    },
+    "mega-menu-list": {
+      "base": {
+        "display": "flex",
+        "height": "full",
+        "alignItems": "center",
+        "gap": "{spacing.1}"
+      }
+    },
+    "mega-menu-trigger": {
+      "composes": ["focus-ring"],
+      "base": {
+        "typography": "{typography.ui}",
+        "display": "inline-flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3}"
+        }
+      }
+    },
+    "mega-menu-viewport": {
+      "base": {
+        "shadow": "{shadow.lg}",
+        "height": "viewport"
+      }
+    }
+  }
+}

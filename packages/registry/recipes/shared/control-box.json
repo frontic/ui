@@ -1,0 +1,9 @@
+{
+  "control-box": {
+    "border": "{border.default}",
+    "borderColor": "{colors.input}",
+    "shadow": "{shadow.xs}",
+    "rounded": "{rounded.md}",
+    "typography": "{typography.small}"
+  }
+}

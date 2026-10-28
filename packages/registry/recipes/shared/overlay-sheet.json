@@ -1,0 +1,7 @@
+{
+  "overlay-sheet": {
+    "backgroundColor": "{colors.background}",
+    "shadow": "{shadow.md}",
+    "typography": "{typography.small}"
+  }
+}

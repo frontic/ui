@@ -1,0 +1,138 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Swatch",
+  "description": "A colour or picture of one product option, such as a jacket's colour, that the shopper presses to choose it; can be marked unavailable.",
+  "recipes": {
+    "swatch": {
+      "composes": ["focus-ring", "disabled"],
+      "base": {
+        "border": "{border.default}",
+        "borderColor": "{colors.border}",
+        "display": "inline-flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "hover": {
+          "borderColor": "{colors.muted-foreground}",
+          "textColor": "{colors.foreground}"
+        },
+        "checked": {
+          "borderColor": "{colors.foreground}"
+        }
+      },
+      "variants": {
+        "size": {
+          "xs": {
+            "size": "{spacing.6}",
+            "typography": "{typography.ui}"
+          },
+          "sm": {
+            "size": "{spacing.12}",
+            "@md": {
+              "size": "{spacing.9}"
+            },
+            "typography": "{typography.ui}"
+          },
+          "md": {
+            "size": "{spacing.14}",
+            "@md": {
+              "size": "{spacing.12}"
+            },
+            "typography": "{typography.ui}"
+          },
+          "lg": {
+            "size": "{spacing.16}",
+            "typography": "{typography.lead}",
+            "fontWeight": "medium"
+          }
+        },
+        "shape": {
+          "default": {
+            "rounded": "{rounded.md}"
+          },
+          "pill": {
+            "rounded": "{rounded.full}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md",
+        "shape": "default"
+      }
+    },
+    "swatch-fallback": {
+      "base": {
+        "border": "{border.frame}",
+        "borderColor": "{colors.background}"
+      },
+      "variants": {
+        "shape": {
+          "default": {
+            "rounded": "{rounded.md}"
+          },
+          "pill": {
+            "rounded": "{rounded.full}"
+          }
+        },
+        "size": {
+          "xs": {
+            "border": "{border.frame-thin}"
+          },
+          "sm": {},
+          "md": {},
+          "lg": {}
+        }
+      },
+      "defaults": {
+        "shape": "default"
+      }
+    },
+    "swatch-image": {
+      "base": {
+        "border": "{border.frame}",
+        "borderColor": "{colors.background}",
+        "width": "full",
+        "height": "full"
+      },
+      "variants": {
+        "shape": {
+          "default": {
+            "rounded": "{rounded.md}"
+          },
+          "pill": {
+            "rounded": "{rounded.full}"
+          }
+        },
+        "size": {
+          "xs": {
+            "border": "{border.frame-thin}"
+          },
+          "sm": {},
+          "md": {},
+          "lg": {}
+        }
+      },
+      "defaults": {
+        "shape": "default"
+      }
+    },
+    "swatch-label": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.micro}",
+        "lineHeight": "tight",
+        "fontWeight": "normal"
+      }
+    },
+    "swatch-strike": {
+      "base": {
+        "textColor": "{colors.foreground}"
+      }
+    },
+    "swatch-strike-halo": {
+      "base": {
+        "textColor": "{colors.background}",
+        "decorative": true
+      }
+    }
+  }
+}

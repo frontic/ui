@@ -1,0 +1,31 @@
+DeliverySlot > [1] | E | display: flex
+DeliverySlot > [1] | E | flex-direction: column
+DeliverySlot > [1] | E | gap: 24px
+DeliverySlot > [2] | E | width: 100%
+DeliverySlot > [3] | E | align-self: center
+DeliverySlot > [4] | E | width: 100%
+DeliverySlot > [5] | E | flex: 1
+DeliverySlot > [6] | E | align-items: stretch
+DeliverySlot > [6] | E | flex-direction: column
+DeliverySlot > [6] | E | gap: 16px
+DeliverySlot > [7] | E | align-items: center
+DeliverySlot > [7] | E | display: flex
+DeliverySlot > [7] | E | gap: 8px
+DeliverySlot > [7] | E | justify-content: space-between
+DeliverySlot > [8] | E | width: 100%
+delivery-slot-price | E | color: #12883e
+delivery-slot-price | E | font-family: 'Inter Variable', Inter, sans-serif
+delivery-slot-price | E | font-feature-settings: normal
+delivery-slot-price | E | font-size: 14px
+delivery-slot-price | E | font-variation-settings: normal
+delivery-slot-price | E | font-weight: 500
+delivery-slot-price | E | letter-spacing: normal
+delivery-slot-price | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43

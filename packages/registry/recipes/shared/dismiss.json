@@ -1,0 +1,8 @@
+{
+  "dismiss": {
+    "rounded": "{rounded.full}",
+    "hover": {
+      "backgroundColor": "{colors.muted-foreground/20}"
+    }
+  }
+}

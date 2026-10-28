@@ -1,0 +1,22 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Cart Item Minimal",
+  "description": "Read-only cart lines with a small image, the variant, quantity and price, such as in an order review.",
+  "categories": ["cart"],
+  "recipes": {
+    "cart-item-minimal": {
+      "composes": ["line-title", "meta"],
+      "base": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "{spacing.3}"
+      }
+    },
+    "cart-item-minimal-image": {
+      "base": {
+        "extends": "thumbnail",
+        "size": "{spacing.12}"
+      }
+    }
+  }
+}

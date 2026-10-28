@@ -1,0 +1,19 @@
+progress | E | align-items: center
+progress | E | background-color: #f4f4f5
+progress | E | border-bottom-left-radius: 0px
+progress | E | border-bottom-right-radius: 0px
+progress | E | border-top-left-radius: 0px
+progress | E | border-top-right-radius: 0px
+progress | E | display: flex
+progress | E | height: 2px
+progress | E | overflow-x: hidden
+progress | E | position: relative
+progress | E | width: 100%
+progress-indicator | E | background-color: #7008e7
+progress-indicator | E | flex: 1
+progress-indicator | E | height: 100%
+progress-indicator | E | transition-duration: 150ms
+progress-indicator | E | transition-property: all
+progress-indicator | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+progress-indicator | E | width: 100%
+progress-indicator | E:where([data-state="indeterminate"]) | animation: progress-indeterminate 1.5s ease-in-out infinite

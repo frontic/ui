@@ -1,0 +1,34 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Cart Item Detailed",
+  "description": "Cart lines with large thumbnails, the line total with any saving, quantity buttons and a remove action.",
+  "categories": ["cart"],
+  "recipes": {
+    "cart-item-detailed": {
+      "composes": ["section-title", "meta", "quiet-action"],
+      "base": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "{spacing.5}"
+      }
+    },
+    "cart-item-detailed-image": {
+      "base": {
+        "extends": "thumbnail",
+        "size": "{spacing.24}"
+      }
+    },
+    "cart-item-detailed-line": {
+      "base": {
+        "gap": "{spacing.4}"
+      }
+    },
+    "cart-item-detailed-quantity": {
+      "base": {
+        "typography": "{typography.small}",
+        "fontWeight": "medium",
+        "width": "{spacing.8}"
+      }
+    }
+  }
+}

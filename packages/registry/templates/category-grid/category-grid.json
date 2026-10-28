@@ -1,0 +1,36 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Category Grid",
+  "description": "Category page under the shop header: breadcrumb, title and description, result count and sort, a filter sidebar that becomes a sheet on small screens, a product gallery grid and pagination.",
+  "categories": ["product"],
+  "recipes": {
+    "category-grid": {
+      "composes": ["hint", "clear-link", "focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "category-grid-description": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.body}"
+      }
+    },
+    "category-grid-dismiss": {
+      "composes": ["focus-ring"],
+      "base": {
+        "bleedEnd": "{spacing.1}",
+        "marginStart": "{spacing.0.5}",
+        "extends": "dismiss",
+        "size": "{spacing.4}"
+      }
+    },
+    "category-grid-heading": {
+      "base": {
+        "extends": "heading",
+        "typography": "{typography.display}",
+        "fontWeight": "semibold"
+      }
+    }
+  }
+}

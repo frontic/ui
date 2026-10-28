@@ -1,0 +1,5 @@
+{
+  "$schema": "../item.schema.json",
+  "title": "Product",
+  "description": "A product and its colour or style siblings, the shape every product card takes."
+}

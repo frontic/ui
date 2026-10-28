@@ -1,0 +1,6 @@
+swatch-group | E | display: flex
+swatch-group | E | flex-direction: column [orientation=vertical]
+swatch-group | E | flex-wrap: nowrap [orientation=vertical]
+swatch-group | E | flex-wrap: wrap [orientation=horizontal]
+swatch-group | E | gap: 12px [phone]
+swatch-group | E | gap: 8px [desktop]

@@ -1,0 +1,34 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Reviews",
+  "description": "Review summary card with the average rating, a star distribution, the latest reviews with verified-purchase marks, and read-all and write-a-review actions.",
+  "categories": ["review"],
+  "recipes": {
+    "reviews": {
+      "composes": ["heading", "meta", "line-title", "hint"]
+    },
+    "reviews-count": {
+      "base": {
+        "extends": "meta",
+        "width": "{spacing.7}",
+        "textAlign": "end"
+      }
+    },
+    "reviews-stars": {
+      "base": {
+        "extends": "meta",
+        "width": "{spacing.3}"
+      }
+    },
+    "reviews-verified": {
+      "base": {
+        "extends": "note-positive",
+        "typography": "{typography.caption}",
+        "gap": "{spacing.1}",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    }
+  }
+}

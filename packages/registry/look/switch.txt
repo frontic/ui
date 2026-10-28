@@ -1,0 +1,69 @@
+switch | E | align-items: center
+switch | E | background-color: #a1a1aa
+switch | E | border-bottom-color: color-mix(in oklab, #a1a1aa 50%, transparent)
+switch | E | border-bottom-left-radius: 0px
+switch | E | border-bottom-right-radius: 0px
+switch | E | border-bottom-style: solid
+switch | E | border-bottom-width: 1px
+switch | E | border-left-color: color-mix(in oklab, #a1a1aa 50%, transparent)
+switch | E | border-left-style: solid
+switch | E | border-left-width: 1px
+switch | E | border-right-color: color-mix(in oklab, #a1a1aa 50%, transparent)
+switch | E | border-right-style: solid
+switch | E | border-right-width: 1px
+switch | E | border-top-color: color-mix(in oklab, #a1a1aa 50%, transparent)
+switch | E | border-top-left-radius: 0px
+switch | E | border-top-right-radius: 0px
+switch | E | border-top-style: solid
+switch | E | border-top-width: 1px
+switch | E | display: inline-flex
+switch | E | flex-shrink: 0
+switch | E | height: 14px [size=sm]
+switch | E | height: 18px [size=md]
+switch | E | outline-style: none
+switch | E | position: relative
+switch | E | transition-duration: 150ms
+switch | E | transition-property: all
+switch | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+switch | E | width: 25px [size=sm]
+switch | E | width: 33px [size=md]
+switch | E::after | content: ""
+switch | E::after | inset-block: -8px
+switch | E::after | inset-inline: -12px
+switch | E::after | position: absolute
+switch | E:checked | background-color: #7008e7
+switch | E:checked | border-bottom-color: #7008e7
+switch | E:checked | border-left-color: #7008e7
+switch | E:checked | border-right-color: #7008e7
+switch | E:checked | border-top-color: #7008e7
+switch | E:disabled | cursor: not-allowed
+switch | E:disabled | opacity: 0.5
+switch | E:focus | border-bottom-color: #71717a
+switch | E:focus | border-left-color: #71717a
+switch | E:focus | border-right-color: #71717a
+switch | E:focus | border-top-color: #71717a
+switch | E:focus | ring: 2px #71717a
+switch | E:invalid | border-bottom-color: #c70009
+switch | E:invalid | border-left-color: #c70009
+switch | E:invalid | border-right-color: #c70009
+switch | E:invalid | border-top-color: #c70009
+switch | E:invalid | ring: 2px color-mix(in oklab, #c70009 20%, transparent)
+switch | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1
+switch-thumb | E | background-color: #ffffff
+switch-thumb | E | border-bottom-left-radius: 0px
+switch-thumb | E | border-bottom-right-radius: 0px
+switch-thumb | E | border-top-left-radius: 0px
+switch-thumb | E | border-top-right-radius: 0px
+switch-thumb | E | display: block
+switch-thumb | E | height: 10px [size=sm]
+switch-thumb | E | height: 14px [size=md]
+switch-thumb | E | margin-left: 2px
+switch-thumb | E | pointer-events: none
+switch-thumb | E | transition-duration: 150ms
+switch-thumb | E | transition-property: transform, translate, scale, rotate
+switch-thumb | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+switch-thumb | E | translate: -1px
+switch-thumb | E | width: 10px [size=sm]
+switch-thumb | E | width: 14px [size=md]
+switch-thumb | E:checked | translate: 100%
+switch-thumb | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1

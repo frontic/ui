@@ -1,0 +1,14 @@
+ShippingAddress > [1] | E | grid-column-start: 2
+ShippingAddress > [1] | E | grid-row-start: 1
+ShippingAddress > [1] | E | grid-row: span 2 / span 2
+ShippingAddress > [1] | E | justify-self: flex-end
+ShippingAddress > [2] | E | display: grid
+ShippingAddress > [2] | E | gap: 16px
+ShippingAddress > [2] | E | grid-template-columns: repeat(2, minmax(0, 1fr))
+ShippingAddress > [3] | E | display: grid
+ShippingAddress > [3] | E | gap: 16px
+ShippingAddress > [3] | E | grid-template-columns: repeat(3, minmax(0, 1fr))
+ShippingAddress > [4] | E | grid-column: span 2 / span 2
+ShippingAddress > [5] | E | width: 100%
+ShippingAddress > [6] | E | width: 100%
+ShippingAddress > [7] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1

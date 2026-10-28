@@ -1,0 +1,61 @@
+badge | E ICON | height: 12px
+badge | E ICON | pointer-events: none
+badge | E ICON | width: 12px
+badge | E | align-items: center
+badge | E | background-color: #09090b [variant=price]
+badge | E | background-color: #12883e [variant=success]
+badge | E | background-color: #2563eb [variant=info,new]
+badge | E | background-color: #7008e7 [variant=primary]
+badge | E | background-color: #c70009 [variant=error]
+badge | E | background-color: #d97706 [variant=warning]
+badge | E | background-color: #e7000b [variant=promo,discount]
+badge | E | border-bottom-left-radius: 0px
+badge | E | border-bottom-right-radius: 0px
+badge | E | border-top-left-radius: 0px
+badge | E | border-top-right-radius: 0px
+badge | E | color: #09090b [variant=neutral,warning]
+badge | E | color: #f5f3ff [variant=primary]
+badge | E | color: #ffffff [variant=info,success,error,promo,discount,new,price]
+badge | E | display: inline-flex
+badge | E | flex-shrink: 0
+badge | E | font-family: 'Inter Variable', Inter, sans-serif
+badge | E | font-feature-settings: normal
+badge | E | font-size: 10px [size=sm]
+badge | E | font-size: 12px [size=md,lg]
+badge | E | font-variation-settings: normal
+badge | E | font-weight: 600
+badge | E | gap: 6px
+badge | E | justify-content: center
+badge | E | letter-spacing: 0.1em
+badge | E | line-height: 1.33
+badge | E | outline-style: none
+badge | E | overflow: hidden
+badge | E | padding-bottom: 0px [variant=neutral]
+badge | E | padding-bottom: 2px [size=sm variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-bottom: 4px [size=md variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-bottom: 6px [size=lg variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-left: 0px [variant=neutral]
+badge | E | padding-left: 10px [size=md variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-left: 12px [size=lg variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-left: 8px [size=sm variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-right: 0px [variant=neutral]
+badge | E | padding-right: 10px [size=md variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-right: 12px [size=lg variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-right: 8px [size=sm variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-top: 0px [variant=neutral]
+badge | E | padding-top: 2px [size=sm variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-top: 4px [size=md variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | padding-top: 6px [size=lg variant=primary,info,success,warning,error,promo,discount,new,price]
+badge | E | text-transform: uppercase
+badge | E | transition-duration: 150ms
+badge | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+badge | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+badge | E | white-space: nowrap
+badge | E | width: fit-content
+badge | E:focus | border-bottom-color: #71717a
+badge | E:focus | border-left-color: #71717a
+badge | E:focus | border-right-color: #71717a
+badge | E:focus | border-top-color: #71717a
+badge | E:focus | ring: 3px #71717a [variant=neutral,primary,info,success,warning,promo,discount,new,price]
+badge | E:focus | ring: 3px #c70009 [variant=error]
+badge | E:hover | color: color-mix(in oklab, #09090b 70%, transparent) [variant=neutral]

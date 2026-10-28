@@ -1,0 +1,8 @@
+{
+  "product-card-title-lg": {
+    "typography": "{typography.title}",
+    "fontWeight": "semibold",
+    "letterSpacing": "wider",
+    "textTransform": "uppercase"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Order Summary",
+  "description": "Order summary card with an item count, product thumbnails with variant and quantity, and a subtotal, shipping, tax and total breakdown.",
+  "categories": ["checkout"],
+  "recipes": {
+    "order-summary": {
+      "composes": ["line-title", "meta", "hint", "total"]
+    },
+    "order-summary-image": {
+      "base": {
+        "extends": "thumbnail",
+        "size": "{spacing.14}"
+      }
+    }
+  }
+}

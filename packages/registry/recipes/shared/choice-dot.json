@@ -1,0 +1,9 @@
+{
+  "choice-dot": {
+    "rounded": "{rounded.full}",
+    "checked": {
+      "borderColor": "{colors.foreground}",
+      "iconColor": "{colors.foreground}"
+    }
+  }
+}

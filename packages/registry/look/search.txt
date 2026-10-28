@@ -1,0 +1,321 @@
+# approximate: search-results
+SearchInput > [0] | E | align-items: center
+SearchInput > [0] | E | display: flex
+SearchInput > [0] | E | gap: 12px
+SearchOverlay > [0] | E | background-color: color-mix(in oklab, #09090b 20%, transparent)
+SearchOverlay > [0] | E | inset: 0px
+SearchOverlay > [0] | E | position: fixed
+SearchOverlay > [0] | E | z-index: 50
+SearchOverlay > [0] | E:closed | --tw-exit-opacity: 0
+SearchOverlay > [0] | E:closed | animation: exit .15s ease 0s 1 normal none
+SearchOverlay > [0] | E:open | --tw-enter-opacity: 0
+SearchOverlay > [0] | E:open | animation: enter .15s ease 0s 1 normal none
+search | E | position: relative
+search-cancel | E | display: none [desktop]
+search-cancel | E | flex-shrink: 0
+search-cancel | E | font-family: 'Inter Variable', Inter, sans-serif
+search-cancel | E | font-feature-settings: normal
+search-cancel | E | font-size: 14px
+search-cancel | E | font-variation-settings: normal
+search-cancel | E | font-weight: 400
+search-cancel | E | letter-spacing: normal
+search-cancel | E | line-height: 1.43
+search-cancel | E | outline-style: none
+search-cancel | E:focus | border-bottom-color: #71717a
+search-cancel | E:focus | border-left-color: #71717a
+search-cancel | E:focus | border-right-color: #71717a
+search-cancel | E:focus | border-top-color: #71717a
+search-cancel | E:focus | ring: 2px #71717a
+search-empty | E | color: #66666f
+search-empty | E | font-family: 'Inter Variable', Inter, sans-serif
+search-empty | E | font-feature-settings: normal
+search-empty | E | font-size: 14px
+search-empty | E | font-variation-settings: normal
+search-empty | E | font-weight: 400
+search-empty | E | letter-spacing: normal
+search-empty | E | line-height: 1.43
+search-empty | E | padding-bottom: 12px
+search-empty | E | padding-left: 12px
+search-empty | E | padding-right: 12px
+search-empty | E | padding-top: 12px
+search-group > [0] | E | color: #66666f
+search-group > [0] | E | font-family: 'Inter Variable', Inter, sans-serif
+search-group > [0] | E | font-feature-settings: normal
+search-group > [0] | E | font-size: 12px
+search-group > [0] | E | font-variation-settings: normal
+search-group > [0] | E | font-weight: 600
+search-group > [0] | E | letter-spacing: 0.05em
+search-group > [0] | E | line-height: 1.33
+search-group > [0] | E | padding-bottom: 8px
+search-group > [0] | E | padding-left: 12px
+search-group > [0] | E | padding-right: 12px
+search-group > [0] | E | padding-top: 8px
+search-group > [0] | E | text-transform: uppercase
+search-group | E | display: flex
+search-group | E | flex-direction: column
+search-group | E | padding-bottom: 4px
+search-group | E | padding-top: 4px
+search-highlight > [0] | E | background-color: transparent
+search-highlight > [0] | E | color: currentcolor
+search-highlight > [0] | E | font-weight: 600
+search-input > [0] | E | flex-shrink: 0
+search-input > [1] | E | background-color: transparent
+search-input > [1] | E | flex: 1
+search-input > [1] | E | min-width: 0px
+search-input > [1] | E | outline-style: none
+search-input | E ICON | height: 16px
+search-input | E ICON | width: 16px
+search-input | E | align-items: center
+search-input | E | background-color: #ffffff
+search-input | E | border-bottom-color: #a1a1aa
+search-input | E | border-bottom-left-radius: 6.4px
+search-input | E | border-bottom-right-radius: 6.4px
+search-input | E | border-bottom-style: solid
+search-input | E | border-bottom-width: 1px
+search-input | E | border-left-color: #a1a1aa
+search-input | E | border-left-style: solid
+search-input | E | border-left-width: 1px
+search-input | E | border-right-color: #a1a1aa
+search-input | E | border-right-style: solid
+search-input | E | border-right-width: 1px
+search-input | E | border-top-color: #a1a1aa
+search-input | E | border-top-left-radius: 6.4px
+search-input | E | border-top-right-radius: 6.4px
+search-input | E | border-top-style: solid
+search-input | E | border-top-width: 1px
+search-input | E | box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 0.05)
+search-input | E | display: flex
+search-input | E | flex: 1
+search-input | E | font-family: 'Inter Variable', Inter, sans-serif
+search-input | E | font-feature-settings: normal
+search-input | E | font-size: 14px
+search-input | E | font-variation-settings: normal
+search-input | E | font-weight: 400
+search-input | E | gap: 8px
+search-input | E | height: 40px
+search-input | E | letter-spacing: normal
+search-input | E | line-height: 1.43
+search-input | E | min-width: 0px
+search-input | E | padding-left: 12px
+search-input | E | padding-right: 12px
+search-input | E:focus | border-bottom-color: #71717a
+search-input | E:focus | border-left-color: #71717a
+search-input | E:focus | border-right-color: #71717a
+search-input | E:focus | border-top-color: #71717a
+search-input | E:focus | ring: 3px #71717a
+search-input-clear > [0] | E | height: 16px
+search-input-clear > [0] | E | width: 16px
+search-input-clear | E | align-items: center
+search-input-clear | E | display: flex
+search-input-clear | E | flex-shrink: 0
+search-input-clear | E | height: 20px
+search-input-clear | E | justify-content: center
+search-input-clear | E | opacity: 0.6
+search-input-clear | E | outline-style: none
+search-input-clear | E | width: 20px
+search-input-clear | E:focus | border-bottom-color: #71717a
+search-input-clear | E:focus | border-left-color: #71717a
+search-input-clear | E:focus | border-right-color: #71717a
+search-input-clear | E:focus | border-top-color: #71717a
+search-input-clear | E:focus | ring: 2px #71717a
+search-input-clear | E:hover | opacity: 1
+search-item | E ICON | flex-shrink: 0
+search-item | E ICON | height: 16px
+search-item | E ICON | width: 16px
+search-item | E | -webkit-user-select: none
+search-item | E | align-items: center
+search-item | E | border-bottom-left-radius: 0px
+search-item | E | border-bottom-right-radius: 0px
+search-item | E | border-top-left-radius: 0px
+search-item | E | border-top-right-radius: 0px
+search-item | E | cursor: default
+search-item | E | display: flex
+search-item | E | font-family: 'Inter Variable', Inter, sans-serif
+search-item | E | font-feature-settings: normal
+search-item | E | font-size: 14px
+search-item | E | font-variation-settings: normal
+search-item | E | font-weight: 400
+search-item | E | gap: 12px
+search-item | E | letter-spacing: normal
+search-item | E | line-height: 1.43
+search-item | E | outline-style: none
+search-item | E | padding-bottom: 8px
+search-item | E | padding-left: 12px
+search-item | E | padding-right: 12px
+search-item | E | padding-top: 8px
+search-item | E | user-select: none
+search-item | E:disabled | opacity: 0.5
+search-item | E:disabled | pointer-events: none
+search-item | E:highlighted | background-color: #f4f4f5
+search-item | E:highlighted | color: #18181b
+search-loading > [0] | E | align-items: center
+search-loading > [0] | E | display: flex
+search-loading > [0] | E | gap: 12px
+search-loading > [1] | E | flex-shrink: 0
+search-loading > [1] | E | height: 48px
+search-loading > [1] | E | width: 48px
+search-loading > [2] | E | display: flex
+search-loading > [2] | E | flex-direction: column
+search-loading > [2] | E | flex: 1
+search-loading > [2] | E | gap: 8px
+search-loading > [3] | E | height: 14px
+search-loading > [3] | E | width: calc(2 / 3 * 100%)
+search-loading > [4] | E | height: 12px
+search-loading > [4] | E | width: calc(1 / 3 * 100%)
+search-loading > [5] | E | color: #66666f
+search-loading > [5] | E | font-family: 'Inter Variable', Inter, sans-serif
+search-loading > [5] | E | font-feature-settings: normal
+search-loading > [5] | E | font-size: 14px
+search-loading > [5] | E | font-variation-settings: normal
+search-loading > [5] | E | font-weight: 400
+search-loading > [5] | E | letter-spacing: normal
+search-loading > [5] | E | line-height: 1.43
+search-loading | E | display: flex
+search-loading | E | flex-direction: column
+search-loading | E | gap: 12px
+search-loading | E | padding-bottom: 8px
+search-loading | E | padding-left: 12px
+search-loading | E | padding-right: 12px
+search-loading | E | padding-top: 8px
+search-overlay > [0] | E | border-bottom-width: 0
+search-overlay > [0] | E | border-left-width: 0
+search-overlay > [0] | E | border-right-width: 0
+search-overlay > [0] | E | border-top-width: 0
+search-overlay > [0] | E | clip-path: inset(50%)
+search-overlay > [0] | E | height: 1px
+search-overlay > [0] | E | margin-bottom: -1px
+search-overlay > [0] | E | margin-left: -1px
+search-overlay > [0] | E | margin-right: -1px
+search-overlay > [0] | E | margin-top: -1px
+search-overlay > [0] | E | overflow: hidden
+search-overlay > [0] | E | padding-bottom: 0
+search-overlay > [0] | E | padding-left: 0
+search-overlay > [0] | E | padding-right: 0
+search-overlay > [0] | E | padding-top: 0
+search-overlay > [0] | E | position: absolute
+search-overlay > [0] | E | white-space: nowrap
+search-overlay > [0] | E | width: 1px
+search-overlay | E | background-color: #ffffff
+search-overlay | E | border-bottom-left-radius: 0px
+search-overlay | E | border-bottom-right-radius: 0px
+search-overlay | E | border-top-left-radius: 0px
+search-overlay | E | border-top-right-radius: 0px
+search-overlay | E | bottom: auto [desktop]
+search-overlay | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+search-overlay | E | display: flex
+search-overlay | E | flex-direction: column
+search-overlay | E | font-family: 'Inter Variable', Inter, sans-serif
+search-overlay | E | font-feature-settings: normal
+search-overlay | E | font-size: 14px
+search-overlay | E | font-variation-settings: normal
+search-overlay | E | font-weight: 400
+search-overlay | E | gap: 8px
+search-overlay | E | inset-inline: 16px [desktop]
+search-overlay | E | inset: 0px
+search-overlay | E | letter-spacing: normal
+search-overlay | E | line-height: 1.43
+search-overlay | E | margin-left: auto [desktop]
+search-overlay | E | margin-right: auto [desktop]
+search-overlay | E | max-height: 640px [desktop]
+search-overlay | E | max-width: 672px [desktop]
+search-overlay | E | outline-color: color-mix(in oklab, #09090b 10%, transparent)
+search-overlay | E | outline-offset: 0px
+search-overlay | E | outline-style: none
+search-overlay | E | outline-width: 1px
+search-overlay | E | padding-bottom: 16px
+search-overlay | E | padding-left: 16px
+search-overlay | E | padding-right: 16px
+search-overlay | E | padding-top: 16px
+search-overlay | E | pointer-events: auto
+search-overlay | E | position: fixed
+search-overlay | E | top: 64px [desktop]
+search-overlay-frame | E | container-type: inline-size
+search-overlay-frame | E | inset: 0px
+search-overlay-frame | E | pointer-events: none
+search-overlay-frame | E | position: fixed
+search-overlay-frame | E | transition-duration: 100ms
+search-overlay-frame | E | z-index: 50
+search-overlay-frame | E:closed | --tw-exit-opacity: 0
+search-overlay-frame | E:closed | animation: exit 100ms ease 0s 1 normal none
+search-overlay-frame | E:open | --tw-enter-opacity: 0
+search-overlay-frame | E:open | animation: enter 100ms ease 0s 1 normal none
+search-query > [0] | E | min-width: 0px
+search-query > [0] | E | overflow: hidden
+search-query > [0] | E | text-overflow: ellipsis
+search-query > [0] | E | white-space: nowrap
+search-query > [1] | E | font-weight: 600
+search-query | E ICON | flex-shrink: 0
+search-query | E ICON | height: 16px
+search-query | E ICON | width: 16px
+search-query | E | -webkit-user-select: none
+search-query | E | align-items: center
+search-query | E | border-bottom-left-radius: 0px
+search-query | E | border-bottom-right-radius: 0px
+search-query | E | border-top-left-radius: 0px
+search-query | E | border-top-right-radius: 0px
+search-query | E | cursor: default
+search-query | E | display: flex
+search-query | E | font-family: 'Inter Variable', Inter, sans-serif
+search-query | E | font-feature-settings: normal
+search-query | E | font-size: 14px
+search-query | E | font-variation-settings: normal
+search-query | E | font-weight: 400
+search-query | E | gap: 8px
+search-query | E | letter-spacing: normal
+search-query | E | line-height: 1.43
+search-query | E | outline-style: none
+search-query | E | padding-bottom: 10px
+search-query | E | padding-left: 12px
+search-query | E | padding-right: 12px
+search-query | E | padding-top: 10px
+search-query | E | user-select: none
+search-query | E:highlighted | background-color: #f4f4f5
+search-query | E:highlighted | color: #18181b
+search-results > [0] | E | overflow-y: auto
+search-results > [0] | E | overscroll-behavior: contain
+search-results > [0] | E | padding-bottom: 6px
+search-results > [0] | E | padding-top: 6px
+search-results > [0] | E | scrollbar-width: none
+search-results > [0] | E::-webkit-scrollbar | display: none
+search-results | E | overflow: hidden
+search-tag | E | -webkit-user-select: none
+search-tag | E | align-items: center
+search-tag | E | background-color: transparent
+search-tag | E | border-bottom-color: #a1a1aa
+search-tag | E | border-bottom-left-radius: 0px
+search-tag | E | border-bottom-right-radius: 0px
+search-tag | E | border-bottom-style: solid
+search-tag | E | border-bottom-width: 1px
+search-tag | E | border-left-color: #a1a1aa
+search-tag | E | border-left-style: solid
+search-tag | E | border-left-width: 1px
+search-tag | E | border-right-color: #a1a1aa
+search-tag | E | border-right-style: solid
+search-tag | E | border-right-width: 1px
+search-tag | E | border-top-color: #a1a1aa
+search-tag | E | border-top-left-radius: 0px
+search-tag | E | border-top-right-radius: 0px
+search-tag | E | border-top-style: solid
+search-tag | E | border-top-width: 1px
+search-tag | E | cursor: default
+search-tag | E | display: inline-flex
+search-tag | E | flex-shrink: 0
+search-tag | E | font-family: 'Inter Variable', Inter, sans-serif
+search-tag | E | font-feature-settings: normal
+search-tag | E | font-size: 14px
+search-tag | E | font-variation-settings: normal
+search-tag | E | font-weight: 400
+search-tag | E | height: 32px
+search-tag | E | letter-spacing: normal
+search-tag | E | line-height: 1.43
+search-tag | E | outline-style: none
+search-tag | E | padding-left: 12px
+search-tag | E | padding-right: 12px
+search-tag | E | user-select: none
+search-tag | E | white-space: nowrap
+search-tag | E:highlighted | background-color: #f4f4f5
+search-tag | E:highlighted | border-bottom-color: #09090b
+search-tag | E:highlighted | border-left-color: #09090b
+search-tag | E:highlighted | border-right-color: #09090b
+search-tag | E:highlighted | border-top-color: #09090b
+search-tag | E:hover | background-color: #f4f4f5

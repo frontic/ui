@@ -1,0 +1,126 @@
+avatar | E | -webkit-user-select: none
+avatar | E | border-bottom-left-radius: 9999px
+avatar | E | border-bottom-right-radius: 9999px
+avatar | E | border-top-left-radius: 9999px
+avatar | E | border-top-right-radius: 9999px
+avatar | E | display: flex
+avatar | E | flex-shrink: 0
+avatar | E | height: 24px [size=sm]
+avatar | E | height: 32px [size=md]
+avatar | E | height: 40px [size=lg]
+avatar | E | position: relative
+avatar | E | ring: 2px #ffffff
+avatar | E | user-select: none
+avatar | E | width: 24px [size=sm]
+avatar | E | width: 32px [size=md]
+avatar | E | width: 40px [size=lg]
+avatar | E::after | border-bottom-color: #e4e4e7
+avatar | E::after | border-bottom-left-radius: 9999px
+avatar | E::after | border-bottom-right-radius: 9999px
+avatar | E::after | border-bottom-style: solid
+avatar | E::after | border-bottom-width: 1px
+avatar | E::after | border-left-color: #e4e4e7
+avatar | E::after | border-left-style: solid
+avatar | E::after | border-left-width: 1px
+avatar | E::after | border-right-color: #e4e4e7
+avatar | E::after | border-right-style: solid
+avatar | E::after | border-right-width: 1px
+avatar | E::after | border-top-color: #e4e4e7
+avatar | E::after | border-top-left-radius: 9999px
+avatar | E::after | border-top-right-radius: 9999px
+avatar | E::after | border-top-style: solid
+avatar | E::after | border-top-width: 1px
+avatar | E::after | content: ""
+avatar | E::after | inset: 0px
+avatar | E::after | mix-blend-mode: darken
+avatar | E::after | position: absolute
+avatar-badge | E > * | display: none [size=sm]
+avatar-badge | E ICON | height: 8px [size=md,lg]
+avatar-badge | E ICON | width: 8px [size=md,lg]
+avatar-badge | E | -webkit-user-select: none
+avatar-badge | E | align-items: center
+avatar-badge | E | background-blend-mode: color
+avatar-badge | E | background-color: #7008e7
+avatar-badge | E | border-bottom-left-radius: 9999px
+avatar-badge | E | border-bottom-right-radius: 9999px
+avatar-badge | E | border-top-left-radius: 9999px
+avatar-badge | E | border-top-right-radius: 9999px
+avatar-badge | E | bottom: 0px
+avatar-badge | E | color: #f5f3ff
+avatar-badge | E | display: inline-flex
+avatar-badge | E | height: 10px [size=md]
+avatar-badge | E | height: 12px [size=lg]
+avatar-badge | E | height: 8px [size=sm]
+avatar-badge | E | inset-inline-end: 0px
+avatar-badge | E | justify-content: center
+avatar-badge | E | position: absolute
+avatar-badge | E | ring: 2px #ffffff
+avatar-badge | E | user-select: none
+avatar-badge | E | width: 10px [size=md]
+avatar-badge | E | width: 12px [size=lg]
+avatar-badge | E | width: 8px [size=sm]
+avatar-badge | E | z-index: 10
+avatar-fallback | E | align-items: center
+avatar-fallback | E | background-color: #f4f4f5
+avatar-fallback | E | border-bottom-left-radius: 9999px
+avatar-fallback | E | border-bottom-right-radius: 9999px
+avatar-fallback | E | border-top-left-radius: 9999px
+avatar-fallback | E | border-top-right-radius: 9999px
+avatar-fallback | E | color: #66666f
+avatar-fallback | E | display: flex
+avatar-fallback | E | font-family: 'Inter Variable', Inter, sans-serif
+avatar-fallback | E | font-feature-settings: normal
+avatar-fallback | E | font-size: 12px [size=sm]
+avatar-fallback | E | font-size: 14px [size=md,lg]
+avatar-fallback | E | font-variation-settings: normal
+avatar-fallback | E | font-weight: 400
+avatar-fallback | E | height: 100%
+avatar-fallback | E | justify-content: center
+avatar-fallback | E | letter-spacing: normal
+avatar-fallback | E | line-height: 1.33 [size=sm]
+avatar-fallback | E | line-height: 1.43 [size=md,lg]
+avatar-fallback | E | width: 100%
+avatar-group | :where(E > :not(:last-child)) | margin-left: calc(-8px * 0)
+avatar-group | :where(E > :not(:last-child)) | margin-right: calc(-8px * calc(1 - 0))
+avatar-group | E | display: flex
+avatar-group-count | E ICON | height: 12px [size=sm]
+avatar-group-count | E ICON | height: 16px [size=md]
+avatar-group-count | E ICON | height: 20px [size=lg]
+avatar-group-count | E ICON | width: 12px [size=sm]
+avatar-group-count | E ICON | width: 16px [size=md]
+avatar-group-count | E ICON | width: 20px [size=lg]
+avatar-group-count | E | align-items: center
+avatar-group-count | E | background-color: #f4f4f5
+avatar-group-count | E | border-bottom-left-radius: 9999px
+avatar-group-count | E | border-bottom-right-radius: 9999px
+avatar-group-count | E | border-top-left-radius: 9999px
+avatar-group-count | E | border-top-right-radius: 9999px
+avatar-group-count | E | color: #66666f
+avatar-group-count | E | display: flex
+avatar-group-count | E | flex-shrink: 0
+avatar-group-count | E | font-family: 'Inter Variable', Inter, sans-serif
+avatar-group-count | E | font-feature-settings: normal
+avatar-group-count | E | font-size: 12px [size=sm]
+avatar-group-count | E | font-size: 14px [size=md,lg]
+avatar-group-count | E | font-variation-settings: normal
+avatar-group-count | E | font-weight: 400
+avatar-group-count | E | height: 24px [size=sm]
+avatar-group-count | E | height: 32px [size=md]
+avatar-group-count | E | height: 40px [size=lg]
+avatar-group-count | E | justify-content: center
+avatar-group-count | E | letter-spacing: normal
+avatar-group-count | E | line-height: 1.33 [size=sm]
+avatar-group-count | E | line-height: 1.43 [size=md,lg]
+avatar-group-count | E | position: relative
+avatar-group-count | E | ring: 2px #ffffff
+avatar-group-count | E | width: 24px [size=sm]
+avatar-group-count | E | width: 32px [size=md]
+avatar-group-count | E | width: 40px [size=lg]
+avatar-image | E | aspect-ratio: 1 / 1
+avatar-image | E | border-bottom-left-radius: 9999px
+avatar-image | E | border-bottom-right-radius: 9999px
+avatar-image | E | border-top-left-radius: 9999px
+avatar-image | E | border-top-right-radius: 9999px
+avatar-image | E | height: 100%
+avatar-image | E | object-fit: cover
+avatar-image | E | width: 100%

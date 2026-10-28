@@ -1,0 +1,8 @@
+{
+  "menu-shortcut": {
+    "textColor": "{colors.muted-foreground}",
+    "typography": "{typography.caption}",
+    "fontWeight": "normal",
+    "letterSpacing": "widest"
+  }
+}

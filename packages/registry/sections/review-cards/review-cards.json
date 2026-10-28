@@ -1,0 +1,58 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Review Cards",
+  "description": "Review section with the average score, distribution bars, a write-a-review prompt, and dated reviews marked when the purchase is verified, or a note when there are none yet.",
+  "categories": ["review"],
+  "recipes": {
+    "review-cards": {
+      "composes": ["part-title-lg", "hint", "meta"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "review-cards-author": {
+      "base": {
+        "typography": "{typography.ui}",
+        "fontWeight": "bold"
+      }
+    },
+    "review-cards-average": {
+      "base": {
+        "extends": "page-title",
+        "typography": "{typography.display}"
+      }
+    },
+    "review-cards-content": {
+      "base": {
+        "marginTop": "{spacing.4}",
+        "extends": "copy-muted"
+      }
+    },
+    "review-cards-heading": {
+      "base": {
+        "extends": "heading",
+        "typography": "{typography.headline}",
+        "fontWeight": "bold",
+        "letterSpacing": "tight"
+      }
+    },
+    "review-cards-percent": {
+      "base": {
+        "typography": "{typography.small}",
+        "width": "{spacing.10}"
+      }
+    },
+    "review-cards-star": {
+      "base": {
+        "typography": "{typography.small}",
+        "fontWeight": "medium",
+        "width": "{spacing.3}"
+      }
+    },
+    "review-cards-summary": {
+      "base": {
+        "typography": "{typography.small}"
+      }
+    }
+  }
+}

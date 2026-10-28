@@ -1,0 +1,187 @@
+NavigationMenuViewport > [0] | E | display: flex
+NavigationMenuViewport > [0] | E | inset-inline-start: 0px
+NavigationMenuViewport > [0] | E | isolation: isolate
+NavigationMenuViewport > [0] | E | justify-content: center
+NavigationMenuViewport > [0] | E | position: absolute
+NavigationMenuViewport > [0] | E | top: 100%
+NavigationMenuViewport > [0] | E | z-index: 50
+navigation-menu | E | align-items: center
+navigation-menu | E | display: flex
+navigation-menu | E | flex: 1
+navigation-menu | E | justify-content: center
+navigation-menu | E | max-width: max-content
+navigation-menu | E | position: relative
+navigation-menu-content | E | background-color: #ffffff [surface=own]
+navigation-menu-content | E | border-bottom-left-radius: 0px [surface=own]
+navigation-menu-content | E | border-bottom-right-radius: 0px [surface=own]
+navigation-menu-content | E | border-top-left-radius: 0px [surface=own]
+navigation-menu-content | E | border-top-right-radius: 0px [surface=own]
+navigation-menu-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1) [surface=own]
+navigation-menu-content | E | color: #09090b [surface=own]
+navigation-menu-content | E | inset-inline-start: 0px
+navigation-menu-content | E | margin-top: 6px [surface=own]
+navigation-menu-content | E | overflow: hidden [surface=own]
+navigation-menu-content | E | padding-bottom: 10px
+navigation-menu-content | E | padding-left: 10px
+navigation-menu-content | E | padding-right: 12px
+navigation-menu-content | E | padding-top: 10px
+navigation-menu-content | E | position: absolute
+navigation-menu-content | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent) [surface=own]
+navigation-menu-content | E | top: 0px [surface=shared]
+navigation-menu-content | E | top: 100% [surface=own]
+navigation-menu-content | E | transition-duration: 300ms [surface=own]
+navigation-menu-content | E | width: max-content
+navigation-menu-content | E:closed | --tw-exit-opacity: 0 [surface=own]
+navigation-menu-content | E:closed | --tw-exit-scale: .95 [surface=own]
+navigation-menu-content | E:closed | animation: exit 300ms ease 0s 1 normal none [surface=own]
+navigation-menu-content | E:open | --tw-enter-opacity: 0 [surface=own]
+navigation-menu-content | E:open | --tw-enter-scale: .95 [surface=own]
+navigation-menu-content | E:open | animation: enter 300ms ease 0s 1 normal none [surface=own]
+navigation-menu-content | E:where([data-motion="from-end"]):where(:dir(ltr), [dir="ltr"], [dir="ltr"]*) | --tw-enter-translate-x: calc(52*4px)
+navigation-menu-content | E:where([data-motion="from-end"]):where(:dir(rtl), [dir="rtl"], [dir="rtl"]*) | --tw-enter-translate-x: calc(52*4px*-1)
+navigation-menu-content | E:where([data-motion="from-start"]):where(:dir(ltr), [dir="ltr"], [dir="ltr"]*) | --tw-enter-translate-x: calc(52*4px*-1)
+navigation-menu-content | E:where([data-motion="from-start"]):where(:dir(rtl), [dir="rtl"], [dir="rtl"]*) | --tw-enter-translate-x: calc(52*4px)
+navigation-menu-content | E:where([data-motion="to-end"]):where(:dir(ltr), [dir="ltr"], [dir="ltr"]*) | --tw-exit-translate-x: calc(52*4px)
+navigation-menu-content | E:where([data-motion="to-end"]):where(:dir(rtl), [dir="rtl"], [dir="rtl"]*) | --tw-exit-translate-x: calc(52*4px*-1)
+navigation-menu-content | E:where([data-motion="to-start"]):where(:dir(ltr), [dir="ltr"], [dir="ltr"]*) | --tw-exit-translate-x: calc(52*4px*-1)
+navigation-menu-content | E:where([data-motion="to-start"]):where(:dir(rtl), [dir="rtl"], [dir="rtl"]*) | --tw-exit-translate-x: calc(52*4px)
+navigation-menu-content | E:where([data-motion^="from-"]) | --tw-enter-opacity: 0
+navigation-menu-content | E:where([data-motion^="from-"]) | animation: enter .15s ease 0s 1 normal none [surface=shared]
+navigation-menu-content | E:where([data-motion^="from-"]) | animation: enter 300ms ease 0s 1 normal none [surface=own]
+navigation-menu-content | E:where([data-motion^="to-"]) | --tw-exit-opacity: 0
+navigation-menu-content | E:where([data-motion^="to-"]) | animation: exit .15s ease 0s 1 normal none [surface=shared]
+navigation-menu-content | E:where([data-motion^="to-"]) | animation: exit 300ms ease 0s 1 normal none [surface=own]
+navigation-menu-indicator > [0] | E | background-color: #e4e4e7
+navigation-menu-indicator > [0] | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+navigation-menu-indicator > [0] | E | height: 8px
+navigation-menu-indicator > [0] | E | position: relative
+navigation-menu-indicator > [0] | E | rotate: 45deg
+navigation-menu-indicator > [0] | E | top: calc(3 / 5 * 100%)
+navigation-menu-indicator > [0] | E | width: 8px
+navigation-menu-indicator | E | align-items: flex-end
+navigation-menu-indicator | E | display: flex
+navigation-menu-indicator | E | height: 6px
+navigation-menu-indicator | E | justify-content: center
+navigation-menu-indicator | E | left: 0px
+navigation-menu-indicator | E | overflow: hidden
+navigation-menu-indicator | E | position: absolute
+navigation-menu-indicator | E | top: 100%
+navigation-menu-indicator | E | transition-duration: 150ms
+navigation-menu-indicator | E | transition-property: transform, translate, scale, rotate
+navigation-menu-indicator | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+navigation-menu-indicator | E | translate: unset
+navigation-menu-indicator | E | z-index: 1
+navigation-menu-indicator | E:where([data-state="hidden"]) | --tw-exit-opacity: 0
+navigation-menu-indicator | E:where([data-state="hidden"]) | animation: exit .15s ease 0s 1 normal none
+navigation-menu-indicator | E:where([data-state="visible"]) | --tw-enter-opacity: 0
+navigation-menu-indicator | E:where([data-state="visible"]) | animation: enter .15s ease 0s 1 normal none
+navigation-menu-item | E | position: relative
+navigation-menu-link | E ICON | flex-shrink: 0
+navigation-menu-link | E ICON | height: 14px
+navigation-menu-link | E ICON | width: 14px
+navigation-menu-link | E | align-items: center
+navigation-menu-link | E | border-bottom-left-radius: 0px
+navigation-menu-link | E | border-bottom-right-radius: 0px
+navigation-menu-link | E | border-top-left-radius: 0px
+navigation-menu-link | E | border-top-right-radius: 0px
+navigation-menu-link | E | display: flex
+navigation-menu-link | E | font-family: 'Inter Variable', Inter, sans-serif
+navigation-menu-link | E | font-feature-settings: normal
+navigation-menu-link | E | font-size: 14px
+navigation-menu-link | E | font-variation-settings: normal
+navigation-menu-link | E | font-weight: 400 [place=panel]
+navigation-menu-link | E | font-weight: 500 [place=bar]
+navigation-menu-link | E | gap: 6px
+navigation-menu-link | E | height: 36px [place=bar]
+navigation-menu-link | E | letter-spacing: normal
+navigation-menu-link | E | line-height: 1.43
+navigation-menu-link | E | outline-style: none
+navigation-menu-link | E | padding-bottom: 10px [place=bar]
+navigation-menu-link | E | padding-bottom: 12px [place=panel]
+navigation-menu-link | E | padding-left: 12px [place=panel]
+navigation-menu-link | E | padding-left: 18px [place=bar]
+navigation-menu-link | E | padding-right: 12px [place=panel]
+navigation-menu-link | E | padding-right: 18px [place=bar]
+navigation-menu-link | E | padding-top: 10px [place=bar]
+navigation-menu-link | E | padding-top: 12px [place=panel]
+navigation-menu-link | E | transition-duration: 150ms
+navigation-menu-link | E | transition-property: all
+navigation-menu-link | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+navigation-menu-link | E:focus | background-color: #f4f4f5
+navigation-menu-link | E:focus | border-bottom-color: #71717a
+navigation-menu-link | E:focus | border-left-color: #71717a
+navigation-menu-link | E:focus | border-right-color: #71717a
+navigation-menu-link | E:focus | border-top-color: #71717a
+navigation-menu-link | E:focus | ring: 2px #71717a
+navigation-menu-link | E:hover | background-color: #f4f4f5
+navigation-menu-link | E[data-active] | background-color: color-mix(in oklab, #f4f4f5 50%, transparent)
+navigation-menu-list | E | align-items: center
+navigation-menu-list | E | display: flex
+navigation-menu-list | E | flex: 1
+navigation-menu-list | E | gap: 0px
+navigation-menu-list | E | justify-content: center
+navigation-menu-list | E | list-style-type: none
+navigation-menu-trigger > [0] | E | margin-left: 4px
+navigation-menu-trigger > [0] | E | position: relative
+navigation-menu-trigger > [0] | E | top: 1px
+navigation-menu-trigger > [0] | E | transition-duration: 300ms
+navigation-menu-trigger > [0] | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events
+navigation-menu-trigger > [0] | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+navigation-menu-trigger > [0] | E:is(:where(GROUP):open *) | rotate: 180deg
+navigation-menu-trigger | E ICON | height: 12px
+navigation-menu-trigger | E ICON | width: 12px
+navigation-menu-trigger | E | align-items: center
+navigation-menu-trigger | E | border-bottom-left-radius: 0px
+navigation-menu-trigger | E | border-bottom-right-radius: 0px
+navigation-menu-trigger | E | border-top-left-radius: 0px
+navigation-menu-trigger | E | border-top-right-radius: 0px
+navigation-menu-trigger | E | display: inline-flex
+navigation-menu-trigger | E | font-family: 'Inter Variable', Inter, sans-serif
+navigation-menu-trigger | E | font-feature-settings: normal
+navigation-menu-trigger | E | font-size: 14px
+navigation-menu-trigger | E | font-variation-settings: normal
+navigation-menu-trigger | E | font-weight: 500
+navigation-menu-trigger | E | height: 36px
+navigation-menu-trigger | E | justify-content: center
+navigation-menu-trigger | E | letter-spacing: normal
+navigation-menu-trigger | E | line-height: 1.43
+navigation-menu-trigger | E | outline-style: none
+navigation-menu-trigger | E | padding-bottom: 10px
+navigation-menu-trigger | E | padding-left: 18px
+navigation-menu-trigger | E | padding-right: 18px
+navigation-menu-trigger | E | padding-top: 10px
+navigation-menu-trigger | E | transition-duration: 150ms
+navigation-menu-trigger | E | transition-property: all
+navigation-menu-trigger | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+navigation-menu-trigger | E | width: max-content
+navigation-menu-trigger | E:disabled | opacity: 0.5
+navigation-menu-trigger | E:disabled | pointer-events: none
+navigation-menu-trigger | E:focus | background-color: #f4f4f5
+navigation-menu-trigger | E:focus | border-bottom-color: #71717a
+navigation-menu-trigger | E:focus | border-left-color: #71717a
+navigation-menu-trigger | E:focus | border-right-color: #71717a
+navigation-menu-trigger | E:focus | border-top-color: #71717a
+navigation-menu-trigger | E:focus | ring: 2px #71717a
+navigation-menu-trigger | E:hover | background-color: #f4f4f5
+navigation-menu-trigger | E:open | background-color: color-mix(in oklab, #f4f4f5 50%, transparent)
+navigation-menu-viewport | E | background-color: #ffffff
+navigation-menu-viewport | E | border-bottom-left-radius: 0px
+navigation-menu-viewport | E | border-bottom-right-radius: 0px
+navigation-menu-viewport | E | border-top-left-radius: 0px
+navigation-menu-viewport | E | border-top-right-radius: 0px
+navigation-menu-viewport | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+navigation-menu-viewport | E | color: #09090b
+navigation-menu-viewport | E | height: unset
+navigation-menu-viewport | E | margin-top: 6px
+navigation-menu-viewport | E | overflow: hidden
+navigation-menu-viewport | E | position: relative
+navigation-menu-viewport | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent)
+navigation-menu-viewport | E | transform-origin: top
+navigation-menu-viewport | E | transition-duration: 200ms
+navigation-menu-viewport | E | transition-property: all
+navigation-menu-viewport | E | transition-timing-function: cubic-bezier(0, 0, 0.2, 1)
+navigation-menu-viewport | E | width: unset
+navigation-menu-viewport | E:closed | --tw-exit-scale: .9
+navigation-menu-viewport | E:closed | animation: exit 200ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none
+navigation-menu-viewport | E:open | --tw-enter-scale: .9
+navigation-menu-viewport | E:open | animation: enter 200ms cubic-bezier(0, 0, 0.2, 1) 0s 1 normal none

@@ -1,0 +1,91 @@
+CartSummary > [10] | E | align-items: baseline
+CartSummary > [10] | E | display: flex
+CartSummary > [10] | E | justify-content: space-between
+CartSummary > [11] | E | display: flex
+CartSummary > [11] | E | flex-direction: column
+CartSummary > [12] | E | width: 100%
+CartSummary > [1] | E | grid-column-start: 2
+CartSummary > [1] | E | grid-row-start: 1
+CartSummary > [1] | E | grid-row: span 2 / span 2
+CartSummary > [1] | E | justify-self: flex-end
+CartSummary > [2] | E | flex-wrap: nowrap
+CartSummary > [2] | E | padding-left: 0px
+CartSummary > [2] | E | padding-right: 0px
+CartSummary > [3] | E | min-width: 0px
+CartSummary > [4] | E | outline-style: none
+CartSummary > [4] | E:focus | border-bottom-color: #71717a
+CartSummary > [4] | E:focus | border-left-color: #71717a
+CartSummary > [4] | E:focus | border-right-color: #71717a
+CartSummary > [4] | E:focus | border-top-color: #71717a
+CartSummary > [4] | E:focus | ring: 2px #71717a
+CartSummary > [4] | E:hover | text-decoration-line: underline
+CartSummary > [5] | E | align-items: stretch
+CartSummary > [5] | E | flex-direction: column
+CartSummary > [5] | E | gap: 16px
+CartSummary > [6] | E | display: flex
+CartSummary > [6] | E | flex-direction: column
+CartSummary > [6] | E | gap: 8px
+CartSummary > [7] | E | align-items: center
+CartSummary > [7] | E | display: flex
+CartSummary > [7] | E | justify-content: space-between
+CartSummary > [8] | E | align-items: center
+CartSummary > [8] | E | display: flex
+CartSummary > [8] | E | justify-content: space-between
+CartSummary > [9] | E | align-items: center
+CartSummary > [9] | E | display: flex
+CartSummary > [9] | E | justify-content: space-between
+heading | E | font-family: 'Inter Variable', Inter, sans-serif
+heading | E | font-feature-settings: normal
+heading | E | font-size: 24px
+heading | E | font-variation-settings: normal
+heading | E | font-weight: 600
+heading | E | letter-spacing: normal
+heading | E | line-height: 1.25
+hint #2 | E | color: #66666f
+hint #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #2 | E | font-feature-settings: normal
+hint #2 | E | font-size: 14px
+hint #2 | E | font-variation-settings: normal
+hint #2 | E | font-weight: 400
+hint #2 | E | letter-spacing: normal
+hint #2 | E | line-height: 1.43
+hint #3 | E | color: #66666f
+hint #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #3 | E | font-feature-settings: normal
+hint #3 | E | font-size: 14px
+hint #3 | E | font-variation-settings: normal
+hint #3 | E | font-weight: 400
+hint #3 | E | letter-spacing: normal
+hint #3 | E | line-height: 1.43
+hint #4 | E | color: #66666f
+hint #4 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #4 | E | font-feature-settings: normal
+hint #4 | E | font-size: 14px
+hint #4 | E | font-variation-settings: normal
+hint #4 | E | font-weight: 400
+hint #4 | E | letter-spacing: normal
+hint #4 | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+meta #2 | E | color: #66666f
+meta #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #2 | E | font-feature-settings: normal
+meta #2 | E | font-size: 12px
+meta #2 | E | font-variation-settings: normal
+meta #2 | E | font-weight: 400
+meta #2 | E | letter-spacing: normal
+meta #2 | E | line-height: 1.33
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33

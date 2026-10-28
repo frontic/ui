@@ -1,0 +1,27 @@
+<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
+<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
+<script lang="ts">
+/** Groups a trigger with the short hint shown when the user hovers or focuses it. */
+export default {}
+</script>
+
+<script setup lang="ts">
+import type { TooltipRootEmits, TooltipRootProps } from 'reka-ui'
+import { TooltipRoot, useForwardPropsEmits } from 'reka-ui'
+
+const props = defineProps<TooltipRootProps>()
+const emits = defineEmits<TooltipRootEmits>()
+
+const forwarded = useForwardPropsEmits(props, emits)
+
+defineSlots<{
+  /** Holds the trigger and the tooltip content; gets whether the tooltip is open. */
+  default?: (props: { open: boolean }) => unknown
+}>()
+</script>
+
+<template>
+  <TooltipRoot v-slot="slotProps" data-slot="tooltip" v-bind="forwarded">
+    <slot v-bind="slotProps" />
+  </TooltipRoot>
+</template>

@@ -1,0 +1,19 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Product Card Basic",
+  "description": "Product tile with sale and stock badges, rating, price, colour swatches that switch the image, and an add-to-cart button that confirms the add.",
+  "categories": ["product"],
+  "recipes": {
+    "product-card-basic": {
+      "composes": ["product-card-title", "product-card-lift", "focus-ring", "meta"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "product-card-basic-image": {
+      "base": {
+        "rounded": "{rounded.none}"
+      }
+    }
+  }
+}

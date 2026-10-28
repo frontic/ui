@@ -1,0 +1,24 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Filter Toolbar",
+  "description": "A product list with its filters as popovers in a toolbar above it, plus sorting and search.",
+  "categories": ["filter"],
+  "recipes": {
+    "filter-toolbar": {
+      "composes": ["title", "hint", "clear-link", "focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "filter-toolbar-bar": {
+      "base": {
+        "backgroundColor": "{colors.card}",
+        "border": "{border.default}",
+        "borderColor": "{colors.border}",
+        "rounded": "{rounded.lg}",
+        "padding": "{spacing.3}",
+        "gap": "{spacing.3}"
+      }
+    }
+  }
+}

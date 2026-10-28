@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "resolveJsonModule": true,
+    // Relaxed settings for vendored shadcn-vue code
+    // The upstream code has various type issues that are addressed in their build process
+    // but fail strict TypeScript checks. Since tsdown handles the build correctly,
+    // we disable strict mode checks for this package.
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noUncheckedIndexedAccess": false,
+    "noImplicitAny": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "tests"]
+}

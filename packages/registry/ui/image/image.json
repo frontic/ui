@@ -1,0 +1,38 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Image",
+  "description": "Shows an image with a loading effect and a placeholder while it loads, and a fallback when it fails, such as a product shot.",
+  "recipes": {
+    "image": {
+      "base": {
+        "rounded": "{rounded.none}",
+        "display": "inline-flex"
+      }
+    },
+    "image-fallback": {
+      "base": {
+        "backgroundColor": "{colors.muted}",
+        "display": "flex",
+        "size": "full",
+        "alignItems": "center",
+        "justifyContent": "center"
+      }
+    },
+    "image-loading": {
+      "base": {},
+      "variants": {
+        "effect": {
+          "skeleton": {
+            "backgroundColor": "{colors.muted}"
+          },
+          "blur": {
+            "backgroundColor": "{colors.muted/50}"
+          }
+        }
+      },
+      "defaults": {
+        "effect": "skeleton"
+      }
+    }
+  }
+}

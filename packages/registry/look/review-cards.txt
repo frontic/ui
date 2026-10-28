@@ -1,0 +1,208 @@
+hint #2 | E | color: #66666f
+hint #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #2 | E | font-feature-settings: normal
+hint #2 | E | font-size: 14px
+hint #2 | E | font-variation-settings: normal
+hint #2 | E | font-weight: 400
+hint #2 | E | letter-spacing: normal
+hint #2 | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+part-title-lg | E | font-family: 'Inter Variable', Inter, sans-serif
+part-title-lg | E | font-feature-settings: normal
+part-title-lg | E | font-size: 18px
+part-title-lg | E | font-variation-settings: normal
+part-title-lg | E | font-weight: 600
+part-title-lg | E | letter-spacing: 0.05em
+part-title-lg | E | line-height: 1.56
+part-title-lg | E | text-transform: uppercase
+review-cards > [0] | E | column-gap: 32px [desktop]
+review-cards > [0] | E | display: grid [desktop]
+review-cards > [0] | E | grid-template-columns: repeat(12, minmax(0, 1fr)) [desktop]
+review-cards > [0] | E | margin-left: auto
+review-cards > [0] | E | margin-right: auto
+review-cards > [0] | E | max-width: 1280px [desktop]
+review-cards > [0] | E | max-width: 672px [phone]
+review-cards > [0] | E | padding-bottom: 48px [phone]
+review-cards > [0] | E | padding-bottom: 64px [desktop]
+review-cards > [0] | E | padding-left: 16px [phone]
+review-cards > [0] | E | padding-left: 32px [desktop]
+review-cards > [0] | E | padding-right: 16px [phone]
+review-cards > [0] | E | padding-right: 32px [desktop]
+review-cards > [0] | E | padding-top: 48px [phone]
+review-cards > [0] | E | padding-top: 64px [desktop]
+review-cards > [10] | E | margin-top: 16px
+review-cards > [10] | E | width: 100%
+review-cards > [11] | E | grid-column-start: 6 [desktop]
+review-cards > [11] | E | grid-column: span 7 / span 7 [desktop]
+review-cards > [11] | E | margin-top: 0px [desktop]
+review-cards > [11] | E | margin-top: 48px [phone]
+review-cards > [12] | E | border-bottom-width: 0
+review-cards > [12] | E | border-left-width: 0
+review-cards > [12] | E | border-right-width: 0
+review-cards > [12] | E | border-top-width: 0
+review-cards > [12] | E | clip-path: inset(50%)
+review-cards > [12] | E | height: 1px
+review-cards > [12] | E | margin-bottom: -1px
+review-cards > [12] | E | margin-left: -1px
+review-cards > [12] | E | margin-right: -1px
+review-cards > [12] | E | margin-top: -1px
+review-cards > [12] | E | overflow: hidden
+review-cards > [12] | E | padding-bottom: 0
+review-cards > [12] | E | padding-left: 0
+review-cards > [12] | E | padding-right: 0
+review-cards > [12] | E | padding-top: 0
+review-cards > [12] | E | position: absolute
+review-cards > [12] | E | white-space: nowrap
+review-cards > [12] | E | width: 1px
+review-cards > [13] | E | margin-bottom: -32px
+review-cards > [13] | E | margin-top: -32px
+review-cards > [14] | E | padding-bottom: 32px
+review-cards > [14] | E | padding-top: 32px
+review-cards > [15] | E | align-items: center
+review-cards > [15] | E | display: flex
+review-cards > [15] | E | gap: 16px
+review-cards > [16] | E | display: flex
+review-cards > [16] | E | flex-direction: column
+review-cards > [16] | E | flex: 1
+review-cards > [16] | E | gap: 4px
+review-cards > [16] | E | min-width: 0px
+review-cards > [17] | E | align-items: baseline
+review-cards > [17] | E | column-gap: 12px
+review-cards > [17] | E | display: flex
+review-cards > [17] | E | flex-wrap: wrap
+review-cards > [17] | E | justify-content: space-between
+review-cards > [18] | E | align-items: center
+review-cards > [18] | E | display: flex
+review-cards > [18] | E | flex-wrap: wrap
+review-cards > [18] | E | gap: 8px
+review-cards > [1] | E | grid-column: span 4 / span 4 [desktop]
+review-cards > [2] | E | align-items: center
+review-cards > [2] | E | display: flex
+review-cards > [2] | E | gap: 16px
+review-cards > [2] | E | margin-top: 16px
+review-cards > [3] | E | margin-top: 24px
+review-cards > [4] | E | border-bottom-width: 0
+review-cards > [4] | E | border-left-width: 0
+review-cards > [4] | E | border-right-width: 0
+review-cards > [4] | E | border-top-width: 0
+review-cards > [4] | E | clip-path: inset(50%)
+review-cards > [4] | E | height: 1px
+review-cards > [4] | E | margin-bottom: -1px
+review-cards > [4] | E | margin-left: -1px
+review-cards > [4] | E | margin-right: -1px
+review-cards > [4] | E | margin-top: -1px
+review-cards > [4] | E | overflow: hidden
+review-cards > [4] | E | padding-bottom: 0
+review-cards > [4] | E | padding-left: 0
+review-cards > [4] | E | padding-right: 0
+review-cards > [4] | E | padding-top: 0
+review-cards > [4] | E | position: absolute
+review-cards > [4] | E | white-space: nowrap
+review-cards > [4] | E | width: 1px
+review-cards > [5] | E | display: flex
+review-cards > [5] | E | flex-direction: column
+review-cards > [5] | E | gap: 8px
+review-cards > [6] | E | align-items: center
+review-cards > [6] | E | display: flex
+review-cards > [6] | E | gap: 12px
+review-cards > [7] | E | align-items: center
+review-cards > [7] | E | display: flex
+review-cards > [7] | E | flex: 1
+review-cards > [7] | E | gap: 12px
+review-cards > [8] | E | margin-top: 40px
+review-cards > [9] | E | display: flex
+review-cards > [9] | E | flex-direction: column
+review-cards > [9] | E | gap: 4px
+review-cards | E | container-type: inline-size
+review-cards | E | width: 100%
+review-cards-author | E | font-family: 'Inter Variable', Inter, sans-serif
+review-cards-author | E | font-feature-settings: normal
+review-cards-author | E | font-size: 14px
+review-cards-author | E | font-variation-settings: normal
+review-cards-author | E | font-weight: 700
+review-cards-author | E | letter-spacing: normal
+review-cards-author | E | line-height: 1.43
+review-cards-average | E | font-family: 'Inter Variable', Inter, sans-serif
+review-cards-average | E | font-feature-settings: normal
+review-cards-average | E | font-size: 36px
+review-cards-average | E | font-variant-numeric: tabular-nums
+review-cards-average | E | font-variation-settings: normal
+review-cards-average | E | font-weight: 400
+review-cards-average | E | letter-spacing: normal
+review-cards-average | E | line-height: 40px
+review-cards-content | E | color: #66666f
+review-cards-content | E | font-family: 'Inter Variable', Inter, sans-serif
+review-cards-content | E | font-feature-settings: normal
+review-cards-content | E | font-size: 14px
+review-cards-content | E | font-variation-settings: normal
+review-cards-content | E | font-weight: 400
+review-cards-content | E | letter-spacing: normal
+review-cards-content | E | line-height: 24px
+review-cards-content | E | margin-top: 16px
+review-cards-heading | E | font-family: 'Inter Variable', Inter, sans-serif
+review-cards-heading | E | font-feature-settings: normal
+review-cards-heading | E | font-size: 24px
+review-cards-heading | E | font-variation-settings: normal
+review-cards-heading | E | font-weight: 700
+review-cards-heading | E | letter-spacing: -0.025em
+review-cards-heading | E | line-height: 32px
+review-cards-percent | E | font-family: 'Inter Variable', Inter, sans-serif
+review-cards-percent | E | font-feature-settings: normal
+review-cards-percent | E | font-size: 14px
+review-cards-percent | E | font-variant-numeric: tabular-nums
+review-cards-percent | E | font-variation-settings: normal
+review-cards-percent | E | font-weight: 400
+review-cards-percent | E | letter-spacing: normal
+review-cards-percent | E | line-height: 1.43
+review-cards-percent | E | text-align: end
+review-cards-percent | E | width: 40px
+review-cards-star > [0] | E | border-bottom-width: 0
+review-cards-star > [0] | E | border-left-width: 0
+review-cards-star > [0] | E | border-right-width: 0
+review-cards-star > [0] | E | border-top-width: 0
+review-cards-star > [0] | E | clip-path: inset(50%)
+review-cards-star > [0] | E | height: 1px
+review-cards-star > [0] | E | margin-bottom: -1px
+review-cards-star > [0] | E | margin-left: -1px
+review-cards-star > [0] | E | margin-right: -1px
+review-cards-star > [0] | E | margin-top: -1px
+review-cards-star > [0] | E | overflow: hidden
+review-cards-star > [0] | E | padding-bottom: 0
+review-cards-star > [0] | E | padding-left: 0
+review-cards-star > [0] | E | padding-right: 0
+review-cards-star > [0] | E | padding-top: 0
+review-cards-star > [0] | E | position: absolute
+review-cards-star > [0] | E | white-space: nowrap
+review-cards-star > [0] | E | width: 1px
+review-cards-star | E | flex-shrink: 0
+review-cards-star | E | font-family: 'Inter Variable', Inter, sans-serif
+review-cards-star | E | font-feature-settings: normal
+review-cards-star | E | font-size: 14px
+review-cards-star | E | font-variant-numeric: tabular-nums
+review-cards-star | E | font-variation-settings: normal
+review-cards-star | E | font-weight: 500
+review-cards-star | E | letter-spacing: normal
+review-cards-star | E | line-height: 1.43
+review-cards-star | E | width: 12px
+review-cards-summary | E | font-family: 'Inter Variable', Inter, sans-serif
+review-cards-summary | E | font-feature-settings: normal
+review-cards-summary | E | font-size: 14px
+review-cards-summary | E | font-variation-settings: normal
+review-cards-summary | E | font-weight: 400
+review-cards-summary | E | letter-spacing: normal
+review-cards-summary | E | line-height: 1.43

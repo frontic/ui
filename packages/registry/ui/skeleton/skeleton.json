@@ -1,0 +1,13 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Skeleton",
+  "description": "Placeholder block that pulses where content is still loading, sized and shaped by its classes; holds still for reduced motion.",
+  "recipes": {
+    "skeleton": {
+      "base": {
+        "backgroundColor": "{colors.muted}",
+        "rounded": "{rounded.none}"
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+rating | E | align-items: center
+rating | E | display: flex
+rating | E | gap: 2px
+rating-count #2 | E | color: #66666f
+rating-count #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+rating-count #2 | E | font-feature-settings: normal
+rating-count #2 | E | font-size: 12px
+rating-count #2 | E | font-variation-settings: normal
+rating-count #2 | E | font-weight: 400
+rating-count #2 | E | letter-spacing: normal
+rating-count #2 | E | line-height: 1.33
+rating-count | E | color: #66666f
+rating-count | E | font-family: 'Inter Variable', Inter, sans-serif
+rating-count | E | font-feature-settings: normal
+rating-count | E | font-size: 12px
+rating-count | E | font-variation-settings: normal
+rating-count | E | font-weight: 400
+rating-count | E | letter-spacing: normal
+rating-count | E | line-height: 1.33
+rating-dot | E | background-color: currentColor [fill=full]
+rating-dot | E | background-color: transparent [fill=empty]
+rating-dot | E | border-bottom-color: currentColor
+rating-dot | E | border-bottom-left-radius: 9999px
+rating-dot | E | border-bottom-right-radius: 9999px
+rating-dot | E | border-bottom-style: solid
+rating-dot | E | border-bottom-width: 1px
+rating-dot | E | border-left-color: currentColor
+rating-dot | E | border-left-style: solid
+rating-dot | E | border-left-width: 1px
+rating-dot | E | border-right-color: currentColor
+rating-dot | E | border-right-style: solid
+rating-dot | E | border-right-width: 1px
+rating-dot | E | border-top-color: currentColor
+rating-dot | E | border-top-left-radius: 9999px
+rating-dot | E | border-top-right-radius: 9999px
+rating-dot | E | border-top-style: solid
+rating-dot | E | border-top-width: 1px
+rating-dot | E | color: #66666f [fill=empty]
+rating-dot | E | color: #c27c00 [fill=full]
+rating-dot | E | display: inline-block
+rating-dot | E | flex-shrink: 0
+rating-dot | E | height: 12px [size=sm]
+rating-dot | E | height: 16px [size=md]
+rating-dot | E | height: 20px [size=lg]
+rating-dot | E | width: 12px [size=sm]
+rating-dot | E | width: 16px [size=md]
+rating-dot | E | width: 20px [size=lg]
+rating-icon | E | color: #66666f [fill=empty]
+rating-icon | E | color: #c27c00 [fill=full]
+rating-icon | E | fill: currentColor [fill=full]
+rating-icon | E | fill: transparent [fill=empty]
+rating-icon | E | flex-shrink: 0
+rating-icon | E | height: 16px [size=sm]
+rating-icon | E | height: 20px [size=md]
+rating-icon | E | height: 24px [size=lg]
+rating-icon | E | stroke: currentColor
+rating-icon | E | width: 16px [size=sm]
+rating-icon | E | width: 20px [size=md]
+rating-icon | E | width: 24px [size=lg]
+rating-meta #2 | E | align-items: baseline
+rating-meta #2 | E | display: flex
+rating-meta #2 | E | gap: 4px
+rating-meta #2 | E | margin-left: 8px
+rating-meta | E | align-items: baseline
+rating-meta | E | display: flex
+rating-meta | E | gap: 4px
+rating-meta | E | margin-left: 8px
+rating-partial | E | display: inline-flex
+rating-partial | E | flex-shrink: 0
+rating-partial | E | position: relative
+rating-partial-fill | E | display: flex
+rating-partial-fill | E | inset-block: 0px
+rating-partial-fill | E | inset-inline-start: 0px
+rating-partial-fill | E | overflow: hidden
+rating-partial-fill | E | position: absolute
+rating-stars | E | align-items: center
+rating-stars | E | display: flex
+rating-stars | E | gap: 2px [shape=star]
+rating-stars | E | gap: 4px [shape=dot]
+rating-value | E | color: #09090b
+rating-value | E | font-family: 'Inter Variable', Inter, sans-serif
+rating-value | E | font-feature-settings: normal
+rating-value | E | font-size: 14px
+rating-value | E | font-variation-settings: normal
+rating-value | E | font-weight: 400
+rating-value | E | letter-spacing: normal
+rating-value | E | line-height: 1.43

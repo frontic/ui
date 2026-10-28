@@ -1,0 +1,11 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Payment Method",
+  "description": "Payment card with a radio stack of methods; card number, expiry, security code and 3-D Secure code fields that open for card payment; and a pay button showing the total.",
+  "categories": ["checkout"],
+  "recipes": {
+    "payment-method": {
+      "composes": ["meta"]
+    }
+  }
+}

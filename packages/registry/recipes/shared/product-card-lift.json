@@ -1,0 +1,8 @@
+{
+  "product-card-lift": {
+    "hover": {
+      "shadow": "{shadow.md}",
+      "outlineColor": "{colors.foreground/15}"
+    }
+  }
+}

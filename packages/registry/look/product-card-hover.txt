@@ -1,0 +1,74 @@
+ProductCardHover > [0] | E | transition-duration: 150ms
+ProductCardHover > [0] | E | transition-property: box-shadow
+ProductCardHover > [0] | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+ProductCardHover > [0] | E:hover | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1) [surface=raised]
+ProductCardHover > [0] | E:hover | outline-color: color-mix(in oklab, #09090b 15%, transparent) [surface=raised]
+ProductCardHover > [1] | E | position: relative
+ProductCardHover > [2] | E | display: block
+ProductCardHover > [2] | E | position: relative
+ProductCardHover > [3] | E | align-items: flex-start
+ProductCardHover > [3] | E | display: flex
+ProductCardHover > [3] | E | flex-direction: column
+ProductCardHover > [3] | E | gap: 4px
+ProductCardHover > [3] | E | inset-inline-start: 12px
+ProductCardHover > [3] | E | position: absolute
+ProductCardHover > [3] | E | top: 12px
+ProductCardHover > [4] | E | bottom: 12px
+ProductCardHover > [4] | E | inset-inline: 12px
+ProductCardHover > [4] | E | opacity: 0
+ProductCardHover > [4] | E | position: absolute
+ProductCardHover > [4] | E | transition-duration: 300ms
+ProductCardHover > [4] | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events
+ProductCardHover > [4] | E | transition-timing-function: cubic-bezier(0, 0, 0.2, 1)
+ProductCardHover > [4] | E | translate: 0 8px
+ProductCardHover > [4] | E | z-index: 20
+ProductCardHover > [4] | E:is(:where(GROUP):focus *) | opacity: 1
+ProductCardHover > [4] | E:is(:where(GROUP):focus *) | translate: 0
+ProductCardHover > [4] | E:is(:where(GROUP):hover *) | opacity: 1
+ProductCardHover > [4] | E:is(:where(GROUP):hover *) | translate: 0
+ProductCardHover > [5] | E | width: 100%
+ProductCardHover > [6] | E | display: flex
+ProductCardHover > [6] | E | flex-direction: column
+ProductCardHover > [6] | E | gap: 8px
+ProductCardHover > [7] | E | align-items: flex-start
+ProductCardHover > [7] | E | display: flex
+ProductCardHover > [7] | E | gap: 12px
+ProductCardHover > [7] | E | justify-content: space-between
+ProductCardHover > [8] | E | flex-shrink: 0
+ProductCardHover > [9] | E | align-items: center
+ProductCardHover > [9] | E | display: flex
+ProductCardHover > [9] | E | gap: 8px
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+product-card-hover-image > [0] | E | height: 100%
+product-card-hover-image > [0] | E | transition-duration: 500ms
+product-card-hover-image > [0] | E | transition-property: transform, translate, scale, rotate
+product-card-hover-image > [0] | E | transition-timing-function: cubic-bezier(0, 0, 0.2, 1)
+product-card-hover-image > [0] | E | width: 100%
+product-card-hover-image > [0] | E:is(:where(GROUP):hover *) | scale: 105% 105%
+product-card-hover-image | E | border-bottom-left-radius: 0px
+product-card-hover-image | E | border-bottom-right-radius: 0px
+product-card-hover-image | E | border-top-left-radius: 0px
+product-card-hover-image | E | border-top-right-radius: 0px
+product-card-hover-image | E | overflow: hidden
+product-card-title > [0] | E | outline-style: none
+product-card-title > [0] | E:focus | border-bottom-color: #71717a
+product-card-title > [0] | E:focus | border-left-color: #71717a
+product-card-title > [0] | E:focus | border-right-color: #71717a
+product-card-title > [0] | E:focus | border-top-color: #71717a
+product-card-title > [0] | E:focus | ring: 2px #71717a
+product-card-title | E | font-family: 'Inter Variable', Inter, sans-serif
+product-card-title | E | font-feature-settings: normal
+product-card-title | E | font-size: 18px
+product-card-title | E | font-variation-settings: normal
+product-card-title | E | font-weight: 600
+product-card-title | E | letter-spacing: 0.05em
+product-card-title | E | line-height: 1.56
+product-card-title | E | text-transform: uppercase
+product-card-title | E:is(:where(GROUP):hover *) | text-decoration-line: underline [surface=bare]

@@ -1,0 +1,89 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Alert",
+  "description": "A short message in neutral, info, success, warning or error, with an optional icon, title, description and an action such as dismiss.",
+  "recipes": {
+    "alert": {
+      "base": {
+        "backgroundColor": "{colors.card}",
+        "textColor": "{colors.card-foreground}",
+        "border": "{border.default}",
+        "borderColor": "{colors.border}",
+        "rounded": "{rounded.none}",
+        "typography": "{typography.small}",
+        "gap": "{spacing.1}",
+        "paddingX": "{spacing.4}",
+        "paddingY": "{spacing.3}",
+        "display": "grid",
+        "width": "full",
+        "justifyContent": "start",
+        "textAlign": "start",
+        "icon": {
+          "size": "{spacing.4}"
+        },
+        "after": {
+          "borderStart": "{border.focus}",
+          "borderColor": "{colors.foreground}"
+        }
+      },
+      "variants": {
+        "variant": {
+          "neutral": {},
+          "info": {
+            "extends": "notice-info",
+            "after": {
+              "borderColor": "{colors.info}"
+            }
+          },
+          "success": {
+            "extends": "notice-positive",
+            "after": {
+              "borderColor": "{colors.positive}"
+            }
+          },
+          "warning": {
+            "extends": "notice-warning",
+            "after": {
+              "borderColor": "{colors.warning}"
+            }
+          },
+          "error": {
+            "extends": "notice-destructive",
+            "after": {
+              "borderColor": "{colors.destructive}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "variant": "neutral"
+      }
+    },
+    "alert-description": {
+      "base": {
+        "extends": ["part-description", "link-foreground"],
+        "typography": "{typography.small}"
+      },
+      "variants": {
+        "variant": {
+          "neutral": {
+            "textColor": "{colors.muted-foreground}"
+          },
+          "error": {
+            "textColor": "{colors.destructive/90}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "neutral"
+      }
+    },
+    "alert-title": {
+      "base": {
+        "extends": "link-foreground",
+        "typography": "{typography.ui}",
+        "fontWeight": "semibold"
+      }
+    }
+  }
+}

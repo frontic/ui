@@ -1,0 +1,10 @@
+{
+  "overlay": {
+    "backgroundColor": "{colors.background}",
+    "textColor": "{colors.foreground}",
+    "outline": "{ring.hairline}",
+    "outlineColor": "{colors.foreground/20}",
+    "rounded": "{rounded.none}",
+    "shadow": "{shadow.md}"
+  }
+}

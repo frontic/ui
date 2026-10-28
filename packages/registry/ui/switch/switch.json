@@ -1,0 +1,62 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Switch",
+  "description": "Turns one setting on or off the moment it is pressed, such as order emails; sits beside its label in a Field and mirrors in a right-to-left page.",
+  "recipes": {
+    "switch": {
+      "composes": ["focus-ring", "invalid", "disabled"],
+      "base": {
+        "backgroundColor": "{colors.input}",
+        "border": "{border.default}",
+        "borderColor": "{colors.input/50}",
+        "rounded": "{rounded.none}",
+        "display": "inline-flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "checked": {
+          "backgroundColor": "{colors.primary}",
+          "borderColor": "{colors.primary}"
+        }
+      },
+      "variants": {
+        "size": {
+          "md": {
+            "height": "{spacing.4.5}",
+            "width": "{spacing.8.25}"
+          },
+          "sm": {
+            "height": "{spacing.3.5}",
+            "width": "{spacing.6.25}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "switch-thumb": {
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "rounded": "{rounded.none}",
+        "marginStart": "{spacing.0.5}",
+        "translate": "-{spacing.px}",
+        "checked": {
+          "translate": "full"
+        }
+      },
+      "variants": {
+        "size": {
+          "md": {
+            "size": "{spacing.3.5}"
+          },
+          "sm": {
+            "size": "{spacing.2.5}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    }
+  }
+}

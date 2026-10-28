@@ -1,0 +1,169 @@
+autocomplete-content | E | background-color: #ffffff
+autocomplete-content | E | border-bottom-left-radius: 0px
+autocomplete-content | E | border-bottom-right-radius: 0px
+autocomplete-content | E | border-top-left-radius: 0px
+autocomplete-content | E | border-top-right-radius: 0px
+autocomplete-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+autocomplete-content | E | color: #09090b
+autocomplete-content | E | display: flex
+autocomplete-content | E | flex-direction: column
+autocomplete-content | E | max-height: unset
+autocomplete-content | E | min-width: 144px
+autocomplete-content | E | overflow: hidden
+autocomplete-content | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent)
+autocomplete-content | E | transform-origin: unset
+autocomplete-content | E | transition-duration: 100ms
+autocomplete-content | E | width: unset
+autocomplete-content | E | z-index: 50
+autocomplete-content | E:closed | --tw-exit-opacity: 0
+autocomplete-content | E:closed | --tw-exit-scale: .95
+autocomplete-content | E:closed | animation: exit 100ms ease 0s 1 normal none
+autocomplete-content | E:open | --tw-enter-opacity: 0
+autocomplete-content | E:open | --tw-enter-scale: .95
+autocomplete-content | E:open | animation: enter 100ms ease 0s 1 normal none
+autocomplete-content | E:where([data-side="bottom"]) | --tw-enter-translate-y: calc(2*4px*-1)
+autocomplete-content | E:where([data-side="left"]) | --tw-enter-translate-x: calc(2*4px)
+autocomplete-content | E:where([data-side="right"]) | --tw-enter-translate-x: calc(2*4px*-1)
+autocomplete-content | E:where([data-side="top"]) | --tw-enter-translate-y: calc(2*4px)
+autocomplete-empty | E | color: #66666f
+autocomplete-empty | E | font-family: 'Inter Variable', Inter, sans-serif
+autocomplete-empty | E | font-feature-settings: normal
+autocomplete-empty | E | font-size: 14px
+autocomplete-empty | E | font-variation-settings: normal
+autocomplete-empty | E | font-weight: 400
+autocomplete-empty | E | letter-spacing: normal
+autocomplete-empty | E | line-height: 1.43
+autocomplete-empty | E | padding-bottom: 8px
+autocomplete-empty | E | padding-top: 8px
+autocomplete-empty | E | text-align: center
+autocomplete-group > [0] | E | color: #66666f
+autocomplete-group > [0] | E | font-family: 'Inter Variable', Inter, sans-serif
+autocomplete-group > [0] | E | font-feature-settings: normal
+autocomplete-group > [0] | E | font-size: 12px
+autocomplete-group > [0] | E | font-variation-settings: normal
+autocomplete-group > [0] | E | font-weight: 600
+autocomplete-group > [0] | E | letter-spacing: 0.05em
+autocomplete-group > [0] | E | line-height: 1.33
+autocomplete-group > [0] | E | padding-bottom: 8px
+autocomplete-group > [0] | E | padding-left: 12px
+autocomplete-group > [0] | E | padding-right: 12px
+autocomplete-group > [0] | E | padding-top: 8px
+autocomplete-group > [0] | E | text-transform: uppercase
+autocomplete-group | E | overflow: hidden
+autocomplete-input | E | background-color: transparent
+autocomplete-input | E | border-bottom-color: #a1a1aa
+autocomplete-input | E | border-bottom-left-radius: 0px
+autocomplete-input | E | border-bottom-right-radius: 0px
+autocomplete-input | E | border-bottom-style: solid
+autocomplete-input | E | border-bottom-width: 0px
+autocomplete-input | E | border-left-color: transparent
+autocomplete-input | E | border-left-style: solid
+autocomplete-input | E | border-left-width: 0px
+autocomplete-input | E | border-right-color: transparent
+autocomplete-input | E | border-right-style: solid
+autocomplete-input | E | border-right-width: 0px
+autocomplete-input | E | border-top-color: transparent
+autocomplete-input | E | border-top-left-radius: 0px
+autocomplete-input | E | border-top-right-radius: 0px
+autocomplete-input | E | border-top-style: solid
+autocomplete-input | E | border-top-width: 0px
+autocomplete-input | E | flex: 1
+autocomplete-input | E | font-family: 'Inter Variable', Inter, sans-serif
+autocomplete-input | E | font-feature-settings: normal
+autocomplete-input | E | font-size: 14px [desktop]
+autocomplete-input | E | font-size: 16px [phone]
+autocomplete-input | E | font-variation-settings: normal
+autocomplete-input | E | font-weight: 400
+autocomplete-input | E | height: 40px
+autocomplete-input | E | letter-spacing: normal
+autocomplete-input | E | line-height: 1.43 [desktop]
+autocomplete-input | E | line-height: 1.5 [phone]
+autocomplete-input | E | min-width: 0px
+autocomplete-input | E | outline-style: none
+autocomplete-input | E | padding-bottom: 4px
+autocomplete-input | E | padding-left: 0px
+autocomplete-input | E | padding-right: 0px
+autocomplete-input | E | padding-top: 4px
+autocomplete-input | E | transition-duration: 150ms
+autocomplete-input | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+autocomplete-input | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+autocomplete-input | E | width: 100%
+autocomplete-input | E::file-selector-button | background-color: transparent
+autocomplete-input | E::file-selector-button | border-bottom-color: 
+autocomplete-input | E::file-selector-button | border-bottom-style: 
+autocomplete-input | E::file-selector-button | border-bottom-width: none
+autocomplete-input | E::file-selector-button | border-left-color: 
+autocomplete-input | E::file-selector-button | border-left-style: 
+autocomplete-input | E::file-selector-button | border-left-width: none
+autocomplete-input | E::file-selector-button | border-right-color: 
+autocomplete-input | E::file-selector-button | border-right-style: 
+autocomplete-input | E::file-selector-button | border-right-width: none
+autocomplete-input | E::file-selector-button | border-top-color: 
+autocomplete-input | E::file-selector-button | border-top-style: 
+autocomplete-input | E::file-selector-button | border-top-width: none
+autocomplete-input | E::file-selector-button | color: #09090b
+autocomplete-input | E::file-selector-button | font-family: 'Inter Variable', Inter, sans-serif
+autocomplete-input | E::file-selector-button | font-feature-settings: normal
+autocomplete-input | E::file-selector-button | font-size: 14px
+autocomplete-input | E::file-selector-button | font-variation-settings: normal
+autocomplete-input | E::file-selector-button | font-weight: 500
+autocomplete-input | E::file-selector-button | letter-spacing: normal
+autocomplete-input | E::file-selector-button | line-height: 1.43
+autocomplete-input | E::placeholder | color: #66666f
+autocomplete-input | E:disabled | cursor: not-allowed
+autocomplete-input | E:disabled | opacity: 0.5
+autocomplete-input | E:disabled | pointer-events: none
+autocomplete-input | E:focus | border-bottom-color: #71717a
+autocomplete-input | E:focus | border-bottom-style: solid
+autocomplete-input | E:focus | border-bottom-width: 0px
+autocomplete-input | E:invalid | border-bottom-color: #c70009
+autocomplete-input | E:is(:where(GROUP):has( > [data-align="inline-end"]) *) | padding-right: 8px
+autocomplete-input | E:is(:where(GROUP):has( > [data-align="inline-start"]) *) | padding-left: 8px
+autocomplete-item | E ICON | flex-shrink: 0
+autocomplete-item | E ICON | height: 14px
+autocomplete-item | E ICON | pointer-events: none
+autocomplete-item | E ICON | width: 14px
+autocomplete-item | E | -webkit-user-select: none
+autocomplete-item | E | align-items: center
+autocomplete-item | E | border-bottom-left-radius: 0px
+autocomplete-item | E | border-bottom-right-radius: 0px
+autocomplete-item | E | border-top-left-radius: 0px
+autocomplete-item | E | border-top-right-radius: 0px
+autocomplete-item | E | cursor: default
+autocomplete-item | E | display: flex
+autocomplete-item | E | font-family: 'Inter Variable', Inter, sans-serif
+autocomplete-item | E | font-feature-settings: normal
+autocomplete-item | E | font-size: 14px
+autocomplete-item | E | font-variation-settings: normal
+autocomplete-item | E | font-weight: 400
+autocomplete-item | E | gap: 10px
+autocomplete-item | E | letter-spacing: normal
+autocomplete-item | E | line-height: 1.43
+autocomplete-item | E | outline-style: none
+autocomplete-item | E | padding-bottom: 8px
+autocomplete-item | E | padding-left: 12px
+autocomplete-item | E | padding-right: 12px
+autocomplete-item | E | padding-top: 8px
+autocomplete-item | E | position: relative
+autocomplete-item | E | user-select: none
+autocomplete-item | E | width: 100%
+autocomplete-item | E:disabled | opacity: 0.5
+autocomplete-item | E:disabled | pointer-events: none
+autocomplete-item | E:highlighted | background-color: #f4f4f5
+autocomplete-item | E:highlighted | color: #18181b
+autocomplete-separator | E | background-color: color-mix(in oklab, #e4e4e7 50%, transparent)
+autocomplete-separator | E | height: 1px
+autocomplete-separator | E | margin-bottom: 6px
+autocomplete-separator | E | margin-left: -6px
+autocomplete-separator | E | margin-right: -6px
+autocomplete-separator | E | margin-top: 6px
+autocomplete-viewport | E | max-height: 252px
+autocomplete-viewport | E | min-height: 0px
+autocomplete-viewport | E | overflow-y: auto
+autocomplete-viewport | E | padding-bottom: 6px
+autocomplete-viewport | E | padding-left: 6px
+autocomplete-viewport | E | padding-right: 6px
+autocomplete-viewport | E | padding-top: 6px
+autocomplete-viewport | E | scroll-padding-block: 6px
+autocomplete-viewport | E | scrollbar-width: none
+autocomplete-viewport | E::-webkit-scrollbar | display: none

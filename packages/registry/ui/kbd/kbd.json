@@ -1,0 +1,33 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Kbd",
+  "description": "Shows a keyboard key or shortcut, such as the key that focuses the search.",
+  "recipes": {
+    "kbd": {
+      "base": {
+        "backgroundColor": "{colors.muted}",
+        "textColor": "{colors.muted-foreground}",
+        "rounded": "{rounded.none}",
+        "typography": "{typography.caption}",
+        "height": "{spacing.5.5}",
+        "minWidth": "{spacing.5.5}",
+        "paddingX": "{spacing.1.5}",
+        "gap": "{spacing.1}",
+        "display": "inline-flex",
+        "width": "fit",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3}"
+        }
+      }
+    },
+    "kbd-group": {
+      "base": {
+        "display": "inline-flex",
+        "alignItems": "center",
+        "gap": "{spacing.1}"
+      }
+    }
+  }
+}

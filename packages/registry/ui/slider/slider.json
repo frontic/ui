@@ -1,0 +1,42 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Slider",
+  "description": "Picks a value or a range by dragging thumbs along a track, with a label, a legend and values formatted like prices; joins a Field.",
+  "recipes": {
+    "slider-control": {
+      "composes": ["disabled"],
+      "base": {
+        "display": "flex",
+        "width": "full",
+        "alignItems": "center"
+      }
+    },
+    "slider-legend": {
+      "base": {
+        "marginTop": "{spacing.2}",
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.caption}",
+        "letterSpacing": "wide"
+      }
+    },
+    "slider-range": {
+      "base": {
+        "extends": "track-fill"
+      }
+    },
+    "slider-thumb": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "track-thumb",
+        "size": "{spacing.3}"
+      }
+    },
+    "slider-track": {
+      "base": {
+        "extends": "track",
+        "backgroundColor": "{colors.input/50}",
+        "size": "{spacing.0.5}"
+      }
+    }
+  }
+}

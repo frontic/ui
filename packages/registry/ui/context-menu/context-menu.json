@@ -1,0 +1,123 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Context Menu",
+  "description": "A menu that opens on right-click, with actions, checkbox and radio items, labelled groups and destructive entries.",
+  "recipes": {
+    "context-menu-content": {
+      "base": {
+        "extends": "overlay",
+        "minWidth": "{spacing.48}",
+        "padding": "{spacing.1.5}"
+      }
+    },
+    "context-menu-item": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "menu-item",
+        "gap": "{spacing.2.5}",
+        "paddingY": "{spacing.2}",
+        "display": "flex",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      },
+      "variants": {
+        "color": {
+          "destructive": {
+            "extends": "menu-item-destructive"
+          }
+        },
+        "pad": {
+          "default": {
+            "paddingX": "{spacing.3}"
+          },
+          "inset": {
+            "paddingStart": "{spacing.9.5}",
+            "paddingEnd": "{spacing.3}"
+          },
+          "indicator": {
+            "paddingStart": "{spacing.3}",
+            "paddingEnd": "{spacing.8}"
+          }
+        }
+      },
+      "defaults": {
+        "pad": "default"
+      }
+    },
+    "context-menu-label": {
+      "base": {
+        "extends": "menu-label",
+        "paddingY": "{spacing.2}"
+      },
+      "variants": {
+        "pad": {
+          "default": {
+            "paddingX": "{spacing.3}"
+          },
+          "inset": {
+            "paddingStart": "{spacing.9.5}",
+            "paddingEnd": "{spacing.3}"
+          }
+        }
+      },
+      "defaults": {
+        "pad": "default"
+      }
+    },
+    "context-menu-separator": {
+      "base": {
+        "bleedX": "{spacing.1.5}",
+        "marginY": "{spacing.1.5}",
+        "extends": "divider",
+        "backgroundColor": "{colors.border/50}",
+        "height": "{spacing.px}"
+      }
+    },
+    "context-menu-shortcut": {
+      "base": {
+        "extends": "menu-shortcut",
+        "marginStart": "auto"
+      }
+    },
+    "context-menu-sub-content": {
+      "base": {
+        "extends": "overlay",
+        "shadow": "{shadow.md}",
+        "minWidth": "{spacing.32}",
+        "padding": "{spacing.1.5}"
+      }
+    },
+    "context-menu-sub-trigger": {
+      "base": {
+        "extends": "menu-item",
+        "gap": "{spacing.2.5}",
+        "paddingY": "{spacing.2}",
+        "display": "flex",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        },
+        "open": {
+          "backgroundColor": "{colors.accent}",
+          "textColor": "{colors.accent-foreground}"
+        }
+      },
+      "variants": {
+        "pad": {
+          "default": {
+            "paddingX": "{spacing.3}"
+          },
+          "inset": {
+            "paddingStart": "{spacing.9.5}",
+            "paddingEnd": "{spacing.3}"
+          }
+        }
+      },
+      "defaults": {
+        "pad": "default"
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+TagsInput > [0] | E | align-items: center
+TagsInput > [0] | E | background-color: transparent
+TagsInput > [0] | E | border-bottom-color: #a1a1aa
+TagsInput > [0] | E | border-bottom-left-radius: 0px
+TagsInput > [0] | E | border-bottom-right-radius: 0px
+TagsInput > [0] | E | border-bottom-style: solid
+TagsInput > [0] | E | border-bottom-width: 1px
+TagsInput > [0] | E | border-left-color: transparent
+TagsInput > [0] | E | border-left-style: solid
+TagsInput > [0] | E | border-left-width: 1px
+TagsInput > [0] | E | border-right-color: transparent
+TagsInput > [0] | E | border-right-style: solid
+TagsInput > [0] | E | border-right-width: 1px
+TagsInput > [0] | E | border-top-color: transparent
+TagsInput > [0] | E | border-top-left-radius: 0px
+TagsInput > [0] | E | border-top-right-radius: 0px
+TagsInput > [0] | E | border-top-style: solid
+TagsInput > [0] | E | border-top-width: 1px
+TagsInput > [0] | E | display: flex
+TagsInput > [0] | E | flex-wrap: wrap
+TagsInput > [0] | E | font-family: 'Inter Variable', Inter, sans-serif
+TagsInput > [0] | E | font-feature-settings: normal
+TagsInput > [0] | E | font-size: 14px [desktop]
+TagsInput > [0] | E | font-size: 16px [phone]
+TagsInput > [0] | E | font-variation-settings: normal
+TagsInput > [0] | E | font-weight: 400
+TagsInput > [0] | E | gap: 8px
+TagsInput > [0] | E | letter-spacing: normal
+TagsInput > [0] | E | line-height: 1.43 [desktop]
+TagsInput > [0] | E | line-height: 1.5 [phone]
+TagsInput > [0] | E | min-height: 40px
+TagsInput > [0] | E | outline-style: none
+TagsInput > [0] | E | padding-bottom: 4px
+TagsInput > [0] | E | padding-left: 0px
+TagsInput > [0] | E | padding-right: 0px
+TagsInput > [0] | E | padding-top: 4px
+TagsInput > [0] | E | transition-duration: 150ms
+TagsInput > [0] | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events
+TagsInput > [0] | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+TagsInput > [0] | E::file-selector-button | background-color: transparent
+TagsInput > [0] | E::file-selector-button | border-bottom-color: 
+TagsInput > [0] | E::file-selector-button | border-bottom-style: 
+TagsInput > [0] | E::file-selector-button | border-bottom-width: none
+TagsInput > [0] | E::file-selector-button | border-left-color: 
+TagsInput > [0] | E::file-selector-button | border-left-style: 
+TagsInput > [0] | E::file-selector-button | border-left-width: none
+TagsInput > [0] | E::file-selector-button | border-right-color: 
+TagsInput > [0] | E::file-selector-button | border-right-style: 
+TagsInput > [0] | E::file-selector-button | border-right-width: none
+TagsInput > [0] | E::file-selector-button | border-top-color: 
+TagsInput > [0] | E::file-selector-button | border-top-style: 
+TagsInput > [0] | E::file-selector-button | border-top-width: none
+TagsInput > [0] | E::file-selector-button | color: #09090b
+TagsInput > [0] | E::file-selector-button | font-family: 'Inter Variable', Inter, sans-serif
+TagsInput > [0] | E::file-selector-button | font-feature-settings: normal
+TagsInput > [0] | E::file-selector-button | font-size: 14px
+TagsInput > [0] | E::file-selector-button | font-variation-settings: normal
+TagsInput > [0] | E::file-selector-button | font-weight: 500
+TagsInput > [0] | E::file-selector-button | letter-spacing: normal
+TagsInput > [0] | E::file-selector-button | line-height: 1.43
+TagsInput > [0] | E::placeholder | color: #66666f
+TagsInput > [0] | E:focus | border-bottom-color: #71717a
+TagsInput > [0] | E:focus | border-bottom-style: solid
+TagsInput > [0] | E:focus | border-bottom-width: 2px
+TagsInput > [0] | E:invalid | border-bottom-color: #c70009
+TagsInputInput > [0] | E | background-color: transparent
+TagsInputInput > [0] | E | flex: 1
+TagsInputInput > [0] | E | font-family: 'Inter Variable', Inter, sans-serif
+TagsInputInput > [0] | E | font-feature-settings: normal
+TagsInputInput > [0] | E | font-size: 14px [desktop]
+TagsInputInput > [0] | E | font-size: 16px [phone]
+TagsInputInput > [0] | E | font-variation-settings: normal
+TagsInputInput > [0] | E | font-weight: 400
+TagsInputInput > [0] | E | letter-spacing: normal
+TagsInputInput > [0] | E | line-height: 1.43 [desktop]
+TagsInputInput > [0] | E | line-height: 1.5 [phone]
+TagsInputInput > [0] | E | min-height: 20px
+TagsInputInput > [0] | E | padding-left: 0px
+TagsInputInput > [0] | E | padding-right: 0px
+TagsInputInput > [0] | E::placeholder | color: #66666f
+TagsInputInput > [0] | E:focus | outline-style: none
+TagsInputItem > [0] | E | align-items: center
+TagsInputItem > [0] | E | background-color: #f4f4f5
+TagsInputItem > [0] | E | border-bottom-left-radius: 0px
+TagsInputItem > [0] | E | border-bottom-right-radius: 0px
+TagsInputItem > [0] | E | border-top-left-radius: 0px
+TagsInputItem > [0] | E | border-top-right-radius: 0px
+TagsInputItem > [0] | E | display: flex
+TagsInputItem > [0] | E | height: 20px
+TagsInputItem > [0] | E:selected | outline-color: #71717a
+TagsInputItem > [0] | E:selected | outline-offset: 2px
+TagsInputItem > [0] | E:selected | outline-style: solid
+TagsInputItem > [0] | E:selected | outline-width: 2px
+TagsInputItemDelete > [0] | E ICON | height: 10px
+TagsInputItemDelete > [0] | E ICON | width: 10px
+TagsInputItemDelete > [0] | E | background-color: transparent
+TagsInputItemDelete > [0] | E | border-bottom-left-radius: 0px
+TagsInputItemDelete > [0] | E | border-bottom-right-radius: 0px
+TagsInputItemDelete > [0] | E | border-top-left-radius: 0px
+TagsInputItemDelete > [0] | E | border-top-right-radius: 0px
+TagsInputItemDelete > [0] | E | display: flex
+TagsInputItemDelete > [0] | E | margin-right: 4px
+TagsInputItemDelete > [0] | E | outline-style: none
+TagsInputItemDelete > [0] | E | position: relative
+TagsInputItemDelete > [0] | E::after | content: ""
+TagsInputItemDelete > [0] | E::after | inset: -7px
+TagsInputItemDelete > [0] | E::after | position: absolute
+TagsInputItemDelete > [1] | E | border-bottom-width: 0
+TagsInputItemDelete > [1] | E | border-left-width: 0
+TagsInputItemDelete > [1] | E | border-right-width: 0
+TagsInputItemDelete > [1] | E | border-top-width: 0
+TagsInputItemDelete > [1] | E | clip-path: inset(50%)
+TagsInputItemDelete > [1] | E | height: 1px
+TagsInputItemDelete > [1] | E | margin-bottom: -1px
+TagsInputItemDelete > [1] | E | margin-left: -1px
+TagsInputItemDelete > [1] | E | margin-right: -1px
+TagsInputItemDelete > [1] | E | margin-top: -1px
+TagsInputItemDelete > [1] | E | overflow: hidden
+TagsInputItemDelete > [1] | E | padding-bottom: 0
+TagsInputItemDelete > [1] | E | padding-left: 0
+TagsInputItemDelete > [1] | E | padding-right: 0
+TagsInputItemDelete > [1] | E | padding-top: 0
+TagsInputItemDelete > [1] | E | position: absolute
+TagsInputItemDelete > [1] | E | white-space: nowrap
+TagsInputItemDelete > [1] | E | width: 1px
+TagsInputItemText > [0] | E | background-color: transparent
+TagsInputItemText > [0] | E | border-bottom-left-radius: 0px
+TagsInputItemText > [0] | E | border-bottom-right-radius: 0px
+TagsInputItemText > [0] | E | border-top-left-radius: 0px
+TagsInputItemText > [0] | E | border-top-right-radius: 0px
+TagsInputItemText > [0] | E | font-family: 'Inter Variable', Inter, sans-serif
+TagsInputItemText > [0] | E | font-feature-settings: normal
+TagsInputItemText > [0] | E | font-size: 14px
+TagsInputItemText > [0] | E | font-variation-settings: normal
+TagsInputItemText > [0] | E | font-weight: 400
+TagsInputItemText > [0] | E | letter-spacing: normal
+TagsInputItemText > [0] | E | line-height: 1.43
+TagsInputItemText > [0] | E | padding-bottom: 2px
+TagsInputItemText > [0] | E | padding-left: 8px
+TagsInputItemText > [0] | E | padding-right: 8px
+TagsInputItemText > [0] | E | padding-top: 2px

@@ -1,0 +1,6 @@
+{
+  "notice-warning": {
+    "borderColor": "{colors.warning}",
+    "iconColor": "{colors.warning}"
+  }
+}

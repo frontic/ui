@@ -1,0 +1,8 @@
+{
+  "surface-inset": {
+    "paddingY": "{spacing.6}",
+    "@md": {
+      "paddingY": "{spacing.8}"
+    }
+  }
+}

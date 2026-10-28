@@ -1,0 +1,185 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Filter",
+  "description": "The parts of a storefront filter: option lists with counts and search, swatches, a price range, ratings and switches, in groups that open in place or as a popover and reset together.",
+  "recipes": {
+    "filter-field": {
+      "base": {
+        "display": "flex",
+        "width": "full",
+        "gap": "{spacing.3}"
+      }
+    },
+    "filter-field-content": {
+      "base": {
+        "display": "flex",
+        "flex": "1",
+        "flexDirection": "column",
+        "gap": "{spacing.1}"
+      }
+    },
+    "filter-field-description": {
+      "base": {
+        "extends": "hint"
+      }
+    },
+    "filter-field-label": {
+      "base": {
+        "extends": "label",
+        "typography": "{typography.small}",
+        "fontWeight": "normal",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      }
+    },
+    "filter-field-title": {
+      "base": {
+        "extends": "label"
+      }
+    },
+    "filter-group-content": {
+      "base": {
+        "width": "{spacing.64}",
+        "padding": "{spacing.3}"
+      }
+    },
+    "filter-list": {
+      "composes": ["focus-ring"],
+      "base": {
+        "scrollbar": "none",
+        "height": "{spacing.70}",
+        "paddingY": "{spacing.1}"
+      }
+    },
+    "filter-list-check": {
+      "base": {
+        "extends": ["choice", "choice-box"],
+        "size": "{spacing.4.5}"
+      }
+    },
+    "filter-list-item": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "menu-item",
+        "gap": "{spacing.2}",
+        "paddingX": "{spacing.2}",
+        "paddingY": "{spacing.2}"
+      }
+    },
+    "filter-list-root": {
+      "base": {
+        "display": "flex",
+        "flexDirection": "column"
+      }
+    },
+    "filter-list-search": {
+      "composes": ["focus-ring"],
+      "base": {
+        "marginBottom": "{spacing.1}",
+        "extends": ["control", "control-line"],
+        "backgroundColor": "{colors.muted}",
+        "borderColor": "{colors.input}",
+        "shadow": "none",
+        "typography": "{typography.small}",
+        "height": "{spacing.9}",
+        "paddingX": "{spacing.3}"
+      }
+    },
+    "filter-meta": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.caption}",
+        "fontWeight": "normal"
+      }
+    },
+    "filter-range": {
+      "base": {
+        "flexDirection": "column",
+        "paddingX": "{spacing.3}",
+        "paddingY": "{spacing.2.5}"
+      }
+    },
+    "filter-range-separator": {
+      "base": {
+        "extends": "hint"
+      }
+    },
+    "filter-rating": {
+      "base": {
+        "paddingX": "{spacing.3}",
+        "paddingY": "{spacing.2.5}"
+      }
+    },
+    "filter-rating-star": {
+      "composes": ["focus-ring", "disabled"],
+      "base": {
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.1.5}"
+      }
+    },
+    "filter-reset": {
+      "base": {
+        "marginTop": "{spacing.1}",
+        "rounded": "{rounded.full}"
+      }
+    },
+    "filter-reset-root": {
+      "base": {
+        "marginTop": "{spacing.2}",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center"
+      }
+    },
+    "filter-slider": {
+      "base": {
+        "flexDirection": "column",
+        "paddingX": "{spacing.3}",
+        "paddingY": "{spacing.2.5}"
+      }
+    },
+    "filter-swatch": {
+      "base": {},
+      "variants": {
+        "orientation": {
+          "horizontal": {},
+          "vertical": {
+            "bleedX": "{spacing.0.5}",
+            "bleedY": "{spacing.0.5}",
+            "padding": "{spacing.0.5}"
+          }
+        }
+      },
+      "defaults": {
+        "orientation": "vertical"
+      }
+    },
+    "filter-swatch-text": {
+      "base": {
+        "typography": "{typography.small}"
+      }
+    },
+    "filter-switch": {
+      "base": {
+        "paddingX": "{spacing.3}",
+        "paddingY": "{spacing.2.5}"
+      }
+    },
+    "filter-trigger": {
+      "base": {
+        "iconColor": "{colors.muted-foreground}",
+        "width": "full"
+      }
+    },
+    "filter-trigger-count": {
+      "base": {
+        "marginEnd": "{spacing.2}",
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.primary-foreground}",
+        "rounded": "{rounded.full}",
+        "typography": "{typography.micro}",
+        "size": "{spacing.5}"
+      }
+    }
+  }
+}

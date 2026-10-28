@@ -1,0 +1,30 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Header Shop",
+  "description": "Store header with an announcement bar, logo, a navigation slot, a search slot that sits inline on wide screens and behind a button that opens an overlay on phones, and account and cart actions.",
+  "categories": ["header"],
+  "recipes": {
+    "header-shop": {
+      "composes": ["logo", "focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "header-shop-announcement": {
+      "base": {
+        "backgroundColor": "{colors.foreground}",
+        "textColor": "{colors.background}",
+        "typography": "{typography.caption}",
+        "fontWeight": "normal",
+        "letterSpacing": "wide"
+      }
+    },
+    "header-shop-bar": {
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "borderBottom": "{border.default}",
+        "borderColor": "{colors.border}"
+      }
+    }
+  }
+}

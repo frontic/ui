@@ -1,0 +1,7 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Team Members",
+  "description": "Team management card: a seat count, an invite row with email and role, and each member with a role select and a menu to resend, revoke or remove.",
+  "categories": ["account"],
+  "recipes": {}
+}

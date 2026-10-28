@@ -1,0 +1,470 @@
+sidebar #2 | E | padding-bottom: 0px
+sidebar #2 | E | padding-left: 0px
+sidebar #2 | E | padding-right: 0px
+sidebar #2 | E | padding-top: 0px
+sidebar #2 | E | width: 288px
+sidebar #3 | E | display: block
+sidebar > [0] | E | border-bottom-width: 0
+sidebar > [0] | E | border-left-width: 0
+sidebar > [0] | E | border-right-width: 0
+sidebar > [0] | E | border-top-width: 0
+sidebar > [0] | E | clip-path: inset(50%)
+sidebar > [0] | E | height: 1px
+sidebar > [0] | E | margin-bottom: -1px
+sidebar > [0] | E | margin-left: -1px
+sidebar > [0] | E | margin-right: -1px
+sidebar > [0] | E | margin-top: -1px
+sidebar > [0] | E | overflow: hidden
+sidebar > [0] | E | padding-bottom: 0
+sidebar > [0] | E | padding-left: 0
+sidebar > [0] | E | padding-right: 0
+sidebar > [0] | E | padding-top: 0
+sidebar > [0] | E | position: absolute
+sidebar > [0] | E | white-space: nowrap
+sidebar > [0] | E | width: 1px
+sidebar > [1] | E | background-color: #ffffff
+sidebar > [1] | E | border-bottom-left-radius: 0px
+sidebar > [1] | E | border-bottom-right-radius: 0px
+sidebar > [1] | E | border-top-left-radius: 0px
+sidebar > [1] | E | border-top-right-radius: 0px
+sidebar > [1] | E | color: #09090b
+sidebar > [1] | E | display: flex
+sidebar > [1] | E | flex-direction: column
+sidebar > [1] | E | height: 100%
+sidebar > [1] | E | width: 100%
+sidebar | E | background-color: #ffffff
+sidebar | E | border-bottom-left-radius: 0px
+sidebar | E | border-bottom-right-radius: 0px
+sidebar | E | border-top-left-radius: 0px
+sidebar | E | border-top-right-radius: 0px
+sidebar | E | color: #09090b
+sidebar | E | display: flex
+sidebar | E | flex-direction: column
+sidebar | E | width: 256px
+sidebar-container | E | border-inline-end: 1px solid #e4e4e7
+sidebar-container | E | display: flex
+sidebar-container | E | height: 100svh
+sidebar-container | E | inset-block: 0px
+sidebar-container | E | inset-inline-start: 0px
+sidebar-container | E | position: fixed
+sidebar-container | E | transition-duration: 200ms
+sidebar-container | E | transition-property: all
+sidebar-container | E | transition-timing-function: linear
+sidebar-container | E | width: 256px
+sidebar-container | E | z-index: 10
+sidebar-content | E | display: flex
+sidebar-content | E | flex-direction: column
+sidebar-content | E | flex: 1
+sidebar-content | E | gap: 8px
+sidebar-content | E | min-height: 0px
+sidebar-content | E | overflow: auto [collapsible=offcanvas,none]
+sidebar-content | E | overflow: hidden [collapsible=icon]
+sidebar-content | E | scrollbar-width: none
+sidebar-content | E::-webkit-scrollbar | display: none
+sidebar-footer | E | display: flex
+sidebar-footer | E | flex-direction: column
+sidebar-footer | E | gap: 8px
+sidebar-footer | E | padding-bottom: 8px
+sidebar-footer | E | padding-left: 8px
+sidebar-footer | E | padding-right: 8px
+sidebar-footer | E | padding-top: 8px
+sidebar-gap | E | position: relative
+sidebar-gap | E | rotate: 180deg [side=end]
+sidebar-gap | E | transition-duration: 200ms
+sidebar-gap | E | transition-property: all
+sidebar-gap | E | transition-timing-function: linear
+sidebar-gap | E | width: 256px
+sidebar-group | E > [data-sidebar="group-label"] | margin-top: -32px [collapsible=icon]
+sidebar-group | E | display: flex
+sidebar-group | E | flex-direction: column
+sidebar-group | E | min-width: 0px
+sidebar-group | E | padding-bottom: 8px
+sidebar-group | E | padding-left: 8px
+sidebar-group | E | padding-right: 8px
+sidebar-group | E | padding-top: 8px
+sidebar-group | E | position: relative
+sidebar-group | E | width: 100%
+sidebar-group-action | E ICON | flex-shrink: 0
+sidebar-group-action | E ICON | height: 14px
+sidebar-group-action | E ICON | width: 14px
+sidebar-group-action | E | align-items: center
+sidebar-group-action | E | aspect-ratio: 1 / 1
+sidebar-group-action | E | border-bottom-left-radius: 0px
+sidebar-group-action | E | border-bottom-right-radius: 0px
+sidebar-group-action | E | border-top-left-radius: 0px
+sidebar-group-action | E | border-top-right-radius: 0px
+sidebar-group-action | E | color: #09090b
+sidebar-group-action | E | display: flex [collapsible=offcanvas,none]
+sidebar-group-action | E | display: none [collapsible=icon]
+sidebar-group-action | E | inset-inline-end: 12px
+sidebar-group-action | E | justify-content: center
+sidebar-group-action | E | outline-style: none
+sidebar-group-action | E | padding-bottom: 0px
+sidebar-group-action | E | padding-left: 0px
+sidebar-group-action | E | padding-right: 0px
+sidebar-group-action | E | padding-top: 0px
+sidebar-group-action | E | position: absolute
+sidebar-group-action | E | top: 14px
+sidebar-group-action | E | transition-duration: 150ms
+sidebar-group-action | E | transition-property: transform, translate, scale, rotate
+sidebar-group-action | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+sidebar-group-action | E | width: 20px
+sidebar-group-action | E::after | content: ""
+sidebar-group-action | E::after | inset: -8px
+sidebar-group-action | E::after | position: absolute
+sidebar-group-action | E:focus | border-bottom-color: #71717a
+sidebar-group-action | E:focus | border-left-color: #71717a
+sidebar-group-action | E:focus | border-right-color: #71717a
+sidebar-group-action | E:focus | border-top-color: #71717a
+sidebar-group-action | E:focus | ring: 2px #71717a
+sidebar-group-action | E:hover | background-color: #f4f4f5
+sidebar-group-action | E:hover | color: #18181b
+sidebar-group-content | E | font-family: 'Inter Variable', Inter, sans-serif
+sidebar-group-content | E | font-feature-settings: normal
+sidebar-group-content | E | font-size: 14px
+sidebar-group-content | E | font-variation-settings: normal
+sidebar-group-content | E | font-weight: 400
+sidebar-group-content | E | letter-spacing: normal
+sidebar-group-content | E | line-height: 1.43
+sidebar-group-content | E | width: 100%
+sidebar-group-label | E ICON | flex-shrink: 0
+sidebar-group-label | E ICON | height: 14px
+sidebar-group-label | E ICON | width: 14px
+sidebar-group-label | E | -webkit-user-select: none [collapsible=icon]
+sidebar-group-label | E | align-items: center
+sidebar-group-label | E | border-bottom-left-radius: 0px
+sidebar-group-label | E | border-bottom-right-radius: 0px
+sidebar-group-label | E | border-top-left-radius: 0px
+sidebar-group-label | E | border-top-right-radius: 0px
+sidebar-group-label | E | color: color-mix(in oklab, #09090b 70%, transparent)
+sidebar-group-label | E | display: flex
+sidebar-group-label | E | flex-shrink: 0
+sidebar-group-label | E | font-family: 'Inter Variable', Inter, sans-serif
+sidebar-group-label | E | font-feature-settings: normal
+sidebar-group-label | E | font-size: 12px
+sidebar-group-label | E | font-variation-settings: normal
+sidebar-group-label | E | font-weight: 600
+sidebar-group-label | E | height: 32px
+sidebar-group-label | E | letter-spacing: 0.05em
+sidebar-group-label | E | line-height: 1.33
+sidebar-group-label | E | opacity: 0 [collapsible=icon]
+sidebar-group-label | E | outline-style: none
+sidebar-group-label | E | padding-left: 12px
+sidebar-group-label | E | padding-right: 12px
+sidebar-group-label | E | pointer-events: none [collapsible=icon]
+sidebar-group-label | E | text-transform: uppercase
+sidebar-group-label | E | transition-duration: 200ms
+sidebar-group-label | E | transition-property: all
+sidebar-group-label | E | transition-timing-function: linear
+sidebar-group-label | E | user-select: none [collapsible=icon]
+sidebar-group-label | E:focus | border-bottom-color: #71717a
+sidebar-group-label | E:focus | border-left-color: #71717a
+sidebar-group-label | E:focus | border-right-color: #71717a
+sidebar-group-label | E:focus | border-top-color: #71717a
+sidebar-group-label | E:focus | ring: 2px #71717a
+sidebar-header | E | display: flex
+sidebar-header | E | flex-direction: column
+sidebar-header | E | gap: 8px
+sidebar-header | E | padding-bottom: 8px
+sidebar-header | E | padding-left: 8px
+sidebar-header | E | padding-right: 8px
+sidebar-header | E | padding-top: 8px
+sidebar-inner | E | background-color: #ffffff
+sidebar-inner | E | border-bottom-color: #e4e4e7 [variant=floating]
+sidebar-inner | E | border-bottom-left-radius: 0px [variant=sidebar,inset,floating]
+sidebar-inner | E | border-bottom-right-radius: 0px [variant=sidebar,inset,floating]
+sidebar-inner | E | border-bottom-style: solid [variant=floating]
+sidebar-inner | E | border-bottom-width: 1px [variant=floating]
+sidebar-inner | E | border-left-color: #e4e4e7 [variant=floating]
+sidebar-inner | E | border-left-style: solid [variant=floating]
+sidebar-inner | E | border-left-width: 1px [variant=floating]
+sidebar-inner | E | border-right-color: #e4e4e7 [variant=floating]
+sidebar-inner | E | border-right-style: solid [variant=floating]
+sidebar-inner | E | border-right-width: 1px [variant=floating]
+sidebar-inner | E | border-top-color: #e4e4e7 [variant=floating]
+sidebar-inner | E | border-top-left-radius: 0px [variant=sidebar,inset,floating]
+sidebar-inner | E | border-top-right-radius: 0px [variant=sidebar,inset,floating]
+sidebar-inner | E | border-top-style: solid [variant=floating]
+sidebar-inner | E | border-top-width: 1px [variant=floating]
+sidebar-inner | E | box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1), 0px 1px 2px -1px rgb(0 0 0 / 0.1) [variant=floating]
+sidebar-inner | E | color: #09090b
+sidebar-inner | E | display: flex
+sidebar-inner | E | flex-direction: column
+sidebar-inner | E | height: 100%
+sidebar-inner | E | width: 100%
+sidebar-input | E | background-color: transparent
+sidebar-input | E | box-shadow: none
+sidebar-input | E | height: 32px
+sidebar-input | E | width: 100%
+sidebar-inset | E | background-color: #ffffff
+sidebar-inset | E | border-bottom-left-radius: 0px
+sidebar-inset | E | border-bottom-right-radius: 0px
+sidebar-inset | E | border-top-left-radius: 0px
+sidebar-inset | E | border-top-right-radius: 0px
+sidebar-inset | E | box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1), 0px 1px 2px -1px rgb(0 0 0 / 0.1) [variant=inset]
+sidebar-inset | E | display: flex
+sidebar-inset | E | flex-direction: column
+sidebar-inset | E | flex: 1
+sidebar-inset | E | margin-bottom: 8px [variant=inset]
+sidebar-inset | E | margin-left: 0px [variant=inset]
+sidebar-inset | E | margin-right: 8px [variant=inset]
+sidebar-inset | E | margin-top: 8px [variant=inset]
+sidebar-inset | E | position: relative
+sidebar-inset | E | width: 100%
+sidebar-menu | E | display: flex
+sidebar-menu | E | flex-direction: column
+sidebar-menu | E | gap: 2px
+sidebar-menu | E | min-width: 0px
+sidebar-menu | E | width: 100%
+sidebar-menu-action | E ICON | flex-shrink: 0
+sidebar-menu-action | E ICON | height: 14px
+sidebar-menu-action | E ICON | width: 14px
+sidebar-menu-action | E | align-items: center
+sidebar-menu-action | E | aspect-ratio: 1 / 1
+sidebar-menu-action | E | border-bottom-left-radius: 0px
+sidebar-menu-action | E | border-bottom-right-radius: 0px
+sidebar-menu-action | E | border-top-left-radius: 0px
+sidebar-menu-action | E | border-top-right-radius: 0px
+sidebar-menu-action | E | color: #09090b
+sidebar-menu-action | E | display: flex [collapsible=offcanvas,none]
+sidebar-menu-action | E | display: none [collapsible=icon]
+sidebar-menu-action | E | inset-inline-end: 4px
+sidebar-menu-action | E | justify-content: center
+sidebar-menu-action | E | outline-style: none
+sidebar-menu-action | E | padding-bottom: 0px
+sidebar-menu-action | E | padding-left: 0px
+sidebar-menu-action | E | padding-right: 0px
+sidebar-menu-action | E | padding-top: 0px
+sidebar-menu-action | E | position: absolute
+sidebar-menu-action | E | top: 6px
+sidebar-menu-action | E | transition-duration: 150ms
+sidebar-menu-action | E | transition-property: transform, translate, scale, rotate
+sidebar-menu-action | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+sidebar-menu-action | E | width: 20px
+sidebar-menu-action | E::after | content: ""
+sidebar-menu-action | E::after | inset: -8px
+sidebar-menu-action | E::after | position: absolute
+sidebar-menu-action | E:focus | border-bottom-color: #71717a
+sidebar-menu-action | E:focus | border-left-color: #71717a
+sidebar-menu-action | E:focus | border-right-color: #71717a
+sidebar-menu-action | E:focus | border-top-color: #71717a
+sidebar-menu-action | E:focus | ring: 2px #71717a
+sidebar-menu-action | E:hover | background-color: #f4f4f5
+sidebar-menu-action | E:hover | color: #18181b
+sidebar-menu-action | E:is(:where(.peer\/menu-button) ~ *) | top: 10px [size=lg]
+sidebar-menu-action | E:is(:where(.peer\/menu-button) ~ *) | top: 4px [size=sm]
+sidebar-menu-action | E:is(:where(.peer\/menu-button)[data-size-md] ~ *) | top: 8px
+sidebar-menu-badge | E | -webkit-user-select: none
+sidebar-menu-badge | E | align-items: center
+sidebar-menu-badge | E | border-bottom-left-radius: 0px
+sidebar-menu-badge | E | border-bottom-right-radius: 0px
+sidebar-menu-badge | E | border-top-left-radius: 0px
+sidebar-menu-badge | E | border-top-right-radius: 0px
+sidebar-menu-badge | E | color: #09090b
+sidebar-menu-badge | E | display: flex [collapsible=offcanvas,none]
+sidebar-menu-badge | E | display: none [collapsible=icon]
+sidebar-menu-badge | E | font-family: 'Inter Variable', Inter, sans-serif
+sidebar-menu-badge | E | font-feature-settings: normal
+sidebar-menu-badge | E | font-size: 12px
+sidebar-menu-badge | E | font-variant-numeric: tabular-nums
+sidebar-menu-badge | E | font-variation-settings: normal
+sidebar-menu-badge | E | font-weight: 500
+sidebar-menu-badge | E | height: 20px
+sidebar-menu-badge | E | inset-inline-end: 4px
+sidebar-menu-badge | E | justify-content: center
+sidebar-menu-badge | E | letter-spacing: normal
+sidebar-menu-badge | E | line-height: 1.33
+sidebar-menu-badge | E | min-width: 20px
+sidebar-menu-badge | E | padding-left: 4px
+sidebar-menu-badge | E | padding-right: 4px
+sidebar-menu-badge | E | pointer-events: none
+sidebar-menu-badge | E | position: absolute
+sidebar-menu-badge | E | top: 6px
+sidebar-menu-badge | E | user-select: none
+sidebar-menu-badge | E:is(:where(.peer\/menu-button) ~ *) | top: 10px [size=lg]
+sidebar-menu-badge | E:is(:where(.peer\/menu-button) ~ *) | top: 4px [size=sm]
+sidebar-menu-button | E > span:last-child | overflow: hidden
+sidebar-menu-button | E > span:last-child | text-overflow: ellipsis
+sidebar-menu-button | E > span:last-child | white-space: nowrap
+sidebar-menu-button | E ICON | flex-shrink: 0
+sidebar-menu-button | E ICON | height: 16px
+sidebar-menu-button | E ICON | width: 16px
+sidebar-menu-button | E | align-items: center
+sidebar-menu-button | E | background-color: #ffffff [variant=outline]
+sidebar-menu-button | E | background-color: transparent [variant=default]
+sidebar-menu-button | E | border-bottom-left-radius: 0px
+sidebar-menu-button | E | border-bottom-right-radius: 0px
+sidebar-menu-button | E | border-top-left-radius: 0px
+sidebar-menu-button | E | border-top-right-radius: 0px
+sidebar-menu-button | E | display: flex
+sidebar-menu-button | E | font-family: 'Inter Variable', Inter, sans-serif
+sidebar-menu-button | E | font-feature-settings: normal
+sidebar-menu-button | E | font-size: 12px [size=sm]
+sidebar-menu-button | E | font-size: 14px [size=md,lg]
+sidebar-menu-button | E | font-variation-settings: normal
+sidebar-menu-button | E | font-weight: 400
+sidebar-menu-button | E | gap: 8px
+sidebar-menu-button | E | height: 32px [size=sm]
+sidebar-menu-button | E | height: 36px [size=md]
+sidebar-menu-button | E | height: 56px [size=lg]
+sidebar-menu-button | E | letter-spacing: normal
+sidebar-menu-button | E | line-height: 1.33 [size=sm]
+sidebar-menu-button | E | line-height: 1.43 [size=md,lg]
+sidebar-menu-button | E | outline-color: #e4e4e7 [variant=outline]
+sidebar-menu-button | E | outline-offset: 0px [variant=outline]
+sidebar-menu-button | E | outline-style: none
+sidebar-menu-button | E | outline-width: 1px [variant=outline]
+sidebar-menu-button | E | overflow: hidden
+sidebar-menu-button | E | padding-bottom: 8px
+sidebar-menu-button | E | padding-left: 12px
+sidebar-menu-button | E | padding-right: 12px
+sidebar-menu-button | E | padding-top: 8px
+sidebar-menu-button | E | text-align: start
+sidebar-menu-button | E | transition-duration: 150ms
+sidebar-menu-button | E | transition-property: all
+sidebar-menu-button | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+sidebar-menu-button | E | width: 100%
+sidebar-menu-button | E:active | background-color: #f4f4f5
+sidebar-menu-button | E:active | color: #18181b
+sidebar-menu-button | E:disabled | opacity: 0.5
+sidebar-menu-button | E:disabled | pointer-events: none
+sidebar-menu-button | E:focus | border-bottom-color: #71717a
+sidebar-menu-button | E:focus | border-left-color: #71717a
+sidebar-menu-button | E:focus | border-right-color: #71717a
+sidebar-menu-button | E:focus | border-top-color: #71717a
+sidebar-menu-button | E:focus | ring: 2px #71717a
+sidebar-menu-button | E:hover | background-color: #f4f4f5
+sidebar-menu-button | E:hover | color: #18181b
+sidebar-menu-button | E:hover | outline-color: #f4f4f5 [variant=outline]
+sidebar-menu-button | E[data-active] | background-color: #f4f4f5
+sidebar-menu-button | E[data-active] | color: #18181b
+sidebar-menu-button | E[data-active] | font-weight: 500
+sidebar-menu-item | E | position: relative
+sidebar-menu-skeleton > [0] | E | border-bottom-left-radius: 0px
+sidebar-menu-skeleton > [0] | E | border-bottom-right-radius: 0px
+sidebar-menu-skeleton > [0] | E | border-top-left-radius: 0px
+sidebar-menu-skeleton > [0] | E | border-top-right-radius: 0px
+sidebar-menu-skeleton > [0] | E | height: 14px
+sidebar-menu-skeleton > [0] | E | width: 14px
+sidebar-menu-skeleton > [1] | E | flex: 1
+sidebar-menu-skeleton > [1] | E | height: 16px
+sidebar-menu-skeleton | E | align-items: center
+sidebar-menu-skeleton | E | border-bottom-left-radius: 0px
+sidebar-menu-skeleton | E | border-bottom-right-radius: 0px
+sidebar-menu-skeleton | E | border-top-left-radius: 0px
+sidebar-menu-skeleton | E | border-top-right-radius: 0px
+sidebar-menu-skeleton | E | display: flex
+sidebar-menu-skeleton | E | gap: 8px
+sidebar-menu-skeleton | E | height: 32px
+sidebar-menu-skeleton | E | padding-left: 8px
+sidebar-menu-skeleton | E | padding-right: 8px
+sidebar-menu-sub | E | border-inline-start: 1px solid #e4e4e7
+sidebar-menu-sub | E | display: flex [collapsible=offcanvas,none]
+sidebar-menu-sub | E | display: none [collapsible=icon]
+sidebar-menu-sub | E | flex-direction: column
+sidebar-menu-sub | E | gap: 4px
+sidebar-menu-sub | E | margin-left: 14px
+sidebar-menu-sub | E | margin-right: 14px
+sidebar-menu-sub | E | min-width: 0px
+sidebar-menu-sub | E | padding-bottom: 2px
+sidebar-menu-sub | E | padding-left: 10px
+sidebar-menu-sub | E | padding-right: 10px
+sidebar-menu-sub | E | padding-top: 2px
+sidebar-menu-sub | E | translate: 1px
+sidebar-menu-sub-button | E > span:last-child | overflow: hidden
+sidebar-menu-sub-button | E > span:last-child | text-overflow: ellipsis
+sidebar-menu-sub-button | E > span:last-child | white-space: nowrap
+sidebar-menu-sub-button | E ICON | color: #18181b
+sidebar-menu-sub-button | E ICON | flex-shrink: 0
+sidebar-menu-sub-button | E ICON | height: 14px
+sidebar-menu-sub-button | E ICON | width: 14px
+sidebar-menu-sub-button | E | align-items: center
+sidebar-menu-sub-button | E | border-bottom-left-radius: 0px
+sidebar-menu-sub-button | E | border-bottom-right-radius: 0px
+sidebar-menu-sub-button | E | border-top-left-radius: 0px
+sidebar-menu-sub-button | E | border-top-right-radius: 0px
+sidebar-menu-sub-button | E | color: #09090b
+sidebar-menu-sub-button | E | display: flex
+sidebar-menu-sub-button | E | font-family: 'Inter Variable', Inter, sans-serif [size=md,sm]
+sidebar-menu-sub-button | E | font-feature-settings: normal [size=md,sm]
+sidebar-menu-sub-button | E | font-size: 12px [size=sm]
+sidebar-menu-sub-button | E | font-size: 14px [size=md]
+sidebar-menu-sub-button | E | font-variation-settings: normal [size=md,sm]
+sidebar-menu-sub-button | E | font-weight: 400 [size=md,sm]
+sidebar-menu-sub-button | E | gap: 8px
+sidebar-menu-sub-button | E | height: 28px
+sidebar-menu-sub-button | E | letter-spacing: normal [size=md,sm]
+sidebar-menu-sub-button | E | line-height: 1.33 [size=sm]
+sidebar-menu-sub-button | E | line-height: 1.43 [size=md]
+sidebar-menu-sub-button | E | min-width: 0px
+sidebar-menu-sub-button | E | outline-style: none
+sidebar-menu-sub-button | E | overflow: hidden
+sidebar-menu-sub-button | E | padding-left: 12px
+sidebar-menu-sub-button | E | padding-right: 12px
+sidebar-menu-sub-button | E | translate: -1px
+sidebar-menu-sub-button | E:active | background-color: #f4f4f5
+sidebar-menu-sub-button | E:active | color: #18181b
+sidebar-menu-sub-button | E:disabled | opacity: 0.5
+sidebar-menu-sub-button | E:disabled | pointer-events: none
+sidebar-menu-sub-button | E:focus | border-bottom-color: #71717a
+sidebar-menu-sub-button | E:focus | border-left-color: #71717a
+sidebar-menu-sub-button | E:focus | border-right-color: #71717a
+sidebar-menu-sub-button | E:focus | border-top-color: #71717a
+sidebar-menu-sub-button | E:focus | ring: 2px #71717a
+sidebar-menu-sub-button | E:hover | background-color: #f4f4f5
+sidebar-menu-sub-button | E:hover | color: #18181b
+sidebar-menu-sub-button | E[data-active] | background-color: #f4f4f5
+sidebar-menu-sub-button | E[data-active] | color: #18181b
+sidebar-menu-sub-item | E | position: relative
+sidebar-rail > [0] | E | inset-block: 0px
+sidebar-rail > [0] | E | inset-inline-start: calc(1 / 2 * 100%)
+sidebar-rail > [0] | E | opacity: 0
+sidebar-rail > [0] | E | position: absolute
+sidebar-rail > [0] | E:is(:where(GROUP):hover *) | opacity: 1
+sidebar-rail | E | cursor: e-resize [side=end]
+sidebar-rail | E | cursor: w-resize [side=start]
+sidebar-rail | E | display: flex
+sidebar-rail | E | inset-block: 0px
+sidebar-rail | E | inset-inline-end: -16px [side=start]
+sidebar-rail | E | inset-inline-start: 0px [side=end]
+sidebar-rail | E | position: absolute
+sidebar-rail | E | transition-duration: 150ms
+sidebar-rail | E | transition-property: all
+sidebar-rail | E | transition-timing-function: linear
+sidebar-rail | E | translate: calc(calc(1 / 2 * 100%) * -1)
+sidebar-rail | E | width: 16px
+sidebar-rail | E | z-index: 20
+sidebar-rail | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | cursor: e-resize [side=start]
+sidebar-rail | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | cursor: w-resize [side=end]
+sidebar-rail | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | translate: calc(1 / 2 * 100%)
+sidebar-rail-line | E | background-color: #e4e4e7
+sidebar-rail-line | E | display: block
+sidebar-rail-line | E | height: 100%
+sidebar-rail-line | E | width: 2px
+sidebar-separator | E | margin-left: 8px
+sidebar-separator | E | margin-right: 8px
+sidebar-separator | E | width: auto
+sidebar-trigger > [0] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1
+sidebar-trigger > [1] | E | border-bottom-width: 0
+sidebar-trigger > [1] | E | border-left-width: 0
+sidebar-trigger > [1] | E | border-right-width: 0
+sidebar-trigger > [1] | E | border-top-width: 0
+sidebar-trigger > [1] | E | clip-path: inset(50%)
+sidebar-trigger > [1] | E | height: 1px
+sidebar-trigger > [1] | E | margin-bottom: -1px
+sidebar-trigger > [1] | E | margin-left: -1px
+sidebar-trigger > [1] | E | margin-right: -1px
+sidebar-trigger > [1] | E | margin-top: -1px
+sidebar-trigger > [1] | E | overflow: hidden
+sidebar-trigger > [1] | E | padding-bottom: 0
+sidebar-trigger > [1] | E | padding-left: 0
+sidebar-trigger > [1] | E | padding-right: 0
+sidebar-trigger > [1] | E | padding-top: 0
+sidebar-trigger > [1] | E | position: absolute
+sidebar-trigger > [1] | E | white-space: nowrap
+sidebar-trigger > [1] | E | width: 1px
+sidebar-wrapper | E | background-color: #ffffff [variant=inset]
+sidebar-wrapper | E | background-color: transparent [variant=default]
+sidebar-wrapper | E | display: flex
+sidebar-wrapper | E | min-height: 100svh
+sidebar-wrapper | E | width: 100%

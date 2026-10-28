@@ -1,0 +1,12 @@
+{
+  "calendar-day": {
+    "hover": {
+      "backgroundColor": "{colors.muted}",
+      "textColor": "{colors.foreground}"
+    },
+    "open": {
+      "backgroundColor": "{colors.muted}",
+      "textColor": "{colors.foreground}"
+    }
+  }
+}

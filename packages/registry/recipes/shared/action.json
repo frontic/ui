@@ -1,0 +1,14 @@
+{
+  "action": {
+    "border": "{border.default}",
+    "borderColor": "transparent",
+    "rounded": "{rounded.none}",
+    "typography": "{typography.caption}",
+    "fontWeight": "semibold",
+    "textTransform": "uppercase",
+    "letterSpacing": "widest",
+    "pressed": {
+      "translate": "0 {spacing.px}"
+    }
+  }
+}

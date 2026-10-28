@@ -1,0 +1,22 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Product Card Featured",
+  "description": "Large product card with a wishlist toggle and a feature badge on the photo, the brand above the title, a description, swatches that switch the image, and a prominent price beside a compare toggle.",
+  "categories": ["product"],
+  "recipes": {
+    "product-card-featured": {
+      "composes": ["product-card-title-lg", "product-card-lift", "meta", "focus-ring"]
+    },
+    "product-card-featured-description": {
+      "base": {
+        "extends": "hint",
+        "fontWeight": "medium"
+      }
+    },
+    "product-card-featured-image": {
+      "base": {
+        "rounded": "{rounded.none}"
+      }
+    }
+  }
+}

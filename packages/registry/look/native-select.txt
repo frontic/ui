@@ -1,0 +1,83 @@
+native-select | E | -webkit-user-select: none
+native-select | E | appearance: none
+native-select | E | background-color: transparent
+native-select | E | border-bottom-color: #a1a1aa
+native-select | E | border-bottom-left-radius: 0px
+native-select | E | border-bottom-right-radius: 0px
+native-select | E | border-bottom-style: solid
+native-select | E | border-bottom-width: 1px
+native-select | E | border-left-color: transparent
+native-select | E | border-left-style: solid
+native-select | E | border-left-width: 1px
+native-select | E | border-right-color: transparent
+native-select | E | border-right-style: solid
+native-select | E | border-right-width: 1px
+native-select | E | border-top-color: transparent
+native-select | E | border-top-left-radius: 0px
+native-select | E | border-top-right-radius: 0px
+native-select | E | border-top-style: solid
+native-select | E | border-top-width: 1px
+native-select | E | font-family: 'Inter Variable', Inter, sans-serif
+native-select | E | font-feature-settings: normal
+native-select | E | font-size: 14px
+native-select | E | font-variation-settings: normal
+native-select | E | font-weight: 400
+native-select | E | height: 36px [size=sm]
+native-select | E | height: 40px [size=md]
+native-select | E | letter-spacing: normal
+native-select | E | line-height: 1.43
+native-select | E | min-width: 0px
+native-select | E | outline-style: none
+native-select | E | padding-bottom: 8px
+native-select | E | padding-left: 0px
+native-select | E | padding-right: 32px
+native-select | E | padding-top: 8px
+native-select | E | transition-duration: 150ms
+native-select | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+native-select | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+native-select | E | user-select: none
+native-select | E | width: 100%
+native-select | E::file-selector-button | background-color: transparent
+native-select | E::file-selector-button | border-bottom-color: 
+native-select | E::file-selector-button | border-bottom-style: 
+native-select | E::file-selector-button | border-bottom-width: none
+native-select | E::file-selector-button | border-left-color: 
+native-select | E::file-selector-button | border-left-style: 
+native-select | E::file-selector-button | border-left-width: none
+native-select | E::file-selector-button | border-right-color: 
+native-select | E::file-selector-button | border-right-style: 
+native-select | E::file-selector-button | border-right-width: none
+native-select | E::file-selector-button | border-top-color: 
+native-select | E::file-selector-button | border-top-style: 
+native-select | E::file-selector-button | border-top-width: none
+native-select | E::file-selector-button | color: #09090b
+native-select | E::file-selector-button | font-family: 'Inter Variable', Inter, sans-serif
+native-select | E::file-selector-button | font-feature-settings: normal
+native-select | E::file-selector-button | font-size: 14px
+native-select | E::file-selector-button | font-variation-settings: normal
+native-select | E::file-selector-button | font-weight: 500
+native-select | E::file-selector-button | letter-spacing: normal
+native-select | E::file-selector-button | line-height: 1.43
+native-select | E::placeholder | color: #66666f
+native-select | E:disabled | cursor: not-allowed
+native-select | E:disabled | pointer-events: none
+native-select | E:focus | border-bottom-color: #71717a
+native-select | E:focus | border-bottom-style: solid
+native-select | E:focus | border-bottom-width: 2px
+native-select | E:invalid | border-bottom-color: #c70009
+native-select | E[data-placeholder] | color: #66666f
+native-select-icon | E | -webkit-user-select: none
+native-select-icon | E | color: #66666f
+native-select-icon | E | height: 14px
+native-select-icon | E | inset-inline-end: 0px
+native-select-icon | E | pointer-events: none
+native-select-icon | E | position: absolute
+native-select-icon | E | top: calc(1 / 2 * 100%)
+native-select-icon | E | translate: 0 calc(calc(1 / 2 * 100%) * -1)
+native-select-icon | E | user-select: none
+native-select-icon | E | width: 14px
+native-select-optgroup | E | color: #09090b
+native-select-option | E | color: #09090b
+native-select-wrapper | E | position: relative
+native-select-wrapper | E | width: fit-content
+native-select-wrapper | E:has(:disabled) | opacity: 0.5

@@ -1,0 +1,9 @@
+{
+  "menu-label": {
+    "textColor": "{colors.muted-foreground}",
+    "typography": "{typography.caption}",
+    "fontWeight": "semibold",
+    "letterSpacing": "wider",
+    "textTransform": "uppercase"
+  }
+}

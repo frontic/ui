@@ -1,0 +1,5 @@
+{
+  "overlay-backdrop": {
+    "backgroundColor": "{colors.foreground/20}"
+  }
+}

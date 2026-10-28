@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@v6
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm -r --filter './packages/*' build
+
+      - name: Type check
+        run: pnpm -r --filter './packages/*' typecheck
+
+      - name: Test
+        run: pnpm -r --filter './packages/*' test
+
+  # The sync pull request carries commits exported from the source repository, by their authors, without their sign-off; only the source repository's app can push its same-repository branch.
+  dco:
+    name: DCO sign-off
+    if: github.event_name == 'pull_request' && !(github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'sync/main')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Every commit is signed off by its author
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          missing=0
+          for sha in $(git rev-list --no-merges "$BASE..$HEAD"); do
+            author="$(git log -1 --format='%an <%ae>' "$sha")"
+            if ! git log -1 --format='%(trailers:key=Signed-off-by,valueonly)' "$sha" | grep -qxF "$author"; then
+              echo "::error::$(git log -1 --format='%h %s' "$sha") has no 'Signed-off-by: $author'. Sign it with git commit -s (see CONTRIBUTING.md)."
+              missing=1
+            fi
+          done
+          exit "$missing"

@@ -1,0 +1,23 @@
+<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
+<script lang="ts">
+/** Lists the top-level items of the mega menu. */
+export default {}
+</script>
+
+<script setup lang="ts">
+import type { NavigationMenuListProps } from 'reka-ui'
+import type { HTMLAttributes } from 'vue'
+import { reactiveOmit } from '@vueuse/core'
+import { NavigationMenuList, useForwardProps } from 'reka-ui'
+
+const props = defineProps<NavigationMenuListProps & { class?: HTMLAttributes['class'] }>()
+
+const delegatedProps = reactiveOmit(props, 'class')
+const forwardedProps = useForwardProps(delegatedProps)
+</script>
+
+<template>
+  <NavigationMenuList data-slot="mega-menu-list" v-bind="forwardedProps" :class="['fui-mega-menu-list list-none', props.class]">
+    <slot />
+  </NavigationMenuList>
+</template>

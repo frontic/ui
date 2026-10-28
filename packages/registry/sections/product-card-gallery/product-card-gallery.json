@@ -1,0 +1,21 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Product Card Gallery",
+  "description": "Image-led product tile with a wishlist toggle, variant thumbnails that switch the image, badge, rating and price.",
+  "categories": ["product"],
+  "recipes": {
+    "product-card-gallery": {
+      "composes": ["product-card-title", "product-card-lift", "meta", "hint", "focus-ring"]
+    },
+    "product-card-gallery-badge": {
+      "base": {
+        "textTransform": "uppercase"
+      }
+    },
+    "product-card-gallery-image": {
+      "base": {
+        "rounded": "{rounded.none}"
+      }
+    }
+  }
+}

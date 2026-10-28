@@ -1,0 +1,22 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Payment Card",
+  "description": "A card's number, expiry and security code: spaced as typed, brand shown and checked, each joining a Field; or a payment provider's hosted fields framed in the same look.",
+  "recipes": {
+    "payment-card-brand": {
+      "base": {
+        "height": "{spacing.5}",
+        "border": "{border.default}",
+        "borderColor": "{colors.border}",
+        "rounded": "{rounded.sm}"
+      }
+    },
+    "payment-card-brands": {
+      "base": {
+        "gap": "{spacing.1}",
+        "display": "flex",
+        "alignItems": "center"
+      }
+    }
+  }
+}

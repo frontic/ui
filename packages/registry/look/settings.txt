@@ -1,0 +1,5 @@
+Settings > [1] | E | display: flex
+Settings > [1] | E | flex-direction: column
+Settings > [1] | E | gap: 24px
+Settings > [2] | E | gap: 8px
+Settings > [2] | E | justify-content: flex-end

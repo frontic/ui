@@ -1,0 +1,134 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Field",
+  "description": "Wraps one form control with its label, description and error, wires their ids and validates the value; most form controls join a Field placed around them.",
+  "recipes": {
+    "field": {
+      "base": {
+        "display": "flex",
+        "width": "full",
+        "gap": "{spacing.3}"
+      }
+    },
+    "field-content": {
+      "base": {
+        "display": "flex",
+        "flex": "1",
+        "flexDirection": "column",
+        "gap": "{spacing.1}"
+      }
+    },
+    "field-description": {
+      "base": {
+        "extends": ["hint", "link-primary"],
+        "lineHeight": "normal",
+        "textAlign": "start",
+        "textTransform": "none",
+        "letterSpacing": "normal"
+      }
+    },
+    "field-error": {
+      "base": {
+        "extends": "error"
+      }
+    },
+    "field-group": {
+      "base": {
+        "display": "flex",
+        "width": "full",
+        "flexDirection": "column",
+        "gap": "{spacing.10}"
+      },
+      "variants": {
+        "kind": {
+          "fields": {},
+          "checkboxes": {
+            "gap": "{spacing.3}"
+          }
+        }
+      },
+      "defaults": {
+        "kind": "fields"
+      }
+    },
+    "field-label": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "label",
+        "gap": "{spacing.2}",
+        "lineHeight": "snug",
+        "display": "flex",
+        "width": "fit",
+        "invalid": {
+          "textColor": "{colors.destructive}"
+        }
+      },
+      "variants": {
+        "layout": {
+          "default": {},
+          "card": {
+            "width": "full",
+            "flexDirection": "column",
+            "border": "{border.default}",
+            "rounded": "{rounded.none}",
+            "checkedWithin": {
+              "backgroundColor": "{colors.primary/5}",
+              "borderColor": "{colors.primary/30}"
+            }
+          },
+          "beside": {
+            "typography": "{typography.small}",
+            "fontWeight": "normal",
+            "textTransform": "none",
+            "letterSpacing": "normal"
+          }
+        }
+      },
+      "defaults": {
+        "layout": "default"
+      }
+    },
+    "field-legend": {
+      "base": {
+        "marginBottom": "{spacing.3}"
+      },
+      "variants": {
+        "variant": {
+          "legend": {
+            "typography": "{typography.body}",
+            "fontWeight": "medium"
+          },
+          "label": {
+            "typography": "{typography.caption}",
+            "fontWeight": "semibold",
+            "textTransform": "uppercase"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "legend"
+      }
+    },
+    "field-separator": {
+      "base": {
+        "bleedY": "{spacing.2}",
+        "typography": "{typography.small}",
+        "height": "{spacing.5}"
+      }
+    },
+    "field-separator-content": {
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "textColor": "{colors.muted-foreground}",
+        "paddingX": "{spacing.2}"
+      }
+    },
+    "field-set": {
+      "base": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "{spacing.6}"
+      }
+    }
+  }
+}

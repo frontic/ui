@@ -1,0 +1,160 @@
+footer-brand > [0] | E | margin-left: auto
+footer-brand > [0] | E | margin-right: auto
+footer-brand > [0] | E | max-width: 1280px
+footer-brand > [0] | E | padding-left: 16px [phone]
+footer-brand > [0] | E | padding-left: 32px [desktop]
+footer-brand > [0] | E | padding-right: 16px [phone]
+footer-brand > [0] | E | padding-right: 32px [desktop]
+footer-brand > [10] | E | display: flex
+footer-brand > [10] | E | gap: 16px
+footer-brand > [10] | E | margin-top: 24px
+footer-brand > [11] | E | column-gap: 24px
+footer-brand > [11] | E | display: grid
+footer-brand > [11] | E | grid-column: span 4 / span 4 [desktop]
+footer-brand > [11] | E | grid-template-columns: repeat(2, minmax(0, 1fr)) [phone]
+footer-brand > [11] | E | grid-template-columns: repeat(4, minmax(0, 1fr)) [desktop]
+footer-brand > [11] | E | row-gap: 40px
+footer-brand > [12] | E | display: flex
+footer-brand > [12] | E | flex-direction: column
+footer-brand > [12] | E | gap: 12px
+footer-brand > [13] | E | display: flex
+footer-brand > [13] | E | flex-direction: column
+footer-brand > [13] | E | gap: 8px
+footer-brand > [14] | E | align-items: center [desktop]
+footer-brand > [14] | E | display: flex
+footer-brand > [14] | E | flex-direction: column [phone]
+footer-brand > [14] | E | flex-direction: row [desktop]
+footer-brand > [14] | E | gap: 16px
+footer-brand > [14] | E | justify-content: space-between [desktop]
+footer-brand > [14] | E | padding-bottom: 24px
+footer-brand > [14] | E | padding-top: 24px
+footer-brand > [15] | E | align-items: center
+footer-brand > [15] | E | column-gap: 20px
+footer-brand > [15] | E | display: flex
+footer-brand > [15] | E | flex-wrap: wrap
+footer-brand > [15] | E | row-gap: 8px
+footer-brand > [1] | E | display: grid
+footer-brand > [1] | E | gap: 32px [phone]
+footer-brand > [1] | E | gap: 48px [desktop]
+footer-brand > [1] | E | grid-template-columns: repeat(6, minmax(0, 1fr)) [desktop]
+footer-brand > [1] | E | padding-bottom: 48px [phone]
+footer-brand > [1] | E | padding-bottom: 64px [desktop]
+footer-brand > [1] | E | padding-top: 48px [phone]
+footer-brand > [1] | E | padding-top: 64px [desktop]
+footer-brand > [2] | E | grid-column: span 2 / span 2 [desktop]
+footer-brand > [3] | E | align-items: flex-start
+footer-brand > [3] | E | display: flex
+footer-brand > [3] | E | flex-direction: column
+footer-brand > [3] | E | gap: 8px
+footer-brand > [4] | E | display: inline-block
+footer-brand > [4] | E | outline-style: none
+footer-brand > [4] | E:focus | border-bottom-color: #71717a
+footer-brand > [4] | E:focus | border-left-color: #71717a
+footer-brand > [4] | E:focus | border-right-color: #71717a
+footer-brand > [4] | E:focus | border-top-color: #71717a
+footer-brand > [4] | E:focus | ring: 2px #71717a
+footer-brand > [5] | E | height: 32px
+footer-brand > [5] | E | width: auto
+footer-brand > [6] | E | margin-top: 32px
+footer-brand > [7] | E | display: flex
+footer-brand > [7] | E | flex-direction: column
+footer-brand > [7] | E | gap: 4px
+footer-brand > [8] | E | display: flex
+footer-brand > [8] | E | flex-direction: column [phone]
+footer-brand > [8] | E | flex-direction: row [desktop]
+footer-brand > [8] | E | gap: 8px
+footer-brand > [8] | E | margin-top: 16px
+footer-brand > [9] | E | flex: 1
+footer-brand | E | background-color: color-mix(in oklab, #f4f4f5 50%, transparent)
+footer-brand | E | container-type: inline-size
+footer-brand | E | width: 100%
+footer-brand-title #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+footer-brand-title #2 | E | font-feature-settings: normal
+footer-brand-title #2 | E | font-size: 14px
+footer-brand-title #2 | E | font-variation-settings: normal
+footer-brand-title #2 | E | font-weight: 600
+footer-brand-title #2 | E | letter-spacing: normal
+footer-brand-title #2 | E | line-height: 1.43
+footer-brand-title | E | font-family: 'Inter Variable', Inter, sans-serif
+footer-brand-title | E | font-feature-settings: normal
+footer-brand-title | E | font-size: 14px
+footer-brand-title | E | font-variation-settings: normal
+footer-brand-title | E | font-weight: 600
+footer-brand-title | E | letter-spacing: normal
+footer-brand-title | E | line-height: 1.43
+hint #2 | E | color: #66666f
+hint #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #2 | E | font-feature-settings: normal
+hint #2 | E | font-size: 14px
+hint #2 | E | font-variation-settings: normal
+hint #2 | E | font-weight: 400
+hint #2 | E | letter-spacing: normal
+hint #2 | E | line-height: 1.43
+hint #3 | E | color: #66666f
+hint #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #3 | E | font-feature-settings: normal
+hint #3 | E | font-size: 14px
+hint #3 | E | font-variation-settings: normal
+hint #3 | E | font-weight: 400
+hint #3 | E | letter-spacing: normal
+hint #3 | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+link #2 | E | color: #66666f
+link #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+link #2 | E | font-feature-settings: normal
+link #2 | E | font-size: 14px
+link #2 | E | font-variation-settings: normal
+link #2 | E | font-weight: 400
+link #2 | E | letter-spacing: normal
+link #2 | E | line-height: 1.43
+link #2 | E | outline-style: none
+link #2 | E:focus | border-bottom-color: #71717a
+link #2 | E:focus | border-left-color: #71717a
+link #2 | E:focus | border-right-color: #71717a
+link #2 | E:focus | border-top-color: #71717a
+link #2 | E:focus | ring: 2px #71717a
+link #2 | E:hover | color: #09090b
+link #3 | E | color: #66666f
+link #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+link #3 | E | font-feature-settings: normal
+link #3 | E | font-size: 14px
+link #3 | E | font-variation-settings: normal
+link #3 | E | font-weight: 400
+link #3 | E | letter-spacing: normal
+link #3 | E | line-height: 1.43
+link #3 | E | outline-style: none
+link #3 | E:focus | border-bottom-color: #71717a
+link #3 | E:focus | border-left-color: #71717a
+link #3 | E:focus | border-right-color: #71717a
+link #3 | E:focus | border-top-color: #71717a
+link #3 | E:focus | ring: 2px #71717a
+link #3 | E:hover | color: #09090b
+link | E | color: #66666f
+link | E | font-family: 'Inter Variable', Inter, sans-serif
+link | E | font-feature-settings: normal
+link | E | font-size: 14px
+link | E | font-variation-settings: normal
+link | E | font-weight: 400
+link | E | letter-spacing: normal
+link | E | line-height: 1.43
+link | E | outline-style: none
+link | E:focus | border-bottom-color: #71717a
+link | E:focus | border-left-color: #71717a
+link | E:focus | border-right-color: #71717a
+link | E:focus | border-top-color: #71717a
+link | E:focus | ring: 2px #71717a
+link | E:hover | color: #09090b
+logo | E | font-family: 'Inter Variable', Inter, sans-serif
+logo | E | font-feature-settings: normal
+logo | E | font-size: 20px
+logo | E | font-variation-settings: normal
+logo | E | font-weight: 700
+logo | E | letter-spacing: -0.025em
+logo | E | line-height: 28px

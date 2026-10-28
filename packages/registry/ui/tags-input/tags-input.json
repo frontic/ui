@@ -1,0 +1,62 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Tags Input",
+  "description": "An underlined field that collects several short values as removable tags, such as materials or interests; joins a Field around it.",
+  "recipes": {
+    "tags-input": {
+      "base": {
+        "extends": ["control", "control-line"],
+        "gap": "{spacing.2}",
+        "minHeight": "{spacing.10}",
+        "paddingX": "{spacing.0}",
+        "paddingY": "{spacing.1}",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "alignItems": "center",
+        "focusWithin": {
+          "borderBottom": "{border.focus}"
+        }
+      }
+    },
+    "tags-input-input": {
+      "base": {
+        "typography": "{typography.control}",
+        "placeholderColor": "{colors.muted-foreground}",
+        "minHeight": "{spacing.5}",
+        "paddingX": "{spacing.0}",
+        "flex": "1"
+      }
+    },
+    "tags-input-item": {
+      "base": {
+        "backgroundColor": "{colors.secondary}",
+        "rounded": "{rounded.none}",
+        "height": "{spacing.5}",
+        "display": "flex",
+        "alignItems": "center",
+        "selected": {
+          "outline": "{ring.outset}",
+          "outlineColor": "{colors.ring}"
+        }
+      }
+    },
+    "tags-input-item-delete": {
+      "base": {
+        "marginEnd": "{spacing.1}",
+        "rounded": "{rounded.none}",
+        "display": "flex",
+        "icon": {
+          "size": "{spacing.2.5}"
+        }
+      }
+    },
+    "tags-input-item-text": {
+      "base": {
+        "typography": "{typography.small}",
+        "rounded": "{rounded.none}",
+        "paddingX": "{spacing.2}",
+        "paddingY": "{spacing.0.5}"
+      }
+    }
+  }
+}

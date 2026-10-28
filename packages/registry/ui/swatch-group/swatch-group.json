@@ -1,0 +1,30 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Swatch Group",
+  "description": "A row or column of swatches for choosing one option, such as a colour, or several, as in a filter; joins a Field around it.",
+  "recipes": {
+    "swatch-group": {
+      "base": {
+        "gap": "{spacing.3}",
+        "display": "flex",
+        "@md": {
+          "gap": "{spacing.2}"
+        }
+      },
+      "variants": {
+        "orientation": {
+          "horizontal": {
+            "flexWrap": "wrap"
+          },
+          "vertical": {
+            "flexDirection": "column",
+            "flexWrap": "nowrap"
+          }
+        }
+      },
+      "defaults": {
+        "orientation": "horizontal"
+      }
+    }
+  }
+}

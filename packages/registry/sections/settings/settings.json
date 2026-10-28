@@ -1,0 +1,7 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Settings",
+  "description": "Settings card: switches in titled groups, each with a hint, disabled where an option is not available, and reset and save actions.",
+  "categories": ["account"],
+  "recipes": {}
+}

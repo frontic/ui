@@ -1,0 +1,16 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Product Card Minimal",
+  "description": "Quiet product tile with colour pills, name and subtitle, rating, colour count and price; linked as a whole when it has no colour pills.",
+  "categories": ["product"],
+  "recipes": {
+    "product-card-minimal": {
+      "composes": ["product-card-title", "product-card-lift", "hint", "meta", "focus-ring"]
+    },
+    "product-card-minimal-image": {
+      "base": {
+        "rounded": "{rounded.none}"
+      }
+    }
+  }
+}

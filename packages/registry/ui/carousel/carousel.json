@@ -1,0 +1,82 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Carousel",
+  "description": "Scrolls slides sideways or up and down, with previous and next buttons, dots that jump to a slide and a bar that shows how far the shopper has scrolled.",
+  "recipes": {
+    "carousel": {
+      "composes": ["focus-ring"]
+    },
+    "carousel-content": {
+      "base": {
+        "display": "flex"
+      },
+      "variants": {
+        "orientation": {
+          "horizontal": {
+            "bleedStart": "{spacing.4}"
+          },
+          "vertical": {
+            "flexDirection": "column",
+            "bleedTop": "{spacing.4}"
+          }
+        }
+      },
+      "defaults": {
+        "orientation": "horizontal"
+      }
+    },
+    "carousel-dot": {
+      "base": {
+        "extends": "track",
+        "backgroundColor": "{colors.muted-foreground}",
+        "rounded": "{rounded.none}",
+        "height": "{spacing.0.5}",
+        "width": "{spacing.6}",
+        "selected": {
+          "backgroundColor": "{colors.foreground}"
+        }
+      }
+    },
+    "carousel-dots": {
+      "base": {
+        "display": "flex"
+      }
+    },
+    "carousel-item": {
+      "base": {
+        "minWidth": "{spacing.0}",
+        "flexShrink": "0",
+        "flexGrow": "0"
+      },
+      "variants": {
+        "orientation": {
+          "horizontal": {
+            "paddingStart": "{spacing.4}"
+          },
+          "vertical": {
+            "paddingTop": "{spacing.4}"
+          }
+        }
+      },
+      "defaults": {
+        "orientation": "horizontal"
+      }
+    },
+    "carousel-progress": {
+      "base": {
+        "marginTop": "{spacing.3}",
+        "extends": "track",
+        "backgroundColor": "{colors.muted/30}",
+        "rounded": "{rounded.sm}",
+        "height": "{spacing.1}",
+        "width": "full"
+      }
+    },
+    "carousel-progress-indicator": {
+      "base": {
+        "extends": "track-fill",
+        "backgroundColor": "{colors.foreground}"
+      }
+    }
+  }
+}

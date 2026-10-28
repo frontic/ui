@@ -1,0 +1,29 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Header Centered",
+  "description": "Store header with a centred logo between a search slot (inline on wide screens, an overlay button on phones) and account and cart actions, over a full-width navigation slot.",
+  "categories": ["header"],
+  "recipes": {
+    "header-centered": {
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "borderBottom": "{border.default}",
+        "borderColor": "{colors.border}",
+        "width": "full"
+      }
+    },
+    "header-centered-logo": {
+      "composes": ["focus-ring"],
+      "base": {
+        "extends": "logo",
+        "typography": "{typography.headline}"
+      }
+    },
+    "header-centered-nav": {
+      "base": {
+        "borderTop": "{border.default}",
+        "borderColor": "{colors.border}"
+      }
+    }
+  }
+}

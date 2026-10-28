@@ -1,0 +1,86 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Empty",
+  "description": "Fills the space when there is nothing to show, such as an empty cart or a search without results, with an icon, a title, a hint and actions.",
+  "recipes": {
+    "empty": {
+      "base": {
+        "rounded": "{rounded.none}",
+        "gap": "{spacing.4}",
+        "padding": "{spacing.6}",
+        "display": "flex",
+        "width": "full",
+        "minWidth": "{spacing.0}",
+        "flex": "1",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "textAlign": "center",
+        "@md": {
+          "padding": "{spacing.12}"
+        }
+      }
+    },
+    "empty-content": {
+      "base": {
+        "typography": "{typography.small}",
+        "gap": "{spacing.4}",
+        "display": "flex",
+        "width": "full",
+        "maxWidth": "{container.sm}",
+        "minWidth": "{spacing.0}",
+        "flexDirection": "column",
+        "alignItems": "center"
+      }
+    },
+    "empty-description": {
+      "base": {
+        "marginTop": "{spacing.0.5}",
+        "extends": ["part-description", "link-primary"],
+        "lineHeight": "relaxed"
+      }
+    },
+    "empty-header": {
+      "base": {
+        "display": "flex",
+        "maxWidth": "{container.sm}",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "gap": "{spacing.2}"
+      }
+    },
+    "empty-media": {
+      "base": {
+        "rounded": "{rounded.none}",
+        "marginBottom": "{spacing.2}",
+        "display": "flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "variants": {
+        "variant": {
+          "default": {
+            "backgroundColor": "transparent"
+          },
+          "icon": {
+            "backgroundColor": "{colors.muted}",
+            "textColor": "{colors.foreground}",
+            "size": "{spacing.10}",
+            "icon": {
+              "size": "{spacing.5}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "variant": "default"
+      }
+    },
+    "empty-title": {
+      "base": {
+        "extends": "part-title-lg"
+      }
+    }
+  }
+}

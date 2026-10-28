@@ -1,0 +1,125 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Select",
+  "description": "Lets the user pick one option from a list that opens below the trigger at its width, joining a Field.",
+  "recipes": {
+    "select-chevron": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "size": "{spacing.3.5}"
+      }
+    },
+    "select-content": {
+      "base": {
+        "extends": "overlay",
+        "minWidth": "{spacing.36}"
+      },
+      "variants": {
+        "position": {
+          "popper": {
+            "width": "trigger"
+          },
+          "item-aligned": {}
+        }
+      },
+      "defaults": {
+        "position": "popper"
+      }
+    },
+    "select-group": {
+      "base": {
+        "padding": "{spacing.1.5}"
+      }
+    },
+    "select-item": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "option-item",
+        "gap": "{spacing.2.5}",
+        "paddingY": "{spacing.2}",
+        "paddingStart": "{spacing.3}",
+        "paddingEnd": "{spacing.8}",
+        "display": "flex",
+        "width": "full",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "select-item-indicator": {
+      "base": {
+        "size": "{spacing.4}"
+      }
+    },
+    "select-label": {
+      "base": {
+        "extends": "menu-label",
+        "paddingX": "{spacing.3}",
+        "paddingY": "{spacing.2}"
+      }
+    },
+    "select-scroll-button": {
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "paddingY": "{spacing.1}",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "select-separator": {
+      "base": {
+        "bleedX": "{spacing.1.5}",
+        "marginY": "{spacing.1.5}",
+        "extends": "divider",
+        "backgroundColor": "{colors.border/50}",
+        "height": "{spacing.px}"
+      }
+    },
+    "select-trigger": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": ["control", "control-line"],
+        "typography": "{typography.small}",
+        "gap": "{spacing.1.5}",
+        "paddingX": "{spacing.0}",
+        "paddingY": "{spacing.2}",
+        "display": "flex",
+        "width": "fit",
+        "alignItems": "center",
+        "justifyContent": "between",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      },
+      "variants": {
+        "size": {
+          "md": {
+            "height": "{spacing.10}"
+          },
+          "sm": {
+            "height": "{spacing.9}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "select-value": {
+      "base": {
+        "alignItems": "center",
+        "gap": "{spacing.1.5}"
+      }
+    },
+    "select-value-placeholder": {
+      "base": {
+        "textColor": "{colors.muted-foreground}"
+      }
+    }
+  }
+}

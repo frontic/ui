@@ -1,0 +1,7 @@
+{
+  "invalid": {
+    "borderColor": "{colors.destructive}",
+    "outline": "{ring.focus}",
+    "outlineColor": "{colors.destructive/20}"
+  }
+}

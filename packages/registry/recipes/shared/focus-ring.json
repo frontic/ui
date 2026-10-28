@@ -1,0 +1,7 @@
+{
+  "focus-ring": {
+    "borderColor": "{colors.ring}",
+    "outline": "{ring.focus}",
+    "outlineColor": "{colors.ring}"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Scroll Area",
+  "description": "Holds content that scrolls inside a fixed area, vertically, horizontally or both, with a slim bar that shows on hover.",
+  "recipes": {
+    "scroll-area-scrollbar": {
+      "base": {
+        "display": "flex"
+      },
+      "variants": {
+        "orientation": {
+          "vertical": {
+            "width": "{spacing.2.5}",
+            "paddingY": "{spacing.px}",
+            "paddingEnd": "{spacing.px}",
+            "paddingStart": "{spacing.0.5}",
+            "height": "full"
+          },
+          "horizontal": {
+            "height": "{spacing.2.5}",
+            "paddingX": "{spacing.px}",
+            "paddingBottom": "{spacing.px}",
+            "paddingTop": "{spacing.0.5}",
+            "flexDirection": "column"
+          }
+        }
+      },
+      "defaults": {
+        "orientation": "vertical"
+      }
+    },
+    "scroll-area-thumb": {
+      "base": {
+        "backgroundColor": "{colors.border}",
+        "rounded": "{rounded.none}"
+      }
+    },
+    "scroll-area-viewport": {
+      "base": {
+        "focus": {
+          "outline": "{ring.wide}",
+          "outlineColor": "{colors.ring}"
+        }
+      }
+    }
+  }
+}

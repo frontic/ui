@@ -1,0 +1,33 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Date Picker",
+  "description": "A date typed segment by segment or picked from a calendar the button beside it opens; joins a Field around it.",
+  "recipes": {
+    "date-picker-content": {
+      "base": {
+        "padding": "{spacing.0}",
+        "width": "auto"
+      }
+    },
+    "date-picker-trigger": {
+      "composes": ["focus-ring"],
+      "base": {
+        "bleedEnd": "{spacing.2}",
+        "textColor": "{colors.muted-foreground}",
+        "rounded": "{rounded.sm}",
+        "padding": "{spacing.2}",
+        "marginStart": "auto",
+        "display": "inline-flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.4}"
+        },
+        "hover": {
+          "textColor": "{colors.foreground}"
+        }
+      }
+    }
+  }
+}

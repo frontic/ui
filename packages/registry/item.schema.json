@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Frontic UI registry item manifest",
+  "description": "One registry item's manifest: in the registry's source, where the build derives its files and dependencies; in a project, beside the component's files, where `add` writes it; and as a stack stores an item. A component's manifest holds the recipe trees it owns. A stored item carries type and may leave out title and description; an authored manifest holds both and no top-level composes.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "The item's name; when present it must equal the folder the manifest sits in, which names the item."
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recipes": {
+      "type": "object",
+      "description": "The trees this item owns, by name; each is a recipe as https://registry.ui.frontic.com/recipe.schema.json describes it, and lists in composes the shared recipes its element wears. A tree may hold only composes; an element with no tree of its own answers to the item's root tree.",
+      "propertyNames": {
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "composes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]*$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "composes": {
+      "type": "array",
+      "description": "Never authored: a registry source or project manifest lists what each tree's element wears in that tree's own composes. An item stored by a Frontic account, which carries type, may still hold this top-level list until the account's library is migrated; composesOf reads both.",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "type": {
+      "type": "string",
+      "description": "The item's registry type, such as registry:ui; a stack's stored item carries it."
+    },
+    "files": {
+      "type": "array",
+      "description": "The item's files; a stack's stored item carries them.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          }
+        },
+        "required": ["path", "type"]
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The npm packages the item's files import."
+    },
+    "devDependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The npm packages the item needs at build time."
+    },
+    "registryDependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The registry items the item's files import."
+    },
+    "meta": {
+      "type": "object",
+      "description": "A stack's own data on a stored item.",
+      "properties": {
+        "frontic": {
+          "type": "object",
+          "properties": {
+            "props": {
+              "type": "array",
+              "description": "The item's props, as the stack reads them.",
+              "items": {
+                "type": "object"
+              }
+            },
+            "source": {
+              "type": "object",
+              "description": "Where the stored item came from.",
+              "properties": {
+                "registry": {
+                  "type": "string"
+                },
+                "item": {
+                  "type": "string"
+                },
+                "commit": {
+                  "type": ["string", "null"]
+                }
+              },
+              "required": ["registry", "item", "commit"],
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "if": {
+    "required": ["type"]
+  },
+  "then": {},
+  "else": {
+    "required": ["title", "description"],
+    "not": {
+      "required": ["composes"]
+    }
+  },
+  "additionalProperties": false
+}

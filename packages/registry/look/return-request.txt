@@ -1,0 +1,22 @@
+ReturnRequest > [1] | E | display: flex
+ReturnRequest > [1] | E | flex-direction: column
+ReturnRequest > [1] | E | gap: 24px
+ReturnRequest > [2] | E | width: 100%
+ReturnRequest > [3] | E | grid-template-columns: repeat(2, minmax(0, 1fr))
+ReturnRequest > [4] | E | gap: 16px
+ReturnRequest > [4] | E | justify-content: space-between
+ReturnRequest > [5] | E | display: flex
+ReturnRequest > [5] | E | flex-direction: column
+checkbox-group > [0] | E:is(:where(GROUP):disabled *) | opacity: 0.5
+checkbox-group | E | display: flex
+checkbox-group | E | flex-direction: column
+checkbox-group | E | gap: 12px
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+return-request-option | E | font-weight: 400

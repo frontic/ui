@@ -1,0 +1,6 @@
+{
+  "calendar-day-today": {
+    "backgroundColor": "{colors.accent}",
+    "textColor": "{colors.accent-foreground}"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "calendar-nav-button": {
+    "backgroundColor": "transparent",
+    "borderColor": "{colors.border}",
+    "opacity": "{opacity.50}",
+    "hover": {
+      "backgroundColor": "{colors.muted}",
+      "textColor": "{colors.foreground}",
+      "opacity": "{opacity.100}"
+    },
+    "open": {
+      "backgroundColor": "{colors.muted}",
+      "textColor": "{colors.foreground}"
+    }
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "AlertCircleIcon": {
+    "lucide": "AlertCircleIcon",
+    "tabler": "IconExclamationCircle",
+    "hugeicons": "AlertCircleIcon",
+    "phosphor": "PhWarningCircle",
+    "remixicon": "RiAlertLine"
+  },
+  "ArrowLeftIcon": {
+    "lucide": "ArrowLeftIcon",
+    "tabler": "IconArrowLeft",
+    "hugeicons": "ArrowLeft01Icon",
+    "phosphor": "PhArrowLeft",
+    "remixicon": "RiArrowLeftLine"
+  },
+  "ArrowRightIcon": {
+    "lucide": "ArrowRightIcon",
+    "tabler": "IconArrowRight",
+    "hugeicons": "ArrowRight01Icon",
+    "phosphor": "PhArrowRight",
+    "remixicon": "RiArrowRightLine"
+  },
+  "ArrowUpDownIcon": {
+    "lucide": "ArrowUpDownIcon",
+    "tabler": "IconArrowsSort",
+    "phosphor": "PhArrowsVertical",
+    "remixicon": "RiArrowUpDownLine",
+    "hugeicons": "ArrowUpDownIcon"
+  },
+  "BellRingIcon": {
+    "lucide": "BellRingIcon",
+    "tabler": "IconBellRinging",
+    "phosphor": "PhBellRinging",
+    "remixicon": "RiBellLine",
+    "hugeicons": "BellRingIcon"
+  },
+  "BoldIcon": {
+    "lucide": "BoldIcon",
+    "tabler": "IconBold",
+    "hugeicons": "TextBoldIcon",
+    "phosphor": "PhTextB",
+    "remixicon": "RiBold"
+  },
+  "CalculatorIcon": {
+    "lucide": "CalculatorIcon",
+    "tabler": "IconCalculator",
+    "hugeicons": "CalculatorIcon",
+    "phosphor": "PhCalculator",
+    "remixicon": "RiCalculatorLine"
+  },
+  "CalendarIcon": {
+    "lucide": "CalendarIcon",
+    "tabler": "IconCalendar",
+    "hugeicons": "Calendar03Icon",
+    "phosphor": "PhCalendarBlank",
+    "remixicon": "RiCalendarLine"
+  },
+  "CheckIcon": {
+    "lucide": "CheckIcon",
+    "tabler": "IconCheck",
+    "hugeicons": "Tick02Icon",
+    "phosphor": "PhCheck",
+    "remixicon": "RiCheckLine"
+  },
+  "ChevronDownIcon": {
+    "lucide": "ChevronDownIcon",
+    "tabler": "IconChevronDown",
+    "hugeicons": "ArrowDown01Icon",
+    "phosphor": "PhCaretDown",
+    "remixicon": "RiArrowDownSLine"
+  },
+  "ChevronLeftIcon": {
+    "lucide": "ChevronLeftIcon",
+    "tabler": "IconChevronLeft",
+    "hugeicons": "ArrowLeft01Icon",
+    "phosphor": "PhCaretLeft",
+    "remixicon": "RiArrowLeftSLine"
+  },
+  "ChevronRightIcon": {
+    "lucide": "ChevronRightIcon",
+    "tabler": "IconChevronRight",
+    "hugeicons": "ArrowRight01Icon",
+    "phosphor": "PhCaretRight",
+    "remixicon": "RiArrowRightSLine"
+  },
+  "ChevronUpIcon": {
+    "lucide": "ChevronUpIcon",
+    "tabler": "IconChevronUp",
+    "hugeicons": "ArrowUp01Icon",
+    "phosphor": "PhCaretUp",
+    "remixicon": "RiArrowUpSLine"
+  },
+  "ChevronsLeftIcon": {
+    "lucide": "ChevronsLeftIcon",
+    "tabler": "IconChevronsLeft",
+    "hugeicons": "ArrowLeftDoubleIcon",
+    "phosphor": "PhCaretDoubleLeft",
+    "remixicon": "RiArrowLeftDoubleLine"
+  },
+  "ChevronsRightIcon": {
+    "lucide": "ChevronsRightIcon",
+    "tabler": "IconChevronsRight",
+    "hugeicons": "ArrowRightDoubleIcon",
+    "phosphor": "PhCaretDoubleRight",
+    "remixicon": "RiArrowRightDoubleLine"
+  },
+  "ChevronsUpDownIcon": {
+    "lucide": "ChevronsUpDownIcon",
+    "tabler": "IconSelector",
+    "hugeicons": "UnfoldMoreIcon",
+    "phosphor": "PhCaretUpDown",
+    "remixicon": "RiExpandUpDownLine"
+  },
+  "CircleIcon": {
+    "lucide": "CircleIcon",
+    "tabler": "IconCircle",
+    "hugeicons": "CircleIcon",
+    "phosphor": "PhCircle",
+    "remixicon": "RiCircleLine"
+  },
+  "CircleCheckIcon": {
+    "lucide": "CircleCheckIcon",
+    "tabler": "IconCircleCheck",
+    "hugeicons": "CheckmarkCircle01Icon",
+    "phosphor": "PhCheckCircle",
+    "remixicon": "RiCheckboxCircleLine"
+  },
+  "CopyIcon": {
+    "lucide": "CopyIcon",
+    "tabler": "IconCopy",
+    "hugeicons": "Copy01Icon",
+    "phosphor": "PhCopy",
+    "remixicon": "RiFileCopyLine"
+  },
+  "CreditCardIcon": {
+    "lucide": "CreditCardIcon",
+    "tabler": "IconCreditCard",
+    "hugeicons": "CreditCardIcon",
+    "phosphor": "PhCreditCard",
+    "remixicon": "RiBankCardLine"
+  },
+  "GripVerticalIcon": {
+    "lucide": "GripVerticalIcon",
+    "tabler": "IconGripVertical",
+    "phosphor": "PhDotsSixVertical",
+    "remixicon": "RiDraggable",
+    "hugeicons": "GripVerticalIcon"
+  },
+  "InfoIcon": {
+    "lucide": "InfoIcon",
+    "tabler": "IconInfoCircle",
+    "hugeicons": "InformationCircleIcon",
+    "phosphor": "PhInfo",
+    "remixicon": "RiInformationLine"
+  },
+  "ItalicIcon": {
+    "lucide": "ItalicIcon",
+    "tabler": "IconItalic",
+    "hugeicons": "TextItalicIcon",
+    "phosphor": "PhTextItalic",
+    "remixicon": "RiItalic"
+  },
+  "Loader2Icon": {
+    "lucide": "Loader2Icon",
+    "tabler": "IconLoader2",
+    "hugeicons": "Loading03Icon",
+    "phosphor": "PhCircleNotch",
+    "remixicon": "RiLoader4Line"
+  },
+  "MailIcon": {
+    "lucide": "MailIcon",
+    "tabler": "IconMail",
+    "hugeicons": "MailIcon",
+    "phosphor": "PhEnvelopeSimple",
+    "remixicon": "RiMailLine"
+  },
+  "MailOpenIcon": {
+    "lucide": "MailOpenIcon",
+    "tabler": "IconMailOpened",
+    "phosphor": "PhEnvelopeSimpleOpen",
+    "remixicon": "RiMailOpenLine",
+    "hugeicons": "MailOpenIcon"
+  },
+  "MinusIcon": {
+    "lucide": "MinusIcon",
+    "tabler": "IconMinus",
+    "hugeicons": "MinusSignIcon",
+    "phosphor": "PhMinus",
+    "remixicon": "RiSubtractLine"
+  },
+  "MoonIcon": {
+    "lucide": "MoonIcon",
+    "tabler": "IconMoon",
+    "hugeicons": "MoonIcon",
+    "phosphor": "PhMoon",
+    "remixicon": "RiMoonLine"
+  },
+  "MoreHorizontalIcon": {
+    "lucide": "MoreHorizontalIcon",
+    "tabler": "IconDots",
+    "hugeicons": "MoreHorizontalCircle01Icon",
+    "phosphor": "PhDotsThree",
+    "remixicon": "RiMoreLine"
+  },
+  "OctagonXIcon": {
+    "lucide": "OctagonXIcon",
+    "tabler": "IconOctagonOff",
+    "hugeicons": "CancelCircleIcon",
+    "phosphor": "PhXCircle",
+    "remixicon": "RiCloseCircleLine"
+  },
+  "PanelLeftIcon": {
+    "lucide": "PanelLeftIcon",
+    "tabler": "IconLayoutSidebar",
+    "hugeicons": "LayoutLeftIcon",
+    "phosphor": "PhSidebarSimple",
+    "remixicon": "RiSideBarLine"
+  },
+  "PlusIcon": {
+    "lucide": "PlusIcon",
+    "tabler": "IconPlus",
+    "hugeicons": "PlusSignIcon",
+    "phosphor": "PhPlus",
+    "remixicon": "RiAddLine"
+  },
+  "SearchIcon": {
+    "lucide": "SearchIcon",
+    "tabler": "IconSearch",
+    "hugeicons": "SearchIcon",
+    "phosphor": "PhMagnifyingGlass",
+    "remixicon": "RiSearchLine"
+  },
+  "SendIcon": {
+    "lucide": "SendIcon",
+    "tabler": "IconSend",
+    "hugeicons": "SentIcon",
+    "phosphor": "PhPaperPlaneTilt",
+    "remixicon": "RiSendPlaneLine"
+  },
+  "SettingsIcon": {
+    "lucide": "SettingsIcon",
+    "tabler": "IconSettings",
+    "hugeicons": "Settings01Icon",
+    "phosphor": "PhGear",
+    "remixicon": "RiSettingsLine"
+  },
+  "SlashIcon": {
+    "lucide": "SlashIcon",
+    "tabler": "IconSlash",
+    "phosphor": "PhCaretRight",
+    "remixicon": "RiSlashCommands",
+    "hugeicons": "SlashIcon"
+  },
+  "SmileIcon": {
+    "lucide": "SmileIcon",
+    "tabler": "IconMoodSmile",
+    "hugeicons": "SmileIcon",
+    "phosphor": "PhSmiley",
+    "remixicon": "RiEmotionLine"
+  },
+  "SunIcon": {
+    "lucide": "SunIcon",
+    "tabler": "IconSun",
+    "hugeicons": "Sun03Icon",
+    "phosphor": "PhSun",
+    "remixicon": "RiSunLine"
+  },
+  "TerminalIcon": {
+    "lucide": "TerminalIcon",
+    "tabler": "IconTerminal",
+    "phosphor": "PhTerminal",
+    "remixicon": "RiTerminalBoxLine",
+    "hugeicons": "TerminalIcon"
+  },
+  "TriangleAlertIcon": {
+    "lucide": "TriangleAlertIcon",
+    "tabler": "IconAlertTriangle",
+    "hugeicons": "Alert02Icon",
+    "phosphor": "PhWarning",
+    "remixicon": "RiAlertLine"
+  },
+  "UnderlineIcon": {
+    "lucide": "UnderlineIcon",
+    "tabler": "IconUnderline",
+    "hugeicons": "TextUnderlineIcon",
+    "phosphor": "PhTextUnderline",
+    "remixicon": "RiUnderline"
+  },
+  "UserIcon": {
+    "lucide": "UserIcon",
+    "tabler": "IconUser",
+    "hugeicons": "User02Icon",
+    "phosphor": "PhUser",
+    "remixicon": "RiUserLine"
+  },
+  "XIcon": {
+    "lucide": "XIcon",
+    "tabler": "IconX",
+    "hugeicons": "Cancel01Icon",
+    "phosphor": "PhX",
+    "remixicon": "RiCloseLine"
+  }
+}

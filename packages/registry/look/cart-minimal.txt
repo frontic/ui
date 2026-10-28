@@ -1,0 +1,72 @@
+CartMinimal > [0] | E | position: relative
+CartMinimal > [10] | E | width: 100%
+CartMinimal > [1] | E | height: 20px
+CartMinimal > [1] | E | width: 20px
+CartMinimal > [2] | E | inset-inline-end: -4px
+CartMinimal > [2] | E | position: absolute
+CartMinimal > [2] | E | top: -4px
+CartMinimal > [3] | E | container-type: inline-size
+CartMinimal > [3] | E | padding-bottom: 0px
+CartMinimal > [3] | E | padding-left: 0px
+CartMinimal > [3] | E | padding-right: 0px
+CartMinimal > [3] | E | padding-top: 0px
+CartMinimal > [3] | E | width: 320px
+CartMinimal > [4] | E | align-items: center
+CartMinimal > [4] | E | display: flex
+CartMinimal > [4] | E | justify-content: space-between
+CartMinimal > [4] | E | padding-bottom: 8px
+CartMinimal > [4] | E | padding-left: 16px
+CartMinimal > [4] | E | padding-right: 16px
+CartMinimal > [4] | E | padding-top: 16px
+CartMinimal > [5] | E | display: flex
+CartMinimal > [5] | E | flex-direction: column
+CartMinimal > [5] | E | gap: 12px
+CartMinimal > [5] | E | padding-bottom: 12px
+CartMinimal > [5] | E | padding-left: 16px
+CartMinimal > [5] | E | padding-right: 16px
+CartMinimal > [6] | E | display: flex
+CartMinimal > [6] | E | flex-direction: column
+CartMinimal > [6] | E | gap: 8px
+CartMinimal > [6] | E | padding-bottom: 16px
+CartMinimal > [6] | E | padding-left: 16px
+CartMinimal > [6] | E | padding-right: 16px
+CartMinimal > [6] | E | padding-top: 16px
+CartMinimal > [7] | E | align-items: center
+CartMinimal > [7] | E | display: flex
+CartMinimal > [7] | E | justify-content: space-between
+CartMinimal > [8] | E | display: flex
+CartMinimal > [8] | E | flex-direction: column
+CartMinimal > [8] | E | gap: 8px
+CartMinimal > [8] | E | margin-top: 4px
+CartMinimal > [9] | E | width: 100%
+cart-minimal-title | E | font-family: 'Inter Variable', Inter, sans-serif
+cart-minimal-title | E | font-feature-settings: normal
+cart-minimal-title | E | font-size: 14px
+cart-minimal-title | E | font-variation-settings: normal
+cart-minimal-title | E | font-weight: 600
+cart-minimal-title | E | letter-spacing: normal
+cart-minimal-title | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+meta #2 | E | color: #66666f
+meta #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #2 | E | font-feature-settings: normal
+meta #2 | E | font-size: 12px
+meta #2 | E | font-variation-settings: normal
+meta #2 | E | font-weight: 400
+meta #2 | E | letter-spacing: normal
+meta #2 | E | line-height: 1.33
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33

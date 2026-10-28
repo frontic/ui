@@ -1,0 +1,408 @@
+# approximate: navigation-shop > [9]
+# approximate: navigation-shop-columns
+# approximate: navigation-shop-columns > [0]
+# approximate: navigation-shop-content > [2]
+# approximate: navigation-shop-content > [3]
+# approximate: navigation-shop-content > [5]
+# approximate: navigation-shop-featured-image #2
+# approximate: navigation-shop-featured-image #3
+# approximate: navigation-shop-featured-image > [0] #3
+# approximate: navigation-shop-page #3
+NavigationShop > [0] | :where(E > :not(:last-child)) | margin-bottom: calc(12px * calc(1 - 0))
+NavigationShop > [0] | :where(E > :not(:last-child)) | margin-top: calc(12px * 0)
+NavigationShop > [0] | E | margin-top: 16px
+NavigationShop > [1] | E | display: flex
+NavigationShop > [2] | E | position: relative
+NavigationShop > [3] | E | display: flex
+NavigationShop > [3] | E | flex-direction: column
+NavigationShop > [3] | E | gap: 4px
+NavigationShop > [3] | E | margin-top: 16px
+focus-ring #2 | E | display: block
+focus-ring #2 | E | outline-style: none
+focus-ring #2 | E | padding-bottom: 8px
+focus-ring #2 | E | padding-top: 8px
+focus-ring #2 | E:focus | border-bottom-color: #71717a
+focus-ring #2 | E:focus | border-left-color: #71717a
+focus-ring #2 | E:focus | border-right-color: #71717a
+focus-ring #2 | E:focus | border-top-color: #71717a
+focus-ring #2 | E:focus | ring: 2px #71717a
+focus-ring | E | display: block
+focus-ring | E | outline-style: none
+focus-ring | E | padding-bottom: 8px
+focus-ring | E | padding-top: 8px
+focus-ring | E:focus | border-bottom-color: #71717a
+focus-ring | E:focus | border-left-color: #71717a
+focus-ring | E:focus | border-right-color: #71717a
+focus-ring | E:focus | border-top-color: #71717a
+focus-ring | E:focus | ring: 2px #71717a
+hint #2 | E | color: #66666f
+hint #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #2 | E | font-feature-settings: normal
+hint #2 | E | font-size: 14px
+hint #2 | E | font-variation-settings: normal
+hint #2 | E | font-weight: 400
+hint #2 | E | letter-spacing: normal
+hint #2 | E | line-height: 1.43
+hint #3 | E | color: #66666f
+hint #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #3 | E | font-feature-settings: normal
+hint #3 | E | font-size: 14px
+hint #3 | E | font-variation-settings: normal
+hint #3 | E | font-weight: 400
+hint #3 | E | letter-spacing: normal
+hint #3 | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+line-title #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title #2 | E | font-feature-settings: normal
+line-title #2 | E | font-size: 14px
+line-title #2 | E | font-variation-settings: normal
+line-title #2 | E | font-weight: 500
+line-title #2 | E | letter-spacing: normal
+line-title #2 | E | line-height: 1.25
+line-title #2 | E | outline-style: none
+line-title #2 | E:focus | border-bottom-color: #71717a
+line-title #2 | E:focus | border-left-color: #71717a
+line-title #2 | E:focus | border-right-color: #71717a
+line-title #2 | E:focus | border-top-color: #71717a
+line-title #2 | E:focus | ring: 2px #71717a
+line-title #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title #3 | E | font-feature-settings: normal
+line-title #3 | E | font-size: 14px
+line-title #3 | E | font-variation-settings: normal
+line-title #3 | E | font-weight: 500
+line-title #3 | E | letter-spacing: normal
+line-title #3 | E | line-height: 1.25
+line-title > [0] #2 | E | inset: 0px
+line-title > [0] #2 | E | position: absolute
+line-title > [0] #2 | E | z-index: 10
+line-title > [0] #3 | E | inset: 0px
+line-title > [0] #3 | E | position: absolute
+line-title > [0] | E | inset: 0px
+line-title > [0] | E | position: absolute
+line-title > [0] | E | z-index: 10
+line-title | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title | E | font-feature-settings: normal
+line-title | E | font-size: 14px
+line-title | E | font-variation-settings: normal
+line-title | E | font-weight: 500
+line-title | E | letter-spacing: normal
+line-title | E | line-height: 1.25
+link #2 | E | color: #66666f
+link #2 | E | display: flow-root
+link #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+link #2 | E | font-feature-settings: normal
+link #2 | E | font-size: 14px
+link #2 | E | font-variation-settings: normal
+link #2 | E | font-weight: 400
+link #2 | E | letter-spacing: normal
+link #2 | E | line-height: 1.43
+link #2 | E:hover | color: #09090b
+link | E | color: #66666f
+link | E | font-family: 'Inter Variable', Inter, sans-serif
+link | E | font-feature-settings: normal
+link | E | font-size: 14px
+link | E | font-variation-settings: normal
+link | E | font-weight: 400
+link | E | letter-spacing: normal
+link | E | line-height: 1.43
+link | E:hover | color: #09090b
+navigation-shop > [0] | E | display: none [desktop]
+navigation-shop > [10] | E | display: flex
+navigation-shop > [10] | E | flex-direction: column
+navigation-shop > [10] | E | gap: 4px
+navigation-shop > [10] | E | margin-top: 12px
+navigation-shop > [11] | E | display: flex
+navigation-shop > [11] | E | flex-direction: column
+navigation-shop > [11] | E | margin-top: 8px
+navigation-shop > [12] | E | display: flex
+navigation-shop > [12] | E | flex-direction: column
+navigation-shop > [12] | E | padding-bottom: 16px
+navigation-shop > [12] | E | padding-left: 16px
+navigation-shop > [12] | E | padding-right: 16px
+navigation-shop > [12] | E | padding-top: 16px
+navigation-shop > [13] | :where(E > :not(:last-child)) | margin-bottom: calc(24px * calc(1 - 0))
+navigation-shop > [13] | :where(E > :not(:last-child)) | margin-top: calc(24px * 0)
+navigation-shop > [13] | E | padding-bottom: 24px
+navigation-shop > [13] | E | padding-left: 16px
+navigation-shop > [13] | E | padding-right: 16px
+navigation-shop > [13] | E | padding-top: 24px
+navigation-shop > [14] | E | align-self: stretch [desktop]
+navigation-shop > [14] | E | display: flex [desktop]
+navigation-shop > [14] | E | display: none [phone]
+navigation-shop > [14] | E | position: static
+navigation-shop > [14] | E | width: auto [desktop]
+navigation-shop > [15] | E | gap: 32px [layout=captioned]
+navigation-shop > [1] | E | max-width: 320px
+navigation-shop > [1] | E | overflow-y: auto
+navigation-shop > [1] | E | padding-bottom: 0px
+navigation-shop > [1] | E | padding-left: 0px
+navigation-shop > [1] | E | padding-right: 0px
+navigation-shop > [1] | E | padding-top: 0px
+navigation-shop > [1] | E | width: 100%
+navigation-shop > [2] | E | border-bottom-width: 0
+navigation-shop > [2] | E | border-left-width: 0
+navigation-shop > [2] | E | border-right-width: 0
+navigation-shop > [2] | E | border-top-width: 0
+navigation-shop > [2] | E | clip-path: inset(50%)
+navigation-shop > [2] | E | height: 1px
+navigation-shop > [2] | E | margin-bottom: -1px
+navigation-shop > [2] | E | margin-left: -1px
+navigation-shop > [2] | E | margin-right: -1px
+navigation-shop > [2] | E | margin-top: -1px
+navigation-shop > [2] | E | overflow: hidden
+navigation-shop > [2] | E | padding-bottom: 0
+navigation-shop > [2] | E | padding-left: 0
+navigation-shop > [2] | E | padding-right: 0
+navigation-shop > [2] | E | padding-top: 0
+navigation-shop > [2] | E | position: absolute
+navigation-shop > [2] | E | white-space: nowrap
+navigation-shop > [2] | E | width: 1px
+navigation-shop > [3] | E | margin-top: 8px
+navigation-shop > [4] | E | padding-left: 16px
+navigation-shop > [4] | E | padding-right: 56px
+navigation-shop > [4] | E | width: 100%
+navigation-shop > [5] | E | flex: 1
+navigation-shop > [6] | E | margin-top: -1px
+navigation-shop > [7] | :where(E > :not(:last-child)) | margin-bottom: calc(32px * calc(1 - 0))
+navigation-shop > [7] | :where(E > :not(:last-child)) | margin-top: calc(32px * 0)
+navigation-shop > [7] | E | padding-bottom: 32px
+navigation-shop > [7] | E | padding-left: 16px
+navigation-shop > [7] | E | padding-right: 16px
+navigation-shop > [7] | E | padding-top: 24px
+navigation-shop > [8] | E | column-gap: 16px
+navigation-shop > [8] | E | display: grid
+navigation-shop > [8] | E | grid-template-columns: repeat(2, minmax(0, 1fr))
+navigation-shop > [8] | E | row-gap: 24px
+navigation-shop > [9] | E | grid-column: span 2 / span 2
+navigation-shop > [9] | E | position: relative
+navigation-shop | E | align-items: center
+navigation-shop | E | display: flex
+navigation-shop-caption > [0] | E | display: flex
+navigation-shop-caption > [0] | E | flex-direction: column
+navigation-shop-caption > [0] | E | gap: 2px
+navigation-shop-caption | E | background-color: color-mix(in oklab, #ffffff 90%, transparent)
+navigation-shop-caption | E | font-family: 'Inter Variable', Inter, sans-serif
+navigation-shop-caption | E | font-feature-settings: normal
+navigation-shop-caption | E | font-size: 14px
+navigation-shop-caption | E | font-variation-settings: normal
+navigation-shop-caption | E | font-weight: 400
+navigation-shop-caption | E | letter-spacing: normal
+navigation-shop-caption | E | line-height: 1.43
+navigation-shop-caption | E | padding-bottom: 12px
+navigation-shop-caption | E | padding-left: 16px
+navigation-shop-caption | E | padding-right: 16px
+navigation-shop-caption | E | padding-top: 12px
+navigation-shop-columns > [0] | E | column-gap: 32px
+navigation-shop-columns > [0] | E | display: grid
+navigation-shop-columns > [0] | E | row-gap: 40px
+navigation-shop-columns | E | font-family: 'Inter Variable', Inter, sans-serif
+navigation-shop-columns | E | font-feature-settings: normal
+navigation-shop-columns | E | font-size: 14px
+navigation-shop-columns | E | font-variation-settings: normal
+navigation-shop-columns | E | font-weight: 400
+navigation-shop-columns | E | letter-spacing: normal
+navigation-shop-columns | E | line-height: 1.43
+navigation-shop-columns | E | padding-top: 32px
+navigation-shop-content > [0] | E | margin-left: auto
+navigation-shop-content > [0] | E | margin-right: auto
+navigation-shop-content > [0] | E | max-width: 1280px
+navigation-shop-content > [0] | E | padding-left: 16px [phone]
+navigation-shop-content > [0] | E | padding-left: 32px [desktop]
+navigation-shop-content > [0] | E | padding-right: 16px [phone]
+navigation-shop-content > [0] | E | padding-right: 32px [desktop]
+navigation-shop-content > [10] | :where(E > :not(:last-child)) | margin-bottom: calc(40px * calc(1 - 0))
+navigation-shop-content > [10] | :where(E > :not(:last-child)) | margin-top: calc(40px * 0)
+navigation-shop-content > [1] | E | column-gap: 32px
+navigation-shop-content > [1] | E | display: grid
+navigation-shop-content > [1] | E | grid-template-columns: repeat(2, minmax(0, 1fr))
+navigation-shop-content > [1] | E | padding-bottom: 40px
+navigation-shop-content > [1] | E | padding-top: 40px
+navigation-shop-content > [1] | E | row-gap: 40px
+navigation-shop-content > [2] | E | column-gap: 24px
+navigation-shop-content > [2] | E | display: grid
+navigation-shop-content > [2] | E | grid-column-start: 2
+navigation-shop-content > [2] | E | grid-template-columns: repeat(3, minmax(0, 1fr))
+navigation-shop-content > [2] | E | row-gap: 40px
+navigation-shop-content > [3] | E | align-content: flex-start
+navigation-shop-content > [3] | E | column-gap: 32px
+navigation-shop-content > [3] | E | display: grid
+navigation-shop-content > [3] | E | grid-row-start: 1
+navigation-shop-content > [3] | E | row-gap: 40px
+navigation-shop-content > [4] | E | padding-bottom: 40px
+navigation-shop-content > [4] | E | padding-top: 40px
+navigation-shop-content > [5] | E | display: grid
+navigation-shop-content > [5] | E | gap: 24px
+navigation-shop-content > [6] | E | margin-top: 32px
+navigation-shop-content > [7] | E | column-gap: 32px
+navigation-shop-content > [7] | E | display: grid
+navigation-shop-content > [7] | E | grid-template-columns: repeat(2, minmax(0, 1fr))
+navigation-shop-content > [7] | E | padding-bottom: 40px
+navigation-shop-content > [7] | E | padding-top: 40px
+navigation-shop-content > [7] | E | row-gap: 40px
+navigation-shop-content > [8] | E | display: grid
+navigation-shop-content > [8] | E | gap: 24px
+navigation-shop-content > [8] | E | grid-template-columns: repeat(2, minmax(0, 1fr))
+navigation-shop-content > [9] | E | column-gap: 32px
+navigation-shop-content > [9] | E | display: grid
+navigation-shop-content > [9] | E | grid-template-columns: repeat(3, minmax(0, 1fr))
+navigation-shop-content > [9] | E | row-gap: 40px
+navigation-shop-content | E | border-top-color:  [layout=captioned]
+navigation-shop-content | E | border-top-style:  [layout=captioned]
+navigation-shop-content | E | border-top-width: none [layout=captioned]
+navigation-shop-content | E | font-family: 'Inter Variable', Inter, sans-serif [layout=captioned]
+navigation-shop-content | E | font-feature-settings: normal [layout=captioned]
+navigation-shop-content | E | font-size: 14px [layout=captioned]
+navigation-shop-content | E | font-variation-settings: normal [layout=captioned]
+navigation-shop-content | E | font-weight: 400 [layout=captioned]
+navigation-shop-content | E | letter-spacing: normal [layout=captioned]
+navigation-shop-content | E | line-height: 1.43 [layout=captioned]
+navigation-shop-featured-image #2 | E | aspect-ratio: 1 / 1
+navigation-shop-featured-image #3 | E | grid-column: span 2 / span 2
+navigation-shop-featured-image #3 | E | position: relative
+navigation-shop-featured-image > [0] #2 | E | height: 100%
+navigation-shop-featured-image > [0] #2 | E | object-fit: cover
+navigation-shop-featured-image > [0] #2 | E | transition-duration: 300ms
+navigation-shop-featured-image > [0] #2 | E | transition-property: transform, translate, scale, rotate
+navigation-shop-featured-image > [0] #2 | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+navigation-shop-featured-image > [0] #2 | E | width: 100%
+navigation-shop-featured-image > [0] #2 | E:is(:where(GROUP):hover *) | scale: 105% 105%
+navigation-shop-featured-image > [0] #3 | E | aspect-ratio: 1 / 1
+navigation-shop-featured-image > [0] #3 | E | object-fit: cover
+navigation-shop-featured-image > [0] #3 | E | transition-duration: 300ms
+navigation-shop-featured-image > [0] #3 | E | transition-property: transform, translate, scale, rotate
+navigation-shop-featured-image > [0] #3 | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+navigation-shop-featured-image > [0] #3 | E | width: 100%
+navigation-shop-featured-image > [0] #3 | E:is(:where(GROUP):hover *) | scale: 105% 105%
+navigation-shop-featured-image > [0] | E | height: 100%
+navigation-shop-featured-image > [0] | E | object-fit: cover
+navigation-shop-featured-image > [0] | E | transition-duration: 300ms
+navigation-shop-featured-image > [0] | E | transition-property: transform, translate, scale, rotate
+navigation-shop-featured-image > [0] | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+navigation-shop-featured-image > [0] | E | width: 100%
+navigation-shop-featured-image > [0] | E:is(:where(GROUP):hover *) | scale: 105% 105%
+navigation-shop-featured-image > [1] | E | display: flex
+navigation-shop-featured-image > [1] | E | flex-direction: column
+navigation-shop-featured-image > [1] | E | inset: 0px
+navigation-shop-featured-image > [1] | E | justify-content: flex-end
+navigation-shop-featured-image > [1] | E | position: absolute
+navigation-shop-featured-image | E | aspect-ratio: 1 / 1
+navigation-shop-featured-image | E | background-color: #f4f4f5
+navigation-shop-featured-image | E | border-bottom-left-radius: 6.4px [layout=captioned]
+navigation-shop-featured-image | E | border-bottom-left-radius: 8px [layout=beside,above]
+navigation-shop-featured-image | E | border-bottom-right-radius: 6.4px [layout=captioned]
+navigation-shop-featured-image | E | border-bottom-right-radius: 8px [layout=beside,above]
+navigation-shop-featured-image | E | border-top-left-radius: 6.4px [layout=captioned]
+navigation-shop-featured-image | E | border-top-left-radius: 8px [layout=beside,above]
+navigation-shop-featured-image | E | border-top-right-radius: 6.4px [layout=captioned]
+navigation-shop-featured-image | E | border-top-right-radius: 8px [layout=beside,above]
+navigation-shop-featured-image | E | overflow: hidden
+navigation-shop-page #2 | E | align-items: center
+navigation-shop-page #2 | E | background-color: transparent [layout=beside,above]
+navigation-shop-page #2 | E | border-bottom-left-radius: 6.4px [layout=beside,above]
+navigation-shop-page #2 | E | border-bottom-right-radius: 6.4px [layout=beside,above]
+navigation-shop-page #2 | E | border-top-left-radius: 6.4px [layout=beside,above]
+navigation-shop-page #2 | E | border-top-right-radius: 6.4px [layout=beside,above]
+navigation-shop-page #2 | E | color: color-mix(in oklab, #09090b 70%, transparent) [layout=captioned]
+navigation-shop-page #2 | E | display: inline-flex
+navigation-shop-page #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+navigation-shop-page #2 | E | font-feature-settings: normal
+navigation-shop-page #2 | E | font-size: 14px
+navigation-shop-page #2 | E | font-variation-settings: normal
+navigation-shop-page #2 | E | font-weight: 500
+navigation-shop-page #2 | E | height: 36px [layout=beside,above]
+navigation-shop-page #2 | E | justify-content: center
+navigation-shop-page #2 | E | letter-spacing: normal
+navigation-shop-page #2 | E | line-height: 1.43
+navigation-shop-page #2 | E | padding-bottom: 8px [layout=beside,above]
+navigation-shop-page #2 | E | padding-left: 16px [layout=beside,above]
+navigation-shop-page #2 | E | padding-right: 16px [layout=beside,above]
+navigation-shop-page #2 | E | padding-top: 8px [layout=beside,above]
+navigation-shop-page #2 | E | pointer-events: none
+navigation-shop-page #2 | E:hover | background-color: #f4f4f5 [layout=beside,above]
+navigation-shop-page #2 | E:hover | color: #18181b [layout=beside,above]
+navigation-shop-page #2 | E:hover | color: color-mix(in oklab, #09090b 80%, transparent) [layout=captioned]
+navigation-shop-page #2 | E:open | background-color: color-mix(in oklab, #f4f4f5 50%, transparent) [layout=beside,above]
+navigation-shop-page | E | align-items: center
+navigation-shop-page | E | background-color: transparent [layout=beside,above]
+navigation-shop-page | E | border-bottom-left-radius: 6.4px [layout=beside,above]
+navigation-shop-page | E | border-bottom-right-radius: 6.4px [layout=beside,above]
+navigation-shop-page | E | border-top-left-radius: 6.4px [layout=beside,above]
+navigation-shop-page | E | border-top-right-radius: 6.4px [layout=beside,above]
+navigation-shop-page | E | color: color-mix(in oklab, #09090b 70%, transparent) [layout=captioned]
+navigation-shop-page | E | display: inline-flex
+navigation-shop-page | E | font-family: 'Inter Variable', Inter, sans-serif
+navigation-shop-page | E | font-feature-settings: normal
+navigation-shop-page | E | font-size: 14px
+navigation-shop-page | E | font-variation-settings: normal
+navigation-shop-page | E | font-weight: 500
+navigation-shop-page | E | height: 36px [layout=beside,above]
+navigation-shop-page | E | justify-content: center
+navigation-shop-page | E | letter-spacing: normal
+navigation-shop-page | E | line-height: 1.43
+navigation-shop-page | E | padding-bottom: 8px [layout=beside,above]
+navigation-shop-page | E | padding-left: 16px [layout=beside,above]
+navigation-shop-page | E | padding-right: 16px [layout=beside,above]
+navigation-shop-page | E | padding-top: 8px [layout=beside,above]
+navigation-shop-page | E:hover | background-color: #f4f4f5 [layout=beside,above]
+navigation-shop-page | E:hover | color: #18181b [layout=beside,above]
+navigation-shop-page | E:hover | color: color-mix(in oklab, #09090b 80%, transparent) [layout=captioned]
+navigation-shop-page | E:open | background-color: color-mix(in oklab, #f4f4f5 50%, transparent) [layout=beside,above]
+navigation-shop-trigger | E | background-color: transparent [layout=beside,above]
+navigation-shop-trigger | E | border-bottom-color: transparent [layout=captioned]
+navigation-shop-trigger | E | border-bottom-left-radius: 6.4px [layout=beside,above]
+navigation-shop-trigger | E | border-bottom-right-radius: 6.4px [layout=beside,above]
+navigation-shop-trigger | E | border-bottom-style: solid [layout=captioned]
+navigation-shop-trigger | E | border-bottom-width: 1px [layout=captioned]
+navigation-shop-trigger | E | border-left-color: transparent [layout=captioned]
+navigation-shop-trigger | E | border-right-color: transparent [layout=captioned]
+navigation-shop-trigger | E | border-top-color: transparent [layout=captioned]
+navigation-shop-trigger | E | border-top-left-radius: 6.4px [layout=beside,above]
+navigation-shop-trigger | E | border-top-right-radius: 6.4px [layout=beside,above]
+navigation-shop-trigger | E | color: color-mix(in oklab, #09090b 70%, transparent) [layout=captioned]
+navigation-shop-trigger | E | height: 36px [layout=beside,above]
+navigation-shop-trigger | E | padding-bottom: 8px [layout=beside,above]
+navigation-shop-trigger | E | padding-left: 16px [layout=beside,above]
+navigation-shop-trigger | E | padding-right: 16px [layout=beside,above]
+navigation-shop-trigger | E | padding-top: 8px [layout=beside,above]
+navigation-shop-trigger | E | transition-duration: 200ms [layout=captioned]
+navigation-shop-trigger | E | transition-timing-function: cubic-bezier(0, 0, 0.2, 1) [layout=captioned]
+navigation-shop-trigger | E:hover | background-color: #f4f4f5 [layout=beside,above]
+navigation-shop-trigger | E:hover | color: #18181b [layout=beside,above]
+navigation-shop-trigger | E:hover | color: color-mix(in oklab, #09090b 80%, transparent) [layout=captioned]
+navigation-shop-trigger | E:open | background-color: color-mix(in oklab, #f4f4f5 50%, transparent) [layout=beside,above]
+navigation-shop-trigger | E:open | border-bottom-color: #7008e7 [layout=captioned]
+navigation-shop-trigger | E:open | border-left-color: #7008e7 [layout=captioned]
+navigation-shop-trigger | E:open | border-right-color: #7008e7 [layout=captioned]
+navigation-shop-trigger | E:open | border-top-color: #7008e7 [layout=captioned]
+navigation-shop-trigger | E:open | color: #09090b [layout=captioned]
+navigation-shop-viewport | E | box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1), 0px 1px 2px -1px rgb(0 0 0 / 0.1) [layout=captioned]
+navigation-shop-viewport | E | box-shadow: none [layout=above]
+section-title #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+section-title #2 | E | font-feature-settings: normal
+section-title #2 | E | font-size: 14px
+section-title #2 | E | font-variation-settings: normal
+section-title #2 | E | font-weight: 600
+section-title #2 | E | letter-spacing: normal
+section-title #2 | E | line-height: 1.43
+section-title #3 | E | display: flow-root
+section-title #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+section-title #3 | E | font-feature-settings: normal
+section-title #3 | E | font-size: 14px
+section-title #3 | E | font-variation-settings: normal
+section-title #3 | E | font-weight: 600
+section-title #3 | E | letter-spacing: normal
+section-title #3 | E | line-height: 1.43
+section-title | E | font-family: 'Inter Variable', Inter, sans-serif
+section-title | E | font-feature-settings: normal
+section-title | E | font-size: 14px
+section-title | E | font-variation-settings: normal
+section-title | E | font-weight: 600
+section-title | E | letter-spacing: normal
+section-title | E | line-height: 1.43

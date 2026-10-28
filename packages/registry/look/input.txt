@@ -1,0 +1,69 @@
+input | E | background-color: transparent
+input | E | border-bottom-color: #a1a1aa
+input | E | border-bottom-left-radius: 0px
+input | E | border-bottom-right-radius: 0px
+input | E | border-bottom-style: solid
+input | E | border-bottom-width: 1px
+input | E | border-left-color: transparent
+input | E | border-left-style: solid
+input | E | border-left-width: 1px
+input | E | border-right-color: transparent
+input | E | border-right-style: solid
+input | E | border-right-width: 1px
+input | E | border-top-color: transparent
+input | E | border-top-left-radius: 0px
+input | E | border-top-right-radius: 0px
+input | E | border-top-style: solid
+input | E | border-top-width: 1px
+input | E | font-family: 'Inter Variable', Inter, sans-serif
+input | E | font-feature-settings: normal
+input | E | font-size: 14px [desktop]
+input | E | font-size: 16px [phone]
+input | E | font-variation-settings: normal
+input | E | font-weight: 400
+input | E | height: 36px [size=sm]
+input | E | height: 40px [size=md]
+input | E | letter-spacing: normal
+input | E | line-height: 1.43 [desktop]
+input | E | line-height: 1.5 [phone]
+input | E | min-width: 0px
+input | E | outline-style: none
+input | E | padding-bottom: 4px
+input | E | padding-left: 0px
+input | E | padding-right: 0px
+input | E | padding-top: 4px
+input | E | transition-duration: 150ms
+input | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+input | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+input | E | width: 100%
+input | E::file-selector-button | background-color: transparent
+input | E::file-selector-button | border-bottom-color: 
+input | E::file-selector-button | border-bottom-style: 
+input | E::file-selector-button | border-bottom-width: none
+input | E::file-selector-button | border-left-color: 
+input | E::file-selector-button | border-left-style: 
+input | E::file-selector-button | border-left-width: none
+input | E::file-selector-button | border-right-color: 
+input | E::file-selector-button | border-right-style: 
+input | E::file-selector-button | border-right-width: none
+input | E::file-selector-button | border-top-color: 
+input | E::file-selector-button | border-top-style: 
+input | E::file-selector-button | border-top-width: none
+input | E::file-selector-button | color: #09090b
+input | E::file-selector-button | display: inline-flex
+input | E::file-selector-button | font-family: 'Inter Variable', Inter, sans-serif
+input | E::file-selector-button | font-feature-settings: normal
+input | E::file-selector-button | font-size: 14px
+input | E::file-selector-button | font-variation-settings: normal
+input | E::file-selector-button | font-weight: 500
+input | E::file-selector-button | height: 28px
+input | E::file-selector-button | letter-spacing: normal
+input | E::file-selector-button | line-height: 1.43
+input | E::placeholder | color: #66666f
+input | E:disabled | cursor: not-allowed
+input | E:disabled | opacity: 0.5
+input | E:disabled | pointer-events: none
+input | E:focus | border-bottom-color: #71717a
+input | E:focus | border-bottom-style: solid
+input | E:focus | border-bottom-width: 2px
+input | E:invalid | border-bottom-color: #c70009

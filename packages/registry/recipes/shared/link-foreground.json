@@ -1,0 +1,10 @@
+{
+  "link-foreground": {
+    "link": {
+      "textDecorationLine": "underline",
+      "hover": {
+        "textColor": "{colors.foreground}"
+      }
+    }
+  }
+}

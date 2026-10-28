@@ -1,0 +1,23 @@
+TeamMembers > [1] | E | grid-column-start: 2
+TeamMembers > [1] | E | grid-row-start: 1
+TeamMembers > [1] | E | grid-row: span 2 / span 2
+TeamMembers > [1] | E | justify-self: flex-end
+TeamMembers > [2] | E | container-type: inline-size
+TeamMembers > [2] | E | display: flex
+TeamMembers > [2] | E | flex-direction: column
+TeamMembers > [2] | E | gap: 24px
+TeamMembers > [3] | E | display: flex
+TeamMembers > [3] | E | flex-direction: column [phone]
+TeamMembers > [3] | E | flex-direction: row [desktop]
+TeamMembers > [3] | E | gap: 8px
+TeamMembers > [4] | E | display: flex
+TeamMembers > [4] | E | gap: 8px
+TeamMembers > [5] | E | flex: 1 [phone]
+TeamMembers > [5] | E | flex: none [desktop]
+TeamMembers > [5] | E | width: 128px
+TeamMembers > [6] | E | min-width: 160px
+TeamMembers > [7] | E | overflow: hidden
+TeamMembers > [7] | E | text-overflow: ellipsis
+TeamMembers > [7] | E | white-space: nowrap
+TeamMembers > [8] | E | margin-left: auto
+TeamMembers > [9] | E | width: 112px

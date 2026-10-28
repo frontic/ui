@@ -1,0 +1,105 @@
+carousel | E | outline-style: none
+carousel | E | position: relative
+carousel | E:focus | border-bottom-color: #71717a
+carousel | E:focus | border-left-color: #71717a
+carousel | E:focus | border-right-color: #71717a
+carousel | E:focus | border-top-color: #71717a
+carousel | E:focus | ring: 2px #71717a
+carousel-content > [0] | E | display: flex
+carousel-content > [0] | E | flex-direction: column [orientation=vertical]
+carousel-content > [0] | E | margin-left: -16px [orientation=horizontal]
+carousel-content > [0] | E | margin-top: -16px [orientation=vertical]
+carousel-content > [0] | E | touch-action: pan-x pinch-zoom [orientation=vertical]
+carousel-content > [0] | E | touch-action: pan-y pinch-zoom [orientation=horizontal]
+carousel-content | E | overflow: hidden
+carousel-dot | E | background-color: #66666f
+carousel-dot | E | border-bottom-left-radius: 0px
+carousel-dot | E | border-bottom-right-radius: 0px
+carousel-dot | E | border-top-left-radius: 0px
+carousel-dot | E | border-top-right-radius: 0px
+carousel-dot | E | height: 2px
+carousel-dot | E | opacity: 0.9
+carousel-dot | E | width: 24px
+carousel-dot | E:selected | background-color: #09090b
+carousel-dots | E | bottom: 0px
+carousel-dots | E | display: flex
+carousel-dots | E | left: calc(1 / 2 * 100%)
+carousel-dots | E | position: absolute
+carousel-dots | E | translate: calc(calc(1 / 2 * 100%) * -1)
+carousel-item | E | flex-basis: 100%
+carousel-item | E | flex-grow: 0
+carousel-item | E | flex-shrink: 0
+carousel-item | E | min-width: 0px
+carousel-item | E | padding-left: 16px [orientation=horizontal]
+carousel-item | E | padding-top: 16px [orientation=vertical]
+carousel-next > [0] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1 [orientation=horizontal]
+carousel-next > [1] | E | border-bottom-width: 0
+carousel-next > [1] | E | border-left-width: 0
+carousel-next > [1] | E | border-right-width: 0
+carousel-next > [1] | E | border-top-width: 0
+carousel-next > [1] | E | clip-path: inset(50%)
+carousel-next > [1] | E | height: 1px
+carousel-next > [1] | E | margin-bottom: -1px
+carousel-next > [1] | E | margin-left: -1px
+carousel-next > [1] | E | margin-right: -1px
+carousel-next > [1] | E | margin-top: -1px
+carousel-next > [1] | E | overflow: hidden
+carousel-next > [1] | E | padding-bottom: 0
+carousel-next > [1] | E | padding-left: 0
+carousel-next > [1] | E | padding-right: 0
+carousel-next > [1] | E | padding-top: 0
+carousel-next > [1] | E | position: absolute
+carousel-next > [1] | E | white-space: nowrap
+carousel-next > [1] | E | width: 1px
+carousel-next | E | bottom: -48px [orientation=vertical]
+carousel-next | E | inset-inline-end: -48px [orientation=horizontal]
+carousel-next | E | left: calc(1 / 2 * 100%) [orientation=vertical]
+carousel-next | E | position: absolute
+carousel-next | E | rotate: 90deg [orientation=vertical]
+carousel-next | E | top: calc(1 / 2 * 100%) [orientation=horizontal]
+carousel-next | E | touch-action: manipulation
+carousel-next | E | translate: 0 calc(calc(1 / 2 * 100%) * -1) [orientation=horizontal]
+carousel-next | E | translate: calc(calc(1 / 2 * 100%) * -1) [orientation=vertical]
+carousel-previous > [0] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1 [orientation=horizontal]
+carousel-previous > [1] | E | border-bottom-width: 0
+carousel-previous > [1] | E | border-left-width: 0
+carousel-previous > [1] | E | border-right-width: 0
+carousel-previous > [1] | E | border-top-width: 0
+carousel-previous > [1] | E | clip-path: inset(50%)
+carousel-previous > [1] | E | height: 1px
+carousel-previous > [1] | E | margin-bottom: -1px
+carousel-previous > [1] | E | margin-left: -1px
+carousel-previous > [1] | E | margin-right: -1px
+carousel-previous > [1] | E | margin-top: -1px
+carousel-previous > [1] | E | overflow: hidden
+carousel-previous > [1] | E | padding-bottom: 0
+carousel-previous > [1] | E | padding-left: 0
+carousel-previous > [1] | E | padding-right: 0
+carousel-previous > [1] | E | padding-top: 0
+carousel-previous > [1] | E | position: absolute
+carousel-previous > [1] | E | white-space: nowrap
+carousel-previous > [1] | E | width: 1px
+carousel-previous | E | inset-inline-start: -48px [orientation=horizontal]
+carousel-previous | E | left: calc(1 / 2 * 100%) [orientation=vertical]
+carousel-previous | E | position: absolute
+carousel-previous | E | rotate: 90deg [orientation=vertical]
+carousel-previous | E | top: -48px [orientation=vertical]
+carousel-previous | E | top: calc(1 / 2 * 100%) [orientation=horizontal]
+carousel-previous | E | touch-action: manipulation
+carousel-previous | E | translate: 0 calc(calc(1 / 2 * 100%) * -1) [orientation=horizontal]
+carousel-previous | E | translate: calc(calc(1 / 2 * 100%) * -1) [orientation=vertical]
+carousel-progress | E | background-color: color-mix(in oklab, #f4f4f5 30%, transparent)
+carousel-progress | E | border-bottom-left-radius: 4.8px
+carousel-progress | E | border-bottom-right-radius: 4.8px
+carousel-progress | E | border-top-left-radius: 4.8px
+carousel-progress | E | border-top-right-radius: 4.8px
+carousel-progress | E | height: 4px
+carousel-progress | E | margin-top: 12px
+carousel-progress | E | overflow: hidden
+carousel-progress | E | width: 100%
+carousel-progress-indicator | E | background-color: #09090b
+carousel-progress-indicator | E | height: 100%
+carousel-progress-indicator | E | transition-duration: 100ms
+carousel-progress-indicator | E | transition-property: transform, translate, scale, rotate
+carousel-progress-indicator | E | transition-timing-function: cubic-bezier(0, 0, 0.2, 1)
+carousel-progress-indicator | E | width: 100%

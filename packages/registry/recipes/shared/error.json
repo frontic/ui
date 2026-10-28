@@ -1,0 +1,6 @@
+{
+  "error": {
+    "textColor": "{colors.destructive}",
+    "typography": "{typography.small}"
+  }
+}

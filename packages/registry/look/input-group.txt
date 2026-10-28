@@ -1,0 +1,160 @@
+InputGroupButton > [0] | E ICON | height: 14px
+InputGroupButton > [0] | E ICON | width: 14px
+InputGroupButton > [0] | E | align-items: center
+InputGroupButton > [0] | E | display: flex
+InputGroupButton > [0] | E | font-family: 'Inter Variable', Inter, sans-serif
+InputGroupButton > [0] | E | font-feature-settings: normal
+InputGroupButton > [0] | E | font-size: 12px [size=xs,icon-xs]
+InputGroupButton > [0] | E | font-size: 14px [size=md,sm,icon-sm]
+InputGroupButton > [0] | E | font-variation-settings: normal
+InputGroupButton > [0] | E | font-weight: 400
+InputGroupButton > [0] | E | gap: 4px [size=xs]
+InputGroupButton > [0] | E | gap: 8px [size=md,sm,icon-xs,icon-sm]
+InputGroupButton > [0] | E | height: 24px [size=xs,icon-xs]
+InputGroupButton > [0] | E | height: 32px [size=icon-sm]
+InputGroupButton > [0] | E | height: 40px [size=sm]
+InputGroupButton > [0] | E | letter-spacing: normal
+InputGroupButton > [0] | E | line-height: 1.33 [size=xs,icon-xs]
+InputGroupButton > [0] | E | line-height: 1.43 [size=md,sm,icon-sm]
+InputGroupButton > [0] | E | padding-bottom: 0px [size=icon-xs,icon-sm]
+InputGroupButton > [0] | E | padding-left: 0px [size=icon-xs,icon-sm]
+InputGroupButton > [0] | E | padding-left: 24px [size=sm]
+InputGroupButton > [0] | E | padding-left: 6px [size=xs]
+InputGroupButton > [0] | E | padding-right: 0px [size=icon-xs,icon-sm]
+InputGroupButton > [0] | E | padding-right: 24px [size=sm]
+InputGroupButton > [0] | E | padding-right: 6px [size=xs]
+InputGroupButton > [0] | E | padding-top: 0px [size=icon-xs,icon-sm]
+InputGroupButton > [0] | E | width: 24px [size=icon-xs]
+InputGroupButton > [0] | E | width: 32px [size=icon-sm]
+InputGroupButton > [0] | E:has([data-icon="inline-end"]) | padding-right: 0px [size=icon-xs,icon-sm]
+InputGroupButton > [0] | E:has([data-icon="inline-end"]) | padding-right: 16px [size=md,sm,xs]
+InputGroupButton > [0] | E:has([data-icon="inline-start"]) | padding-left: 0px [size=icon-xs,icon-sm]
+InputGroupButton > [0] | E:has([data-icon="inline-start"]) | padding-left: 16px [size=md,sm,xs]
+InputGroupText > [0] | E ICON | height: 14px
+InputGroupText > [0] | E ICON | pointer-events: none
+InputGroupText > [0] | E ICON | width: 14px
+InputGroupText > [0] | E | align-items: center
+InputGroupText > [0] | E | color: #66666f
+InputGroupText > [0] | E | display: flex
+InputGroupText > [0] | E | font-family: 'Inter Variable', Inter, sans-serif
+InputGroupText > [0] | E | font-feature-settings: normal
+InputGroupText > [0] | E | font-size: 14px
+InputGroupText > [0] | E | font-variation-settings: normal
+InputGroupText > [0] | E | font-weight: 400
+InputGroupText > [0] | E | gap: 8px
+InputGroupText > [0] | E | letter-spacing: normal
+InputGroupText > [0] | E | line-height: 1.43
+input-group | E | align-items: center
+input-group | E | background-color: transparent
+input-group | E | border-bottom-color: #a1a1aa
+input-group | E | border-bottom-left-radius: 0px
+input-group | E | border-bottom-right-radius: 0px
+input-group | E | border-bottom-style: solid
+input-group | E | border-bottom-width: 1px
+input-group | E | border-left-color: transparent
+input-group | E | border-left-style: solid
+input-group | E | border-left-width: 1px
+input-group | E | border-right-color: transparent
+input-group | E | border-right-style: solid
+input-group | E | border-right-width: 1px
+input-group | E | border-top-color: transparent
+input-group | E | border-top-left-radius: 0px
+input-group | E | border-top-right-radius: 0px
+input-group | E | border-top-style: solid
+input-group | E | border-top-width: 1px
+input-group | E | display: flex
+input-group | E | font-family: 'Inter Variable', Inter, sans-serif
+input-group | E | font-feature-settings: normal
+input-group | E | font-size: 14px [desktop]
+input-group | E | font-size: 16px [phone]
+input-group | E | font-variation-settings: normal
+input-group | E | font-weight: 400
+input-group | E | height: 36px [size=sm]
+input-group | E | height: 40px [size=md,xs,icon-xs,icon-sm]
+input-group | E | letter-spacing: normal
+input-group | E | line-height: 1.43 [desktop]
+input-group | E | line-height: 1.5 [phone]
+input-group | E | min-width: 0px
+input-group | E | outline-style: none
+input-group | E | position: relative
+input-group | E | transition-duration: 150ms
+input-group | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+input-group | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+input-group | E | width: 100%
+input-group | E::placeholder | color: #66666f
+input-group | E:focus | border-bottom-color: #71717a
+input-group | E:focus | border-bottom-style: solid
+input-group | E:focus | border-bottom-width: 2px
+input-group | E:has( > [data-align="block-end"]) > input | padding-top: 12px
+input-group | E:has( > [data-align="block-end"]) | flex-direction: column
+input-group | E:has( > [data-align="block-end"]) | height: auto
+input-group | E:has( > [data-align="block-start"]) > input | padding-bottom: 12px
+input-group | E:has( > [data-align="block-start"]) | flex-direction: column
+input-group | E:has( > [data-align="block-start"]) | height: auto
+input-group | E:has( > textarea) | height: auto
+input-group | E:has(:invalid) | border-bottom-color: #c70009
+input-group | E:invalid | border-bottom-color: #c70009
+input-group-addon | E ICON | height: 14px
+input-group-addon | E ICON | width: 14px
+input-group-addon | E [data-slot="kbd"] | border-bottom-left-radius: 0px
+input-group-addon | E [data-slot="kbd"] | border-bottom-right-radius: 0px
+input-group-addon | E [data-slot="kbd"] | border-top-left-radius: 0px
+input-group-addon | E [data-slot="kbd"] | border-top-right-radius: 0px
+input-group-addon | E [data-slot="kbd"] | padding-left: 6px
+input-group-addon | E [data-slot="kbd"] | padding-right: 6px
+input-group-addon | E | -webkit-user-select: none
+input-group-addon | E | align-items: center
+input-group-addon | E | color: #66666f
+input-group-addon | E | cursor: text
+input-group-addon | E | display: flex
+input-group-addon | E | font-family: 'Inter Variable', Inter, sans-serif
+input-group-addon | E | font-feature-settings: normal
+input-group-addon | E | font-size: 14px
+input-group-addon | E | font-variation-settings: normal
+input-group-addon | E | font-weight: 500
+input-group-addon | E | gap: 8px
+input-group-addon | E | height: auto
+input-group-addon | E | justify-content: center [align=inline-start,inline-end]
+input-group-addon | E | justify-content: flex-start [align=block-start,block-end]
+input-group-addon | E | letter-spacing: normal
+input-group-addon | E | line-height: 1.43
+input-group-addon | E | order: -9999 [align=inline-start,block-start]
+input-group-addon | E | order: 9999 [align=inline-end,block-end]
+input-group-addon | E | padding-bottom: 12px [align=block-end]
+input-group-addon | E | padding-bottom: 8px [align=inline-start,inline-end,block-start]
+input-group-addon | E | padding-top: 12px [align=block-start]
+input-group-addon | E | padding-top: 8px [align=inline-start,inline-end,block-end]
+input-group-addon | E | user-select: none
+input-group-addon | E | width: 100% [align=block-start,block-end]
+input-group-addon | E:is(:where(GROUP):disabled *) | opacity: 0.5
+input-group-addon | E:is(:where(GROUP):has( > input) *) | padding-bottom: 14px [align=block-end]
+input-group-addon | E:is(:where(GROUP):has( > input) *) | padding-top: 14px [align=block-start]
+input-group-control #2 | E | background-color: transparent
+input-group-control #2 | E | border-bottom-style: solid
+input-group-control #2 | E | border-bottom-width: 0px
+input-group-control #2 | E | border-left-style: solid
+input-group-control #2 | E | border-left-width: 0px
+input-group-control #2 | E | border-right-style: solid
+input-group-control #2 | E | border-right-width: 0px
+input-group-control #2 | E | border-top-style: solid
+input-group-control #2 | E | border-top-width: 0px
+input-group-control #2 | E | flex: 1
+input-group-control #2 | E | padding-bottom: 10px
+input-group-control #2 | E | padding-top: 10px
+input-group-control #2 | E | resize: none
+input-group-control #2 | E:focus | border-bottom-style: solid
+input-group-control #2 | E:focus | border-bottom-width: 0px
+input-group-control | E | background-color: transparent
+input-group-control | E | border-bottom-style: solid
+input-group-control | E | border-bottom-width: 0px
+input-group-control | E | border-left-style: solid
+input-group-control | E | border-left-width: 0px
+input-group-control | E | border-right-style: solid
+input-group-control | E | border-right-width: 0px
+input-group-control | E | border-top-style: solid
+input-group-control | E | border-top-width: 0px
+input-group-control | E | flex: 1
+input-group-control | E:focus | border-bottom-style: solid
+input-group-control | E:focus | border-bottom-width: 0px
+input-group-control | E:is(:where(GROUP):has( > ) *) | padding-left: 8px [align=inline-start]
+input-group-control | E:is(:where(GROUP):has( > ) *) | padding-right: 8px [align=inline-end]

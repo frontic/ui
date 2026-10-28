@@ -1,0 +1,132 @@
+OrderSummary > [10] | E | align-items: center
+OrderSummary > [10] | E | display: flex
+OrderSummary > [10] | E | justify-content: space-between
+OrderSummary > [11] | E | align-items: center
+OrderSummary > [11] | E | display: flex
+OrderSummary > [11] | E | justify-content: space-between
+OrderSummary > [1] | E | display: flex
+OrderSummary > [1] | E | flex-direction: column
+OrderSummary > [1] | E | gap: 20px
+OrderSummary > [2] | E | display: flex
+OrderSummary > [2] | E | flex-direction: column
+OrderSummary > [2] | E | gap: 16px
+OrderSummary > [3] | E | align-items: center
+OrderSummary > [3] | E | display: flex
+OrderSummary > [3] | E | gap: 16px
+OrderSummary > [4] | E | display: flex
+OrderSummary > [4] | E | flex-direction: column
+OrderSummary > [4] | E | flex: 1
+OrderSummary > [4] | E | gap: 4px
+OrderSummary > [4] | E | min-width: 0px
+OrderSummary > [5] | E | flex-shrink: 0
+OrderSummary > [6] | E | display: flex
+OrderSummary > [6] | E | flex-direction: column
+OrderSummary > [6] | E | gap: 8px
+OrderSummary > [7] | E | align-items: center
+OrderSummary > [7] | E | display: flex
+OrderSummary > [7] | E | justify-content: space-between
+OrderSummary > [8] | E | align-items: center
+OrderSummary > [8] | E | display: flex
+OrderSummary > [8] | E | justify-content: space-between
+OrderSummary > [9] | E | align-items: center
+OrderSummary > [9] | E | display: flex
+hint #2 | E | color: #66666f
+hint #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #2 | E | font-feature-settings: normal
+hint #2 | E | font-size: 14px
+hint #2 | E | font-variation-settings: normal
+hint #2 | E | font-weight: 400
+hint #2 | E | letter-spacing: normal
+hint #2 | E | line-height: 1.43
+hint #3 | E | color: #66666f
+hint #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #3 | E | font-feature-settings: normal
+hint #3 | E | font-size: 14px
+hint #3 | E | font-variation-settings: normal
+hint #3 | E | font-weight: 400
+hint #3 | E | letter-spacing: normal
+hint #3 | E | line-height: 1.43
+hint #4 | E | color: #66666f
+hint #4 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #4 | E | font-feature-settings: normal
+hint #4 | E | font-size: 14px
+hint #4 | E | font-variation-settings: normal
+hint #4 | E | font-weight: 400
+hint #4 | E | letter-spacing: normal
+hint #4 | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+line-title | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title | E | font-feature-settings: normal
+line-title | E | font-size: 14px
+line-title | E | font-variation-settings: normal
+line-title | E | font-weight: 500
+line-title | E | letter-spacing: normal
+line-title | E | line-height: 1.25
+line-title | E | overflow: hidden
+line-title | E | text-overflow: ellipsis
+line-title | E | white-space: nowrap
+meta #2 | E | color: #66666f
+meta #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #2 | E | font-feature-settings: normal
+meta #2 | E | font-size: 12px
+meta #2 | E | font-variation-settings: normal
+meta #2 | E | font-weight: 400
+meta #2 | E | letter-spacing: normal
+meta #2 | E | line-height: 1.33
+meta #3 | E | color: #66666f
+meta #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #3 | E | font-feature-settings: normal
+meta #3 | E | font-size: 12px
+meta #3 | E | font-variation-settings: normal
+meta #3 | E | font-weight: 400
+meta #3 | E | letter-spacing: normal
+meta #3 | E | line-height: 1.33
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+order-summary-image > [0] | E | height: 100%
+order-summary-image > [0] | E | width: 100%
+order-summary-image | E | border-bottom-color: #e4e4e7
+order-summary-image | E | border-bottom-left-radius: 6.4px
+order-summary-image | E | border-bottom-right-radius: 6.4px
+order-summary-image | E | border-bottom-style: solid
+order-summary-image | E | border-bottom-width: 1px
+order-summary-image | E | border-left-color: #e4e4e7
+order-summary-image | E | border-left-style: solid
+order-summary-image | E | border-left-width: 1px
+order-summary-image | E | border-right-color: #e4e4e7
+order-summary-image | E | border-right-style: solid
+order-summary-image | E | border-right-width: 1px
+order-summary-image | E | border-top-color: #e4e4e7
+order-summary-image | E | border-top-left-radius: 6.4px
+order-summary-image | E | border-top-right-radius: 6.4px
+order-summary-image | E | border-top-style: solid
+order-summary-image | E | border-top-width: 1px
+order-summary-image | E | flex-shrink: 0
+order-summary-image | E | height: 56px
+order-summary-image | E | overflow: hidden
+order-summary-image | E | width: 56px
+total > [0] | E | display: flex
+total > [0] | E | flex-direction: column
+total | E | align-items: flex-end
+total | E | display: flex
+total | E | font-family: 'Inter Variable', Inter, sans-serif
+total | E | font-feature-settings: normal
+total | E | font-size: 16px
+total | E | font-variation-settings: normal
+total | E | font-weight: 600
+total | E | justify-content: space-between
+total | E | letter-spacing: normal
+total | E | line-height: 1.5

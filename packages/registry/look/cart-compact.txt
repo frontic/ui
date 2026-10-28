@@ -1,0 +1,90 @@
+CartCompact > [0] | E | position: relative
+CartCompact > [10] | E | width: 100%
+CartCompact > [1] | E | height: 20px
+CartCompact > [1] | E | width: 20px
+CartCompact > [2] | E | inset-inline-end: -4px
+CartCompact > [2] | E | position: absolute
+CartCompact > [2] | E | top: -4px
+CartCompact > [3] | E | align-items: center
+CartCompact > [3] | E | display: flex
+CartCompact > [3] | E | justify-content: space-between
+CartCompact > [4] | E | border-bottom-width: 0
+CartCompact > [4] | E | border-left-width: 0
+CartCompact > [4] | E | border-right-width: 0
+CartCompact > [4] | E | border-top-width: 0
+CartCompact > [4] | E | clip-path: inset(50%)
+CartCompact > [4] | E | height: 1px
+CartCompact > [4] | E | margin-bottom: -1px
+CartCompact > [4] | E | margin-left: -1px
+CartCompact > [4] | E | margin-right: -1px
+CartCompact > [4] | E | margin-top: -1px
+CartCompact > [4] | E | overflow: hidden
+CartCompact > [4] | E | padding-bottom: 0
+CartCompact > [4] | E | padding-left: 0
+CartCompact > [4] | E | padding-right: 0
+CartCompact > [4] | E | padding-top: 0
+CartCompact > [4] | E | position: absolute
+CartCompact > [4] | E | white-space: nowrap
+CartCompact > [4] | E | width: 1px
+CartCompact > [5] | E | display: flex
+CartCompact > [5] | E | flex-direction: column
+CartCompact > [5] | E | gap: 8px
+CartCompact > [5] | E | padding-left: 24px
+CartCompact > [5] | E | padding-right: 24px
+CartCompact > [5] | E | padding-top: 16px
+CartCompact > [6] | E | container-type: inline-size
+CartCompact > [6] | E | flex: 1
+CartCompact > [6] | E | overflow-y: auto
+CartCompact > [6] | E | padding-bottom: 20px
+CartCompact > [6] | E | padding-left: 24px
+CartCompact > [6] | E | padding-right: 24px
+CartCompact > [6] | E | padding-top: 20px
+CartCompact > [7] | E | display: flex
+CartCompact > [7] | E | flex-direction: column
+CartCompact > [7] | E | gap: 12px
+CartCompact > [7] | E | width: 100%
+CartCompact > [8] | E | align-items: center
+CartCompact > [8] | E | display: flex
+CartCompact > [8] | E | justify-content: space-between
+CartCompact > [9] | E | width: 100%
+hint #2 | E | color: #66666f
+hint #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #2 | E | font-feature-settings: normal
+hint #2 | E | font-size: 14px
+hint #2 | E | font-variation-settings: normal
+hint #2 | E | font-weight: 400
+hint #2 | E | letter-spacing: normal
+hint #2 | E | line-height: 1.43
+hint #3 | E | color: #66666f
+hint #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #3 | E | font-feature-settings: normal
+hint #3 | E | font-size: 14px
+hint #3 | E | font-variation-settings: normal
+hint #3 | E | font-weight: 400
+hint #3 | E | letter-spacing: normal
+hint #3 | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+note-positive | E | color: #12883e
+part-title-lg | E | font-family: 'Inter Variable', Inter, sans-serif
+part-title-lg | E | font-feature-settings: normal
+part-title-lg | E | font-size: 18px
+part-title-lg | E | font-variation-settings: normal
+part-title-lg | E | font-weight: 600
+part-title-lg | E | letter-spacing: 0.05em
+part-title-lg | E | line-height: 1.56
+part-title-lg | E | text-transform: uppercase

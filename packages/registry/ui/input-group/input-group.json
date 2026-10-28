@@ -1,0 +1,145 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Input Group",
+  "description": "An input or textarea with addons beside, above or below it, such as a search icon, a unit or a button that submits.",
+  "recipes": {
+    "input-group": {
+      "base": {
+        "extends": "control",
+        "height": "{spacing.10}",
+        "display": "flex",
+        "width": "full",
+        "minWidth": "{spacing.0}",
+        "alignItems": "center",
+        "focusWithin": {
+          "borderBottom": "{border.focus}"
+        },
+        "invalidWithin": {
+          "borderBottomColor": "{colors.destructive}"
+        }
+      },
+      "variants": {
+        "size": {
+          "md": {},
+          "sm": {
+            "height": "{spacing.9}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "input-group-addon": {
+      "composes": ["disabled"],
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.ui}",
+        "gap": "{spacing.2}",
+        "paddingY": "{spacing.2}",
+        "display": "flex",
+        "height": "auto",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      },
+      "variants": {
+        "align": {
+          "inline-start": {},
+          "inline-end": {},
+          "block-start": {
+            "paddingTop": "{spacing.3}"
+          },
+          "block-end": {
+            "paddingBottom": "{spacing.3}"
+          }
+        }
+      },
+      "defaults": {
+        "align": "inline-start"
+      }
+    },
+    "input-group-button": {
+      "base": {
+        "gap": "{spacing.2}",
+        "typography": "{typography.small}",
+        "display": "flex",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        },
+        "iconStart": {
+          "paddingStart": "{spacing.4}"
+        },
+        "iconEnd": {
+          "paddingEnd": "{spacing.4}"
+        }
+      },
+      "variants": {
+        "size": {
+          "xs": {
+            "height": "{spacing.6}",
+            "gap": "{spacing.1}",
+            "paddingX": "{spacing.1.5}",
+            "typography": "{typography.caption}",
+            "fontWeight": "normal"
+          },
+          "sm": {
+            "height": "{spacing.10}",
+            "paddingX": "{spacing.6}"
+          },
+          "icon-xs": {
+            "size": "{spacing.6}",
+            "padding": "{spacing.0}",
+            "iconStart": {
+              "paddingStart": "{spacing.0}"
+            },
+            "iconEnd": {
+              "paddingEnd": "{spacing.0}"
+            },
+            "typography": "{typography.caption}",
+            "fontWeight": "normal"
+          },
+          "icon-sm": {
+            "size": "{spacing.8}",
+            "padding": "{spacing.0}",
+            "iconStart": {
+              "paddingStart": "{spacing.0}"
+            },
+            "iconEnd": {
+              "paddingEnd": "{spacing.0}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "size": "xs"
+      }
+    },
+    "input-group-input": {
+      "base": {
+        "flex": "1"
+      }
+    },
+    "input-group-text": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.small}",
+        "gap": "{spacing.2}",
+        "display": "flex",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "input-group-textarea": {
+      "base": {
+        "flex": "1",
+        "paddingY": "{spacing.2.5}"
+      }
+    }
+  }
+}

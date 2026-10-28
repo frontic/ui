@@ -1,0 +1,34 @@
+ProductOptions > [0] | E | container-type: inline-size
+ProductOptions > [1] | E | grid-column-start: 2
+ProductOptions > [1] | E | grid-row-start: 1
+ProductOptions > [1] | E | grid-row: span 2 / span 2
+ProductOptions > [1] | E | justify-self: flex-end
+ProductOptions > [2] | E | align-items: center
+ProductOptions > [2] | E | display: flex
+ProductOptions > [2] | E | gap: 16px
+ProductOptions > [3] | E | flex-shrink: 0
+ProductOptions > [3] | E | height: 64px [phone]
+ProductOptions > [3] | E | height: 96px [desktop]
+ProductOptions > [3] | E | width: 64px [phone]
+ProductOptions > [3] | E | width: 96px [desktop]
+ProductOptions > [4] | E | display: flex
+ProductOptions > [4] | E | flex-direction: column
+ProductOptions > [4] | E | gap: 8px
+ProductOptions > [4] | E | min-width: 0px
+ProductOptions > [5] | E | flex-wrap: wrap
+ProductOptions > [6] | E | width: 100% [phone]
+ProductOptions > [6] | E | width: auto [desktop]
+ProductOptions > [7] | E | flex: 1 [phone]
+ProductOptions > [7] | E | flex: none [desktop]
+ProductOptions > [7] | E | min-width: 0px
+ProductOptions > [8] | E | width: 100%
+product-options-image > [0] | E | height: 100%
+product-options-image > [0] | E | width: 100%
+product-options-image | E | background-color: #f4f4f5
+product-options-image | E | border-bottom-left-radius: 6.4px
+product-options-image | E | border-bottom-right-radius: 6.4px
+product-options-image | E | border-top-left-radius: 6.4px
+product-options-image | E | border-top-right-radius: 6.4px
+product-options-image | E | height: 100%
+product-options-image | E | overflow: hidden
+product-options-image | E | width: 100%

@@ -1,0 +1,39 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Date Field",
+  "description": "A date typed one segment at a time, in the order and format of the user's locale; joins a Field around it.",
+  "recipes": {
+    "date-field": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "control",
+        "height": "{spacing.10}",
+        "display": "flex",
+        "width": "full",
+        "minWidth": "{spacing.0}",
+        "alignItems": "center",
+        "focusWithin": {
+          "borderBottomColor": "{colors.ring}"
+        }
+      }
+    },
+    "date-field-literal": {
+      "base": {
+        "textColor": "{colors.muted-foreground}"
+      }
+    },
+    "date-field-segment": {
+      "base": {
+        "rounded": "{rounded.sm}",
+        "paddingX": "{spacing.0.5}",
+        "placeholderShown": {
+          "textColor": "{colors.muted-foreground}"
+        },
+        "focus": {
+          "backgroundColor": "{colors.accent}",
+          "textColor": "{colors.accent-foreground}"
+        }
+      }
+    }
+  }
+}

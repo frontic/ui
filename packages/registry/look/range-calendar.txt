@@ -1,0 +1,279 @@
+range-calendar > [0] | E | align-items: center
+range-calendar > [0] | E | display: flex
+range-calendar > [0] | E | gap: 4px
+range-calendar > [1] | E | display: flex
+range-calendar > [1] | E | flex-wrap: wrap
+range-calendar > [1] | E | gap: 16px
+range-calendar > [1] | E | justify-content: center
+range-calendar > [1] | E | margin-top: 16px
+range-calendar > [2] | E | margin-top: 8px
+range-calendar > [2] | E | width: 100%
+range-calendar | E | padding-bottom: 12px
+range-calendar | E | padding-left: 12px
+range-calendar | E | padding-right: 12px
+range-calendar | E | padding-top: 12px
+range-calendar-cell | E | font-family: 'Inter Variable', Inter, sans-serif
+range-calendar-cell | E | font-feature-settings: normal
+range-calendar-cell | E | font-size: 14px
+range-calendar-cell | E | font-variation-settings: normal
+range-calendar-cell | E | font-weight: 400
+range-calendar-cell | E | letter-spacing: normal
+range-calendar-cell | E | line-height: 1.43
+range-calendar-cell | E | padding-bottom: 0px
+range-calendar-cell | E | padding-left: 0px
+range-calendar-cell | E | padding-right: 0px
+range-calendar-cell | E | padding-top: 0px
+range-calendar-cell | E | position: relative
+range-calendar-cell | E | text-align: center
+range-calendar-cell | E:focus | position: relative
+range-calendar-cell | E:focus | z-index: 20
+range-calendar-cell | E:is([data-selected], [aria-selected], :selected) | border-bottom-left-radius: 6.4px [edge=start,both]
+range-calendar-cell | E:is([data-selected], [aria-selected], :selected) | border-bottom-right-radius: 6.4px [edge=end,both]
+range-calendar-cell | E:is([data-selected], [aria-selected], :selected) | border-top-left-radius: 6.4px [edge=start,both]
+range-calendar-cell | E:is([data-selected], [aria-selected], :selected) | border-top-right-radius: 6.4px [edge=end,both]
+range-calendar-cell | E:selected | background-color: #f4f4f5
+range-calendar-grid | :where(E > :not(:last-child)) | margin-left: 0px
+range-calendar-grid | :where(E > :not(:last-child)) | margin-right: calc(4px * calc(1 - 0))
+range-calendar-grid | E | border-collapse: collapse
+range-calendar-grid-row | E | display: flex
+range-calendar-head-cell | E | border-bottom-left-radius: 6.4px
+range-calendar-head-cell | E | border-bottom-right-radius: 6.4px
+range-calendar-head-cell | E | border-top-left-radius: 6.4px
+range-calendar-head-cell | E | border-top-right-radius: 6.4px
+range-calendar-head-cell | E | color: #66666f
+range-calendar-head-cell | E | font-family: 'Inter Variable', Inter, sans-serif
+range-calendar-head-cell | E | font-feature-settings: normal
+range-calendar-head-cell | E | font-size: 12px
+range-calendar-head-cell | E | font-variation-settings: normal
+range-calendar-head-cell | E | font-weight: 400
+range-calendar-head-cell | E | letter-spacing: normal
+range-calendar-head-cell | E | line-height: 1.33
+range-calendar-head-cell | E | width: 32px
+range-calendar-header | E | align-items: center
+range-calendar-header | E | display: flex
+range-calendar-header | E | justify-content: center
+range-calendar-header | E | padding-top: 4px
+range-calendar-header | E | position: relative
+range-calendar-header | E | width: 100%
+range-calendar-heading | E | font-family: 'Inter Variable', Inter, sans-serif
+range-calendar-heading | E | font-feature-settings: normal
+range-calendar-heading | E | font-size: 14px
+range-calendar-heading | E | font-variation-settings: normal
+range-calendar-heading | E | font-weight: 500
+range-calendar-heading | E | letter-spacing: normal
+range-calendar-heading | E | line-height: 1.43
+range-calendar-next-button > [0] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1
+range-calendar-next-button | E ICON | flex-shrink: 0
+range-calendar-next-button | E ICON | height: 16px
+range-calendar-next-button | E ICON | pointer-events: none
+range-calendar-next-button | E ICON | width: 16px
+range-calendar-next-button | E | -webkit-user-select: none
+range-calendar-next-button | E | align-items: center
+range-calendar-next-button | E | background-clip: padding-box
+range-calendar-next-button | E | background-color: transparent
+range-calendar-next-button | E | border-bottom-color: #e4e4e7
+range-calendar-next-button | E | border-bottom-left-radius: 0px
+range-calendar-next-button | E | border-bottom-right-radius: 0px
+range-calendar-next-button | E | border-bottom-style: solid
+range-calendar-next-button | E | border-bottom-width: 1px
+range-calendar-next-button | E | border-left-color: #e4e4e7
+range-calendar-next-button | E | border-left-style: solid
+range-calendar-next-button | E | border-left-width: 1px
+range-calendar-next-button | E | border-right-color: #e4e4e7
+range-calendar-next-button | E | border-right-style: solid
+range-calendar-next-button | E | border-right-width: 1px
+range-calendar-next-button | E | border-top-color: #e4e4e7
+range-calendar-next-button | E | border-top-left-radius: 0px
+range-calendar-next-button | E | border-top-right-radius: 0px
+range-calendar-next-button | E | border-top-style: solid
+range-calendar-next-button | E | border-top-width: 1px
+range-calendar-next-button | E | display: inline-flex
+range-calendar-next-button | E | flex-shrink: 0
+range-calendar-next-button | E | font-family: 'Inter Variable', Inter, sans-serif
+range-calendar-next-button | E | font-feature-settings: normal
+range-calendar-next-button | E | font-size: 12px
+range-calendar-next-button | E | font-variation-settings: normal
+range-calendar-next-button | E | font-weight: 600
+range-calendar-next-button | E | height: 28px
+range-calendar-next-button | E | inset-inline-end: 4px
+range-calendar-next-button | E | justify-content: center
+range-calendar-next-button | E | letter-spacing: 0.1em
+range-calendar-next-button | E | line-height: 1.33
+range-calendar-next-button | E | opacity: 0.5
+range-calendar-next-button | E | outline-style: none
+range-calendar-next-button | E | padding-bottom: 0px
+range-calendar-next-button | E | padding-left: 0px
+range-calendar-next-button | E | padding-right: 0px
+range-calendar-next-button | E | padding-top: 0px
+range-calendar-next-button | E | position: absolute
+range-calendar-next-button | E | text-transform: uppercase
+range-calendar-next-button | E | transition-duration: 150ms
+range-calendar-next-button | E | transition-property: all
+range-calendar-next-button | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+range-calendar-next-button | E | user-select: none
+range-calendar-next-button | E | white-space: nowrap
+range-calendar-next-button | E | width: 28px
+range-calendar-next-button | E:active:not([aria-haspopup]) | translate: 0 1px
+range-calendar-next-button | E:disabled | opacity: 0.5
+range-calendar-next-button | E:disabled | pointer-events: none
+range-calendar-next-button | E:focus | border-bottom-color: #71717a
+range-calendar-next-button | E:focus | border-left-color: #71717a
+range-calendar-next-button | E:focus | border-right-color: #71717a
+range-calendar-next-button | E:focus | border-top-color: #71717a
+range-calendar-next-button | E:focus | ring: 2px #71717a
+range-calendar-next-button | E:hover | background-color: #f4f4f5
+range-calendar-next-button | E:hover | color: #09090b
+range-calendar-next-button | E:hover | opacity: 1
+range-calendar-next-button | E:invalid | border-bottom-color: #c70009
+range-calendar-next-button | E:invalid | border-left-color: #c70009
+range-calendar-next-button | E:invalid | border-right-color: #c70009
+range-calendar-next-button | E:invalid | border-top-color: #c70009
+range-calendar-next-button | E:invalid | ring: 2px color-mix(in oklab, #c70009 20%, transparent)
+range-calendar-next-button | E:open | background-color: #f4f4f5
+range-calendar-next-button | E:open | color: #09090b
+range-calendar-prev-button > [0] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1
+range-calendar-prev-button | E ICON | flex-shrink: 0
+range-calendar-prev-button | E ICON | height: 16px
+range-calendar-prev-button | E ICON | pointer-events: none
+range-calendar-prev-button | E ICON | width: 16px
+range-calendar-prev-button | E | -webkit-user-select: none
+range-calendar-prev-button | E | align-items: center
+range-calendar-prev-button | E | background-clip: padding-box
+range-calendar-prev-button | E | background-color: transparent
+range-calendar-prev-button | E | border-bottom-color: #e4e4e7
+range-calendar-prev-button | E | border-bottom-left-radius: 0px
+range-calendar-prev-button | E | border-bottom-right-radius: 0px
+range-calendar-prev-button | E | border-bottom-style: solid
+range-calendar-prev-button | E | border-bottom-width: 1px
+range-calendar-prev-button | E | border-left-color: #e4e4e7
+range-calendar-prev-button | E | border-left-style: solid
+range-calendar-prev-button | E | border-left-width: 1px
+range-calendar-prev-button | E | border-right-color: #e4e4e7
+range-calendar-prev-button | E | border-right-style: solid
+range-calendar-prev-button | E | border-right-width: 1px
+range-calendar-prev-button | E | border-top-color: #e4e4e7
+range-calendar-prev-button | E | border-top-left-radius: 0px
+range-calendar-prev-button | E | border-top-right-radius: 0px
+range-calendar-prev-button | E | border-top-style: solid
+range-calendar-prev-button | E | border-top-width: 1px
+range-calendar-prev-button | E | display: inline-flex
+range-calendar-prev-button | E | flex-shrink: 0
+range-calendar-prev-button | E | font-family: 'Inter Variable', Inter, sans-serif
+range-calendar-prev-button | E | font-feature-settings: normal
+range-calendar-prev-button | E | font-size: 12px
+range-calendar-prev-button | E | font-variation-settings: normal
+range-calendar-prev-button | E | font-weight: 600
+range-calendar-prev-button | E | height: 28px
+range-calendar-prev-button | E | inset-inline-start: 4px
+range-calendar-prev-button | E | justify-content: center
+range-calendar-prev-button | E | letter-spacing: 0.1em
+range-calendar-prev-button | E | line-height: 1.33
+range-calendar-prev-button | E | opacity: 0.5
+range-calendar-prev-button | E | outline-style: none
+range-calendar-prev-button | E | padding-bottom: 0px
+range-calendar-prev-button | E | padding-left: 0px
+range-calendar-prev-button | E | padding-right: 0px
+range-calendar-prev-button | E | padding-top: 0px
+range-calendar-prev-button | E | position: absolute
+range-calendar-prev-button | E | text-transform: uppercase
+range-calendar-prev-button | E | transition-duration: 150ms
+range-calendar-prev-button | E | transition-property: all
+range-calendar-prev-button | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+range-calendar-prev-button | E | user-select: none
+range-calendar-prev-button | E | white-space: nowrap
+range-calendar-prev-button | E | width: 28px
+range-calendar-prev-button | E:active:not([aria-haspopup]) | translate: 0 1px
+range-calendar-prev-button | E:disabled | opacity: 0.5
+range-calendar-prev-button | E:disabled | pointer-events: none
+range-calendar-prev-button | E:focus | border-bottom-color: #71717a
+range-calendar-prev-button | E:focus | border-left-color: #71717a
+range-calendar-prev-button | E:focus | border-right-color: #71717a
+range-calendar-prev-button | E:focus | border-top-color: #71717a
+range-calendar-prev-button | E:focus | ring: 2px #71717a
+range-calendar-prev-button | E:hover | background-color: #f4f4f5
+range-calendar-prev-button | E:hover | color: #09090b
+range-calendar-prev-button | E:hover | opacity: 1
+range-calendar-prev-button | E:invalid | border-bottom-color: #c70009
+range-calendar-prev-button | E:invalid | border-left-color: #c70009
+range-calendar-prev-button | E:invalid | border-right-color: #c70009
+range-calendar-prev-button | E:invalid | border-top-color: #c70009
+range-calendar-prev-button | E:invalid | ring: 2px color-mix(in oklab, #c70009 20%, transparent)
+range-calendar-prev-button | E:open | background-color: #f4f4f5
+range-calendar-prev-button | E:open | color: #09090b
+range-calendar-trigger | E ICON | flex-shrink: 0
+range-calendar-trigger | E ICON | height: 14px
+range-calendar-trigger | E ICON | pointer-events: none
+range-calendar-trigger | E ICON | width: 14px
+range-calendar-trigger | E | -webkit-user-select: none
+range-calendar-trigger | E | align-items: center
+range-calendar-trigger | E | background-clip: padding-box
+range-calendar-trigger | E | background-color: #7008e7 [position=edge]
+range-calendar-trigger | E | background-color: #f4f4f5 [day=today position=middle]
+range-calendar-trigger | E | border-bottom-color: transparent
+range-calendar-trigger | E | border-bottom-left-radius: 0px
+range-calendar-trigger | E | border-bottom-right-radius: 0px
+range-calendar-trigger | E | border-bottom-style: solid
+range-calendar-trigger | E | border-bottom-width: 1px
+range-calendar-trigger | E | border-left-color: transparent
+range-calendar-trigger | E | border-left-style: solid
+range-calendar-trigger | E | border-left-width: 1px
+range-calendar-trigger | E | border-right-color: transparent
+range-calendar-trigger | E | border-right-style: solid
+range-calendar-trigger | E | border-right-width: 1px
+range-calendar-trigger | E | border-top-color: transparent
+range-calendar-trigger | E | border-top-left-radius: 0px
+range-calendar-trigger | E | border-top-right-radius: 0px
+range-calendar-trigger | E | border-top-style: solid
+range-calendar-trigger | E | border-top-width: 1px
+range-calendar-trigger | E | color: #09090b [day=current position=middle]
+range-calendar-trigger | E | color: #18181b [day=today position=middle]
+range-calendar-trigger | E | color: #66666f [day=outside position=middle]
+range-calendar-trigger | E | color: #f5f3ff [position=edge]
+range-calendar-trigger | E | display: inline-flex
+range-calendar-trigger | E | flex-shrink: 0
+range-calendar-trigger | E | font-family: 'Inter Variable', Inter, sans-serif
+range-calendar-trigger | E | font-feature-settings: normal
+range-calendar-trigger | E | font-size: 12px
+range-calendar-trigger | E | font-variation-settings: normal
+range-calendar-trigger | E | font-weight: 400
+range-calendar-trigger | E | gap: 6px
+range-calendar-trigger | E | height: 32px
+range-calendar-trigger | E | justify-content: center
+range-calendar-trigger | E | letter-spacing: 0.1em
+range-calendar-trigger | E | line-height: 1.33
+range-calendar-trigger | E | outline-style: none
+range-calendar-trigger | E | padding-bottom: 0px
+range-calendar-trigger | E | padding-left: 0px
+range-calendar-trigger | E | padding-right: 0px
+range-calendar-trigger | E | padding-top: 0px
+range-calendar-trigger | E | text-transform: uppercase
+range-calendar-trigger | E | transition-duration: 150ms
+range-calendar-trigger | E | transition-property: all
+range-calendar-trigger | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+range-calendar-trigger | E | user-select: none
+range-calendar-trigger | E | white-space: nowrap
+range-calendar-trigger | E | width: 32px
+range-calendar-trigger | E:active:not([aria-haspopup]) | translate: 0 1px
+range-calendar-trigger | E:disabled | opacity: 0.5
+range-calendar-trigger | E:disabled | pointer-events: none
+range-calendar-trigger | E:focus | background-color: #7008e7 [position=edge]
+range-calendar-trigger | E:focus | border-bottom-color: #71717a
+range-calendar-trigger | E:focus | border-left-color: #71717a
+range-calendar-trigger | E:focus | border-right-color: #71717a
+range-calendar-trigger | E:focus | border-top-color: #71717a
+range-calendar-trigger | E:focus | color: #f5f3ff [position=edge]
+range-calendar-trigger | E:focus | ring: 2px #71717a
+range-calendar-trigger | E:has([data-icon="inline-end"]) | padding-right: 16px
+range-calendar-trigger | E:has([data-icon="inline-start"]) | padding-left: 16px
+range-calendar-trigger | E:hover | background-color: #7008e7 [position=edge]
+range-calendar-trigger | E:hover | background-color: #f4f4f5 [position=middle]
+range-calendar-trigger | E:hover | color: #09090b [position=middle]
+range-calendar-trigger | E:hover | color: #f5f3ff [position=edge]
+range-calendar-trigger | E:invalid | border-bottom-color: #c70009
+range-calendar-trigger | E:invalid | border-left-color: #c70009
+range-calendar-trigger | E:invalid | border-right-color: #c70009
+range-calendar-trigger | E:invalid | border-top-color: #c70009
+range-calendar-trigger | E:invalid | ring: 2px color-mix(in oklab, #c70009 20%, transparent)
+range-calendar-trigger | E:open | background-color: #f4f4f5
+range-calendar-trigger | E:open | color: #09090b
+range-calendar-trigger | E[data-unavailable] | text-decoration-line: line-through

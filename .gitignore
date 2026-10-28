@@ -1,0 +1,47 @@
+# Dependencies
+node_modules
+
+# Migration files
+import
+
+# Build outputs
+dist
+.nuxt
+.output
+*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local files
+*.local
+*.log
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Registry package - built files (regenerated)
+packages/registry/public/v1/
+packages/registry/public/recipe.schema.json
+packages/registry/public/item.schema.json
+packages/registry/public/registry.schema.json
+
+# Contract gate scratch libraries
+packages/registry/.contract/
+
+# Frontic generated client
+.frontic
+
+# Test coverage
+coverage
+
+# Vercel
+.vercel
+.wrangler

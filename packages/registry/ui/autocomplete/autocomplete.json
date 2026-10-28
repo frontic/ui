@@ -1,0 +1,75 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Autocomplete",
+  "description": "An input with suggestions that accepts free-form text; the value is the text itself.",
+  "recipes": {
+    "autocomplete-content": {
+      "base": {
+        "extends": "overlay",
+        "minWidth": "{spacing.36}",
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "trigger"
+      }
+    },
+    "autocomplete-empty": {
+      "base": {
+        "typography": "{typography.small}",
+        "textColor": "{colors.muted-foreground}",
+        "paddingY": "{spacing.2}",
+        "textAlign": "center"
+      }
+    },
+    "autocomplete-input": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": ["control", "control-line"],
+        "height": "{spacing.10}",
+        "paddingX": "{spacing.0}",
+        "paddingY": "{spacing.1}",
+        "width": "full",
+        "minWidth": "{spacing.0}",
+        "flex": "1"
+      }
+    },
+    "autocomplete-item": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "option-item",
+        "gap": "{spacing.2.5}",
+        "paddingY": "{spacing.2}",
+        "paddingStart": "{spacing.3}",
+        "paddingEnd": "{spacing.3}",
+        "display": "flex",
+        "width": "full",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "autocomplete-label": {
+      "base": {
+        "extends": "menu-label",
+        "paddingX": "{spacing.3}",
+        "paddingY": "{spacing.2}"
+      }
+    },
+    "autocomplete-separator": {
+      "base": {
+        "bleedX": "{spacing.1.5}",
+        "marginY": "{spacing.1.5}",
+        "extends": "divider",
+        "backgroundColor": "{colors.border/50}",
+        "height": "{spacing.px}"
+      }
+    },
+    "autocomplete-viewport": {
+      "base": {
+        "scrollbar": "none",
+        "minHeight": "{spacing.0}",
+        "padding": "{spacing.1.5}"
+      }
+    }
+  }
+}

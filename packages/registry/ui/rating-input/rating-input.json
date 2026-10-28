@@ -1,0 +1,33 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Rating Input",
+  "description": "Lets the user give a rating by picking a mark, drawn with the Rating item's stars or dots, joining a Field.",
+  "recipes": {
+    "rating-input": {
+      "base": {
+        "display": "flex",
+        "width": "fit",
+        "alignItems": "center"
+      }
+    },
+    "rating-input-item": {
+      "composes": ["focus-ring", "disabled"],
+      "base": {
+        "rounded": "{rounded.sm}"
+      },
+      "variants": {
+        "shape": {
+          "dot": {
+            "padding": "{spacing.1}"
+          },
+          "star": {
+            "padding": "{spacing.0.5}"
+          }
+        }
+      },
+      "defaults": {
+        "shape": "star"
+      }
+    }
+  }
+}

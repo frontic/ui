@@ -1,0 +1,42 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Toggle Group",
+  "description": "Toggles the shopper presses one or several of, such as jacket features to filter by; joined into one control, or spaced apart.",
+  "recipes": {
+    "toggle-group": {
+      "base": {
+        "display": "flex",
+        "width": "fit",
+        "flexDirection": "row",
+        "alignItems": "center"
+      },
+      "variants": {
+        "spacing": {
+          "none": {
+            "gap": "{spacing.0}"
+          },
+          "xs": {
+            "gap": "{spacing.1}"
+          },
+          "sm": {
+            "gap": "{spacing.2}"
+          },
+          "md": {
+            "gap": "{spacing.3}"
+          },
+          "lg": {
+            "gap": "{spacing.4}"
+          }
+        }
+      },
+      "defaults": {
+        "spacing": "none"
+      }
+    },
+    "toggle-group-item": {
+      "base": {
+        "flexShrink": "0"
+      }
+    }
+  }
+}

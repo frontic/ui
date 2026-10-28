@@ -1,0 +1,8 @@
+{
+  "indent": {
+    "paddingStart": "{spacing.0}",
+    "@md": {
+      "paddingStart": "{spacing.10}"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "types": ["vite/client", "node"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue", "scripts/**/*.ts"],
+  "exclude": ["node_modules", "dist", "public", "registry", "ui", "sections", "templates", "lib", "composables"]
+}

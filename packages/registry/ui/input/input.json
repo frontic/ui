@@ -1,0 +1,32 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Input",
+  "description": "Lets the user enter a single line of text, joining a Field.",
+  "recipes": {
+    "input": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": ["control", "control-line"],
+        "height": "{spacing.10}",
+        "paddingX": "{spacing.0}",
+        "paddingY": "{spacing.1}",
+        "width": "full",
+        "minWidth": "{spacing.0}",
+        "file": {
+          "display": "inline-flex"
+        }
+      },
+      "variants": {
+        "size": {
+          "md": {},
+          "sm": {
+            "height": "{spacing.9}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    }
+  }
+}

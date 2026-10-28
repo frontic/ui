@@ -1,0 +1,26 @@
+<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
+<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
+<script setup lang="ts">
+import type { DialogOverlayProps } from 'reka-ui'
+import type { HTMLAttributes } from 'vue'
+import { reactiveOmit } from '@vueuse/core'
+import { DialogOverlay, useForwardProps } from 'reka-ui'
+
+const props = defineProps<DialogOverlayProps & { class?: HTMLAttributes['class'] }>()
+
+const delegatedProps = reactiveOmit(props, 'class')
+const forwarded = useForwardProps(delegatedProps)
+</script>
+
+<template>
+  <DialogOverlay
+    data-slot="sheet-overlay"
+    :class="[
+      'fui-sheet-overlay data-open:animate-in data-closed:animate-out data-open:fade-in-0 data-closed:fade-out-0 duration-100 fixed inset-0 z-50 supports-backdrop-filter:backdrop-blur-sm',
+      props.class,
+    ]"
+    v-bind="forwarded"
+  >
+    <slot />
+  </DialogOverlay>
+</template>

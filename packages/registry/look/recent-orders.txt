@@ -1,0 +1,114 @@
+RecentOrders > [10] | E | align-items: flex-start
+RecentOrders > [10] | E | display: flex
+RecentOrders > [10] | E | flex-direction: column
+RecentOrders > [10] | E | gap: 4px
+RecentOrders > [11] | E | align-items: flex-start
+RecentOrders > [11] | E | display: flex [phone]
+RecentOrders > [11] | E | display: none [desktop]
+RecentOrders > [11] | E | flex-direction: column
+RecentOrders > [11] | E | gap: 4px
+RecentOrders > [12] | E | display: none [desktop]
+RecentOrders > [13] | E | display: none [phone]
+RecentOrders > [13] | E | display: table-cell [desktop]
+RecentOrders > [14] | E | display: none [phone]
+RecentOrders > [14] | E | display: table-cell [desktop]
+RecentOrders > [15] | E | display: none [phone]
+RecentOrders > [15] | E | display: table-cell [desktop]
+RecentOrders > [16] | E | text-align: end
+RecentOrders > [17] | E | text-align: end
+RecentOrders > [18] | E | align-items: flex-start
+RecentOrders > [18] | E | container-type: inline-size
+RecentOrders > [18] | E | flex-direction: column
+RecentOrders > [18] | E | gap: 16px
+RecentOrders > [19] | E | align-items: center [desktop]
+RecentOrders > [19] | E | display: flex
+RecentOrders > [19] | E | flex-direction: column [phone]
+RecentOrders > [19] | E | flex-direction: row [desktop]
+RecentOrders > [19] | E | gap: 16px
+RecentOrders > [19] | E | justify-content: space-between [desktop]
+RecentOrders > [19] | E | width: 100%
+RecentOrders > [1] | E | grid-column-start: 2
+RecentOrders > [1] | E | grid-row-start: 1
+RecentOrders > [1] | E | grid-row: span 2 / span 2
+RecentOrders > [1] | E | justify-self: flex-end
+RecentOrders > [20] | E | justify-content: flex-end [desktop]
+RecentOrders > [20] | E | justify-content: flex-start [phone]
+RecentOrders > [20] | E | margin-left: 0px
+RecentOrders > [20] | E | margin-right: 0px
+RecentOrders > [2] | E | display: block [desktop]
+RecentOrders > [2] | E | display: none [phone]
+RecentOrders > [3] | E | display: none [desktop]
+RecentOrders > [4] | E | container-type: inline-size
+RecentOrders > [5] | E | display: none [phone]
+RecentOrders > [5] | E | display: table-cell [desktop]
+RecentOrders > [6] | E | display: none [phone]
+RecentOrders > [6] | E | display: table-cell [desktop]
+RecentOrders > [7] | E | display: none [phone]
+RecentOrders > [7] | E | display: table-cell [desktop]
+RecentOrders > [8] | E | text-align: end
+RecentOrders > [9] | E | border-bottom-width: 0
+RecentOrders > [9] | E | border-left-width: 0
+RecentOrders > [9] | E | border-right-width: 0
+RecentOrders > [9] | E | border-top-width: 0
+RecentOrders > [9] | E | clip-path: inset(50%)
+RecentOrders > [9] | E | height: 1px
+RecentOrders > [9] | E | margin-bottom: -1px
+RecentOrders > [9] | E | margin-left: -1px
+RecentOrders > [9] | E | margin-right: -1px
+RecentOrders > [9] | E | margin-top: -1px
+RecentOrders > [9] | E | overflow: hidden
+RecentOrders > [9] | E | padding-bottom: 0
+RecentOrders > [9] | E | padding-left: 0
+RecentOrders > [9] | E | padding-right: 0
+RecentOrders > [9] | E | padding-top: 0
+RecentOrders > [9] | E | position: absolute
+RecentOrders > [9] | E | white-space: nowrap
+RecentOrders > [9] | E | width: 1px
+hint #2 | E | color: #66666f
+hint #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #2 | E | font-feature-settings: normal
+hint #2 | E | font-size: 14px
+hint #2 | E | font-variation-settings: normal
+hint #2 | E | font-weight: 400
+hint #2 | E | letter-spacing: normal
+hint #2 | E | line-height: 1.43
+hint #3 | E | color: #66666f
+hint #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #3 | E | font-feature-settings: normal
+hint #3 | E | font-size: 14px
+hint #3 | E | font-variation-settings: normal
+hint #3 | E | font-weight: 400
+hint #3 | E | letter-spacing: normal
+hint #3 | E | line-height: 1.43
+hint #4 | E | color: #66666f
+hint #4 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #4 | E | font-feature-settings: normal
+hint #4 | E | font-size: 14px
+hint #4 | E | font-variation-settings: normal
+hint #4 | E | font-weight: 400
+hint #4 | E | letter-spacing: normal
+hint #4 | E | line-height: 1.43
+hint #5 | E | color: #66666f
+hint #5 | E | flex-shrink: 0
+hint #5 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #5 | E | font-feature-settings: normal
+hint #5 | E | font-size: 14px
+hint #5 | E | font-variation-settings: normal
+hint #5 | E | font-weight: 400
+hint #5 | E | letter-spacing: normal
+hint #5 | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+line-title | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title | E | font-feature-settings: normal
+line-title | E | font-size: 14px
+line-title | E | font-variation-settings: normal
+line-title | E | font-weight: 500
+line-title | E | letter-spacing: normal
+line-title | E | line-height: 1.25

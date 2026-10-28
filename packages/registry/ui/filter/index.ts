@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: FSL-1.1-MIT
+export { default as Filter } from './Filter.vue'
+export { default as FilterField } from './FilterField.vue'
+export { default as FilterFieldContent } from './FilterFieldContent.vue'
+export { default as FilterFieldDescription } from './FilterFieldDescription.vue'
+export { default as FilterFieldLabel } from './FilterFieldLabel.vue'
+export { default as FilterFieldTitle } from './FilterFieldTitle.vue'
+export { default as FilterGroup } from './FilterGroup.vue'
+export { default as FilterList } from './FilterList.vue'
+export { default as FilterTrigger } from './FilterTrigger.vue'
+export { default as FilterPrice } from './FilterPrice.vue'
+export { default as FilterRange } from './FilterRange.vue'
+export { default as FilterRating } from './FilterRating.vue'
+export { default as FilterReset } from './FilterReset.vue'
+export { default as FilterSlider } from './FilterSlider.vue'
+export { default as FilterSwatch } from './FilterSwatch.vue'
+export { default as FilterSwitch } from './FilterSwitch.vue'
+
+// Re-export types
+export type { FilterOption } from './FilterList.vue'
+export type { FilterSwatchOption } from './FilterSwatch.vue'

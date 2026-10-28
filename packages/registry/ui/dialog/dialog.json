@@ -1,0 +1,81 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Dialog",
+  "description": "A modal window over the page, with a header, a body that scrolls when it outgrows the screen, and a footer for actions such as save and cancel.",
+  "recipes": {
+    "dialog-body": {
+      "base": {
+        "minHeight": "{spacing.0}",
+        "bleedX": "{spacing.6}",
+        "paddingX": "{spacing.6}",
+        "bleedY": "{spacing.2}",
+        "paddingY": "{spacing.2}",
+        "@md": {
+          "bleedX": "{spacing.8}",
+          "paddingX": "{spacing.8}"
+        }
+      }
+    },
+    "dialog-content": {
+      "base": {
+        "extends": ["overlay-modal", "surface-inset"],
+        "gap": "{spacing.6}",
+        "paddingX": "{spacing.6}",
+        "width": "full",
+        "@md": {
+          "paddingX": "{spacing.8}"
+        }
+      },
+      "variants": {
+        "layout": {
+          "fill": {
+            "display": "flex",
+            "flexDirection": "column"
+          },
+          "scroll": {
+            "display": "grid",
+            "maxWidth": "{container.lg}"
+          }
+        }
+      },
+      "defaults": {
+        "layout": "fill"
+      }
+    },
+    "dialog-description": {
+      "base": {
+        "marginTop": "{spacing.0.5}",
+        "extends": ["part-description", "link-foreground"]
+      }
+    },
+    "dialog-footer": {
+      "base": {
+        "display": "flex",
+        "flexDirection": "column-reverse",
+        "gap": "{spacing.2}",
+        "@sm": {
+          "flexDirection": "row",
+          "justifyContent": "end"
+        }
+      }
+    },
+    "dialog-header": {
+      "base": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "{spacing.2}"
+      }
+    },
+    "dialog-overlay": {
+      "base": {
+        "extends": "overlay-backdrop"
+      }
+    },
+    "dialog-title": {
+      "base": {
+        "extends": "part-title",
+        "lineHeight": "none"
+      }
+    }
+  }
+}

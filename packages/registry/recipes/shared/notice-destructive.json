@@ -1,0 +1,6 @@
+{
+  "notice-destructive": {
+    "backgroundColor": "{colors.card}",
+    "textColor": "{colors.destructive}"
+  }
+}

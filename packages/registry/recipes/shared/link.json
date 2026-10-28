@@ -1,0 +1,9 @@
+{
+  "link": {
+    "textColor": "{colors.muted-foreground}",
+    "typography": "{typography.small}",
+    "hover": {
+      "textColor": "{colors.foreground}"
+    }
+  }
+}

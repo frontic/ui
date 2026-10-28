@@ -1,0 +1,47 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Tag Group",
+  "description": "Tags the shopper moves through with the arrow keys, such as active filters to remove or options to pick; selection and removal are both optional.",
+  "recipes": {
+    "tag-group": {
+      "base": {
+        "gap": "{spacing.2}",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "alignItems": "center"
+      }
+    },
+    "tag-group-item": {
+      "composes": ["focus-ring", "disabled"],
+      "base": {
+        "extends": "tag",
+        "height": "{spacing.8}",
+        "paddingX": "{spacing.3}",
+        "gap": "{spacing.1.5}",
+        "display": "inline-flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "checked": {
+          "backgroundColor": "{colors.primary}",
+          "textColor": "{colors.primary-foreground}",
+          "borderColor": "{colors.primary}"
+        }
+      }
+    },
+    "tag-group-item-delete": {
+      "composes": ["focus-ring"],
+      "base": {
+        "bleedEnd": "{spacing.1}",
+        "opacity": "{opacity.60}",
+        "size": "{spacing.5}",
+        "display": "flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "hover": {
+          "opacity": "{opacity.100}"
+        }
+      }
+    }
+  }
+}

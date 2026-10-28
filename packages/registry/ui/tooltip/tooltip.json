@@ -1,0 +1,32 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Tooltip",
+  "description": "A short label that appears beside an element on hover or keyboard focus, such as naming an icon button; announced as the trigger's description.",
+  "recipes": {
+    "tooltip-arrow": {
+      "base": {
+        "decorative": true,
+        "backgroundColor": "{colors.foreground}",
+        "fill": "{colors.foreground}",
+        "rounded": "{rounded.none}",
+        "size": "{spacing.2.5}"
+      }
+    },
+    "tooltip-content": {
+      "base": {
+        "backgroundColor": "{colors.foreground}",
+        "textColor": "{colors.background}",
+        "rounded": "{rounded.none}",
+        "typography": "{typography.caption}",
+        "fontWeight": "normal",
+        "gap": "{spacing.1.5}",
+        "paddingX": "{spacing.3}",
+        "paddingY": "{spacing.1.5}",
+        "display": "inline-flex",
+        "alignItems": "center",
+        "width": "fit",
+        "maxWidth": "{container.xs}"
+      }
+    }
+  }
+}

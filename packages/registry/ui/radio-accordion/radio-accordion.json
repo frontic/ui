@@ -1,0 +1,86 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Radio Accordion",
+  "description": "Radio options where the picked one reveals its details, for checkout choices like a card form under the card option or a delivery window under express shipping.",
+  "recipes": {
+    "radio-accordion": {
+      "base": {
+        "display": "flex",
+        "width": "full",
+        "flexDirection": "column"
+      },
+      "variants": {
+        "variant": {
+          "plain": {},
+          "outline": {
+            "gap": "{spacing.3}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "plain"
+      }
+    },
+    "radio-accordion-content": {
+      "base": {
+        "extends": "indent",
+        "typography": "{typography.small}",
+        "paddingBottom": "{spacing.4}"
+      }
+    },
+    "radio-accordion-indicator": {
+      "base": {
+        "extends": ["choice", "choice-dot"],
+        "size": "{spacing.6}",
+        "display": "flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "radio-accordion-item": {
+      "composes": ["disabled"],
+      "base": {
+        "gap": "{spacing.0}",
+        "display": "flex",
+        "width": "full",
+        "flexDirection": "column"
+      },
+      "variants": {
+        "variant": {
+          "plain": {
+            "borderBottom": "{border.default}"
+          },
+          "outline": {
+            "border": "{border.default}",
+            "borderColor": "{colors.border}",
+            "rounded": "{rounded.md}",
+            "paddingX": "{spacing.4}",
+            "checked": {
+              "borderColor": "{colors.active}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "variant": "plain"
+      }
+    },
+    "radio-accordion-trigger": {
+      "composes": ["focus-ring"],
+      "base": {
+        "typography": "{typography.ui}",
+        "fontWeight": "semibold",
+        "gap": "{spacing.4}",
+        "paddingY": "{spacing.4}",
+        "display": "flex",
+        "width": "full",
+        "alignItems": "center",
+        "textAlign": "start"
+      }
+    }
+  }
+}

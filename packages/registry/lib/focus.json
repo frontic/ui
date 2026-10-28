@@ -1,0 +1,5 @@
+{
+  "$schema": "../item.schema.json",
+  "title": "Focus",
+  "description": "Whether the last input was a key or a pointer, which decides if an overlay's focus shows a ring."
+}

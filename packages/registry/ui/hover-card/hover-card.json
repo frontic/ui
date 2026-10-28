@@ -1,0 +1,16 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Hover Card",
+  "description": "A card that opens on hover or focus to preview what a link points to, such as a product with its image, price and rating.",
+  "recipes": {
+    "hover-card-content": {
+      "base": {
+        "extends": "overlay",
+        "typography": "{typography.small}",
+        "width": "{spacing.72}",
+        "paddingX": "{spacing.4}",
+        "paddingY": "{spacing.4}"
+      }
+    }
+  }
+}

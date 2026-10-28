@@ -1,0 +1,57 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Footer Rich",
+  "description": "Footer with a newsletter signup, social links and link columns over a dark legal bar.",
+  "categories": ["footer"],
+  "recipes": {
+    "footer-rich": {
+      "composes": ["hint", "link", "focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "footer-rich-heading": {
+      "base": {
+        "typography": "{typography.subheading}"
+      }
+    },
+    "footer-rich-legal": {
+      "base": {
+        "backgroundColor": "{colors.foreground}",
+        "textColor": "{colors.background}",
+        "typography": "{typography.small}"
+      }
+    },
+    "footer-rich-legal-link": {
+      "composes": ["focus-ring"],
+      "base": {
+        "textColor": "{colors.background/70}",
+        "hover": {
+          "textColor": "{colors.background}"
+        }
+      }
+    },
+    "footer-rich-legal-logo": {
+      "base": {
+        "extends": "logo",
+        "typography": "{typography.small}",
+        "letterSpacing": "normal"
+      }
+    },
+    "footer-rich-legal-note": {
+      "base": {
+        "textColor": "{colors.background/70}"
+      }
+    },
+    "footer-rich-newsletter": {
+      "base": {
+        "backgroundColor": "{colors.muted}"
+      }
+    },
+    "footer-rich-title": {
+      "base": {
+        "extends": "section-title"
+      }
+    }
+  }
+}

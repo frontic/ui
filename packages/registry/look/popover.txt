@@ -1,0 +1,63 @@
+popover-content | E | background-color: #ffffff
+popover-content | E | border-bottom-left-radius: 0px
+popover-content | E | border-bottom-right-radius: 0px
+popover-content | E | border-top-left-radius: 0px
+popover-content | E | border-top-right-radius: 0px
+popover-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+popover-content | E | color: #09090b
+popover-content | E | display: flex
+popover-content | E | flex-direction: column
+popover-content | E | font-family: 'Inter Variable', Inter, sans-serif
+popover-content | E | font-feature-settings: normal
+popover-content | E | font-size: 14px
+popover-content | E | font-variation-settings: normal
+popover-content | E | font-weight: 400
+popover-content | E | gap: 16px
+popover-content | E | letter-spacing: normal
+popover-content | E | line-height: 1.43
+popover-content | E | max-width: unset
+popover-content | E | padding-bottom: 16px
+popover-content | E | padding-left: 16px
+popover-content | E | padding-right: 16px
+popover-content | E | padding-top: 16px
+popover-content | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent)
+popover-content | E | transform-origin: unset
+popover-content | E | transition-duration: 100ms
+popover-content | E | width: 288px
+popover-content | E | z-index: 50
+popover-content | E:closed | --tw-exit-opacity: 0
+popover-content | E:closed | --tw-exit-scale: .95
+popover-content | E:closed | animation: exit 100ms ease 0s 1 normal none
+popover-content | E:open | --tw-enter-opacity: 0
+popover-content | E:open | --tw-enter-scale: .95
+popover-content | E:open | animation: enter 100ms ease 0s 1 normal none
+popover-content | E:where([data-side="bottom"]) | --tw-enter-translate-y: calc(2*4px*-1)
+popover-content | E:where([data-side="left"]) | --tw-enter-translate-x: calc(2*4px)
+popover-content | E:where([data-side="right"]) | --tw-enter-translate-x: calc(2*4px*-1)
+popover-content | E:where([data-side="top"]) | --tw-enter-translate-y: calc(2*4px)
+popover-description | E | color: #66666f
+popover-description | E | font-family: 'Inter Variable', Inter, sans-serif
+popover-description | E | font-feature-settings: normal
+popover-description | E | font-size: 14px
+popover-description | E | font-variation-settings: normal
+popover-description | E | font-weight: 400
+popover-description | E | letter-spacing: normal
+popover-description | E | line-height: 1.625
+popover-header | E | display: flex
+popover-header | E | flex-direction: column
+popover-header | E | font-family: 'Inter Variable', Inter, sans-serif
+popover-header | E | font-feature-settings: normal
+popover-header | E | font-size: 14px
+popover-header | E | font-variation-settings: normal
+popover-header | E | font-weight: 400
+popover-header | E | gap: 6px
+popover-header | E | letter-spacing: normal
+popover-header | E | line-height: 1.43
+popover-title | E | font-family: 'Inter Variable', Inter, sans-serif
+popover-title | E | font-feature-settings: normal
+popover-title | E | font-size: 12px
+popover-title | E | font-variation-settings: normal
+popover-title | E | font-weight: 600
+popover-title | E | letter-spacing: normal
+popover-title | E | line-height: 1.33
+popover-title | E | text-transform: uppercase

@@ -1,0 +1,7 @@
+{
+  "choice": {
+    "backgroundColor": "transparent",
+    "border": "{border.default}",
+    "borderColor": "{colors.input}"
+  }
+}

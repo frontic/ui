@@ -1,0 +1,13 @@
+SignIn > [1] | E | display: flex
+SignIn > [1] | E | flex-direction: column
+SignIn > [1] | E | gap: 24px
+SignIn > [2] | E | display: flex
+SignIn > [2] | E | gap: 8px
+SignIn > [3] | E | min-width: 0px
+SignIn > [4] | E | min-width: 0px
+SignIn > [5] | E | width: 100%
+SignIn > [6] | E | display: flex
+SignIn > [6] | E | flex-direction: column
+SignIn > [6] | E | gap: 8px
+SignIn > [7] | E | width: 100%
+SignIn > [8] | E | width: 100%

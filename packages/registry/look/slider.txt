@@ -1,0 +1,64 @@
+slider-legend | E | color: #66666f
+slider-legend | E | display: flex
+slider-legend | E | font-family: 'Inter Variable', Inter, sans-serif
+slider-legend | E | font-feature-settings: normal
+slider-legend | E | font-size: 12px
+slider-legend | E | font-variation-settings: normal
+slider-legend | E | font-weight: 500
+slider-legend | E | justify-content: space-between
+slider-legend | E | letter-spacing: 0.025em
+slider-legend | E | line-height: 1.33
+slider-legend | E | margin-top: 8px
+slider-range | E | -webkit-user-select: none
+slider-range | E | background-color: #7008e7
+slider-range | E | position: absolute
+slider-range | E | user-select: none
+slider-range | E[data-horizontal] | height: 100%
+slider-range | E[data-vertical] | width: 100%
+slider-root | E | -webkit-user-select: none
+slider-root | E | align-items: center
+slider-root | E | display: flex
+slider-root | E | position: relative
+slider-root | E | touch-action: none
+slider-root | E | user-select: none
+slider-root | E | width: 100%
+slider-root | E:disabled | opacity: 0.5
+slider-root | E[data-vertical] | flex-direction: column
+slider-root | E[data-vertical] | height: 100%
+slider-root | E[data-vertical] | min-height: 160px
+slider-root | E[data-vertical] | width: auto
+slider-thumb | E | -webkit-user-select: none
+slider-thumb | E | background-color: #7008e7
+slider-thumb | E | border-bottom-left-radius: 0px
+slider-thumb | E | border-bottom-right-radius: 0px
+slider-thumb | E | border-top-left-radius: 0px
+slider-thumb | E | border-top-right-radius: 0px
+slider-thumb | E | display: block
+slider-thumb | E | flex-shrink: 0
+slider-thumb | E | height: 12px
+slider-thumb | E | outline-style: none
+slider-thumb | E | position: relative
+slider-thumb | E | transition-duration: 150ms
+slider-thumb | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+slider-thumb | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+slider-thumb | E | user-select: none
+slider-thumb | E | width: 12px
+slider-thumb | E::after | content: ""
+slider-thumb | E::after | inset: -6px
+slider-thumb | E::after | position: absolute
+slider-thumb | E:disabled | opacity: 0.5
+slider-thumb | E:disabled | pointer-events: none
+slider-thumb | E:focus | ring: 2px #71717a
+slider-thumb | E:hover | ring: 2px #71717a
+slider-track | E | background-color: color-mix(in oklab, #a1a1aa 50%, transparent)
+slider-track | E | border-bottom-left-radius: 0px
+slider-track | E | border-bottom-right-radius: 0px
+slider-track | E | border-top-left-radius: 0px
+slider-track | E | border-top-right-radius: 0px
+slider-track | E | flex-grow: 1
+slider-track | E | height: 2px
+slider-track | E | overflow: hidden
+slider-track | E | position: relative
+slider-track | E | width: 2px
+slider-track | E[data-horizontal] | width: 100%
+slider-track | E[data-vertical] | height: 100%

@@ -1,0 +1,14 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Filter Sidebar",
+  "description": "A product list with its filters in a collapsible sidebar beside it, plus sorting and search.",
+  "categories": ["filter"],
+  "recipes": {
+    "filter-sidebar": {
+      "composes": ["title", "hint", "clear-link", "focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    }
+  }
+}

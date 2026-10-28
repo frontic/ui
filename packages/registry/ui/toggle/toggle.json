@@ -1,0 +1,103 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Toggle",
+  "description": "A button that stays pressed until pressed again, such as saving to a wishlist; plain or outlined, with square icon sizes.",
+  "recipes": {
+    "toggle": {
+      "composes": ["focus-ring", "disabled"],
+      "base": {
+        "rounded": "{rounded.none}",
+        "typography": "{typography.caption}",
+        "fontWeight": "semibold",
+        "textTransform": "uppercase",
+        "letterSpacing": "widest",
+        "gap": "{spacing.1.5}",
+        "icon": {
+          "size": "{spacing.3.5}"
+        },
+        "border": "{border.default}",
+        "borderColor": "transparent",
+        "display": "inline-flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "hover": {
+          "borderColor": "{colors.input}"
+        },
+        "checked": {
+          "backgroundColor": "{colors.muted}",
+          "borderColor": "{colors.foreground}"
+        },
+        "invalid": {
+          "borderColor": "{colors.destructive}",
+          "outlineColor": "{colors.destructive/20}"
+        }
+      },
+      "variants": {
+        "variant": {
+          "default": {
+            "backgroundColor": "transparent"
+          },
+          "outline": {
+            "backgroundColor": "transparent",
+            "border": "{border.default}",
+            "borderColor": "{colors.input}",
+            "hover": {
+              "borderColor": "{colors.muted-foreground}"
+            },
+            "checked": {
+              "borderColor": "{colors.foreground}"
+            }
+          }
+        },
+        "size": {
+          "md": {
+            "height": "{spacing.10}",
+            "minWidth": "{spacing.10}",
+            "paddingX": "{spacing.6}",
+            "iconStart": {
+              "paddingStart": "{spacing.4}"
+            },
+            "iconEnd": {
+              "paddingEnd": "{spacing.4}"
+            }
+          },
+          "sm": {
+            "height": "{spacing.9}",
+            "minWidth": "{spacing.9}",
+            "paddingX": "{spacing.4}",
+            "iconStart": {
+              "paddingStart": "{spacing.3}"
+            },
+            "iconEnd": {
+              "paddingEnd": "{spacing.3}"
+            }
+          },
+          "lg": {
+            "height": "{spacing.11}",
+            "minWidth": "{spacing.11}",
+            "paddingX": "{spacing.8}",
+            "iconStart": {
+              "paddingStart": "{spacing.5}"
+            },
+            "iconEnd": {
+              "paddingEnd": "{spacing.5}"
+            }
+          },
+          "icon-sm": {
+            "size": "{spacing.9}"
+          },
+          "icon-md": {
+            "size": "{spacing.10}"
+          },
+          "icon-lg": {
+            "size": "{spacing.11}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "default",
+        "size": "md"
+      }
+    }
+  }
+}

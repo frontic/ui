@@ -1,0 +1,101 @@
+radio-accordion | E | display: flex
+radio-accordion | E | flex-direction: column
+radio-accordion | E | gap: 12px [variant=outline]
+radio-accordion | E | width: 100%
+radio-accordion-content | E | font-family: 'Inter Variable', Inter, sans-serif
+radio-accordion-content | E | font-feature-settings: normal
+radio-accordion-content | E | font-size: 14px
+radio-accordion-content | E | font-variation-settings: normal
+radio-accordion-content | E | font-weight: 400
+radio-accordion-content | E | letter-spacing: normal
+radio-accordion-content | E | line-height: 1.43
+radio-accordion-content | E | padding-bottom: 16px
+radio-accordion-content | E | padding-left: 0px [phone]
+radio-accordion-content | E | padding-left: 40px [desktop]
+radio-accordion-indicator > [0] | E | align-items: center
+radio-accordion-indicator > [0] | E | display: flex
+radio-accordion-indicator > [0] | E | justify-content: center
+radio-accordion-indicator > [1] | E | fill: currentcolor
+radio-accordion-indicator | E ICON | height: 14px
+radio-accordion-indicator | E ICON | width: 14px
+radio-accordion-indicator | E | align-items: center
+radio-accordion-indicator | E | aspect-ratio: 1 / 1
+radio-accordion-indicator | E | background-color: transparent
+radio-accordion-indicator | E | border-bottom-color: #a1a1aa
+radio-accordion-indicator | E | border-bottom-left-radius: 9999px
+radio-accordion-indicator | E | border-bottom-right-radius: 9999px
+radio-accordion-indicator | E | border-bottom-style: solid
+radio-accordion-indicator | E | border-bottom-width: 1px
+radio-accordion-indicator | E | border-left-color: #a1a1aa
+radio-accordion-indicator | E | border-left-style: solid
+radio-accordion-indicator | E | border-left-width: 1px
+radio-accordion-indicator | E | border-right-color: #a1a1aa
+radio-accordion-indicator | E | border-right-style: solid
+radio-accordion-indicator | E | border-right-width: 1px
+radio-accordion-indicator | E | border-top-color: #a1a1aa
+radio-accordion-indicator | E | border-top-left-radius: 9999px
+radio-accordion-indicator | E | border-top-right-radius: 9999px
+radio-accordion-indicator | E | border-top-style: solid
+radio-accordion-indicator | E | border-top-width: 1px
+radio-accordion-indicator | E | display: flex
+radio-accordion-indicator | E | flex-shrink: 0
+radio-accordion-indicator | E | height: 24px
+radio-accordion-indicator | E | justify-content: center
+radio-accordion-indicator | E | width: 24px
+radio-accordion-indicator | E:checked ICON | color: #09090b
+radio-accordion-indicator | E:checked | border-bottom-color: #09090b
+radio-accordion-indicator | E:checked | border-left-color: #09090b
+radio-accordion-indicator | E:checked | border-right-color: #09090b
+radio-accordion-indicator | E:checked | border-top-color: #09090b
+radio-accordion-item | E | border-bottom-color: #e4e4e7
+radio-accordion-item | E | border-bottom-left-radius: 6.4px [variant=outline]
+radio-accordion-item | E | border-bottom-right-radius: 6.4px [variant=outline]
+radio-accordion-item | E | border-bottom-style: solid
+radio-accordion-item | E | border-bottom-width: 1px
+radio-accordion-item | E | border-left-color: #e4e4e7 [variant=outline]
+radio-accordion-item | E | border-left-style: solid [variant=outline]
+radio-accordion-item | E | border-left-width: 1px [variant=outline]
+radio-accordion-item | E | border-right-color: #e4e4e7 [variant=outline]
+radio-accordion-item | E | border-right-style: solid [variant=outline]
+radio-accordion-item | E | border-right-width: 1px [variant=outline]
+radio-accordion-item | E | border-top-color: #e4e4e7 [variant=outline]
+radio-accordion-item | E | border-top-left-radius: 6.4px [variant=outline]
+radio-accordion-item | E | border-top-right-radius: 6.4px [variant=outline]
+radio-accordion-item | E | border-top-style: solid [variant=outline]
+radio-accordion-item | E | border-top-width: 1px [variant=outline]
+radio-accordion-item | E | display: flex
+radio-accordion-item | E | flex-direction: column
+radio-accordion-item | E | gap: 0px
+radio-accordion-item | E | padding-left: 16px [variant=outline]
+radio-accordion-item | E | padding-right: 16px [variant=outline]
+radio-accordion-item | E | width: 100%
+radio-accordion-item | E:checked | border-bottom-color: #7008e7 [variant=outline]
+radio-accordion-item | E:checked | border-left-color: #7008e7 [variant=outline]
+radio-accordion-item | E:checked | border-right-color: #7008e7 [variant=outline]
+radio-accordion-item | E:checked | border-top-color: #7008e7 [variant=outline]
+radio-accordion-item | E:disabled | opacity: 0.5
+radio-accordion-item | E:disabled | pointer-events: none
+radio-accordion-item | E:last-child | border-bottom-style: solid [variant=plain]
+radio-accordion-item | E:last-child | border-bottom-width: 0px [variant=plain]
+radio-accordion-trigger | E | align-items: center
+radio-accordion-trigger | E | cursor: pointer
+radio-accordion-trigger | E | display: flex
+radio-accordion-trigger | E | font-family: 'Inter Variable', Inter, sans-serif
+radio-accordion-trigger | E | font-feature-settings: normal
+radio-accordion-trigger | E | font-size: 14px
+radio-accordion-trigger | E | font-variation-settings: normal
+radio-accordion-trigger | E | font-weight: 600
+radio-accordion-trigger | E | gap: 16px
+radio-accordion-trigger | E | letter-spacing: normal
+radio-accordion-trigger | E | line-height: 1.43
+radio-accordion-trigger | E | outline-style: none
+radio-accordion-trigger | E | padding-bottom: 16px
+radio-accordion-trigger | E | padding-top: 16px
+radio-accordion-trigger | E | text-align: start
+radio-accordion-trigger | E | width: 100%
+radio-accordion-trigger | E:disabled | cursor: not-allowed
+radio-accordion-trigger | E:focus | border-bottom-color: #71717a
+radio-accordion-trigger | E:focus | border-left-color: #71717a
+radio-accordion-trigger | E:focus | border-right-color: #71717a
+radio-accordion-trigger | E:focus | border-top-color: #71717a
+radio-accordion-trigger | E:focus | ring: 2px #71717a

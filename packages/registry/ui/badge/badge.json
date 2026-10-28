@@ -1,0 +1,117 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Badge",
+  "description": "A short label such as new or sale, in the status colours and the commerce roles promo, discount, new and price, at three sizes.",
+  "recipes": {
+    "badge": {
+      "base": {
+        "rounded": "{rounded.none}",
+        "textColor": "{colors.foreground}",
+        "typography": "{typography.micro}",
+        "fontWeight": "semibold",
+        "letterSpacing": "widest",
+        "textTransform": "uppercase",
+        "gap": "{spacing.1.5}",
+        "display": "inline-flex",
+        "width": "fit",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3}"
+        },
+        "focus": {
+          "borderColor": "{colors.ring}",
+          "outline": "{ring.wide}",
+          "outlineColor": "{colors.ring}"
+        }
+      },
+      "variants": {
+        "variant": {
+          "neutral": {
+            "textColor": "{colors.foreground}",
+            "hover": {
+              "textColor": "{colors.foreground/70}"
+            },
+            "with": {
+              "size": {
+                "sm": {
+                  "padding": "{spacing.0}"
+                },
+                "md": {
+                  "padding": "{spacing.0}"
+                },
+                "lg": {
+                  "padding": "{spacing.0}"
+                }
+              }
+            }
+          },
+          "primary": {
+            "backgroundColor": "{colors.primary}",
+            "textColor": "{colors.primary-foreground}"
+          },
+          "info": {
+            "backgroundColor": "{colors.info}",
+            "textColor": "{colors.info-foreground}"
+          },
+          "success": {
+            "backgroundColor": "{colors.positive}",
+            "textColor": "{colors.positive-foreground}"
+          },
+          "warning": {
+            "backgroundColor": "{colors.warning}",
+            "textColor": "{colors.warning-foreground}"
+          },
+          "error": {
+            "backgroundColor": "{colors.destructive}",
+            "textColor": "{colors.destructive-foreground}",
+            "focus": {
+              "outlineColor": "{colors.destructive}"
+            }
+          },
+          "promo": {
+            "backgroundColor": "{colors.promo}",
+            "textColor": "{colors.promo-foreground}"
+          },
+          "discount": {
+            "backgroundColor": "{colors.discount}",
+            "textColor": "{colors.discount-foreground}"
+          },
+          "new": {
+            "backgroundColor": "{colors.new}",
+            "textColor": "{colors.new-foreground}"
+          },
+          "price": {
+            "backgroundColor": "{colors.price}",
+            "textColor": "{colors.price-foreground}"
+          }
+        },
+        "size": {
+          "sm": {
+            "paddingX": "{spacing.2}",
+            "paddingY": "{spacing.0.5}"
+          },
+          "md": {
+            "paddingX": "{spacing.2.5}",
+            "paddingY": "{spacing.1}",
+            "typography": "{typography.caption}",
+            "fontWeight": "semibold",
+            "letterSpacing": "widest"
+          },
+          "lg": {
+            "paddingX": "{spacing.3}",
+            "paddingY": "{spacing.1.5}",
+            "typography": "{typography.caption}",
+            "fontWeight": "semibold",
+            "letterSpacing": "widest"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "neutral",
+        "size": "md"
+      }
+    }
+  }
+}

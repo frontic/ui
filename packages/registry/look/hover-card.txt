@@ -1,0 +1,33 @@
+hover-card-content | E | background-color: #ffffff
+hover-card-content | E | border-bottom-left-radius: 0px
+hover-card-content | E | border-bottom-right-radius: 0px
+hover-card-content | E | border-top-left-radius: 0px
+hover-card-content | E | border-top-right-radius: 0px
+hover-card-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+hover-card-content | E | color: #09090b
+hover-card-content | E | font-family: 'Inter Variable', Inter, sans-serif
+hover-card-content | E | font-feature-settings: normal
+hover-card-content | E | font-size: 14px
+hover-card-content | E | font-variation-settings: normal
+hover-card-content | E | font-weight: 400
+hover-card-content | E | letter-spacing: normal
+hover-card-content | E | line-height: 1.43
+hover-card-content | E | padding-bottom: 16px
+hover-card-content | E | padding-left: 16px
+hover-card-content | E | padding-right: 16px
+hover-card-content | E | padding-top: 16px
+hover-card-content | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent)
+hover-card-content | E | transform-origin: unset
+hover-card-content | E | transition-duration: 100ms
+hover-card-content | E | width: 288px
+hover-card-content | E | z-index: 50
+hover-card-content | E:closed | --tw-exit-opacity: 0
+hover-card-content | E:closed | --tw-exit-scale: .95
+hover-card-content | E:closed | animation: exit 100ms ease 0s 1 normal none
+hover-card-content | E:open | --tw-enter-opacity: 0
+hover-card-content | E:open | --tw-enter-scale: .95
+hover-card-content | E:open | animation: enter 100ms ease 0s 1 normal none
+hover-card-content | E:where([data-side="bottom"]) | --tw-enter-translate-y: calc(2*4px*-1)
+hover-card-content | E:where([data-side="left"]) | --tw-enter-translate-x: calc(2*4px)
+hover-card-content | E:where([data-side="right"]) | --tw-enter-translate-x: calc(2*4px*-1)
+hover-card-content | E:where([data-side="top"]) | --tw-enter-translate-y: calc(2*4px)

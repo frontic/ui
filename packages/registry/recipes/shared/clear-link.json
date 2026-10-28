@@ -1,0 +1,11 @@
+{
+  "clear-link": {
+    "textColor": "{colors.muted-foreground}",
+    "typography": "{typography.caption}",
+    "fontWeight": "normal",
+    "hover": {
+      "textColor": "{colors.foreground}",
+      "textDecorationLine": "underline"
+    }
+  }
+}

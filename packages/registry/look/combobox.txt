@@ -1,0 +1,209 @@
+combobox-anchor | E | display: inline-flex
+combobox-anchor | E | width: fit-content
+combobox-content | E | background-color: #ffffff
+combobox-content | E | border-bottom-left-radius: 0px
+combobox-content | E | border-bottom-right-radius: 0px
+combobox-content | E | border-top-left-radius: 0px
+combobox-content | E | border-top-right-radius: 0px
+combobox-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+combobox-content | E | color: #09090b
+combobox-content | E | display: flex
+combobox-content | E | flex-direction: column
+combobox-content | E | max-height: unset
+combobox-content | E | min-width: 144px
+combobox-content | E | overflow: hidden
+combobox-content | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent)
+combobox-content | E | transform-origin: unset
+combobox-content | E | transition-duration: 100ms
+combobox-content | E | width: unset
+combobox-content | E | z-index: 50
+combobox-content | E:closed | --tw-exit-opacity: 0
+combobox-content | E:closed | --tw-exit-scale: .95
+combobox-content | E:closed | animation: exit 100ms ease 0s 1 normal none
+combobox-content | E:open | --tw-enter-opacity: 0
+combobox-content | E:open | --tw-enter-scale: .95
+combobox-content | E:open | animation: enter 100ms ease 0s 1 normal none
+combobox-content | E:where([data-side="bottom"]) | --tw-enter-translate-y: calc(2*4px*-1)
+combobox-content | E:where([data-side="left"]) | --tw-enter-translate-x: calc(2*4px)
+combobox-content | E:where([data-side="right"]) | --tw-enter-translate-x: calc(2*4px*-1)
+combobox-content | E:where([data-side="top"]) | --tw-enter-translate-y: calc(2*4px)
+combobox-empty | E | color: #66666f
+combobox-empty | E | font-family: 'Inter Variable', Inter, sans-serif
+combobox-empty | E | font-feature-settings: normal
+combobox-empty | E | font-size: 14px
+combobox-empty | E | font-variation-settings: normal
+combobox-empty | E | font-weight: 400
+combobox-empty | E | letter-spacing: normal
+combobox-empty | E | line-height: 1.43
+combobox-empty | E | padding-bottom: 8px
+combobox-empty | E | padding-top: 8px
+combobox-empty | E | text-align: center
+combobox-group > [0] | E | color: #66666f
+combobox-group > [0] | E | font-family: 'Inter Variable', Inter, sans-serif
+combobox-group > [0] | E | font-feature-settings: normal
+combobox-group > [0] | E | font-size: 12px
+combobox-group > [0] | E | font-variation-settings: normal
+combobox-group > [0] | E | font-weight: 600
+combobox-group > [0] | E | letter-spacing: 0.05em
+combobox-group > [0] | E | line-height: 1.33
+combobox-group > [0] | E | padding-bottom: 8px
+combobox-group > [0] | E | padding-left: 12px
+combobox-group > [0] | E | padding-right: 12px
+combobox-group > [0] | E | padding-top: 8px
+combobox-group > [0] | E | text-transform: uppercase
+combobox-group | E | overflow: hidden
+combobox-input | E | background-color: transparent
+combobox-input | E | flex: 1
+combobox-input | E | outline-style: none
+combobox-input | E:disabled | cursor: not-allowed
+combobox-input | E:disabled | opacity: 0.5
+combobox-item | E ICON | flex-shrink: 0
+combobox-item | E ICON | height: 14px
+combobox-item | E ICON | pointer-events: none
+combobox-item | E ICON | width: 14px
+combobox-item | E | -webkit-user-select: none
+combobox-item | E | align-items: center
+combobox-item | E | border-bottom-left-radius: 0px
+combobox-item | E | border-bottom-right-radius: 0px
+combobox-item | E | border-top-left-radius: 0px
+combobox-item | E | border-top-right-radius: 0px
+combobox-item | E | cursor: default
+combobox-item | E | display: flex
+combobox-item | E | font-family: 'Inter Variable', Inter, sans-serif
+combobox-item | E | font-feature-settings: normal
+combobox-item | E | font-size: 14px
+combobox-item | E | font-variation-settings: normal
+combobox-item | E | font-weight: 400
+combobox-item | E | gap: 10px
+combobox-item | E | letter-spacing: normal
+combobox-item | E | line-height: 1.43
+combobox-item | E | outline-style: none
+combobox-item | E | padding-bottom: 8px
+combobox-item | E | padding-left: 12px
+combobox-item | E | padding-right: 32px
+combobox-item | E | padding-top: 8px
+combobox-item | E | position: relative
+combobox-item | E | user-select: none
+combobox-item | E | width: 100%
+combobox-item | E:disabled | opacity: 0.5
+combobox-item | E:disabled | pointer-events: none
+combobox-item | E:highlighted | background-color: #f4f4f5
+combobox-item | E:highlighted | color: #18181b
+combobox-item-indicator | E | align-items: center
+combobox-item-indicator | E | display: flex
+combobox-item-indicator | E | height: 16px
+combobox-item-indicator | E | inset-inline-end: 8px
+combobox-item-indicator | E | justify-content: center
+combobox-item-indicator | E | pointer-events: none
+combobox-item-indicator | E | position: absolute
+combobox-item-indicator | E | width: 16px
+combobox-search > [0] | E | flex-shrink: 0
+combobox-search | E ICON | height: 14px
+combobox-search | E ICON | width: 14px
+combobox-search | E | align-items: center
+combobox-search | E | display: flex
+combobox-search | E | font-family: 'Inter Variable', Inter, sans-serif
+combobox-search | E | font-feature-settings: normal
+combobox-search | E | font-size: 14px
+combobox-search | E | font-variation-settings: normal
+combobox-search | E | font-weight: 400
+combobox-search | E | gap: 8px
+combobox-search | E | height: 32px
+combobox-search | E | letter-spacing: normal
+combobox-search | E | line-height: 1.43
+combobox-search | E | margin-left: 6px
+combobox-search | E | margin-right: 6px
+combobox-search | E | margin-top: 6px
+combobox-search | E | padding-left: 10px
+combobox-search | E | padding-right: 10px
+combobox-separator | E | background-color: color-mix(in oklab, #e4e4e7 50%, transparent)
+combobox-separator | E | height: 1px
+combobox-separator | E | margin-bottom: 6px
+combobox-separator | E | margin-left: -6px
+combobox-separator | E | margin-right: -6px
+combobox-separator | E | margin-top: 6px
+combobox-trigger > [0] | E | color: #66666f
+combobox-trigger > [0] | E | height: 14px
+combobox-trigger > [0] | E | pointer-events: none
+combobox-trigger > [0] | E | width: 14px
+combobox-trigger | E ICON | flex-shrink: 0
+combobox-trigger | E ICON | height: 14px
+combobox-trigger | E ICON | pointer-events: none
+combobox-trigger | E ICON | width: 14px
+combobox-trigger | E | align-items: center
+combobox-trigger | E | background-color: transparent
+combobox-trigger | E | border-bottom-color: #a1a1aa
+combobox-trigger | E | border-bottom-left-radius: 0px
+combobox-trigger | E | border-bottom-right-radius: 0px
+combobox-trigger | E | border-bottom-style: solid
+combobox-trigger | E | border-bottom-width: 1px
+combobox-trigger | E | border-left-color: transparent
+combobox-trigger | E | border-left-style: solid
+combobox-trigger | E | border-left-width: 1px
+combobox-trigger | E | border-right-color: transparent
+combobox-trigger | E | border-right-style: solid
+combobox-trigger | E | border-right-width: 1px
+combobox-trigger | E | border-top-color: transparent
+combobox-trigger | E | border-top-left-radius: 0px
+combobox-trigger | E | border-top-right-radius: 0px
+combobox-trigger | E | border-top-style: solid
+combobox-trigger | E | border-top-width: 1px
+combobox-trigger | E | display: flex
+combobox-trigger | E | font-family: 'Inter Variable', Inter, sans-serif
+combobox-trigger | E | font-feature-settings: normal
+combobox-trigger | E | font-size: 14px
+combobox-trigger | E | font-variation-settings: normal
+combobox-trigger | E | font-weight: 400
+combobox-trigger | E | gap: 6px
+combobox-trigger | E | height: 40px
+combobox-trigger | E | justify-content: space-between
+combobox-trigger | E | letter-spacing: normal
+combobox-trigger | E | line-height: 1.43
+combobox-trigger | E | outline-style: none
+combobox-trigger | E | padding-bottom: 8px
+combobox-trigger | E | padding-left: 0px
+combobox-trigger | E | padding-right: 0px
+combobox-trigger | E | padding-top: 8px
+combobox-trigger | E | transition-duration: 150ms
+combobox-trigger | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events
+combobox-trigger | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+combobox-trigger | E | white-space: nowrap
+combobox-trigger | E | width: fit-content
+combobox-trigger | E::file-selector-button | background-color: transparent
+combobox-trigger | E::file-selector-button | border-bottom-color: 
+combobox-trigger | E::file-selector-button | border-bottom-style: 
+combobox-trigger | E::file-selector-button | border-bottom-width: none
+combobox-trigger | E::file-selector-button | border-left-color: 
+combobox-trigger | E::file-selector-button | border-left-style: 
+combobox-trigger | E::file-selector-button | border-left-width: none
+combobox-trigger | E::file-selector-button | border-right-color: 
+combobox-trigger | E::file-selector-button | border-right-style: 
+combobox-trigger | E::file-selector-button | border-right-width: none
+combobox-trigger | E::file-selector-button | border-top-color: 
+combobox-trigger | E::file-selector-button | border-top-style: 
+combobox-trigger | E::file-selector-button | border-top-width: none
+combobox-trigger | E::file-selector-button | color: #09090b
+combobox-trigger | E::file-selector-button | font-family: 'Inter Variable', Inter, sans-serif
+combobox-trigger | E::file-selector-button | font-feature-settings: normal
+combobox-trigger | E::file-selector-button | font-size: 14px
+combobox-trigger | E::file-selector-button | font-variation-settings: normal
+combobox-trigger | E::file-selector-button | font-weight: 500
+combobox-trigger | E::file-selector-button | letter-spacing: normal
+combobox-trigger | E::file-selector-button | line-height: 1.43
+combobox-trigger | E::placeholder | color: #66666f
+combobox-trigger | E:disabled | cursor: not-allowed
+combobox-trigger | E:disabled | opacity: 0.5
+combobox-trigger | E:focus | border-bottom-color: #71717a
+combobox-trigger | E:focus | border-bottom-style: solid
+combobox-trigger | E:focus | border-bottom-width: 2px
+combobox-trigger | E:invalid | border-bottom-color: #c70009
+combobox-viewport | E | max-height: 252px
+combobox-viewport | E | min-height: 0px
+combobox-viewport | E | overflow-y: auto
+combobox-viewport | E | padding-bottom: 6px
+combobox-viewport | E | padding-left: 6px
+combobox-viewport | E | padding-right: 6px
+combobox-viewport | E | padding-top: 6px
+combobox-viewport | E | scroll-padding-block: 6px
+combobox-viewport | E | scrollbar-width: none
+combobox-viewport | E::-webkit-scrollbar | display: none

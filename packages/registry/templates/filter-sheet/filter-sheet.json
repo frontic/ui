@@ -1,0 +1,14 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Filter Sheet",
+  "description": "A product list whose filters open in a sheet that slides in, with sorting, search, option lists, price ranges, switches and ratings.",
+  "categories": ["filter"],
+  "recipes": {
+    "filter-sheet": {
+      "composes": ["title", "hint", "clear-link", "focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+CartItemDetailed > [0] | E | display: flex
+CartItemDetailed > [0] | E | flex-direction: column
+CartItemDetailed > [0] | E | gap: 20px
+CartItemDetailed > [1] | E | display: flex
+CartItemDetailed > [1] | E | flex-direction: column
+CartItemDetailed > [1] | E | gap: 20px
+cart-item-detailed-image > [0] | E | height: 100%
+cart-item-detailed-image > [0] | E | object-fit: cover
+cart-item-detailed-image > [0] | E | width: 100%
+cart-item-detailed-image | E | border-bottom-color: #e4e4e7
+cart-item-detailed-image | E | border-bottom-left-radius: 6.4px
+cart-item-detailed-image | E | border-bottom-right-radius: 6.4px
+cart-item-detailed-image | E | border-bottom-style: solid
+cart-item-detailed-image | E | border-bottom-width: 1px
+cart-item-detailed-image | E | border-left-color: #e4e4e7
+cart-item-detailed-image | E | border-left-style: solid
+cart-item-detailed-image | E | border-left-width: 1px
+cart-item-detailed-image | E | border-right-color: #e4e4e7
+cart-item-detailed-image | E | border-right-style: solid
+cart-item-detailed-image | E | border-right-width: 1px
+cart-item-detailed-image | E | border-top-color: #e4e4e7
+cart-item-detailed-image | E | border-top-left-radius: 6.4px
+cart-item-detailed-image | E | border-top-right-radius: 6.4px
+cart-item-detailed-image | E | border-top-style: solid
+cart-item-detailed-image | E | border-top-width: 1px
+cart-item-detailed-image | E | flex-shrink: 0
+cart-item-detailed-image | E | height: 96px
+cart-item-detailed-image | E | overflow: hidden
+cart-item-detailed-image | E | width: 96px
+cart-item-detailed-line > [0] | E | display: flex
+cart-item-detailed-line > [0] | E | flex-direction: column
+cart-item-detailed-line > [0] | E | flex: 1
+cart-item-detailed-line > [0] | E | gap: 12px
+cart-item-detailed-line > [0] | E | justify-content: space-between
+cart-item-detailed-line > [0] | E | min-width: 0px
+cart-item-detailed-line > [1] | E | align-items: flex-start
+cart-item-detailed-line > [1] | E | display: flex
+cart-item-detailed-line > [1] | E | gap: 16px
+cart-item-detailed-line > [1] | E | justify-content: space-between
+cart-item-detailed-line > [2] | E | display: flex
+cart-item-detailed-line > [2] | E | flex-direction: column
+cart-item-detailed-line > [2] | E | gap: 4px
+cart-item-detailed-line > [2] | E | min-width: 0px
+cart-item-detailed-line > [3] | E | flex-shrink: 0
+cart-item-detailed-line > [4] | E | align-items: center
+cart-item-detailed-line > [4] | E | display: flex
+cart-item-detailed-line > [4] | E | gap: 16px
+cart-item-detailed-line > [4] | E | justify-content: space-between
+cart-item-detailed-line > [5] | E | align-items: center
+cart-item-detailed-line > [5] | E | display: flex
+cart-item-detailed-line > [5] | E | gap: 4px
+cart-item-detailed-line | E | display: flex
+cart-item-detailed-line | E | gap: 16px
+cart-item-detailed-quantity | E | font-family: 'Inter Variable', Inter, sans-serif
+cart-item-detailed-quantity | E | font-feature-settings: normal
+cart-item-detailed-quantity | E | font-size: 14px
+cart-item-detailed-quantity | E | font-variant-numeric: tabular-nums
+cart-item-detailed-quantity | E | font-variation-settings: normal
+cart-item-detailed-quantity | E | font-weight: 500
+cart-item-detailed-quantity | E | letter-spacing: normal
+cart-item-detailed-quantity | E | line-height: 1.43
+cart-item-detailed-quantity | E | text-align: center
+cart-item-detailed-quantity | E | width: 32px
+meta #2 | E | color: #66666f
+meta #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #2 | E | font-feature-settings: normal
+meta #2 | E | font-size: 12px
+meta #2 | E | font-variant-numeric: tabular-nums
+meta #2 | E | font-variation-settings: normal
+meta #2 | E | font-weight: 400
+meta #2 | E | letter-spacing: normal
+meta #2 | E | line-height: 1.33
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+quiet-action | E | color: #66666f
+section-title | E | font-family: 'Inter Variable', Inter, sans-serif
+section-title | E | font-feature-settings: normal
+section-title | E | font-size: 14px
+section-title | E | font-variation-settings: normal
+section-title | E | font-weight: 600
+section-title | E | letter-spacing: normal
+section-title | E | line-height: 1.43

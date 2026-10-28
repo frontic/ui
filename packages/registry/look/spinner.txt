@@ -1,0 +1,3 @@
+Spinner > [0] | E | animation: spin 1s linear infinite
+Spinner > [0] | E | height: 16px
+Spinner > [0] | E | width: 16px

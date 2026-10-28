@@ -1,0 +1,24 @@
+rating-input | E | align-items: center
+rating-input | E | display: flex
+rating-input | E | width: fit-content
+rating-input-item | E | border-bottom-left-radius: 4.8px
+rating-input-item | E | border-bottom-right-radius: 4.8px
+rating-input-item | E | border-top-left-radius: 4.8px
+rating-input-item | E | border-top-right-radius: 4.8px
+rating-input-item | E | display: flex
+rating-input-item | E | outline-style: none
+rating-input-item | E | padding-bottom: 2px [shape=star]
+rating-input-item | E | padding-bottom: 4px [shape=dot]
+rating-input-item | E | padding-left: 2px [shape=star]
+rating-input-item | E | padding-left: 4px [shape=dot]
+rating-input-item | E | padding-right: 2px [shape=star]
+rating-input-item | E | padding-right: 4px [shape=dot]
+rating-input-item | E | padding-top: 2px [shape=star]
+rating-input-item | E | padding-top: 4px [shape=dot]
+rating-input-item | E:disabled | cursor: not-allowed
+rating-input-item | E:disabled | opacity: 0.5
+rating-input-item | E:focus | border-bottom-color: #71717a
+rating-input-item | E:focus | border-left-color: #71717a
+rating-input-item | E:focus | border-right-color: #71717a
+rating-input-item | E:focus | border-top-color: #71717a
+rating-input-item | E:focus | ring: 2px #71717a

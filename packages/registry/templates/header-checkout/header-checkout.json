@@ -1,0 +1,17 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Header Checkout",
+  "description": "Checkout header with the logo and a secure-checkout note, and the checkout steps in a band below: every step named on a wide screen, the current one and its position on a narrow one.",
+  "categories": ["header"],
+  "recipes": {
+    "header-checkout": {
+      "composes": ["logo", "hint", "focus-ring"],
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "borderBottom": "{border.default}",
+        "borderColor": "{colors.border}",
+        "width": "full"
+      }
+    }
+  }
+}
