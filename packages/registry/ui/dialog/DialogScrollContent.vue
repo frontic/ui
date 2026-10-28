@@ -13,6 +13,7 @@ import { cva } from 'class-variance-authority'
 import { DialogClose, DialogContent, DialogOverlay, DialogPortal, injectDialogRootContext, Presence, useForwardPropsEmits } from 'reka-ui'
 import { IconPlaceholder } from '@registry/icon-placeholder'
 import { Button } from '@library/components/ui/button'
+import { usingKeyboard, useReturnFocus } from '@library/lib/focus'
 
 const dialogContent = cva('fui-dialog-content', {
   variants: { layout: { fill: 'fui-dialog-content-fill', scroll: 'fui-dialog-content-scroll' } },
@@ -41,6 +42,16 @@ const delegatedProps = reactiveOmit(props, 'class', 'closeLabel')
 
 const forwarded = useForwardPropsEmits(delegatedProps, emits)
 const root = injectDialogRootContext()
+
+// Open from the start or opened by a pointer, the dialog focuses itself, which names its title and description, so no control inside shows a focus ring until the keyboard moves on; opened from the keyboard, reka's focus on the first control stays, ring and all.
+function focusSelf(event: Event) {
+  if (event.defaultPrevented || usingKeyboard()) return
+  event.preventDefault()
+  ;(event.currentTarget as HTMLElement).focus({ preventScroll: true })
+}
+
+// A non-modal dialog leaves focus where an outside click or focus took it. Reka's content is always mounted here, so Reka focuses the trigger as the dialog closes.
+const returnFocus = useReturnFocus(() => root.triggerElement.value, { counts: () => !root.modal.value, open: () => root.open.value, keptMounted: () => true })
 </script>
 
 <template>
@@ -61,6 +72,9 @@ const root = injectDialogRootContext()
           :class="[dialogContent({ layout: 'scroll' }), '@container relative z-50', props.class]"
           v-bind="{ ...$attrs, ...forwarded }"
           force-mount
+          @open-auto-focus="focusSelf"
+          @interact-outside="returnFocus.onInteractOutside"
+          @close-auto-focus="returnFocus.onCloseAutoFocus"
           @pointer-down-outside="
             (event) => {
               const originalEvent = event.detail.originalEvent

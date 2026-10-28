@@ -29,7 +29,7 @@ switch | E | width: 25px [size=sm]
 switch | E | width: 33px [size=md]
 switch | E::after | content: ""
 switch | E::after | inset-block: -8px
-switch | E::after | inset-inline: -12px
+switch | E::after | inset-inline: 0px
 switch | E::after | position: absolute
 switch | E:checked | background-color: #7008e7
 switch | E:checked | border-bottom-color: #7008e7

@@ -2,7 +2,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { createApp, h, nextTick, ref, type Component } from 'vue'
 import { AlertDialog, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogTitle, AlertDialogTrigger } from '../../ui/alert-dialog'
-import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '../../ui/dialog'
+import { Dialog, DialogContent, DialogDescription, DialogScrollContent, DialogTitle, DialogTrigger } from '../../ui/dialog'
 import { Drawer, DrawerContent, DrawerDescription, DrawerTitle, DrawerTrigger } from '../../ui/drawer'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '../../ui/dropdown-menu'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../ui/select'
@@ -61,6 +61,9 @@ const OVERLAYS: [string, string, (open: boolean) => ReturnType<typeof h>][] = [
   // Mounted while it closes, as during its exit animation in a browser, where Reka focuses the trigger as soon as it closes.
   ['dialog kept mounted', 'dialog', dialogLike(Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription, { unmountOnHide: false })],
   ['non-modal dialog', 'dialog', dialogLike(Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription, { modal: false })],
+  ['scrolling dialog', 'dialog', dialogLike(Dialog, DialogTrigger, DialogScrollContent, DialogTitle, DialogDescription)],
+  ['scrolling dialog kept mounted', 'dialog', dialogLike(Dialog, DialogTrigger, DialogScrollContent, DialogTitle, DialogDescription, { unmountOnHide: false })],
+  ['non-modal scrolling dialog', 'dialog', dialogLike(Dialog, DialogTrigger, DialogScrollContent, DialogTitle, DialogDescription, { modal: false })],
   ['sheet', 'sheet', dialogLike(Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription)],
   ['non-modal sheet', 'sheet', dialogLike(Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription, { modal: false })],
   ['sheet kept mounted', 'sheet', dialogLike(Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription, { unmountOnHide: false })],
@@ -116,6 +119,8 @@ describe.each(OVERLAYS)('a %s open from the start, closing', (_, slot, render) =
 // Where Reka leaves focus where an outside press took it, so does the overlay.
 describe.each([
   ['a modal dropdown menu, right-clicked outside', 'dropdown-menu', dropdown, 2],
+  ['a non-modal dialog, clicked outside', 'dialog', OVERLAYS.find(([name]) => name === 'non-modal dialog')![2], 0],
+  ['a non-modal scrolling dialog, clicked outside', 'dialog', OVERLAYS.find(([name]) => name === 'non-modal scrolling dialog')![2], 0],
   ['a non-modal sheet, clicked outside', 'sheet', OVERLAYS.find(([name]) => name === 'non-modal sheet')![2], 0],
   ['a non-modal drawer, clicked outside', 'drawer', OVERLAYS.find(([name]) => name === 'non-modal drawer')![2], 0],
 ] as const)('%s', (_, slot, render, button) => {

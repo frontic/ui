@@ -9,3 +9,5 @@ export function typecheckLibrary(options: {
   paths?: Record<string, string[]>
   vueTscBin?: string
 }): Promise<{ problems: TypecheckProblem[] }>
+/** Whether code has `//` inside a string or template literal; a `//` comment of its own does not count. */
+export function slashesInString(code: string): boolean

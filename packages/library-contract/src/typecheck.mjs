@@ -4,6 +4,7 @@ import { existsSync } from 'node:fs'
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { ElementTypes, NodeTypes, parse as parseSfc } from '@vue/compiler-dom'
 import { exampleFile, mainFile } from './item.mjs'
 import { ASSETS_SHIM, SOURCE_SHIM } from './sourceShim.mjs'
 import { installedDir } from './resolve.mjs'
@@ -82,6 +83,89 @@ function parse(output, { workDir, contentDir, checks }) {
     problems.push(last)
   }
   return problems
+}
+
+/** Whether code has `//` inside a string or template literal; a `//` comment of its own does not count. */
+export function slashesInString(code) {
+  const stack = [{ braces: 0 }]
+  for (let i = 0; i < code.length; i++) {
+    const top = stack.at(-1)
+    const c = code[i]
+    if (typeof top === 'string') {
+      if (c === '\\') i++
+      else if (c === '/' && code[i + 1] === '/') return true
+      else if (c === top) stack.pop()
+      else if (top === '`' && c === '$' && code[i + 1] === '{') {
+        stack.push({ braces: 0 })
+        i++
+      }
+    } else if (c === "'" || c === '"' || c === '`') stack.push(c)
+    else if (c === '/' && (code[i + 1] === '/' || code[i + 1] === '*')) {
+      const close = code[i + 1] === '/' ? '\n' : '*/'
+      const end = code.indexOf(close, i + 2)
+      i = end === -1 ? code.length : end + close.length - 1
+    } else if (c === '{') top.braces++
+    else if (c === '}') {
+      if (top.braces === 0 && stack.length > 1) stack.pop()
+      else top.braces--
+    }
+  }
+  return false
+}
+
+/** Codes the lost names and the unparsed code give; any other error stays where vue-tsc puts it. */
+const CASCADE = /^TS(?:1\d{3}|2304|2552)$/
+
+/** The props of components in an SFC's template whose value holds `//` inside a string, and the template's last line. Components are what vue-tsc takes for them. */
+function slashedProps(source) {
+  let root
+  try {
+    root = parseSfc(source, { parseMode: 'sfc', onError: () => {} })
+  } catch {
+    return { props: [], end: 0 }
+  }
+  const template = root.children.find((node) => node.type === NodeTypes.ELEMENT && node.tag === 'template')
+  if (!template) return { props: [], end: 0 }
+  const props = []
+  const visit = (node) => {
+    if (node.type !== NodeTypes.ELEMENT) return
+    if (node.tagType === ElementTypes.COMPONENT) {
+      for (const prop of node.props) {
+        const attribute = prop.type === NodeTypes.ATTRIBUTE
+        const slashed = attribute ? prop.value?.content.includes('//') : prop.name === 'bind' && prop.exp && slashesInString(prop.exp.loc.source)
+        if (slashed) props.push({ line: prop.loc.start.line, column: prop.loc.start.column, name: attribute ? prop.name : prop.rawName })
+      }
+    }
+    node.children.forEach(visit)
+  }
+  template.children.forEach(visit)
+  return { props, end: template.loc.end.line }
+}
+
+// vue-tsc copies a component's props onto one line and turns each `//` there into a block comment, inside strings too.
+// The code that follows no longer parses, so names a v-for or slot brings in go missing from that prop on.
+async function explainSlashes(problems, contentDir) {
+  const files = [...new Set(problems.filter((p) => p.file.endsWith('.vue')).map((p) => p.file))]
+  let kept = problems
+  for (const file of files) {
+    const { props, end } = slashedProps(await readFile(path.join(contentDir, file), 'utf8'))
+    if (props.length === 0) continue
+    const folded = (p) => p.file === file && p.line >= props[0].line && p.line <= end && CASCADE.test(p.ruleId)
+    const count = kept.filter(folded).length
+    if (count === 0) continue
+    kept = kept.filter((p) => !folded(p))
+    props.forEach((prop, index) => {
+      const errors = index === 0 ? ` (${count} ${count === 1 ? 'error' : 'errors'} from vue-tsc folded into this one)` : ''
+      kept.push({
+        file,
+        line: prop.line,
+        column: prop.column,
+        ruleId: 'string-slashes',
+        message: `${prop.name} holds \`//\` in a string, which vue-tsc reads as a comment, so the names around this component go missing${errors}. Move the string into the script, as a constant or a helper.`,
+      })
+    })
+  }
+  return kept
 }
 
 function within(dir, parent) {
@@ -166,5 +250,5 @@ export async function typecheckLibrary({ contentDir, workDir, overrides = null, 
   if (code !== 0 && problems.length === 0 && !/\bTS18003\b/.test(out)) {
     throw new Error(`vue-tsc exited ${code}: ${out.trim().split('\n')[0] ?? ''}`)
   }
-  return { problems }
+  return { problems: await explainSlashes(problems, contentDir) }
 }
