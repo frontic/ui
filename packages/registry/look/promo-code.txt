@@ -1,0 +1,49 @@
+PromoCode > [1] | E | align-items: stretch
+PromoCode > [1] | E | flex-direction: column
+PromoCode > [1] | E | gap: 12px
+PromoCode > [2] | E | display: flex
+PromoCode > [2] | E | flex-direction: column
+PromoCode > [2] | E | gap: 8px
+PromoCode > [3] | E | align-items: center
+PromoCode > [3] | E | display: flex
+PromoCode > [3] | E | justify-content: space-between
+PromoCode > [4] | E | align-items: center
+PromoCode > [4] | E | display: flex
+PromoCode > [4] | E | justify-content: space-between
+PromoCode > [5] | E | align-items: center
+PromoCode > [5] | E | display: flex
+PromoCode > [6] | E | align-items: center
+PromoCode > [6] | E | display: flex
+PromoCode > [6] | E | justify-content: space-between
+PromoCodeField > [0] | E | display: flex
+PromoCodeField > [0] | E | flex-direction: column
+PromoCodeField > [0] | E | gap: 12px
+PromoCodeField > [1] | E | align-items: center
+PromoCodeField > [1] | E | display: flex
+PromoCodeField > [1] | E | flex-wrap: wrap
+PromoCodeField > [1] | E | gap: 8px
+PromoCodeField > [2] | E | align-items: center
+PromoCodeField > [2] | E | display: flex
+heading | E | font-family: 'Inter Variable', Inter, sans-serif
+heading | E | font-feature-settings: normal
+heading | E | font-size: 24px
+heading | E | font-variation-settings: normal
+heading | E | font-weight: 600
+heading | E | letter-spacing: normal
+heading | E | line-height: 1.25
+hint #2 | E | color: #66666f
+hint #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+hint #2 | E | font-feature-settings: normal
+hint #2 | E | font-size: 14px
+hint #2 | E | font-variation-settings: normal
+hint #2 | E | font-weight: 400
+hint #2 | E | letter-spacing: normal
+hint #2 | E | line-height: 1.43
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43

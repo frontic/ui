@@ -1,0 +1,97 @@
+date-field #2 | E | align-items: center
+date-field #2 | E | background-color: transparent
+date-field #2 | E | border-bottom-color: #a1a1aa
+date-field #2 | E | border-bottom-left-radius: 0px
+date-field #2 | E | border-bottom-right-radius: 0px
+date-field #2 | E | border-bottom-style: solid
+date-field #2 | E | border-bottom-width: 1px
+date-field #2 | E | border-left-color: transparent
+date-field #2 | E | border-left-style: solid
+date-field #2 | E | border-left-width: 1px
+date-field #2 | E | border-right-color: transparent
+date-field #2 | E | border-right-style: solid
+date-field #2 | E | border-right-width: 1px
+date-field #2 | E | border-top-color: transparent
+date-field #2 | E | border-top-left-radius: 0px
+date-field #2 | E | border-top-right-radius: 0px
+date-field #2 | E | border-top-style: solid
+date-field #2 | E | border-top-width: 1px
+date-field #2 | E | display: flex
+date-field #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+date-field #2 | E | font-feature-settings: normal
+date-field #2 | E | font-size: 14px [desktop]
+date-field #2 | E | font-size: 16px [phone]
+date-field #2 | E | font-variant-numeric: tabular-nums
+date-field #2 | E | font-variation-settings: normal
+date-field #2 | E | font-weight: 400
+date-field #2 | E | height: 40px
+date-field #2 | E | letter-spacing: normal
+date-field #2 | E | line-height: 1.43 [desktop]
+date-field #2 | E | line-height: 1.5 [phone]
+date-field #2 | E | min-width: 0px
+date-field #2 | E | outline-style: none
+date-field #2 | E | transition-duration: 150ms
+date-field #2 | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+date-field #2 | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+date-field #2 | E | width: 100%
+date-field #2 | E::placeholder | color: #66666f
+date-field #2 | E:disabled | cursor: not-allowed
+date-field #2 | E:disabled | opacity: 0.5
+date-field #2 | E:focus | border-bottom-color: #71717a
+date-field #2 | E:focus | border-bottom-style: solid
+date-field #2 | E:focus | border-bottom-width: 2px
+date-field #2 | E:invalid | border-bottom-color: #c70009
+date-field | E | align-items: center
+date-field | E | background-color: transparent
+date-field | E | border-bottom-color: #a1a1aa
+date-field | E | border-bottom-left-radius: 0px
+date-field | E | border-bottom-right-radius: 0px
+date-field | E | border-bottom-style: solid
+date-field | E | border-bottom-width: 1px
+date-field | E | border-left-color: transparent
+date-field | E | border-left-style: solid
+date-field | E | border-left-width: 1px
+date-field | E | border-right-color: transparent
+date-field | E | border-right-style: solid
+date-field | E | border-right-width: 1px
+date-field | E | border-top-color: transparent
+date-field | E | border-top-left-radius: 0px
+date-field | E | border-top-right-radius: 0px
+date-field | E | border-top-style: solid
+date-field | E | border-top-width: 1px
+date-field | E | display: flex
+date-field | E | font-family: 'Inter Variable', Inter, sans-serif
+date-field | E | font-feature-settings: normal
+date-field | E | font-size: 14px [desktop]
+date-field | E | font-size: 16px [phone]
+date-field | E | font-variant-numeric: tabular-nums
+date-field | E | font-variation-settings: normal
+date-field | E | font-weight: 400
+date-field | E | height: 40px
+date-field | E | letter-spacing: normal
+date-field | E | line-height: 1.43 [desktop]
+date-field | E | line-height: 1.5 [phone]
+date-field | E | min-width: 0px
+date-field | E | outline-style: none
+date-field | E | transition-duration: 150ms
+date-field | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+date-field | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+date-field | E | width: 100%
+date-field | E::placeholder | color: #66666f
+date-field | E:disabled | cursor: not-allowed
+date-field | E:disabled | opacity: 0.5
+date-field | E:focus | border-bottom-color: #71717a
+date-field | E:focus | border-bottom-style: solid
+date-field | E:focus | border-bottom-width: 2px
+date-field | E:invalid | border-bottom-color: #c70009
+date-field-input | E | border-bottom-left-radius: 4.8px
+date-field-input | E | border-bottom-right-radius: 4.8px
+date-field-input | E | border-top-left-radius: 4.8px
+date-field-input | E | border-top-right-radius: 4.8px
+date-field-input | E | outline-style: none
+date-field-input | E | padding-left: 2px
+date-field-input | E | padding-right: 2px
+date-field-input | E:first-child | margin-left: -2px
+date-field-input | E:focus | background-color: #f4f4f5
+date-field-input | E:focus | color: #18181b
+date-field-input | E[data-placeholder] | color: #66666f

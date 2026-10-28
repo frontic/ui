@@ -1,0 +1,43 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Pagination",
+  "description": "Lets the shopper move through numbered pages of results, with Previous and Next and, when there are many pages, the first and last page around an ellipsis. The current page is marked from the pagination's own page. In a container narrower than 28rem only the current page stays between Previous and Next, which drop their labels below 24rem.",
+  "recipes": {
+    "pagination": {
+      "base": {
+        "marginX": "auto",
+        "display": "flex",
+        "width": "full",
+        "justifyContent": "center"
+      }
+    },
+    "pagination-content": {
+      "base": {
+        "display": "flex",
+        "alignItems": "center",
+        "gap": "{spacing.1}"
+      }
+    },
+    "pagination-ellipsis": {
+      "base": {
+        "size": "{spacing.9}",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.4}"
+        }
+      }
+    },
+    "pagination-next": {
+      "base": {
+        "paddingEnd": "{spacing.2}"
+      }
+    },
+    "pagination-previous": {
+      "base": {
+        "paddingStart": "{spacing.2}"
+      }
+    }
+  }
+}

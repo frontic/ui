@@ -1,0 +1,5 @@
+{
+  "$schema": "../item.schema.json",
+  "title": "Text",
+  "description": "Initials from a name, `{key}` placeholders filled in a label, and the first and last result on a page."
+}

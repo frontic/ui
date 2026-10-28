@@ -1,0 +1,160 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Navigation Shop",
+  "description": "Store navigation whose categories open full-width flyouts of link columns and featured tiles, laid out beside, above or captioned, and fold into a tabbed menu sheet on narrow screens.",
+  "categories": ["navigation"],
+  "recipes": {
+    "navigation-shop": {
+      "composes": ["link", "hint", "focus-ring", "line-title", "section-title"]
+    },
+    "navigation-shop-caption": {
+      "base": {
+        "backgroundColor": "{colors.background/90}",
+        "typography": "{typography.small}",
+        "paddingX": "{spacing.4}",
+        "paddingY": "{spacing.3}"
+      }
+    },
+    "navigation-shop-columns": {
+      "base": {
+        "typography": "{typography.small}"
+      }
+    },
+    "navigation-shop-content": {
+      "base": {},
+      "variants": {
+        "layout": {
+          "beside": {},
+          "above": {},
+          "captioned": {
+            "borderTop": "none",
+            "typography": "{typography.small}"
+          }
+        }
+      },
+      "defaults": {
+        "layout": "beside"
+      }
+    },
+    "navigation-shop-featured-image": {
+      "base": {
+        "backgroundColor": "{colors.muted}"
+      },
+      "variants": {
+        "layout": {
+          "beside": {
+            "rounded": "{rounded.lg}"
+          },
+          "above": {
+            "rounded": "{rounded.lg}"
+          },
+          "captioned": {
+            "rounded": "{rounded.md}"
+          }
+        }
+      },
+      "defaults": {
+        "layout": "beside"
+      }
+    },
+    "navigation-shop-page": {
+      "base": {
+        "typography": "{typography.ui}"
+      },
+      "variants": {
+        "layout": {
+          "beside": {
+            "extends": "nav-trigger",
+            "height": "{spacing.9}",
+            "paddingX": "{spacing.4}",
+            "paddingY": "{spacing.2}"
+          },
+          "above": {
+            "extends": "nav-trigger",
+            "height": "{spacing.9}",
+            "paddingX": "{spacing.4}",
+            "paddingY": "{spacing.2}"
+          },
+          "captioned": {
+            "textColor": "{colors.foreground/70}",
+            "hover": {
+              "textColor": "{colors.foreground/80}"
+            },
+            "with": {
+              "tone": {
+                "highlight": {
+                  "textColor": "{colors.destructive}"
+                }
+              }
+            }
+          }
+        },
+        "tone": {
+          "highlight": {
+            "textColor": "{colors.destructive}"
+          }
+        }
+      },
+      "defaults": {
+        "layout": "beside"
+      }
+    },
+    "navigation-shop-root": {
+      "base": {
+        "display": "flex",
+        "alignItems": "center"
+      }
+    },
+    "navigation-shop-trigger": {
+      "base": {},
+      "variants": {
+        "layout": {
+          "beside": {
+            "extends": "nav-trigger",
+            "height": "{spacing.9}",
+            "paddingX": "{spacing.4}",
+            "paddingY": "{spacing.2}"
+          },
+          "above": {
+            "extends": "nav-trigger",
+            "height": "{spacing.9}",
+            "paddingX": "{spacing.4}",
+            "paddingY": "{spacing.2}"
+          },
+          "captioned": {
+            "textColor": "{colors.foreground/70}",
+            "borderBottom": "{border.strong}",
+            "borderColor": "transparent",
+            "hover": {
+              "textColor": "{colors.foreground/80}"
+            },
+            "open": {
+              "textColor": "{colors.foreground}",
+              "borderColor": "{colors.primary}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "layout": "beside"
+      }
+    },
+    "navigation-shop-viewport": {
+      "base": {},
+      "variants": {
+        "layout": {
+          "beside": {},
+          "above": {
+            "shadow": "none"
+          },
+          "captioned": {
+            "shadow": "{shadow.sm}"
+          }
+        }
+      },
+      "defaults": {
+        "layout": "beside"
+      }
+    }
+  }
+}

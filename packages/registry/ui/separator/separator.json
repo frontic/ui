@@ -1,0 +1,28 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Separator",
+  "description": "Draws a thin horizontal or vertical line between groups of content, hidden from screen readers unless it carries meaning.",
+  "recipes": {
+    "separator": {
+      "base": {
+        "extends": "divider",
+        "flexShrink": "0"
+      },
+      "variants": {
+        "orientation": {
+          "horizontal": {
+            "height": "{spacing.px}",
+            "width": "full"
+          },
+          "vertical": {
+            "width": "{spacing.px}",
+            "alignSelf": "stretch"
+          }
+        }
+      },
+      "defaults": {
+        "orientation": "horizontal"
+      }
+    }
+  }
+}

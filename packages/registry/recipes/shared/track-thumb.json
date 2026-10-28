@@ -1,0 +1,14 @@
+{
+  "track-thumb": {
+    "backgroundColor": "{colors.primary}",
+    "rounded": "{rounded.none}",
+    "hover": {
+      "outline": "{ring.focus}",
+      "outlineColor": "{colors.ring}"
+    },
+    "focus": {
+      "outline": "{ring.focus}",
+      "outlineColor": "{colors.ring}"
+    }
+  }
+}

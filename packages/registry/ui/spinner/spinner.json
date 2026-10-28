@@ -1,0 +1,12 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Spinner",
+  "description": "A turning loader that tells screen readers what is loading; inside a button it takes the icon slot and size.",
+  "recipes": {
+    "spinner": {
+      "base": {
+        "size": "{spacing.4}"
+      }
+    }
+  }
+}

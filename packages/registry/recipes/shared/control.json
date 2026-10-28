@@ -1,0 +1,17 @@
+{
+  "control": {
+    "backgroundColor": "transparent",
+    "border": "{border.default}",
+    "borderColor": "transparent",
+    "borderBottomColor": "{colors.input}",
+    "rounded": "{rounded.none}",
+    "typography": "{typography.control}",
+    "placeholderColor": "{colors.muted-foreground}",
+    "focus": {
+      "borderBottom": "{border.focus}"
+    },
+    "invalid": {
+      "borderBottomColor": "{colors.destructive}"
+    }
+  }
+}

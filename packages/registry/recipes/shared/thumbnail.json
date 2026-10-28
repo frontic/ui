@@ -1,0 +1,7 @@
+{
+  "thumbnail": {
+    "border": "{border.default}",
+    "borderColor": "{colors.border}",
+    "rounded": "{rounded.md}"
+  }
+}

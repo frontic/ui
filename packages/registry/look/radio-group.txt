@@ -1,0 +1,65 @@
+radio-group | E | display: grid
+radio-group | E | gap: 12px
+radio-group | E | width: 100%
+radio-group-indicator > [0] | E | fill: currentcolor
+radio-group-indicator > [0] | E | left: calc(1 / 2 * 100%)
+radio-group-indicator > [0] | E | position: absolute
+radio-group-indicator > [0] | E | top: calc(1 / 2 * 100%)
+radio-group-indicator > [0] | E | translate: calc(calc(1 / 2 * 100%) * -1) calc(calc(1 / 2 * 100%) * -1)
+radio-group-indicator | E | align-items: center
+radio-group-indicator | E | display: flex
+radio-group-indicator | E | height: 18px
+radio-group-indicator | E | justify-content: center
+radio-group-indicator | E | width: 18px
+radio-group-item | E ICON | height: 8px
+radio-group-item | E ICON | width: 8px
+radio-group-item | E | aspect-ratio: 1 / 1
+radio-group-item | E | background-color: transparent
+radio-group-item | E | border-bottom-color: #a1a1aa
+radio-group-item | E | border-bottom-left-radius: 9999px
+radio-group-item | E | border-bottom-right-radius: 9999px
+radio-group-item | E | border-bottom-style: solid
+radio-group-item | E | border-bottom-width: 1px
+radio-group-item | E | border-left-color: #a1a1aa
+radio-group-item | E | border-left-style: solid
+radio-group-item | E | border-left-width: 1px
+radio-group-item | E | border-right-color: #a1a1aa
+radio-group-item | E | border-right-style: solid
+radio-group-item | E | border-right-width: 1px
+radio-group-item | E | border-top-color: #a1a1aa
+radio-group-item | E | border-top-left-radius: 9999px
+radio-group-item | E | border-top-right-radius: 9999px
+radio-group-item | E | border-top-style: solid
+radio-group-item | E | border-top-width: 1px
+radio-group-item | E | display: flex
+radio-group-item | E | flex-shrink: 0
+radio-group-item | E | height: 18px
+radio-group-item | E | outline-style: none
+radio-group-item | E | position: relative
+radio-group-item | E | width: 18px
+radio-group-item | E::after | content: ""
+radio-group-item | E::after | inset-block: -8px
+radio-group-item | E::after | inset-inline: -12px
+radio-group-item | E::after | position: absolute
+radio-group-item | E:checked ICON | color: #09090b
+radio-group-item | E:checked | border-bottom-color: #09090b
+radio-group-item | E:checked | border-left-color: #09090b
+radio-group-item | E:checked | border-right-color: #09090b
+radio-group-item | E:checked | border-top-color: #09090b
+radio-group-item | E:disabled | cursor: not-allowed
+radio-group-item | E:disabled | opacity: 0.5
+radio-group-item | E:focus | border-bottom-color: #71717a
+radio-group-item | E:focus | border-left-color: #71717a
+radio-group-item | E:focus | border-right-color: #71717a
+radio-group-item | E:focus | border-top-color: #71717a
+radio-group-item | E:focus | ring: 2px #71717a
+radio-group-item | E:invalid | border-bottom-color: #c70009
+radio-group-item | E:invalid | border-left-color: #c70009
+radio-group-item | E:invalid | border-right-color: #c70009
+radio-group-item | E:invalid | border-top-color: #c70009
+radio-group-item | E:invalid | ring: 2px color-mix(in oklab, #c70009 20%, transparent)
+radio-group-item | E:is(:where(GROUP):invalid *) | border-bottom-color: #c70009
+radio-group-item | E:is(:where(GROUP):invalid *) | border-left-color: #c70009
+radio-group-item | E:is(:where(GROUP):invalid *) | border-right-color: #c70009
+radio-group-item | E:is(:where(GROUP):invalid *) | border-top-color: #c70009
+radio-group-item | E:is(:where(GROUP):invalid *) | ring: 2px color-mix(in oklab, #c70009 20%, transparent)

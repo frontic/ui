@@ -1,0 +1,21 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Footer Minimal",
+  "description": "Single-row footer with the logo, a labelled row of links and optional social icons under a rule.",
+  "categories": ["footer"],
+  "recipes": {
+    "footer-minimal": {
+      "composes": ["hint", "link", "focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "footer-minimal-logo": {
+      "composes": ["focus-ring"],
+      "base": {
+        "extends": "logo",
+        "typography": "{typography.lead}"
+      }
+    }
+  }
+}

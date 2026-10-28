@@ -1,0 +1,111 @@
+{
+  "groups": [
+    {
+      "group": "states",
+      "title": "States",
+      "families": ["focus-ring", "disabled", "invalid"]
+    },
+    {
+      "group": "control",
+      "title": "Control",
+      "families": ["control", "control-box", "control-line"]
+    },
+    {
+      "group": "choice",
+      "title": "Choice",
+      "families": ["choice", "choice-box", "choice-dot"]
+    },
+    {
+      "group": "tag",
+      "title": "Tag",
+      "families": ["tag"]
+    },
+    {
+      "group": "menu",
+      "title": "Menu",
+      "families": ["menu-item", "menu-item-destructive", "menu-label", "menu-shortcut"]
+    },
+    {
+      "group": "option",
+      "title": "Option",
+      "families": ["option-item"]
+    },
+    {
+      "group": "overlay",
+      "title": "Overlay",
+      "families": ["overlay", "overlay-modal", "overlay-sheet", "overlay-backdrop"]
+    },
+    {
+      "group": "panel",
+      "title": "Panel",
+      "families": ["panel", "part-title", "part-title-lg", "part-description"]
+    },
+    {
+      "group": "layout",
+      "title": "Layout",
+      "families": ["surface-inset", "indent"]
+    },
+    {
+      "group": "notice",
+      "title": "Notice",
+      "families": ["notice-info", "notice-positive", "notice-warning", "notice-destructive"]
+    },
+    {
+      "group": "text",
+      "title": "Text",
+      "families": ["label", "hint", "error"]
+    },
+    {
+      "group": "link",
+      "title": "Link",
+      "families": ["link-foreground", "link-primary"]
+    },
+    {
+      "group": "divider",
+      "title": "Divider",
+      "families": ["divider"]
+    },
+    {
+      "group": "track",
+      "title": "Track",
+      "families": ["track", "track-fill", "track-thumb"]
+    },
+    {
+      "group": "calendar",
+      "title": "Calendar",
+      "families": ["calendar-day", "calendar-day-today", "calendar-day-outside", "calendar-day-fill", "calendar-nav-button", "calendar-weekday", "calendar-month"]
+    },
+    {
+      "group": "action",
+      "title": "Action",
+      "families": ["action"]
+    },
+    {
+      "group": "storefront",
+      "title": "Storefront",
+      "families": [
+        "heading",
+        "title",
+        "logo",
+        "meta",
+        "link",
+        "total",
+        "note-positive",
+        "nav-trigger",
+        "dismiss",
+        "copy-muted",
+        "line-title",
+        "thumbnail",
+        "page-title",
+        "quiet-action",
+        "clear-link",
+        "section-title"
+      ]
+    },
+    {
+      "group": "product-card",
+      "title": "Product card",
+      "families": ["product-card-title", "product-card-title-lg", "product-card-lift"]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Native Select",
+  "description": "The browser's own select, for choices autofill or the phone's picker should fill, such as a country in an address; mutes the empty option as a placeholder.",
+  "recipes": {
+    "native-select": {
+      "base": {
+        "extends": ["control", "control-line"],
+        "typography": "{typography.small}",
+        "paddingY": "{spacing.2}",
+        "paddingStart": "{spacing.0}",
+        "paddingEnd": "{spacing.8}",
+        "placeholderShown": {
+          "textColor": "{colors.muted-foreground}"
+        }
+      },
+      "variants": {
+        "size": {
+          "md": {
+            "height": "{spacing.10}"
+          },
+          "sm": {
+            "height": "{spacing.9}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "native-select-chevron": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "size": "{spacing.3.5}"
+      }
+    },
+    "native-select-option": {
+      "base": {
+        "textColor": "{colors.foreground}"
+      }
+    },
+    "native-select-root": {
+      "composes": ["disabled"],
+      "base": {
+        "width": "fit"
+      }
+    }
+  }
+}

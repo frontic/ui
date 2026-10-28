@@ -1,0 +1,27 @@
+{
+  "$schema": "https://registry.ui.frontic.com/registry.schema.json",
+  "name": "library",
+  "homepage": "",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "The shop's call to action.",
+      "files": [
+        {
+          "path": "components/ui/button/Button.vue",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/button/index.ts",
+          "type": "registry:ui"
+        },
+        {
+          "path": "components/ui/button/button.example.vue",
+          "type": "registry:example"
+        }
+      ]
+    }
+  ]
+}

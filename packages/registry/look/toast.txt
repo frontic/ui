@@ -1,0 +1,154 @@
+actionButton | E | align-items: center
+actionButton | E | background-color: #09090b
+actionButton | E | border-bottom-color: transparent
+actionButton | E | border-bottom-left-radius: 0px
+actionButton | E | border-bottom-right-radius: 0px
+actionButton | E | border-bottom-style: solid
+actionButton | E | border-bottom-width: 1px
+actionButton | E | border-left-color: transparent
+actionButton | E | border-left-style: solid
+actionButton | E | border-left-width: 1px
+actionButton | E | border-right-color: transparent
+actionButton | E | border-right-style: solid
+actionButton | E | border-right-width: 1px
+actionButton | E | border-top-color: transparent
+actionButton | E | border-top-left-radius: 0px
+actionButton | E | border-top-right-radius: 0px
+actionButton | E | border-top-style: solid
+actionButton | E | border-top-width: 1px
+actionButton | E | color: #ffffff
+actionButton | E | cursor: pointer
+actionButton | E | display: inline-flex
+actionButton | E | flex-shrink: 0
+actionButton | E | font-family: 'Inter Variable', Inter, sans-serif
+actionButton | E | font-feature-settings: normal
+actionButton | E | font-size: 12px
+actionButton | E | font-variation-settings: normal
+actionButton | E | font-weight: 600
+actionButton | E | height: 24px
+actionButton | E | letter-spacing: 0.1em
+actionButton | E | line-height: 1.33
+actionButton | E | margin-left: auto
+actionButton | E | padding-left: 8px
+actionButton | E | padding-right: 8px
+actionButton | E | text-transform: uppercase
+actionButton | E:active:not([aria-haspopup]) | translate: 0 1px
+actionButton | E:focus | border-bottom-color: #71717a
+actionButton | E:focus | border-left-color: #71717a
+actionButton | E:focus | border-right-color: #71717a
+actionButton | E:focus | border-top-color: #71717a
+actionButton | E:focus | ring: 2px #71717a
+cancelButton | E | align-items: center
+cancelButton | E | background-color: color-mix(in oklab, #09090b 8%, transparent)
+cancelButton | E | border-bottom-color: transparent
+cancelButton | E | border-bottom-left-radius: 0px
+cancelButton | E | border-bottom-right-radius: 0px
+cancelButton | E | border-bottom-style: solid
+cancelButton | E | border-bottom-width: 1px
+cancelButton | E | border-left-color: transparent
+cancelButton | E | border-left-style: solid
+cancelButton | E | border-left-width: 1px
+cancelButton | E | border-right-color: transparent
+cancelButton | E | border-right-style: solid
+cancelButton | E | border-right-width: 1px
+cancelButton | E | border-top-color: transparent
+cancelButton | E | border-top-left-radius: 0px
+cancelButton | E | border-top-right-radius: 0px
+cancelButton | E | border-top-style: solid
+cancelButton | E | border-top-width: 1px
+cancelButton | E | color: #09090b
+cancelButton | E | cursor: pointer
+cancelButton | E | display: inline-flex
+cancelButton | E | flex-shrink: 0
+cancelButton | E | font-family: 'Inter Variable', Inter, sans-serif
+cancelButton | E | font-feature-settings: normal
+cancelButton | E | font-size: 12px
+cancelButton | E | font-variation-settings: normal
+cancelButton | E | font-weight: 600
+cancelButton | E | height: 24px
+cancelButton | E | letter-spacing: 0.1em
+cancelButton | E | line-height: 1.33
+cancelButton | E | margin-left: auto
+cancelButton | E | padding-left: 8px
+cancelButton | E | padding-right: 8px
+cancelButton | E | text-transform: uppercase
+cancelButton | E:active:not([aria-haspopup]) | translate: 0 1px
+cancelButton | E:focus | border-bottom-color: #71717a
+cancelButton | E:focus | border-left-color: #71717a
+cancelButton | E:focus | border-right-color: #71717a
+cancelButton | E:focus | border-top-color: #71717a
+cancelButton | E:focus | ring: 2px #71717a
+content | E | display: flex
+content | E | flex-direction: column
+content | E | gap: 2px
+description | E | color: #66666f
+description | E | font-family: 'Inter Variable', Inter, sans-serif
+description | E | font-feature-settings: normal
+description | E | font-size: 14px
+description | E | font-variation-settings: normal
+description | E | font-weight: 400
+description | E | letter-spacing: normal
+description | E | line-height: 1.625
+icon | E | align-items: center
+icon | E | display: flex
+icon | E | flex-shrink: 0
+title | E | font-family: 'Inter Variable', Inter, sans-serif
+title | E | font-feature-settings: normal
+title | E | font-size: 18px
+title | E | font-variation-settings: normal
+title | E | font-weight: 600
+title | E | letter-spacing: 0.05em
+title | E | line-height: 1.56
+title | E | text-transform: uppercase
+toast | E ICON | color: #12883e [type=success]
+toast | E ICON | color: #2563eb [type=info]
+toast | E ICON | color: #d97706 [type=warning]
+toast | E ICON | height: 16px
+toast | E ICON | width: 16px
+toast | E | align-items: center
+toast | E | background-color: #ffffff
+toast | E | border-bottom-color: #12883e [type=success]
+toast | E | border-bottom-color: #2563eb [type=info]
+toast | E | border-bottom-color: #d97706 [type=warning]
+toast | E | border-bottom-color: #e4e4e7 [type=default,error]
+toast | E | border-bottom-left-radius: 0px
+toast | E | border-bottom-right-radius: 0px
+toast | E | border-bottom-style: solid
+toast | E | border-bottom-width: 1px
+toast | E | border-left-color: #12883e [type=success]
+toast | E | border-left-color: #2563eb [type=info]
+toast | E | border-left-color: #d97706 [type=warning]
+toast | E | border-left-color: #e4e4e7 [type=default,error]
+toast | E | border-left-style: solid
+toast | E | border-left-width: 1px
+toast | E | border-right-color: #12883e [type=success]
+toast | E | border-right-color: #2563eb [type=info]
+toast | E | border-right-color: #d97706 [type=warning]
+toast | E | border-right-color: #e4e4e7 [type=default,error]
+toast | E | border-right-style: solid
+toast | E | border-right-width: 1px
+toast | E | border-top-color: #12883e [type=success]
+toast | E | border-top-color: #2563eb [type=info]
+toast | E | border-top-color: #d97706 [type=warning]
+toast | E | border-top-color: #e4e4e7 [type=default,error]
+toast | E | border-top-left-radius: 0px
+toast | E | border-top-right-radius: 0px
+toast | E | border-top-style: solid
+toast | E | border-top-width: 1px
+toast | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+toast | E | color: #09090b [type=default,info,success,warning]
+toast | E | color: #c70009 [type=error]
+toast | E | display: flex
+toast | E | font-family: 'Inter Variable', Inter, sans-serif
+toast | E | font-feature-settings: normal
+toast | E | font-size: 13px
+toast | E | font-variation-settings: normal
+toast | E | font-weight: 400
+toast | E | gap: 6px
+toast | E | letter-spacing: normal
+toast | E | line-height: 1.43
+toast | E | padding-bottom: 16px
+toast | E | padding-left: 16px
+toast | E | padding-right: 16px
+toast | E | padding-top: 16px
+toast | E | width: 356px

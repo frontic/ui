@@ -1,0 +1,5 @@
+{
+  "$schema": "../item.schema.json",
+  "title": "Cart",
+  "description": "A cart line and an applied discount, with the cart's count, subtotal, savings, line totals, discounts and free-shipping rule in the lines' currency and precision."
+}

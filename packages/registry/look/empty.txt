@@ -1,0 +1,83 @@
+empty | E | align-items: center
+empty | E | border-bottom-left-radius: 0px
+empty | E | border-bottom-right-radius: 0px
+empty | E | border-bottom-style: dashed
+empty | E | border-left-style: dashed
+empty | E | border-right-style: dashed
+empty | E | border-top-left-radius: 0px
+empty | E | border-top-right-radius: 0px
+empty | E | border-top-style: dashed
+empty | E | display: flex
+empty | E | flex-direction: column
+empty | E | flex: 1
+empty | E | gap: 16px
+empty | E | justify-content: center
+empty | E | min-width: 0px
+empty | E | padding-bottom: 24px [phone]
+empty | E | padding-bottom: 48px [desktop]
+empty | E | padding-left: 24px [phone]
+empty | E | padding-left: 48px [desktop]
+empty | E | padding-right: 24px [phone]
+empty | E | padding-right: 48px [desktop]
+empty | E | padding-top: 24px [phone]
+empty | E | padding-top: 48px [desktop]
+empty | E | text-align: center
+empty | E | text-wrap: balance
+empty | E | width: 100%
+empty-content | E | align-items: center
+empty-content | E | display: flex
+empty-content | E | flex-direction: column
+empty-content | E | font-family: 'Inter Variable', Inter, sans-serif
+empty-content | E | font-feature-settings: normal
+empty-content | E | font-size: 14px
+empty-content | E | font-variation-settings: normal
+empty-content | E | font-weight: 400
+empty-content | E | gap: 16px
+empty-content | E | letter-spacing: normal
+empty-content | E | line-height: 1.43
+empty-content | E | max-width: 384px
+empty-content | E | min-width: 0px
+empty-content | E | text-wrap: balance
+empty-content | E | width: 100%
+empty-description | E a | text-decoration-line: underline
+empty-description | E a:hover | color: #7008e7
+empty-description | E | color: #66666f
+empty-description | E | font-family: 'Inter Variable', Inter, sans-serif
+empty-description | E | font-feature-settings: normal
+empty-description | E | font-size: 14px
+empty-description | E | font-variation-settings: normal
+empty-description | E | font-weight: 400
+empty-description | E | letter-spacing: normal
+empty-description | E | line-height: 1.625
+empty-description | E | margin-top: 2px
+empty-header | E | align-items: center
+empty-header | E | display: flex
+empty-header | E | flex-direction: column
+empty-header | E | gap: 8px
+empty-header | E | max-width: 384px
+empty-media | E ICON | flex-shrink: 0
+empty-media | E ICON | height: 20px [variant=icon]
+empty-media | E ICON | pointer-events: none
+empty-media | E ICON | width: 20px [variant=icon]
+empty-media | E | align-items: center
+empty-media | E | background-color: #f4f4f5 [variant=icon]
+empty-media | E | background-color: transparent [variant=default]
+empty-media | E | border-bottom-left-radius: 0px
+empty-media | E | border-bottom-right-radius: 0px
+empty-media | E | border-top-left-radius: 0px
+empty-media | E | border-top-right-radius: 0px
+empty-media | E | color: #09090b [variant=icon]
+empty-media | E | display: flex
+empty-media | E | flex-shrink: 0
+empty-media | E | height: 40px [variant=icon]
+empty-media | E | justify-content: center
+empty-media | E | margin-bottom: 8px
+empty-media | E | width: 40px [variant=icon]
+empty-title | E | font-family: 'Inter Variable', Inter, sans-serif
+empty-title | E | font-feature-settings: normal
+empty-title | E | font-size: 18px
+empty-title | E | font-variation-settings: normal
+empty-title | E | font-weight: 600
+empty-title | E | letter-spacing: 0.05em
+empty-title | E | line-height: 1.56
+empty-title | E | text-transform: uppercase

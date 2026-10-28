@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: FSL-1.1-MIT
+export { default as Search } from './Search.vue'
+export { default as SearchEmpty } from './SearchEmpty.vue'
+export { default as SearchGroup } from './SearchGroup.vue'
+export { default as SearchHighlight } from './SearchHighlight.vue'
+export { default as SearchInput } from './SearchInput.vue'
+export { default as SearchItem } from './SearchItem.vue'
+export { default as SearchLoading } from './SearchLoading.vue'
+export { default as SearchOverlay } from './SearchOverlay.vue'
+export { default as SearchQuery } from './SearchQuery.vue'
+export { default as SearchResults } from './SearchResults.vue'
+export { default as SearchTag } from './SearchTag.vue'

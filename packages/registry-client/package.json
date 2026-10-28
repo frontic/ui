@@ -1,0 +1,54 @@
+{
+  "name": "@frontic/registry-client",
+  "version": "0.9.0",
+  "description": "Reads the Frontic UI registry: items, search, examples and the icon map.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./api": {
+      "types": "./src/api.ts",
+      "default": "./src/api.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "./api": {
+        "types": "./dist/api.d.ts",
+        "default": "./dist/api.js"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontic/ui.git",
+    "directory": "packages/registry-client"
+  },
+  "scripts": {
+    "build": "tsdown && node scripts/check-bundle.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "fuzzysort": "^4.0.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@frontic/library-contract": "workspace:*",
+    "@types/node": "^24.19.2",
+    "tsdown": "^0.23.1",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.5"
+  },
+  "license": "FSL-1.1-MIT"
+}

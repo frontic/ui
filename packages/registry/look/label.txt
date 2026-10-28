@@ -1,0 +1,17 @@
+label | E | -webkit-user-select: none
+label | E | align-items: center
+label | E | display: flex
+label | E | font-family: 'Inter Variable', Inter, sans-serif
+label | E | font-feature-settings: normal
+label | E | font-size: 12px
+label | E | font-variation-settings: normal
+label | E | font-weight: 600
+label | E | gap: 8px
+label | E | letter-spacing: 0.025em
+label | E | line-height: 1.33
+label | E | text-transform: uppercase
+label | E | user-select: none
+label | E:is(:where(.peer):disabled ~ *) | cursor: not-allowed
+label | E:is(:where(.peer):disabled ~ *) | opacity: 0.5
+label | E:is(:where(GROUP):disabled *) | opacity: 0.5
+label | E:is(:where(GROUP):disabled *) | pointer-events: none

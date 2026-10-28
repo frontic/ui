@@ -1,0 +1,7 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Sign In",
+  "description": "Passwordless sign-in card: the email the code went to, a one-time code that enables the submit once complete, and passkey or password alternatives.",
+  "categories": ["account"],
+  "recipes": {}
+}

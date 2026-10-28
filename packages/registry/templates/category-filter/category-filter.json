@@ -1,0 +1,29 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Category Filter",
+  "description": "A category's products with filters in collapsible sidebar sections, sorting, badges for the active filters, and a load-more button.",
+  "categories": ["filter"],
+  "recipes": {
+    "category-filter": {
+      "composes": ["part-title", "hint", "clear-link", "focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "category-filter-description": {
+      "base": {
+        "marginTop": "{spacing.4}",
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.body}"
+      }
+    },
+    "category-filter-heading": {
+      "base": {
+        "extends": "heading",
+        "typography": "{typography.display}",
+        "fontWeight": "bold",
+        "letterSpacing": "tight"
+      }
+    }
+  }
+}

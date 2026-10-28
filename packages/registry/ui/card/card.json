@@ -1,0 +1,80 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Card",
+  "description": "Frames related content such as a product or an order, with header, title, description, action, image, content and footer parts.",
+  "recipes": {
+    "card": {
+      "base": {
+        "extends": ["panel", "surface-inset"],
+        "contain": "inline-size",
+        "gap": "{spacing.6}",
+        "display": "flex",
+        "flexDirection": "column",
+        "@md": {
+          "gap": "{spacing.8}"
+        }
+      },
+      "variants": {
+        "surface": {
+          "raised": {},
+          "bare": {
+            "outline": "{ring.none}",
+            "shadow": "none",
+            "paddingY": "{spacing.0}",
+            "parts": {
+              "card-header": {
+                "paddingX": "{spacing.0}"
+              },
+              "card-content": {
+                "paddingX": "{spacing.0}"
+              },
+              "card-footer": {
+                "paddingX": "{spacing.0}"
+              }
+            }
+          }
+        }
+      },
+      "defaults": {
+        "surface": "raised"
+      }
+    },
+    "card-action": {
+      "base": {
+        "alignSelf": "start",
+        "justifySelf": "start"
+      }
+    },
+    "card-content": {
+      "base": {
+        "paddingX": "{spacing.8}"
+      }
+    },
+    "card-description": {
+      "base": {
+        "extends": "part-description"
+      }
+    },
+    "card-footer": {
+      "base": {
+        "paddingX": "{spacing.8}",
+        "display": "flex",
+        "alignItems": "center"
+      }
+    },
+    "card-header": {
+      "base": {
+        "gap": "{spacing.1.5}",
+        "paddingX": "{spacing.8}",
+        "display": "grid",
+        "gridColumns": "1",
+        "alignItems": "start"
+      }
+    },
+    "card-title": {
+      "base": {
+        "extends": "part-title"
+      }
+    }
+  }
+}

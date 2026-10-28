@@ -1,0 +1,377 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Button",
+  "description": "Triggers an action such as adding to the cart: solid, outline, soft, ghost or link, in primary, neutral, destructive, inverse and the commerce colours buy and checkout.",
+  "recipes": {
+    "button": {
+      "composes": ["focus-ring", "disabled", "invalid"],
+      "base": {
+        "extends": "action",
+        "display": "inline-flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "variants": {
+        "variant": {
+          "solid": {
+            "with": {
+              "color": {
+                "primary": {
+                  "backgroundColor": "{colors.primary}",
+                  "textColor": "{colors.primary-foreground}",
+                  "hover": {
+                    "backgroundColor": "{colors.primary-hover}"
+                  }
+                },
+                "neutral": {
+                  "backgroundColor": "{colors.foreground}",
+                  "textColor": "{colors.background}",
+                  "hover": {
+                    "backgroundColor": "{colors.foreground-hover}"
+                  }
+                },
+                "destructive": {
+                  "backgroundColor": "{colors.destructive}",
+                  "textColor": "{colors.destructive-foreground}",
+                  "hover": {
+                    "backgroundColor": "{colors.destructive-hover}"
+                  }
+                },
+                "buy": {
+                  "backgroundColor": "{colors.buy}",
+                  "textColor": "{colors.buy-foreground}",
+                  "hover": {
+                    "backgroundColor": "{colors.buy-hover}"
+                  }
+                },
+                "checkout": {
+                  "backgroundColor": "{colors.checkout}",
+                  "textColor": "{colors.checkout-foreground}",
+                  "hover": {
+                    "backgroundColor": "{colors.checkout-hover}"
+                  }
+                },
+                "inverse": {
+                  "backgroundColor": "{colors.background}",
+                  "textColor": "{colors.foreground}",
+                  "hover": {
+                    "backgroundColor": "{colors.muted}"
+                  }
+                }
+              }
+            }
+          },
+          "outline": {
+            "backgroundColor": "transparent",
+            "with": {
+              "color": {
+                "primary": {
+                  "borderColor": "{colors.primary}",
+                  "textColor": "{colors.primary}",
+                  "hover": {
+                    "backgroundColor": "{colors.primary/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.primary/10}"
+                  }
+                },
+                "neutral": {
+                  "borderColor": "{colors.border}",
+                  "hover": {
+                    "backgroundColor": "{colors.muted}",
+                    "textColor": "{colors.foreground}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.muted}",
+                    "textColor": "{colors.foreground}"
+                  }
+                },
+                "destructive": {
+                  "borderColor": "{colors.destructive}",
+                  "textColor": "{colors.destructive}",
+                  "hover": {
+                    "backgroundColor": "{colors.destructive/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.destructive/10}"
+                  }
+                },
+                "buy": {
+                  "borderColor": "{colors.buy}",
+                  "textColor": "{colors.buy}",
+                  "hover": {
+                    "backgroundColor": "{colors.buy/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.buy/10}"
+                  }
+                },
+                "checkout": {
+                  "borderColor": "{colors.checkout}",
+                  "textColor": "{colors.checkout}",
+                  "hover": {
+                    "backgroundColor": "{colors.checkout/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.checkout/10}"
+                  }
+                },
+                "inverse": {
+                  "borderColor": "{colors.background}",
+                  "textColor": "{colors.background}",
+                  "hover": {
+                    "backgroundColor": "{colors.background/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.background/10}"
+                  }
+                }
+              }
+            }
+          },
+          "soft": {
+            "with": {
+              "color": {
+                "primary": {
+                  "backgroundColor": "{colors.primary/10}",
+                  "textColor": "{colors.primary}",
+                  "hover": {
+                    "backgroundColor": "{colors.primary}",
+                    "textColor": "{colors.primary-foreground}"
+                  }
+                },
+                "neutral": {
+                  "backgroundColor": "{colors.secondary}",
+                  "textColor": "{colors.secondary-foreground}",
+                  "hover": {
+                    "backgroundColor": "{colors.border}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.secondary}",
+                    "textColor": "{colors.secondary-foreground}"
+                  }
+                },
+                "destructive": {
+                  "backgroundColor": "{colors.destructive/10}",
+                  "textColor": "{colors.destructive}",
+                  "hover": {
+                    "backgroundColor": "{colors.destructive}",
+                    "textColor": "{colors.destructive-foreground}"
+                  }
+                },
+                "buy": {
+                  "backgroundColor": "{colors.buy/10}",
+                  "textColor": "{colors.buy}",
+                  "hover": {
+                    "backgroundColor": "{colors.buy}",
+                    "textColor": "{colors.buy-foreground}"
+                  }
+                },
+                "checkout": {
+                  "backgroundColor": "{colors.checkout/10}",
+                  "textColor": "{colors.checkout}",
+                  "hover": {
+                    "backgroundColor": "{colors.checkout}",
+                    "textColor": "{colors.checkout-foreground}"
+                  }
+                },
+                "inverse": {
+                  "backgroundColor": "{colors.background/10}",
+                  "textColor": "{colors.background}",
+                  "hover": {
+                    "backgroundColor": "{colors.background}",
+                    "textColor": "{colors.foreground}"
+                  }
+                }
+              }
+            }
+          },
+          "ghost": {
+            "with": {
+              "color": {
+                "primary": {
+                  "textColor": "{colors.primary}",
+                  "hover": {
+                    "backgroundColor": "{colors.primary/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.primary/10}"
+                  }
+                },
+                "neutral": {
+                  "hover": {
+                    "backgroundColor": "{colors.muted}",
+                    "textColor": "{colors.foreground}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.muted}",
+                    "textColor": "{colors.foreground}"
+                  }
+                },
+                "destructive": {
+                  "textColor": "{colors.destructive}",
+                  "hover": {
+                    "backgroundColor": "{colors.destructive/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.destructive/10}"
+                  }
+                },
+                "buy": {
+                  "textColor": "{colors.buy}",
+                  "hover": {
+                    "backgroundColor": "{colors.buy/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.buy/10}"
+                  }
+                },
+                "checkout": {
+                  "textColor": "{colors.checkout}",
+                  "hover": {
+                    "backgroundColor": "{colors.checkout/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.checkout/10}"
+                  }
+                },
+                "inverse": {
+                  "textColor": "{colors.background}",
+                  "hover": {
+                    "backgroundColor": "{colors.background/10}"
+                  },
+                  "open": {
+                    "backgroundColor": "{colors.background/10}"
+                  }
+                }
+              }
+            }
+          },
+          "link": {
+            "textDecorationLine": "underline",
+            "with": {
+              "color": {
+                "primary": {
+                  "textColor": "{colors.primary}"
+                },
+                "destructive": {
+                  "textColor": "{colors.destructive}"
+                },
+                "buy": {
+                  "textColor": "{colors.buy}"
+                },
+                "checkout": {
+                  "textColor": "{colors.checkout}"
+                },
+                "inverse": {
+                  "textColor": "{colors.background}"
+                }
+              }
+            }
+          }
+        },
+        "color": {
+          "primary": {},
+          "neutral": {},
+          "destructive": {
+            "ringColor": "{colors.destructive}",
+            "ringBorderColor": "{colors.destructive/40}"
+          },
+          "buy": {},
+          "checkout": {},
+          "inverse": {
+            "ground": "{colors.foreground}"
+          }
+        },
+        "size": {
+          "xs": {
+            "height": "{spacing.7}",
+            "paddingX": "{spacing.3}",
+            "gap": "{spacing.1}",
+            "icon": {
+              "size": "{spacing.3}"
+            },
+            "iconStart": {
+              "paddingStart": "{spacing.2}"
+            },
+            "iconEnd": {
+              "paddingEnd": "{spacing.2}"
+            }
+          },
+          "sm": {
+            "height": "{spacing.9}",
+            "paddingX": "{spacing.4}",
+            "gap": "{spacing.1}",
+            "icon": {
+              "size": "{spacing.3.5}"
+            },
+            "iconStart": {
+              "paddingStart": "{spacing.3}"
+            },
+            "iconEnd": {
+              "paddingEnd": "{spacing.3}"
+            }
+          },
+          "md": {
+            "height": "{spacing.10}",
+            "paddingX": "{spacing.6}",
+            "gap": "{spacing.1.5}",
+            "icon": {
+              "size": "{spacing.3.5}"
+            },
+            "iconStart": {
+              "paddingStart": "{spacing.4}"
+            },
+            "iconEnd": {
+              "paddingEnd": "{spacing.4}"
+            }
+          },
+          "lg": {
+            "height": "{spacing.11}",
+            "paddingX": "{spacing.8}",
+            "gap": "{spacing.1.5}",
+            "icon": {
+              "size": "{spacing.3.5}"
+            },
+            "iconStart": {
+              "paddingStart": "{spacing.5}"
+            },
+            "iconEnd": {
+              "paddingEnd": "{spacing.5}"
+            }
+          },
+          "icon-xs": {
+            "size": "{spacing.7}",
+            "icon": {
+              "size": "{spacing.3}"
+            }
+          },
+          "icon-sm": {
+            "size": "{spacing.9}",
+            "icon": {
+              "size": "{spacing.3.5}"
+            }
+          },
+          "icon-md": {
+            "size": "{spacing.10}",
+            "icon": {
+              "size": "{spacing.3.5}"
+            }
+          },
+          "icon-lg": {
+            "size": "{spacing.11}",
+            "icon": {
+              "size": "{spacing.3.5}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "variant": "solid",
+        "color": "primary",
+        "size": "md"
+      }
+    }
+  }
+}

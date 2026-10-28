@@ -1,0 +1,49 @@
+pagination | E | container-name: pagination
+pagination | E | container-type: inline-size
+pagination | E | display: flex
+pagination | E | justify-content: center
+pagination | E | margin-left: auto
+pagination | E | margin-right: auto
+pagination | E | width: 100%
+pagination-content | E | align-items: center
+pagination-content | E | display: flex
+pagination-content | E | gap: 4px
+pagination-ellipsis > [0] | E | border-bottom-width: 0
+pagination-ellipsis > [0] | E | border-left-width: 0
+pagination-ellipsis > [0] | E | border-right-width: 0
+pagination-ellipsis > [0] | E | border-top-width: 0
+pagination-ellipsis > [0] | E | clip-path: inset(50%)
+pagination-ellipsis > [0] | E | height: 1px
+pagination-ellipsis > [0] | E | margin-bottom: -1px
+pagination-ellipsis > [0] | E | margin-left: -1px
+pagination-ellipsis > [0] | E | margin-right: -1px
+pagination-ellipsis > [0] | E | margin-top: -1px
+pagination-ellipsis > [0] | E | overflow: hidden
+pagination-ellipsis > [0] | E | padding-bottom: 0
+pagination-ellipsis > [0] | E | padding-left: 0
+pagination-ellipsis > [0] | E | padding-right: 0
+pagination-ellipsis > [0] | E | padding-top: 0
+pagination-ellipsis > [0] | E | position: absolute
+pagination-ellipsis > [0] | E | white-space: nowrap
+pagination-ellipsis > [0] | E | width: 1px
+pagination-ellipsis | E ICON | height: 16px
+pagination-ellipsis | E ICON | width: 16px
+pagination-ellipsis | E | align-items: center
+pagination-ellipsis | E | display: flex
+pagination-ellipsis | E | height: 36px
+pagination-ellipsis | E | justify-content: center
+pagination-ellipsis | E | width: 36px
+pagination-first > [1] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1
+pagination-first > [2] | E | display: block [desktop]
+pagination-first > [2] | E | display: none [phone]
+pagination-last > [1] | E | display: block [desktop]
+pagination-last > [1] | E | display: none [phone]
+pagination-last > [2] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1
+pagination-next > [0] | E | padding-right: 8px
+pagination-next > [1] | E | display: block [desktop]
+pagination-next > [1] | E | display: none [phone]
+pagination-next > [2] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1
+pagination-previous > [0] | E | padding-left: 8px
+pagination-previous > [1] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | scale: calc(100% * -1) 1
+pagination-previous > [2] | E | display: block [desktop]
+pagination-previous > [2] | E | display: none [phone]

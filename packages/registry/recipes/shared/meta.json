@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "textColor": "{colors.muted-foreground}",
+    "typography": "{typography.caption}",
+    "fontWeight": "normal"
+  }
+}

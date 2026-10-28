@@ -1,0 +1,11 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Promo Code",
+  "description": "Voucher card with a code field and apply button, removable chips for applied promo codes and gift cards, a confirmation notice, and the order total after deductions.",
+  "categories": ["checkout"],
+  "recipes": {
+    "promo-code": {
+      "composes": ["hint", "heading"]
+    }
+  }
+}

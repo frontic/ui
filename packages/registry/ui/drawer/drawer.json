@@ -1,0 +1,103 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Drawer",
+  "description": "A panel that slides in from any edge and closes with a swipe, with snap points for a half-open state, such as filters or a mini cart on a phone.",
+  "recipes": {
+    "drawer-body": {
+      "base": {
+        "minHeight": "{spacing.0}",
+        "paddingX": "{spacing.4}"
+      }
+    },
+    "drawer-content": {
+      "base": {
+        "extends": "overlay-sheet",
+        "shadow": "none",
+        "display": "flex",
+        "height": "auto",
+        "flexDirection": "column"
+      },
+      "variants": {
+        "direction": {
+          "down": {
+            "borderTop": "{border.default}"
+          },
+          "up": {
+            "borderBottom": "{border.default}"
+          },
+          "left": {
+            "borderRight": "{border.default}",
+            "width": "{spacing.96}"
+          },
+          "right": {
+            "borderLeft": "{border.default}",
+            "width": "{spacing.96}"
+          }
+        }
+      },
+      "defaults": {
+        "direction": "down"
+      }
+    },
+    "drawer-description": {
+      "base": {
+        "marginTop": "{spacing.0.5}",
+        "extends": "part-description"
+      }
+    },
+    "drawer-footer": {
+      "base": {
+        "marginTop": "auto",
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "{spacing.2}",
+        "padding": "{spacing.4}"
+      }
+    },
+    "drawer-handle": {
+      "base": {
+        "marginTop": "{spacing.4}",
+        "backgroundColor": "{colors.muted}",
+        "rounded": "{rounded.none}",
+        "height": "{spacing.1.5}",
+        "width": "{spacing.25}"
+      }
+    },
+    "drawer-header": {
+      "base": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "{spacing.1}",
+        "padding": "{spacing.4}",
+        "@md": {
+          "gap": "{spacing.2}",
+          "textAlign": "start"
+        }
+      },
+      "variants": {
+        "swipe": {
+          "vertical": {
+            "textAlign": "center",
+            "@md": {
+              "textAlign": "start"
+            }
+          },
+          "horizontal": {}
+        }
+      },
+      "defaults": {
+        "swipe": "vertical"
+      }
+    },
+    "drawer-overlay": {
+      "base": {
+        "extends": "overlay-backdrop"
+      }
+    },
+    "drawer-title": {
+      "base": {
+        "extends": "part-title"
+      }
+    }
+  }
+}

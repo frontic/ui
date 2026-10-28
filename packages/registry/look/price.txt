@@ -1,0 +1,73 @@
+# approximate: price-ref
+price | E | align-items: flex-end [align=end]
+price | E | align-items: flex-start [align=start]
+price | E | color: #09090b
+price | E | display: inline-flex
+price | E | flex-direction: column
+price | E | font-family: 'Inter Variable', Inter, sans-serif
+price | E | font-feature-settings: normal
+price | E | font-size: 14px [size=sm]
+price | E | font-size: 16px [size=md]
+price | E | font-size: 24px [size=lg]
+price | E | font-variant-numeric: tabular-nums
+price | E | font-variation-settings: normal
+price | E | font-weight: 600
+price | E | gap: 4px
+price | E | letter-spacing: normal
+price | E | line-height: 1.43 [size=sm]
+price | E | line-height: 1.5 [size=md]
+price | E | line-height: 32px [size=lg]
+price | E | text-align: end [align=end]
+price | E | text-align: start [align=start]
+price-amount > [0] | E | border-bottom-width: 0
+price-amount > [0] | E | border-left-width: 0
+price-amount > [0] | E | border-right-width: 0
+price-amount > [0] | E | border-top-width: 0
+price-amount > [0] | E | clip-path: inset(50%)
+price-amount > [0] | E | height: 1px
+price-amount > [0] | E | margin-bottom: -1px
+price-amount > [0] | E | margin-left: -1px
+price-amount > [0] | E | margin-right: -1px
+price-amount > [0] | E | margin-top: -1px
+price-amount > [0] | E | overflow: hidden
+price-amount > [0] | E | padding-bottom: 0
+price-amount > [0] | E | padding-left: 0
+price-amount > [0] | E | padding-right: 0
+price-amount > [0] | E | padding-top: 0
+price-amount > [0] | E | position: absolute
+price-amount > [0] | E | white-space: nowrap
+price-amount > [0] | E | width: 1px
+price-discount | E | color: #e7000b
+price-discount | E | font-weight: 500
+price-hint | E a | text-decoration-line: underline
+price-hint | E a:hover | color: #09090b
+price-hint | E | color: #66666f
+price-hint | E | font-family: 'Inter Variable', Inter, sans-serif
+price-hint | E | font-feature-settings: normal
+price-hint | E | font-size: 12px
+price-hint | E | font-variation-settings: normal
+price-hint | E | font-weight: 400
+price-hint | E | letter-spacing: normal
+price-hint | E | line-height: 1.33
+price-ref > [0] | E | border-bottom-width: 0
+price-ref > [0] | E | border-left-width: 0
+price-ref > [0] | E | border-right-width: 0
+price-ref > [0] | E | border-top-width: 0
+price-ref > [0] | E | clip-path: inset(50%)
+price-ref > [0] | E | height: 1px
+price-ref > [0] | E | margin-bottom: -1px
+price-ref > [0] | E | margin-left: -1px
+price-ref > [0] | E | margin-right: -1px
+price-ref > [0] | E | margin-top: -1px
+price-ref > [0] | E | overflow: hidden
+price-ref > [0] | E | padding-bottom: 0
+price-ref > [0] | E | padding-left: 0
+price-ref > [0] | E | padding-right: 0
+price-ref > [0] | E | padding-top: 0
+price-ref > [0] | E | position: absolute
+price-ref > [0] | E | white-space: nowrap
+price-ref > [0] | E | width: 1px
+price-row | E | align-items: baseline
+price-row | E | display: inline-flex
+price-row | E | flex-wrap: wrap
+price-row | E | gap: 6px

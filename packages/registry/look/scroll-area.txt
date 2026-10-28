@@ -1,0 +1,29 @@
+scroll-area | E | position: relative
+scroll-area-scrollbar | E | -webkit-user-select: none
+scroll-area-scrollbar | E | display: flex
+scroll-area-scrollbar | E | flex-direction: column [orientation=horizontal]
+scroll-area-scrollbar | E | height: 100% [orientation=vertical]
+scroll-area-scrollbar | E | height: 10px [orientation=horizontal]
+scroll-area-scrollbar | E | padding-bottom: 1px [orientation=vertical,horizontal]
+scroll-area-scrollbar | E | padding-left: 1px [orientation=horizontal]
+scroll-area-scrollbar | E | padding-left: 2px [orientation=vertical]
+scroll-area-scrollbar | E | padding-right: 1px [orientation=vertical,horizontal]
+scroll-area-scrollbar | E | padding-top: 1px [orientation=vertical]
+scroll-area-scrollbar | E | padding-top: 2px [orientation=horizontal]
+scroll-area-scrollbar | E | touch-action: none
+scroll-area-scrollbar | E | transition-duration: 150ms
+scroll-area-scrollbar | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+scroll-area-scrollbar | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+scroll-area-scrollbar | E | user-select: none
+scroll-area-scrollbar | E | width: 10px [orientation=vertical]
+scroll-area-thumb | E | background-color: #e4e4e7
+scroll-area-thumb | E | border-bottom-left-radius: 0px
+scroll-area-thumb | E | border-bottom-right-radius: 0px
+scroll-area-thumb | E | border-top-left-radius: 0px
+scroll-area-thumb | E | border-top-right-radius: 0px
+scroll-area-thumb | E | flex: 1
+scroll-area-thumb | E | position: relative
+scroll-area-viewport | E | height: 100%
+scroll-area-viewport | E | outline-style: none
+scroll-area-viewport | E | width: 100%
+scroll-area-viewport | E:focus | ring: 3px #71717a

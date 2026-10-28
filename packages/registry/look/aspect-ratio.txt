@@ -1,0 +1,5 @@
+aspect-ratio | E | border-bottom-left-radius: 0px
+aspect-ratio | E | border-bottom-right-radius: 0px
+aspect-ratio | E | border-top-left-radius: 0px
+aspect-ratio | E | border-top-right-radius: 0px
+aspect-ratio | E | overflow: hidden

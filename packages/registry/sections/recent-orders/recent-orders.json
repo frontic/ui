@@ -1,0 +1,11 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Recent Orders",
+  "description": "Order history card: a table of orders with date, items, status and total, a per-order menu to view, track, get the invoice or start a return, pagination, and a note when there are no orders yet.",
+  "categories": ["order"],
+  "recipes": {
+    "recent-orders": {
+      "composes": ["line-title", "hint"]
+    }
+  }
+}

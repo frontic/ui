@@ -1,0 +1,30 @@
+payment-card-brand > [0] | E | height: 100%
+payment-card-brand > [0] | E | width: auto
+payment-card-brand | E | border-bottom-color: #e4e4e7
+payment-card-brand | E | border-bottom-left-radius: 4.8px
+payment-card-brand | E | border-bottom-right-radius: 4.8px
+payment-card-brand | E | border-bottom-style: solid
+payment-card-brand | E | border-bottom-width: 1px
+payment-card-brand | E | border-left-color: #e4e4e7
+payment-card-brand | E | border-left-style: solid
+payment-card-brand | E | border-left-width: 1px
+payment-card-brand | E | border-right-color: #e4e4e7
+payment-card-brand | E | border-right-style: solid
+payment-card-brand | E | border-right-width: 1px
+payment-card-brand | E | border-top-color: #e4e4e7
+payment-card-brand | E | border-top-left-radius: 4.8px
+payment-card-brand | E | border-top-right-radius: 4.8px
+payment-card-brand | E | border-top-style: solid
+payment-card-brand | E | border-top-width: 1px
+payment-card-brand | E | display: inline-flex
+payment-card-brand | E | height: 20px
+payment-card-brand | E | overflow: hidden
+payment-card-brands | E | align-items: center
+payment-card-brands | E | display: flex
+payment-card-brands | E | gap: 4px
+payment-card-host | E | align-items: center
+payment-card-host | E | display: flex
+payment-card-host | E | flex: 1
+payment-card-host | E | height: 100%
+payment-card-host | E | min-width: 0px
+payment-card-number > [0] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | text-align: right

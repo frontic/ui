@@ -1,0 +1,82 @@
+# approximate: header-centered > [9]
+header-centered > [0] | E | align-items: center
+header-centered > [0] | E | display: flex
+header-centered > [0] | E | height: 64px
+header-centered > [0] | E | justify-content: space-between
+header-centered > [0] | E | margin-left: auto
+header-centered > [0] | E | margin-right: auto
+header-centered > [0] | E | max-width: 1536px
+header-centered > [0] | E | padding-left: 16px [phone]
+header-centered > [0] | E | padding-left: 32px [desktop]
+header-centered > [0] | E | padding-right: 16px [phone]
+header-centered > [0] | E | padding-right: 32px [desktop]
+header-centered > [0] | E | width: 100%
+header-centered > [1] | E | align-items: center
+header-centered > [1] | E | display: flex
+header-centered > [1] | E | flex: 1
+header-centered > [1] | E | gap: 4px
+header-centered > [2] | E | display: flex [phone]
+header-centered > [2] | E | display: none [desktop]
+header-centered > [3] | E | display: flex [phone]
+header-centered > [3] | E | display: none [desktop]
+header-centered > [4] | E | display: block [desktop]
+header-centered > [4] | E | display: none [phone]
+header-centered > [4] | E | width: 256px
+header-centered > [5] | E | align-items: center
+header-centered > [5] | E | display: flex
+header-centered > [5] | E | flex: 1
+header-centered > [5] | E | gap: 4px
+header-centered > [5] | E | justify-content: flex-end
+header-centered > [6] | E | display: flex [desktop]
+header-centered > [6] | E | display: none [phone]
+header-centered > [7] | E | position: relative
+header-centered > [8] | E | inset-inline-end: -4px
+header-centered > [8] | E | position: absolute
+header-centered > [8] | E | top: -4px
+header-centered > [9] | E | display: block [desktop]
+header-centered > [9] | E | display: none [phone]
+header-centered | E | background-color: #ffffff
+header-centered | E | border-bottom-color: #e4e4e7
+header-centered | E | border-bottom-style: solid
+header-centered | E | border-bottom-width: 1px
+header-centered | E | border-left-color: #e4e4e7
+header-centered | E | border-right-color: #e4e4e7
+header-centered | E | border-top-color: #e4e4e7
+header-centered | E | container-type: inline-size
+header-centered | E | position: sticky
+header-centered | E | top: 0px
+header-centered | E | width: 100%
+header-centered | E | z-index: 50
+header-centered-logo > [0] | E | height: 32px
+header-centered-logo > [0] | E | width: auto
+header-centered-logo | E | font-family: 'Inter Variable', Inter, sans-serif
+header-centered-logo | E | font-feature-settings: normal
+header-centered-logo | E | font-size: 24px
+header-centered-logo | E | font-variation-settings: normal
+header-centered-logo | E | font-weight: 700
+header-centered-logo | E | letter-spacing: -0.025em
+header-centered-logo | E | line-height: 32px
+header-centered-logo | E | outline-style: none
+header-centered-logo | E:focus | border-bottom-color: #71717a
+header-centered-logo | E:focus | border-left-color: #71717a
+header-centered-logo | E:focus | border-right-color: #71717a
+header-centered-logo | E:focus | border-top-color: #71717a
+header-centered-logo | E:focus | ring: 2px #71717a
+header-centered-nav > [0] | E | margin-left: auto
+header-centered-nav > [0] | E | margin-right: auto
+header-centered-nav > [0] | E | max-width: 1536px
+header-centered-nav > [0] | E | padding-bottom: 8px
+header-centered-nav > [0] | E | padding-left: 16px [phone]
+header-centered-nav > [0] | E | padding-left: 32px [desktop]
+header-centered-nav > [0] | E | padding-right: 16px [phone]
+header-centered-nav > [0] | E | padding-right: 32px [desktop]
+header-centered-nav > [0] | E | padding-top: 8px
+header-centered-nav > [0] | E | width: 100%
+header-centered-nav > [1] | E | display: flex
+header-centered-nav > [1] | E | justify-content: center
+header-centered-nav | E | border-bottom-color: #e4e4e7
+header-centered-nav | E | border-left-color: #e4e4e7
+header-centered-nav | E | border-right-color: #e4e4e7
+header-centered-nav | E | border-top-color: #e4e4e7
+header-centered-nav | E | border-top-style: solid
+header-centered-nav | E | border-top-width: 1px

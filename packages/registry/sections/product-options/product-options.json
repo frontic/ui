@@ -1,0 +1,14 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Product Options",
+  "description": "Product buy box with the product shot, price and rating, colour swatches with sold-out colours crossed out, a size choice that must be made before adding, with sold-out sizes, a quantity stepper, and add-to-cart and wishlist actions.",
+  "categories": ["product"],
+  "recipes": {
+    "product-options-image": {
+      "base": {
+        "backgroundColor": "{colors.muted}",
+        "rounded": "{rounded.md}"
+      }
+    }
+  }
+}

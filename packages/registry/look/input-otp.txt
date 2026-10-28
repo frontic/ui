@@ -1,0 +1,84 @@
+input-otp | E:disabled | cursor: not-allowed
+input-otp-group | E | align-items: center
+input-otp-group | E | display: flex
+input-otp-group | E | gap: 4px
+input-otp-root | E | display: contents
+input-otp-separator | E ICON | height: 14px
+input-otp-separator | E ICON | width: 14px
+input-otp-separator | E | align-items: center
+input-otp-separator | E | display: flex
+input-otp-slot > [0] | E | align-items: center
+input-otp-slot > [0] | E | display: flex
+input-otp-slot > [0] | E | inset: 0px
+input-otp-slot > [0] | E | justify-content: center
+input-otp-slot > [0] | E | pointer-events: none
+input-otp-slot > [0] | E | position: absolute
+input-otp-slot > [1] | E | animation: caret-blink 1.25s ease-out infinite
+input-otp-slot > [1] | E | background-color: #09090b
+input-otp-slot > [1] | E | height: 16px
+input-otp-slot > [1] | E | transition-duration: 1000ms
+input-otp-slot > [1] | E | width: 1px
+input-otp-slot | E | align-items: center
+input-otp-slot | E | background-color: transparent
+input-otp-slot | E | border-bottom-color: #a1a1aa
+input-otp-slot | E | border-bottom-left-radius: 0px
+input-otp-slot | E | border-bottom-right-radius: 0px
+input-otp-slot | E | border-bottom-style: solid
+input-otp-slot | E | border-bottom-width: 1px
+input-otp-slot | E | border-left-color: transparent
+input-otp-slot | E | border-left-style: solid
+input-otp-slot | E | border-left-width: 1px
+input-otp-slot | E | border-right-color: transparent
+input-otp-slot | E | border-right-style: solid
+input-otp-slot | E | border-right-width: 1px
+input-otp-slot | E | border-top-color: transparent
+input-otp-slot | E | border-top-left-radius: 0px
+input-otp-slot | E | border-top-right-radius: 0px
+input-otp-slot | E | border-top-style: solid
+input-otp-slot | E | border-top-width: 1px
+input-otp-slot | E | display: flex
+input-otp-slot | E | font-family: 'Inter Variable', Inter, sans-serif
+input-otp-slot | E | font-feature-settings: normal
+input-otp-slot | E | font-size: 14px
+input-otp-slot | E | font-variation-settings: normal
+input-otp-slot | E | font-weight: 400
+input-otp-slot | E | height: 40px
+input-otp-slot | E | justify-content: center
+input-otp-slot | E | letter-spacing: normal
+input-otp-slot | E | line-height: 1.43
+input-otp-slot | E | outline-style: none
+input-otp-slot | E | position: relative
+input-otp-slot | E | transition-duration: 150ms
+input-otp-slot | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+input-otp-slot | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+input-otp-slot | E | width: 40px
+input-otp-slot | E::file-selector-button | background-color: transparent
+input-otp-slot | E::file-selector-button | border-bottom-color: 
+input-otp-slot | E::file-selector-button | border-bottom-style: 
+input-otp-slot | E::file-selector-button | border-bottom-width: none
+input-otp-slot | E::file-selector-button | border-left-color: 
+input-otp-slot | E::file-selector-button | border-left-style: 
+input-otp-slot | E::file-selector-button | border-left-width: none
+input-otp-slot | E::file-selector-button | border-right-color: 
+input-otp-slot | E::file-selector-button | border-right-style: 
+input-otp-slot | E::file-selector-button | border-right-width: none
+input-otp-slot | E::file-selector-button | border-top-color: 
+input-otp-slot | E::file-selector-button | border-top-style: 
+input-otp-slot | E::file-selector-button | border-top-width: none
+input-otp-slot | E::file-selector-button | color: #09090b
+input-otp-slot | E::file-selector-button | font-family: 'Inter Variable', Inter, sans-serif
+input-otp-slot | E::file-selector-button | font-feature-settings: normal
+input-otp-slot | E::file-selector-button | font-size: 14px
+input-otp-slot | E::file-selector-button | font-variation-settings: normal
+input-otp-slot | E::file-selector-button | font-weight: 500
+input-otp-slot | E::file-selector-button | letter-spacing: normal
+input-otp-slot | E::file-selector-button | line-height: 1.43
+input-otp-slot | E::placeholder | color: #66666f
+input-otp-slot | E:focus | border-bottom-color: #a1a1aa
+input-otp-slot | E:focus | border-bottom-style: solid
+input-otp-slot | E:focus | border-bottom-width: 1px
+input-otp-slot | E:invalid | border-bottom-color: #c70009
+input-otp-slot | E[data-active] | border-bottom-color: #71717a
+input-otp-slot | E[data-active] | border-bottom-style: solid
+input-otp-slot | E[data-active] | border-bottom-width: 2px
+input-otp-slot | E[data-active] | z-index: 10

@@ -1,0 +1,42 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Number Field",
+  "description": "Lets the shopper type a number or step it up and down with buttons at either end, within a minimum and maximum, such as a quantity. Fills its Field like other controls; never narrower than its two buttons and three digits.",
+  "recipes": {
+    "number-field": {
+      "base": {
+        "display": "grid",
+        "gap": "{spacing.1.5}"
+      }
+    },
+    "number-field-content": {
+      "base": {
+        "minWidth": "{spacing.28}"
+      }
+    },
+    "number-field-input": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": ["control", "control-line"],
+        "height": "{spacing.10}",
+        "paddingX": "{spacing.10}",
+        "paddingY": "{spacing.1}",
+        "width": "full",
+        "minWidth": "{spacing.0}",
+        "textAlign": "center"
+      }
+    },
+    "number-field-step": {
+      "composes": ["disabled"],
+      "base": {
+        "padding": "{spacing.3}",
+        "display": "inline-flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.4}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "notice-info": {
+    "borderColor": "{colors.info}",
+    "iconColor": "{colors.info}"
+  }
+}

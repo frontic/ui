@@ -1,0 +1,103 @@
+{
+  "name": "@frontic/library-contract",
+  "version": "0.17.1",
+  "description": "What a Frontic library item is: its shape, its registryDependencies, the brand CSS build, the class lint and the typecheck. Frontic UI's registry and CLI build on it.",
+  "license": "FSL-1.1-MIT",
+  "type": "module",
+  "files": [
+    "src",
+    "bin"
+  ],
+  "bin": {
+    "frontic-convert-recipes": "./bin/frontic-convert-recipes.mjs"
+  },
+  "exports": {
+    "./item": {
+      "types": "./src/item.d.mts",
+      "default": "./src/item.mjs"
+    },
+    "./dependencies": {
+      "types": "./src/dependencies.d.mts",
+      "default": "./src/dependencies.mjs"
+    },
+    "./recipe": {
+      "types": "./src/recipe.d.mts",
+      "default": "./src/recipe.mjs"
+    },
+    "./recipe-schema": {
+      "types": "./src/recipe-schema.d.mts",
+      "default": "./src/recipe-schema.mjs"
+    },
+    "./layout-gate": {
+      "types": "./src/layout-gate.d.mts",
+      "default": "./src/layout-gate.mjs"
+    },
+    "./forwarded-props": {
+      "types": "./src/forwarded-props.d.mts",
+      "default": "./src/forwarded-props.mjs"
+    },
+    "./brand": {
+      "types": "./src/brand.d.mts",
+      "default": "./src/brand.mjs"
+    },
+    "./contrast": {
+      "types": "./src/contrast.d.mts",
+      "default": "./src/contrast.mjs"
+    },
+    "./source-shim": {
+      "types": "./src/sourceShim.d.mts",
+      "default": "./src/sourceShim.mjs"
+    },
+    "./components": {
+      "types": "./src/components.d.mts",
+      "default": "./src/components.mjs"
+    },
+    "./lint": {
+      "types": "./src/lint.d.mts",
+      "default": "./src/lint.mjs"
+    },
+    "./typecheck": {
+      "types": "./src/typecheck.d.mts",
+      "default": "./src/typecheck.mjs"
+    },
+    "./resolve": {
+      "types": "./src/resolve.d.mts",
+      "default": "./src/resolve.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontic/ui.git",
+    "directory": "packages/library-contract"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@intlify/eslint-plugin-vue-i18n": "4.5.1",
+    "@typescript-eslint/parser": "8.72.0",
+    "astro-eslint-parser": "3.2.0",
+    "eslint": "10.13.0",
+    "eslint-plugin-better-tailwindcss": "4.10.0",
+    "jsonc-eslint-parser": "3.3.0",
+    "tailwindcss": "4.3.3",
+    "tw-animate-css": "1.4.0",
+    "typescript": "6.0.3",
+    "vue-eslint-parser": "10.4.1",
+    "vue-tsc": "3.3.13",
+    "yaml-eslint-parser": "2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "js-yaml": "5.5.0",
+    "vitest": "^5.0.5",
+    "vue": "3.5.44"
+  }
+}

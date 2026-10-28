@@ -1,0 +1,90 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Price",
+  "description": "Shows a price in the shopper's locale, with the original price and the percentage saved when it is reduced, and a hint such as tax and shipping.",
+  "recipes": {
+    "price": {
+      "base": {
+        "textColor": "{colors.price}",
+        "gap": "{spacing.1}",
+        "display": "inline-flex",
+        "flexDirection": "column"
+      },
+      "variants": {
+        "size": {
+          "sm": {
+            "typography": "{typography.small}",
+            "fontWeight": "semibold"
+          },
+          "md": {
+            "typography": "{typography.body}",
+            "fontWeight": "semibold"
+          },
+          "lg": {
+            "typography": "{typography.headline}",
+            "fontWeight": "semibold"
+          }
+        },
+        "align": {
+          "start": {
+            "textAlign": "start",
+            "alignItems": "start"
+          },
+          "end": {
+            "textAlign": "end",
+            "alignItems": "end"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md",
+        "align": "start"
+      }
+    },
+    "price-discount": {
+      "base": {
+        "textColor": "{colors.discount}",
+        "fontWeight": "medium"
+      }
+    },
+    "price-hint": {
+      "base": {
+        "extends": "link-foreground",
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.caption}",
+        "fontWeight": "normal"
+      }
+    },
+    "price-row": {
+      "base": {
+        "gap": "{spacing.1.5}"
+      }
+    },
+    "price-strike": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "fontWeight": "normal",
+        "textDecorationLine": "line-through"
+      },
+      "variants": {
+        "size": {
+          "sm": {
+            "typography": "{typography.caption}",
+            "fontWeight": "normal"
+          },
+          "md": {
+            "typography": "{typography.small}",
+            "fontWeight": "normal"
+          },
+          "lg": {
+            "typography": "{typography.body}",
+            "fontWeight": "normal"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    }
+  }
+}

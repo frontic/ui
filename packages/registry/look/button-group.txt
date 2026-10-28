@@ -1,0 +1,69 @@
+button-group | E > * | width: 100% [orientation=vertical]
+button-group | E > *:focus | position: relative
+button-group | E > *:focus | z-index: 10
+button-group | E > *:not(:first-child) | border-end-start-radius: 0px [orientation=horizontal]
+button-group | E > *:not(:first-child) | border-left-style: solid [orientation=horizontal]
+button-group | E > *:not(:first-child) | border-left-width: 0px [orientation=horizontal]
+button-group | E > *:not(:first-child) | border-start-start-radius: 0px [orientation=horizontal]
+button-group | E > *:not(:first-child) | border-top-left-radius: 0px [orientation=vertical]
+button-group | E > *:not(:first-child) | border-top-right-radius: 0px [orientation=vertical]
+button-group | E > *:not(:first-child) | border-top-style: solid [orientation=vertical]
+button-group | E > *:not(:first-child) | border-top-width: 0px [orientation=vertical]
+button-group | E > *:not(:last-child) | border-bottom-left-radius: 0px [orientation=vertical]
+button-group | E > *:not(:last-child) | border-bottom-right-radius: 0px [orientation=vertical]
+button-group | E > *:not(:last-child):not(:has( + select[aria-hidden]:last-child)) | border-end-end-radius: 0px [orientation=horizontal]
+button-group | E > *:not(:last-child):not(:has( + select[aria-hidden]:last-child)) | border-start-end-radius: 0px [orientation=horizontal]
+button-group | E > [data-slot="input"] | padding-left: 16px
+button-group | E > [data-slot="input"] | padding-right: 16px
+button-group | E > [data-slot="select-trigger"]:not([class*="w-"]) | width: fit-content
+button-group | E > input | flex: 1
+button-group | E | align-items: stretch
+button-group | E | display: flex
+button-group | E | flex-direction: column [orientation=vertical]
+button-group | E | width: fit-content
+button-group | E:has( > [data-slot="button-group"]) | gap: 8px
+button-group | E:has( > [data-variant="outline"]) > [data-slot="input-group"] | padding-left: 10px
+button-group | E:has( > [data-variant="outline"]) > [data-slot="input-group"] | padding-right: 10px
+button-group | E:has( > [data-variant="outline"]) > [role="combobox"] | padding-left: 10px
+button-group | E:has( > [data-variant="outline"]) > [role="combobox"] | padding-right: 10px
+button-group-separator | E | align-self: stretch
+button-group-separator | E | background-color: #a1a1aa
+button-group-separator | E | flex-shrink: 0
+button-group-separator | E | height: 1px [orientation=horizontal]
+button-group-separator | E | height: auto [orientation=vertical]
+button-group-separator | E | margin-bottom: 1px [orientation=vertical]
+button-group-separator | E | margin-left: 1px [orientation=horizontal]
+button-group-separator | E | margin-right: 1px [orientation=horizontal]
+button-group-separator | E | margin-top: 1px [orientation=vertical]
+button-group-separator | E | position: relative
+button-group-separator | E | width: 1px [orientation=vertical]
+button-group-separator | E | width: auto [orientation=horizontal]
+button-group-text | E ICON | height: 14px
+button-group-text | E ICON | pointer-events: none
+button-group-text | E ICON | width: 14px
+button-group-text | E | align-items: center
+button-group-text | E | background-color: transparent
+button-group-text | E | border-bottom-color: #a1a1aa
+button-group-text | E | border-bottom-style: solid
+button-group-text | E | border-bottom-width: 1px
+button-group-text | E | border-left-color: transparent
+button-group-text | E | border-left-style: solid
+button-group-text | E | border-left-width: 1px
+button-group-text | E | border-right-color: transparent
+button-group-text | E | border-right-style: solid
+button-group-text | E | border-right-width: 1px
+button-group-text | E | border-top-color: transparent
+button-group-text | E | border-top-style: solid
+button-group-text | E | border-top-width: 1px
+button-group-text | E | display: flex
+button-group-text | E | font-family: 'Inter Variable', Inter, sans-serif
+button-group-text | E | font-feature-settings: normal
+button-group-text | E | font-size: 12px
+button-group-text | E | font-variation-settings: normal
+button-group-text | E | font-weight: 600
+button-group-text | E | gap: 8px
+button-group-text | E | letter-spacing: normal
+button-group-text | E | line-height: 1.33
+button-group-text | E | padding-left: 10px
+button-group-text | E | padding-right: 10px
+button-group-text | E | text-transform: uppercase

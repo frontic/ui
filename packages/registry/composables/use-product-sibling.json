@@ -1,0 +1,5 @@
+{
+  "$schema": "../item.schema.json",
+  "title": "Use Product Sibling",
+  "description": "The sibling a product card has selected and the image that goes with it."
+}

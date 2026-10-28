@@ -1,0 +1,10 @@
+{
+  "choice-box": {
+    "rounded": "{rounded.none}",
+    "checked": {
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.primary-foreground}",
+      "borderColor": "{colors.primary}"
+    }
+  }
+}

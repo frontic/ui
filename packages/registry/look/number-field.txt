@@ -1,0 +1,101 @@
+number-field | E | display: grid
+number-field | E | gap: 6px
+number-field-content | E | min-width: 112px
+number-field-content | E | position: relative
+number-field-decrement | E ICON | height: 16px
+number-field-decrement | E ICON | width: 16px
+number-field-decrement | E | align-items: center
+number-field-decrement | E | display: inline-flex
+number-field-decrement | E | inset-inline-start: 0px
+number-field-decrement | E | justify-content: center
+number-field-decrement | E | padding-bottom: 12px
+number-field-decrement | E | padding-left: 12px
+number-field-decrement | E | padding-right: 12px
+number-field-decrement | E | padding-top: 12px
+number-field-decrement | E | position: absolute
+number-field-decrement | E | top: calc(1 / 2 * 100%)
+number-field-decrement | E | translate: 0 calc(calc(1 / 2 * 100%) * -1)
+number-field-decrement | E:disabled | cursor: not-allowed
+number-field-decrement | E:disabled | opacity: 0.5
+number-field-increment | E ICON | height: 16px
+number-field-increment | E ICON | width: 16px
+number-field-increment | E | align-items: center
+number-field-increment | E | display: inline-flex
+number-field-increment | E | inset-inline-end: 0px
+number-field-increment | E | justify-content: center
+number-field-increment | E | padding-bottom: 12px
+number-field-increment | E | padding-left: 12px
+number-field-increment | E | padding-right: 12px
+number-field-increment | E | padding-top: 12px
+number-field-increment | E | position: absolute
+number-field-increment | E | top: calc(1 / 2 * 100%)
+number-field-increment | E | translate: 0 calc(calc(1 / 2 * 100%) * -1)
+number-field-increment | E:disabled | cursor: not-allowed
+number-field-increment | E:disabled | opacity: 0.5
+number-field-input | E | background-color: transparent
+number-field-input | E | border-bottom-color: #a1a1aa
+number-field-input | E | border-bottom-left-radius: 0px
+number-field-input | E | border-bottom-right-radius: 0px
+number-field-input | E | border-bottom-style: solid
+number-field-input | E | border-bottom-width: 1px
+number-field-input | E | border-left-color: transparent
+number-field-input | E | border-left-style: solid
+number-field-input | E | border-left-width: 1px
+number-field-input | E | border-right-color: transparent
+number-field-input | E | border-right-style: solid
+number-field-input | E | border-right-width: 1px
+number-field-input | E | border-top-color: transparent
+number-field-input | E | border-top-left-radius: 0px
+number-field-input | E | border-top-right-radius: 0px
+number-field-input | E | border-top-style: solid
+number-field-input | E | border-top-width: 1px
+number-field-input | E | font-family: 'Inter Variable', Inter, sans-serif
+number-field-input | E | font-feature-settings: normal
+number-field-input | E | font-size: 14px [desktop]
+number-field-input | E | font-size: 16px [phone]
+number-field-input | E | font-variation-settings: normal
+number-field-input | E | font-weight: 400
+number-field-input | E | height: 40px
+number-field-input | E | letter-spacing: normal
+number-field-input | E | line-height: 1.43 [desktop]
+number-field-input | E | line-height: 1.5 [phone]
+number-field-input | E | min-width: 0px
+number-field-input | E | outline-style: none
+number-field-input | E | padding-bottom: 4px
+number-field-input | E | padding-left: 40px
+number-field-input | E | padding-right: 40px
+number-field-input | E | padding-top: 4px
+number-field-input | E | text-align: center
+number-field-input | E | transition-duration: 150ms
+number-field-input | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+number-field-input | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+number-field-input | E | width: 100%
+number-field-input | E::file-selector-button | background-color: transparent
+number-field-input | E::file-selector-button | border-bottom-color: 
+number-field-input | E::file-selector-button | border-bottom-style: 
+number-field-input | E::file-selector-button | border-bottom-width: none
+number-field-input | E::file-selector-button | border-left-color: 
+number-field-input | E::file-selector-button | border-left-style: 
+number-field-input | E::file-selector-button | border-left-width: none
+number-field-input | E::file-selector-button | border-right-color: 
+number-field-input | E::file-selector-button | border-right-style: 
+number-field-input | E::file-selector-button | border-right-width: none
+number-field-input | E::file-selector-button | border-top-color: 
+number-field-input | E::file-selector-button | border-top-style: 
+number-field-input | E::file-selector-button | border-top-width: none
+number-field-input | E::file-selector-button | color: #09090b
+number-field-input | E::file-selector-button | font-family: 'Inter Variable', Inter, sans-serif
+number-field-input | E::file-selector-button | font-feature-settings: normal
+number-field-input | E::file-selector-button | font-size: 14px
+number-field-input | E::file-selector-button | font-variation-settings: normal
+number-field-input | E::file-selector-button | font-weight: 500
+number-field-input | E::file-selector-button | letter-spacing: normal
+number-field-input | E::file-selector-button | line-height: 1.43
+number-field-input | E::placeholder | color: #66666f
+number-field-input | E:disabled | cursor: not-allowed
+number-field-input | E:disabled | opacity: 0.5
+number-field-input | E:disabled | pointer-events: none
+number-field-input | E:focus | border-bottom-color: #71717a
+number-field-input | E:focus | border-bottom-style: solid
+number-field-input | E:focus | border-bottom-width: 2px
+number-field-input | E:invalid | border-bottom-color: #c70009

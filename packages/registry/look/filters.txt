@@ -1,0 +1,20 @@
+Filters > [1] | E | display: flex
+Filters > [1] | E | flex-direction: column
+Filters > [1] | E | gap: 16px
+Filters > [1] | E | padding-top: 4px
+Filters > [2] | E | align-items: center
+Filters > [2] | E | display: flex
+Filters > [2] | E | justify-content: space-between
+Filters > [3] | E | align-items: center
+Filters > [3] | E | display: flex
+Filters > [3] | E | flex: 1
+Filters > [3] | E | gap: 8px
+Filters > [4] | E | width: 100%
+filters-range-to | E | color: #66666f
+filters-range-to | E | font-family: 'Inter Variable', Inter, sans-serif
+filters-range-to | E | font-feature-settings: normal
+filters-range-to | E | font-size: 14px
+filters-range-to | E | font-variation-settings: normal
+filters-range-to | E | font-weight: 500
+filters-range-to | E | letter-spacing: normal
+filters-range-to | E | line-height: 1.43

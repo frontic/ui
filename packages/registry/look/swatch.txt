@@ -1,0 +1,104 @@
+# approximate: Swatch > [0]
+# approximate: Swatch > [1]
+# approximate: swatch-fallback
+# approximate: swatch-image
+Swatch > [0] | E | align-items: center
+Swatch > [0] | E | display: flex
+Swatch > [0] | E | flex-direction: row
+Swatch > [0] | E | gap: 8px
+Swatch > [0] | E:disabled | opacity: 0.5
+Swatch > [0] | E:disabled | pointer-events: none
+Swatch > [2] | E | border-bottom-width: 0
+Swatch > [2] | E | border-left-width: 0
+Swatch > [2] | E | border-right-width: 0
+Swatch > [2] | E | border-top-width: 0
+Swatch > [2] | E | clip-path: inset(50%)
+Swatch > [2] | E | height: 1px
+Swatch > [2] | E | margin-bottom: -1px
+Swatch > [2] | E | margin-left: -1px
+Swatch > [2] | E | margin-right: -1px
+Swatch > [2] | E | margin-top: -1px
+Swatch > [2] | E | overflow: hidden
+Swatch > [2] | E | padding-bottom: 0
+Swatch > [2] | E | padding-left: 0
+Swatch > [2] | E | padding-right: 0
+Swatch > [2] | E | padding-top: 0
+Swatch > [2] | E | position: absolute
+Swatch > [2] | E | white-space: nowrap
+Swatch > [2] | E | width: 1px
+swatch | E | align-items: center
+swatch | E | border-bottom-color: #e4e4e7
+swatch | E | border-bottom-left-radius: 6.4px [shape=default]
+swatch | E | border-bottom-left-radius: 9999px [shape=pill]
+swatch | E | border-bottom-right-radius: 6.4px [shape=default]
+swatch | E | border-bottom-right-radius: 9999px [shape=pill]
+swatch | E | border-bottom-style: solid
+swatch | E | border-bottom-width: 1px
+swatch | E | border-left-color: #e4e4e7
+swatch | E | border-left-style: solid
+swatch | E | border-left-width: 1px
+swatch | E | border-right-color: #e4e4e7
+swatch | E | border-right-style: solid
+swatch | E | border-right-width: 1px
+swatch | E | border-top-color: #e4e4e7
+swatch | E | border-top-left-radius: 6.4px [shape=default]
+swatch | E | border-top-left-radius: 9999px [shape=pill]
+swatch | E | border-top-right-radius: 6.4px [shape=default]
+swatch | E | border-top-right-radius: 9999px [shape=pill]
+swatch | E | border-top-style: solid
+swatch | E | border-top-width: 1px
+swatch | E | display: inline-flex
+swatch | E | font-family: 'Inter Variable', Inter, sans-serif
+swatch | E | font-feature-settings: normal
+swatch | E | font-size: 14px [size=xs,sm,md]
+swatch | E | font-size: 18px [size=lg]
+swatch | E | font-variation-settings: normal
+swatch | E | font-weight: 500
+swatch | E | height: 24px [size=xs]
+swatch | E | height: 36px [desktop size=sm]
+swatch | E | height: 48px [desktop size=md; phone size=sm]
+swatch | E | height: 56px [phone size=md]
+swatch | E | height: 64px [size=lg]
+swatch | E | justify-content: center
+swatch | E | letter-spacing: normal
+swatch | E | line-height: 1.43 [size=xs,sm,md]
+swatch | E | line-height: 1.56 [size=lg]
+swatch | E | overflow: hidden
+swatch | E | position: relative
+swatch | E | transition-duration: 150ms
+swatch | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events
+swatch | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+swatch | E | width: 24px [size=xs]
+swatch | E | width: 36px [desktop size=sm]
+swatch | E | width: 48px [desktop size=md; phone size=sm]
+swatch | E | width: 56px [phone size=md]
+swatch | E | width: 64px [size=lg]
+swatch | E:checked | border-bottom-color: #09090b
+swatch | E:checked | border-left-color: #09090b
+swatch | E:checked | border-right-color: #09090b
+swatch | E:checked | border-top-color: #09090b
+swatch | E:disabled | opacity: 0.5
+swatch | E:disabled | pointer-events: none
+swatch | E:focus | border-bottom-color: #71717a
+swatch | E:focus | border-left-color: #71717a
+swatch | E:focus | border-right-color: #71717a
+swatch | E:focus | border-top-color: #71717a
+swatch | E:focus | ring: 2px #71717a
+swatch | E:hover | border-bottom-color: #66666f
+swatch | E:hover | border-left-color: #66666f
+swatch | E:hover | border-right-color: #66666f
+swatch | E:hover | border-top-color: #66666f
+swatch | E:hover | color: #09090b
+swatch-label | E | color: #66666f
+swatch-label | E | font-family: 'Inter Variable', Inter, sans-serif
+swatch-label | E | font-feature-settings: normal
+swatch-label | E | font-size: 10px
+swatch-label | E | font-variation-settings: normal
+swatch-label | E | font-weight: 400
+swatch-label | E | letter-spacing: normal
+swatch-label | E | line-height: 1.25
+swatch-strike > [0] | E | color: #ffffff
+swatch-strike | E | color: #09090b
+swatch-strike | E | inset: 0px
+swatch-strike | E | pointer-events: none
+swatch-strike | E | position: absolute

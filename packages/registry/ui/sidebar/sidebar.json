@@ -1,0 +1,434 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Sidebar",
+  "description": "Side panel on the start or end of the page, with groups, menus, badges and actions, that collapses off-screen or to icons and opens as a sheet on phones.",
+  "recipes": {
+    "sidebar": {
+      "base": {
+        "backgroundColor": "{colors.card}",
+        "textColor": "{colors.card-foreground}",
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "variants": {
+        "variant": {
+          "sidebar": {
+            "rounded": "{rounded.none}"
+          },
+          "inset": {
+            "rounded": "{rounded.none}"
+          },
+          "floating": {
+            "border": "{border.default}",
+            "borderColor": "{colors.border}",
+            "rounded": "{rounded.none}",
+            "shadow": "{shadow.sm}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "sidebar"
+      },
+      "keepAxis": ["inset"]
+    },
+    "sidebar-action": {
+      "composes": ["focus-ring"],
+      "base": {
+        "textColor": "{colors.card-foreground}",
+        "rounded": "{rounded.none}",
+        "width": "{spacing.5}",
+        "padding": "{spacing.0}",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        },
+        "hover": {
+          "backgroundColor": "{colors.accent}",
+          "textColor": "{colors.accent-foreground}"
+        }
+      }
+    },
+    "sidebar-container": {
+      "base": {
+        "display": "flex",
+        "height": "svh"
+      },
+      "variants": {
+        "edge": {
+          "start": {
+            "borderEnd": "{border.default}"
+          },
+          "end": {
+            "borderStart": "{border.default}"
+          },
+          "padded": {
+            "padding": "{spacing.2}"
+          }
+        },
+        "width": {
+          "icon": {
+            "width": "{spacing.12}"
+          },
+          "icon-padded": {
+            "width": "{spacing.16.5}"
+          }
+        }
+      },
+      "defaults": {
+        "edge": "start"
+      }
+    },
+    "sidebar-content": {
+      "base": {
+        "scrollbar": "none",
+        "minHeight": "{spacing.0}",
+        "gap": "{spacing.2}",
+        "display": "flex",
+        "flex": "1",
+        "flexDirection": "column"
+      }
+    },
+    "sidebar-footer": {
+      "base": {
+        "gap": "{spacing.2}",
+        "padding": "{spacing.2}",
+        "display": "flex",
+        "flexDirection": "column"
+      }
+    },
+    "sidebar-group": {
+      "base": {
+        "padding": "{spacing.2}",
+        "display": "flex",
+        "width": "full",
+        "minWidth": "{spacing.0}",
+        "flexDirection": "column"
+      }
+    },
+    "sidebar-group-content": {
+      "base": {
+        "typography": "{typography.small}",
+        "width": "full"
+      }
+    },
+    "sidebar-group-label": {
+      "composes": ["focus-ring"],
+      "base": {
+        "textColor": "{colors.card-foreground/70}",
+        "rounded": "{rounded.none}",
+        "typography": "{typography.caption}",
+        "fontWeight": "semibold",
+        "textTransform": "uppercase",
+        "letterSpacing": "wider",
+        "height": "{spacing.8}",
+        "paddingX": "{spacing.3}",
+        "display": "flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "sidebar-header": {
+      "base": {
+        "gap": "{spacing.2}",
+        "padding": "{spacing.2}",
+        "display": "flex",
+        "flexDirection": "column"
+      }
+    },
+    "sidebar-input": {
+      "base": {
+        "backgroundColor": "transparent",
+        "shadow": "none",
+        "height": "{spacing.8}",
+        "width": "full"
+      }
+    },
+    "sidebar-inset": {
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "display": "flex",
+        "width": "full",
+        "flex": "1",
+        "flexDirection": "column"
+      },
+      "variants": {
+        "variant": {
+          "flat": {
+            "rounded": "{rounded.none}"
+          },
+          "raised": {
+            "rounded": "{rounded.none}",
+            "shadow": "{shadow.sm}",
+            "margin": "{spacing.2}",
+            "marginStart": "{spacing.0}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "flat"
+      }
+    },
+    "sidebar-menu": {
+      "base": {
+        "gap": "{spacing.0.5}",
+        "display": "flex",
+        "width": "full",
+        "minWidth": "{spacing.0}",
+        "flexDirection": "column"
+      }
+    },
+    "sidebar-menu-badge": {
+      "base": {
+        "textColor": "{colors.card-foreground}",
+        "rounded": "{rounded.none}",
+        "typography": "{typography.caption}",
+        "fontWeight": "medium",
+        "height": "{spacing.5}",
+        "minWidth": "{spacing.5}",
+        "paddingX": "{spacing.1}",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center"
+      }
+    },
+    "sidebar-menu-button": {
+      "composes": ["focus-ring", "disabled"],
+      "base": {
+        "rounded": "{rounded.none}",
+        "paddingX": "{spacing.3}",
+        "paddingY": "{spacing.2}",
+        "display": "flex",
+        "width": "full",
+        "alignItems": "center",
+        "textAlign": "start",
+        "icon": {
+          "size": "{spacing.4}"
+        },
+        "hover": {
+          "backgroundColor": "{colors.accent}",
+          "textColor": "{colors.accent-foreground}"
+        },
+        "active": {
+          "backgroundColor": "{colors.accent}",
+          "textColor": "{colors.accent-foreground}"
+        },
+        "current": {
+          "backgroundColor": "{colors.accent}",
+          "textColor": "{colors.accent-foreground}",
+          "fontWeight": "medium"
+        }
+      },
+      "variants": {
+        "variant": {
+          "default": {
+            "backgroundColor": "transparent"
+          },
+          "outline": {
+            "backgroundColor": "{colors.background}",
+            "outline": "{ring.hairline}",
+            "outlineColor": "{colors.border}",
+            "hover": {
+              "outlineColor": "{colors.accent}"
+            }
+          }
+        },
+        "size": {
+          "md": {
+            "typography": "{typography.small}",
+            "height": "{spacing.9}",
+            "with": {
+              "mode": {
+                "collapsed": {
+                  "height": "{spacing.8}"
+                }
+              }
+            }
+          },
+          "sm": {
+            "typography": "{typography.caption}",
+            "fontWeight": "normal",
+            "height": "{spacing.8}",
+            "with": {
+              "mode": {
+                "collapsed": {
+                  "height": "{spacing.8}"
+                }
+              }
+            }
+          },
+          "lg": {
+            "typography": "{typography.small}",
+            "height": "{spacing.14}",
+            "with": {
+              "mode": {
+                "collapsed": {
+                  "height": "{spacing.8}",
+                  "padding": "{spacing.0}"
+                }
+              }
+            }
+          }
+        },
+        "mode": {
+          "expanded": {
+            "gap": "{spacing.2}"
+          },
+          "collapsed": {
+            "gap": "{spacing.2}",
+            "height": "{spacing.8}",
+            "width": "full",
+            "padding": "{spacing.2}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "default",
+        "size": "md",
+        "mode": "expanded"
+      }
+    },
+    "sidebar-menu-skeleton": {
+      "base": {
+        "rounded": "{rounded.none}",
+        "height": "{spacing.8}",
+        "gap": "{spacing.2}",
+        "paddingX": "{spacing.2}",
+        "display": "flex",
+        "alignItems": "center"
+      }
+    },
+    "sidebar-menu-sub": {
+      "base": {
+        "marginX": "{spacing.3.5}",
+        "borderStart": "{border.default}",
+        "gap": "{spacing.1}",
+        "paddingX": "{spacing.2.5}",
+        "paddingY": "{spacing.0.5}",
+        "display": "flex",
+        "minWidth": "{spacing.0}",
+        "flexDirection": "column"
+      }
+    },
+    "sidebar-menu-sub-button": {
+      "composes": ["focus-ring", "disabled"],
+      "base": {
+        "textColor": "{colors.card-foreground}",
+        "iconColor": "{colors.accent-foreground}",
+        "rounded": "{rounded.none}",
+        "height": "{spacing.7}",
+        "gap": "{spacing.2}",
+        "paddingX": "{spacing.3}",
+        "display": "flex",
+        "minWidth": "{spacing.0}",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        },
+        "hover": {
+          "backgroundColor": "{colors.accent}",
+          "textColor": "{colors.accent-foreground}"
+        },
+        "active": {
+          "backgroundColor": "{colors.accent}",
+          "textColor": "{colors.accent-foreground}"
+        },
+        "current": {
+          "backgroundColor": "{colors.accent}",
+          "textColor": "{colors.accent-foreground}"
+        }
+      },
+      "variants": {
+        "size": {
+          "sm": {
+            "typography": "{typography.caption}",
+            "fontWeight": "normal"
+          },
+          "md": {
+            "typography": "{typography.small}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "sidebar-rail": {
+      "base": {
+        "width": "{spacing.4}",
+        "display": "flex"
+      },
+      "variants": {
+        "mode": {
+          "default": {},
+          "offcanvas": {
+            "hover": {
+              "backgroundColor": "{colors.card}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "mode": "default"
+      }
+    },
+    "sidebar-rail-line": {
+      "base": {
+        "extends": "divider",
+        "width": "{spacing.0.5}"
+      }
+    },
+    "sidebar-separator": {
+      "base": {
+        "marginX": "{spacing.2}",
+        "width": "auto"
+      }
+    },
+    "sidebar-size": {
+      "base": {
+        "width": "{spacing.64}"
+      },
+      "variants": {
+        "width": {
+          "icon": {
+            "width": "{spacing.12}"
+          },
+          "icon-padded": {
+            "width": "{spacing.16}"
+          },
+          "offcanvas": {
+            "width": "{spacing.0}"
+          },
+          "mobile": {
+            "width": "{spacing.72}",
+            "padding": "{spacing.0}"
+          }
+        }
+      }
+    },
+    "sidebar-wrapper": {
+      "base": {
+        "display": "flex",
+        "minHeight": "svh",
+        "width": "full"
+      },
+      "variants": {
+        "variant": {
+          "default": {
+            "backgroundColor": "transparent"
+          },
+          "inset": {
+            "backgroundColor": "{colors.card}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "default"
+      }
+    }
+  }
+}

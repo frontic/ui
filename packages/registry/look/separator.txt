@@ -1,0 +1,6 @@
+separator | E | align-self: stretch [orientation=vertical]
+separator | E | background-color: #e4e4e7
+separator | E | flex-shrink: 0
+separator | E | height: 1px [orientation=horizontal]
+separator | E | width: 100% [orientation=horizontal]
+separator | E | width: 1px [orientation=vertical]

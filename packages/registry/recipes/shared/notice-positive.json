@@ -1,0 +1,6 @@
+{
+  "notice-positive": {
+    "borderColor": "{colors.positive}",
+    "iconColor": "{colors.positive}"
+  }
+}

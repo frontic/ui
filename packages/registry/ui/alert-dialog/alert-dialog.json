@@ -1,0 +1,91 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Alert Dialog",
+  "description": "Asks the shopper to confirm or cancel an action before it happens, such as removing an address, and keeps focus inside until they choose.",
+  "recipes": {
+    "alert-dialog-content": {
+      "base": {
+        "extends": ["overlay-modal", "surface-inset"],
+        "gap": "{spacing.6}",
+        "paddingX": "{spacing.6}",
+        "marginX": "auto",
+        "display": "grid",
+        "@md": {
+          "paddingX": "{spacing.8}"
+        }
+      },
+      "variants": {
+        "size": {
+          "md": {
+            "maxWidth": "{container.xs}",
+            "@md": {
+              "maxWidth": "{container.md}"
+            }
+          },
+          "sm": {
+            "maxWidth": "{container.xs}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "alert-dialog-description": {
+      "base": {
+        "marginTop": "{spacing.0.5}",
+        "extends": ["part-description", "link-foreground"]
+      }
+    },
+    "alert-dialog-footer": {
+      "base": {
+        "gap": "{spacing.2}",
+        "display": "flex",
+        "flexDirection": "column-reverse",
+        "@sm": {
+          "flexDirection": "row",
+          "justifyContent": "end"
+        }
+      }
+    },
+    "alert-dialog-header": {
+      "base": {
+        "gap": "{spacing.2}",
+        "display": "grid",
+        "placeItems": "center",
+        "textAlign": "center",
+        "@sm": {
+          "placeItems": "start",
+          "textAlign": "start"
+        }
+      }
+    },
+    "alert-dialog-media": {
+      "base": {
+        "marginBottom": "{spacing.2}",
+        "backgroundColor": "{colors.muted}",
+        "rounded": "{rounded.none}",
+        "size": "{spacing.16}",
+        "display": "inline-flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.8}"
+        },
+        "@sm": {
+          "gridRow": "span 2"
+        }
+      }
+    },
+    "alert-dialog-overlay": {
+      "base": {
+        "extends": "overlay-backdrop"
+      }
+    },
+    "alert-dialog-title": {
+      "base": {
+        "extends": "part-title-lg"
+      }
+    }
+  }
+}

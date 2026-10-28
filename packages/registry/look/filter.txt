@@ -1,0 +1,340 @@
+FilterGroup > [1] | E | padding-bottom: 12px
+FilterGroup > [1] | E | padding-left: 12px
+FilterGroup > [1] | E | padding-right: 12px
+FilterGroup > [1] | E | padding-top: 12px
+FilterGroup > [1] | E | width: 256px
+FilterGroup > [3] | E | padding-top: 12px
+filter-field | E | display: flex
+filter-field | E | gap: 12px
+filter-field | E | width: 100%
+filter-field-content | E | display: flex
+filter-field-content | E | flex-direction: column
+filter-field-content | E | flex: 1
+filter-field-content | E | gap: 4px
+filter-field-description | E | color: #66666f
+filter-field-description | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-field-description | E | font-feature-settings: normal
+filter-field-description | E | font-size: 14px
+filter-field-description | E | font-variation-settings: normal
+filter-field-description | E | font-weight: 400
+filter-field-description | E | letter-spacing: normal
+filter-field-description | E | line-height: 1.43
+filter-field-label | E | cursor: pointer
+filter-field-label | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-field-label | E | font-feature-settings: normal
+filter-field-label | E | font-size: 14px
+filter-field-label | E | font-variation-settings: normal
+filter-field-label | E | font-weight: 400
+filter-field-label | E | letter-spacing: 0em
+filter-field-label | E | line-height: 1.43
+filter-field-label | E | text-transform: none
+filter-field-title | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-field-title | E | font-feature-settings: normal
+filter-field-title | E | font-size: 12px
+filter-field-title | E | font-variation-settings: normal
+filter-field-title | E | font-weight: 600
+filter-field-title | E | letter-spacing: 0.025em
+filter-field-title | E | line-height: 1.33
+filter-field-title | E | text-transform: uppercase
+filter-list | E | display: flex
+filter-list | E | flex-direction: column
+filter-list-check | E | align-items: center
+filter-list-check | E | background-color: transparent
+filter-list-check | E | border-bottom-color: #a1a1aa
+filter-list-check | E | border-bottom-left-radius: 0px
+filter-list-check | E | border-bottom-right-radius: 0px
+filter-list-check | E | border-bottom-style: solid
+filter-list-check | E | border-bottom-width: 1px
+filter-list-check | E | border-left-color: #a1a1aa
+filter-list-check | E | border-left-style: solid
+filter-list-check | E | border-left-width: 1px
+filter-list-check | E | border-right-color: #a1a1aa
+filter-list-check | E | border-right-style: solid
+filter-list-check | E | border-right-width: 1px
+filter-list-check | E | border-top-color: #a1a1aa
+filter-list-check | E | border-top-left-radius: 0px
+filter-list-check | E | border-top-right-radius: 0px
+filter-list-check | E | border-top-style: solid
+filter-list-check | E | border-top-width: 1px
+filter-list-check | E | display: flex
+filter-list-check | E | flex-shrink: 0
+filter-list-check | E | height: 18px
+filter-list-check | E | justify-content: center
+filter-list-check | E | transition-duration: 150ms
+filter-list-check | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+filter-list-check | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+filter-list-check | E | width: 18px
+filter-list-check | E:checked | background-color: #7008e7
+filter-list-check | E:checked | border-bottom-color: #7008e7
+filter-list-check | E:checked | border-left-color: #7008e7
+filter-list-check | E:checked | border-right-color: #7008e7
+filter-list-check | E:checked | border-top-color: #7008e7
+filter-list-check | E:checked | color: #f5f3ff
+filter-list-content | E | height: 280px [searchable=true]
+filter-list-content | E | height: auto [searchable=false]
+filter-list-content | E | max-height: 280px [searchable=false]
+filter-list-content | E | outline-style: none
+filter-list-content | E | overflow-y: auto
+filter-list-content | E | padding-bottom: 4px
+filter-list-content | E | padding-top: 4px
+filter-list-content | E | scroll-padding-block: 4px
+filter-list-content | E | scrollbar-width: none
+filter-list-content | E::-webkit-scrollbar | display: none
+filter-list-content | E:focus | border-bottom-color: #71717a
+filter-list-content | E:focus | border-left-color: #71717a
+filter-list-content | E:focus | border-right-color: #71717a
+filter-list-content | E:focus | border-top-color: #71717a
+filter-list-content | E:focus | ring: 2px #71717a
+filter-list-count | E | color: #66666f
+filter-list-count | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-list-count | E | font-feature-settings: normal
+filter-list-count | E | font-size: 12px
+filter-list-count | E | font-variant-numeric: tabular-nums
+filter-list-count | E | font-variation-settings: normal
+filter-list-count | E | font-weight: 400
+filter-list-count | E | letter-spacing: normal
+filter-list-count | E | line-height: 1.33
+filter-list-item > [0] | E | align-items: center
+filter-list-item > [0] | E | display: flex
+filter-list-item > [0] | E | flex: 1
+filter-list-item > [0] | E | gap: 8px
+filter-list-item > [0] | E | justify-content: space-between
+filter-list-item > [0] | E | min-width: 0px
+filter-list-item | E | -webkit-user-select: none
+filter-list-item | E | align-items: center
+filter-list-item | E | border-bottom-left-radius: 0px
+filter-list-item | E | border-bottom-right-radius: 0px
+filter-list-item | E | border-top-left-radius: 0px
+filter-list-item | E | border-top-right-radius: 0px
+filter-list-item | E | cursor: default
+filter-list-item | E | display: flex
+filter-list-item | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-list-item | E | font-feature-settings: normal
+filter-list-item | E | font-size: 14px
+filter-list-item | E | font-variation-settings: normal
+filter-list-item | E | font-weight: 400
+filter-list-item | E | gap: 8px
+filter-list-item | E | letter-spacing: normal
+filter-list-item | E | line-height: 1.43
+filter-list-item | E | outline-style: none
+filter-list-item | E | padding-bottom: 8px
+filter-list-item | E | padding-left: 8px
+filter-list-item | E | padding-right: 8px
+filter-list-item | E | padding-top: 8px
+filter-list-item | E | user-select: none
+filter-list-item | E | width: 100%
+filter-list-item | E:disabled | opacity: 0.5
+filter-list-item | E:disabled | pointer-events: none
+filter-list-item | E:focus | background-color: #f4f4f5
+filter-list-item | E:focus | color: #18181b
+filter-list-search | E | background-color: #f4f4f5
+filter-list-search | E | border-bottom-color: #a1a1aa
+filter-list-search | E | border-bottom-left-radius: 0px
+filter-list-search | E | border-bottom-right-radius: 0px
+filter-list-search | E | border-bottom-style: solid
+filter-list-search | E | border-bottom-width: 1px
+filter-list-search | E | border-left-color: #a1a1aa
+filter-list-search | E | border-left-style: solid
+filter-list-search | E | border-left-width: 1px
+filter-list-search | E | border-right-color: #a1a1aa
+filter-list-search | E | border-right-style: solid
+filter-list-search | E | border-right-width: 1px
+filter-list-search | E | border-top-color: #a1a1aa
+filter-list-search | E | border-top-left-radius: 0px
+filter-list-search | E | border-top-right-radius: 0px
+filter-list-search | E | border-top-style: solid
+filter-list-search | E | border-top-width: 1px
+filter-list-search | E | box-shadow: none
+filter-list-search | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-list-search | E | font-feature-settings: normal
+filter-list-search | E | font-size: 14px
+filter-list-search | E | font-variation-settings: normal
+filter-list-search | E | font-weight: 400
+filter-list-search | E | height: 36px
+filter-list-search | E | letter-spacing: normal
+filter-list-search | E | line-height: 1.43
+filter-list-search | E | margin-bottom: 4px
+filter-list-search | E | outline-style: none
+filter-list-search | E | padding-left: 12px
+filter-list-search | E | padding-right: 12px
+filter-list-search | E | width: 100%
+filter-list-search | E::file-selector-button | background-color: transparent
+filter-list-search | E::file-selector-button | border-bottom-color: 
+filter-list-search | E::file-selector-button | border-bottom-style: 
+filter-list-search | E::file-selector-button | border-bottom-width: none
+filter-list-search | E::file-selector-button | border-left-color: 
+filter-list-search | E::file-selector-button | border-left-style: 
+filter-list-search | E::file-selector-button | border-left-width: none
+filter-list-search | E::file-selector-button | border-right-color: 
+filter-list-search | E::file-selector-button | border-right-style: 
+filter-list-search | E::file-selector-button | border-right-width: none
+filter-list-search | E::file-selector-button | border-top-color: 
+filter-list-search | E::file-selector-button | border-top-style: 
+filter-list-search | E::file-selector-button | border-top-width: none
+filter-list-search | E::file-selector-button | color: #09090b
+filter-list-search | E::file-selector-button | font-family: 'Inter Variable', Inter, sans-serif
+filter-list-search | E::file-selector-button | font-feature-settings: normal
+filter-list-search | E::file-selector-button | font-size: 14px
+filter-list-search | E::file-selector-button | font-variation-settings: normal
+filter-list-search | E::file-selector-button | font-weight: 500
+filter-list-search | E::file-selector-button | letter-spacing: normal
+filter-list-search | E::file-selector-button | line-height: 1.43
+filter-list-search | E::placeholder | color: #66666f
+filter-list-search | E:focus | border-bottom-color: #71717a
+filter-list-search | E:focus | border-bottom-style: solid
+filter-list-search | E:focus | border-bottom-width: 2px
+filter-list-search | E:focus | border-left-color: #71717a
+filter-list-search | E:focus | border-right-color: #71717a
+filter-list-search | E:focus | border-top-color: #71717a
+filter-list-search | E:focus | ring: 2px #71717a
+filter-list-search | E:invalid | border-bottom-color: #c70009
+filter-range > [0] | E | align-items: center
+filter-range > [0] | E | display: flex
+filter-range > [0] | E | gap: 8px
+filter-range > [1] | E | flex: 1
+filter-range > [2] | E | color: #66666f
+filter-range > [2] | E | flex-shrink: 0
+filter-range > [2] | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-range > [2] | E | font-feature-settings: normal
+filter-range > [2] | E | font-size: 14px
+filter-range > [2] | E | font-variation-settings: normal
+filter-range > [2] | E | font-weight: 400
+filter-range > [2] | E | letter-spacing: normal
+filter-range > [2] | E | line-height: 1.43
+filter-range > [3] | E | flex: 1
+filter-range | E | flex-direction: column
+filter-range | E | padding-bottom: 10px
+filter-range | E | padding-left: 12px
+filter-range | E | padding-right: 12px
+filter-range | E | padding-top: 10px
+filter-rating > [0] | E | align-items: center
+filter-rating > [0] | E | display: flex
+filter-rating > [0] | E | gap: 4px
+filter-rating > [1] | E | margin-left: 6px
+filter-rating | E | padding-bottom: 10px
+filter-rating | E | padding-left: 12px
+filter-rating | E | padding-right: 12px
+filter-rating | E | padding-top: 10px
+filter-rating-star | E | border-bottom-left-radius: 4.8px
+filter-rating-star | E | border-bottom-right-radius: 4.8px
+filter-rating-star | E | border-top-left-radius: 4.8px
+filter-rating-star | E | border-top-right-radius: 4.8px
+filter-rating-star | E | cursor: pointer
+filter-rating-star | E | flex-shrink: 0
+filter-rating-star | E | outline-style: none
+filter-rating-star | E | padding-bottom: 6px
+filter-rating-star | E | padding-left: 6px
+filter-rating-star | E | padding-right: 6px
+filter-rating-star | E | padding-top: 6px
+filter-rating-star | E | transition-duration: 150ms
+filter-rating-star | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+filter-rating-star | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+filter-rating-star | E:disabled | opacity: 0.5
+filter-rating-star | E:disabled | pointer-events: none
+filter-rating-star | E:focus | border-bottom-color: #71717a
+filter-rating-star | E:focus | border-left-color: #71717a
+filter-rating-star | E:focus | border-right-color: #71717a
+filter-rating-star | E:focus | border-top-color: #71717a
+filter-rating-star | E:focus | ring: 2px #71717a
+filter-rating-suffix | E | color: #66666f
+filter-rating-suffix | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-rating-suffix | E | font-feature-settings: normal
+filter-rating-suffix | E | font-size: 12px
+filter-rating-suffix | E | font-variation-settings: normal
+filter-rating-suffix | E | font-weight: 400
+filter-rating-suffix | E | letter-spacing: normal
+filter-rating-suffix | E | line-height: 1.33
+filter-reset > [0] | E | border-bottom-left-radius: 9999px
+filter-reset > [0] | E | border-bottom-right-radius: 9999px
+filter-reset > [0] | E | border-top-left-radius: 9999px
+filter-reset > [0] | E | border-top-right-radius: 9999px
+filter-reset > [0] | E | margin-top: 4px
+filter-reset > [1] | E | margin-right: 12px
+filter-reset | E | align-items: center
+filter-reset | E | display: flex
+filter-reset | E | justify-content: center
+filter-reset | E | margin-top: 8px
+filter-slider > [0] | E | align-items: baseline
+filter-slider > [0] | E | display: flex
+filter-slider > [0] | E | gap: 8px
+filter-slider > [0] | E | justify-content: space-between
+filter-slider | E | flex-direction: column
+filter-slider | E | padding-bottom: 10px
+filter-slider | E | padding-left: 12px
+filter-slider | E | padding-right: 12px
+filter-slider | E | padding-top: 10px
+filter-slider-value | E | color: #66666f
+filter-slider-value | E | flex-shrink: 0
+filter-slider-value | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-slider-value | E | font-feature-settings: normal
+filter-slider-value | E | font-size: 12px
+filter-slider-value | E | font-variant-numeric: tabular-nums
+filter-slider-value | E | font-variation-settings: normal
+filter-slider-value | E | font-weight: 400
+filter-slider-value | E | letter-spacing: normal
+filter-slider-value | E | line-height: 1.33
+filter-slider-value | E | white-space: nowrap
+filter-swatch > [0] | E | align-items: center
+filter-swatch > [0] | E | display: flex
+filter-swatch > [0] | E | flex: 1
+filter-swatch > [0] | E | gap: 8px
+filter-swatch > [0] | E | justify-content: space-between
+filter-swatch > [1] | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-swatch > [1] | E | font-feature-settings: normal
+filter-swatch > [1] | E | font-size: 14px
+filter-swatch > [1] | E | font-variation-settings: normal
+filter-swatch > [1] | E | font-weight: 400
+filter-swatch > [1] | E | letter-spacing: normal
+filter-swatch > [1] | E | line-height: 1.43
+filter-swatch | E | margin-bottom: -2px [orientation=vertical]
+filter-swatch | E | margin-left: -2px [orientation=vertical]
+filter-swatch | E | margin-right: -2px [orientation=vertical]
+filter-swatch | E | margin-top: -2px [orientation=vertical]
+filter-swatch | E | max-height: 208px [orientation=vertical]
+filter-swatch | E | overflow-y: auto [orientation=vertical]
+filter-swatch | E | padding-bottom: 2px [orientation=vertical]
+filter-swatch | E | padding-left: 2px [orientation=vertical]
+filter-swatch | E | padding-right: 2px [orientation=vertical]
+filter-swatch | E | padding-top: 2px [orientation=vertical]
+filter-swatch-count | E | color: #66666f
+filter-swatch-count | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-swatch-count | E | font-feature-settings: normal
+filter-swatch-count | E | font-size: 12px
+filter-swatch-count | E | font-variant-numeric: tabular-nums
+filter-swatch-count | E | font-variation-settings: normal
+filter-swatch-count | E | font-weight: 400
+filter-swatch-count | E | letter-spacing: normal
+filter-swatch-count | E | line-height: 1.33
+filter-switch | E | padding-bottom: 10px
+filter-switch | E | padding-left: 12px
+filter-switch | E | padding-right: 12px
+filter-switch | E | padding-top: 10px
+filter-trigger > [0] | E | transition-duration: 200ms
+filter-trigger > [0] | E | transition-property: transform, translate, scale, rotate
+filter-trigger > [0] | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+filter-trigger > [0] | E:is(:where(GROUP):open *) | rotate: 180deg
+filter-trigger | E ICON | color: #66666f
+filter-trigger | E | width: 100%
+filter-trigger-count | E | align-items: center
+filter-trigger-count | E | background-color: #7008e7
+filter-trigger-count | E | border-bottom-left-radius: 9999px
+filter-trigger-count | E | border-bottom-right-radius: 9999px
+filter-trigger-count | E | border-top-left-radius: 9999px
+filter-trigger-count | E | border-top-right-radius: 9999px
+filter-trigger-count | E | color: #f5f3ff
+filter-trigger-count | E | display: inline-flex
+filter-trigger-count | E | flex-shrink: 0
+filter-trigger-count | E | font-family: 'Inter Variable', Inter, sans-serif
+filter-trigger-count | E | font-feature-settings: normal
+filter-trigger-count | E | font-size: 10px
+filter-trigger-count | E | font-variation-settings: normal
+filter-trigger-count | E | font-weight: 500
+filter-trigger-count | E | height: 20px
+filter-trigger-count | E | justify-content: center
+filter-trigger-count | E | letter-spacing: normal
+filter-trigger-count | E | line-height: 1.33
+filter-trigger-count | E | margin-left: auto
+filter-trigger-count | E | margin-right: 8px
+filter-trigger-count | E | width: 20px
+filter-trigger-label | E | flex: 1
+filter-trigger-label | E | text-align: start

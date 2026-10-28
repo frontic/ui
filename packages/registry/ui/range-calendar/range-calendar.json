@@ -1,0 +1,153 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Range Calendar",
+  "description": "Lets the shopper pick a start and an end date from one or more months, within a minimum and maximum and up to a set number of days.",
+  "recipes": {
+    "range-calendar": {
+      "base": {
+        "padding": "{spacing.3}"
+      }
+    },
+    "range-calendar-cell": {
+      "base": {
+        "typography": "{typography.small}",
+        "padding": "{spacing.0}",
+        "textAlign": "center",
+        "selected": {
+          "backgroundColor": "{colors.accent}"
+        }
+      },
+      "variants": {
+        "edge": {
+          "none": {},
+          "start": {
+            "selected": {
+              "borderTopLeftRadius": "{rounded.md}",
+              "borderBottomLeftRadius": "{rounded.md}"
+            }
+          },
+          "end": {
+            "selected": {
+              "borderTopRightRadius": "{rounded.md}",
+              "borderBottomRightRadius": "{rounded.md}"
+            }
+          },
+          "both": {
+            "selected": {
+              "rounded": "{rounded.md}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "edge": "none"
+      }
+    },
+    "range-calendar-cell-trigger": {
+      "composes": ["focus-ring", "invalid", "disabled"],
+      "base": {
+        "extends": ["action", "calendar-day"],
+        "fontWeight": "normal",
+        "size": "{spacing.8}",
+        "padding": "{spacing.0}",
+        "gap": "{spacing.1.5}",
+        "display": "inline-flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        },
+        "iconStart": {
+          "paddingStart": "{spacing.4}"
+        },
+        "iconEnd": {
+          "paddingEnd": "{spacing.4}"
+        }
+      },
+      "variants": {
+        "position": {
+          "middle": {},
+          "edge": {}
+        },
+        "day": {
+          "current": {
+            "textColor": "{colors.foreground}",
+            "with": {
+              "position": {
+                "edge": {
+                  "extends": "calendar-day-fill"
+                }
+              }
+            }
+          },
+          "today": {
+            "extends": "calendar-day-today",
+            "with": {
+              "position": {
+                "edge": {
+                  "extends": "calendar-day-fill"
+                }
+              }
+            }
+          },
+          "outside": {
+            "extends": "calendar-day-outside",
+            "with": {
+              "position": {
+                "edge": {
+                  "extends": "calendar-day-fill"
+                }
+              }
+            }
+          }
+        }
+      },
+      "defaults": {
+        "day": "current",
+        "position": "middle"
+      }
+    },
+    "range-calendar-grid-row": {
+      "base": {
+        "display": "flex"
+      }
+    },
+    "range-calendar-head-cell": {
+      "base": {
+        "extends": "calendar-weekday",
+        "width": "{spacing.8}",
+        "rounded": "{rounded.md}"
+      }
+    },
+    "range-calendar-header": {
+      "base": {
+        "paddingTop": "{spacing.1}",
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "width": "full"
+      }
+    },
+    "range-calendar-heading": {
+      "base": {
+        "extends": "calendar-month"
+      }
+    },
+    "range-calendar-nav": {
+      "composes": ["focus-ring", "invalid", "disabled"],
+      "base": {
+        "extends": ["action", "calendar-nav-button"],
+        "size": "{spacing.7}",
+        "padding": "{spacing.0}",
+        "display": "inline-flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.4}"
+        }
+      }
+    }
+  }
+}

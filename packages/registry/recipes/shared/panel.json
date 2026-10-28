@@ -1,0 +1,11 @@
+{
+  "panel": {
+    "backgroundColor": "{colors.card}",
+    "textColor": "{colors.card-foreground}",
+    "outline": "{ring.hairline}",
+    "outlineColor": "{colors.foreground/5}",
+    "rounded": "{rounded.none}",
+    "shadow": "{shadow.sm}",
+    "typography": "{typography.small}"
+  }
+}

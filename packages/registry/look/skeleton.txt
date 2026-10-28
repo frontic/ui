@@ -1,0 +1,6 @@
+skeleton | E | animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite
+skeleton | E | background-color: #f4f4f5
+skeleton | E | border-bottom-left-radius: 0px
+skeleton | E | border-bottom-right-radius: 0px
+skeleton | E | border-top-left-radius: 0px
+skeleton | E | border-top-right-radius: 0px

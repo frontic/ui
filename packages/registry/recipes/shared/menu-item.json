@@ -1,0 +1,10 @@
+{
+  "menu-item": {
+    "rounded": "{rounded.none}",
+    "typography": "{typography.small}",
+    "focus": {
+      "backgroundColor": "{colors.accent}",
+      "textColor": "{colors.accent-foreground}"
+    }
+  }
+}

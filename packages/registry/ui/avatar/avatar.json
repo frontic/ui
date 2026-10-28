@@ -1,0 +1,155 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Avatar",
+  "description": "A person's picture with initials or an icon as fallback and an optional status badge; a group overlaps several and shows how many more there are.",
+  "recipes": {
+    "avatar": {
+      "base": {
+        "rounded": "{rounded.full}",
+        "display": "flex",
+        "flexShrink": "0",
+        "after": {
+          "border": "{border.default}",
+          "rounded": "{rounded.full}"
+        }
+      },
+      "variants": {
+        "size": {
+          "sm": {
+            "size": "{spacing.6}"
+          },
+          "md": {
+            "size": "{spacing.8}"
+          },
+          "lg": {
+            "size": "{spacing.10}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "avatar-badge": {
+      "base": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.primary-foreground}",
+        "rounded": "{rounded.full}",
+        "outline": "{ring.frame}",
+        "outlineColor": "{colors.background}",
+        "display": "inline-flex",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "variants": {
+        "size": {
+          "sm": {
+            "size": "{spacing.2}"
+          },
+          "md": {
+            "size": "{spacing.2.5}",
+            "icon": {
+              "size": "{spacing.2}"
+            }
+          },
+          "lg": {
+            "size": "{spacing.3}",
+            "icon": {
+              "size": "{spacing.2}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "avatar-fallback": {
+      "base": {
+        "backgroundColor": "{colors.muted}",
+        "textColor": "{colors.muted-foreground}",
+        "rounded": "{rounded.full}",
+        "display": "flex",
+        "size": "full",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "variants": {
+        "size": {
+          "sm": {
+            "typography": "{typography.caption}",
+            "fontWeight": "normal"
+          },
+          "md": {
+            "typography": "{typography.small}"
+          },
+          "lg": {
+            "typography": "{typography.small}"
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "avatar-group": {
+      "base": {
+        "display": "flex"
+      }
+    },
+    "avatar-group-count": {
+      "base": {
+        "backgroundColor": "{colors.muted}",
+        "textColor": "{colors.muted-foreground}",
+        "rounded": "{rounded.full}",
+        "outline": "{ring.frame}",
+        "outlineColor": "{colors.background}",
+        "display": "flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "variants": {
+        "size": {
+          "sm": {
+            "size": "{spacing.6}",
+            "typography": "{typography.caption}",
+            "fontWeight": "normal",
+            "icon": {
+              "size": "{spacing.3}"
+            }
+          },
+          "md": {
+            "size": "{spacing.8}",
+            "typography": "{typography.small}",
+            "icon": {
+              "size": "{spacing.4}"
+            }
+          },
+          "lg": {
+            "size": "{spacing.10}",
+            "typography": "{typography.small}",
+            "icon": {
+              "size": "{spacing.5}"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "size": "md"
+      }
+    },
+    "avatar-image": {
+      "base": {
+        "rounded": "{rounded.full}",
+        "size": "full"
+      }
+    },
+    "avatar-ring": {
+      "base": {
+        "outline": "{ring.frame}",
+        "outlineColor": "{colors.background}"
+      }
+    }
+  }
+}

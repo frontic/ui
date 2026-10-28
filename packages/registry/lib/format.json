@@ -1,0 +1,5 @@
+{
+  "$schema": "../item.schema.json",
+  "title": "Format",
+  "description": "Formats prices in minor units, dates, ratings and shares in a locale, on @internationalized's formatters."
+}

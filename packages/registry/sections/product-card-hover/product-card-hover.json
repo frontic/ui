@@ -1,0 +1,16 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Product Card Hover",
+  "description": "Linked product tile whose quick-add button slides up over the image on hover or focus, with name, price, rating and colour dots.",
+  "categories": ["product"],
+  "recipes": {
+    "product-card-hover": {
+      "composes": ["product-card-title", "product-card-lift", "meta", "focus-ring"]
+    },
+    "product-card-hover-image": {
+      "base": {
+        "rounded": "{rounded.none}"
+      }
+    }
+  }
+}

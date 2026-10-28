@@ -1,0 +1,131 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Navigation Menu",
+  "description": "A row of site links where some open a panel of further links, shown in one shared panel below the row that resizes to each; set viewport to false to open each panel under its own trigger. For full-width flyouts with image tiles, use mega-menu.",
+  "recipes": {
+    "navigation-menu": {
+      "base": {
+        "display": "flex",
+        "maxWidth": "max",
+        "flex": "1",
+        "alignItems": "center",
+        "justifyContent": "center"
+      }
+    },
+    "navigation-menu-content": {
+      "base": {
+        "paddingY": "{spacing.2.5}",
+        "paddingStart": "{spacing.2.5}",
+        "paddingEnd": "{spacing.3}",
+        "width": "max"
+      },
+      "variants": {
+        "surface": {
+          "shared": {},
+          "own": {
+            "extends": "overlay",
+            "marginTop": "{spacing.1.5}"
+          }
+        }
+      },
+      "defaults": {
+        "surface": "shared"
+      }
+    },
+    "navigation-menu-indicator": {
+      "base": {
+        "display": "flex",
+        "height": "{spacing.1.5}",
+        "alignItems": "end",
+        "justifyContent": "center"
+      }
+    },
+    "navigation-menu-indicator-arrow": {
+      "base": {
+        "backgroundColor": "{colors.border}",
+        "shadow": "{shadow.md}",
+        "size": "{spacing.2}"
+      }
+    },
+    "navigation-menu-link": {
+      "composes": ["focus-ring"],
+      "base": {
+        "rounded": "{rounded.none}",
+        "typography": "{typography.small}",
+        "gap": "{spacing.1.5}",
+        "padding": "{spacing.3}",
+        "display": "flex",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        },
+        "hover": {
+          "backgroundColor": "{colors.muted}"
+        },
+        "focus": {
+          "backgroundColor": "{colors.muted}"
+        },
+        "current": {
+          "backgroundColor": "{colors.muted/50}"
+        }
+      },
+      "variants": {
+        "place": {
+          "panel": {},
+          "bar": {
+            "typography": "{typography.ui}",
+            "height": "{spacing.9}",
+            "paddingX": "{spacing.4.5}",
+            "paddingY": "{spacing.2.5}"
+          }
+        }
+      },
+      "defaults": {
+        "place": "panel"
+      }
+    },
+    "navigation-menu-list": {
+      "base": {
+        "display": "flex",
+        "flex": "1",
+        "gap": "{spacing.0}",
+        "alignItems": "center",
+        "justifyContent": "center"
+      }
+    },
+    "navigation-menu-trigger": {
+      "composes": ["focus-ring", "disabled"],
+      "base": {
+        "rounded": "{rounded.none}",
+        "typography": "{typography.ui}",
+        "height": "{spacing.9}",
+        "paddingX": "{spacing.4.5}",
+        "paddingY": "{spacing.2.5}",
+        "display": "inline-flex",
+        "width": "max",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3}"
+        },
+        "hover": {
+          "backgroundColor": "{colors.muted}"
+        },
+        "focus": {
+          "backgroundColor": "{colors.muted}"
+        },
+        "open": {
+          "backgroundColor": "{colors.muted/50}"
+        }
+      }
+    },
+    "navigation-menu-viewport": {
+      "base": {
+        "marginTop": "{spacing.1.5}",
+        "extends": "overlay",
+        "height": "viewport",
+        "width": "viewport"
+      }
+    }
+  }
+}

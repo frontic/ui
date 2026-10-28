@@ -1,0 +1,88 @@
+toggle | E ICON | flex-shrink: 0
+toggle | E ICON | height: 14px
+toggle | E ICON | pointer-events: none
+toggle | E ICON | width: 14px
+toggle | E | align-items: center
+toggle | E | background-color: transparent
+toggle | E | border-bottom-color: #a1a1aa [variant=outline]
+toggle | E | border-bottom-color: transparent [variant=default]
+toggle | E | border-bottom-left-radius: 0px
+toggle | E | border-bottom-right-radius: 0px
+toggle | E | border-bottom-style: solid
+toggle | E | border-bottom-width: 1px
+toggle | E | border-left-color: #a1a1aa [variant=outline]
+toggle | E | border-left-color: transparent [variant=default]
+toggle | E | border-left-style: solid
+toggle | E | border-left-width: 1px
+toggle | E | border-right-color: #a1a1aa [variant=outline]
+toggle | E | border-right-color: transparent [variant=default]
+toggle | E | border-right-style: solid
+toggle | E | border-right-width: 1px
+toggle | E | border-top-color: #a1a1aa [variant=outline]
+toggle | E | border-top-color: transparent [variant=default]
+toggle | E | border-top-left-radius: 0px
+toggle | E | border-top-right-radius: 0px
+toggle | E | border-top-style: solid
+toggle | E | border-top-width: 1px
+toggle | E | display: inline-flex
+toggle | E | font-family: 'Inter Variable', Inter, sans-serif
+toggle | E | font-feature-settings: normal
+toggle | E | font-size: 12px
+toggle | E | font-variation-settings: normal
+toggle | E | font-weight: 600
+toggle | E | gap: 6px
+toggle | E | height: 36px [size=sm,icon-sm]
+toggle | E | height: 40px [size=md,icon-md]
+toggle | E | height: 44px [size=lg,icon-lg]
+toggle | E | justify-content: center
+toggle | E | letter-spacing: 0.1em
+toggle | E | line-height: 1.33
+toggle | E | min-width: 36px [size=sm]
+toggle | E | min-width: 40px [size=md]
+toggle | E | min-width: 44px [size=lg]
+toggle | E | outline-style: none
+toggle | E | padding-left: 16px [size=sm]
+toggle | E | padding-left: 24px [size=md]
+toggle | E | padding-left: 32px [size=lg]
+toggle | E | padding-right: 16px [size=sm]
+toggle | E | padding-right: 24px [size=md]
+toggle | E | padding-right: 32px [size=lg]
+toggle | E | text-transform: uppercase
+toggle | E | transition-duration: 150ms
+toggle | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+toggle | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+toggle | E | white-space: nowrap
+toggle | E | width: 36px [size=icon-sm]
+toggle | E | width: 40px [size=icon-md]
+toggle | E | width: 44px [size=icon-lg]
+toggle | E:checked | background-color: #f4f4f5
+toggle | E:checked | border-bottom-color: #09090b
+toggle | E:checked | border-left-color: #09090b
+toggle | E:checked | border-right-color: #09090b
+toggle | E:checked | border-top-color: #09090b
+toggle | E:disabled | opacity: 0.5
+toggle | E:disabled | pointer-events: none
+toggle | E:focus | border-bottom-color: #71717a
+toggle | E:focus | border-left-color: #71717a
+toggle | E:focus | border-right-color: #71717a
+toggle | E:focus | border-top-color: #71717a
+toggle | E:focus | ring: 2px #71717a
+toggle | E:has([data-icon="inline-end"]) | padding-right: 12px [size=sm]
+toggle | E:has([data-icon="inline-end"]) | padding-right: 16px [size=md]
+toggle | E:has([data-icon="inline-end"]) | padding-right: 20px [size=lg]
+toggle | E:has([data-icon="inline-start"]) | padding-left: 12px [size=sm]
+toggle | E:has([data-icon="inline-start"]) | padding-left: 16px [size=md]
+toggle | E:has([data-icon="inline-start"]) | padding-left: 20px [size=lg]
+toggle | E:hover | border-bottom-color: #66666f [variant=outline]
+toggle | E:hover | border-bottom-color: #a1a1aa [variant=default]
+toggle | E:hover | border-left-color: #66666f [variant=outline]
+toggle | E:hover | border-left-color: #a1a1aa [variant=default]
+toggle | E:hover | border-right-color: #66666f [variant=outline]
+toggle | E:hover | border-right-color: #a1a1aa [variant=default]
+toggle | E:hover | border-top-color: #66666f [variant=outline]
+toggle | E:hover | border-top-color: #a1a1aa [variant=default]
+toggle | E:invalid | border-bottom-color: #c70009
+toggle | E:invalid | border-left-color: #c70009
+toggle | E:invalid | border-right-color: #c70009
+toggle | E:invalid | border-top-color: #c70009
+toggle | E:invalid | outline-color: color-mix(in oklab, #c70009 20%, transparent)

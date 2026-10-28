@@ -1,0 +1,30 @@
+kbd | E ICON | height: 12px
+kbd | E ICON | width: 12px
+kbd | E | -webkit-user-select: none
+kbd | E | align-items: center
+kbd | E | background-color: #f4f4f5
+kbd | E | border-bottom-left-radius: 0px
+kbd | E | border-bottom-right-radius: 0px
+kbd | E | border-top-left-radius: 0px
+kbd | E | border-top-right-radius: 0px
+kbd | E | color: #66666f
+kbd | E | display: inline-flex
+kbd | E | font-family: 'Inter Variable', Inter, sans-serif
+kbd | E | font-feature-settings: normal
+kbd | E | font-size: 12px
+kbd | E | font-variation-settings: normal
+kbd | E | font-weight: 500
+kbd | E | gap: 4px
+kbd | E | height: 22px
+kbd | E | justify-content: center
+kbd | E | letter-spacing: normal
+kbd | E | line-height: 1.33
+kbd | E | min-width: 22px
+kbd | E | padding-left: 6px
+kbd | E | padding-right: 6px
+kbd | E | pointer-events: none
+kbd | E | user-select: none
+kbd | E | width: fit-content
+kbd-group | E | align-items: center
+kbd-group | E | display: inline-flex
+kbd-group | E | gap: 4px

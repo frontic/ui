@@ -1,0 +1,126 @@
+SearchSuggestions > [0] | E | display: flex [presentation=overlay]
+SearchSuggestions > [0] | E | flex-direction: column [presentation=overlay]
+SearchSuggestions > [0] | E | flex: 1 [presentation=overlay]
+SearchSuggestions > [0] | E | min-height: 0px [presentation=overlay]
+SearchSuggestions > [1] | E | min-width: 448px [desktop presentation=inline]
+SearchSuggestions > [2] | E | border-bottom-width: 0
+SearchSuggestions > [2] | E | border-left-width: 0
+SearchSuggestions > [2] | E | border-right-width: 0
+SearchSuggestions > [2] | E | border-top-width: 0
+SearchSuggestions > [2] | E | clip-path: inset(50%)
+SearchSuggestions > [2] | E | height: 1px
+SearchSuggestions > [2] | E | margin-bottom: -1px
+SearchSuggestions > [2] | E | margin-left: -1px
+SearchSuggestions > [2] | E | margin-right: -1px
+SearchSuggestions > [2] | E | margin-top: -1px
+SearchSuggestions > [2] | E | overflow: hidden
+SearchSuggestions > [2] | E | padding-bottom: 0
+SearchSuggestions > [2] | E | padding-left: 0
+SearchSuggestions > [2] | E | padding-right: 0
+SearchSuggestions > [2] | E | padding-top: 0
+SearchSuggestions > [2] | E | position: absolute
+SearchSuggestions > [2] | E | white-space: nowrap
+SearchSuggestions > [2] | E | width: 1px
+SearchSuggestions > [3] | E | display: flex
+SearchSuggestions > [3] | E | flex-direction: column
+SearchSuggestions > [3] | E | flex: 1
+SearchSuggestions > [3] | E | gap: 2px
+SearchSuggestions > [3] | E | min-width: 0px
+SearchSuggestions > [4] | E | align-items: flex-end
+SearchSuggestions > [4] | E | display: flex
+SearchSuggestions > [4] | E | flex-direction: column
+SearchSuggestions > [4] | E | flex-shrink: 0
+SearchSuggestions > [4] | E | gap: 4px
+SearchSuggestions > [5] | E | flex: 1
+SearchSuggestions > [6] | E | display: flex
+SearchSuggestions > [6] | E | flex-wrap: wrap
+SearchSuggestions > [6] | E | gap: 8px
+SearchSuggestions > [6] | E | padding-bottom: 8px
+SearchSuggestions > [6] | E | padding-left: 12px
+SearchSuggestions > [6] | E | padding-right: 12px
+SearchSuggestions > [7] | E | container-type: inline-size
+line-title #2 | E | -webkit-box-orient: vertical
+line-title #2 | E | -webkit-hyphens: auto
+line-title #2 | E | -webkit-line-clamp: 2
+line-title #2 | E | display: -webkit-box
+line-title #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title #2 | E | font-feature-settings: normal
+line-title #2 | E | font-size: 14px
+line-title #2 | E | font-variation-settings: normal
+line-title #2 | E | font-weight: 500
+line-title #2 | E | hyphens: auto
+line-title #2 | E | letter-spacing: normal
+line-title #2 | E | line-height: 1.25
+line-title #2 | E | overflow-wrap: break-word
+line-title #2 | E | overflow: hidden
+line-title | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title | E | font-feature-settings: normal
+line-title | E | font-size: 14px
+line-title | E | font-variation-settings: normal
+line-title | E | font-weight: 500
+line-title | E | letter-spacing: normal
+line-title | E | line-height: 1.25
+line-title | E | overflow: hidden
+line-title | E | text-overflow: ellipsis
+line-title | E | white-space: nowrap
+meta #2 | E | color: #66666f
+meta #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #2 | E | font-feature-settings: normal
+meta #2 | E | font-size: 12px
+meta #2 | E | font-variant-numeric: tabular-nums
+meta #2 | E | font-variation-settings: normal
+meta #2 | E | font-weight: 400
+meta #2 | E | letter-spacing: normal
+meta #2 | E | line-height: 1.33
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+meta | E | overflow: hidden
+meta | E | text-overflow: ellipsis
+meta | E | white-space: nowrap
+search-suggestions-image | E | border-bottom-color: #e4e4e7
+search-suggestions-image | E | border-bottom-left-radius: 6.4px
+search-suggestions-image | E | border-bottom-right-radius: 6.4px
+search-suggestions-image | E | border-bottom-style: solid
+search-suggestions-image | E | border-bottom-width: 1px
+search-suggestions-image | E | border-left-color: #e4e4e7
+search-suggestions-image | E | border-left-style: solid
+search-suggestions-image | E | border-left-width: 1px
+search-suggestions-image | E | border-right-color: #e4e4e7
+search-suggestions-image | E | border-right-style: solid
+search-suggestions-image | E | border-right-width: 1px
+search-suggestions-image | E | border-top-color: #e4e4e7
+search-suggestions-image | E | border-top-left-radius: 6.4px
+search-suggestions-image | E | border-top-right-radius: 6.4px
+search-suggestions-image | E | border-top-style: solid
+search-suggestions-image | E | border-top-width: 1px
+search-suggestions-image | E | flex-shrink: 0
+search-suggestions-image | E | height: 48px
+search-suggestions-image | E | object-fit: cover
+search-suggestions-image | E | width: 48px
+search-suggestions-pick > [0] | E | aspect-ratio: 1 / 1
+search-suggestions-pick > [0] | E | object-fit: cover
+search-suggestions-pick > [0] | E | width: 100%
+search-suggestions-pick | E | align-items: stretch
+search-suggestions-pick | E | flex-direction: column
+search-suggestions-pick | E | gap: 8px
+search-suggestions-pick | E | padding-bottom: 8px
+search-suggestions-pick | E | padding-left: 8px
+search-suggestions-pick | E | padding-right: 8px
+search-suggestions-pick | E | padding-top: 8px
+search-suggestions-picks | E > * | flex-shrink: 0
+search-suggestions-picks | E > * | flex: 1 [desktop]
+search-suggestions-picks | E > * | min-width: 0px [desktop]
+search-suggestions-picks | E > * | width: auto [desktop]
+search-suggestions-picks | E > * | width: calc(2 / 5 * 100%) [phone]
+search-suggestions-picks | E | display: flex
+search-suggestions-picks | E | gap: 12px
+search-suggestions-picks | E | overflow-x: auto
+search-suggestions-picks | E | padding-bottom: 8px
+search-suggestions-picks | E | padding-left: 12px
+search-suggestions-picks | E | padding-right: 12px

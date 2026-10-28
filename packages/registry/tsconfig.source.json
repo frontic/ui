@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@registry/icon-placeholder": ["./icon-placeholder/index.ts"],
+      "@library/components/*": ["./*"],
+      "@library/lib/*": ["./lib/*"],
+      "@library/composables/*": ["./composables/*"]
+    }
+  },
+  "include": ["ui", "sections", "templates", "lib", "composables", "icon-placeholder"],
+  "exclude": []
+}

@@ -1,0 +1,84 @@
+table | E | caption-side: bottom
+table | E | font-family: 'Inter Variable', Inter, sans-serif
+table | E | font-feature-settings: normal
+table | E | font-size: 14px
+table | E | font-variation-settings: normal
+table | E | font-weight: 400
+table | E | letter-spacing: normal
+table | E | line-height: 1.43
+table | E | width: 100%
+table-body | E > *:last-child | border-bottom-style: solid
+table-body | E > *:last-child | border-bottom-width: 0px
+table-caption | E | color: #66666f
+table-caption | E | font-family: 'Inter Variable', Inter, sans-serif
+table-caption | E | font-feature-settings: normal
+table-caption | E | font-size: 14px
+table-caption | E | font-variation-settings: normal
+table-caption | E | font-weight: 400
+table-caption | E | letter-spacing: normal
+table-caption | E | line-height: 1.43
+table-caption | E | margin-top: 16px
+table-cell | E | padding-bottom: 12px
+table-cell | E | padding-left: 12px
+table-cell | E | padding-right: 12px
+table-cell | E | padding-top: 12px
+table-cell | E | vertical-align: middle
+table-cell | E | white-space: nowrap
+table-cell | E:has([role="checkbox"]) | padding-right: 0px
+table-container | E | outline-style: none
+table-container | E | overflow-x: auto
+table-container | E | position: relative
+table-container | E | width: 100%
+table-container | E:focus | border-bottom-color: #71717a
+table-container | E:focus | border-left-color: #71717a
+table-container | E:focus | border-right-color: #71717a
+table-container | E:focus | border-top-color: #71717a
+table-container | E:focus | ring: 2px #71717a
+table-empty > [0] | E | align-items: center
+table-empty > [0] | E | display: flex
+table-empty > [0] | E | justify-content: center
+table-empty | E | color: #66666f
+table-empty | E | font-family: 'Inter Variable', Inter, sans-serif
+table-empty | E | font-feature-settings: normal
+table-empty | E | font-size: 14px
+table-empty | E | font-variation-settings: normal
+table-empty | E | font-weight: 400
+table-empty | E | letter-spacing: normal
+table-empty | E | line-height: 1.43
+table-empty | E | padding-bottom: 56px
+table-empty | E | padding-left: 16px
+table-empty | E | padding-right: 16px
+table-empty | E | padding-top: 56px
+table-empty | E | vertical-align: middle
+table-empty | E | white-space: nowrap
+table-footer | E > *:last-child | border-bottom-style: solid
+table-footer | E > *:last-child | border-bottom-width: 0px
+table-footer | E | background-color: color-mix(in oklab, #f4f4f5 50%, transparent)
+table-footer | E | border-top-color: #e4e4e7
+table-footer | E | border-top-style: solid
+table-footer | E | border-top-width: 1px
+table-footer | E | font-weight: 500
+table-head | E | color: #66666f
+table-head | E | font-family: 'Inter Variable', Inter, sans-serif
+table-head | E | font-feature-settings: normal
+table-head | E | font-size: 12px
+table-head | E | font-variation-settings: normal
+table-head | E | font-weight: 500
+table-head | E | height: 48px
+table-head | E | letter-spacing: 0.05em
+table-head | E | line-height: 1.33
+table-head | E | padding-left: 12px
+table-head | E | padding-right: 12px
+table-head | E | text-align: start
+table-head | E | text-transform: uppercase
+table-head | E | vertical-align: middle
+table-head | E | white-space: nowrap
+table-head | E:has([role="checkbox"]) | padding-right: 0px
+table-row | E | border-bottom-color: #e4e4e7
+table-row | E | border-bottom-style: solid
+table-row | E | border-bottom-width: 1px
+table-row | E | transition-duration: 150ms
+table-row | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+table-row | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+table-row | E:hover | background-color: color-mix(in oklab, #f4f4f5 50%, transparent)
+table-row | E:selected | background-color: #f4f4f5

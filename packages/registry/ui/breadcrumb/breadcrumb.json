@@ -1,0 +1,61 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Breadcrumb",
+  "description": "Shows where the current page sits, such as Home / Jackets / Rain jackets, with links up the trail and an ellipsis for steps it hides.",
+  "recipes": {
+    "breadcrumb-ellipsis": {
+      "base": {
+        "size": "{spacing.5}",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.4}"
+        }
+      }
+    },
+    "breadcrumb-item": {
+      "base": {
+        "gap": "{spacing.1.5}",
+        "display": "inline-flex",
+        "alignItems": "center"
+      }
+    },
+    "breadcrumb-link": {
+      "base": {
+        "hover": {
+          "textColor": "{colors.foreground}"
+        }
+      }
+    },
+    "breadcrumb-list": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.caption}",
+        "fontWeight": "normal",
+        "textTransform": "uppercase",
+        "letterSpacing": "wide",
+        "gap": "{spacing.1.5}",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "alignItems": "center",
+        "@md": {
+          "gap": "{spacing.2.5}"
+        }
+      }
+    },
+    "breadcrumb-page": {
+      "base": {
+        "textColor": "{colors.foreground}",
+        "fontWeight": "normal"
+      }
+    },
+    "breadcrumb-separator": {
+      "base": {
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    }
+  }
+}

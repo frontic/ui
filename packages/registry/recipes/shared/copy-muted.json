@@ -1,0 +1,6 @@
+{
+  "copy-muted": {
+    "textColor": "{colors.muted-foreground}",
+    "typography": "{typography.copy}"
+  }
+}

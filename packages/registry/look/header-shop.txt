@@ -1,0 +1,76 @@
+header-shop | E | container-type: inline-size
+header-shop | E | position: sticky
+header-shop | E | top: 0px
+header-shop | E | width: 100%
+header-shop | E | z-index: 50
+header-shop-announcement > [0] | E | align-items: center
+header-shop-announcement > [0] | E | display: flex
+header-shop-announcement > [0] | E | height: 32px
+header-shop-announcement > [0] | E | justify-content: center
+header-shop-announcement > [0] | E | margin-left: auto
+header-shop-announcement > [0] | E | margin-right: auto
+header-shop-announcement > [0] | E | max-width: 1536px
+header-shop-announcement > [0] | E | padding-left: 16px [phone]
+header-shop-announcement > [0] | E | padding-left: 32px [desktop]
+header-shop-announcement > [0] | E | padding-right: 16px [phone]
+header-shop-announcement > [0] | E | padding-right: 32px [desktop]
+header-shop-announcement > [0] | E | width: 100%
+header-shop-announcement | E | background-color: #09090b
+header-shop-announcement | E | color: #ffffff
+header-shop-announcement | E | font-family: 'Inter Variable', Inter, sans-serif
+header-shop-announcement | E | font-feature-settings: normal
+header-shop-announcement | E | font-size: 12px
+header-shop-announcement | E | font-variation-settings: normal
+header-shop-announcement | E | font-weight: 400
+header-shop-announcement | E | letter-spacing: 0.025em
+header-shop-announcement | E | line-height: 1.33
+header-shop-bar > [0] | E | align-items: center
+header-shop-bar > [0] | E | display: flex
+header-shop-bar > [0] | E | gap: 24px
+header-shop-bar > [0] | E | height: 56px
+header-shop-bar > [0] | E | justify-content: space-between
+header-shop-bar > [0] | E | margin-left: auto
+header-shop-bar > [0] | E | margin-right: auto
+header-shop-bar > [0] | E | max-width: 1536px
+header-shop-bar > [0] | E | padding-left: 16px [phone]
+header-shop-bar > [0] | E | padding-left: 32px [desktop]
+header-shop-bar > [0] | E | padding-right: 16px [phone]
+header-shop-bar > [0] | E | padding-right: 32px [desktop]
+header-shop-bar > [0] | E | width: 100%
+header-shop-bar > [1] | E | flex: 1
+header-shop-bar > [2] | E | display: block [desktop]
+header-shop-bar > [2] | E | display: none [phone]
+header-shop-bar > [2] | E | width: 256px
+header-shop-bar > [3] | E | align-items: center
+header-shop-bar > [3] | E | display: flex
+header-shop-bar > [3] | E | gap: 4px
+header-shop-bar > [4] | E | display: flex [phone]
+header-shop-bar > [4] | E | display: none [desktop]
+header-shop-bar > [5] | E | display: flex [desktop]
+header-shop-bar > [5] | E | display: none [phone]
+header-shop-bar > [6] | E | position: relative
+header-shop-bar > [7] | E | inset-inline-end: -4px
+header-shop-bar > [7] | E | position: absolute
+header-shop-bar > [7] | E | top: -4px
+header-shop-bar | E | background-color: #ffffff
+header-shop-bar | E | border-bottom-color: #e4e4e7
+header-shop-bar | E | border-bottom-style: solid
+header-shop-bar | E | border-bottom-width: 1px
+header-shop-bar | E | border-left-color: #e4e4e7
+header-shop-bar | E | border-right-color: #e4e4e7
+header-shop-bar | E | border-top-color: #e4e4e7
+logo > [0] | E | height: 32px
+logo > [0] | E | width: auto
+logo | E | font-family: 'Inter Variable', Inter, sans-serif
+logo | E | font-feature-settings: normal
+logo | E | font-size: 20px
+logo | E | font-variation-settings: normal
+logo | E | font-weight: 700
+logo | E | letter-spacing: -0.025em
+logo | E | line-height: 28px
+logo | E | outline-style: none
+logo | E:focus | border-bottom-color: #71717a
+logo | E:focus | border-left-color: #71717a
+logo | E:focus | border-right-color: #71717a
+logo | E:focus | border-top-color: #71717a
+logo | E:focus | ring: 2px #71717a

@@ -1,0 +1,24 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Footer Trust",
+  "description": "Footer with four trust points, payment method badges and legal links.",
+  "categories": ["footer"],
+  "recipes": {
+    "footer-trust": {
+      "composes": ["section-title", "meta", "hint", "link", "focus-ring"],
+      "base": {
+        "width": "full"
+      }
+    },
+    "footer-trust-icon": {
+      "base": {
+        "backgroundColor": "{colors.muted}",
+        "rounded": "{rounded.full}",
+        "size": "{spacing.10}",
+        "icon": {
+          "size": "{spacing.5}"
+        }
+      }
+    }
+  }
+}

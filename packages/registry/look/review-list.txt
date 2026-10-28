@@ -1,0 +1,89 @@
+copy-muted | E | color: #66666f
+copy-muted | E | font-family: 'Inter Variable', Inter, sans-serif
+copy-muted | E | font-feature-settings: normal
+copy-muted | E | font-size: 14px
+copy-muted | E | font-variation-settings: normal
+copy-muted | E | font-weight: 400
+copy-muted | E | letter-spacing: normal
+copy-muted | E | line-height: 24px
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+review-list > [0] | E | margin-left: auto
+review-list > [0] | E | margin-right: auto
+review-list > [0] | E | max-width: 672px [phone]
+review-list > [0] | E | max-width: 896px [desktop]
+review-list > [0] | E | padding-bottom: 48px [phone]
+review-list > [0] | E | padding-bottom: 64px [desktop]
+review-list > [0] | E | padding-left: 16px [phone]
+review-list > [0] | E | padding-left: 32px [desktop]
+review-list > [0] | E | padding-right: 16px [phone]
+review-list > [0] | E | padding-right: 32px [desktop]
+review-list > [0] | E | padding-top: 48px [phone]
+review-list > [0] | E | padding-top: 64px [desktop]
+review-list > [1] | E | border-bottom-width: 0
+review-list > [1] | E | border-left-width: 0
+review-list > [1] | E | border-right-width: 0
+review-list > [1] | E | border-top-width: 0
+review-list > [1] | E | clip-path: inset(50%)
+review-list > [1] | E | height: 1px
+review-list > [1] | E | margin-bottom: -1px
+review-list > [1] | E | margin-left: -1px
+review-list > [1] | E | margin-right: -1px
+review-list > [1] | E | margin-top: -1px
+review-list > [1] | E | overflow: hidden
+review-list > [1] | E | padding-bottom: 0
+review-list > [1] | E | padding-left: 0
+review-list > [1] | E | padding-right: 0
+review-list > [1] | E | padding-top: 0
+review-list > [1] | E | position: absolute
+review-list > [1] | E | white-space: nowrap
+review-list > [1] | E | width: 1px
+review-list > [2] | E | margin-bottom: -32px
+review-list > [2] | E | margin-top: -32px
+review-list > [3] | E | display: flex
+review-list > [3] | E | gap: 16px
+review-list > [4] | E | flex-shrink: 0
+review-list > [4] | E | padding-bottom: 32px
+review-list > [4] | E | padding-top: 32px
+review-list > [5] | E | flex: 1
+review-list > [5] | E | min-width: 0px
+review-list > [6] | E | display: flex
+review-list > [6] | E | flex-direction: column
+review-list > [6] | E | gap: 12px
+review-list > [6] | E | padding-bottom: 32px
+review-list > [6] | E | padding-top: 32px
+review-list > [7] | E | display: flex
+review-list > [7] | E | flex-direction: column
+review-list > [7] | E | gap: 4px
+review-list > [8] | E | align-items: baseline
+review-list > [8] | E | column-gap: 12px
+review-list > [8] | E | display: flex
+review-list > [8] | E | flex-wrap: wrap
+review-list > [8] | E | justify-content: space-between
+review-list > [9] | E | align-items: center
+review-list > [9] | E | display: flex
+review-list > [9] | E | flex-wrap: wrap
+review-list > [9] | E | gap: 8px
+review-list | E | container-type: inline-size
+review-list | E | width: 100%
+section-title | E | font-family: 'Inter Variable', Inter, sans-serif
+section-title | E | font-feature-settings: normal
+section-title | E | font-size: 14px
+section-title | E | font-variation-settings: normal
+section-title | E | font-weight: 600
+section-title | E | letter-spacing: normal
+section-title | E | line-height: 1.43

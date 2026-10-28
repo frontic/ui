@@ -1,0 +1,86 @@
+mega-menu | E | position: relative
+mega-menu | E | width: 100%
+mega-menu-content | E | background-color: #ffffff
+mega-menu-content | E | border-bottom-color: #e4e4e7
+mega-menu-content | E | border-left-color: #e4e4e7
+mega-menu-content | E | border-right-color: #e4e4e7
+mega-menu-content | E | border-top-color: #e4e4e7
+mega-menu-content | E | border-top-style: solid
+mega-menu-content | E | border-top-width: 1px
+mega-menu-content | E | inset-inline: 0px
+mega-menu-content | E | position: absolute
+mega-menu-content | E | top: 0px
+mega-menu-content | E | width: 100%
+mega-menu-content | E:where([data-motion="from-end"]):where(:dir(ltr), [dir="ltr"], [dir="ltr"]*) | --tw-enter-translate-x: calc(8*4px)
+mega-menu-content | E:where([data-motion="from-end"]):where(:dir(rtl), [dir="rtl"], [dir="rtl"]*) | --tw-enter-translate-x: calc(8*4px*-1)
+mega-menu-content | E:where([data-motion="from-start"]):where(:dir(ltr), [dir="ltr"], [dir="ltr"]*) | --tw-enter-translate-x: calc(8*4px*-1)
+mega-menu-content | E:where([data-motion="from-start"]):where(:dir(rtl), [dir="rtl"], [dir="rtl"]*) | --tw-enter-translate-x: calc(8*4px)
+mega-menu-content | E:where([data-motion="to-end"]):where(:dir(ltr), [dir="ltr"], [dir="ltr"]*) | --tw-exit-translate-x: calc(8*4px)
+mega-menu-content | E:where([data-motion="to-end"]):where(:dir(rtl), [dir="rtl"], [dir="rtl"]*) | --tw-exit-translate-x: calc(8*4px*-1)
+mega-menu-content | E:where([data-motion="to-start"]):where(:dir(ltr), [dir="ltr"], [dir="ltr"]*) | --tw-exit-translate-x: calc(8*4px*-1)
+mega-menu-content | E:where([data-motion="to-start"]):where(:dir(rtl), [dir="rtl"], [dir="rtl"]*) | --tw-exit-translate-x: calc(8*4px)
+mega-menu-content | E:where([data-motion^="from-"]) | --tw-enter-opacity: 0
+mega-menu-content | E:where([data-motion^="from-"]) | animation: enter .15s ease 0s 1 normal none
+mega-menu-content | E:where([data-motion^="to-"]) | --tw-exit-opacity: 0
+mega-menu-content | E:where([data-motion^="to-"]) | animation: exit .15s ease 0s 1 normal none
+mega-menu-item | E | display: flex
+mega-menu-item | E | position: static
+mega-menu-link | E | outline-style: none
+mega-menu-link | E | transition-duration: 150ms
+mega-menu-link | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+mega-menu-link | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+mega-menu-link | E:focus | border-bottom-color: #71717a
+mega-menu-link | E:focus | border-left-color: #71717a
+mega-menu-link | E:focus | border-right-color: #71717a
+mega-menu-link | E:focus | border-top-color: #71717a
+mega-menu-link | E:focus | ring: 2px #71717a
+mega-menu-list | E | align-items: center
+mega-menu-list | E | display: flex
+mega-menu-list | E | gap: 4px
+mega-menu-list | E | height: 100%
+mega-menu-list | E | list-style-type: none
+mega-menu-trigger > [0] | E | margin-left: 4px
+mega-menu-trigger > [0] | E | position: relative
+mega-menu-trigger > [0] | E | top: 1px
+mega-menu-trigger > [0] | E | transition-duration: 300ms
+mega-menu-trigger > [0] | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events
+mega-menu-trigger > [0] | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+mega-menu-trigger > [0] | E:is(:where(GROUP):open *) | rotate: 180deg
+mega-menu-trigger | E ICON | height: 12px
+mega-menu-trigger | E ICON | width: 12px
+mega-menu-trigger | E | align-items: center
+mega-menu-trigger | E | display: inline-flex
+mega-menu-trigger | E | font-family: 'Inter Variable', Inter, sans-serif
+mega-menu-trigger | E | font-feature-settings: normal
+mega-menu-trigger | E | font-size: 14px
+mega-menu-trigger | E | font-variation-settings: normal
+mega-menu-trigger | E | font-weight: 500
+mega-menu-trigger | E | justify-content: center
+mega-menu-trigger | E | letter-spacing: normal
+mega-menu-trigger | E | line-height: 1.43
+mega-menu-trigger | E | outline-style: none
+mega-menu-trigger | E | transition-duration: 150ms
+mega-menu-trigger | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+mega-menu-trigger | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+mega-menu-trigger | E:focus | border-bottom-color: #71717a
+mega-menu-trigger | E:focus | border-left-color: #71717a
+mega-menu-trigger | E:focus | border-right-color: #71717a
+mega-menu-trigger | E:focus | border-top-color: #71717a
+mega-menu-trigger | E:focus | ring: 2px #71717a
+mega-menu-viewport | E | box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 0.1), 0px 4px 6px -4px rgb(0 0 0 / 0.1)
+mega-menu-viewport | E | height: unset
+mega-menu-viewport | E | inset-inline: 0px
+mega-menu-viewport | E | overflow: hidden
+mega-menu-viewport | E | position: absolute
+mega-menu-viewport | E | top: 100%
+mega-menu-viewport | E | transform-origin: top
+mega-menu-viewport | E | transition-duration: 200ms
+mega-menu-viewport | E | transition-property: all
+mega-menu-viewport | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+mega-menu-viewport | E | z-index: 50
+mega-menu-viewport | E:closed | --tw-exit-opacity: 0
+mega-menu-viewport | E:closed | --tw-exit-scale: calc(98*1%)
+mega-menu-viewport | E:closed | animation: exit 200ms ease 0s 1 normal none
+mega-menu-viewport | E:open | --tw-enter-opacity: 0
+mega-menu-viewport | E:open | --tw-enter-scale: calc(98*1%)
+mega-menu-viewport | E:open | animation: enter 200ms ease 0s 1 normal none

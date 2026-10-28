@@ -1,0 +1,10 @@
+{
+  "control-line": {
+    "file": {
+      "backgroundColor": "transparent",
+      "border": "none",
+      "textColor": "{colors.foreground}",
+      "typography": "{typography.ui}"
+    }
+  }
+}

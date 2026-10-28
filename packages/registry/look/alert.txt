@@ -1,0 +1,110 @@
+alert | E > * | grid-column-start: 2
+alert | E ICON | color: #12883e [variant=success]
+alert | E ICON | color: #2563eb [variant=info]
+alert | E ICON | color: #d97706 [variant=warning]
+alert | E ICON | grid-column-start: 1
+alert | E ICON | grid-row: span 2 / span 2
+alert | E ICON | height: 16px
+alert | E ICON | margin-right: 6px
+alert | E ICON | translate: 0 2px
+alert | E ICON | width: 16px
+alert | E | background-color: #ffffff
+alert | E | border-bottom-color: #12883e [variant=success]
+alert | E | border-bottom-color: #2563eb [variant=info]
+alert | E | border-bottom-color: #d97706 [variant=warning]
+alert | E | border-bottom-color: #e4e4e7 [variant=neutral,error]
+alert | E | border-bottom-left-radius: 0px
+alert | E | border-bottom-right-radius: 0px
+alert | E | border-bottom-style: solid
+alert | E | border-bottom-width: 1px
+alert | E | border-left-color: #12883e [variant=success]
+alert | E | border-left-color: #2563eb [variant=info]
+alert | E | border-left-color: #d97706 [variant=warning]
+alert | E | border-left-color: #e4e4e7 [variant=neutral,error]
+alert | E | border-left-style: solid
+alert | E | border-left-width: 1px
+alert | E | border-right-color: #12883e [variant=success]
+alert | E | border-right-color: #2563eb [variant=info]
+alert | E | border-right-color: #d97706 [variant=warning]
+alert | E | border-right-color: #e4e4e7 [variant=neutral,error]
+alert | E | border-right-style: solid
+alert | E | border-right-width: 1px
+alert | E | border-top-color: #12883e [variant=success]
+alert | E | border-top-color: #2563eb [variant=info]
+alert | E | border-top-color: #d97706 [variant=warning]
+alert | E | border-top-color: #e4e4e7 [variant=neutral,error]
+alert | E | border-top-left-radius: 0px
+alert | E | border-top-right-radius: 0px
+alert | E | border-top-style: solid
+alert | E | border-top-width: 1px
+alert | E | color: #09090b [variant=neutral,info,success,warning]
+alert | E | color: #c70009 [variant=error]
+alert | E | display: grid
+alert | E | font-family: 'Inter Variable', Inter, sans-serif
+alert | E | font-feature-settings: normal
+alert | E | font-size: 14px
+alert | E | font-variation-settings: normal
+alert | E | font-weight: 400
+alert | E | gap: 4px
+alert | E | justify-content: flex-start
+alert | E | letter-spacing: normal
+alert | E | line-height: 1.43
+alert | E | padding-bottom: 12px
+alert | E | padding-left: 16px
+alert | E | padding-right: 16px
+alert | E | padding-top: 12px
+alert | E | position: relative
+alert | E | text-align: start
+alert | E | width: 100%
+alert | E::after | border-bottom-color: #09090b [variant=neutral]
+alert | E::after | border-bottom-color: #12883e [variant=success]
+alert | E::after | border-bottom-color: #2563eb [variant=info]
+alert | E::after | border-bottom-color: #c70009 [variant=error]
+alert | E::after | border-bottom-color: #d97706 [variant=warning]
+alert | E::after | border-inline-start: 2px solid #71717a
+alert | E::after | border-left-color: #09090b [variant=neutral]
+alert | E::after | border-left-color: #12883e [variant=success]
+alert | E::after | border-left-color: #2563eb [variant=info]
+alert | E::after | border-left-color: #c70009 [variant=error]
+alert | E::after | border-left-color: #d97706 [variant=warning]
+alert | E::after | border-right-color: #09090b [variant=neutral]
+alert | E::after | border-right-color: #12883e [variant=success]
+alert | E::after | border-right-color: #2563eb [variant=info]
+alert | E::after | border-right-color: #c70009 [variant=error]
+alert | E::after | border-right-color: #d97706 [variant=warning]
+alert | E::after | border-top-color: #09090b [variant=neutral]
+alert | E::after | border-top-color: #12883e [variant=success]
+alert | E::after | border-top-color: #2563eb [variant=info]
+alert | E::after | border-top-color: #c70009 [variant=error]
+alert | E::after | border-top-color: #d97706 [variant=warning]
+alert | E::after | content: ""
+alert | E::after | inset-block: -1px
+alert | E::after | inset-inline-start: -1px
+alert | E::after | position: absolute
+alert-action | E | inset-inline-end: 12px
+alert-action | E | position: absolute
+alert-action | E | top: 10px
+alert-description | E a | text-decoration-line: underline
+alert-description | E a:hover | color: #09090b
+alert-description | E p:not(:last-child) | margin-bottom: 16px
+alert-description | E | color: #66666f [variant=neutral,info,success,warning]
+alert-description | E | color: color-mix(in oklab, #c70009 90%, transparent) [variant=error]
+alert-description | E | font-family: 'Inter Variable', Inter, sans-serif
+alert-description | E | font-feature-settings: normal
+alert-description | E | font-size: 14px
+alert-description | E | font-variation-settings: normal
+alert-description | E | font-weight: 400
+alert-description | E | letter-spacing: normal
+alert-description | E | line-height: 1.43
+alert-description | E | text-wrap: balance
+alert-description | E:is(:where(GROUP):has([data-alert-action]) *) | margin-right: 72px
+alert-title | E a | text-decoration-line: underline
+alert-title | E a:hover | color: #09090b
+alert-title | E | font-family: 'Inter Variable', Inter, sans-serif
+alert-title | E | font-feature-settings: normal
+alert-title | E | font-size: 14px
+alert-title | E | font-variation-settings: normal
+alert-title | E | font-weight: 600
+alert-title | E | letter-spacing: normal
+alert-title | E | line-height: 1.43
+alert-title | E:is(:where(GROUP):has([data-alert-action]) *) | margin-right: 72px

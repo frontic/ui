@@ -1,0 +1,17 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Delivery Slot",
+  "description": "Delivery card with standard and express tabs, a calendar of bookable days, a row of time windows with booked-out ones named, the chosen slot with its price, and a confirm button that asks for a day and a window before standard delivery.",
+  "categories": ["checkout"],
+  "recipes": {
+    "delivery-slot": {
+      "composes": ["hint"]
+    },
+    "delivery-slot-price": {
+      "base": {
+        "extends": "note-positive",
+        "typography": "{typography.ui}"
+      }
+    }
+  }
+}

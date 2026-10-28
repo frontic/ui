@@ -1,0 +1,14 @@
+{
+  "calendar-day-fill": {
+    "backgroundColor": "{colors.primary}",
+    "textColor": "{colors.primary-foreground}",
+    "hover": {
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.primary-foreground}"
+    },
+    "focus": {
+      "backgroundColor": "{colors.primary}",
+      "textColor": "{colors.primary-foreground}"
+    }
+  }
+}

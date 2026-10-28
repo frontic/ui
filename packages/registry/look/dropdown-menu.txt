@@ -1,0 +1,231 @@
+dropdown-menu-checkbox-item | E ICON | flex-shrink: 0
+dropdown-menu-checkbox-item | E ICON | height: 14px
+dropdown-menu-checkbox-item | E ICON | pointer-events: none
+dropdown-menu-checkbox-item | E ICON | width: 14px
+dropdown-menu-checkbox-item | E | -webkit-user-select: none
+dropdown-menu-checkbox-item | E | align-items: center
+dropdown-menu-checkbox-item | E | border-bottom-left-radius: 0px
+dropdown-menu-checkbox-item | E | border-bottom-right-radius: 0px
+dropdown-menu-checkbox-item | E | border-top-left-radius: 0px
+dropdown-menu-checkbox-item | E | border-top-right-radius: 0px
+dropdown-menu-checkbox-item | E | cursor: default
+dropdown-menu-checkbox-item | E | display: flex
+dropdown-menu-checkbox-item | E | font-family: 'Inter Variable', Inter, sans-serif
+dropdown-menu-checkbox-item | E | font-feature-settings: normal
+dropdown-menu-checkbox-item | E | font-size: 14px
+dropdown-menu-checkbox-item | E | font-variation-settings: normal
+dropdown-menu-checkbox-item | E | font-weight: 400
+dropdown-menu-checkbox-item | E | gap: 10px
+dropdown-menu-checkbox-item | E | letter-spacing: normal
+dropdown-menu-checkbox-item | E | line-height: 1.43
+dropdown-menu-checkbox-item | E | outline-style: none
+dropdown-menu-checkbox-item | E | padding-bottom: 8px
+dropdown-menu-checkbox-item | E | padding-left: 12px
+dropdown-menu-checkbox-item | E | padding-right: 32px
+dropdown-menu-checkbox-item | E | padding-top: 8px
+dropdown-menu-checkbox-item | E | position: relative
+dropdown-menu-checkbox-item | E | user-select: none
+dropdown-menu-checkbox-item | E:disabled | opacity: 0.5
+dropdown-menu-checkbox-item | E:disabled | pointer-events: none
+dropdown-menu-checkbox-item | E:focus | background-color: #f4f4f5
+dropdown-menu-checkbox-item | E:focus | color: #18181b
+dropdown-menu-checkbox-item-indicator | E | align-items: center
+dropdown-menu-checkbox-item-indicator | E | display: flex
+dropdown-menu-checkbox-item-indicator | E | inset-inline-end: 8px
+dropdown-menu-checkbox-item-indicator | E | justify-content: center
+dropdown-menu-checkbox-item-indicator | E | pointer-events: none
+dropdown-menu-checkbox-item-indicator | E | position: absolute
+dropdown-menu-content | E | background-color: #ffffff
+dropdown-menu-content | E | border-bottom-left-radius: 0px
+dropdown-menu-content | E | border-bottom-right-radius: 0px
+dropdown-menu-content | E | border-top-left-radius: 0px
+dropdown-menu-content | E | border-top-right-radius: 0px
+dropdown-menu-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+dropdown-menu-content | E | color: #09090b
+dropdown-menu-content | E | max-height: unset
+dropdown-menu-content | E | min-width: 192px
+dropdown-menu-content | E | overflow-x: hidden
+dropdown-menu-content | E | overflow-y: auto
+dropdown-menu-content | E | padding-bottom: 6px
+dropdown-menu-content | E | padding-left: 6px
+dropdown-menu-content | E | padding-right: 6px
+dropdown-menu-content | E | padding-top: 6px
+dropdown-menu-content | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent)
+dropdown-menu-content | E | transform-origin: unset
+dropdown-menu-content | E | transition-duration: 100ms
+dropdown-menu-content | E | width: unset
+dropdown-menu-content | E | z-index: 50
+dropdown-menu-content | E:closed | --tw-exit-opacity: 0
+dropdown-menu-content | E:closed | --tw-exit-scale: .95
+dropdown-menu-content | E:closed | animation: exit 100ms ease 0s 1 normal none
+dropdown-menu-content | E:closed | overflow: hidden
+dropdown-menu-content | E:open | --tw-enter-opacity: 0
+dropdown-menu-content | E:open | --tw-enter-scale: .95
+dropdown-menu-content | E:open | animation: enter 100ms ease 0s 1 normal none
+dropdown-menu-content | E:where([data-side="bottom"]) | --tw-enter-translate-y: calc(2*4px*-1)
+dropdown-menu-content | E:where([data-side="left"]) | --tw-enter-translate-x: calc(2*4px)
+dropdown-menu-content | E:where([data-side="right"]) | --tw-enter-translate-x: calc(2*4px*-1)
+dropdown-menu-content | E:where([data-side="top"]) | --tw-enter-translate-y: calc(2*4px)
+dropdown-menu-item | E ICON | color: #c70009 [color=destructive]
+dropdown-menu-item | E ICON | flex-shrink: 0
+dropdown-menu-item | E ICON | height: 14px
+dropdown-menu-item | E ICON | pointer-events: none
+dropdown-menu-item | E ICON | width: 14px
+dropdown-menu-item | E | -webkit-user-select: none
+dropdown-menu-item | E | align-items: center
+dropdown-menu-item | E | border-bottom-left-radius: 0px
+dropdown-menu-item | E | border-bottom-right-radius: 0px
+dropdown-menu-item | E | border-top-left-radius: 0px
+dropdown-menu-item | E | border-top-right-radius: 0px
+dropdown-menu-item | E | color: #c70009 [color=destructive]
+dropdown-menu-item | E | cursor: default
+dropdown-menu-item | E | display: flex
+dropdown-menu-item | E | font-family: 'Inter Variable', Inter, sans-serif
+dropdown-menu-item | E | font-feature-settings: normal
+dropdown-menu-item | E | font-size: 14px
+dropdown-menu-item | E | font-variation-settings: normal
+dropdown-menu-item | E | font-weight: 400
+dropdown-menu-item | E | gap: 10px
+dropdown-menu-item | E | letter-spacing: normal
+dropdown-menu-item | E | line-height: 1.43
+dropdown-menu-item | E | outline-style: none
+dropdown-menu-item | E | padding-bottom: 8px
+dropdown-menu-item | E | padding-left: 12px [inset=false]
+dropdown-menu-item | E | padding-left: 38px [inset=true]
+dropdown-menu-item | E | padding-right: 12px
+dropdown-menu-item | E | padding-top: 8px
+dropdown-menu-item | E | position: relative
+dropdown-menu-item | E | user-select: none
+dropdown-menu-item | E:disabled | opacity: 0.5
+dropdown-menu-item | E:disabled | pointer-events: none
+dropdown-menu-item | E:focus | background-color: #f4f4f5 [color=neutral]
+dropdown-menu-item | E:focus | background-color: color-mix(in oklab, #c70009 10%, transparent) [color=destructive]
+dropdown-menu-item | E:focus | color: #18181b [color=neutral]
+dropdown-menu-item | E:focus | color: #c70009 [color=destructive]
+dropdown-menu-label | E | color: #66666f
+dropdown-menu-label | E | font-family: 'Inter Variable', Inter, sans-serif
+dropdown-menu-label | E | font-feature-settings: normal
+dropdown-menu-label | E | font-size: 12px
+dropdown-menu-label | E | font-variation-settings: normal
+dropdown-menu-label | E | font-weight: 600
+dropdown-menu-label | E | letter-spacing: 0.05em
+dropdown-menu-label | E | line-height: 1.33
+dropdown-menu-label | E | padding-bottom: 8px
+dropdown-menu-label | E | padding-left: 12px [inset=false]
+dropdown-menu-label | E | padding-left: 38px [inset=true]
+dropdown-menu-label | E | padding-right: 12px
+dropdown-menu-label | E | padding-top: 8px
+dropdown-menu-label | E | text-transform: uppercase
+dropdown-menu-radio-item | E ICON | flex-shrink: 0
+dropdown-menu-radio-item | E ICON | height: 14px
+dropdown-menu-radio-item | E ICON | pointer-events: none
+dropdown-menu-radio-item | E ICON | width: 14px
+dropdown-menu-radio-item | E | -webkit-user-select: none
+dropdown-menu-radio-item | E | align-items: center
+dropdown-menu-radio-item | E | border-bottom-left-radius: 0px
+dropdown-menu-radio-item | E | border-bottom-right-radius: 0px
+dropdown-menu-radio-item | E | border-top-left-radius: 0px
+dropdown-menu-radio-item | E | border-top-right-radius: 0px
+dropdown-menu-radio-item | E | cursor: default
+dropdown-menu-radio-item | E | display: flex
+dropdown-menu-radio-item | E | font-family: 'Inter Variable', Inter, sans-serif
+dropdown-menu-radio-item | E | font-feature-settings: normal
+dropdown-menu-radio-item | E | font-size: 14px
+dropdown-menu-radio-item | E | font-variation-settings: normal
+dropdown-menu-radio-item | E | font-weight: 400
+dropdown-menu-radio-item | E | gap: 10px
+dropdown-menu-radio-item | E | letter-spacing: normal
+dropdown-menu-radio-item | E | line-height: 1.43
+dropdown-menu-radio-item | E | outline-style: none
+dropdown-menu-radio-item | E | padding-bottom: 8px
+dropdown-menu-radio-item | E | padding-left: 12px
+dropdown-menu-radio-item | E | padding-right: 32px
+dropdown-menu-radio-item | E | padding-top: 8px
+dropdown-menu-radio-item | E | position: relative
+dropdown-menu-radio-item | E | user-select: none
+dropdown-menu-radio-item | E:disabled | opacity: 0.5
+dropdown-menu-radio-item | E:disabled | pointer-events: none
+dropdown-menu-radio-item | E:focus | background-color: #f4f4f5
+dropdown-menu-radio-item | E:focus | color: #18181b
+dropdown-menu-radio-item-indicator | E | align-items: center
+dropdown-menu-radio-item-indicator | E | display: flex
+dropdown-menu-radio-item-indicator | E | inset-inline-end: 8px
+dropdown-menu-radio-item-indicator | E | justify-content: center
+dropdown-menu-radio-item-indicator | E | pointer-events: none
+dropdown-menu-radio-item-indicator | E | position: absolute
+dropdown-menu-separator | E | background-color: color-mix(in oklab, #e4e4e7 50%, transparent)
+dropdown-menu-separator | E | height: 1px
+dropdown-menu-separator | E | margin-bottom: 6px
+dropdown-menu-separator | E | margin-left: -6px
+dropdown-menu-separator | E | margin-right: -6px
+dropdown-menu-separator | E | margin-top: 6px
+dropdown-menu-shortcut | E | color: #66666f
+dropdown-menu-shortcut | E | font-family: 'Inter Variable', Inter, sans-serif
+dropdown-menu-shortcut | E | font-feature-settings: normal
+dropdown-menu-shortcut | E | font-size: 12px
+dropdown-menu-shortcut | E | font-variation-settings: normal
+dropdown-menu-shortcut | E | font-weight: 400
+dropdown-menu-shortcut | E | letter-spacing: 0.1em
+dropdown-menu-shortcut | E | line-height: 1.33
+dropdown-menu-shortcut | E | margin-left: auto
+dropdown-menu-sub-content | E | background-color: #ffffff
+dropdown-menu-sub-content | E | border-bottom-left-radius: 0px
+dropdown-menu-sub-content | E | border-bottom-right-radius: 0px
+dropdown-menu-sub-content | E | border-top-left-radius: 0px
+dropdown-menu-sub-content | E | border-top-right-radius: 0px
+dropdown-menu-sub-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+dropdown-menu-sub-content | E | color: #09090b
+dropdown-menu-sub-content | E | max-width: unset
+dropdown-menu-sub-content | E | min-width: 144px
+dropdown-menu-sub-content | E | overflow: hidden
+dropdown-menu-sub-content | E | padding-bottom: 6px
+dropdown-menu-sub-content | E | padding-left: 6px
+dropdown-menu-sub-content | E | padding-right: 6px
+dropdown-menu-sub-content | E | padding-top: 6px
+dropdown-menu-sub-content | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent)
+dropdown-menu-sub-content | E | transform-origin: unset
+dropdown-menu-sub-content | E | transition-duration: 100ms
+dropdown-menu-sub-content | E | z-index: 50
+dropdown-menu-sub-content | E:closed | --tw-exit-opacity: 0
+dropdown-menu-sub-content | E:closed | --tw-exit-scale: .95
+dropdown-menu-sub-content | E:closed | animation: exit 100ms ease 0s 1 normal none
+dropdown-menu-sub-content | E:open | --tw-enter-opacity: 0
+dropdown-menu-sub-content | E:open | --tw-enter-scale: .95
+dropdown-menu-sub-content | E:open | animation: enter 100ms ease 0s 1 normal none
+dropdown-menu-sub-content | E:where([data-side="bottom"]) | --tw-enter-translate-y: calc(2*4px*-1)
+dropdown-menu-sub-content | E:where([data-side="left"]) | --tw-enter-translate-x: calc(2*4px)
+dropdown-menu-sub-content | E:where([data-side="right"]) | --tw-enter-translate-x: calc(2*4px*-1)
+dropdown-menu-sub-content | E:where([data-side="top"]) | --tw-enter-translate-y: calc(2*4px)
+dropdown-menu-sub-trigger > [0] | E | margin-left: auto
+dropdown-menu-sub-trigger > [0] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | rotate: 180deg
+dropdown-menu-sub-trigger | E ICON | flex-shrink: 0
+dropdown-menu-sub-trigger | E ICON | height: 14px
+dropdown-menu-sub-trigger | E ICON | pointer-events: none
+dropdown-menu-sub-trigger | E ICON | width: 14px
+dropdown-menu-sub-trigger | E | -webkit-user-select: none
+dropdown-menu-sub-trigger | E | align-items: center
+dropdown-menu-sub-trigger | E | border-bottom-left-radius: 0px
+dropdown-menu-sub-trigger | E | border-bottom-right-radius: 0px
+dropdown-menu-sub-trigger | E | border-top-left-radius: 0px
+dropdown-menu-sub-trigger | E | border-top-right-radius: 0px
+dropdown-menu-sub-trigger | E | cursor: default
+dropdown-menu-sub-trigger | E | display: flex
+dropdown-menu-sub-trigger | E | font-family: 'Inter Variable', Inter, sans-serif
+dropdown-menu-sub-trigger | E | font-feature-settings: normal
+dropdown-menu-sub-trigger | E | font-size: 14px
+dropdown-menu-sub-trigger | E | font-variation-settings: normal
+dropdown-menu-sub-trigger | E | font-weight: 400
+dropdown-menu-sub-trigger | E | gap: 10px
+dropdown-menu-sub-trigger | E | letter-spacing: normal
+dropdown-menu-sub-trigger | E | line-height: 1.43
+dropdown-menu-sub-trigger | E | outline-style: none
+dropdown-menu-sub-trigger | E | padding-bottom: 8px
+dropdown-menu-sub-trigger | E | padding-left: 12px [inset=false]
+dropdown-menu-sub-trigger | E | padding-left: 38px [inset=true]
+dropdown-menu-sub-trigger | E | padding-right: 12px
+dropdown-menu-sub-trigger | E | padding-top: 8px
+dropdown-menu-sub-trigger | E | user-select: none
+dropdown-menu-sub-trigger | E:focus | background-color: #f4f4f5
+dropdown-menu-sub-trigger | E:focus | color: #18181b
+dropdown-menu-sub-trigger | E:open | background-color: #f4f4f5
+dropdown-menu-sub-trigger | E:open | color: #18181b

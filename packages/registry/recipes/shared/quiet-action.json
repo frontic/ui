@@ -1,0 +1,5 @@
+{
+  "quiet-action": {
+    "textColor": "{colors.muted-foreground}"
+  }
+}

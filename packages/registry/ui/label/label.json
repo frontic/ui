@@ -1,0 +1,16 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Label",
+  "description": "Names a control that sits outside a Field, such as a sort select in a toolbar, and moves focus to it on click.",
+  "recipes": {
+    "label-root": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "label",
+        "gap": "{spacing.2}",
+        "display": "flex",
+        "alignItems": "center"
+      }
+    }
+  }
+}

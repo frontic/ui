@@ -1,0 +1,72 @@
+card | E | background-color: #ffffff
+card | E | border-bottom-left-radius: 0px
+card | E | border-bottom-right-radius: 0px
+card | E | border-top-left-radius: 0px
+card | E | border-top-right-radius: 0px
+card | E | box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 0.1), 0px 1px 2px -1px rgb(0 0 0 / 0.1) [surface=raised]
+card | E | box-shadow: none [surface=bare]
+card | E | color: #09090b
+card | E | container-type: inline-size
+card | E | display: flex
+card | E | flex-direction: column
+card | E | font-family: 'Inter Variable', Inter, sans-serif
+card | E | font-feature-settings: normal
+card | E | font-size: 14px
+card | E | font-variation-settings: normal
+card | E | font-weight: 400
+card | E | gap: 24px [phone]
+card | E | gap: 32px [desktop]
+card | E | letter-spacing: normal
+card | E | line-height: 1.43
+card | E | outline-color: color-mix(in oklab, #09090b 5%, transparent) [surface=bare]
+card | E | outline-offset: 0px [surface=bare]
+card | E | outline-style: solid [surface=bare]
+card | E | outline-width: 0px [surface=bare]
+card | E | overflow: hidden
+card | E | padding-bottom: 0px [surface=bare]
+card | E | padding-bottom: 24px [phone surface=raised]
+card | E | padding-bottom: 32px [desktop surface=raised]
+card | E | padding-top: 0px [surface=bare]
+card | E | padding-top: 24px [phone surface=raised]
+card | E | padding-top: 32px [desktop surface=raised]
+card | E | ring: 1px color-mix(in oklab, #09090b 5%, transparent) [surface=raised]
+card | E:has( > [data-slot="card-image"]:first-child) | padding-top: 0px
+card | E:has( > img:first-child) | padding-top: 0px
+card-action | E | align-self: flex-start
+card-action | E | grid-column-start: 2 [desktop]
+card-action | E | grid-row-start: 1 [desktop]
+card-action | E | grid-row: span 2 / span 2 [desktop]
+card-action | E | justify-self: flex-end [desktop]
+card-action | E | justify-self: flex-start [phone]
+card-content | E | padding-left: 32px
+card-content | E | padding-right: 32px
+card-description | E | color: #66666f
+card-description | E | font-family: 'Inter Variable', Inter, sans-serif
+card-description | E | font-feature-settings: normal
+card-description | E | font-size: 14px
+card-description | E | font-variation-settings: normal
+card-description | E | font-weight: 400
+card-description | E | letter-spacing: normal
+card-description | E | line-height: 1.625
+card-footer | E | align-items: center
+card-footer | E | display: flex
+card-footer | E | padding-left: 32px
+card-footer | E | padding-right: 32px
+card-header | E | align-items: flex-start
+card-header | E | container-name: card-header
+card-header | E | container-type: inline-size
+card-header | E | display: grid
+card-header | E | gap: 6px
+card-header | E | grid-auto-rows: min-content
+card-header | E | grid-template-columns: repeat(1, minmax(0, 1fr))
+card-header | E | padding-left: 32px
+card-header | E | padding-right: 32px
+card-image | E | overflow: hidden
+card-title | E | font-family: 'Inter Variable', Inter, sans-serif
+card-title | E | font-feature-settings: normal
+card-title | E | font-size: 18px
+card-title | E | font-variation-settings: normal
+card-title | E | font-weight: 600
+card-title | E | letter-spacing: 0.05em
+card-title | E | line-height: 1.56
+card-title | E | text-transform: uppercase

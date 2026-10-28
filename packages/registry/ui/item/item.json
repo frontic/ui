@@ -1,0 +1,154 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Item",
+  "description": "Groups the media, text and actions of one entry, such as a list row or a link to a page.",
+  "recipes": {
+    "item": {
+      "base": {
+        "border": "{border.default}",
+        "rounded": "{rounded.none}",
+        "typography": "{typography.small}",
+        "display": "flex",
+        "width": "full",
+        "flexWrap": "wrap",
+        "alignItems": "center",
+        "focus": {
+          "borderColor": "{colors.ring}",
+          "outline": "{ring.wide}",
+          "outlineColor": "{colors.ring}"
+        }
+      },
+      "variants": {
+        "variant": {
+          "default": {
+            "borderColor": "transparent"
+          },
+          "outline": {
+            "borderColor": "{colors.border}"
+          },
+          "muted": {
+            "backgroundColor": "{colors.muted/50}",
+            "borderColor": "transparent"
+          }
+        },
+        "size": {
+          "md": {
+            "gap": "{spacing.3.5}",
+            "paddingX": "{spacing.4}",
+            "paddingY": "{spacing.3.5}"
+          },
+          "sm": {
+            "gap": "{spacing.3.5}",
+            "paddingX": "{spacing.3.5}",
+            "paddingY": "{spacing.3}"
+          },
+          "xs": {
+            "gap": "{spacing.2.5}",
+            "paddingX": "{spacing.3}",
+            "paddingY": "{spacing.2.5}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "default",
+        "size": "md"
+      }
+    },
+    "item-actions": {
+      "base": {
+        "display": "flex",
+        "alignItems": "center",
+        "gap": "{spacing.2}"
+      }
+    },
+    "item-content": {
+      "base": {
+        "display": "flex",
+        "flex": "1",
+        "flexDirection": "column",
+        "gap": "{spacing.1}"
+      }
+    },
+    "item-description": {
+      "base": {
+        "extends": ["part-description", "link-primary"],
+        "textAlign": "start"
+      }
+    },
+    "item-footer": {
+      "base": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "between",
+        "gap": "{spacing.2}"
+      }
+    },
+    "item-group": {
+      "base": {
+        "display": "flex",
+        "width": "full",
+        "flexDirection": "column",
+        "gap": "{spacing.4}"
+      }
+    },
+    "item-header": {
+      "base": {
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "between",
+        "gap": "{spacing.2}"
+      }
+    },
+    "item-link": {
+      "base": {
+        "hover": {
+          "backgroundColor": "{colors.muted}"
+        }
+      }
+    },
+    "item-media": {
+      "base": {
+        "gap": "{spacing.2}",
+        "display": "flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "variants": {
+        "variant": {
+          "default": {
+            "backgroundColor": "transparent"
+          },
+          "icon": {
+            "icon": {
+              "size": "{spacing.4}"
+            }
+          },
+          "image": {
+            "rounded": "{rounded.none}",
+            "size": "{spacing.10}"
+          }
+        }
+      },
+      "defaults": {
+        "variant": "default"
+      }
+    },
+    "item-separator": {
+      "base": {
+        "marginY": "{spacing.2}"
+      }
+    },
+    "item-title": {
+      "base": {
+        "extends": "part-title",
+        "typography": "{typography.caption}",
+        "lineHeight": "snug",
+        "letterSpacing": "normal",
+        "gap": "{spacing.2}",
+        "width": "fit",
+        "alignItems": "center"
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "description": "The JSON Schema an editor checks this file against.",
+      "type": "string"
+    },
+    "style": {
+      "type": "string",
+      "const": "bare",
+      "description": "The registry style the items are built in. Frontic UI has one: bare."
+    },
+    "typescript": {
+      "default": true,
+      "description": "Install items as TypeScript. Off, `add` strips the types and writes .js files.",
+      "type": "boolean"
+    },
+    "tailwind": {
+      "type": "object",
+      "properties": {
+        "css": {
+          "type": "string",
+          "description": "The global stylesheet that imports Tailwind. `init` adds the frontic.css import to it, and `build` writes frontic.css beside it."
+        }
+      },
+      "required": ["css"],
+      "description": "Where Tailwind comes into the project."
+    },
+    "iconLibrary": {
+      "default": "lucide",
+      "description": "The icon set `add` rewrites the items’ icons to.",
+      "type": "string",
+      "enum": ["lucide", "tabler", "hugeicons", "phosphor", "remixicon"]
+    },
+    "aliases": {
+      "type": "object",
+      "properties": {
+        "components": {
+          "type": "string",
+          "description": "Where `add` installs sections and templates, and ui items unless `aliases.ui` is set."
+        },
+        "ui": {
+          "description": "Where `add` installs ui items; the `ui` folder under `aliases.components` when not set.",
+          "type": "string"
+        },
+        "lib": {
+          "description": "Where `add` installs lib items, the shared code items import; `@/lib` when not set.",
+          "type": "string"
+        },
+        "composables": {
+          "description": "Where `add` installs composable items; `@/composables` when not set.",
+          "type": "string"
+        }
+      },
+      "required": ["components"],
+      "description": "Import paths, resolved through tsconfig, that decide where `add` writes items."
+    },
+    "library": {
+      "default": "library",
+      "description": "The folder that holds brand.json, DESIGN.md and recipes/, the shared recipes; each component's own recipes sit in its manifest beside its files.",
+      "type": "string"
+    },
+    "check": {
+      "description": "What `npx @frontic/ui check` holds the project to.",
+      "default": {},
+      "type": "object",
+      "properties": {
+        "contrast": {
+          "default": "AA",
+          "description": "The WCAG level for colour contrast. AA holds text to 4.5:1 and large text to 3:1; AAA to 7:1 and 4.5:1. Icons and the focus ring need 3:1 under both.",
+          "type": "string",
+          "enum": ["AA", "AAA"]
+        },
+        "rules": {
+          "description": "How each kind of finding counts: `error` fails `check`, `warn` reports it, `off` skips it.",
+          "default": {},
+          "type": "object",
+          "properties": {
+            "drift": {
+              "default": "error",
+              "description": "A class the brand’s theme does not define, or a `<script>` that does not parse. Can be `warn`, never `off`.",
+              "type": "string",
+              "enum": ["error", "warn"]
+            },
+            "raw-text": {
+              "default": "warn",
+              "description": "Text written into an installed item instead of passed in as a prop or a slot.",
+              "type": "string",
+              "enum": ["error", "warn", "off"]
+            },
+            "contrast": {
+              "default": "error",
+              "description": "A recipe colour or a brand token pair below the contrast level.",
+              "type": "string",
+              "enum": ["error", "warn", "off"]
+            },
+            "missing-token": {
+              "default": "error",
+              "description": "A recipe reference to a token brand.json does not define.",
+              "type": "string",
+              "enum": ["error", "warn", "off"]
+            },
+            "axis-collision": {
+              "default": "warn",
+              "description": "Two values of different axes that set one property to different values with no `with` pair between them, so the later axis wins by order.",
+              "type": "string",
+              "enum": ["error", "warn", "off"]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["style", "tailwind", "aliases"]
+}

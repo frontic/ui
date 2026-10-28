@@ -1,0 +1,5 @@
+{
+  "$schema": "../item.schema.json",
+  "title": "Use Filter State",
+  "description": "A filter panel's local filters, sorting and search, kept in step with its props, with the handlers that emit each change."
+}

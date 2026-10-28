@@ -1,0 +1,36 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Checkout Page",
+  "description": "A one-page checkout: contact, delivery, shipping method and payment cards, with the order summary card on a brand-coloured half that folds into a bar on narrow screens.",
+  "categories": ["checkout"],
+  "recipes": {
+    "checkout-page": {
+      "composes": ["focus-ring", "logo", "section-title", "link", "meta", "total"]
+    },
+    "checkout-page-root": {
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "textColor": "{colors.foreground}"
+      }
+    },
+    "checkout-page-summary": {
+      "base": {
+        "backgroundColor": "{colors.primary}",
+        "textColor": "{colors.primary-foreground}"
+      }
+    },
+    "checkout-page-summary-toggle": {
+      "base": {
+        "typography": "{typography.ui}",
+        "fontWeight": "semibold",
+        "gap": "{spacing.1}"
+      }
+    },
+    "checkout-page-total-image": {
+      "base": {
+        "extends": "thumbnail",
+        "size": "{spacing.12}"
+      }
+    }
+  }
+}

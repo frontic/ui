@@ -1,0 +1,13 @@
+{
+  "nav-trigger": {
+    "backgroundColor": "transparent",
+    "rounded": "{rounded.md}",
+    "hover": {
+      "backgroundColor": "{colors.accent}",
+      "textColor": "{colors.accent-foreground}"
+    },
+    "open": {
+      "backgroundColor": "{colors.accent/50}"
+    }
+  }
+}

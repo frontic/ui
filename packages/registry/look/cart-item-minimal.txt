@@ -1,0 +1,56 @@
+CartItemMinimal > [0] | E | display: flex
+CartItemMinimal > [0] | E | flex-direction: column
+CartItemMinimal > [0] | E | gap: 12px
+CartItemMinimal > [1] | E | align-items: center
+CartItemMinimal > [1] | E | display: flex
+CartItemMinimal > [1] | E | gap: 12px
+CartItemMinimal > [2] | E | display: flex
+CartItemMinimal > [2] | E | flex-direction: column
+CartItemMinimal > [2] | E | flex: 1
+CartItemMinimal > [2] | E | gap: 2px
+CartItemMinimal > [2] | E | min-width: 0px
+CartItemMinimal > [3] | E | flex-shrink: 0
+cart-item-minimal-image > [0] | E | height: 100%
+cart-item-minimal-image > [0] | E | object-fit: cover
+cart-item-minimal-image > [0] | E | width: 100%
+cart-item-minimal-image | E | border-bottom-color: #e4e4e7
+cart-item-minimal-image | E | border-bottom-left-radius: 6.4px
+cart-item-minimal-image | E | border-bottom-right-radius: 6.4px
+cart-item-minimal-image | E | border-bottom-style: solid
+cart-item-minimal-image | E | border-bottom-width: 1px
+cart-item-minimal-image | E | border-left-color: #e4e4e7
+cart-item-minimal-image | E | border-left-style: solid
+cart-item-minimal-image | E | border-left-width: 1px
+cart-item-minimal-image | E | border-right-color: #e4e4e7
+cart-item-minimal-image | E | border-right-style: solid
+cart-item-minimal-image | E | border-right-width: 1px
+cart-item-minimal-image | E | border-top-color: #e4e4e7
+cart-item-minimal-image | E | border-top-left-radius: 6.4px
+cart-item-minimal-image | E | border-top-right-radius: 6.4px
+cart-item-minimal-image | E | border-top-style: solid
+cart-item-minimal-image | E | border-top-width: 1px
+cart-item-minimal-image | E | flex-shrink: 0
+cart-item-minimal-image | E | height: 48px
+cart-item-minimal-image | E | overflow: hidden
+cart-item-minimal-image | E | width: 48px
+line-title | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title | E | font-feature-settings: normal
+line-title | E | font-size: 14px
+line-title | E | font-variation-settings: normal
+line-title | E | font-weight: 500
+line-title | E | letter-spacing: normal
+line-title | E | line-height: 1.25
+line-title | E | overflow: hidden
+line-title | E | text-overflow: ellipsis
+line-title | E | white-space: nowrap
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+meta | E | overflow: hidden
+meta | E | text-overflow: ellipsis
+meta | E | white-space: nowrap

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Progress",
+  "description": "Shows how far a task has progressed, as a share of the whole; slides a segment while that is unknown.",
+  "recipes": {
+    "progress": {
+      "base": {
+        "extends": "track",
+        "height": "{spacing.0.5}",
+        "display": "flex",
+        "width": "full",
+        "alignItems": "center"
+      }
+    },
+    "progress-indicator": {
+      "base": {
+        "extends": "track-fill"
+      }
+    }
+  }
+}

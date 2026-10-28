@@ -1,0 +1,123 @@
+Reviews > [0] | E | container-type: inline-size
+Reviews > [10] | E | align-items: center
+Reviews > [10] | E | display: flex
+Reviews > [10] | E | gap: 8px
+Reviews > [10] | E | justify-content: space-between
+Reviews > [11] | E | align-items: center
+Reviews > [11] | E | column-gap: 8px
+Reviews > [11] | E | display: flex
+Reviews > [11] | E | flex-wrap: wrap
+Reviews > [11] | E | row-gap: 4px
+Reviews > [12] | E | flex-direction: column-reverse [phone]
+Reviews > [12] | E | flex-direction: row [desktop]
+Reviews > [12] | E | gap: 8px
+Reviews > [13] | E | flex: 1 [desktop]
+Reviews > [13] | E | width: 100% [phone]
+Reviews > [13] | E | width: auto [desktop]
+Reviews > [14] | E | flex: 1 [desktop]
+Reviews > [14] | E | width: 100% [phone]
+Reviews > [14] | E | width: auto [desktop]
+Reviews > [1] | E | display: flex
+Reviews > [1] | E | flex-direction: column
+Reviews > [1] | E | gap: 24px
+Reviews > [2] | E | align-items: center
+Reviews > [2] | E | display: flex
+Reviews > [2] | E | gap: 24px
+Reviews > [3] | E | display: flex
+Reviews > [3] | E | flex-direction: column
+Reviews > [3] | E | flex-shrink: 0
+Reviews > [3] | E | gap: 4px
+Reviews > [4] | E | display: flex
+Reviews > [4] | E | flex-direction: column
+Reviews > [4] | E | flex: 1
+Reviews > [4] | E | gap: 6px
+Reviews > [5] | E | align-items: center
+Reviews > [5] | E | display: flex
+Reviews > [5] | E | gap: 8px
+Reviews > [6] | E | flex: 1
+Reviews > [7] | E | display: flex
+Reviews > [7] | E | flex-direction: column
+Reviews > [7] | E | gap: 20px
+Reviews > [8] | E | display: flex
+Reviews > [8] | E | gap: 12px
+Reviews > [9] | E | display: flex
+Reviews > [9] | E | flex-direction: column
+Reviews > [9] | E | flex: 1
+Reviews > [9] | E | gap: 4px
+Reviews > [9] | E | min-width: 0px
+heading | E | font-family: 'Inter Variable', Inter, sans-serif
+heading | E | font-feature-settings: normal
+heading | E | font-size: 24px
+heading | E | font-variation-settings: normal
+heading | E | font-weight: 600
+heading | E | letter-spacing: normal
+heading | E | line-height: 1.25
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+line-title | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title | E | font-feature-settings: normal
+line-title | E | font-size: 14px
+line-title | E | font-variation-settings: normal
+line-title | E | font-weight: 500
+line-title | E | letter-spacing: normal
+line-title | E | line-height: 1.25
+meta #2 | E | color: #66666f
+meta #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #2 | E | font-feature-settings: normal
+meta #2 | E | font-size: 12px
+meta #2 | E | font-variation-settings: normal
+meta #2 | E | font-weight: 400
+meta #2 | E | letter-spacing: normal
+meta #2 | E | line-height: 1.33
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+reviews-count | E | color: #66666f
+reviews-count | E | flex-shrink: 0
+reviews-count | E | font-family: 'Inter Variable', Inter, sans-serif
+reviews-count | E | font-feature-settings: normal
+reviews-count | E | font-size: 12px
+reviews-count | E | font-variant-numeric: tabular-nums
+reviews-count | E | font-variation-settings: normal
+reviews-count | E | font-weight: 400
+reviews-count | E | letter-spacing: normal
+reviews-count | E | line-height: 1.33
+reviews-count | E | text-align: end
+reviews-count | E | width: 28px
+reviews-stars | E | align-items: center
+reviews-stars | E | color: #66666f
+reviews-stars | E | display: flex
+reviews-stars | E | flex-shrink: 0
+reviews-stars | E | font-family: 'Inter Variable', Inter, sans-serif
+reviews-stars | E | font-feature-settings: normal
+reviews-stars | E | font-size: 12px
+reviews-stars | E | font-variant-numeric: tabular-nums
+reviews-stars | E | font-variation-settings: normal
+reviews-stars | E | font-weight: 400
+reviews-stars | E | letter-spacing: normal
+reviews-stars | E | line-height: 1.33
+reviews-stars | E | width: 12px
+reviews-verified | E ICON | height: 14px
+reviews-verified | E ICON | width: 14px
+reviews-verified | E | align-items: center
+reviews-verified | E | color: #12883e
+reviews-verified | E | display: flex
+reviews-verified | E | font-family: 'Inter Variable', Inter, sans-serif
+reviews-verified | E | font-feature-settings: normal
+reviews-verified | E | font-size: 12px
+reviews-verified | E | font-variation-settings: normal
+reviews-verified | E | font-weight: 500
+reviews-verified | E | gap: 4px
+reviews-verified | E | letter-spacing: normal
+reviews-verified | E | line-height: 1.33

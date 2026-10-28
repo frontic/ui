@@ -1,0 +1,7 @@
+{
+  "logo": {
+    "typography": "{typography.title}",
+    "fontWeight": "bold",
+    "letterSpacing": "tight"
+  }
+}

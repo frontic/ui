@@ -1,0 +1,224 @@
+context-menu-checkbox-item > [0] | E | inset-inline-end: 8px
+context-menu-checkbox-item > [0] | E | pointer-events: none
+context-menu-checkbox-item > [0] | E | position: absolute
+context-menu-checkbox-item | E ICON | flex-shrink: 0
+context-menu-checkbox-item | E ICON | height: 14px
+context-menu-checkbox-item | E ICON | pointer-events: none
+context-menu-checkbox-item | E ICON | width: 14px
+context-menu-checkbox-item | E | -webkit-user-select: none
+context-menu-checkbox-item | E | align-items: center
+context-menu-checkbox-item | E | border-bottom-left-radius: 0px
+context-menu-checkbox-item | E | border-bottom-right-radius: 0px
+context-menu-checkbox-item | E | border-top-left-radius: 0px
+context-menu-checkbox-item | E | border-top-right-radius: 0px
+context-menu-checkbox-item | E | cursor: default
+context-menu-checkbox-item | E | display: flex
+context-menu-checkbox-item | E | font-family: 'Inter Variable', Inter, sans-serif
+context-menu-checkbox-item | E | font-feature-settings: normal
+context-menu-checkbox-item | E | font-size: 14px
+context-menu-checkbox-item | E | font-variation-settings: normal
+context-menu-checkbox-item | E | font-weight: 400
+context-menu-checkbox-item | E | gap: 10px
+context-menu-checkbox-item | E | letter-spacing: normal
+context-menu-checkbox-item | E | line-height: 1.43
+context-menu-checkbox-item | E | outline-style: none
+context-menu-checkbox-item | E | padding-bottom: 8px
+context-menu-checkbox-item | E | padding-left: 12px
+context-menu-checkbox-item | E | padding-right: 32px
+context-menu-checkbox-item | E | padding-top: 8px
+context-menu-checkbox-item | E | position: relative
+context-menu-checkbox-item | E | user-select: none
+context-menu-checkbox-item | E:disabled | opacity: 0.5
+context-menu-checkbox-item | E:disabled | pointer-events: none
+context-menu-checkbox-item | E:focus | background-color: #f4f4f5
+context-menu-checkbox-item | E:focus | color: #18181b
+context-menu-content | E | background-color: #ffffff
+context-menu-content | E | border-bottom-left-radius: 0px
+context-menu-content | E | border-bottom-right-radius: 0px
+context-menu-content | E | border-top-left-radius: 0px
+context-menu-content | E | border-top-right-radius: 0px
+context-menu-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+context-menu-content | E | color: #09090b
+context-menu-content | E | max-height: unset
+context-menu-content | E | min-width: 192px
+context-menu-content | E | overflow-x: hidden
+context-menu-content | E | overflow-y: auto
+context-menu-content | E | padding-bottom: 6px
+context-menu-content | E | padding-left: 6px
+context-menu-content | E | padding-right: 6px
+context-menu-content | E | padding-top: 6px
+context-menu-content | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent)
+context-menu-content | E | transform-origin: unset
+context-menu-content | E | transition-duration: 100ms
+context-menu-content | E | z-index: 50
+context-menu-content | E:closed | --tw-exit-opacity: 0
+context-menu-content | E:closed | --tw-exit-scale: .95
+context-menu-content | E:closed | animation: exit 100ms ease 0s 1 normal none
+context-menu-content | E:open | --tw-enter-opacity: 0
+context-menu-content | E:open | --tw-enter-scale: .95
+context-menu-content | E:open | animation: enter 100ms ease 0s 1 normal none
+context-menu-content | E:where([data-side="bottom"]) | --tw-enter-translate-y: calc(2*4px*-1)
+context-menu-content | E:where([data-side="left"]) | --tw-enter-translate-x: calc(2*4px)
+context-menu-content | E:where([data-side="right"]) | --tw-enter-translate-x: calc(2*4px*-1)
+context-menu-content | E:where([data-side="top"]) | --tw-enter-translate-y: calc(2*4px)
+context-menu-item | E ICON | color: #c70009 [color=destructive]
+context-menu-item | E ICON | flex-shrink: 0
+context-menu-item | E ICON | height: 14px
+context-menu-item | E ICON | pointer-events: none
+context-menu-item | E ICON | width: 14px
+context-menu-item | E | -webkit-user-select: none
+context-menu-item | E | align-items: center
+context-menu-item | E | border-bottom-left-radius: 0px
+context-menu-item | E | border-bottom-right-radius: 0px
+context-menu-item | E | border-top-left-radius: 0px
+context-menu-item | E | border-top-right-radius: 0px
+context-menu-item | E | color: #c70009 [color=destructive]
+context-menu-item | E | cursor: default
+context-menu-item | E | display: flex
+context-menu-item | E | font-family: 'Inter Variable', Inter, sans-serif
+context-menu-item | E | font-feature-settings: normal
+context-menu-item | E | font-size: 14px
+context-menu-item | E | font-variation-settings: normal
+context-menu-item | E | font-weight: 400
+context-menu-item | E | gap: 10px
+context-menu-item | E | letter-spacing: normal
+context-menu-item | E | line-height: 1.43
+context-menu-item | E | outline-style: none
+context-menu-item | E | padding-bottom: 8px
+context-menu-item | E | padding-left: 12px [inset=false]
+context-menu-item | E | padding-left: 38px [inset=true]
+context-menu-item | E | padding-right: 12px
+context-menu-item | E | padding-top: 8px
+context-menu-item | E | position: relative
+context-menu-item | E | user-select: none
+context-menu-item | E:disabled | opacity: 0.5
+context-menu-item | E:disabled | pointer-events: none
+context-menu-item | E:focus | background-color: #f4f4f5 [color=neutral]
+context-menu-item | E:focus | background-color: color-mix(in oklab, #c70009 10%, transparent) [color=destructive]
+context-menu-item | E:focus | color: #18181b [color=neutral]
+context-menu-item | E:focus | color: #c70009 [color=destructive]
+context-menu-label | E | color: #66666f
+context-menu-label | E | font-family: 'Inter Variable', Inter, sans-serif
+context-menu-label | E | font-feature-settings: normal
+context-menu-label | E | font-size: 12px
+context-menu-label | E | font-variation-settings: normal
+context-menu-label | E | font-weight: 600
+context-menu-label | E | letter-spacing: 0.05em
+context-menu-label | E | line-height: 1.33
+context-menu-label | E | padding-bottom: 8px
+context-menu-label | E | padding-left: 12px [inset=false]
+context-menu-label | E | padding-left: 38px [inset=true]
+context-menu-label | E | padding-right: 12px
+context-menu-label | E | padding-top: 8px
+context-menu-label | E | text-transform: uppercase
+context-menu-radio-item > [0] | E | inset-inline-end: 8px
+context-menu-radio-item > [0] | E | pointer-events: none
+context-menu-radio-item > [0] | E | position: absolute
+context-menu-radio-item | E ICON | flex-shrink: 0
+context-menu-radio-item | E ICON | height: 14px
+context-menu-radio-item | E ICON | pointer-events: none
+context-menu-radio-item | E ICON | width: 14px
+context-menu-radio-item | E | -webkit-user-select: none
+context-menu-radio-item | E | align-items: center
+context-menu-radio-item | E | border-bottom-left-radius: 0px
+context-menu-radio-item | E | border-bottom-right-radius: 0px
+context-menu-radio-item | E | border-top-left-radius: 0px
+context-menu-radio-item | E | border-top-right-radius: 0px
+context-menu-radio-item | E | cursor: default
+context-menu-radio-item | E | display: flex
+context-menu-radio-item | E | font-family: 'Inter Variable', Inter, sans-serif
+context-menu-radio-item | E | font-feature-settings: normal
+context-menu-radio-item | E | font-size: 14px
+context-menu-radio-item | E | font-variation-settings: normal
+context-menu-radio-item | E | font-weight: 400
+context-menu-radio-item | E | gap: 10px
+context-menu-radio-item | E | letter-spacing: normal
+context-menu-radio-item | E | line-height: 1.43
+context-menu-radio-item | E | outline-style: none
+context-menu-radio-item | E | padding-bottom: 8px
+context-menu-radio-item | E | padding-left: 12px
+context-menu-radio-item | E | padding-right: 32px
+context-menu-radio-item | E | padding-top: 8px
+context-menu-radio-item | E | position: relative
+context-menu-radio-item | E | user-select: none
+context-menu-radio-item | E:disabled | opacity: 0.5
+context-menu-radio-item | E:disabled | pointer-events: none
+context-menu-radio-item | E:focus | background-color: #f4f4f5
+context-menu-radio-item | E:focus | color: #18181b
+context-menu-separator | E | background-color: color-mix(in oklab, #e4e4e7 50%, transparent)
+context-menu-separator | E | height: 1px
+context-menu-separator | E | margin-bottom: 6px
+context-menu-separator | E | margin-left: -6px
+context-menu-separator | E | margin-right: -6px
+context-menu-separator | E | margin-top: 6px
+context-menu-shortcut | E | color: #66666f
+context-menu-shortcut | E | font-family: 'Inter Variable', Inter, sans-serif
+context-menu-shortcut | E | font-feature-settings: normal
+context-menu-shortcut | E | font-size: 12px
+context-menu-shortcut | E | font-variation-settings: normal
+context-menu-shortcut | E | font-weight: 400
+context-menu-shortcut | E | letter-spacing: 0.1em
+context-menu-shortcut | E | line-height: 1.33
+context-menu-shortcut | E | margin-left: auto
+context-menu-sub-content | E | background-color: #ffffff
+context-menu-sub-content | E | border-bottom-left-radius: 0px
+context-menu-sub-content | E | border-bottom-right-radius: 0px
+context-menu-sub-content | E | border-top-left-radius: 0px
+context-menu-sub-content | E | border-top-right-radius: 0px
+context-menu-sub-content | E | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1)
+context-menu-sub-content | E | color: #09090b
+context-menu-sub-content | E | min-width: 128px
+context-menu-sub-content | E | overflow: hidden
+context-menu-sub-content | E | padding-bottom: 6px
+context-menu-sub-content | E | padding-left: 6px
+context-menu-sub-content | E | padding-right: 6px
+context-menu-sub-content | E | padding-top: 6px
+context-menu-sub-content | E | ring: 1px color-mix(in oklab, #09090b 20%, transparent)
+context-menu-sub-content | E | transform-origin: unset
+context-menu-sub-content | E | transition-duration: 100ms
+context-menu-sub-content | E | z-index: 50
+context-menu-sub-content | E:closed | --tw-exit-opacity: 0
+context-menu-sub-content | E:closed | --tw-exit-scale: .95
+context-menu-sub-content | E:closed | animation: exit 100ms ease 0s 1 normal none
+context-menu-sub-content | E:open | --tw-enter-opacity: 0
+context-menu-sub-content | E:open | --tw-enter-scale: .95
+context-menu-sub-content | E:open | animation: enter 100ms ease 0s 1 normal none
+context-menu-sub-content | E:where([data-side="bottom"]) | --tw-enter-translate-y: calc(2*4px*-1)
+context-menu-sub-content | E:where([data-side="left"]) | --tw-enter-translate-x: calc(2*4px)
+context-menu-sub-content | E:where([data-side="right"]) | --tw-enter-translate-x: calc(2*4px*-1)
+context-menu-sub-content | E:where([data-side="top"]) | --tw-enter-translate-y: calc(2*4px)
+context-menu-sub-trigger > [0] | E | margin-left: auto
+context-menu-sub-trigger > [0] | E:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) | rotate: 180deg
+context-menu-sub-trigger | E ICON | flex-shrink: 0
+context-menu-sub-trigger | E ICON | height: 14px
+context-menu-sub-trigger | E ICON | pointer-events: none
+context-menu-sub-trigger | E ICON | width: 14px
+context-menu-sub-trigger | E | -webkit-user-select: none
+context-menu-sub-trigger | E | align-items: center
+context-menu-sub-trigger | E | border-bottom-left-radius: 0px
+context-menu-sub-trigger | E | border-bottom-right-radius: 0px
+context-menu-sub-trigger | E | border-top-left-radius: 0px
+context-menu-sub-trigger | E | border-top-right-radius: 0px
+context-menu-sub-trigger | E | cursor: default
+context-menu-sub-trigger | E | display: flex
+context-menu-sub-trigger | E | font-family: 'Inter Variable', Inter, sans-serif
+context-menu-sub-trigger | E | font-feature-settings: normal
+context-menu-sub-trigger | E | font-size: 14px
+context-menu-sub-trigger | E | font-variation-settings: normal
+context-menu-sub-trigger | E | font-weight: 400
+context-menu-sub-trigger | E | gap: 10px
+context-menu-sub-trigger | E | letter-spacing: normal
+context-menu-sub-trigger | E | line-height: 1.43
+context-menu-sub-trigger | E | outline-style: none
+context-menu-sub-trigger | E | padding-bottom: 8px
+context-menu-sub-trigger | E | padding-left: 12px [inset=false]
+context-menu-sub-trigger | E | padding-left: 38px [inset=true]
+context-menu-sub-trigger | E | padding-right: 12px
+context-menu-sub-trigger | E | padding-top: 8px
+context-menu-sub-trigger | E | user-select: none
+context-menu-sub-trigger | E:focus | background-color: #f4f4f5
+context-menu-sub-trigger | E:focus | color: #18181b
+context-menu-sub-trigger | E:open | background-color: #f4f4f5
+context-menu-sub-trigger | E:open | color: #18181b
+context-menu-trigger | E | -webkit-user-select: none
+context-menu-trigger | E | user-select: none

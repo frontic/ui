@@ -1,0 +1,10 @@
+{
+  "menu-item-destructive": {
+    "textColor": "{colors.destructive}",
+    "iconColor": "{colors.destructive}",
+    "focus": {
+      "backgroundColor": "{colors.destructive/10}",
+      "textColor": "{colors.destructive}"
+    }
+  }
+}

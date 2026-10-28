@@ -1,0 +1,21 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Checkbox",
+  "description": "Lets the user tick an option on or off, with an indeterminate state drawn as a minus and a hit area wider than the box.",
+  "recipes": {
+    "checkbox": {
+      "composes": ["focus-ring", "invalid", "disabled"],
+      "base": {
+        "extends": ["choice", "choice-box"],
+        "size": "{spacing.4.5}",
+        "display": "flex",
+        "flexShrink": "0",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    }
+  }
+}

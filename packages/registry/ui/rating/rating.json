@@ -1,0 +1,117 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Rating",
+  "description": "Shows a rating as stars or dots in the brand's rating colour, with an optional score and review count, at three sizes.",
+  "recipes": {
+    "rating": {
+      "base": {
+        "gap": "{spacing.0.5}",
+        "display": "flex",
+        "alignItems": "center"
+      }
+    },
+    "rating-count": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "typography": "{typography.caption}",
+        "fontWeight": "normal"
+      }
+    },
+    "rating-dot": {
+      "base": {
+        "rounded": "{rounded.full}",
+        "border": "{border.default}",
+        "borderColor": "currentColor",
+        "backgroundColor": "currentColor",
+        "display": "inline-block",
+        "flexShrink": "0"
+      },
+      "variants": {
+        "fill": {
+          "full": {
+            "textColor": "{colors.rating}"
+          },
+          "empty": {
+            "textColor": "{colors.muted-foreground}",
+            "backgroundColor": "transparent"
+          }
+        },
+        "size": {
+          "sm": {
+            "size": "{spacing.3}"
+          },
+          "md": {
+            "size": "{spacing.4}"
+          },
+          "lg": {
+            "size": "{spacing.5}"
+          }
+        }
+      },
+      "defaults": {
+        "fill": "full",
+        "size": "md"
+      }
+    },
+    "rating-icon": {
+      "base": {
+        "stroke": "currentColor",
+        "flexShrink": "0"
+      },
+      "variants": {
+        "fill": {
+          "full": {
+            "textColor": "{colors.rating}",
+            "fill": "currentColor"
+          },
+          "empty": {
+            "textColor": "{colors.muted-foreground}",
+            "fill": "transparent"
+          }
+        },
+        "size": {
+          "sm": {
+            "size": "{spacing.4}"
+          },
+          "md": {
+            "size": "{spacing.5}"
+          },
+          "lg": {
+            "size": "{spacing.6}"
+          }
+        }
+      },
+      "defaults": {
+        "fill": "full",
+        "size": "md"
+      }
+    },
+    "rating-meta": {
+      "base": {
+        "marginStart": "{spacing.2}",
+        "gap": "{spacing.1}",
+        "display": "flex",
+        "alignItems": "baseline"
+      }
+    },
+    "rating-stars": {
+      "base": {},
+      "variants": {
+        "shape": {
+          "dot": {
+            "gap": "{spacing.1}"
+          },
+          "star": {
+            "gap": "{spacing.0.5}"
+          }
+        }
+      }
+    },
+    "rating-value": {
+      "base": {
+        "textColor": "{colors.foreground}",
+        "typography": "{typography.small}"
+      }
+    }
+  }
+}

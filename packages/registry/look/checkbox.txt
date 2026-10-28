@@ -1,0 +1,62 @@
+checkbox | E ICON | height: 14px
+checkbox | E ICON | width: 14px
+checkbox | E | align-items: center
+checkbox | E | background-color: transparent
+checkbox | E | border-bottom-color: #a1a1aa
+checkbox | E | border-bottom-left-radius: 0px
+checkbox | E | border-bottom-right-radius: 0px
+checkbox | E | border-bottom-style: solid
+checkbox | E | border-bottom-width: 1px
+checkbox | E | border-left-color: #a1a1aa
+checkbox | E | border-left-style: solid
+checkbox | E | border-left-width: 1px
+checkbox | E | border-right-color: #a1a1aa
+checkbox | E | border-right-style: solid
+checkbox | E | border-right-width: 1px
+checkbox | E | border-top-color: #a1a1aa
+checkbox | E | border-top-left-radius: 0px
+checkbox | E | border-top-right-radius: 0px
+checkbox | E | border-top-style: solid
+checkbox | E | border-top-width: 1px
+checkbox | E | display: flex
+checkbox | E | flex-shrink: 0
+checkbox | E | height: 18px
+checkbox | E | justify-content: center
+checkbox | E | outline-style: none
+checkbox | E | position: relative
+checkbox | E | transition-duration: 150ms
+checkbox | E | transition-property: box-shadow
+checkbox | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+checkbox | E | width: 18px
+checkbox | E::after | content: ""
+checkbox | E::after | inset-block: -8px
+checkbox | E::after | inset-inline: -12px
+checkbox | E::after | position: absolute
+checkbox | E:checked | background-color: #7008e7
+checkbox | E:checked | border-bottom-color: #7008e7
+checkbox | E:checked | border-left-color: #7008e7
+checkbox | E:checked | border-right-color: #7008e7
+checkbox | E:checked | border-top-color: #7008e7
+checkbox | E:checked | color: #f5f3ff
+checkbox | E:checked:invalid | border-bottom-color: #c70009
+checkbox | E:checked:invalid | border-left-color: #c70009
+checkbox | E:checked:invalid | border-right-color: #c70009
+checkbox | E:checked:invalid | border-top-color: #c70009
+checkbox | E:checked:invalid | ring: 2px color-mix(in oklab, #c70009 20%, transparent)
+checkbox | E:disabled | cursor: not-allowed
+checkbox | E:disabled | opacity: 0.5
+checkbox | E:focus | border-bottom-color: #71717a
+checkbox | E:focus | border-left-color: #71717a
+checkbox | E:focus | border-right-color: #71717a
+checkbox | E:focus | border-top-color: #71717a
+checkbox | E:focus | ring: 2px #71717a
+checkbox | E:invalid | border-bottom-color: #c70009
+checkbox | E:invalid | border-left-color: #c70009
+checkbox | E:invalid | border-right-color: #c70009
+checkbox | E:invalid | border-top-color: #c70009
+checkbox | E:invalid | ring: 2px color-mix(in oklab, #c70009 20%, transparent)
+checkbox | E:is(:where(GROUP):has(:disabled) *) | opacity: 0.5
+checkbox-indicator | E | color: currentcolor
+checkbox-indicator | E | display: grid
+checkbox-indicator | E | place-content: center
+checkbox-indicator | E | transition-property: none

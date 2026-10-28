@@ -1,0 +1,81 @@
+footer-minimal > [0] | E | align-items: center
+footer-minimal > [0] | E | display: flex
+footer-minimal > [0] | E | flex-direction: column [phone]
+footer-minimal > [0] | E | flex-direction: row [desktop]
+footer-minimal > [0] | E | gap: 20px
+footer-minimal > [0] | E | justify-content: space-between [desktop]
+footer-minimal > [0] | E | margin-left: auto
+footer-minimal > [0] | E | margin-right: auto
+footer-minimal > [0] | E | max-width: 1280px
+footer-minimal > [0] | E | padding-bottom: 32px
+footer-minimal > [0] | E | padding-left: 16px [phone]
+footer-minimal > [0] | E | padding-left: 32px [desktop]
+footer-minimal > [0] | E | padding-right: 16px [phone]
+footer-minimal > [0] | E | padding-right: 32px [desktop]
+footer-minimal > [0] | E | padding-top: 32px
+footer-minimal > [0] | E | width: 100%
+footer-minimal > [1] | E | align-items: baseline
+footer-minimal > [1] | E | display: flex
+footer-minimal > [1] | E | gap: 12px
+footer-minimal > [2] | E | align-items: center
+footer-minimal > [2] | E | column-gap: 24px
+footer-minimal > [2] | E | display: flex
+footer-minimal > [2] | E | flex-wrap: wrap
+footer-minimal > [2] | E | justify-content: center
+footer-minimal > [2] | E | row-gap: 8px
+footer-minimal > [3] | E | align-items: center
+footer-minimal > [3] | E | display: flex
+footer-minimal > [3] | E | gap: 16px
+footer-minimal | E | container-type: inline-size
+footer-minimal | E | width: 100%
+footer-minimal-logo | E | font-family: 'Inter Variable', Inter, sans-serif
+footer-minimal-logo | E | font-feature-settings: normal
+footer-minimal-logo | E | font-size: 18px
+footer-minimal-logo | E | font-variation-settings: normal
+footer-minimal-logo | E | font-weight: 700
+footer-minimal-logo | E | letter-spacing: -0.025em
+footer-minimal-logo | E | line-height: 1.56
+footer-minimal-logo | E | outline-style: none
+footer-minimal-logo | E:focus | border-bottom-color: #71717a
+footer-minimal-logo | E:focus | border-left-color: #71717a
+footer-minimal-logo | E:focus | border-right-color: #71717a
+footer-minimal-logo | E:focus | border-top-color: #71717a
+footer-minimal-logo | E:focus | ring: 2px #71717a
+hint | E | color: #66666f
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+link #2 | E | color: #66666f
+link #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+link #2 | E | font-feature-settings: normal
+link #2 | E | font-size: 14px
+link #2 | E | font-variation-settings: normal
+link #2 | E | font-weight: 400
+link #2 | E | letter-spacing: normal
+link #2 | E | line-height: 1.43
+link #2 | E | outline-style: none
+link #2 | E:focus | border-bottom-color: #71717a
+link #2 | E:focus | border-left-color: #71717a
+link #2 | E:focus | border-right-color: #71717a
+link #2 | E:focus | border-top-color: #71717a
+link #2 | E:focus | ring: 2px #71717a
+link #2 | E:hover | color: #09090b
+link | E | color: #66666f
+link | E | font-family: 'Inter Variable', Inter, sans-serif
+link | E | font-feature-settings: normal
+link | E | font-size: 14px
+link | E | font-variation-settings: normal
+link | E | font-weight: 400
+link | E | letter-spacing: normal
+link | E | line-height: 1.43
+link | E | outline-style: none
+link | E:focus | border-bottom-color: #71717a
+link | E:focus | border-left-color: #71717a
+link | E:focus | border-right-color: #71717a
+link | E:focus | border-top-color: #71717a
+link | E:focus | ring: 2px #71717a
+link | E:hover | color: #09090b

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Account Access",
+  "description": "Sign-in and security settings card: a pending-change notice, email and password with change actions, a two-factor switch, and account deletion behind a confirmation dialog.",
+  "categories": ["account"],
+  "recipes": {
+    "account-access-delete-title": {
+      "base": {
+        "textColor": "{colors.destructive}"
+      }
+    }
+  }
+}

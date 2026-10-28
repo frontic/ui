@@ -1,0 +1,11 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Cart Compact",
+  "description": "A mini cart in a side sheet, with quantity controls, free-shipping progress, the subtotal and checkout.",
+  "categories": ["cart"],
+  "recipes": {
+    "cart-compact": {
+      "composes": ["part-title-lg", "hint", "meta", "note-positive"]
+    }
+  }
+}

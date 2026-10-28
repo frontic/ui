@@ -1,0 +1,16 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Cart Minimal",
+  "description": "A mini cart in a popover with the first few items, the subtotal and checkout.",
+  "categories": ["cart"],
+  "recipes": {
+    "cart-minimal": {
+      "composes": ["hint", "meta"]
+    },
+    "cart-minimal-title": {
+      "base": {
+        "extends": "section-title"
+      }
+    }
+  }
+}

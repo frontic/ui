@@ -1,0 +1,46 @@
+textarea | E | background-color: transparent
+textarea | E | border-bottom-color: #a1a1aa
+textarea | E | border-bottom-left-radius: 0px
+textarea | E | border-bottom-right-radius: 0px
+textarea | E | border-bottom-style: solid
+textarea | E | border-bottom-width: 1px
+textarea | E | border-left-color: transparent
+textarea | E | border-left-style: solid
+textarea | E | border-left-width: 1px
+textarea | E | border-right-color: transparent
+textarea | E | border-right-style: solid
+textarea | E | border-right-width: 1px
+textarea | E | border-top-color: transparent
+textarea | E | border-top-left-radius: 0px
+textarea | E | border-top-right-radius: 0px
+textarea | E | border-top-style: solid
+textarea | E | border-top-width: 1px
+textarea | E | display: flex
+textarea | E | field-sizing: content
+textarea | E | font-family: 'Inter Variable', Inter, sans-serif
+textarea | E | font-feature-settings: normal
+textarea | E | font-size: 14px [desktop]
+textarea | E | font-size: 16px [phone]
+textarea | E | font-variation-settings: normal
+textarea | E | font-weight: 400
+textarea | E | letter-spacing: normal
+textarea | E | line-height: 1.43 [desktop]
+textarea | E | line-height: 1.5 [phone]
+textarea | E | min-height: 64px
+textarea | E | outline-style: none
+textarea | E | padding-bottom: 12px
+textarea | E | padding-left: 0px
+textarea | E | padding-right: 0px
+textarea | E | padding-top: 12px
+textarea | E | resize: none
+textarea | E | transition-duration: 150ms
+textarea | E | transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to
+textarea | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+textarea | E | width: 100%
+textarea | E::placeholder | color: #66666f
+textarea | E:disabled | cursor: not-allowed
+textarea | E:disabled | opacity: 0.5
+textarea | E:focus | border-bottom-color: #71717a
+textarea | E:focus | border-bottom-style: solid
+textarea | E:focus | border-bottom-width: 2px
+textarea | E:invalid | border-bottom-color: #c70009

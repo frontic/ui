@@ -1,0 +1,18 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Textarea",
+  "description": "An underlined field for longer free text, such as a gift message, that grows with its content; joins a Field around it.",
+  "recipes": {
+    "textarea": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "control",
+        "minHeight": "{spacing.16}",
+        "paddingX": "{spacing.0}",
+        "paddingY": "{spacing.3}",
+        "display": "flex",
+        "width": "full"
+      }
+    }
+  }
+}

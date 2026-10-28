@@ -1,0 +1,8 @@
+{
+  "product-card-title": {
+    "typography": "{typography.lead}",
+    "fontWeight": "semibold",
+    "letterSpacing": "wider",
+    "textTransform": "uppercase"
+  }
+}

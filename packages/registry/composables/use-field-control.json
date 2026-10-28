@@ -1,0 +1,5 @@
+{
+  "$schema": "../item.schema.json",
+  "title": "Use Field Control",
+  "description": "Joins a control Reka does not join to the Field around it: id, name, disabled, aria and the value the Field validates."
+}

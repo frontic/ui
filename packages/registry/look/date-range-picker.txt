@@ -1,0 +1,3 @@
+date-range-picker-separator | E | color: #66666f
+date-range-picker-separator | E | padding-left: 4px
+date-range-picker-separator | E | padding-right: 4px

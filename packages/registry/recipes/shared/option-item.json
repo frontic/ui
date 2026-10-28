@@ -1,0 +1,10 @@
+{
+  "option-item": {
+    "rounded": "{rounded.none}",
+    "typography": "{typography.small}",
+    "highlighted": {
+      "backgroundColor": "{colors.accent}",
+      "textColor": "{colors.accent-foreground}"
+    }
+  }
+}

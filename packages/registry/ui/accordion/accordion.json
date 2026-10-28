@@ -1,0 +1,50 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Accordion",
+  "description": "Stacked sections the shopper opens and closes, one or several at a time, such as shipping and returns on a product page.",
+  "recipes": {
+    "accordion": {
+      "base": {
+        "display": "flex",
+        "width": "full",
+        "flexDirection": "column"
+      }
+    },
+    "accordion-body": {
+      "base": {
+        "extends": "link-foreground",
+        "typography": "{typography.small}",
+        "paddingBottom": "{spacing.4}"
+      }
+    },
+    "accordion-item": {
+      "base": {
+        "borderBottom": "{border.default}"
+      }
+    },
+    "accordion-trigger": {
+      "composes": ["focus-ring", "disabled"],
+      "base": {
+        "border": "{border.default}",
+        "borderColor": "transparent",
+        "rounded": "{rounded.none}",
+        "typography": "{typography.ui}",
+        "fontWeight": "semibold",
+        "iconColor": "{colors.muted-foreground}",
+        "gap": "{spacing.6}",
+        "paddingY": "{spacing.4}",
+        "display": "flex",
+        "flex": "1",
+        "alignItems": "start",
+        "justifyContent": "between",
+        "textAlign": "start",
+        "icon": {
+          "size": "{spacing.3.5}"
+        },
+        "hover": {
+          "textDecorationLine": "underline"
+        }
+      }
+    }
+  }
+}

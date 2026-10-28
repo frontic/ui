@@ -1,0 +1,20 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Footer Brand",
+  "description": "Footer led by a logo and tagline block spanning two columns, with a newsletter, social links and four link groups.",
+  "categories": ["footer"],
+  "recipes": {
+    "footer-brand": {
+      "composes": ["logo", "hint", "link", "focus-ring"],
+      "base": {
+        "backgroundColor": "{colors.muted/50}",
+        "width": "full"
+      }
+    },
+    "footer-brand-title": {
+      "base": {
+        "extends": "section-title"
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Toast",
+  "description": "Short messages that confirm an action, like adding to the cart, with an optional action button; mount Toaster once and call toast() anywhere.",
+  "recipes": {
+    "toast": {
+      "base": {
+        "backgroundColor": "{colors.background}",
+        "textColor": "{colors.foreground}",
+        "border": "{border.default}",
+        "rounded": "{rounded.none}",
+        "shadow": "{shadow.md}",
+        "typography": "{typography.note}",
+        "width": "{spacing.89}",
+        "paddingX": "{spacing.4}",
+        "paddingY": "{spacing.4}",
+        "gap": "{spacing.1.5}",
+        "icon": {
+          "size": "{spacing.4}"
+        }
+      },
+      "variants": {
+        "tone": {
+          "info": {
+            "extends": "notice-info"
+          },
+          "positive": {
+            "extends": "notice-positive"
+          },
+          "warning": {
+            "extends": "notice-warning"
+          },
+          "destructive": {
+            "extends": "notice-destructive"
+          }
+        }
+      }
+    },
+    "toast-action": {
+      "composes": ["focus-ring"],
+      "base": {
+        "extends": "action",
+        "backgroundColor": "{colors.foreground}",
+        "textColor": "{colors.background}",
+        "height": "{spacing.6}",
+        "paddingX": "{spacing.2}"
+      }
+    },
+    "toast-cancel": {
+      "composes": ["focus-ring"],
+      "base": {
+        "extends": "action",
+        "backgroundColor": "{colors.foreground/8}",
+        "textColor": "{colors.foreground}",
+        "height": "{spacing.6}",
+        "paddingX": "{spacing.2}"
+      }
+    },
+    "toast-content": {
+      "base": {
+        "gap": "{spacing.0.5}"
+      }
+    },
+    "toast-description": {
+      "base": {
+        "extends": "part-description"
+      }
+    },
+    "toast-title": {
+      "base": {
+        "extends": "part-title"
+      }
+    }
+  }
+}

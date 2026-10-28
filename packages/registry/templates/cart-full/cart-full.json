@@ -1,0 +1,16 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Cart Full",
+  "description": "The cart page: editable lines with quantity controls, an order summary and a checkout button.",
+  "categories": ["cart"],
+  "recipes": {
+    "cart-full": {
+      "composes": ["page-title", "hint", "meta", "total"],
+      "base": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "{spacing.6}"
+      }
+    }
+  }
+}

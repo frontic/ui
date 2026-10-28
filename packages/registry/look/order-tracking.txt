@@ -1,0 +1,71 @@
+OrderTracking > [1] | E | display: flex
+OrderTracking > [1] | E | flex-direction: column
+OrderTracking > [1] | E | gap: 24px
+OrderTracking > [2] | E | display: flex
+OrderTracking > [2] | E | flex-direction: column
+OrderTracking > [3] | E | align-items: baseline
+OrderTracking > [3] | E | display: flex
+OrderTracking > [3] | E | gap: 12px
+OrderTracking > [3] | E | justify-content: space-between
+OrderTracking > [4] | E | flex-direction: column
+OrderTracking > [4] | E | gap: 8px
+OrderTracking > [5] | E | width: 100%
+OrderTracking > [6] | E | width: 100%
+line-title | E | font-family: 'Inter Variable', Inter, sans-serif
+line-title | E | font-feature-settings: normal
+line-title | E | font-size: 14px
+line-title | E | font-variant-numeric: tabular-nums
+line-title | E | font-variation-settings: normal
+line-title | E | font-weight: 500
+line-title | E | letter-spacing: normal
+line-title | E | line-height: 1.25
+line-title | E | overflow: hidden
+line-title | E | text-overflow: ellipsis
+line-title | E | white-space: nowrap
+meta #2 | E | color: #66666f
+meta #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #2 | E | font-feature-settings: normal
+meta #2 | E | font-size: 12px
+meta #2 | E | font-variation-settings: normal
+meta #2 | E | font-weight: 400
+meta #2 | E | letter-spacing: normal
+meta #2 | E | line-height: 1.33
+meta #3 | E | color: #66666f
+meta #3 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #3 | E | font-feature-settings: normal
+meta #3 | E | font-size: 12px
+meta #3 | E | font-variation-settings: normal
+meta #3 | E | font-weight: 400
+meta #3 | E | letter-spacing: normal
+meta #3 | E | line-height: 1.33
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+order-tracking-eta | E | font-family: 'Inter Variable', Inter, sans-serif
+order-tracking-eta | E | font-feature-settings: normal
+order-tracking-eta | E | font-size: 20px
+order-tracking-eta | E | font-variation-settings: normal
+order-tracking-eta | E | font-weight: 600
+order-tracking-eta | E | letter-spacing: normal
+order-tracking-eta | E | line-height: 28px
+order-tracking-parcel > [0] | E | display: flex
+order-tracking-parcel > [0] | E | flex-direction: column
+order-tracking-parcel > [0] | E | min-width: 0px
+order-tracking-parcel | E | align-items: center
+order-tracking-parcel | E | background-color: #f4f4f5
+order-tracking-parcel | E | border-bottom-left-radius: 6.4px
+order-tracking-parcel | E | border-bottom-right-radius: 6.4px
+order-tracking-parcel | E | border-top-left-radius: 6.4px
+order-tracking-parcel | E | border-top-right-radius: 6.4px
+order-tracking-parcel | E | display: flex
+order-tracking-parcel | E | gap: 12px
+order-tracking-parcel | E | justify-content: space-between
+order-tracking-parcel | E | padding-bottom: 12px
+order-tracking-parcel | E | padding-left: 16px
+order-tracking-parcel | E | padding-right: 16px
+order-tracking-parcel | E | padding-top: 12px

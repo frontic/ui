@@ -1,0 +1,55 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Button Group",
+  "description": "Joins related buttons into one connected row or column, with separators and text labels between them.",
+  "recipes": {
+    "button-group": {
+      "base": {
+        "display": "flex",
+        "width": "fit",
+        "alignItems": "stretch"
+      }
+    },
+    "button-group-separator": {
+      "base": {
+        "backgroundColor": "{colors.input}",
+        "size": "{spacing.px}",
+        "flexShrink": "0",
+        "alignSelf": "stretch"
+      },
+      "variants": {
+        "orientation": {
+          "vertical": {
+            "marginY": "{spacing.px}",
+            "height": "auto"
+          },
+          "horizontal": {
+            "marginX": "{spacing.px}",
+            "width": "auto"
+          }
+        }
+      },
+      "defaults": {
+        "orientation": "vertical"
+      }
+    },
+    "button-group-text": {
+      "base": {
+        "backgroundColor": "transparent",
+        "border": "{border.default}",
+        "borderColor": "transparent",
+        "borderBottomColor": "{colors.input}",
+        "typography": "{typography.caption}",
+        "fontWeight": "semibold",
+        "textTransform": "uppercase",
+        "gap": "{spacing.2}",
+        "paddingX": "{spacing.2.5}",
+        "display": "flex",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    }
+  }
+}

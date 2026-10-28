@@ -1,0 +1,6 @@
+{
+  "part-description": {
+    "textColor": "{colors.muted-foreground}",
+    "typography": "{typography.description}"
+  }
+}

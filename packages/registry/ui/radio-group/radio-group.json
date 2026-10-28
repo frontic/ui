@@ -1,0 +1,26 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Radio Group",
+  "description": "Lets the user pick exactly one of a few options; joins the Field around it for its label, description and errors.",
+  "recipes": {
+    "radio-group": {
+      "base": {
+        "gap": "{spacing.3}",
+        "display": "grid",
+        "width": "full"
+      }
+    },
+    "radio-group-item": {
+      "composes": ["focus-ring", "invalid", "disabled"],
+      "base": {
+        "extends": ["choice", "choice-dot"],
+        "size": "{spacing.4.5}",
+        "display": "flex",
+        "flexShrink": "0",
+        "icon": {
+          "size": "{spacing.2}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "$schema": "../item.schema.json",
+  "title": "Filter Model",
+  "description": "A filter, its options and sort orders, with the applied values, the active-filter count and colour swatches read from them."
+}

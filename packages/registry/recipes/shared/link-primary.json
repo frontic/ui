@@ -1,0 +1,10 @@
+{
+  "link-primary": {
+    "link": {
+      "textDecorationLine": "underline",
+      "hover": {
+        "textColor": "{colors.primary}"
+      }
+    }
+  }
+}

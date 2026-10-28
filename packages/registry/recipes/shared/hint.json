@@ -1,0 +1,6 @@
+{
+  "hint": {
+    "textColor": "{colors.muted-foreground}",
+    "typography": "{typography.small}"
+  }
+}

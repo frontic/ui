@@ -1,0 +1,86 @@
+ProductCardGallery > [0] | E | transition-duration: 150ms
+ProductCardGallery > [0] | E | transition-property: box-shadow
+ProductCardGallery > [0] | E | transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+ProductCardGallery > [0] | E:hover | box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.1), 0px 2px 4px -2px rgb(0 0 0 / 0.1) [surface=raised]
+ProductCardGallery > [0] | E:hover | outline-color: color-mix(in oklab, #09090b 15%, transparent) [surface=raised]
+ProductCardGallery > [1] | E | position: relative
+ProductCardGallery > [2] | E | display: block
+ProductCardGallery > [3] | E | align-items: flex-start
+ProductCardGallery > [3] | E | display: flex
+ProductCardGallery > [3] | E | flex-direction: column
+ProductCardGallery > [3] | E | gap: 4px
+ProductCardGallery > [3] | E | inset-inline-start: 12px
+ProductCardGallery > [3] | E | position: absolute
+ProductCardGallery > [3] | E | top: 12px
+ProductCardGallery > [4] | E | inset-inline-end: 12px
+ProductCardGallery > [4] | E | position: absolute
+ProductCardGallery > [4] | E | top: 12px
+ProductCardGallery > [5] | E | display: flex
+ProductCardGallery > [5] | E | flex-direction: column
+ProductCardGallery > [5] | E | flex: 1
+ProductCardGallery > [5] | E | gap: 12px
+ProductCardGallery > [6] | E | display: flex
+ProductCardGallery > [6] | E | flex-direction: column
+ProductCardGallery > [6] | E | gap: 4px
+ProductCardGallery > [7] | E | display: flex
+ProductCardGallery > [7] | E | flex-direction: column
+ProductCardGallery > [7] | E | gap: 4px
+ProductCardGallery > [7] | E | margin-top: auto
+ProductCardGallery > [8] | E | align-items: center
+ProductCardGallery > [8] | E | display: flex
+ProductCardGallery > [8] | E | gap: 8px
+hint | E | -webkit-box-orient: vertical
+hint | E | -webkit-line-clamp: 2
+hint | E | color: #66666f
+hint | E | display: -webkit-box
+hint | E | font-family: 'Inter Variable', Inter, sans-serif
+hint | E | font-feature-settings: normal
+hint | E | font-size: 14px
+hint | E | font-variation-settings: normal
+hint | E | font-weight: 400
+hint | E | letter-spacing: normal
+hint | E | line-height: 1.43
+hint | E | overflow: hidden
+meta #2 | E | color: #66666f
+meta #2 | E | font-family: 'Inter Variable', Inter, sans-serif
+meta #2 | E | font-feature-settings: normal
+meta #2 | E | font-size: 12px
+meta #2 | E | font-variation-settings: normal
+meta #2 | E | font-weight: 400
+meta #2 | E | letter-spacing: normal
+meta #2 | E | line-height: 1.33
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33
+product-card-gallery-badge | E | text-transform: uppercase
+product-card-gallery-image > [0] | E | height: 100%
+product-card-gallery-image > [0] | E | transition-duration: 500ms
+product-card-gallery-image > [0] | E | transition-property: transform, translate, scale, rotate
+product-card-gallery-image > [0] | E | transition-timing-function: cubic-bezier(0, 0, 0.2, 1)
+product-card-gallery-image > [0] | E | width: 100%
+product-card-gallery-image > [0] | E:is(:where(GROUP):hover *) | scale: 105% 105%
+product-card-gallery-image | E | border-bottom-left-radius: 0px
+product-card-gallery-image | E | border-bottom-right-radius: 0px
+product-card-gallery-image | E | border-top-left-radius: 0px
+product-card-gallery-image | E | border-top-right-radius: 0px
+product-card-gallery-image | E | overflow: hidden
+product-card-title > [0] | E | outline-style: none
+product-card-title > [0] | E:focus | border-bottom-color: #71717a
+product-card-title > [0] | E:focus | border-left-color: #71717a
+product-card-title > [0] | E:focus | border-right-color: #71717a
+product-card-title > [0] | E:focus | border-top-color: #71717a
+product-card-title > [0] | E:focus | ring: 2px #71717a
+product-card-title | E | font-family: 'Inter Variable', Inter, sans-serif
+product-card-title | E | font-feature-settings: normal
+product-card-title | E | font-size: 18px
+product-card-title | E | font-variation-settings: normal
+product-card-title | E | font-weight: 600
+product-card-title | E | letter-spacing: 0.05em
+product-card-title | E | line-height: 1.56
+product-card-title | E | text-transform: uppercase
+product-card-title | E:is(:where(GROUP):hover *) | text-decoration-line: underline [surface=bare]

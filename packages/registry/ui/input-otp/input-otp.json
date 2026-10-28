@@ -1,0 +1,56 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Input OTP",
+  "description": "Lets the user type or paste a one-time code across several slots, such as the code a sign-in email sends.",
+  "recipes": {
+    "input-otp": {
+      "composes": ["disabled"],
+      "base": {
+        "display": "flex",
+        "width": "fit",
+        "alignItems": "center",
+        "gap": "{spacing.2}"
+      }
+    },
+    "input-otp-caret": {
+      "base": {
+        "backgroundColor": "{colors.foreground}",
+        "height": "{spacing.4}",
+        "width": "{spacing.px}"
+      }
+    },
+    "input-otp-group": {
+      "base": {
+        "display": "flex",
+        "alignItems": "center",
+        "gap": "{spacing.1}"
+      }
+    },
+    "input-otp-separator": {
+      "base": {
+        "display": "flex",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "input-otp-slot": {
+      "base": {
+        "extends": ["control", "control-line"],
+        "size": "{spacing.10}",
+        "typography": "{typography.small}",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "focus": {
+          "borderBottom": "{border.default}",
+          "borderBottomColor": "{colors.input}"
+        },
+        "current": {
+          "borderBottom": "{border.focus}"
+        }
+      }
+    }
+  }
+}

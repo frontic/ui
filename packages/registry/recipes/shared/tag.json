@@ -1,0 +1,12 @@
+{
+  "tag": {
+    "backgroundColor": "transparent",
+    "border": "{border.default}",
+    "borderColor": "{colors.input}",
+    "rounded": "{rounded.none}",
+    "typography": "{typography.small}",
+    "hover": {
+      "backgroundColor": "{colors.muted}"
+    }
+  }
+}

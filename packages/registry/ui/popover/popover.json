@@ -1,0 +1,40 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Popover",
+  "description": "A small panel that opens from a trigger and stays until dismissed, with a title and description, such as delivery details or a size guide.",
+  "recipes": {
+    "popover-content": {
+      "base": {
+        "extends": "overlay",
+        "typography": "{typography.small}",
+        "width": "{spacing.72}",
+        "paddingX": "{spacing.4}",
+        "paddingY": "{spacing.4}",
+        "gap": "{spacing.4}",
+        "maxWidth": "available",
+        "display": "flex",
+        "flexDirection": "column"
+      }
+    },
+    "popover-description": {
+      "base": {
+        "extends": "part-description"
+      }
+    },
+    "popover-header": {
+      "base": {
+        "typography": "{typography.small}",
+        "gap": "{spacing.1.5}",
+        "display": "flex",
+        "flexDirection": "column"
+      }
+    },
+    "popover-title": {
+      "base": {
+        "typography": "{typography.caption}",
+        "fontWeight": "semibold",
+        "textTransform": "uppercase"
+      }
+    }
+  }
+}

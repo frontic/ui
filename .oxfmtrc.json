@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "printWidth": 200,
+  "singleAttributePerLine": false,
+  "vueIndentScriptAndStyle": false,
+  "sortPackageJson": false,
+  "overrides": [
+    {
+      "files": ["**/*.example.vue"],
+      "options": { "printWidth": 80, "bracketSameLine": true }
+    }
+  ],
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/.output/**",
+    "**/.nuxt/**",
+    "**/.wrangler/**",
+    "**/.frontic/**",
+    "**/.frontic-local/**",
+    "pnpm-lock.yaml",
+    "packages/cli/src/**",
+    "packages/registry/legacy/**",
+    "packages/registry/public/r/**",
+    "packages/library-contract/src/source-shim.d.ts"
+  ]
+}

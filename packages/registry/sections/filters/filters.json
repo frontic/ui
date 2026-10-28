@@ -1,0 +1,14 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Filters",
+  "description": "Filter card with a price range slider, collapsible category, size and colour groups that count their selections, an in-stock switch, a live result count, and clear and show-results actions.",
+  "categories": ["filter"],
+  "recipes": {
+    "filters-range-to": {
+      "base": {
+        "extends": "hint",
+        "typography": "{typography.ui}"
+      }
+    }
+  }
+}

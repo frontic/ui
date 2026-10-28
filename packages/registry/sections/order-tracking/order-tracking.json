@@ -1,0 +1,25 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Order Tracking",
+  "description": "Order status card led by the arrival estimate, with the delivery steps as a timeline, each with its date and a one-line note, the carrier's tracking number with a copy action, and track and reschedule actions.",
+  "categories": ["order"],
+  "recipes": {
+    "order-tracking": {
+      "composes": ["meta", "line-title"]
+    },
+    "order-tracking-eta": {
+      "base": {
+        "typography": "{typography.title}"
+      }
+    },
+    "order-tracking-parcel": {
+      "base": {
+        "backgroundColor": "{colors.muted}",
+        "rounded": "{rounded.md}",
+        "paddingX": "{spacing.4}",
+        "paddingY": "{spacing.3}",
+        "gap": "{spacing.3}"
+      }
+    }
+  }
+}

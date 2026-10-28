@@ -1,0 +1,22 @@
+PaymentMethod > [1] | E | align-items: baseline
+PaymentMethod > [1] | E | column-gap: 8px
+PaymentMethod > [1] | E | display: flex
+PaymentMethod > [1] | E | flex-wrap: wrap
+PaymentMethod > [1] | E | flex: 1
+PaymentMethod > [1] | E | justify-content: space-between
+PaymentMethod > [2] | E | display: flex
+PaymentMethod > [2] | E | flex-direction: column
+PaymentMethod > [2] | E | gap: 16px
+PaymentMethod > [3] | E | display: grid
+PaymentMethod > [3] | E | gap: 16px
+PaymentMethod > [3] | E | grid-template-columns: repeat(2, minmax(0, 1fr))
+PaymentMethod > [4] | E | width: 100%
+PaymentMethod > [5] | E | color: currentcolor
+meta | E | color: #66666f
+meta | E | font-family: 'Inter Variable', Inter, sans-serif
+meta | E | font-feature-settings: normal
+meta | E | font-size: 12px
+meta | E | font-variation-settings: normal
+meta | E | font-weight: 400
+meta | E | letter-spacing: normal
+meta | E | line-height: 1.33

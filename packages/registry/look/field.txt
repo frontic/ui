@@ -1,0 +1,146 @@
+# approximate: field
+field | E | display: flex
+field | E | gap: 12px
+field | E | padding-bottom: 16px
+field | E | padding-left: 16px
+field | E | padding-right: 16px
+field | E | padding-top: 16px
+field | E | width: 100%
+field-content | E | display: flex
+field-content | E | flex-direction: column
+field-content | E | flex: 1
+field-content | E | gap: 4px
+field-description | E a | text-decoration-line: underline
+field-description | E a:hover | color: #7008e7
+field-description | E | color: #66666f
+field-description | E | font-family: 'Inter Variable', Inter, sans-serif
+field-description | E | font-feature-settings: normal
+field-description | E | font-size: 14px
+field-description | E | font-variation-settings: normal
+field-description | E | font-weight: 400
+field-description | E | letter-spacing: 0em
+field-description | E | line-height: 1.5
+field-description | E | text-align: start
+field-description | E | text-transform: none
+field-description | E:is(:where(GROUP)[data-horizontal] *) | text-wrap: balance
+field-description | E:nth-last-child(2) | margin-top: -4px
+field-error | E > ul | display: flex
+field-error | E > ul | flex-direction: column
+field-error | E > ul | gap: 4px
+field-error | E > ul | list-style-type: disc
+field-error | E > ul | margin-left: 16px
+field-error | E | color: #c70009
+field-error | E | font-family: 'Inter Variable', Inter, sans-serif
+field-error | E | font-feature-settings: normal
+field-error | E | font-size: 14px
+field-error | E | font-variation-settings: normal
+field-error | E | font-weight: 400
+field-error | E | letter-spacing: normal
+field-error | E | line-height: 1.43
+field-group | E > [data-slot="field-group"] | gap: 16px
+field-group | E | container-name: field-group
+field-group | E | container-type: inline-size
+field-group | E | display: flex
+field-group | E | flex-direction: column
+field-group | E | gap: 12px [kind=checkboxes]
+field-group | E | gap: 40px [kind=fields]
+field-group | E | width: 100%
+field-label | E | -webkit-user-select: none
+field-label | E | border-bottom-color: #e4e4e7 [layout=card]
+field-label | E | border-bottom-left-radius: 0px [layout=card]
+field-label | E | border-bottom-right-radius: 0px [layout=card]
+field-label | E | border-bottom-style: solid [layout=card]
+field-label | E | border-bottom-width: 1px [layout=card]
+field-label | E | border-left-color: #e4e4e7 [layout=card]
+field-label | E | border-left-style: solid [layout=card]
+field-label | E | border-left-width: 1px [layout=card]
+field-label | E | border-right-color: #e4e4e7 [layout=card]
+field-label | E | border-right-style: solid [layout=card]
+field-label | E | border-right-width: 1px [layout=card]
+field-label | E | border-top-color: #e4e4e7 [layout=card]
+field-label | E | border-top-left-radius: 0px [layout=card]
+field-label | E | border-top-right-radius: 0px [layout=card]
+field-label | E | border-top-style: solid [layout=card]
+field-label | E | border-top-width: 1px [layout=card]
+field-label | E | display: flex
+field-label | E | flex-direction: column [layout=card]
+field-label | E | font-family: 'Inter Variable', Inter, sans-serif
+field-label | E | font-feature-settings: normal
+field-label | E | font-size: 12px [layout=default,card]
+field-label | E | font-size: 14px [layout=beside]
+field-label | E | font-variation-settings: normal
+field-label | E | font-weight: 400 [layout=beside]
+field-label | E | font-weight: 600 [layout=default,card]
+field-label | E | gap: 8px
+field-label | E | letter-spacing: 0.025em [layout=default,card]
+field-label | E | letter-spacing: 0em [layout=beside]
+field-label | E | line-height: 1.375 [layout=default,card]
+field-label | E | line-height: 1.43 [layout=beside]
+field-label | E | text-transform: none [layout=beside]
+field-label | E | text-transform: uppercase [layout=default,card]
+field-label | E | user-select: none
+field-label | E | width: 100% [layout=card]
+field-label | E | width: fit-content [layout=default,beside]
+field-label | E:has(:checked) | background-color: color-mix(in oklab, #7008e7 5%, transparent) [layout=card]
+field-label | E:has(:checked) | border-bottom-color: color-mix(in oklab, #7008e7 30%, transparent) [layout=card]
+field-label | E:has(:checked) | border-left-color: color-mix(in oklab, #7008e7 30%, transparent) [layout=card]
+field-label | E:has(:checked) | border-right-color: color-mix(in oklab, #7008e7 30%, transparent) [layout=card]
+field-label | E:has(:checked) | border-top-color: color-mix(in oklab, #7008e7 30%, transparent) [layout=card]
+field-label | E:invalid | color: #c70009
+field-label | E:is(:where(.peer):disabled ~ *) | cursor: not-allowed
+field-label | E:is(:where(.peer):disabled ~ *) | opacity: 0.5
+field-label | E:is(:where(GROUP):disabled *) | opacity: 0.5
+field-legend | E | font-family: 'Inter Variable', Inter, sans-serif
+field-legend | E | font-feature-settings: normal
+field-legend | E | font-size: 12px [variant=label]
+field-legend | E | font-size: 16px [variant=legend]
+field-legend | E | font-variation-settings: normal
+field-legend | E | font-weight: 500 [variant=legend]
+field-legend | E | font-weight: 600 [variant=label]
+field-legend | E | letter-spacing: normal
+field-legend | E | line-height: 1.33 [variant=label]
+field-legend | E | line-height: 1.5 [variant=legend]
+field-legend | E | margin-bottom: 12px
+field-legend | E | text-transform: uppercase [variant=label]
+field-separator > [0] | E | inset: 0px
+field-separator > [0] | E | position: absolute
+field-separator > [0] | E | top: calc(1 / 2 * 100%)
+field-separator | E | font-family: 'Inter Variable', Inter, sans-serif
+field-separator | E | font-feature-settings: normal
+field-separator | E | font-size: 14px
+field-separator | E | font-variation-settings: normal
+field-separator | E | font-weight: 400
+field-separator | E | height: 20px
+field-separator | E | letter-spacing: normal
+field-separator | E | line-height: 1.43
+field-separator | E | margin-bottom: -8px
+field-separator | E | margin-top: -8px
+field-separator | E | position: relative
+field-separator-content | E | background-color: #ffffff
+field-separator-content | E | color: #66666f
+field-separator-content | E | display: block
+field-separator-content | E | margin-left: auto
+field-separator-content | E | margin-right: auto
+field-separator-content | E | padding-left: 8px
+field-separator-content | E | padding-right: 8px
+field-separator-content | E | position: relative
+field-separator-content | E | width: fit-content
+field-set | E | display: flex
+field-set | E | flex-direction: column
+field-set | E | gap: 24px
+field-set | E:has( > [data-slot="checkbox-group"]) | gap: 12px
+field-set | E:has( > [data-slot="radio-group"]) | gap: 12px
+field-title | E | align-items: center
+field-title | E | display: flex
+field-title | E | font-family: 'Inter Variable', Inter, sans-serif
+field-title | E | font-feature-settings: normal
+field-title | E | font-size: 12px
+field-title | E | font-variation-settings: normal
+field-title | E | font-weight: 600
+field-title | E | gap: 8px
+field-title | E | letter-spacing: 0.025em
+field-title | E | line-height: 1.375
+field-title | E | text-transform: uppercase
+field-title | E | width: fit-content
+field-title | E:invalid | color: #c70009
+field-title | E:is(:where(GROUP):disabled *) | opacity: 0.5

@@ -1,0 +1,120 @@
+{
+  "$schema": "../../item.schema.json",
+  "title": "Combobox",
+  "description": "Searchable single-choice list behind a trigger, with headed groups and an empty state; the list is as wide as its trigger, and the trigger joins a Field as its control.",
+  "recipes": {
+    "combobox-anchor": {
+      "base": {
+        "display": "inline-flex",
+        "width": "fit"
+      }
+    },
+    "combobox-chevron": {
+      "base": {
+        "textColor": "{colors.muted-foreground}",
+        "size": "{spacing.3.5}"
+      }
+    },
+    "combobox-content": {
+      "base": {
+        "extends": "overlay",
+        "minWidth": "{spacing.36}",
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "trigger"
+      }
+    },
+    "combobox-empty": {
+      "base": {
+        "typography": "{typography.small}",
+        "textColor": "{colors.muted-foreground}",
+        "paddingY": "{spacing.2}",
+        "textAlign": "center"
+      }
+    },
+    "combobox-input": {
+      "composes": ["disabled"],
+      "base": {
+        "flex": "1"
+      }
+    },
+    "combobox-item": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": "option-item",
+        "gap": "{spacing.2.5}",
+        "paddingY": "{spacing.2}",
+        "paddingStart": "{spacing.3}",
+        "paddingEnd": "{spacing.8}",
+        "display": "flex",
+        "width": "full",
+        "alignItems": "center",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "combobox-item-indicator": {
+      "base": {
+        "size": "{spacing.4}",
+        "display": "flex",
+        "alignItems": "center",
+        "justifyContent": "center"
+      }
+    },
+    "combobox-label": {
+      "base": {
+        "extends": "menu-label",
+        "paddingX": "{spacing.3}",
+        "paddingY": "{spacing.2}"
+      }
+    },
+    "combobox-search": {
+      "base": {
+        "marginX": "{spacing.1.5}",
+        "marginTop": "{spacing.1.5}",
+        "typography": "{typography.small}",
+        "height": "{spacing.8}",
+        "paddingX": "{spacing.2.5}",
+        "gap": "{spacing.2}",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "combobox-separator": {
+      "base": {
+        "bleedX": "{spacing.1.5}",
+        "marginY": "{spacing.1.5}",
+        "extends": "divider",
+        "backgroundColor": "{colors.border/50}",
+        "height": "{spacing.px}"
+      }
+    },
+    "combobox-trigger": {
+      "composes": ["disabled"],
+      "base": {
+        "extends": ["control", "control-line"],
+        "typography": "{typography.small}",
+        "gap": "{spacing.1.5}",
+        "paddingX": "{spacing.0}",
+        "paddingY": "{spacing.2}",
+        "height": "{spacing.10}",
+        "display": "flex",
+        "width": "fit",
+        "alignItems": "center",
+        "justifyContent": "between",
+        "icon": {
+          "size": "{spacing.3.5}"
+        }
+      }
+    },
+    "combobox-viewport": {
+      "base": {
+        "scrollbar": "none",
+        "minHeight": "{spacing.0}",
+        "padding": "{spacing.1.5}"
+      }
+    }
+  }
+}

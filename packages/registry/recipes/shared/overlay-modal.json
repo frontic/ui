@@ -1,0 +1,10 @@
+{
+  "overlay-modal": {
+    "backgroundColor": "{colors.background}",
+    "outline": "{ring.hairline}",
+    "outlineColor": "{colors.foreground/10}",
+    "rounded": "{rounded.none}",
+    "shadow": "{shadow.md}",
+    "typography": "{typography.small}"
+  }
+}

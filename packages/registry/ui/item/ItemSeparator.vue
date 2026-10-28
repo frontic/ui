@@ -1,0 +1,18 @@
+<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
+<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
+<script lang="ts">
+/** Separates the items of a group. */
+export default {}
+</script>
+
+<script setup lang="ts">
+import type { SeparatorProps } from 'reka-ui'
+import type { HTMLAttributes } from 'vue'
+import { Separator } from '@library/components/ui/separator'
+
+const props = defineProps<SeparatorProps & { class?: HTMLAttributes['class'] }>()
+</script>
+
+<template>
+  <Separator data-slot="item-separator" orientation="horizontal" :class="['fui-item-separator', props.class]" />
+</template>

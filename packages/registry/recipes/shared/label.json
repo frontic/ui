@@ -1,0 +1,8 @@
+{
+  "label": {
+    "typography": "{typography.caption}",
+    "fontWeight": "semibold",
+    "letterSpacing": "wide",
+    "textTransform": "uppercase"
+  }
+}

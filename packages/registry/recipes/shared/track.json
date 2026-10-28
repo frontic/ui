@@ -1,0 +1,6 @@
+{
+  "track": {
+    "backgroundColor": "{colors.muted}",
+    "rounded": "{rounded.none}"
+  }
+}
