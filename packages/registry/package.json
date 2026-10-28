@@ -13,6 +13,7 @@
     "test:contract": "vitest run --config vitest.contract.config.ts",
     "contract": "tsx scripts/contract.ts",
     "licence": "tsx scripts/licence-lines.ts",
+    "schema:diff": "tsx scripts/schema-diff.ts",
     "schema:refresh": "tsx scripts/schema-refresh.ts",
     "look": "tsx scripts/look-check.ts",
     "clean": "rm -rf dist public/v1",
