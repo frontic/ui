@@ -73,5 +73,12 @@
   ],
   "renamed": {
     "toast": "sonner"
+  },
+  "schema": {
+    "$comment": "shadcn's registry item schema, vendored at public/schema/registry-item.json: the commit it was taken from and its sha256. pnpm --filter @frontic/registry schema:refresh <40-character commit sha> fetches the file at a commit and rewrites both.",
+    "repository": "https://github.com/shadcn-ui/ui",
+    "commit": "309d95017fce3936548c15d2ef827c84560cc45a",
+    "path": "apps/v4/public/schema/registry-item.json",
+    "sha256": "cdf0fba75a26ebf594018264eff2d55407ec14deb3071d0fce0e2b20848e5d44"
   }
 }

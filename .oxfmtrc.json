@@ -26,6 +26,7 @@
     "packages/cli/src/**",
     "packages/registry/legacy/**",
     "packages/registry/public/r/**",
+    "packages/registry/public/schema/registry-item.json",
     "packages/library-contract/src/source-shim.d.ts"
   ]
 }
