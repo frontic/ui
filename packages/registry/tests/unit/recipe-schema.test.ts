@@ -12,7 +12,7 @@ describe('the recipe schema', () => {
     const refused = Object.entries({ ...flat, ...trees }).flatMap(([name, recipe]) =>
       validate({ $schema: 'https://registry.ui.frontic.com/recipe.schema.json', [name]: recipe }) ? [] : [`${name}: ${JSON.stringify(validate.errors?.slice(0, 2))}`],
     )
-    expect(Object.keys({ ...flat, ...trees })).toHaveLength(537)
+    expect(Object.keys({ ...flat, ...trees })).toHaveLength(538)
     expect(refused).toEqual([])
   })
 

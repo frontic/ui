@@ -3,6 +3,9 @@
   "title": "Context Menu",
   "description": "A menu that opens on right-click, with actions, checkbox and radio items, labelled groups and destructive entries.",
   "recipes": {
+    "context-menu": {
+      "composes": ["focus-ring"]
+    },
     "context-menu-content": {
       "base": {
         "extends": "overlay",
