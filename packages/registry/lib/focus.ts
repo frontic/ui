@@ -34,17 +34,24 @@ export function useReturnFocus(
   options: { counts?: (event: OutsideEvent) => boolean; when?: () => boolean; defer?: boolean; open?: () => boolean; keptMounted?: () => boolean } = {},
 ) {
   let interacted = false
-  const returns = () => {
-    const back = !interacted && (options.when?.() ?? true)
+  // `back`: focus goes to the trigger; `stays`: an outside interaction took it, so Reka must not move it; `reka`: Reka decides.
+  const verdict = (): 'back' | 'stays' | 'reka' => {
+    const result = interacted ? 'stays' : (options.when?.() ?? true) ? 'back' : 'reka'
     interacted = false
-    return back
+    return result
   }
+  // What the close of a kept-mounted dialog decided, which Reka's close-auto-focus that follows it keeps.
+  let ahead: ReturnType<typeof verdict> | undefined
   const { open, keptMounted } = options
   if (open && keptMounted)
     watch(
       open,
       (isOpen) => {
-        if (!isOpen && keptMounted() && returns() && !keyboard) focusWithoutRing(trigger())
+        if (isOpen) ahead = undefined
+        else if (keptMounted()) {
+          ahead = verdict()
+          if (ahead === 'back' && !keyboard) focusWithoutRing(trigger())
+        }
       },
       { flush: 'post' },
     )
@@ -53,8 +60,11 @@ export function useReturnFocus(
       if (!event.defaultPrevented && options.counts?.(event)) interacted = true
     },
     onCloseAutoFocus(event: Event) {
-      const back = returns()
-      if (event.defaultPrevented || keyboard || !back) return
+      const decided = ahead ?? verdict()
+      if (event.defaultPrevented) return
+      // Reka's non-modal content forgets the outside interaction once its own exit is over, which comes before the frame's.
+      if (decided === 'stays') return event.preventDefault()
+      if (keyboard || decided === 'reka') return
       event.preventDefault()
       const target = trigger()
       if (options.defer) setTimeout(() => focusWithoutRing(target), 0)

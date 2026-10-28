@@ -1,12 +1,13 @@
 // @vitest-environment happy-dom
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { createApp, h, nextTick, ref, type Component } from 'vue'
-import { Dialog, DialogContent, DialogDescription, DialogTitle } from '../../ui/dialog'
+import { Dialog, DialogContent, DialogDescription, DialogScrollContent, DialogTitle } from '../../ui/dialog'
 import { Drawer, DrawerContent, DrawerDescription, DrawerTitle } from '../../ui/drawer'
 import { Sheet, SheetContent, SheetDescription, SheetTitle } from '../../ui/sheet'
 
 const OVERLAYS: [string, Component, Component, Component, Component][] = [
   ['Dialog', Dialog, DialogContent, DialogTitle, DialogDescription],
+  ['Scrolling dialog', Dialog, DialogScrollContent, DialogTitle, DialogDescription],
   ['Sheet', Sheet, SheetContent, SheetTitle, SheetDescription],
   ['Drawer', Drawer, DrawerContent, DrawerTitle, DrawerDescription],
 ]
@@ -73,8 +74,8 @@ describe.each(OVERLAYS)('a %s opening', (...overlay) => {
   })
 })
 
-describe.each(OVERLAYS.filter(([name]) => name !== 'Dialog'))('a %s focused on opening', (...overlay) => {
-  // The dialog draws its edge as an outline from its recipe; the sheet and drawer would show the browser's focus outline around the whole panel.
+describe.each(OVERLAYS.filter(([name]) => !name.endsWith('ialog')))('a %s focused on opening', (...overlay) => {
+  // Each dialog draws its edge as an outline from its recipe; the sheet and drawer would show the browser's focus outline around the whole panel.
   it('draws no focus outline of its own around the panel', async () => {
     await mount(overlay, true)
     expect(content().classList.contains('outline-none')).toBe(true)
