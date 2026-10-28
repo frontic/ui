@@ -10,16 +10,17 @@ type Schema = Record<string, any>
 const shadcnItem = (): Schema => JSON.parse(readFileSync(join(import.meta.dirname, '../../public/schema/registry-item.json'), 'utf8'))
 
 /** A library's registry.json: shadcn's registry, its items in shadcn's item shape and as open as shadcn's, plus the types a Frontic
- * library holds (`registry:composable`; `registry:example` among the files) and `meta.frontic`. An item carries no `composes`: its
- * recipes compose in its manifest. A file's `target` is optional for every type. */
+ * library holds (`registry:composable`, among the files `registry:example` too) and `meta.frontic`. An item carries no `composes`: its
+ * recipes compose in its manifest. A file's `target` is optional for every type. shadcn's `definitions` move to the root, where its
+ * `#/definitions/…` references resolve once the item sits under `items`. */
 export function registryJsonSchema(): Schema {
-  const { $schema: _draft, ...item } = shadcnItem()
-  const itemTypes: string[] = [...item.properties.type.enum, 'registry:composable']
-  item.properties.type.enum = itemTypes
+  const { $schema: _draft, definitions, ...item } = shadcnItem()
+  item.properties.type.enum = [...item.properties.type.enum, 'registry:composable']
   const file = item.properties.files.items
+  const fileTypes: string[] = [...file.properties.type.enum, 'registry:composable', 'registry:example']
   const { if: _if, then: _then, else: _else, ...fileRules } = file
   item.properties.files.items = { ...fileRules, required: ['path', 'type'] }
-  item.properties.files.items.properties.type.enum = [...itemTypes, 'registry:example']
+  item.properties.files.items.properties.type.enum = fileTypes
   item.properties.meta = {
     ...item.properties.meta,
     properties: { frontic: { type: 'object', description: "Frontic's data on the item, such as its props, examples, placements and the source it was added from." } },
@@ -31,6 +32,7 @@ export function registryJsonSchema(): Schema {
     title: 'Frontic library registry',
     description: "A library's registry.json: its items in shadcn's registry shape.",
     type: 'object',
+    definitions,
     properties: {
       $schema: { type: 'string', description: 'The JSON Schema an editor checks this file against.' },
       name: { type: 'string', description: "The library's name." },

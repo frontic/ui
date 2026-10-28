@@ -13,6 +13,7 @@
     "test:contract": "vitest run --config vitest.contract.config.ts",
     "contract": "tsx scripts/contract.ts",
     "licence": "tsx scripts/licence-lines.ts",
+    "schema:refresh": "tsx scripts/schema-refresh.ts",
     "look": "tsx scripts/look-check.ts",
     "clean": "rm -rf dist public/v1",
     "publish:cf": "pnpm build && wrangler pages deploy public --project-name=frontic-registry --branch=main --commit-dirty=true",
@@ -68,5 +69,5 @@
     "directory": "packages/registry"
   },
   "author": "Frontic",
-  "license": "MIT"
+  "license": "FSL-1.1-MIT"
 }

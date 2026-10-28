@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { Ajv } from 'ajv'
@@ -44,16 +45,35 @@ describe('the registry schema', () => {
     expect(validate.errors!.map((error) => error.instancePath)).toContain('/items/0/composes')
   })
 
-  it('stays as open as shadcn’s: keys shadcn adds to an item, a file or the top level pass', () => {
+  it('compiles with every reference resolving, shadcn’s nested css values among them', () => {
+    expect(() => new Ajv({ strict: false }).compile(registryJsonSchema())).not.toThrow()
     const [button] = fixture('one-button').items
-    const item = { ...button, envVars: { API_URL: 'https://example.com' }, font: { family: 'Inter' }, files: [{ ...button.files[0], cache: true }] }
+    const css = { '@layer base': { body: { color: 'var(--foreground)' } }, '@keyframes pulse': {} }
+    expect(validate(library([{ ...button, css }])), JSON.stringify(validate.errors?.slice(0, 3))).toBe(true)
+  })
+
+  it('stays as open as shadcn’s, and as strict: keys shadcn adds pass where shadcn allows them', () => {
+    const [button] = fixture('one-button').items
+    const item = { ...button, envVars: { API_URL: 'https://example.com' }, files: [{ ...button.files[0], cache: true }] }
     expect(validate({ ...library([item]), include: ['blocks/registry.json'], pagination: {} }), JSON.stringify(validate.errors?.slice(0, 3))).toBe(true)
+    const font = { family: 'Inter', provider: 'google', import: 'Inter', variable: '--font-sans' }
+    expect(validate(library([{ name: 'inter', type: 'registry:font', font }])), JSON.stringify(validate.errors?.slice(0, 3))).toBe(true)
+    expect(validate(library([{ ...button, font }]))).toBe(false)
+    expect(validate(library([{ ...button, iconLibrary: 'lucide' }]))).toBe(false)
   })
 
   it('refuses an unknown item or file type and a missing name', () => {
     const [button] = fixture('one-button').items
     expect(validate(library([{ ...button, type: 'registry:widget' }]))).toBe(false)
     expect(validate(library([{ ...button, files: [{ path: 'a.vue', type: 'registry:widget' }] }]))).toBe(false)
+    expect(validate(library([{ ...button, files: [{ path: 'a.css', type: 'registry:font' }] }]))).toBe(false)
     expect(validate({ $schema: REGISTRY_SCHEMA_URL, homepage: '' })).toBe(false)
+  })
+
+  it('is built on shadcn’s item schema exactly as upstream.json pins it', () => {
+    const { schema } = JSON.parse(readFileSync(join(import.meta.dirname, '../../upstream.json'), 'utf8'))
+    const vendored = readFileSync(join(import.meta.dirname, '../../public/schema/registry-item.json'))
+    expect(schema).toMatchObject({ repository: 'https://github.com/shadcn-ui/ui', path: 'apps/v4/public/schema/registry-item.json' })
+    expect(createHash('sha256').update(vendored).digest('hex'), 'run pnpm --filter @frontic/registry schema:refresh <40-character commit sha>').toBe(schema.sha256)
   })
 })
