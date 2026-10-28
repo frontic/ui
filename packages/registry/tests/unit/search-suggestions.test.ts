@@ -87,5 +87,18 @@ describe('SearchSuggestions', () => {
       slash(document.body)
       expect(open.value).toBe(true)
     })
+
+    it('gives focus back to its search button when the overlay closes, though a click never focused it, as in Safari', async () => {
+      await mount({ presentation: 'overlay' })
+      const button = document.querySelector<HTMLButtonElement>('[data-slot="search-overlay-trigger"]')!
+      expect(button.getAttribute('aria-haspopup')).toBe('dialog')
+      button.click()
+      await settle()
+      expect(button.getAttribute('aria-expanded')).toBe('true')
+      document.activeElement!.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }))
+      await settle()
+      expect(document.querySelector('[data-slot="search-overlay"]')).toBeNull()
+      expect(document.activeElement).toBe(button)
+    })
   })
 })
