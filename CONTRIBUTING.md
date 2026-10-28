@@ -11,7 +11,7 @@ This repository is generated from Frontic's private source repository. A pull re
 1. CI checks it on GitHub-hosted runners. CI has no access to secrets.
 2. A maintainer reviews it.
 3. Once accepted, it is replayed into the source repository with a `Replays frontic/ui#<n>` trailer. You stay the commit's author, and your `Signed-off-by` line goes with it.
-4. The next sync publishes it here and closes your pull request with a "landed in `<sha>`" comment.
+4. The sync workflow publishes it here and closes your pull request with a "landed in `<sha>`" comment.
 
 A pull request should change one thing, come with a test that fails without it, and have every commit signed off (see Licence below).
 
