@@ -1,6 +1,6 @@
 {
   "name": "@frontic/library-contract",
-  "version": "0.17.1",
+  "version": "0.17.2",
   "description": "What a Frontic library item is: its shape, its registryDependencies, the brand CSS build, the class lint and the typecheck. Frontic UI's registry and CLI build on it.",
   "license": "FSL-1.1-MIT",
   "type": "module",
@@ -83,6 +83,7 @@
   "dependencies": {
     "@intlify/eslint-plugin-vue-i18n": "4.5.1",
     "@typescript-eslint/parser": "8.72.0",
+    "@vue/compiler-dom": "^3.5.44",
     "astro-eslint-parser": "3.2.0",
     "eslint": "10.13.0",
     "eslint-plugin-better-tailwindcss": "4.10.0",

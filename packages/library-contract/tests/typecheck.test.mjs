@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import { existsSync } from 'node:fs'
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { typecheckLibrary } from '../src/typecheck.mjs'
+import { slashesInString, typecheckLibrary } from '../src/typecheck.mjs'
 import { createContent } from './content.mjs'
 
 const workspaces = []
@@ -265,4 +265,116 @@ test('LT-15 paths cannot remap what the contract maps itself', async () => {
   for (const key of ['@library/*', '@frontic/source']) {
     await assert.rejects(typecheckLibrary({ workDir, contentDir, paths: { [key]: ['/elsewhere'] } }), new RegExp(`${key.replace(/[*/]/g, '\\$&')} is the contract's own mapping`))
   }
+})
+
+/** A gallery whose v-for hands each shot to a component, `pic` its attributes on that line. */
+async function gallery(pic) {
+  const { ws, content, workDir } = await createContent('.fx-slashes-')
+  workspaces.push(ws)
+  const library = path.join(content, 'library')
+  await write(
+    path.join(library, 'components/ui/pic/Pic.vue'),
+    '<script setup lang="ts">\ndefineProps<{ src: string; alt?: string }>()\n</script>\n<template><img :src="src" :alt="alt" /></template>\n',
+  )
+  await write(
+    path.join(library, 'components/ui/gallery/Gallery.vue'),
+    [
+      '<script setup lang="ts">',
+      'import Pic from "@library/components/ui/pic/Pic.vue"',
+      'const shots = [{ key: "parka", name: "Parka" }]',
+      '</script>',
+      '<template>',
+      '  <ul>',
+      '    <li v-for="shot in shots" :key="shot.key">',
+      `      <Pic ${pic} />`,
+      '      {{ shot.name }}',
+      '    </li>',
+      '  </ul>',
+      '</template>',
+      '',
+    ].join('\n'),
+  )
+  return { workDir, contentDir: content }
+}
+
+const GALLERY = 'library/components/ui/gallery/Gallery.vue'
+
+test('LT-16 `//` in a string in a component prop is one problem at that prop, not the missing names after it', { timeout: 120_000 }, async () => {
+  for (const pic of [':src="`https://static.frontic.com/${shot.key}.jpg`" :alt="shot.name"', 'src="https://static.frontic.com/parka.jpg" :alt="shot.name"']) {
+    const { problems } = await typecheckLibrary(await gallery(pic))
+    assert.deepEqual(
+      problems.map((p) => [p.file, p.line, p.column, p.ruleId]),
+      [[GALLERY, 8, 12, 'string-slashes']],
+      pic,
+    )
+    assert.match(problems[0].message, /^:?src holds `\/\/` in a string/)
+  }
+})
+
+test('LT-17 a `//` string with nothing missing after it is no problem, and a `//` comment is no string', { timeout: 120_000 }, async () => {
+  const { ws, content, workDir } = await createContent('.fx-slashes-')
+  workspaces.push(ws)
+  await write(path.join(content, 'library/components/ui/pic/Pic.vue'), '<script setup lang="ts">\ndefineProps<{ src: string }>()\n</script>\n<template><img :src="src" /></template>\n')
+  await write(
+    path.join(content, 'library/components/ui/hero/Hero.vue'),
+    '<script setup lang="ts">\nimport Pic from "@library/components/ui/pic/Pic.vue"\n</script>\n<template><Pic src="https://static.frontic.com/hero.jpg" /></template>\n',
+  )
+  assert.deepEqual(await typecheckLibrary({ workDir, contentDir: content }), { problems: [] })
+  assert.deepEqual(["'https://x'", '"a//b"', '`a${b}//c`', "`${'//'}`", 'a // note', 'a /* // */ b', '`${a // note\n}`', "'it\\'s' // note"].map(slashesInString), [
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+  ])
+})
+
+const PIC = '<script setup lang="ts">\ndefineProps<{ src: string }>()\n</script>\n<template><img :src="src" /></template>\n'
+
+/** A content dir holding Pic and `files`, each under library/components/ui/. */
+async function components(files) {
+  const { ws, content, workDir } = await createContent('.fx-slashes-')
+  workspaces.push(ws)
+  for (const [file, text] of Object.entries({ 'pic/Pic.vue': PIC, ...files })) await write(path.join(content, 'library/components/ui', file), text)
+  return { workDir, contentDir: content }
+}
+
+test('LT-18 a script that does not parse is its own problem, beside a `//` string', { timeout: 120_000 }, async () => {
+  const broken =
+    '<script setup lang="ts">\nimport Pic from "@library/components/ui/pic/Pic.vue"\nconst a = (\n</script>\n<template>\n  <Pic src="https://static.frontic.com/hero.jpg" />\n</template>\n'
+  const { problems } = await typecheckLibrary(await components({ 'broken/Broken.vue': broken }))
+  assert.deepEqual(
+    problems.map((p) => [p.file, p.line, p.ruleId]),
+    [['library/components/ui/broken/Broken.vue', 4, 'TS1109']],
+  )
+})
+
+test('LT-19 an error a `//` string did not cause stays as vue-tsc reports it', { timeout: 120_000 }, async () => {
+  const typeErrors = await typecheckLibrary(
+    await components({
+      'hero/Hero.vue':
+        '<script setup lang="ts">\nimport Pic from "@library/components/ui/pic/Pic.vue"\nconst title = "Basecamp"\n</script>\n<template>\n  <Pic src="https://static.frontic.com/hero.jpg" />\n  <h1>{{ title.lenght }}</h1>\n</template>\n',
+      'banner/Banner.vue':
+        '<template>\n  <Pic src="https://static.frontic.com/banner.jpg" />\n</template>\n<script setup lang="ts">\nimport Pic from "@library/components/ui/pic/Pic.vue"\nconst size: number = "large"\n</script>\n',
+    }),
+  )
+  assert.deepEqual(typeErrors.problems.map((p) => [p.file.split('/').at(-1), p.line, p.ruleId]).sort(), [
+    ['Banner.vue', 6, 'TS2322'],
+    ['Hero.vue', 7, 'TS2551'],
+  ])
+  // On its own: tsc reports no type errors anywhere once a file has a syntax error.
+  // An SVG element is no component to vue-tsc, so its `//` string breaks nothing and the syntax error after it stays.
+  const syntaxError = await typecheckLibrary(
+    await components({
+      'path/Path.vue':
+        '<script setup lang="ts">\nconst shots = [{ key: "parka" }]\n</script>\n<template>\n  <svg v-for="shot in shots" :key="shot.key">\n    <text><textPath href="https://x.com/#p">{{ (shot.key as ) }}</textPath></text>\n  </svg>\n</template>\n',
+    }),
+  )
+  assert.deepEqual(
+    syntaxError.problems.map((p) => [p.file.split('/').at(-1), p.line, p.ruleId]),
+    [['Path.vue', 6, 'TS1110']],
+  )
 })
