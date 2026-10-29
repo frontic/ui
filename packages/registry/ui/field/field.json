@@ -2,6 +2,19 @@
   "$schema": "../../item.schema.json",
   "title": "Field",
   "description": "Wraps one form control with its label, description and error, wires their ids and validates the value; most form controls join a Field placed around them.",
+  "components": {
+    "Field": "Groups a label, an input, a description and an error of one form field, and validates its input.",
+    "FieldContent": "Groups the label and description that sit beside the control of a field.",
+    "FieldDescription": "Gives help text for a field, such as what to enter.",
+    "FieldError": "Shows why the input of a field is invalid, from its own validation, from the server or from a form library.",
+    "FieldGroup": "Stacks several fields of a form together.",
+    "FieldLabel": "Labels the input of a field.",
+    "FieldLegend": "Titles a set of related fields.",
+    "FieldSeparator": "Separates fields of a form, optionally with a short text in between.",
+    "FieldSet": "Groups related fields under one legend.",
+    "FieldTitle": "Shows the title of a field next to its description.",
+    "FieldValidity": "Renders from the validation state of a field, such as a custom message or a strength meter."
+  },
   "recipes": {
     "field": {
       "base": {

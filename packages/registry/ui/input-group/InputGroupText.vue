@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows fixed text, such as a unit or prefix, inside the group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

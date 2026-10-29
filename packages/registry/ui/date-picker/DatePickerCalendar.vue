@@ -1,9 +1,5 @@
-<script lang="ts">
-/** The calendar a date picker opens: our Calendar, driven by the picker's date and settings. */
-export default {}
-</script>
-
 <script setup lang="ts">
+// The calendar a date picker opens: our Calendar, driven by the picker's date and settings.
 import type { DateValue } from 'reka-ui'
 import type { LayoutTypes } from '@library/components/ui/calendar'
 import { isEqualDay } from '@internationalized/date'

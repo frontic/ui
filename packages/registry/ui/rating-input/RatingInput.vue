@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user give a rating by picking one of its marks, drawn as dots or stars. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { RatingRootEmits, RatingRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

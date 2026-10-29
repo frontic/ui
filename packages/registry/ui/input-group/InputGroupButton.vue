@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user act on the input of its group, such as submit it. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { InputGroupButtonProps } from '.'
 import { cva } from 'class-variance-authority'

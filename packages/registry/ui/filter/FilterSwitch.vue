@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user turn a yes-or-no filter on or off. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { useId } from 'vue'

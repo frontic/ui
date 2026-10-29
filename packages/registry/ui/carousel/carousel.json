@@ -2,6 +2,15 @@
   "$schema": "../../item.schema.json",
   "title": "Carousel",
   "description": "Scrolls slides sideways or up and down, with previous and next buttons, dots that jump to a slide and a bar that shows how far the shopper has scrolled.",
+  "components": {
+    "Carousel": "Groups all parts of the carousel, which scrolls through items sideways.",
+    "CarouselContent": "Holds the slides of the carousel in a scrollable row.",
+    "CarouselDots": "Shows one dot per slide and lets the user jump to a slide.",
+    "CarouselItem": "Holds the content of one slide in the carousel.",
+    "CarouselNext": "Lets the user scroll the carousel to the next slide.",
+    "CarouselPrevious": "Lets the user scroll the carousel to the previous slide.",
+    "CarouselProgress": "Shows how far the user has scrolled through the carousel."
+  },
   "recipes": {
     "carousel": {
       "composes": ["focus-ring"]

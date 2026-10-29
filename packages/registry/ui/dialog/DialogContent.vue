@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds what the dialog shows while open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogContentEmits, DialogContentProps } from 'reka-ui'
 import type { HTMLAttributes, TransitionProps } from 'vue'

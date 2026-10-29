@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups related options of the select. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SelectGroupProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

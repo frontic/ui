@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds an icon or image that illustrates the dialog. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

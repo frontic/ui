@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups swatches so the user can choose one or several options. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ToggleGroupRootEmits, ToggleGroupRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

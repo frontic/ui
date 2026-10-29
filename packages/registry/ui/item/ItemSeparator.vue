@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Separates the items of a group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SeparatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

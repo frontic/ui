@@ -2,6 +2,18 @@
   "$schema": "../../item.schema.json",
   "title": "Alert Dialog",
   "description": "Asks the shopper to confirm or cancel an action before it happens, such as removing an address, and keeps focus inside until they choose.",
+  "components": {
+    "AlertDialog": "Groups all parts of the alert dialog.",
+    "AlertDialogAction": "Confirms the action the dialog asks about and closes the dialog.",
+    "AlertDialogCancel": "Dismisses the dialog without taking the action.",
+    "AlertDialogContent": "Holds what the alert dialog shows while open.",
+    "AlertDialogDescription": "Explains what the action in the dialog will do.",
+    "AlertDialogFooter": "Holds the cancel and confirm buttons at the bottom of the dialog.",
+    "AlertDialogHeader": "Groups the title and description at the top of the dialog.",
+    "AlertDialogMedia": "Holds an icon or image that illustrates the dialog.",
+    "AlertDialogTitle": "Names the action the dialog asks the user to confirm.",
+    "AlertDialogTrigger": "Opens the alert dialog."
+  },
   "recipes": {
     "alert-dialog-content": {
       "base": {

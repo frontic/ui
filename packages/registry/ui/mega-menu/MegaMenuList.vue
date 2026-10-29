@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists the top-level items of the mega menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NavigationMenuListProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

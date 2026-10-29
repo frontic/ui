@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the shopper apply promo codes and shows the discounts they take off the order. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { PriceType } from '@library/components/ui/price'

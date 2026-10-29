@@ -2,6 +2,10 @@
   "$schema": "../../item.schema.json",
   "title": "Radio Group",
   "description": "Lets the user pick exactly one of a few options; joins the Field around it for its label, description and errors.",
+  "components": {
+    "RadioGroup": "Groups radio items so the user can pick exactly one option.",
+    "RadioGroupItem": "Lets the user select one option of its radio group."
+  },
   "recipes": {
     "radio-group": {
       "base": {

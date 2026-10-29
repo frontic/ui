@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Separator",
   "description": "Draws a thin horizontal or vertical line between groups of content, hidden from screen readers unless it carries meaning.",
+  "components": {
+    "Separator": "Divides content into distinct sections."
+  },
   "recipes": {
     "separator": {
       "base": {

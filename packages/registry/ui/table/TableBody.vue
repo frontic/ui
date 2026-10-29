@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the data rows of the table. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

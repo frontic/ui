@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user remove its tag; the group emits `remove`. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TagGroupItemDeleteProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

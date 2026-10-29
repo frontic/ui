@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user limit products to a price range with a slider. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { type PriceType, formatPrice } from '@library/lib/format'

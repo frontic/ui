@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows one dot per slide and lets the user jump to a slide. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { WithClassAsProps } from './interface'
 import { Button } from '@library/components/ui/button'

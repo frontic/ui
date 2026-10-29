@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user switch to its tab. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TabsTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

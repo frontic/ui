@@ -3,6 +3,9 @@
   "title": "Cart Full",
   "description": "The cart page: editable lines with quantity controls, an order summary and a checkout button.",
   "categories": ["cart"],
+  "components": {
+    "CartFull": "Shows the full cart page with editable items, an order summary and a checkout button."
+  },
   "recipes": {
     "cart-full": {
       "composes": ["page-title", "hint", "meta", "total"],

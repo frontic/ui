@@ -3,5 +3,8 @@
   "title": "Shipping Address",
   "description": "Checkout address card with a step badge, name, street, postcode, city and country fields, a same-as-billing checkbox, and a continue button.",
   "categories": ["checkout"],
+  "components": {
+    "ShippingAddress": "Lets the shopper enter a shipping address and continue to the next checkout step."
+  },
   "recipes": {}
 }

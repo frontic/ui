@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a placeholder for a sidebar menu item while it loads. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { Skeleton } from '@library/components/ui/skeleton'

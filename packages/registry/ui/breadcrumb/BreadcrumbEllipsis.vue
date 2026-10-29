@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Stands in for breadcrumb steps that are hidden to save space. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { IconPlaceholder } from '@registry/icon-placeholder'

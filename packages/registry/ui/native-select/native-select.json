@@ -2,6 +2,11 @@
   "$schema": "../../item.schema.json",
   "title": "Native Select",
   "description": "The browser's own select, for choices autofill or the phone's picker should fill, such as a country in an address; mutes the empty option as a placeholder.",
+  "components": {
+    "NativeSelect": "Lets the user pick one option from a list using the browser's own picker.",
+    "NativeSelectOptGroup": "Groups related options of the native select under a shared heading.",
+    "NativeSelectOption": "Offers one choice the user can pick in the native select."
+  },
   "recipes": {
     "native-select": {
       "base": {

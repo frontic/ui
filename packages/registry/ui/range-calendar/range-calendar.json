@@ -2,6 +2,20 @@
   "$schema": "../../item.schema.json",
   "title": "Range Calendar",
   "description": "Lets the shopper pick a start and an end date from one or more months, within a minimum and maximum and up to a set number of days.",
+  "components": {
+    "RangeCalendar": "Lets the user pick a start and end date from one or more months.",
+    "RangeCalendarCell": "Holds one day of the range calendar grid.",
+    "RangeCalendarCellTrigger": "Lets the user select a day as part of the date range.",
+    "RangeCalendarGrid": "Holds the weekday names and days of one month.",
+    "RangeCalendarGridBody": "Holds the week rows of one month.",
+    "RangeCalendarGridHead": "Holds the row of weekday names above the days.",
+    "RangeCalendarGridRow": "Groups the cells of one week, or the weekday names.",
+    "RangeCalendarHeadCell": "Labels one weekday above its column of days.",
+    "RangeCalendarHeader": "Groups the heading with the buttons that change the month.",
+    "RangeCalendarHeading": "Shows the month and year currently displayed.",
+    "RangeCalendarNextButton": "Moves the range calendar to the next month.",
+    "RangeCalendarPrevButton": "Moves the range calendar to the previous month."
+  },
   "recipes": {
     "range-calendar": {
       "base": {

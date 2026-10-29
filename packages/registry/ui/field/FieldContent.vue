@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the label and description that sit beside the control of a field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Explains the purpose of the drawer below its title. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { DrawerDescriptionProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

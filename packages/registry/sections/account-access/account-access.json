@@ -3,6 +3,9 @@
   "title": "Account Access",
   "description": "Sign-in and security settings card: a pending-change notice, email and password with change actions, a two-factor switch, and account deletion behind a confirmation dialog.",
   "categories": ["account"],
+  "components": {
+    "AccountAccess": "Lets the shopper change email and password, switch two-factor on and delete the account."
+  },
   "recipes": {
     "account-access-delete-title": {
       "base": {

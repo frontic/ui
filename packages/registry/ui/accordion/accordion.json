@@ -2,6 +2,12 @@
   "$schema": "../../item.schema.json",
   "title": "Accordion",
   "description": "Stacked sections the shopper opens and closes, one or several at a time, such as shipping and returns on a product page.",
+  "components": {
+    "Accordion": "Groups all parts of the accordion.",
+    "AccordionContent": "Holds what its item shows while open.",
+    "AccordionItem": "Groups a trigger with the content it opens and closes.",
+    "AccordionTrigger": "Opens and closes the content of its item."
+  },
   "recipes": {
     "accordion": {
       "base": {

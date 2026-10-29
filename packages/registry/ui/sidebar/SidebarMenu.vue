@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists the navigation items of a sidebar group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

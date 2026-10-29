@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the chosen option, or a placeholder when nothing is chosen. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue, SelectValueProps } from 'reka-ui'
 import { SelectValue, useForwardProps } from 'reka-ui'

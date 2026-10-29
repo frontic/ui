@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the search in an overlay: near the top on wide screens, full screen on phones with a Cancel button. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { DialogContent, DialogOverlay, DialogPortal, DialogRoot, DialogTitle, Presence } from 'reka-ui'

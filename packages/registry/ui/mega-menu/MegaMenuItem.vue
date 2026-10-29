@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a trigger with the content it opens in the mega menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NavigationMenuItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

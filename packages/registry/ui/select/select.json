@@ -2,6 +2,19 @@
   "$schema": "../../item.schema.json",
   "title": "Select",
   "description": "Lets the user pick one option from a list that opens below the trigger at its width, joining a Field.",
+  "components": {
+    "Select": "Groups all parts of the select.",
+    "SelectContent": "Holds the options of the select while it is open.",
+    "SelectGroup": "Groups related options of the select.",
+    "SelectItem": "Offers one option the user can pick in the select.",
+    "SelectItemText": "Holds the text of an option, which the select shows once chosen.",
+    "SelectLabel": "Labels a group of options in the select.",
+    "SelectScrollDownButton": "Scrolls the options down when the list is longer than the view.",
+    "SelectScrollUpButton": "Scrolls the options up when the list is longer than the view.",
+    "SelectSeparator": "Separates groups of options in the select.",
+    "SelectTrigger": "Opens and closes the list of options in the select.",
+    "SelectValue": "Shows the chosen option, or a placeholder when nothing is chosen."
+  },
   "recipes": {
     "select-chevron": {
       "base": {

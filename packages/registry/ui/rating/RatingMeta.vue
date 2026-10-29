@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the numeric rating and the number of reviews behind it. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import { formatRating } from '@library/lib/format'
 import { useLocale } from 'reka-ui'

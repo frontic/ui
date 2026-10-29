@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the autocomplete, which lets the user type freely and pick from suggestions. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AutocompleteRootEmits, AutocompleteRootProps } from 'reka-ui'
 import { AutocompleteRoot, injectFieldRootContext, useForwardPropsEmits } from 'reka-ui'

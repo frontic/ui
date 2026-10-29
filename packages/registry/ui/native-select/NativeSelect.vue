@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user pick one option from a list using the browser's own picker. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

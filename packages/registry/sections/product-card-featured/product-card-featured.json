@@ -3,6 +3,9 @@
   "title": "Product Card Featured",
   "description": "Large product card with a wishlist toggle and a feature badge on the photo, the brand above the title, a description, swatches that switch the image, and a prominent price beside a compare toggle.",
   "categories": ["product"],
+  "components": {
+    "ProductCardFeatured": "Shows a product with its image and price, with compare and wishlist buttons."
+  },
   "recipes": {
     "product-card-featured": {
       "composes": ["product-card-title-lg", "product-card-lift", "meta", "focus-ring"]

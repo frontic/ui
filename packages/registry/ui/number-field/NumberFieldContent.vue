@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the number input with its decrement and increment buttons. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

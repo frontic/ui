@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lays out the days of one month in a grid. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarGridProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

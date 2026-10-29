@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the brand, a short row of links, social links and the copyright. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { FooterLink, FooterSocialLink } from './types'

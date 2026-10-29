@@ -2,6 +2,10 @@
   "$schema": "../../item.schema.json",
   "title": "Kbd",
   "description": "Shows a keyboard key or shortcut, such as the key that focuses the search.",
+  "components": {
+    "Kbd": "Shows a keyboard key or shortcut.",
+    "KbdGroup": "Groups several keys into one shortcut."
+  },
   "recipes": {
     "kbd": {
       "base": {

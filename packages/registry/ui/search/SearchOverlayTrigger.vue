@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens the search overlay; focus returns to it when the overlay closes, also after a click that never focused it. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogTriggerProps } from 'reka-ui'
 import { DialogTrigger, useForwardProps } from 'reka-ui'

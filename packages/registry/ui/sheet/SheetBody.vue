@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the sheet's main content and scrolls it, keeping the header and footer in view. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

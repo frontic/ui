@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Keeps its content at a fixed width-to-height ratio. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AspectRatioProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -2,6 +2,12 @@
   "$schema": "../../item.schema.json",
   "title": "Radio Accordion",
   "description": "Radio options where the picked one reveals its details, for checkout choices like a card form under the card option or a delivery window under express shipping.",
+  "components": {
+    "RadioAccordion": "Groups options of which the user picks one; the picked option reveals its details.",
+    "RadioAccordionItem": "Groups one option with the details it reveals while selected.",
+    "RadioAccordionTrigger": "Labels its option and lets the user pick it.",
+    "RadioAccordionContent": "Holds the details its option reveals while selected, such as a card form or a delivery window."
+  },
   "recipes": {
     "radio-accordion": {
       "base": {

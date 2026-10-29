@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the brand with link groups, a newsletter signup, social links and legal links. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { FooterLink, FooterLinkGroup, FooterSocialLink } from './types'

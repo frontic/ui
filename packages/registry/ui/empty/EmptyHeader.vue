@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the media, title and description of the empty state. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

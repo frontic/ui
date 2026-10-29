@@ -2,6 +2,11 @@
   "$schema": "../../item.schema.json",
   "title": "Button Group",
   "description": "Joins related buttons into one connected row or column, with separators and text labels between them.",
+  "components": {
+    "ButtonGroup": "Joins related buttons into one connected group.",
+    "ButtonGroupSeparator": "Separates two buttons inside a button group.",
+    "ButtonGroupText": "Shows a text label as part of a button group."
+  },
   "recipes": {
     "button-group": {
       "base": {

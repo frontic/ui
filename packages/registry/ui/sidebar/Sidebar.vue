@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the side navigation panel, which can collapse to icons or hide off-screen. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SidebarProps } from '.'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from '@library/components/ui/sheet'

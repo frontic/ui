@@ -2,6 +2,24 @@
   "$schema": "../../item.schema.json",
   "title": "Filter",
   "description": "The parts of a storefront filter: option lists with counts and search, swatches, a price range, ratings and switches, in groups that open in place or as a popover and reset together.",
+  "components": {
+    "Filter": "Groups all parts of the filter and lets the user reset them together.",
+    "FilterField": "Groups the title, control and description of one filter option.",
+    "FilterFieldContent": "Stacks a filter option's label and description beside its control.",
+    "FilterFieldDescription": "Explains a filter option below its label.",
+    "FilterFieldLabel": "Labels the control of a filter option.",
+    "FilterFieldTitle": "Names a group of filter options.",
+    "FilterGroup": "Shows a labelled set of filter options that opens and closes.",
+    "FilterList": "Lists filter options with result counts that the user can toggle and search.",
+    "FilterTrigger": "Opens and closes a filter group, showing its label and count of active options.",
+    "FilterPrice": "Lets the user limit products to a price range with a slider.",
+    "FilterRange": "Lets the user limit a value by typing a lowest and highest number.",
+    "FilterRating": "Lets the user limit products to those with a minimum star rating.",
+    "FilterReset": "Lets the user clear all filters at once.",
+    "FilterSlider": "Lets the user limit a numeric value to a range with a slider.",
+    "FilterSwatch": "Lists colour options as swatches that the user can toggle.",
+    "FilterSwitch": "Lets the user turn a yes-or-no filter on or off."
+  },
   "recipes": {
     "filter-field": {
       "base": {

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Describes in a short line what the table shows. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

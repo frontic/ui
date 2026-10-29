@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the percentage saved against the original price. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { inject } from 'vue'

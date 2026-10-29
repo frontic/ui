@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups one option with the details it reveals while selected. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue, PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -2,6 +2,18 @@
   "$schema": "../../item.schema.json",
   "title": "Drawer",
   "description": "A panel that slides in from any edge and closes with a swipe, with snap points for a half-open state, such as filters or a mini cart on a phone.",
+  "components": {
+    "Drawer": "Groups all parts of the drawer.",
+    "DrawerBody": "Holds the drawer's main content and scrolls it when the drawer reaches its height cap, keeping the header and footer in view.",
+    "DrawerClose": "Closes the drawer.",
+    "DrawerContent": "Holds what the drawer shows while open.",
+    "DrawerDescription": "Explains the purpose of the drawer below its title.",
+    "DrawerFooter": "Holds the actions of the drawer, such as apply and cancel buttons.",
+    "DrawerHeader": "Groups the title and description at the top of the drawer.",
+    "DrawerOverlay": "Covers the page behind the open drawer.",
+    "DrawerTitle": "Names the drawer.",
+    "DrawerTrigger": "Opens the drawer."
+  },
   "recipes": {
     "drawer-body": {
       "base": {

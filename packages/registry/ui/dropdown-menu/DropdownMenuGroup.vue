@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups related entries of the dropdown menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuGroupProps } from 'reka-ui'
 import { DropdownMenuGroup, useForwardProps } from 'reka-ui'

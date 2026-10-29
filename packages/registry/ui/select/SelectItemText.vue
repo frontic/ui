@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the text of an option, which the select shows once chosen. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SelectItemTextProps } from 'reka-ui'
 import { SelectItemText, useForwardProps } from 'reka-ui'

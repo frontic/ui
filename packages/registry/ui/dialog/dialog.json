@@ -2,6 +2,19 @@
   "$schema": "../../item.schema.json",
   "title": "Dialog",
   "description": "A modal window over the page, with a header, a body that scrolls when it outgrows the screen, and a footer for actions such as save and cancel.",
+  "components": {
+    "Dialog": "Groups all parts of the dialog.",
+    "DialogBody": "Holds the dialog's main content and scrolls it when the dialog outgrows the screen, keeping the header and footer in view.",
+    "DialogClose": "Closes the dialog.",
+    "DialogContent": "Holds what the dialog shows while open.",
+    "DialogDescription": "Explains the purpose of the dialog below its title.",
+    "DialogFooter": "Holds the actions of the dialog, such as confirm and cancel buttons.",
+    "DialogHeader": "Groups the title and description at the top of the dialog.",
+    "DialogOverlay": "Covers the page behind the open dialog.",
+    "DialogScrollContent": "Holds what the dialog shows while open, scrolling when the content is tall.",
+    "DialogTitle": "Names the dialog.",
+    "DialogTrigger": "Opens the dialog."
+  },
   "recipes": {
     "dialog-body": {
       "base": {

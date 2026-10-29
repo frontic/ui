@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a card's number, expiry and security code so they share the brand the number shows. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PaymentCardBrand } from './card'
 import { providePaymentCardContext } from './context'

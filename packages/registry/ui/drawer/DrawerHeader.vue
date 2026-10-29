@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the title and description at the top of the drawer. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

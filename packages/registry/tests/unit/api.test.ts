@@ -33,11 +33,28 @@ describe('an item api', () => {
     expect(part('product-card-basic', 'ProductCardBasic').slot).toBeUndefined()
   })
 
-  it("reads a part's purpose from the doc comment on its default export, the place editors show on hover", () => {
+  it("reads a part's purpose from its item's manifest, one sentence for each part the index exports", () => {
     expect(part('accordion', 'Accordion').description).toBe('Groups all parts of the accordion.')
+    const missing = Object.entries(apis).flatMap(([item, api]) => {
+      const named = api.parts.map((p) => p.name)
+      // A helper in lib/ or composables/ has neither parts nor a manifest folder of its own.
+      const manifest = partPath(`${item}/${item}.json`)
+      if (!manifest) return named.length ? [`${item}: no manifest`] : []
+      const components = (JSON.parse(readFileSync(join(root, manifest), 'utf8')) as { components?: Record<string, string> }).components ?? {}
+      return [
+        ...named.filter((name) => !components[name]).map((name) => `${item}: ${name} has no entry`),
+        ...Object.keys(components)
+          .filter((name) => !named.includes(name))
+          .map((name) => `${item}: ${name} is no part`),
+      ]
+    })
+    expect(missing).toEqual([])
+  })
+
+  it('keeps no doc block on a part: no default export of its own, no JSDoc at the top of its setup script', () => {
     const files = Object.entries(apis).flatMap(([item, api]) => api.parts.map((p) => `${item}/${p.file}`))
     const sources = Object.fromEntries(files.map((file) => [file, readFileSync(join(root, partPath(file)), 'utf8')]))
-    expect(files.filter((file) => !/<script lang="ts">[\s\S]*?\/\*\*[\s\S]*?\*\/\s*export default \{/.test(sources[file]!))).toEqual([])
+    expect(files.filter((file) => /<script lang="ts">[\s\S]*?export default \{/.test(sources[file]!))).toEqual([])
     expect(files.filter((file) => /<script\b[^>]*\bsetup\b[^>]*>\s*\/\*\*/.test(sources[file]!))).toEqual([])
   })
 

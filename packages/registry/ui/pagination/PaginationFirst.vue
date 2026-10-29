@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user jump to the first page. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PaginationFirstProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

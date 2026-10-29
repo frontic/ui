@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user select one option within its swatch group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ToggleGroupItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

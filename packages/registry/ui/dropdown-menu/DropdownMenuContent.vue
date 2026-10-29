@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the entries the dropdown menu shows while open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuContentEmits, DropdownMenuContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** A line of text in the panel, such as "No results for …"; the shop decides when it shows. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

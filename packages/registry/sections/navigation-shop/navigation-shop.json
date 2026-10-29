@@ -3,6 +3,9 @@
   "title": "Navigation Shop",
   "description": "Store navigation whose categories open full-width flyouts of link columns and featured tiles, laid out beside, above or captioned, and fold into a tabbed menu sheet on narrow screens.",
   "categories": ["navigation"],
+  "components": {
+    "NavigationShop": "Shows store navigation with full-width flyouts of link columns and featured tiles, laid out beside, above or captioned, plus a mobile menu."
+  },
   "recipes": {
     "navigation-shop": {
       "composes": ["link", "hint", "focus-ring", "line-title", "section-title"]

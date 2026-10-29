@@ -2,6 +2,16 @@
   "$schema": "../../item.schema.json",
   "title": "Navigation Menu",
   "description": "A row of site links where some open a panel of further links, shown in one shared panel below the row that resizes to each; set viewport to false to open each panel under its own trigger. For full-width flyouts with image tiles, use mega-menu.",
+  "components": {
+    "NavigationMenu": "Groups all parts of the navigation menu.",
+    "NavigationMenuContent": "Holds the links and content shown when its menu item is open.",
+    "NavigationMenuIndicator": "Points to the trigger of the currently open navigation menu item.",
+    "NavigationMenuItem": "Groups a trigger with the content it opens, or holds a single link.",
+    "NavigationMenuLink": "Links to a page from the navigation menu.",
+    "NavigationMenuList": "Lists the top-level items of the navigation menu.",
+    "NavigationMenuTrigger": "Opens and closes the content of its navigation menu item.",
+    "NavigationMenuViewport": "Shows the content of the open navigation menu item."
+  },
   "recipes": {
     "navigation-menu": {
       "base": {

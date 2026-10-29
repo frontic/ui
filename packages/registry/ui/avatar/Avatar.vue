@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the image, fallback and badge of an avatar. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { AvatarSize } from './context'

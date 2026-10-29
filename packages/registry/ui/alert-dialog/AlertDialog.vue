@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the alert dialog. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AlertDialogEmits, AlertDialogProps } from 'reka-ui'
 import { AlertDialogRoot, useForwardPropsEmits } from 'reka-ui'

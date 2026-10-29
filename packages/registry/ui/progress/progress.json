@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Progress",
   "description": "Shows how far a task has progressed, as a share of the whole; slides a segment while that is unknown.",
+  "components": {
+    "Progress": "Shows how far a task has progressed, as a share of the whole."
+  },
   "recipes": {
     "progress": {
       "base": {

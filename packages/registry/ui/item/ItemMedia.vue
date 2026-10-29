@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows an icon, image or avatar at the start of its item. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

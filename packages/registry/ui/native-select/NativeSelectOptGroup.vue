@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups related options of the native select under a shared heading. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

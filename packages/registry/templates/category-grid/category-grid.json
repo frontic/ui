@@ -3,6 +3,9 @@
   "title": "Category Grid",
   "description": "Category page under the shop header: breadcrumb, title and description, result count and sort, a filter sidebar that becomes a sheet on small screens, a product gallery grid and pagination.",
   "categories": ["product"],
+  "components": {
+    "CategoryGrid": "Shows a category page with header, filters, sorting and a grid of products."
+  },
   "recipes": {
     "category-grid": {
       "composes": ["hint", "clear-link", "focus-ring"],

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Marks the area where a right-click opens the context menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists the page numbers, ellipses and navigation buttons of the pagination. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PaginationListProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

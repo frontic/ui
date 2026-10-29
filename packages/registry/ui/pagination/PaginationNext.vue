@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user go to the next page. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PaginationNextProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

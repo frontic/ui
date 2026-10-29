@@ -3,6 +3,9 @@
   "title": "Product Card Basic",
   "description": "Product tile with sale and stock badges, rating, price, colour swatches that switch the image, and an add-to-cart button that confirms the add.",
   "categories": ["product"],
+  "components": {
+    "ProductCardBasic": "Shows a product with its image, price and rating, with an add-to-cart button."
+  },
   "recipes": {
     "product-card-basic": {
       "composes": ["product-card-title", "product-card-lift", "focus-ring", "meta"],

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds one day in a row of the calendar grid. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarCellProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

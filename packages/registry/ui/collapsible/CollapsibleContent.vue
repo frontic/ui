@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds what its collapsible shows while open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { CollapsibleContentProps } from 'reka-ui'
 import { CollapsibleContent, useForwardProps } from 'reka-ui'

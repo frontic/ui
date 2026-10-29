@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows an optional announcement, the logo, navigation, and search, account and cart buttons. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { Badge } from '@library/components/ui/badge'

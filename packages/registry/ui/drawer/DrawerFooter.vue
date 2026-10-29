@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the actions of the drawer, such as apply and cancel buttons. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

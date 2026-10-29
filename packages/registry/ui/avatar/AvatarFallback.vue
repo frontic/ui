@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows initials or an icon when the avatar image is missing or fails to load. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AvatarFallbackProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the accordion. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue, AccordionRootEmits, AccordionRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

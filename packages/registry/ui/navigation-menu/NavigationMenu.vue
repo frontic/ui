@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the navigation menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NavigationMenuRootEmits, NavigationMenuRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

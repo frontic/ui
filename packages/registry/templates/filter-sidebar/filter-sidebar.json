@@ -3,6 +3,9 @@
   "title": "Filter Sidebar",
   "description": "A product list with its filters in a collapsible sidebar beside it, plus sorting and search.",
   "categories": ["filter"],
+  "components": {
+    "FilterSidebar": "Shows a product list with filters in a collapsible sidebar, plus sorting and search."
+  },
   "recipes": {
     "filter-sidebar": {
       "composes": ["title", "hint", "clear-link", "focus-ring"],

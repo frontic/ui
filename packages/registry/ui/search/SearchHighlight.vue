@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Text with every match of the search terms in bold; the terms default to the typed query. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { computed, inject } from 'vue'

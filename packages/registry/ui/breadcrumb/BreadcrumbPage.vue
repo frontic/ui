@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Marks the current page as the last step of the breadcrumb. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

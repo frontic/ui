@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the shopper sign in with an emailed code, a passkey or a password. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { computed, useId } from 'vue'

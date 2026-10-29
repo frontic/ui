@@ -1,8 +1,3 @@
-<script lang="ts">
-/** One row of the panel that opens something: a link, so middle-click and open-in-new-tab work. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens a popover with the cart's first items, subtotal and checkout. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { CartLine } from './types'

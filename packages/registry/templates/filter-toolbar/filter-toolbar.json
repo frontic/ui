@@ -3,6 +3,9 @@
   "title": "Filter Toolbar",
   "description": "A product list with its filters as popovers in a toolbar above it, plus sorting and search.",
   "categories": ["filter"],
+  "components": {
+    "FilterToolbar": "Shows a product list with filters in a toolbar above it, plus sorting and search."
+  },
   "recipes": {
     "filter-toolbar": {
       "composes": ["title", "hint", "clear-link", "focus-ring"],

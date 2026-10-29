@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the number field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NumberFieldRootEmits, NumberFieldRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

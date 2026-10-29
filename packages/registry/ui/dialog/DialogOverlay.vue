@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Covers the page behind the open dialog. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogOverlayProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -24,6 +24,17 @@
         "type": "string"
       }
     },
+    "components": {
+      "type": "object",
+      "description": "Each part the item's index exports, by its component name, with the one sentence that says what it is for; the API reference and the MCP read it.",
+      "propertyNames": {
+        "pattern": "^[A-Z][A-Za-z0-9]*$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
     "recipes": {
       "type": "object",
       "description": "The trees this item owns, by name; each is a recipe as https://registry.ui.frontic.com/recipe.schema.json describes it, and lists in composes the shared recipes its element wears. A tree may hold only composes; an element with no tree of its own answers to the item's root tree.",

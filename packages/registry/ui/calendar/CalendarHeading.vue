@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the month and year the calendar currently displays. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarHeadingProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

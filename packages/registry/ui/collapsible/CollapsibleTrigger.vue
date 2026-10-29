@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens and closes the content of its collapsible. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { CollapsibleTriggerProps } from 'reka-ui'
 import { CollapsibleTrigger, useForwardProps } from 'reka-ui'

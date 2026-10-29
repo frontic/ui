@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a rating as filled and empty marks, with an optional value and review count; the brand's rating colour fills the marks. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { cva } from 'class-variance-authority'

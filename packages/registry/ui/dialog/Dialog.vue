@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the dialog. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogRootEmits, DialogRootProps } from 'reka-ui'
 import { DialogRoot, useForwardPropsEmits } from 'reka-ui'

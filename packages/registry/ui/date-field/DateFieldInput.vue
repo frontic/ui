@@ -1,8 +1,3 @@
-<script lang="ts">
-/** One segment of the date, such as the day or the month, or a separator between two. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DateFieldInputProps, DateRangeFieldInputProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

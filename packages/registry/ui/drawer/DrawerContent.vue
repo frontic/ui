@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds what the drawer shows while open. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { DrawerContentEmits, DrawerContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

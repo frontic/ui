@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user trigger an action, such as adding a product to the cart. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows one mark of the rating, either filled or empty. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { cva } from 'class-variance-authority'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the average rating with its breakdown, review cards and a write-a-review prompt. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { RatingCount, ReviewItem } from './types'

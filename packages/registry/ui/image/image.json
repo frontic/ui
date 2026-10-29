@@ -2,6 +2,10 @@
   "$schema": "../../item.schema.json",
   "title": "Image",
   "description": "Shows an image with a loading effect and a placeholder while it loads, and a fallback when it fails, such as a product shot.",
+  "components": {
+    "Image": "Shows an image with a loading state and a fallback if it fails to load.",
+    "ImageFallback": "Shows a placeholder in place of an image that failed to load."
+  },
   "recipes": {
     "image": {
       "base": {

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Separates two buttons inside a button group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SeparatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

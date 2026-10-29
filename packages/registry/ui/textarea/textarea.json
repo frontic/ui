@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Textarea",
   "description": "An underlined field for longer free text, such as a gift message, that grows with its content; joins a Field around it.",
+  "components": {
+    "Textarea": "Lets the user write longer text over several lines, such as a note or review."
+  },
   "recipes": {
     "textarea": {
       "composes": ["disabled"],

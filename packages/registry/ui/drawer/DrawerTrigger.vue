@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens the drawer. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { DrawerTriggerProps } from 'reka-ui'
 import { DrawerTrigger, useForwardProps } from 'reka-ui'

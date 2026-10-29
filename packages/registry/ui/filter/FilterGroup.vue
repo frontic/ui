@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a labelled set of filter options that opens and closes. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { computed, provide } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the details its option reveals while selected, such as a card form or a delivery window. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { CollapsibleContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

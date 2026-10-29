@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Adds a secondary action button to a sidebar menu item. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

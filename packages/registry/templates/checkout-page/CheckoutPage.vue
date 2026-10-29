@@ -1,8 +1,3 @@
-<script lang="ts">
-/** A one-page checkout: contact, delivery, shipping method and payment beside an order summary that folds into a bar on narrow screens. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { PaymentCardBrand } from '@library/components/ui/payment-card'

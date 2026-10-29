@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Marks where the option list attaches, wrapping the input and trigger. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxAnchorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

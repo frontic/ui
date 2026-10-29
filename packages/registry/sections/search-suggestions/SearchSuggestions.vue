@@ -1,8 +1,3 @@
-<script lang="ts">
-/** A storefront search: products, categories and brands while the shopper types, suggestions and curated picks before. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { SearchCollection, SearchResult, SearchSuggestion } from './types'

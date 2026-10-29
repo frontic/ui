@@ -2,6 +2,23 @@
   "$schema": "../../item.schema.json",
   "title": "Dropdown Menu",
   "description": "A menu that opens from a button, with actions, checkbox and radio items, labelled groups and destructive entries, such as account or sort options.",
+  "components": {
+    "DropdownMenu": "Groups all parts of the dropdown menu.",
+    "DropdownMenuCheckboxItem": "Lets the user switch an option on or off from the menu.",
+    "DropdownMenuContent": "Holds the entries the dropdown menu shows while open.",
+    "DropdownMenuGroup": "Groups related entries of the dropdown menu.",
+    "DropdownMenuItem": "Holds one action the user can pick from the dropdown menu.",
+    "DropdownMenuLabel": "Labels a group of entries in the dropdown menu.",
+    "DropdownMenuPortal": "Places the menu content above the rest of the page.",
+    "DropdownMenuRadioGroup": "Groups radio items so the user can pick exactly one.",
+    "DropdownMenuRadioItem": "Lets the user choose one option from a group in the menu.",
+    "DropdownMenuSeparator": "Separates groups of entries in the dropdown menu.",
+    "DropdownMenuShortcut": "Shows the keyboard shortcut for a menu item.",
+    "DropdownMenuSub": "Groups a submenu trigger with the nested menu it opens.",
+    "DropdownMenuSubContent": "Holds the entries the submenu shows while open.",
+    "DropdownMenuSubTrigger": "Opens a submenu from an item of the dropdown menu.",
+    "DropdownMenuTrigger": "Opens and closes the dropdown menu."
+  },
   "recipes": {
     "dropdown-menu-content": {
       "base": {

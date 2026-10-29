@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Places an icon, text or button beside the input of its group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

@@ -3,6 +3,9 @@
   "title": "Footer Trust",
   "description": "Footer with four trust points, payment method badges and legal links.",
   "categories": ["footer"],
+  "components": {
+    "FooterTrust": "Shows trust points such as shipping and returns, accepted payment methods and legal links."
+  },
   "recipes": {
     "footer-trust": {
       "composes": ["section-title", "meta", "hint", "link", "focus-ring"],

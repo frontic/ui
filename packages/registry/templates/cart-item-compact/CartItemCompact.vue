@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists the cart's items with a quantity control and a remove button. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { CartLine } from './types'

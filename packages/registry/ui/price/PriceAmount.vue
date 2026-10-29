@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the current price of the product. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { inject } from 'vue'

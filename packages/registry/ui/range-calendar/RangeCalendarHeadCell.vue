@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Labels one weekday above its column of days. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { RangeCalendarHeadCellProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Takes a card's expiry as MM/YY, adding the slash as it is typed; or frames a payment provider's hosted expiry field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { PaymentCardHostedField } from './hosted'

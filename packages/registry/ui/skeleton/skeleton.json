@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Skeleton",
   "description": "Placeholder block that pulses where content is still loading, sized and shaped by its classes; holds still for reduced motion.",
+  "components": {
+    "Skeleton": "Shows a placeholder for content that is still loading."
+  },
   "recipes": {
     "skeleton": {
       "base": {

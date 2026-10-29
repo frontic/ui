@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the text and delete button of one tag. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TagsInputItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

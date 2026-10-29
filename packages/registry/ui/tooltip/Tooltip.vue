@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a trigger with the short hint shown when the user hovers or focuses it. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TooltipRootEmits, TooltipRootProps } from 'reka-ui'
 import { TooltipRoot, useForwardPropsEmits } from 'reka-ui'

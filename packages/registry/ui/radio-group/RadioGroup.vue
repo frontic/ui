@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups radio items so the user can pick exactly one option. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue, RadioGroupRootEmits, RadioGroupRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

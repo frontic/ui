@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists the cart's items with price per unit, a quantity stepper and a remove button. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { CartLine } from './types'

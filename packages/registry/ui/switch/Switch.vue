@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user turn a single setting on or off. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SwitchRootEmits, SwitchRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

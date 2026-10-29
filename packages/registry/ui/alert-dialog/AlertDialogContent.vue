@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds what the alert dialog shows while open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AlertDialogContentEmits, AlertDialogContentProps } from 'reka-ui'
 import type { HTMLAttributes, TransitionProps } from 'vue'

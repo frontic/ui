@@ -2,6 +2,18 @@
   "$schema": "../../item.schema.json",
   "title": "Item",
   "description": "Groups the media, text and actions of one entry, such as a list row or a link to a page.",
+  "components": {
+    "Item": "Groups the media, text and actions of one entry, such as a list row.",
+    "ItemActions": "Holds the actions of its item, such as buttons or links.",
+    "ItemContent": "Groups the title and description of its item.",
+    "ItemDescription": "Gives more detail about its item below the title.",
+    "ItemFooter": "Holds extra content below the main row of its item.",
+    "ItemGroup": "Groups several items into one list.",
+    "ItemHeader": "Holds extra content above the main row of its item.",
+    "ItemMedia": "Shows an icon, image or avatar at the start of its item.",
+    "ItemSeparator": "Separates the items of a group.",
+    "ItemTitle": "Names its item."
+  },
   "recipes": {
     "item": {
       "base": {

@@ -2,6 +2,15 @@
   "$schema": "../../item.schema.json",
   "title": "Stepper",
   "description": "Numbered steps through a flow such as checkout, marking done, current and upcoming, joined by a line that fills as each step is done; spans its row, and on a narrow screen names only the current step.",
+  "components": {
+    "Stepper": "Groups all parts of the stepper, which guides the user through a sequence of steps.",
+    "StepperDescription": "Explains in a short line what happens in a step.",
+    "StepperIndicator": "Marks the number or progress state of a step.",
+    "StepperItem": "Groups the trigger, title and description of one step in the stepper.",
+    "StepperSeparator": "Joins one step of the stepper to the next with a line that fills once the step is done.",
+    "StepperTitle": "Names a step of the stepper.",
+    "StepperTrigger": "Lets the user jump to its step."
+  },
   "recipes": {
     "stepper": {
       "base": {

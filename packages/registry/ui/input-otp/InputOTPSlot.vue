@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows one character of the one-time code. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { reactiveOmit } from '@vueuse/core'

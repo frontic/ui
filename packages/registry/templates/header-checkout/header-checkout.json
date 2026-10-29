@@ -3,6 +3,9 @@
   "title": "Header Checkout",
   "description": "Checkout header with the logo and a secure-checkout note, and the checkout steps in a band below: every step named on a wide screen, the current one and its position on a narrow one.",
   "categories": ["header"],
+  "components": {
+    "HeaderCheckout": "Shows the logo and a secure-checkout note, with the checkout steps in a band below."
+  },
   "recipes": {
     "header-checkout": {
       "composes": ["logo", "hint", "focus-ring"],

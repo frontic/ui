@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Closes the drawer. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { DrawerCloseProps } from 'reka-ui'
 import { DrawerClose, useForwardProps } from 'reka-ui'

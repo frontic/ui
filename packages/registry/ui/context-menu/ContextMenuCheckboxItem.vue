@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user switch an option on or off from the menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuCheckboxItemEmits, ContextMenuCheckboxItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

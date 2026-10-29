@@ -2,6 +2,19 @@
   "$schema": "../../item.schema.json",
   "title": "Autocomplete",
   "description": "An input with suggestions that accepts free-form text; the value is the text itself.",
+  "components": {
+    "Autocomplete": "Groups all parts of the autocomplete, which lets the user type freely and pick from suggestions.",
+    "AutocompleteAnchor": "Frames the input and its buttons as one field, and marks where the suggestion list attaches.",
+    "AutocompleteCancel": "Clears the text the user has typed.",
+    "AutocompleteEmpty": "Shows a message when no suggestion matches the text.",
+    "AutocompleteGroup": "Groups related suggestions under an optional heading.",
+    "AutocompleteInput": "Takes the text the user types; the suggestions filter as it changes.",
+    "AutocompleteItem": "Holds one suggestion; picking it fills the input with its text.",
+    "AutocompleteList": "Holds the suggestions while the autocomplete is open.",
+    "AutocompleteSeparator": "Separates groups of suggestions in the list.",
+    "AutocompleteTrigger": "Opens and closes the suggestion list.",
+    "AutocompleteViewport": "Scrolls the suggestions when the list is longer than the space available."
+  },
   "recipes": {
     "autocomplete-content": {
       "base": {

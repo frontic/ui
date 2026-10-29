@@ -2,6 +2,11 @@
   "$schema": "../../item.schema.json",
   "title": "Collapsible",
   "description": "Content that opens and closes with a height animation under an unstyled trigger, which takes any element through as-child.",
+  "components": {
+    "Collapsible": "Groups a trigger with content that can be shown or hidden.",
+    "CollapsibleContent": "Holds what its collapsible shows while open.",
+    "CollapsibleTrigger": "Opens and closes the content of its collapsible."
+  },
   "recipes": {
     "collapsible": {
       "composes": ["focus-ring"]

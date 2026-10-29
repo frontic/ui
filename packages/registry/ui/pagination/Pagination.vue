@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the pagination. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PaginationRootEmits, PaginationRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

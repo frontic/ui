@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the actions of its item, such as buttons or links. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

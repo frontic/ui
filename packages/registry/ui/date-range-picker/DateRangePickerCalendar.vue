@@ -1,9 +1,5 @@
-<script lang="ts">
-/** The calendar a date range picker opens: our RangeCalendar, driven by the picker's dates and settings. */
-export default {}
-</script>
-
 <script setup lang="ts">
+// The calendar a date range picker opens: our RangeCalendar, driven by the picker's dates and settings.
 import type { DateRange, DateValue } from 'reka-ui'
 import { isEqualDay } from '@internationalized/date'
 import { injectDateRangePickerRootContext } from 'reka-ui'

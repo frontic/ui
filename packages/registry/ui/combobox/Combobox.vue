@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the combobox, which lets the user search and pick an option. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue, ComboboxRootEmits, ComboboxRootProps } from 'reka-ui'
 import { ComboboxRoot, injectFieldRootContext, useForwardPropsEmits } from 'reka-ui'

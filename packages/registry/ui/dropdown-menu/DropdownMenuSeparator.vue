@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Separates groups of entries in the dropdown menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuSeparatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

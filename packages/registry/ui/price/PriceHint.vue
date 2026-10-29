@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds a note below the price, such as tax and shipping, which may link on. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

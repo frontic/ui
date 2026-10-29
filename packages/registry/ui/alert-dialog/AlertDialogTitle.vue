@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Names the action the dialog asks the user to confirm. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AlertDialogTitleProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

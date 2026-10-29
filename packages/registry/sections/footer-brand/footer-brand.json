@@ -3,6 +3,9 @@
   "title": "Footer Brand",
   "description": "Footer led by a logo and tagline block spanning two columns, with a newsletter, social links and four link groups.",
   "categories": ["footer"],
+  "components": {
+    "FooterBrand": "Shows the brand with link groups, a newsletter signup, social links and legal links."
+  },
   "recipes": {
     "footer-brand": {
       "composes": ["logo", "hint", "link", "focus-ring"],

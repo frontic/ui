@@ -2,6 +2,20 @@
   "$schema": "../../item.schema.json",
   "title": "Calendar",
   "description": "Lets the shopper pick a date from a month grid, within a minimum and maximum, starting the week where the locale it is given does, one or several months side by side.",
+  "components": {
+    "Calendar": "Lets the user pick a date from a monthly calendar.",
+    "CalendarCell": "Holds one day in a row of the calendar grid.",
+    "CalendarCellTrigger": "Lets the user select a single day of the calendar.",
+    "CalendarGrid": "Lays out the days of one month in a grid.",
+    "CalendarGridBody": "Holds the weeks of the calendar grid.",
+    "CalendarGridHead": "Holds the row of weekday names above the calendar days.",
+    "CalendarGridRow": "Groups the days of one week in the calendar grid.",
+    "CalendarHeadCell": "Labels one column of the calendar grid with a weekday name.",
+    "CalendarHeader": "Groups the heading and month navigation above the calendar grid.",
+    "CalendarHeading": "Shows the month and year the calendar currently displays.",
+    "CalendarNextButton": "Lets the user move the calendar to the next month.",
+    "CalendarPrevButton": "Lets the user move the calendar to the previous month."
+  },
   "recipes": {
     "calendar": {
       "base": {

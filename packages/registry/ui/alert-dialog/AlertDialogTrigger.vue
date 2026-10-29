@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens the alert dialog. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AlertDialogTriggerProps } from 'reka-ui'
 import { AlertDialogTrigger, useForwardProps } from 'reka-ui'

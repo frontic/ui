@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Skeleton rows and "Searching…" while the shop's search answers; shows only while Search is loading. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { inject } from 'vue'

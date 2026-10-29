@@ -3,6 +3,9 @@
   "title": "Footer Minimal",
   "description": "Single-row footer with the logo, a labelled row of links and optional social icons under a rule.",
   "categories": ["footer"],
+  "components": {
+    "FooterMinimal": "Shows the brand, a short row of links, social links and the copyright."
+  },
   "recipes": {
     "footer-minimal": {
       "composes": ["hint", "link", "focus-ring"],

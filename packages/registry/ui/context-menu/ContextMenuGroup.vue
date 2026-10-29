@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups related items in the context menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuGroupProps } from 'reka-ui'
 import { ContextMenuGroup, useForwardProps } from 'reka-ui'

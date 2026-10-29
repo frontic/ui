@@ -18,9 +18,6 @@ export type SwatchImageEmits = {
   /** Fires with the image's loading status, `idle`, `loading`, `loaded` or `error`, when the image mounts and each time the status changes. */
   loadingStatusChange: [value: ImageLoadingStatus]
 }
-
-/** Shows a picture of the option, such as a material or pattern. */
-export default {}
 </script>
 
 <script setup lang="ts">

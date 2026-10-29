@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Confirms the action the dialog asks about and closes the dialog. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AlertDialogActionProps } from 'reka-ui'
 import type { AlertDialogButtonProps } from '.'

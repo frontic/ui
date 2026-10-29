@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Names the drawer. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { DrawerTitleProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the days of one week in the calendar grid. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarGridRowProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

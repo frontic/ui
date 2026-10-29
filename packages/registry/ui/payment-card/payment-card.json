@@ -2,6 +2,13 @@
   "$schema": "../../item.schema.json",
   "title": "Payment Card",
   "description": "A card's number, expiry and security code: spaced as typed, brand shown and checked, each joining a Field; or a payment provider's hosted fields framed in the same look.",
+  "components": {
+    "PaymentCard": "Groups a card's number, expiry and security code so they share the brand the number shows.",
+    "PaymentCardBrands": "The card marks at the end of a number field: all it offers until the number shows its brand, then that brand's alone.",
+    "PaymentCardCvc": "Takes a card's security code, as long as the brand the number shows asks for; or frames a payment provider's hosted code field.",
+    "PaymentCardExpiry": "Takes a card's expiry as MM/YY, adding the slash as it is typed; or frames a payment provider's hosted expiry field.",
+    "PaymentCardNumber": "Takes a card number, spaced as the card prints it, with its brand's logo at the end; or frames a payment provider's hosted number field."
+  },
   "recipes": {
     "payment-card-brand": {
       "base": {

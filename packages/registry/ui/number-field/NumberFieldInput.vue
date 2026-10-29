@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user type a number into the number field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NumberFieldInputProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

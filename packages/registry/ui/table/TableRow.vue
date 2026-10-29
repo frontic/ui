@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the cells that belong to one entry of the table. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

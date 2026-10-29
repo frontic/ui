@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user clear all filters at once. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { inject } from 'vue'

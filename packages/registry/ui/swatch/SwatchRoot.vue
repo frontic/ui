@@ -14,9 +14,6 @@ export type SwatchRootContext = {
 }
 
 export const [injectSwatchRootContext, provideSwatchRootContext] = createContext<SwatchRootContext>('SwatchRoot')
-
-/** Groups the image and fallback of a swatch and shares its shape and size. */
-export default {}
 </script>
 
 <script setup lang="ts">

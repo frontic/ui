@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a placeholder for content that is still loading. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 

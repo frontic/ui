@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens the hover card when the user hovers over it. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HoverCardTriggerProps } from 'reka-ui'
 import { HoverCardTrigger, useForwardProps } from 'reka-ui'

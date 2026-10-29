@@ -3,6 +3,9 @@
   "title": "Order Summary",
   "description": "Order summary card with an item count, product thumbnails with variant and quantity, and a subtotal, shipping, tax and total breakdown.",
   "categories": ["checkout"],
+  "components": {
+    "OrderSummary": "Shows the order's items with subtotal, discounts, shipping, tax and total."
+  },
   "recipes": {
     "order-summary": {
       "composes": ["line-title", "meta", "hint", "total"]

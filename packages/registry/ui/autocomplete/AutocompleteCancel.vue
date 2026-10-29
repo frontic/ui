@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Clears the text the user has typed. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxCancelProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

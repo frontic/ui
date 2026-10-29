@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Names the dialog. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogTitleProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

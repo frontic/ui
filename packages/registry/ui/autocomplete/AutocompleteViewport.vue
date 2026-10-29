@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Scrolls the suggestions when the list is longer than the space available. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxViewportProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

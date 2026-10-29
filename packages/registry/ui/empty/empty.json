@@ -2,6 +2,14 @@
   "$schema": "../../item.schema.json",
   "title": "Empty",
   "description": "Fills the space when there is nothing to show, such as an empty cart or a search without results, with an icon, a title, a hint and actions.",
+  "components": {
+    "Empty": "Groups all parts of the empty state.",
+    "EmptyContent": "Holds the actions offered to the user when there is nothing to show.",
+    "EmptyDescription": "Explains why there is nothing to show and what to do next.",
+    "EmptyHeader": "Groups the media, title and description of the empty state.",
+    "EmptyMedia": "Shows an icon or image above the title of the empty state.",
+    "EmptyTitle": "States that there is nothing to show."
+  },
   "recipes": {
     "empty": {
       "base": {

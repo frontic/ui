@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user remove its tag. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TagsInputItemDeleteProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

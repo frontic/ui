@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Covers the page behind the open drawer. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { DrawerOverlayProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

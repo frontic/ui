@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the title of a field next to its description. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

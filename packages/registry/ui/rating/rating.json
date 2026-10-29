@@ -2,6 +2,11 @@
   "$schema": "../../item.schema.json",
   "title": "Rating",
   "description": "Shows a rating as stars or dots in the brand's rating colour, with an optional score and review count, at three sizes.",
+  "components": {
+    "Rating": "Shows a rating as filled and empty marks, with an optional value and review count; the brand's rating colour fills the marks.",
+    "RatingIcon": "Shows one mark of the rating, either filled or empty.",
+    "RatingMeta": "Shows the numeric rating and the number of reviews behind it."
+  },
   "recipes": {
     "rating": {
       "base": {

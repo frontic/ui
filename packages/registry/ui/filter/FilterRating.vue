@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user limit products to those with a minimum star rating. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { computed } from 'vue'

@@ -4,8 +4,9 @@ import { ITEM_MANIFEST_KEYS, manifestNameProblems, manifestOrderProblems, treeOw
 import { FLAT_TIERS, isFlatTier, type Tier, TIERS } from './items'
 import type { AuthoredEntry } from './served'
 
-/** What an item's manifest may hold, in the order the registry writes it. */
-export const MANIFEST_KEYS = ITEM_MANIFEST_KEYS
+/** What an item's manifest may hold, in the order the registry writes it: the contract's keys, and the registry's own `components`, what each part
+ * the item exports is for, which the API reference reads and a project's manifest does not carry. */
+export const MANIFEST_KEYS = [...ITEM_MANIFEST_KEYS.slice(0, 5), 'components', ...ITEM_MANIFEST_KEYS.slice(5)] as const
 
 /** The registry's own name and homepage, served in v1/registry.json. */
 export const REGISTRY = { name: 'frontic-ui', homepage: 'https://ui.frontic.com' } as const

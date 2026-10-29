@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the suggestions while the autocomplete is open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxContentEmits, ComboboxContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

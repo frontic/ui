@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Takes the text the user types; the suggestions filter as it changes. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AutocompleteInputEmits, AutocompleteInputProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

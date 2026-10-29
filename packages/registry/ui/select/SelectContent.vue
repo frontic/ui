@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the options of the select while it is open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SelectContentEmits, SelectContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** The calendar button at the end of a DatePicker's or DateRangePicker's field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import { DatePickerTrigger, DateRangePickerTrigger, injectDateRangePickerRootContext } from 'reka-ui'
 import { IconPlaceholder } from '@registry/icon-placeholder'

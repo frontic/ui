@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Closes the sheet. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogCloseProps } from 'reka-ui'
 import { DialogClose, useForwardProps } from 'reka-ui'

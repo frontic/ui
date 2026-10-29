@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the tabs, which switch between panels of content. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TabsRootEmits, TabsRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

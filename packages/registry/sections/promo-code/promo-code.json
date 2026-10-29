@@ -3,6 +3,10 @@
   "title": "Promo Code",
   "description": "Voucher card with a code field and apply button, removable chips for applied promo codes and gift cards, a confirmation notice, and the order total after deductions.",
   "categories": ["checkout"],
+  "components": {
+    "PromoCode": "Lets the shopper apply promo codes and shows the discounts they take off the order.",
+    "PromoCodeField": "The promo code field with its hint, the applied codes as removable chips and an optional notice; PromoCode's body, for placing inside another summary."
+  },
   "recipes": {
     "promo-code": {
       "composes": ["hint", "heading"]

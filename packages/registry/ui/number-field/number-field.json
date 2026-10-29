@@ -2,6 +2,13 @@
   "$schema": "../../item.schema.json",
   "title": "Number Field",
   "description": "Lets the shopper type a number or step it up and down with buttons at either end, within a minimum and maximum, such as a quantity. Fills its Field like other controls; never narrower than its two buttons and three digits.",
+  "components": {
+    "NumberField": "Groups all parts of the number field.",
+    "NumberFieldContent": "Groups the number input with its decrement and increment buttons.",
+    "NumberFieldDecrement": "Lowers the value of the number field by one step.",
+    "NumberFieldIncrement": "Raises the value of the number field by one step.",
+    "NumberFieldInput": "Lets the user type a number into the number field."
+  },
   "recipes": {
     "number-field": {
       "base": {

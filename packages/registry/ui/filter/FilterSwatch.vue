@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists colour options as swatches that the user can toggle. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { cva } from 'class-variance-authority'

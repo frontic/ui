@@ -3,6 +3,9 @@
   "title": "Review Cards",
   "description": "Review section with the average score, distribution bars, a write-a-review prompt, and dated reviews marked when the purchase is verified, or a note when there are none yet.",
   "categories": ["review"],
+  "components": {
+    "ReviewCards": "Shows the average rating with its breakdown, review cards and a write-a-review prompt."
+  },
   "recipes": {
     "review-cards": {
       "composes": ["part-title-lg", "hint", "meta"],

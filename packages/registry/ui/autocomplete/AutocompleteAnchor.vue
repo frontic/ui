@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Frames the input and its buttons as one field, and marks where the suggestion list attaches. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxAnchorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

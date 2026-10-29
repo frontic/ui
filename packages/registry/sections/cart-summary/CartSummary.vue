@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the cart's lines with subtotal, shipping and total, and a button to check out. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { PriceType } from '@library/components/ui/price'

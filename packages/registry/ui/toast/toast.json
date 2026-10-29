@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Toast",
   "description": "Short messages that confirm an action, like adding to the cart, with an optional action button; mount Toaster once and call toast() anywhere.",
+  "components": {
+    "Toast": "Holds the toasts that toast() shows, short messages that confirm an action such as adding to the cart. Mount it once."
+  },
   "recipes": {
     "toast": {
       "base": {

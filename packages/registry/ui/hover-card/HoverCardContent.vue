@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds what the hover card shows while open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HoverCardContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the filter and lets the user reset them together. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

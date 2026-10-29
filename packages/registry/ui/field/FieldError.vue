@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows why the input of a field is invalid, from its own validation, from the server or from a form library. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { FieldErrorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

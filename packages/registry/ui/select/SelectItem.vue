@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Offers one option the user can pick in the select. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SelectItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

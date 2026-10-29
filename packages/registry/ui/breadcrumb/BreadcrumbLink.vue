@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Links to a higher level of the breadcrumb trail. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

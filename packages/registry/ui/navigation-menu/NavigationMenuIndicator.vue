@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Points to the trigger of the currently open navigation menu item. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NavigationMenuIndicatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

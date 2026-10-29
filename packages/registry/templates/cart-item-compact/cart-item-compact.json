@@ -3,6 +3,9 @@
   "title": "Cart Item Compact",
   "description": "Cart lines with a quantity field and a remove button.",
   "categories": ["cart"],
+  "components": {
+    "CartItemCompact": "Lists the cart's items with a quantity control and a remove button."
+  },
   "recipes": {
     "cart-item-compact": {
       "composes": ["line-title", "meta", "quiet-action"],

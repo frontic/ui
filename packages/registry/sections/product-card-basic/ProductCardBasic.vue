@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a product with its image, price and rating, with an add-to-cart button. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { Product } from './types'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** The panel of results, suggestions and the "Search for" row, under the field or inside the overlay. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { cva, type VariantProps } from 'class-variance-authority'

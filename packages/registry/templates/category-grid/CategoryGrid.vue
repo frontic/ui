@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a category page with header, filters, sorting and a grid of products. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { GridCrumb, GridHeader, Product, UiFilter, UiFilterValue, UiSort } from './types'

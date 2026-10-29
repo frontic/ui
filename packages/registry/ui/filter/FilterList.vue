@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists filter options with result counts that the user can toggle and search. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { computed, inject, ref } from 'vue'

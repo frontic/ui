@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user pick a value or range by dragging a handle along a track. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SliderRootEmits, SliderRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds one day of the range calendar grid. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { RangeCalendarCellProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

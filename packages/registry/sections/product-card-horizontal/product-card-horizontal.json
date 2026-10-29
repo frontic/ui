@@ -3,6 +3,9 @@
   "title": "Product Card Horizontal",
   "description": "Product card that lays its image beside the details once its container is wide enough, with description, rating, swatches, price and add to cart.",
   "categories": ["product"],
+  "components": {
+    "ProductCardHorizontal": "Shows a product with its image beside its details and price, with an add-to-cart button."
+  },
   "recipes": {
     "product-card-horizontal": {
       "composes": ["product-card-title", "product-card-lift", "hint", "meta", "focus-ring"],

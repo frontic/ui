@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups an input with addons such as icons, buttons or text. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

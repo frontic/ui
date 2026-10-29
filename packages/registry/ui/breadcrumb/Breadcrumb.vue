@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the breadcrumb, which shows where the current page sits. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

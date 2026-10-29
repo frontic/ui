@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Titles a set of related fields. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

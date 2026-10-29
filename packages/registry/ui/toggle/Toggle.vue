@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user switch an option on or off with a button. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ToggleEmits, ToggleProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

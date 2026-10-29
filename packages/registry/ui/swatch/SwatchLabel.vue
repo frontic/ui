@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Names the option a swatch stands for. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

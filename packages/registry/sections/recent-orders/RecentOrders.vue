@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists recent orders with status and total, and actions such as track or return. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { OrderStatus, RecentOrder } from './types'

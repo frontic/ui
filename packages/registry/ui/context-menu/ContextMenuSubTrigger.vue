@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens a submenu from an item of the context menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuSubTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

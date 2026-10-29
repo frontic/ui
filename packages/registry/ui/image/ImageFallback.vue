@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a placeholder in place of an image that failed to load. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { IconPlaceholder } from '@registry/icon-placeholder'

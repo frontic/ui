@@ -3,6 +3,9 @@
   "title": "Filters",
   "description": "Filter card with a price range slider, collapsible category, size and colour groups that count their selections, an in-stock switch, a live result count, and clear and show-results actions.",
   "categories": ["filter"],
+  "components": {
+    "Filters": "Shows filter groups with a price range and in-stock switch, and a result count."
+  },
   "recipes": {
     "filters-range-to": {
       "base": {

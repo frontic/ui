@@ -2,6 +2,15 @@
   "$schema": "../../item.schema.json",
   "title": "Breadcrumb",
   "description": "Shows where the current page sits, such as Home / Jackets / Rain jackets, with links up the trail and an ellipsis for steps it hides.",
+  "components": {
+    "Breadcrumb": "Groups all parts of the breadcrumb, which shows where the current page sits.",
+    "BreadcrumbEllipsis": "Stands in for breadcrumb steps that are hidden to save space.",
+    "BreadcrumbItem": "Groups one step of the breadcrumb trail.",
+    "BreadcrumbLink": "Links to a higher level of the breadcrumb trail.",
+    "BreadcrumbList": "Lists the steps of the breadcrumb in order.",
+    "BreadcrumbPage": "Marks the current page as the last step of the breadcrumb.",
+    "BreadcrumbSeparator": "Separates two steps of the breadcrumb."
+  },
   "recipes": {
     "breadcrumb-ellipsis": {
       "base": {

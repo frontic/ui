@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the table, which shows data in rows and columns. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { useResizeObserver } from '@vueuse/core'

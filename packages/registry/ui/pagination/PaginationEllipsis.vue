@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Marks pages that are skipped between the shown page numbers. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PaginationEllipsisProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

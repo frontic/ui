@@ -2,6 +2,31 @@
   "$schema": "../../item.schema.json",
   "title": "Sidebar",
   "description": "Side panel on the start or end of the page, with groups, menus, badges and actions, that collapses off-screen or to icons and opens as a sheet on phones.",
+  "components": {
+    "Sidebar": "Holds the side navigation panel, which can collapse to icons or hide off-screen.",
+    "SidebarContent": "Holds the scrollable groups and menus between the sidebar header and footer.",
+    "SidebarFooter": "Holds the content pinned at the bottom of the sidebar.",
+    "SidebarGroup": "Groups a label with the related menu items in the sidebar.",
+    "SidebarGroupAction": "Adds a small action button next to a sidebar group's label.",
+    "SidebarGroupContent": "Holds the menu belonging to a sidebar group.",
+    "SidebarGroupLabel": "Labels a group of sidebar items with a heading.",
+    "SidebarHeader": "Holds the content pinned at the top of the sidebar, such as a search field.",
+    "SidebarInput": "Lets the user search or filter from within the sidebar.",
+    "SidebarInset": "Holds the main page content beside the sidebar.",
+    "SidebarMenu": "Lists the navigation items of a sidebar group.",
+    "SidebarMenuAction": "Adds a secondary action button to a sidebar menu item.",
+    "SidebarMenuBadge": "Shows a count or status beside a sidebar menu item.",
+    "SidebarMenuButton": "Lets the user open a sidebar menu item, with a tooltip when collapsed.",
+    "SidebarMenuItem": "Groups one navigation entry with its button, action and badge.",
+    "SidebarMenuSkeleton": "Shows a placeholder for a sidebar menu item while it loads.",
+    "SidebarMenuSub": "Lists the nested items under a sidebar menu item.",
+    "SidebarMenuSubButton": "Lets the user open a nested sidebar menu item.",
+    "SidebarMenuSubItem": "Groups one nested entry of a sidebar submenu.",
+    "SidebarProvider": "Groups all parts of the sidebar and shares its open state with them.",
+    "SidebarRail": "Lets the user toggle the sidebar by clicking along its edge.",
+    "SidebarSeparator": "Separates sections within the sidebar.",
+    "SidebarTrigger": "Lets the user expand and collapse the sidebar."
+  },
   "recipes": {
     "sidebar": {
       "base": {

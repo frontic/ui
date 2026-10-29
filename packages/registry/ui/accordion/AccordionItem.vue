@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a trigger with the content it opens and closes. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AccordionItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

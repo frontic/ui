@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Places the menu content above the rest of the page. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuPortalProps } from 'reka-ui'
 import { ContextMenuPortal, useForwardProps } from 'reka-ui'

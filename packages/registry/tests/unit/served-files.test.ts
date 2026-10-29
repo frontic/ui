@@ -39,14 +39,11 @@ describe('IconPlaceholder', () => {
 })
 
 describe('servedFiles', () => {
-  it("opens with the licence lines, then keeps a part's default-export block as written and adds its icon imports once, to the setup script", async () => {
+  it('opens with the licence lines, then the setup script, with its icon imports added once', async () => {
     const licence = '<!-- SPDX-License-Identifier: FSL-1.1-MIT -->\n<!-- Frontic UI © Frontic · ui.frontic.com/license -->\n'
-    const block = '<script lang="ts">\n/** Shows a rating. */\nexport default {}\n</script>\n\n'
-    const files = await servedFiles({ ...rating, files: { ...rating.files, 'Rating.vue': block + rating.files['Rating.vue']! } })
-    const served = files['Rating.vue']!
-    expect(served.startsWith(licence + block)).toBe(true)
+    const served = (await servedFiles(rating))['Rating.vue']!
     expect(served.match(/from '@lucide\/vue'/g)).toHaveLength(1)
-    expect(served.slice(licence.length + block.length)).toMatch(/^<script setup lang="ts">\nimport \{ HeartIcon, StarIcon \} from '@lucide\/vue'/)
+    expect(served.startsWith(`${licence}<script setup lang="ts">\nimport { HeartIcon, StarIcon } from '@lucide/vue'`)).toBe(true)
   })
 
   it('rewrites placeholders to @lucide/vue, keeps their other attributes and value imports, formats with the repo config', async () => {

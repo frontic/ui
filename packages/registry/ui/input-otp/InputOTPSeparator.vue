@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Separates groups of slots in the one-time code. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { reactiveOmit } from '@vueuse/core'

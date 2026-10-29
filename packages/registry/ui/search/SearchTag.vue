@@ -1,8 +1,3 @@
-<script lang="ts">
-/** A suggested search, drawn as a tag; opening it runs that search. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { ComboboxItem } from 'reka-ui'

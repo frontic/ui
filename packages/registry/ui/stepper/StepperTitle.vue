@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Names a step of the stepper. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { StepperTitleProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

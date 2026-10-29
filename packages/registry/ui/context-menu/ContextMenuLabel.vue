@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Labels a group of items in the context menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuLabelProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

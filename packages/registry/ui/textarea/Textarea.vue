@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user write longer text over several lines, such as a note or review. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { useVModel } from '@vueuse/core'

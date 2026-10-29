@@ -2,6 +2,15 @@
   "$schema": "../../item.schema.json",
   "title": "Mega Menu",
   "description": "Store navigation whose flyouts span the bar's full width, for link columns and featured tiles; panels slide between categories and the height follows.",
+  "components": {
+    "MegaMenu": "Groups all parts of the mega menu.",
+    "MegaMenuContent": "Holds the links and content shown when its menu item is open.",
+    "MegaMenuItem": "Groups a trigger with the content it opens in the mega menu.",
+    "MegaMenuLink": "Links to a page from inside the mega menu.",
+    "MegaMenuList": "Lists the top-level items of the mega menu.",
+    "MegaMenuTrigger": "Opens and closes the content of its mega menu item.",
+    "MegaMenuViewport": "Shows the content of the open mega menu item."
+  },
   "recipes": {
     "mega-menu": {
       "composes": ["focus-ring"],

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Stacks several fields of a form together. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { cva } from 'class-variance-authority'

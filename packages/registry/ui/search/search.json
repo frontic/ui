@@ -2,6 +2,20 @@
   "$schema": "../../item.schema.json",
   "title": "Search",
   "description": "A search field whose panel offers products, categories and suggestions while the shopper types, with a \"Search for\" row that submits; inline under the field or in an overlay.",
+  "components": {
+    "Search": "Groups all parts of the search: a field whose panel offers results, suggestions and a \"Search for\" row.",
+    "SearchEmpty": "A line of text in the panel, such as \"No results for …\"; the shop decides when it shows.",
+    "SearchGroup": "A headed section of the panel: products, categories, brands, or suggestions.",
+    "SearchHighlight": "Text with every match of the search terms in bold; the terms default to the typed query.",
+    "SearchInput": "The search field: a search icon, the input, and a button that clears it.",
+    "SearchItem": "One row of the panel that opens something: a link, so middle-click and open-in-new-tab work.",
+    "SearchLoading": "Skeleton rows and \"Searching…\" while the shop's search answers; shows only while Search is loading.",
+    "SearchOverlay": "Shows the search in an overlay: near the top on wide screens, full screen on phones with a Cancel button.",
+    "SearchOverlayTrigger": "Opens the search overlay; focus returns to it when the overlay closes, also after a click that never focused it.",
+    "SearchQuery": "The first row while the shopper types: \"Search for …\", which submits the query to the results page.",
+    "SearchResults": "The panel of results, suggestions and the \"Search for\" row, under the field or inside the overlay.",
+    "SearchTag": "A suggested search, drawn as a tag; opening it runs that search."
+  },
   "recipes": {
     "search-cancel": {
       "composes": ["focus-ring"],

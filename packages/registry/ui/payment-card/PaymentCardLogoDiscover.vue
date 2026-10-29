@@ -3,11 +3,6 @@
   Licensed CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/. Changed: set into a Vue component, without its fixed width and height.
   This file is under CC BY-SA 4.0, not the registry's MIT licence. The mark itself is a trademark of its owner.
 -->
-<script lang="ts">
-/** The Discover card mark. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import { useId } from 'vue'
 

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the shopper choose colour, size and quantity, then add the product to the cart. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { PriceType } from '@library/components/ui/price'

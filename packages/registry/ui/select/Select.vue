@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the select. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue, SelectRootEmits, SelectRootProps } from 'reka-ui'
 import { SelectRoot, useForwardPropsEmits } from 'reka-ui'
