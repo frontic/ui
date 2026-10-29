@@ -16,7 +16,7 @@ const firstName = ref('Lena')
 const lastName = ref('Huber')
 const street = ref('Lindwurmstraße 88')
 const postcode = ref('80337')
-const city = ref('München')
+const city = ref('Munich')
 const country = ref('de')
 const sameAsBilling = ref(true)
 </script>
