@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** A headed section of the panel: products, categories, brands, or suggestions. */
 export default {}

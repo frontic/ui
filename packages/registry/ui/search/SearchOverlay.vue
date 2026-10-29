@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows the search in an overlay: near the top on wide screens, full screen on phones with a Cancel button. */
 export default {}
@@ -25,10 +24,18 @@ const props = withDefaults(
 const open = defineModel<boolean>('open', { default: false })
 
 provide(searchOverlay, { cancelLabel: toRef(props, 'cancelLabel'), close: () => (open.value = false) })
+
+defineSlots<{
+  /** The search shown in the overlay. */
+  default?: () => unknown
+  /** A SearchOverlayTrigger that opens the overlay and takes focus back when it closes. */
+  trigger?: () => unknown
+}>()
 </script>
 
 <template>
   <DialogRoot v-model:open="open">
+    <slot name="trigger" />
     <DialogPortal>
       <DialogOverlay class="fui-search-overlay-backdrop fixed inset-0 z-50 data-open:animate-in data-closed:animate-out data-open:fade-in-0 data-closed:fade-out-0" />
       <Presence :present="open">

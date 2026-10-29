@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 import type { UnwrapRefCarouselApi as CarouselApi, CarouselEmits, CarouselProps } from './interface'
 import { createInjectionState } from '@vueuse/core'
 import useEmblaCarousel from 'embla-carousel-vue'

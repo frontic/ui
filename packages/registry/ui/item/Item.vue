@@ -1,5 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script lang="ts">
 /** Groups the media, text and actions of one entry, such as a list row. */
 export default {}

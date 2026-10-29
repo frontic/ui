@@ -102,7 +102,7 @@ Every item, with every variant and state, at [ui.frontic.com](https://ui.frontic
 
 ## Beyond one project
 
-A [Frontic](https://frontic.com) account keeps a company's library in one place: the same `brand.json`, recipe files and `DESIGN.md`, synced into every project with the `frontic` CLI. Same files, same rules; only where they live changes.
+[Frontic](https://frontic.com) manages everything a next-generation storefront needs: its data, APIs, agents and context, and its design system. A Frontic account keeps a company's library (the same design tokens, recipes, components and styleguide) in one place and syncs it with the `frontic` CLI into every project where agents write code.
 
 ## Built on
 

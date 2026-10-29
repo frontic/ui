@@ -221,4 +221,10 @@ context-menu-sub-trigger | E:focus | color: #18181b
 context-menu-sub-trigger | E:open | background-color: #f4f4f5
 context-menu-sub-trigger | E:open | color: #18181b
 context-menu-trigger | E | -webkit-user-select: none
+context-menu-trigger | E | outline-style: none
 context-menu-trigger | E | user-select: none
+context-menu-trigger | E:focus | border-bottom-color: #71717a
+context-menu-trigger | E:focus | border-left-color: #71717a
+context-menu-trigger | E:focus | border-right-color: #71717a
+context-menu-trigger | E:focus | border-top-color: #71717a
+context-menu-trigger | E:focus | ring: 2px #71717a

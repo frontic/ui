@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the user limit a value by typing a lowest and highest number. */
 export default {}

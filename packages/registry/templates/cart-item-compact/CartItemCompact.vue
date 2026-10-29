@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lists the cart's items with a quantity control and a remove button. */
 export default {}

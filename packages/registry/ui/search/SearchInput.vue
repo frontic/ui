@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** The search field: a search icon, the input, and a button that clears it. */
 export default {}

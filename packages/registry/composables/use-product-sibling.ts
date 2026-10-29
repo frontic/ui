@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { Product } from '@library/lib/product'
 import { computed, type MaybeRefOrGetter, ref, toValue } from 'vue'
 

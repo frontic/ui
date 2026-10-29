@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Opens and closes a filter group, showing its label and count of active options. */
 export default {}

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Groups a card's number, expiry and security code so they share the brand the number shows. */
 export default {}

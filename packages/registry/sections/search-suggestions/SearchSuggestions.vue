@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** A storefront search: products, categories and brands while the shopper types, suggestions and curated picks before. */
 export default {}
@@ -13,7 +12,20 @@ import { Badge } from '@library/components/ui/badge'
 import { Button } from '@library/components/ui/button'
 import { Image } from '@library/components/ui/image'
 import { Price } from '@library/components/ui/price'
-import { Search, SearchEmpty, SearchGroup, SearchHighlight, SearchInput, SearchItem, SearchLoading, SearchOverlay, SearchQuery, SearchResults, SearchTag } from '@library/components/ui/search'
+import {
+  Search,
+  SearchEmpty,
+  SearchGroup,
+  SearchHighlight,
+  SearchInput,
+  SearchItem,
+  SearchLoading,
+  SearchOverlay,
+  SearchOverlayTrigger,
+  SearchQuery,
+  SearchResults,
+  SearchTag,
+} from '@library/components/ui/search'
 import { IconPlaceholder } from '@registry/icon-placeholder'
 
 const props = withDefaults(
@@ -204,10 +216,14 @@ const [DefineSearch, ReuseSearch] = createReusableTemplate()
 
   <div ref="root" data-slot="search-suggestions" :class="props.class">
     <template v-if="props.presentation === 'overlay'">
-      <Button variant="ghost" color="neutral" size="icon-md" :aria-label="props.searchLabel" @click="open = true">
-        <IconPlaceholder lucide="SearchIcon" tabler="IconSearch" hugeicons="SearchIcon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" data-icon />
-      </Button>
       <SearchOverlay v-model:open="open" :title="props.searchLabel" :cancel-label="props.cancelLabel">
+        <template #trigger>
+          <SearchOverlayTrigger as-child>
+            <Button variant="ghost" color="neutral" size="icon-md" :aria-label="props.searchLabel">
+              <IconPlaceholder lucide="SearchIcon" tabler="IconSearch" hugeicons="SearchIcon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" data-icon />
+            </Button>
+          </SearchOverlayTrigger>
+        </template>
         <ReuseSearch />
       </SearchOverlay>
     </template>

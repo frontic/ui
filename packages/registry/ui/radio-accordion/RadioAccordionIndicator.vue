@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { RadioGroupIndicator } from 'reka-ui'
 import { inject } from 'vue'

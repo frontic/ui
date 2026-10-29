@@ -1,5 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script lang="ts">
 /** Holds what its tab shows while that tab is selected. */
 export default {}

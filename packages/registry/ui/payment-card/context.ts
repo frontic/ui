@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { Ref } from 'vue'
 import type { PaymentCardBrand } from './card'
 import { createContext } from 'reka-ui'

@@ -1,5 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script lang="ts">
 /** Holds a button or link that lets the user act on or dismiss the alert. */
 export default {}

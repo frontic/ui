@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows the brand, a short row of links, social links and the copyright. */
 export default {}

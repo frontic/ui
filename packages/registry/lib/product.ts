@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { PriceType } from '@library/lib/format'
 
 /** A colour or style of a product, offered as a swatch on its card. */

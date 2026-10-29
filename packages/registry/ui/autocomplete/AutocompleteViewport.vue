@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Scrolls the suggestions when the list is longer than the space available. */
 export default {}

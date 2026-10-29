@@ -55,7 +55,7 @@ export const THIRD_PARTY_DESCRIPTIONS: Record<string, string> = {
   'AvatarImage.crossOrigin': "The image request's CORS mode, set on the `<img>`.",
   'Drawer.defaultOpen': 'Opens the drawer on first render when it is uncontrolled.',
   'Drawer.defaultSnapPoint': 'The snap point the drawer opens at when uncontrolled: a fraction of the screen, or a pixel value.',
-  'DrawerContent.forceMount': 'Keeps the content mounted while closed, for controlling its animation yourself.',
+  'DrawerContent.forceMount': 'Keeps the content mounted; you control its visibility (render it with v-if).',
   'NumberField.defaultValue': 'The number the field starts with when uncontrolled.',
   'NumberField.modelValue': 'The number, bound with `v-model`.',
   'NumberFieldDecrement.disabled': 'Disables the button that lowers the value.',

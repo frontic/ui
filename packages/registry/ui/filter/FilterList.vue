@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lists filter options with result counts that the user can toggle and search. */
 export default {}

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows a product with its image, colour options, price and rating, and a wishlist button. */
 export default {}

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { HeaderShop, type NavigationCategory, type NavigationLink } from '.'

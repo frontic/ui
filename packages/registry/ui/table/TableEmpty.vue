@@ -1,5 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script lang="ts">
 /** Shows a message in place of rows when the table has no data. */
 export default {}

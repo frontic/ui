@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { AcceptableValue } from 'reka-ui'
 import type { ComputedRef, InjectionKey, Ref } from 'vue'
 

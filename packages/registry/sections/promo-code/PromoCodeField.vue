@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** The promo code field with its hint, the applied codes as removable chips and an optional notice; PromoCode's body, for placing inside another summary. */
 export default {}

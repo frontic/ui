@@ -5,6 +5,7 @@ import { IconPlaceholder } from '../../icon-placeholder'
 import { parseLucideImports } from '../../scripts/lib/icon-imports'
 import type { SourceItem } from '../../scripts/lib/items'
 import { formatOptionsFor, servedFiles } from '../../scripts/lib/served-files'
+import { licenceLines } from '../../scripts/lib/licence'
 
 const names = { lucide: 'StarIcon', tabler: 'IconStar', hugeicons: 'StarIcon', phosphor: 'StarIcon', remixicon: 'RiStarLine' }
 const rating: SourceItem = {
@@ -38,13 +39,14 @@ describe('IconPlaceholder', () => {
 })
 
 describe('servedFiles', () => {
-  it("keeps a part's default-export block as written and adds its icon imports once, to the setup script", async () => {
+  it("opens with the licence lines, then keeps a part's default-export block as written and adds its icon imports once, to the setup script", async () => {
+    const licence = '<!-- SPDX-License-Identifier: FSL-1.1-MIT -->\n<!-- Frontic UI © Frontic · ui.frontic.com/license -->\n'
     const block = '<script lang="ts">\n/** Shows a rating. */\nexport default {}\n</script>\n\n'
     const files = await servedFiles({ ...rating, files: { ...rating.files, 'Rating.vue': block + rating.files['Rating.vue']! } })
     const served = files['Rating.vue']!
-    expect(served.startsWith(block)).toBe(true)
+    expect(served.startsWith(licence + block)).toBe(true)
     expect(served.match(/from '@lucide\/vue'/g)).toHaveLength(1)
-    expect(served.slice(block.length)).toMatch(/^<script setup lang="ts">\nimport \{ HeartIcon, StarIcon \} from '@lucide\/vue'/)
+    expect(served.slice(licence.length + block.length)).toMatch(/^<script setup lang="ts">\nimport \{ HeartIcon, StarIcon \} from '@lucide\/vue'/)
   })
 
   it('rewrites placeholders to @lucide/vue, keeps their other attributes and value imports, formats with the repo config', async () => {
@@ -67,8 +69,8 @@ describe('servedFiles', () => {
     expect(Math.max(...files['rating.example.vue']!.split('\n').map((l) => l.length))).toBeLessThanOrEqual(80)
   })
 
-  it('passes a file without a placeholder through byte for byte', async () => {
-    expect((await servedFiles(rating))['index.ts']).toBe(rating.files['index.ts'])
+  it('passes a file without a placeholder through byte for byte below its licence lines', async () => {
+    expect((await servedFiles(rating))['index.ts']).toBe(`${licenceLines(rating, 'index.ts').join('\n')}\n${rating.files['index.ts']}`)
   })
 
   it('refuses the item when a source file breaks an icon rule, naming the file', async () => {

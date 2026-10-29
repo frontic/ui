@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** The panel of results, suggestions and the "Search for" row, under the field or inside the overlay. */
 export default {}

@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { FilterOption, FilterSwatchOption } from '@library/components/ui/filter'
 
 export interface FiltersListGroup {

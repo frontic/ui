@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Takes a card's expiry as MM/YY, adding the slash as it is typed; or frames a payment provider's hosted expiry field. */
 export default {}

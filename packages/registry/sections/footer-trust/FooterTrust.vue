@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows trust points such as shipping and returns, accepted payment methods and legal links. */
 export default {}

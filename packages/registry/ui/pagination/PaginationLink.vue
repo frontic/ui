@@ -1,5 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script lang="ts">
 /** Links to a specific page and marks it when it is the current one. */
 export default {}

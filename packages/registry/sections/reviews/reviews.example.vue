@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { Reviews, type ReviewsEntry, type ReviewsShare } from '.'
 

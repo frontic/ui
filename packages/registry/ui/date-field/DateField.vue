@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the user type a date one segment at a time, in the order and format of their locale. Inside a DatePicker or DateRangePicker it takes the picker's dates and settings. */
 export default {}

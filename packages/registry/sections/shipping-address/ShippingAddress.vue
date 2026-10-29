@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the shopper enter a shipping address and continue to the next checkout step. */
 export default {}

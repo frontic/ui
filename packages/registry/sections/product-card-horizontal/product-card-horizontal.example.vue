@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { ProductCardHorizontal, type Product } from '.'
 

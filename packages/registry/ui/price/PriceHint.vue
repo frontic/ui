@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Holds a note below the price, such as tax and shipping, which may link on. */
 export default {}

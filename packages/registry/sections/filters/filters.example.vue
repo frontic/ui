@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { computed, reactive, ref } from 'vue'
 import { Filters, type FiltersGroup } from '.'

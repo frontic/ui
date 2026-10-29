@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the shopper choose a payment method, enter card details and pay. */
 export default {}

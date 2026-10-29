@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the user give a rating by picking one of its marks, drawn as dots or stars. */
 export default {}

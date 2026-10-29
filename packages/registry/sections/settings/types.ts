@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 export interface SettingsOption {
   /** Key of the option in the model. */
   id: string

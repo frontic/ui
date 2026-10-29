@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows a rating as filled and empty marks, with an optional value and review count; the brand's rating colour fills the marks. */
 export default {}

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows the logo and a secure-checkout note, with the checkout steps in a band below. */
 export default {}

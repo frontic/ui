@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows the full cart page with editable items, an order summary and a checkout button. */
 export default {}

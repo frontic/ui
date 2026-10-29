@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 export { default as Item } from './Item.vue'
 export { default as ItemActions } from './ItemActions.vue'
 export { default as ItemContent } from './ItemContent.vue'

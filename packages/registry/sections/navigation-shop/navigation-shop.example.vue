@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script setup lang="ts">
 import { useElementSize, useMutationObserver } from '@vueuse/core'
 import { computed, ref, shallowRef, useTemplateRef, watch } from 'vue'

@@ -1,5 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script lang="ts">
 /** Marks the area where a right-click opens the context menu. */
 export default {}
@@ -18,7 +16,7 @@ const forwardedProps = useForwardProps(delegatedProps)
 </script>
 
 <template>
-  <ContextMenuTrigger data-slot="context-menu-trigger" v-bind="forwardedProps" :class="['select-none', props.class]">
+  <ContextMenuTrigger data-slot="context-menu-trigger" v-bind="forwardedProps" :class="['select-none outline-none focus-visible:fui-focus-ring', props.class]">
     <slot />
   </ContextMenuTrigger>
 </template>

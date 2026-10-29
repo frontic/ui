@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 export { default as Sheet } from './Sheet.vue'
 export { default as SheetBody } from './SheetBody.vue'
 export { default as SheetClose } from './SheetClose.vue'

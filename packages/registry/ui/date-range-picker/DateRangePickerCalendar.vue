@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** The calendar a date range picker opens: our RangeCalendar, driven by the picker's dates and settings. */
 export default {}

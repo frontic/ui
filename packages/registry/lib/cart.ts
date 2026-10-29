@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { PriceType } from '@library/lib/format'
 
 export interface CartLine {

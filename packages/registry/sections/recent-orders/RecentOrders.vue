@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lists recent orders with status and total, and actions such as track or return. */
 export default {}

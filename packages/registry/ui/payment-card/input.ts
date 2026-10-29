@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import type { Ref } from 'vue'
 import { nextTick, onMounted, watch } from 'vue'
 import { digitsOf } from './card'

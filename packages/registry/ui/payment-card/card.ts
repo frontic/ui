@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import cardValidator from 'card-validator'
 import creditCardType from 'credit-card-type'
 

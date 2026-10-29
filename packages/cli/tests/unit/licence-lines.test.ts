@@ -5,8 +5,8 @@ import { afterEach, describe, expect, it } from 'vitest'
 import { transform } from '@/src/utils/transformers'
 import { getConfig } from '@/src/utils/get-config'
 
-const VUE = ['<!-- SPDX-License-Identifier: FSL-1.1-MIT -->', '<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->']
-const TS = ['// SPDX-License-Identifier: FSL-1.1-MIT', '// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES']
+const VUE = ['<!-- SPDX-License-Identifier: FSL-1.1-MIT AND MIT -->', '<!-- Frontic UI © Frontic · Portions © 2023 unovue (shadcn-vue, MIT) · ui.frontic.com/license -->']
+const TS = ['// SPDX-License-Identifier: FSL-1.1-MIT AND MIT', '// Frontic UI © Frontic · Portions © 2023 unovue (shadcn-vue, MIT) · ui.frontic.com/license']
 
 const component = `${VUE.join('\n')}
 <script setup lang="ts">

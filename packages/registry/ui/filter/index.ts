@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 export { default as Filter } from './Filter.vue'
 export { default as FilterField } from './FilterField.vue'
 export { default as FilterFieldContent } from './FilterFieldContent.vue'

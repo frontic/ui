@@ -1,5 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script setup lang="ts">
 import { Image } from '@library/components/ui/image'
 import { Price } from '@library/components/ui/price'

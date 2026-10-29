@@ -1,7 +1,5 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, useId } from 'vue'
 import { Image } from '@library/components/ui/image'
 import { Price } from '@library/components/ui/price'
 import {
@@ -26,11 +24,14 @@ defineOptions({ inheritAttrs: false })
 const sizes = ['S', 'M', 'L', 'XL']
 const size = ref('M')
 const notify = ref(false)
+const hint = useId()
 </script>
 
 <template>
   <ContextMenu v-bind="$attrs">
     <ContextMenuTrigger
+      tabindex="0"
+      :aria-describedby="hint"
       class="flex w-xs max-w-full items-center gap-3 border border-dashed border-border p-3 text-sm">
       <Image
         src="https://static.frontic.com/cdn-cgi/image/width=640,format=auto/ui/products/blizzard-defender-aubergine.jpg"
@@ -41,6 +42,9 @@ const notify = ref(false)
         <span class="text-muted-foreground">Aubergine · {{ size }}</span>
         <Price :price="{ amount: 12600, currency: 'EUR' }" />
       </span>
+      <span :id="hint" class="sr-only"
+        >Actions: right-click, or press Shift+F10 or the menu key.</span
+      >
     </ContextMenuTrigger>
     <ContextMenuContent>
       <ContextMenuGroup>

@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
 import { type ActiveFilters, activeFilterCount, filterSwatches, type UiFilter, type UiFilterValue } from '@library/lib/filter-model'
 import { computed, ref, watch } from 'vue'
 

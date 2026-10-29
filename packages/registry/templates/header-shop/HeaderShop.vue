@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Shows an optional announcement, the logo, navigation, and search, account and cart buttons. */
 export default {}

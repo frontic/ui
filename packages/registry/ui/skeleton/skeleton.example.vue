@@ -1,5 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
-<!-- Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES -->
 <script setup lang="ts">
 import { Card, CardContent, CardImage } from '@library/components/ui/card'
 import { Skeleton } from '.'

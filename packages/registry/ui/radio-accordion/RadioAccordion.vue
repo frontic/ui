@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Groups options of which the user picks one; the picked option reveals its details. */
 export default {}

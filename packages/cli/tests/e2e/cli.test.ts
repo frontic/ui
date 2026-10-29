@@ -118,6 +118,15 @@ describe('the CLI against the built registry', { timeout: 30_000 }, () => {
     for (const name of ['field', 'input', 'native-select', 'switch']) expect(existsSync(join(cwd, `src/components/ui/${name}`))).toBe(false)
   })
 
+  it('add search installs the overlay with its trigger part, and the barrel exports it', async () => {
+    const { status } = await run('add', 'search')
+    expect(status).toBe(0)
+
+    expect(existsSync(join(cwd, 'src/components/ui/search/SearchOverlayTrigger.vue'))).toBe(true)
+    expect(read('src/components/ui/search/index.ts')).toContain("export { default as SearchOverlayTrigger } from './SearchOverlayTrigger.vue'")
+    expect(read('src/components/ui/search/SearchOverlay.vue')).toContain('<slot name="trigger" />')
+  })
+
   it('build finds the stylesheet current and names the font packages', async () => {
     const { status, output } = await run('build')
     expect(output).toContain('frontic.css is current')
@@ -174,7 +183,7 @@ describe('the CLI against the built registry', { timeout: 30_000 }, () => {
       library: 'library',
       brand: true,
       design: true,
-      installed: ['accordion', 'button', 'dialog'],
+      installed: ['accordion', 'button', 'dialog', 'search', 'skeleton'],
       stylesheet: 'current',
       contrast: expect.any(Array),
     })

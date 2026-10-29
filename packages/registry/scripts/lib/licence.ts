@@ -1,8 +1,8 @@
 import { readFileSync } from 'node:fs'
 import type { SourceItem } from './items'
 
-const SPDX = 'SPDX-License-Identifier: FSL-1.1-MIT'
-const NOTICE = 'Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES'
+const OWN = ['SPDX-License-Identifier: FSL-1.1-MIT', 'Frontic UI © Frontic · ui.frontic.com/license']
+const DERIVED = ['SPDX-License-Identifier: FSL-1.1-MIT AND MIT', 'Frontic UI © Frontic · Portions © 2023 unovue (shadcn-vue, MIT) · ui.frontic.com/license']
 
 const upstream = JSON.parse(readFileSync(new URL('../../upstream.json', import.meta.url), 'utf8')) as { items: string[]; renamed: Record<string, string> }
 
@@ -11,10 +11,10 @@ export const isDerived = (item: Pick<SourceItem, 'name' | 'tier'>) => item.tier 
 
 const comment = (file: string, text: string) => (file.endsWith('.vue') ? `<!-- ${text} -->` : `// ${text}`)
 
-/** The lines every source file of the item opens with: its licence, then the shadcn-vue notice where it derives from it. */
+/** The lines every served file of the item opens with: its licence, then its copyright, shadcn-vue's too where the item derives from it. */
 export function licenceLines(item: Pick<SourceItem, 'name' | 'tier'>, file: string): string[] {
-  return [comment(file, SPDX), ...(isDerived(item) ? [comment(file, NOTICE)] : [])]
+  return (isDerived(item) ? DERIVED : OWN).map((text) => comment(file, text))
 }
 
 /** A file's text without its licence lines, wherever they stand. */
-export const withoutLicence = (text: string) => text.replace(/^(?:<!-- |\/\/ )(?:SPDX-License-Identifier: |Portions derived from shadcn-vue ).*\n/gm, '')
+export const withoutLicence = (text: string) => text.replace(/^(?:<!-- |\/\/ )(?:SPDX-License-Identifier: |Frontic UI © |Portions derived from shadcn-vue ).*\n/gm, '')

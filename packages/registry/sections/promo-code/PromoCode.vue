@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lets the shopper apply promo codes and shows the discounts they take off the order. */
 export default {}

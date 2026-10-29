@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** A suggested search, drawn as a tag; opening it runs that search. */
 export default {}

@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Lists customer reviews with the reviewer, date, rating and verified-purchase mark. */
 export default {}

@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: FSL-1.1-MIT
-// Portions derived from shadcn-vue (MIT); see https://registry.ui.frontic.com/THIRD-PARTY-NOTICES
 import type { StandardSchemaV1 } from '@standard-schema/spec'
 import type { FieldValidateFn, FieldValidateResult } from 'reka-ui'
 

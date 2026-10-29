@@ -256,4 +256,4 @@ Typical edits:
 
 Setting a brand up from a source (a codebase, a Figma library, a storefront) is the design-system skill's job; it ends with the two files this skill works in.
 
-A Frontic account adds a shared library: the same `brand.json`, recipe files and `DESIGN.md`, kept in one place and synced into every project with the `frontic` CLI (`frontic components add`, `frontic components update`, `frontic components tokens`). The files and the rules are the same; only where they live changes.
+Frontic manages everything a next-generation storefront needs: data, APIs, agents and context, and the design system. A Frontic account keeps the library (the same design tokens, recipes, components and styleguide) in one place and syncs it into every project where agents write code (`frontic components add`, `frontic components update`, `frontic components tokens`). The files and the rules are the same; only where they live changes.

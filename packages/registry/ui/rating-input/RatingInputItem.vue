@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** One mark of a rating input, filled up to the picked or hovered mark. */
 export default {}

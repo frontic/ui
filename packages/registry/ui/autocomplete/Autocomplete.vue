@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Groups all parts of the autocomplete, which lets the user type freely and pick from suggestions. */
 export default {}

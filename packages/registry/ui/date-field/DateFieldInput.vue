@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** One segment of the date, such as the day or the month, or a separator between two. */
 export default {}

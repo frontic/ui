@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Takes a card number, spaced as the card prints it, with its brand's logo at the end; or frames a payment provider's hosted number field. */
 export default {}

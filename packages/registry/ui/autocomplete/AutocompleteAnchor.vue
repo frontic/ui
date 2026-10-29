@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 /** Frames the input and its buttons as one field, and marks where the suggestion list attaches. */
 export default {}

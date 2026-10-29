@@ -1,4 +1,3 @@
-<!-- SPDX-License-Identifier: FSL-1.1-MIT -->
 <script lang="ts">
 import type { Ref } from 'vue'
 import type { SwatchShape, SwatchSize } from '.'
