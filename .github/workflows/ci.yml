@@ -41,7 +41,7 @@ jobs:
         run: pnpm -r --filter './packages/*' test
 
   # The sync pull request carries commits exported from the source repository, by their authors, without their sign-off. The skip trusts
-  # whoever pushes the same-repository sync/main: the source repository's app, and any writer of this repository.
+  # the source repository's app alone: the ruleset "sync/main: the sync app only" lets no one else create or update sync/main.
   dco:
     name: DCO sign-off
     if: github.event_name == 'pull_request' && !(github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'sync/main')
