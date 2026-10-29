@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Explains the purpose of the dialog below its title. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogDescriptionProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

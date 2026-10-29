@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups related suggestions under an optional heading. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxGroupProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

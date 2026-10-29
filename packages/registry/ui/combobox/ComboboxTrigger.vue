@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the chosen option and opens the combobox list when pressed. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

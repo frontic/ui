@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user enter a one-time code across several slots. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { OTPInputEmits, OTPInputProps, SlotProps } from 'vue-input-otp'

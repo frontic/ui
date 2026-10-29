@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user type a start and an end date, or pick both from a calendar the button beside them opens. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DateRange, DateRangePickerRootEmits, DateRangePickerRootProps, SegmentPart } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -2,6 +2,11 @@
   "$schema": "../../item.schema.json",
   "title": "Hover Card",
   "description": "A card that opens on hover or focus to preview what a link points to, such as a product with its image, price and rating.",
+  "components": {
+    "HoverCard": "Groups all parts of the hover card.",
+    "HoverCardContent": "Holds what the hover card shows while open.",
+    "HoverCardTrigger": "Opens the hover card when the user hovers over it."
+  },
   "recipes": {
     "hover-card-content": {
       "base": {

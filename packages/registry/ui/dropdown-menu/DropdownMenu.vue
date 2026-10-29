@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the dropdown menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuRootEmits, DropdownMenuRootProps } from 'reka-ui'
 import { DropdownMenuRoot, useForwardPropsEmits } from 'reka-ui'

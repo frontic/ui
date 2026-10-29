@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Scrolls the options down when the list is longer than the view. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SelectScrollDownButtonProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

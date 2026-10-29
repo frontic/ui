@@ -2,6 +2,15 @@
   "$schema": "../../item.schema.json",
   "title": "Popover",
   "description": "A small panel that opens from a trigger and stays until dismissed, with a title and description, such as delivery details or a size guide.",
+  "components": {
+    "Popover": "Groups all parts of the popover.",
+    "PopoverAnchor": "Sets the element the popover content is positioned against.",
+    "PopoverContent": "Holds what the popover shows while open.",
+    "PopoverDescription": "Explains the popover in a short text below its title.",
+    "PopoverHeader": "Groups the title and description at the top of the popover.",
+    "PopoverTitle": "Names what the popover is about.",
+    "PopoverTrigger": "Opens and closes the popover."
+  },
   "recipes": {
     "popover-content": {
       "base": {

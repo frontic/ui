@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens a submenu from an item of the dropdown menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuSubTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

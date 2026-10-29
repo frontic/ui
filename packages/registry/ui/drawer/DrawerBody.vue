@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the drawer's main content and scrolls it when the drawer reaches its height cap, keeping the header and footer in view. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

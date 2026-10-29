@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens the sheet. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogTriggerProps } from 'reka-ui'
 import { DialogTrigger, useForwardProps } from 'reka-ui'

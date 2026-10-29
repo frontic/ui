@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Labels a form field and focuses it when the user clicks the label. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { LabelProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

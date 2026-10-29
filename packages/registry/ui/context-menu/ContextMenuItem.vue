@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds one action the user can pick from the context menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuItemEmits, ContextMenuItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Badge",
   "description": "A short label such as new or sale, in the status colours and the commerce roles promo, discount, new and price, at three sizes.",
+  "components": {
+    "Badge": "Marks an item with a short label such as new or sale."
+  },
   "recipes": {
     "badge": {
       "base": {

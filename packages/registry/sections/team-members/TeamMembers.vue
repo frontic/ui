@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists team members with roles, and lets the user invite, change roles and remove members. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { TeamMember, TeamRole } from './types'

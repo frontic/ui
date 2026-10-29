@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the detail text of the alert below its title. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

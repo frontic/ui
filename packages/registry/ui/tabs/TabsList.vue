@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the triggers that switch between the tabs. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TabsListProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

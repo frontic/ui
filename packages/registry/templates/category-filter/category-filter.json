@@ -3,6 +3,9 @@
   "title": "Category Filter",
   "description": "A category's products with filters in collapsible sidebar sections, sorting, badges for the active filters, and a load-more button.",
   "categories": ["filter"],
+  "components": {
+    "CategoryFilter": "Shows a category's products with filters, sorting and a load-more button."
+  },
   "recipes": {
     "category-filter": {
       "composes": ["part-title", "hint", "clear-link", "focus-ring"],

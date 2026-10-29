@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a label with the related menu items in the sidebar. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

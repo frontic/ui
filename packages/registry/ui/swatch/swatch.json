@@ -2,6 +2,13 @@
   "$schema": "../../item.schema.json",
   "title": "Swatch",
   "description": "A colour or picture of one product option, such as a jacket's colour, that the shopper presses to choose it; can be marked unavailable.",
+  "components": {
+    "Swatch": "Lets the user select a colour or material option, shown as a labelled sample.",
+    "SwatchRoot": "Groups the image and fallback of a swatch and shares its shape and size.",
+    "SwatchImage": "Shows a picture of the option, such as a material or pattern.",
+    "SwatchFallback": "Shows the option's colour while its image loads or when there is none.",
+    "SwatchLabel": "Names the option a swatch stands for."
+  },
   "recipes": {
     "swatch": {
       "composes": ["focus-ring", "disabled"],

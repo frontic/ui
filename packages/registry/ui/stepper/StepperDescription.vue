@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Explains in a short line what happens in a step. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { StepperDescriptionProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

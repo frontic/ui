@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user select a colour or material option, shown as a labelled sample. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue, ToggleEmits, ToggleProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

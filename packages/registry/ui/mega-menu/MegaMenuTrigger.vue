@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens and closes the content of its mega menu item. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NavigationMenuTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

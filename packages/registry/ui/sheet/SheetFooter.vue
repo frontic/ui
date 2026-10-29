@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the actions at the bottom of the sheet. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

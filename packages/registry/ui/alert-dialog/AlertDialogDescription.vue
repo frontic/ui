@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Explains what the action in the dialog will do. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AlertDialogDescriptionProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

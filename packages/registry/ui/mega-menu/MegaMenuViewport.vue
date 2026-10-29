@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the content of the open mega menu item. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NavigationMenuViewportProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

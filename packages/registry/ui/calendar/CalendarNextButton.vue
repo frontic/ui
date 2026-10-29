@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user move the calendar to the next month. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarNextProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

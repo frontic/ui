@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups one step of the breadcrumb trail. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

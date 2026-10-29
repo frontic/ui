@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Takes a card number, spaced as the card prints it, with its brand's logo at the end; or frames a payment provider's hosted number field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { PaymentCardBrand } from './card'

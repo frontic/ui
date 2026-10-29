@@ -170,11 +170,11 @@ function modelEvent(event: string): string | undefined {
   return `Fires with the new value when \`${model}\` changes; \`${model === 'modelValue' ? 'v-model' : `v-model:${model}`}\` binds it.`
 }
 
-function partApi(root: string, meta: ComponentMeta, [name, ...aliases]: string[], path: string, uses: Use[], reka: Reka, rekaTypes: string, roots: Roots): ApiPart {
+function partApi(root: string, meta: ComponentMeta, [name, ...aliases]: string[], path: string, uses: Use[], reka: Reka, rekaTypes: string, roots: Roots, components: Record<string, string>): ApiPart {
   const source = readFileSync(sourcePath(root, path), 'utf8')
   const declaresClass = /\bclass\?:/.test(source)
   const styling = wornBy(source, uses)
-  const description = markdown(meta.description)?.replace(/\s+/g, ' ')
+  const description = markdown(components[name!])?.replace(/\s+/g, ' ')
   const folder = dirname(sourcePath(root, path))
   const local = readdirSync(folder)
     .filter((file) => file.endsWith('.ts'))
@@ -309,11 +309,14 @@ export async function itemApis(root: string, served: ServedItem[]): Promise<Reco
         .filter(({ families }) => families.length)
       const barrel = item.files.find((f) => f.path.endsWith(`/${item.name}/index.ts`))
       const folder = barrel?.path.slice(0, -'index.ts'.length) ?? ''
+      // Each part's one-sentence purpose, from the item's manifest.
+      const manifest = barrel && sourcePath(root, `${folder}${item.name}.json`)
+      const components = manifest && existsSync(manifest) ? ((JSON.parse(readFileSync(manifest, 'utf8')) as { components?: Record<string, string> }).components ?? {}) : {}
       const parts = [...(barrel?.content.matchAll(PART) ?? [])].flatMap(([, names, file]) => {
         const exported = [...names!.matchAll(/default as (\w+)/g)].map(([, name]) => name!)
         if (!exported.length) return []
         const path = `${folder}${file}`
-        return [partApi(root, checker.getComponentMeta(sourcePath(root, path)), exported, path, uses, reka, rekaTypes, roots)]
+        return [partApi(root, checker.getComponentMeta(sourcePath(root, path)), exported, path, uses, reka, rekaTypes, roots, components)]
       })
       const anatomy = itemAnatomy(
         item,

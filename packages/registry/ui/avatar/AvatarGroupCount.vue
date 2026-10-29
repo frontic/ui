@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows how many more avatars the group holds than it displays. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the slides of the carousel in a scrollable row. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { WithClassAsProps } from './interface'
 import { cva } from 'class-variance-authority'

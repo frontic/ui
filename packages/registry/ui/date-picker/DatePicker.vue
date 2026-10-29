@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user type a date, or pick it from a calendar the button beside it opens. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DatePickerRootEmits, DatePickerRootProps, DateValue, SegmentPart } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

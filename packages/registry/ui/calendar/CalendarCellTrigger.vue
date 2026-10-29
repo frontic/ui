@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user select a single day of the calendar. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarCellTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

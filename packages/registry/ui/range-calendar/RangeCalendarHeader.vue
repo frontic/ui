@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the heading with the buttons that change the month. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { RangeCalendarHeaderProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

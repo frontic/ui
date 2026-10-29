@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the logo and a secure-checkout note, with the checkout steps in a band below. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { computed } from 'vue'

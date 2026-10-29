@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the row of weekday names above the days. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { RangeCalendarGridHeadProps } from 'reka-ui'
 import { RangeCalendarGridHead, useForwardProps } from 'reka-ui'

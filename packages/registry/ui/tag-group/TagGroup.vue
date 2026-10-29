@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups tags the user moves through with the arrow keys, and can select or remove. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableValue, TagGroupRootEmits, TagGroupRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

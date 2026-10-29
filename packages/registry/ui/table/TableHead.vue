@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Labels one column of the table. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

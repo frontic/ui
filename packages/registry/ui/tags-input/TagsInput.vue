@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the tags input, where the user enters several short values. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AcceptableInputValue, TagsInputRootEmits, TagsInputRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

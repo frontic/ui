@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds a control placed at the end of the card header. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

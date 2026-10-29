@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds content that scrolls within a fixed area. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ScrollAreaRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

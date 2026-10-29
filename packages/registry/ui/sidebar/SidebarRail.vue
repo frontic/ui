@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user toggle the sidebar by clicking along its edge. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { cva } from 'class-variance-authority'

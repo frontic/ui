@@ -3,6 +3,9 @@
   "title": "Recent Orders",
   "description": "Order history card: a table of orders with date, items, status and total, a per-order menu to view, track, get the invoice or start a return, pagination, and a note when there are no orders yet.",
   "categories": ["order"],
+  "components": {
+    "RecentOrders": "Lists recent orders with status and total, and actions such as track or return."
+  },
   "recipes": {
     "recent-orders": {
       "composes": ["line-title", "hint"]

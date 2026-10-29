@@ -3,6 +3,9 @@
   "title": "Cart Item Detailed",
   "description": "Cart lines with large thumbnails, the line total with any saving, quantity buttons and a remove action.",
   "categories": ["cart"],
+  "components": {
+    "CartItemDetailed": "Lists the cart's items with price per unit, a quantity stepper and a remove button."
+  },
   "recipes": {
     "cart-item-detailed": {
       "composes": ["section-title", "meta", "quiet-action"],

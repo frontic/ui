@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Labels a group of entries in the dropdown menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuLabelProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

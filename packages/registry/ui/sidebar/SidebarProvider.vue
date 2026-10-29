@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the sidebar and shares its open state with them. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes, Ref } from 'vue'
 import type { SidebarProviderVariant } from './utils'

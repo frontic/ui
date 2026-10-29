@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens and closes the list of options in the select. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SelectTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

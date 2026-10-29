@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the search: a field whose panel offers results, suggestions and a "Search for" row. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import { ComboboxRoot } from 'reka-ui'
 import { inject, nextTick, provide, toRef, useTemplateRef } from 'vue'

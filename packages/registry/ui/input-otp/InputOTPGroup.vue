@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups neighbouring slots of the one-time code. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

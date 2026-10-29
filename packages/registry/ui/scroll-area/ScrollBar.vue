@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the scroll position and lets the user drag to scroll. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ScrollAreaScrollbarProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

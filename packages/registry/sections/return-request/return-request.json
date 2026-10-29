@@ -3,6 +3,9 @@
   "title": "Return Request",
   "description": "Return form card that picks the items to send back, skipping and dimming final-sale ones, with a reason, a note, where the refund goes, the refund total and a request action that sends the reason and refund method shown.",
   "categories": ["order"],
+  "components": {
+    "ReturnRequest": "Lets the shopper pick items to return, give a reason and choose the refund."
+  },
   "recipes": {
     "return-request": {
       "composes": ["meta", "disabled"]

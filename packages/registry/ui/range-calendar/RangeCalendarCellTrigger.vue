@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user select a day as part of the date range. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { RangeCalendarCellTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Raises the value of the number field by one step. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NumberFieldIncrementProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

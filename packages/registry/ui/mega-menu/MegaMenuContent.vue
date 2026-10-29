@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the links and content shown when its menu item is open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NavigationMenuContentEmits, NavigationMenuContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

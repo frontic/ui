@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens and closes the popover. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PopoverTriggerProps } from 'reka-ui'
 import { PopoverTrigger, useForwardProps } from 'reka-ui'

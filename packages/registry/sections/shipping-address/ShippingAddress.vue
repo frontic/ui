@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the shopper enter a shipping address and continue to the next checkout step. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { CountryOption } from './types'

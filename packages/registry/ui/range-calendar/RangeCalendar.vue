@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user pick a start and end date from one or more months. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { RangeCalendarRootEmits, RangeCalendarRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

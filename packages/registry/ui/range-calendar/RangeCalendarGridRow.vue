@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the cells of one week, or the weekday names. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { RangeCalendarGridRowProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

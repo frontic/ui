@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the heading and month navigation above the calendar grid. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarHeaderProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

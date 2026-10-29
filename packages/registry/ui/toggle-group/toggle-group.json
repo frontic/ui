@@ -2,6 +2,10 @@
   "$schema": "../../item.schema.json",
   "title": "Toggle Group",
   "description": "Toggles the shopper presses one or several of, such as jacket features to filter by; joined into one control, or spaced apart.",
+  "components": {
+    "ToggleGroup": "Groups toggles so the user can choose one or several options.",
+    "ToggleGroupItem": "Lets the user switch one option of its group on or off."
+  },
   "recipes": {
     "toggle-group": {
       "base": {

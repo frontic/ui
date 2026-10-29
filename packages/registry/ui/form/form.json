@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Form",
   "description": "Validates its fields on submit, against their own rules or one Standard Schema such as Zod 4, hands over their values, and shows server errors on the field they name.",
+  "components": {
+    "Form": "Validates its fields on submit, hands over their values, and shows server errors on the field they name."
+  },
   "recipes": {
     "form": {
       "base": {

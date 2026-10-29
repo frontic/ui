@@ -3,6 +3,9 @@
   "title": "Filter Sheet",
   "description": "A product list whose filters open in a sheet that slides in, with sorting, search, option lists, price ranges, switches and ratings.",
   "categories": ["filter"],
+  "components": {
+    "FilterSheet": "Shows a product list with filters in a slide-in sheet, plus sorting and search."
+  },
   "recipes": {
     "filter-sheet": {
       "composes": ["title", "hint", "clear-link", "focus-ring"],

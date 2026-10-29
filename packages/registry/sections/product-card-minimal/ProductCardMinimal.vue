@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a product with its image, name, price and number of colours. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { Product } from './types'

@@ -2,6 +2,12 @@
   "$schema": "../../item.schema.json",
   "title": "Input OTP",
   "description": "Lets the user type or paste a one-time code across several slots, such as the code a sign-in email sends.",
+  "components": {
+    "InputOtp": "Lets the user enter a one-time code across several slots.",
+    "InputOTPGroup": "Groups neighbouring slots of the one-time code.",
+    "InputOTPSeparator": "Separates groups of slots in the one-time code.",
+    "InputOTPSlot": "Shows one character of the one-time code."
+  },
   "recipes": {
     "input-otp": {
       "composes": ["disabled"],

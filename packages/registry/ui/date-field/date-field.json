@@ -2,6 +2,10 @@
   "$schema": "../../item.schema.json",
   "title": "Date Field",
   "description": "A date typed one segment at a time, in the order and format of the user's locale; joins a Field around it.",
+  "components": {
+    "DateField": "Lets the user type a date one segment at a time, in the order and format of their locale. Inside a DatePicker or DateRangePicker it takes the picker's dates and settings.",
+    "DateFieldInput": "One segment of the date, such as the day or the month, or a separator between two."
+  },
   "recipes": {
     "date-field": {
       "composes": ["disabled"],

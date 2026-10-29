@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Gives more detail about its item below the title. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

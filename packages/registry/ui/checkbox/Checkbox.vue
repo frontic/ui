@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user switch an option on or off. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { CheckboxCheckedState, CheckboxRootEmits, CheckboxRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the drawer. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { DrawerRootEmits, DrawerRootProps } from 'reka-ui'
 import { DrawerRoot, useForwardPropsEmits } from 'reka-ui'

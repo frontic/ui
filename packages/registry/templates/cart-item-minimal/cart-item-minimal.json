@@ -3,6 +3,9 @@
   "title": "Cart Item Minimal",
   "description": "Read-only cart lines with a small image, the variant, quantity and price, such as in an order review.",
   "categories": ["cart"],
+  "components": {
+    "CartItemMinimal": "Lists the cart's items with image, variant, quantity and price, without editing."
+  },
   "recipes": {
     "cart-item-minimal": {
       "composes": ["line-title", "meta"],

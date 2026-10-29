@@ -3,6 +3,9 @@
   "title": "Checkout Page",
   "description": "A one-page checkout: contact, delivery, shipping method and payment cards, with the order summary card on a brand-coloured half that folds into a bar on narrow screens.",
   "categories": ["checkout"],
+  "components": {
+    "CheckoutPage": "A one-page checkout: contact, delivery, shipping method and payment beside an order summary that folds into a bar on narrow screens."
+  },
   "recipes": {
     "checkout-page": {
       "composes": ["focus-ring", "logo", "section-title", "link", "meta", "total"]

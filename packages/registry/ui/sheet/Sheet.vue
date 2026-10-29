@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the sheet, a panel that slides in from an edge. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogRootEmits, DialogRootProps } from 'reka-ui'
 import { DialogRoot, useForwardPropsEmits } from 'reka-ui'

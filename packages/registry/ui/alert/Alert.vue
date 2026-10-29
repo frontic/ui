@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a short message to the shopper, with an optional icon, title and description. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { IconPlaceholder } from '@registry/icon-placeholder'

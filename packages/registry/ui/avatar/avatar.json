@@ -2,6 +2,14 @@
   "$schema": "../../item.schema.json",
   "title": "Avatar",
   "description": "A person's picture with initials or an icon as fallback and an optional status badge; a group overlaps several and shows how many more there are.",
+  "components": {
+    "Avatar": "Groups the image, fallback and badge of an avatar.",
+    "AvatarBadge": "Shows a small status marker on the corner of the avatar.",
+    "AvatarFallback": "Shows initials or an icon when the avatar image is missing or fails to load.",
+    "AvatarGroup": "Stacks several avatars in an overlapping row.",
+    "AvatarGroupCount": "Shows how many more avatars the group holds than it displays.",
+    "AvatarImage": "Shows the picture of the avatar."
+  },
   "recipes": {
     "avatar": {
       "base": {

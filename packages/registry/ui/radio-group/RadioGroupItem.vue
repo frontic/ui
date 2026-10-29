@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user select one option of its radio group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { RadioGroupItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

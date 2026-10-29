@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a picture across the top of the card. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the cancel and confirm buttons at the bottom of the dialog. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

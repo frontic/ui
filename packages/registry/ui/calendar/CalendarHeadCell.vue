@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Labels one column of the calendar grid with a weekday name. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarHeadCellProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

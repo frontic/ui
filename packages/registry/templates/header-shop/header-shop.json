@@ -3,6 +3,9 @@
   "title": "Header Shop",
   "description": "Store header with an announcement bar, logo, a navigation slot, a search slot that sits inline on wide screens and behind a button that opens an overlay on phones, and account and cart actions.",
   "categories": ["header"],
+  "components": {
+    "HeaderShop": "Shows an optional announcement, the logo, navigation, and search, account and cart buttons."
+  },
   "recipes": {
     "header-shop": {
       "composes": ["logo", "focus-ring"],

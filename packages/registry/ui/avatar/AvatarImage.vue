@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the picture of the avatar. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AvatarImageProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

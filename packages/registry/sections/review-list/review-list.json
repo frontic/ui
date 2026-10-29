@@ -3,6 +3,9 @@
   "title": "Review List",
   "description": "Review list with avatars, author and date, star ratings, a verified-purchase mark, and the review text, or a note when there are none yet.",
   "categories": ["review"],
+  "components": {
+    "ReviewList": "Lists customer reviews with the reviewer, date, rating and verified-purchase mark."
+  },
   "recipes": {
     "review-list": {
       "composes": ["copy-muted", "section-title", "meta", "hint"],

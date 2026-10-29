@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shares timing settings between all tooltips inside it. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TooltipProviderProps } from 'reka-ui'
 import { TooltipProvider, useForwardProps } from 'reka-ui'

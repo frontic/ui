@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Joins related buttons into one connected group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

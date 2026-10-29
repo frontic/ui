@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens and closes the content of its item. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AccordionTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

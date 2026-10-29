@@ -1,9 +1,5 @@
-<script lang="ts">
-/** Frames a payment provider's hosted field inside a card part and joins it to a Field around it, through a hidden input the Field validates. */
-export default {}
-</script>
-
 <script setup lang="ts">
+// Frames a payment provider's hosted field inside a card part and joins it to a Field around it, through a hidden input the Field validates.
 import type { PaymentCardHostedField } from './hosted'
 import { injectFieldRootContext, VisuallyHidden } from 'reka-ui'
 import { computed, nextTick, onBeforeUnmount, onMounted, useTemplateRef, watch } from 'vue'

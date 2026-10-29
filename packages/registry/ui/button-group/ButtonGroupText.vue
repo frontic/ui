@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a text label as part of a button group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

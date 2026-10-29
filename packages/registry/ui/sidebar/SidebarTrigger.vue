@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user expand and collapse the sidebar. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { Button } from '@library/components/ui/button'

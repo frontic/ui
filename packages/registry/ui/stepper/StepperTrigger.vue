@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user jump to its step. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { StepperTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

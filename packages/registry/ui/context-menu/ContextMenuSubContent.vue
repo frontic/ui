@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the items of a submenu while it is open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuSubContentEmits, DropdownMenuSubContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -3,6 +3,9 @@
   "title": "Product Card Hover",
   "description": "Linked product tile whose quick-add button slides up over the image on hover or focus, with name, price, rating and colour dots.",
   "categories": ["product"],
+  "components": {
+    "ProductCardHover": "Shows a product with its image and price, with a quick-add button."
+  },
   "recipes": {
     "product-card-hover": {
       "composes": ["product-card-title", "product-card-lift", "meta", "focus-ring"]

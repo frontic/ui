@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows an icon or image above the title of the empty state. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

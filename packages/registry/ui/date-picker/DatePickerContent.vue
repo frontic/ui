@@ -1,8 +1,3 @@
-<script lang="ts">
-/** The popover a DatePicker's or DateRangePicker's calendar opens in, lined up with the field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import { PopoverContent } from '@library/components/ui/popover'
 

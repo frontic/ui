@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user open a sidebar menu item, with a tooltip when collapsed. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { Component } from 'vue'
 import type { SidebarMenuButtonProps } from './SidebarMenuButtonChild.vue'

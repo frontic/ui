@@ -3,6 +3,9 @@
   "title": "Delivery Slot",
   "description": "Delivery card with standard and express tabs, a calendar of bookable days, a row of time windows with booked-out ones named, the chosen slot with its price, and a confirm button that asks for a day and a window before standard delivery.",
   "categories": ["checkout"],
+  "components": {
+    "DeliverySlot": "Lets the shopper pick standard or express delivery, a day and a delivery window."
+  },
   "recipes": {
     "delivery-slot": {
       "composes": ["hint"]

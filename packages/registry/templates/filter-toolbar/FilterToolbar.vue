@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a product list with filters in a toolbar above it, plus sorting and search. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { Product, UiFilter, UiFilterValue, UiSort } from './types'

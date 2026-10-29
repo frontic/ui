@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user pick a date from a monthly calendar. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarRootEmits, CalendarRootProps, DateValue } from 'reka-ui'
 import type { HTMLAttributes, Ref } from 'vue'

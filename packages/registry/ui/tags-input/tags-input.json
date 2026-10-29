@@ -2,6 +2,13 @@
   "$schema": "../../item.schema.json",
   "title": "Tags Input",
   "description": "An underlined field that collects several short values as removable tags, such as materials or interests; joins a Field around it.",
+  "components": {
+    "TagsInput": "Groups all parts of the tags input, where the user enters several short values.",
+    "TagsInputInput": "Lets the user type a new tag and add it to the tags input.",
+    "TagsInputItem": "Groups the text and delete button of one tag.",
+    "TagsInputItemDelete": "Lets the user remove its tag.",
+    "TagsInputItemText": "Shows the value of one tag."
+  },
   "recipes": {
     "tags-input": {
       "base": {

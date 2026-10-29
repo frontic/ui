@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the shopper choose a payment method, enter card details and pay. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { PaymentCardBrand } from '@library/components/ui/payment-card'

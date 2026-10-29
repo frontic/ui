@@ -3,6 +3,9 @@
   "title": "Reviews",
   "description": "Review summary card with the average rating, a star distribution, the latest reviews with verified-purchase marks, and read-all and write-a-review actions.",
   "categories": ["review"],
+  "components": {
+    "Reviews": "Shows the average rating with its star breakdown and a few reviews."
+  },
   "recipes": {
     "reviews": {
       "composes": ["heading", "meta", "line-title", "hint"]

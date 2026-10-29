@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the items the context menu shows while open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuContentEmits, ContextMenuContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

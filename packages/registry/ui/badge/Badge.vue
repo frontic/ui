@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Marks an item with a short label such as new or sale. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

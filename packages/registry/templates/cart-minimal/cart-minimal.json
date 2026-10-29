@@ -3,6 +3,9 @@
   "title": "Cart Minimal",
   "description": "A mini cart in a popover with the first few items, the subtotal and checkout.",
   "categories": ["cart"],
+  "components": {
+    "CartMinimal": "Opens a popover with the cart's first items, subtotal and checkout."
+  },
   "recipes": {
     "cart-minimal": {
       "composes": ["hint", "meta"]

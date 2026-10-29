@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens and closes the suggestion list. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxTriggerProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user enter a single line of text. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { useVModel } from '@vueuse/core'

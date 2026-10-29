@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Validates its fields on submit, hands over their values, and shows server errors on the field they name. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { FormRootEmits, FormRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

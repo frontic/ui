@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the empty state. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

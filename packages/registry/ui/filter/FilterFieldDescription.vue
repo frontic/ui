@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Explains a filter option below its label. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

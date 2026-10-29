@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Date Range Picker",
   "description": "A start and an end date typed segment by segment or picked from a calendar the button beside them opens; joins a Field around it.",
+  "components": {
+    "DateRangePicker": "Lets the user type a start and an end date, or pick both from a calendar the button beside them opens."
+  },
   "recipes": {
     "date-range-picker-separator": {
       "base": {

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds what the dialog shows while open, scrolling when the content is tall. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DialogContentEmits, DialogContentProps } from 'reka-ui'
 import type { HTMLAttributes, TransitionProps } from 'vue'

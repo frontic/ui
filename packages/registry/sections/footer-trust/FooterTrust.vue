@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows trust points such as shipping and returns, accepted payment methods and legal links. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { FooterLink, FooterTrustItem } from './types'

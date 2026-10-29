@@ -3,6 +3,9 @@
   "title": "Footer Rich",
   "description": "Footer with a newsletter signup, social links and link columns over a dark legal bar.",
   "categories": ["footer"],
+  "components": {
+    "FooterRich": "Shows link groups with a newsletter signup, social links and the legal links."
+  },
   "recipes": {
     "footer-rich": {
       "composes": ["hint", "link", "focus-ring"],

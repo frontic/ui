@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a small status marker on the corner of the avatar. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

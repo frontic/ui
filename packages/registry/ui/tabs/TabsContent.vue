@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds what its tab shows while that tab is selected. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TabsContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

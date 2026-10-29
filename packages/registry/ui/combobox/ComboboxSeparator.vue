@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Separates groups of options in the combobox list; hidden while a search filters the list. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxSeparatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

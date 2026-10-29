@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user choose one option from a group in the menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuRadioItemEmits, DropdownMenuRadioItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

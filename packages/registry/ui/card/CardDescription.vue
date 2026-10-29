@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows secondary text below the card title. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

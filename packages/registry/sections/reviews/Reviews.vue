@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the average rating with its star breakdown and a few reviews. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { ReviewsEntry, ReviewsShare } from './types'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the shopper pick items to return, give a reason and choose the refund. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { ReturnChoice, ReturnItem, ReturnRequestValue } from './types'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the actions of the dialog, such as confirm and cancel buttons. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { DialogClose } from 'reka-ui'

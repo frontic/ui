@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the order's items with subtotal, discounts, shipping, tax and total. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { CartLine } from './types'

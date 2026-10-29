@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens and closes a filter group, showing its label and count of active options. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { IconPlaceholder } from '@registry/icon-placeholder'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds one suggestion; picking it fills the input with its text. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxItemEmits, ComboboxItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

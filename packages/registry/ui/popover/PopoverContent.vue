@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds what the popover shows while open. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PopoverContentEmits, PopoverContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

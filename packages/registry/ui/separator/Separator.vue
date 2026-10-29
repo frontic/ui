@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Divides content into distinct sections. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SeparatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

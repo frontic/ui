@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows that something is loading or in progress. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { IconPlaceholder } from '@registry/icon-placeholder'

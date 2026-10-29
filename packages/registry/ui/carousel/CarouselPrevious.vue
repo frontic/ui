@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user scroll the carousel to the previous slide. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { CarouselButtonProps, WithClassAsProps } from './interface'
 import { IconPlaceholder } from '@registry/icon-placeholder'

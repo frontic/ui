@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the title, control and description of one filter option. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

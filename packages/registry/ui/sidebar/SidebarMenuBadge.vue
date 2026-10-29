@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a count or status beside a sidebar menu item. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user move the calendar to the previous month. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarPrevProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

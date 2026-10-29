@@ -2,6 +2,17 @@
   "$schema": "../../item.schema.json",
   "title": "Pagination",
   "description": "Lets the shopper move through numbered pages of results, with Previous and Next and, when there are many pages, the first and last page around an ellipsis. The current page is marked from the pagination's own page. In a container narrower than 28rem only the current page stays between Previous and Next, which drop their labels below 24rem.",
+  "components": {
+    "Pagination": "Groups all parts of the pagination.",
+    "PaginationContent": "Lists the page numbers, ellipses and navigation buttons of the pagination.",
+    "PaginationEllipsis": "Marks pages that are skipped between the shown page numbers.",
+    "PaginationFirst": "Lets the user jump to the first page.",
+    "PaginationItem": "Shows one page number in the list that the user can go to.",
+    "PaginationLast": "Lets the user jump to the last page.",
+    "PaginationLink": "Links to a specific page and marks it when it is the current one.",
+    "PaginationNext": "Lets the user go to the next page.",
+    "PaginationPrevious": "Lets the user go to the previous page."
+  },
   "recipes": {
     "pagination": {
       "base": {

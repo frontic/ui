@@ -3,11 +3,6 @@
   Licensed CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/. Changed: set into a Vue component, without its fixed width and height.
   This file is under CC BY-SA 4.0, not the registry's MIT licence. The mark itself is a trademark of its owner.
 -->
-<script lang="ts">
-/** The Mastercard card mark. */
-export default {}
-</script>
-
 <template>
   <svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <rect width="120" height="80" rx="4" fill="white" />

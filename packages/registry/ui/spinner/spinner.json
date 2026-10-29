@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Spinner",
   "description": "A turning loader that tells screen readers what is loading; inside a button it takes the icon slot and size.",
+  "components": {
+    "Spinner": "Shows that something is loading or in progress."
+  },
   "recipes": {
     "spinner": {
       "base": {

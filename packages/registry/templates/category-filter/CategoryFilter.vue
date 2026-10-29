@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a category's products with filters, sorting and a load-more button. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { Product, UiFilter, UiFilterValue, UiSort } from './types'

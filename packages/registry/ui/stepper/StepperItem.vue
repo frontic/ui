@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the trigger, title and description of one step in the stepper. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { StepperItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

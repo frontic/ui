@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows how far a task has progressed, as a share of the whole. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ProgressRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

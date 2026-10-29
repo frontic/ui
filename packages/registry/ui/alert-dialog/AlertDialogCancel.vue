@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Dismisses the dialog without taking the action. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AlertDialogCancelProps } from 'reka-ui'
 import type { AlertDialogButtonProps } from '.'

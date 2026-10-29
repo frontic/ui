@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Toggle",
   "description": "A button that stays pressed until pressed again, such as saving to a wishlist; plain or outlined, with square icon sizes.",
+  "components": {
+    "Toggle": "Lets the user switch an option on or off with a button."
+  },
   "recipes": {
     "toggle": {
       "composes": ["focus-ring", "disabled"],

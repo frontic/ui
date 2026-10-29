@@ -1,8 +1,3 @@
-<script lang="ts">
-/** The card marks at the end of a number field: all it offers until the number shows its brand, then that brand's alone. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { Component } from 'vue'
 import type { PaymentCardBrand } from './card'

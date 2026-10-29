@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user type a date one segment at a time, in the order and format of their locale. Inside a DatePicker or DateRangePicker it takes the picker's dates and settings. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DateFieldRootEmits, DateFieldRootProps, DateRange, DateValue, SegmentPart } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

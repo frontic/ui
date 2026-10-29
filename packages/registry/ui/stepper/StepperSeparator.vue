@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Joins one step of the stepper to the next with a line that fills once the step is done. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { StepperSeparatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

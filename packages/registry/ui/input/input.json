@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Input",
   "description": "Lets the user enter a single line of text, joining a Field.",
+  "components": {
+    "Input": "Lets the user enter a single line of text."
+  },
   "recipes": {
     "input": {
       "composes": ["disabled"],

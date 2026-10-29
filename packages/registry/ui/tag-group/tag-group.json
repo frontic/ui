@@ -2,6 +2,12 @@
   "$schema": "../../item.schema.json",
   "title": "Tag Group",
   "description": "Tags the shopper moves through with the arrow keys, such as active filters to remove or options to pick; selection and removal are both optional.",
+  "components": {
+    "TagGroup": "Groups tags the user moves through with the arrow keys, and can select or remove.",
+    "TagGroupItem": "One tag: its text and, when removable, a delete button.",
+    "TagGroupItemDelete": "Lets the user remove its tag; the group emits `remove`.",
+    "TagGroupItemText": "Shows the text of one tag."
+  },
   "recipes": {
     "tag-group": {
       "base": {

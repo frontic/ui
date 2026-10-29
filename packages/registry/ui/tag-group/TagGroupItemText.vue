@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the text of one tag. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TagGroupItemTextProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

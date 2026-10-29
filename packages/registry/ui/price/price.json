@@ -2,6 +2,13 @@
   "$schema": "../../item.schema.json",
   "title": "Price",
   "description": "Shows a price in the shopper's locale, with the original price and the percentage saved when it is reduced, and a hint such as tax and shipping.",
+  "components": {
+    "Price": "Shows a price, with the original price and discount percentage when reduced.",
+    "PriceAmount": "Shows the current price of the product.",
+    "PriceRef": "Shows the original price of a discounted product.",
+    "PriceDiscount": "Shows the percentage saved against the original price.",
+    "PriceHint": "Holds a note below the price, such as tax and shipping, which may link on."
+  },
   "recipes": {
     "price": {
       "base": {

@@ -3,6 +3,9 @@
   "title": "Cart Summary",
   "description": "Cart card with an item count, linked product lines with images and line totals, subtotal, shipping (free, priced or worked out at checkout) and savings rows, the total with its tax note, and a secure checkout button that stays off while the cart is empty.",
   "categories": ["cart"],
+  "components": {
+    "CartSummary": "Shows the cart's lines with subtotal, shipping and total, and a button to check out."
+  },
   "recipes": {
     "cart-summary": {
       "composes": ["hint", "heading", "meta", "focus-ring"]

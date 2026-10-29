@@ -2,6 +2,11 @@
   "$schema": "../../item.schema.json",
   "title": "Date Picker",
   "description": "A date typed segment by segment or picked from a calendar the button beside it opens; joins a Field around it.",
+  "components": {
+    "DatePicker": "Lets the user type a date, or pick it from a calendar the button beside it opens.",
+    "DatePickerContent": "The popover a DatePicker's or DateRangePicker's calendar opens in, lined up with the field.",
+    "DatePickerTrigger": "The calendar button at the end of a DatePicker's or DateRangePicker's field."
+  },
   "recipes": {
     "date-picker-content": {
       "base": {

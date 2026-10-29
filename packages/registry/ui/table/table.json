@@ -2,6 +2,17 @@
   "$schema": "../../item.schema.json",
   "title": "Table",
   "description": "Rows and columns of data such as orders, with header, footer, caption and an empty state; a wide table scrolls in its box and takes keyboard focus to do so.",
+  "components": {
+    "Table": "Groups all parts of the table, which shows data in rows and columns.",
+    "TableBody": "Holds the data rows of the table.",
+    "TableCaption": "Describes in a short line what the table shows.",
+    "TableCell": "Holds one value in a row of the table.",
+    "TableEmpty": "Shows a message in place of rows when the table has no data.",
+    "TableFooter": "Holds the summary rows at the bottom of the table, such as totals.",
+    "TableHead": "Labels one column of the table.",
+    "TableHeader": "Holds the row of column labels at the top of the table.",
+    "TableRow": "Groups the cells that belong to one entry of the table."
+  },
   "recipes": {
     "table": {
       "composes": ["focus-ring"],

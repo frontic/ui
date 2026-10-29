@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows store navigation with full-width flyouts of link columns and featured tiles, laid out beside, above or captioned, plus a mobile menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { NavigationCategory, NavigationColumn, NavigationFeatured, NavigationProps } from './types'

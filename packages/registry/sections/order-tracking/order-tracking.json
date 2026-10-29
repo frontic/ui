@@ -3,6 +3,9 @@
   "title": "Order Tracking",
   "description": "Order status card led by the arrival estimate, with the delivery steps as a timeline, each with its date and a one-line note, the carrier's tracking number with a copy action, and track and reschedule actions.",
   "categories": ["order"],
+  "components": {
+    "OrderTracking": "Shows when a parcel arrives and its delivery steps as a timeline, with the tracking number and link."
+  },
   "recipes": {
     "order-tracking": {
       "composes": ["meta", "line-title"]

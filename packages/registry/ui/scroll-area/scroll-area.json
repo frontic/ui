@@ -2,6 +2,10 @@
   "$schema": "../../item.schema.json",
   "title": "Scroll Area",
   "description": "Holds content that scrolls inside a fixed area, vertically, horizontally or both, with a slim bar that shows on hover.",
+  "components": {
+    "ScrollArea": "Holds content that scrolls within a fixed area.",
+    "ScrollBar": "Shows the scroll position and lets the user drag to scroll."
+  },
   "recipes": {
     "scroll-area-scrollbar": {
       "base": {

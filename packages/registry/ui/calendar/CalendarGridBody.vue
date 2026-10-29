@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the weeks of the calendar grid. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { CalendarGridBodyProps } from 'reka-ui'
 import { CalendarGridBody, useForwardProps } from 'reka-ui'

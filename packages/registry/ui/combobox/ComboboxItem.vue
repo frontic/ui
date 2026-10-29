@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds one option the user can pick from the combobox. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxItemEmits, ComboboxItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

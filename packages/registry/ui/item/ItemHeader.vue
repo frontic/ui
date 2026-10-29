@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds extra content above the main row of its item. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

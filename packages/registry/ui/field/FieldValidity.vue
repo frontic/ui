@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Renders from the validation state of a field, such as a custom message or a strength meter. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import { FieldValidity } from 'reka-ui'
 

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user type a new tag and add it to the tags input. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TagsInputInputProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

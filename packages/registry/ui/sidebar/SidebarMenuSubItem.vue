@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups one nested entry of a sidebar submenu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

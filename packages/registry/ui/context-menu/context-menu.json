@@ -2,6 +2,23 @@
   "$schema": "../../item.schema.json",
   "title": "Context Menu",
   "description": "A menu that opens on right-click, with actions, checkbox and radio items, labelled groups and destructive entries.",
+  "components": {
+    "ContextMenu": "Groups all parts of the context menu, which opens on right-click.",
+    "ContextMenuCheckboxItem": "Lets the user switch an option on or off from the menu.",
+    "ContextMenuContent": "Holds the items the context menu shows while open.",
+    "ContextMenuGroup": "Groups related items in the context menu.",
+    "ContextMenuItem": "Holds one action the user can pick from the context menu.",
+    "ContextMenuLabel": "Labels a group of items in the context menu.",
+    "ContextMenuPortal": "Places the menu content above the rest of the page.",
+    "ContextMenuRadioGroup": "Groups radio items so the user can pick exactly one.",
+    "ContextMenuRadioItem": "Lets the user choose one option from a group in the menu.",
+    "ContextMenuSeparator": "Separates groups of items in the context menu.",
+    "ContextMenuShortcut": "Shows the keyboard shortcut for a menu item.",
+    "ContextMenuSub": "Groups a submenu trigger with the submenu it opens.",
+    "ContextMenuSubContent": "Holds the items of a submenu while it is open.",
+    "ContextMenuSubTrigger": "Opens a submenu from an item of the context menu.",
+    "ContextMenuTrigger": "Marks the area where a right-click opens the context menu."
+  },
   "recipes": {
     "context-menu": {
       "composes": ["focus-ring"]

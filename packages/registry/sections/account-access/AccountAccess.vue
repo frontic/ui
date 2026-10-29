@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the shopper change email and password, switch two-factor on and delete the account. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { useId } from 'vue'

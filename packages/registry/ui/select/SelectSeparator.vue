@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Separates groups of options in the select. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SelectSeparatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

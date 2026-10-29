@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lowers the value of the number field by one step. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NumberFieldDecrementProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

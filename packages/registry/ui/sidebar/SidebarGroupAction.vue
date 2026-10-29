@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Adds a small action button next to a sidebar group's label. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Opens a side sheet with the cart's items, quantity controls, free-shipping progress and checkout. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { CartLine } from './types'

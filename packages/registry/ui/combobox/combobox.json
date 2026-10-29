@@ -2,6 +2,19 @@
   "$schema": "../../item.schema.json",
   "title": "Combobox",
   "description": "Searchable single-choice list behind a trigger, with headed groups and an empty state; the list is as wide as its trigger, and the trigger joins a Field as its control.",
+  "components": {
+    "Combobox": "Groups all parts of the combobox, which lets the user search and pick an option.",
+    "ComboboxAnchor": "Marks where the option list attaches, wrapping the input and trigger.",
+    "ComboboxEmpty": "Shows a message when no option matches the search.",
+    "ComboboxGroup": "Groups related options in the combobox list.",
+    "ComboboxInput": "Lets the user type to filter the combobox options.",
+    "ComboboxItem": "Holds one option the user can pick from the combobox.",
+    "ComboboxItemIndicator": "Marks an option as selected in the combobox list.",
+    "ComboboxList": "Holds the options the combobox offers while it is open.",
+    "ComboboxSeparator": "Separates groups of options in the combobox list; hidden while a search filters the list.",
+    "ComboboxTrigger": "Shows the chosen option and opens the combobox list when pressed.",
+    "ComboboxViewport": "Scrolls the options when the combobox list is longer than the space available."
+  },
   "recipes": {
     "combobox-anchor": {
       "base": {

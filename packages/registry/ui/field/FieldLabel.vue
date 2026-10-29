@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Labels the input of a field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { FieldLabelProps } from 'reka-ui'
 import type { HTMLAttributes, VNode } from 'vue'

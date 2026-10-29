@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the logo and navigation with search, account and cart buttons. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { useSlots } from 'vue'

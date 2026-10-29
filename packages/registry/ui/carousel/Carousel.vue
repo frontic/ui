@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the carousel, which scrolls through items sideways. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { CarouselEmits, CarouselProps, UnwrapRefCarouselApi, WithClassAsProps } from './interface'
 import { useProvideCarousel } from './useCarousel'

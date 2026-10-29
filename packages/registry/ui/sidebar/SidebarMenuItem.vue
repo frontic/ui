@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups one navigation entry with its button, action and badge. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

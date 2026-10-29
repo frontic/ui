@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a message in place of rows when the table has no data. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { reactiveOmit } from '@vueuse/core'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user enter several lines of text inside the group. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { Textarea } from '@library/components/ui/textarea'

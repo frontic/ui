@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Labels a group of sidebar items with a heading. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

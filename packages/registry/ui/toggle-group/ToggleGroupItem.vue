@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user switch one option of its group on or off. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ToggleGroupItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

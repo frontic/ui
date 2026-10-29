@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Aspect Ratio",
   "description": "Keeps its content at a fixed width-to-height ratio, such as a square product image or a 16:9 video.",
+  "components": {
+    "AspectRatio": "Keeps its content at a fixed width-to-height ratio."
+  },
   "recipes": {
     "aspect-ratio": {
       "base": {

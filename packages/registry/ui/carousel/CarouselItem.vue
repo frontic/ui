@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the content of one slide in the carousel. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { cva } from 'class-variance-authority'

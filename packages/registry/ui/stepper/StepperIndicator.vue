@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Marks the number or progress state of a step. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { StepperIndicatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

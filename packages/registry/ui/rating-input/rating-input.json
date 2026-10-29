@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Rating Input",
   "description": "Lets the user give a rating by picking a mark, drawn with the Rating item's stars or dots, joining a Field.",
+  "components": {
+    "RatingInput": "Lets the user give a rating by picking one of its marks, drawn as dots or stars."
+  },
   "recipes": {
     "rating-input": {
       "base": {

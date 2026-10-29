@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Marks an option as selected in the combobox list. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxItemIndicatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

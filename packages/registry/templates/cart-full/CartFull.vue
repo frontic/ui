@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows the full cart page with editable items, an order summary and a checkout button. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { CartLine } from './types'

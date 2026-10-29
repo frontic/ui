@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows filter groups with a price range and in-stock switch, and a result count. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { FiltersGroup } from './types'

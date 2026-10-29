@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds a button or link that lets the user act on or dismiss the alert. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

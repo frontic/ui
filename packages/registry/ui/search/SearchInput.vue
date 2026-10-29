@@ -1,8 +1,3 @@
-<script lang="ts">
-/** The search field: a search icon, the input, and a button that clears it. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { ComboboxAnchor, ComboboxInput } from 'reka-ui'

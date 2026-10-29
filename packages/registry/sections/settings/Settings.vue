@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the shopper turn grouped options on or off, then save or reset the changes. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { SettingsGroup } from './types'

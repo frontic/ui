@@ -2,6 +2,10 @@
   "$schema": "../../item.schema.json",
   "title": "Swatch Group",
   "description": "A row or column of swatches for choosing one option, such as a colour, or several, as in a filter; joins a Field around it.",
+  "components": {
+    "SwatchGroup": "Groups swatches so the user can choose one or several options.",
+    "SwatchGroupItem": "Lets the user select one option within its swatch group."
+  },
   "recipes": {
     "swatch-group": {
       "base": {

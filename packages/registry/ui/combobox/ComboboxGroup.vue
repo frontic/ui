@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups related options in the combobox list. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxGroupProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

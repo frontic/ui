@@ -1,8 +1,3 @@
-<script lang="ts">
-/** A headed section of the panel: products, categories, brands, or suggestions. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { ComboboxGroup, ComboboxLabel } from 'reka-ui'

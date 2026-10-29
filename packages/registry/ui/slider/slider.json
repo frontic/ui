@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Slider",
   "description": "Picks a value or a range by dragging thumbs along a track, with a label, a legend and values formatted like prices; joins a Field.",
+  "components": {
+    "Slider": "Lets the user pick a value or range by dragging a handle along a track."
+  },
   "recipes": {
     "slider-control": {
       "composes": ["disabled"],

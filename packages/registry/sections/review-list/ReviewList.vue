@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists customer reviews with the reviewer, date, rating and verified-purchase mark. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { ReviewItem } from './types'

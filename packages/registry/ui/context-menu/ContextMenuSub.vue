@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a submenu trigger with the submenu it opens. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuSubEmits, ContextMenuSubProps } from 'reka-ui'
 import { ContextMenuSub, useForwardPropsEmits } from 'reka-ui'

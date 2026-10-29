@@ -1,9 +1,5 @@
-<script lang="ts">
-/** One mark of a rating input, filled up to the picked or hovered mark. */
-export default {}
-</script>
-
 <script setup lang="ts">
+// One mark of a rating input, filled up to the picked or hovered mark.
 import { cva } from 'class-variance-authority'
 import { injectRatingRootContext, RatingItem, RatingItemIndicator } from 'reka-ui'
 import { computed } from 'vue'

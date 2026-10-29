@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Separates sections within the sidebar. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { Separator } from '@library/components/ui/separator'

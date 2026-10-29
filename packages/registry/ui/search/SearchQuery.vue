@@ -1,8 +1,3 @@
-<script lang="ts">
-/** The first row while the shopper types: "Search for …", which submits the query to the results page. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { ComboboxItem } from 'reka-ui'

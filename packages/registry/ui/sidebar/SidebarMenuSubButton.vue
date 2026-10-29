@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user open a nested sidebar menu item. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

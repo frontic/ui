@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows how far the user has scrolled through the carousel. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { WithClassAsProps } from './interface'
 import { onBeforeUnmount, ref, watch } from 'vue'

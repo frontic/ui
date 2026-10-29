@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Links to a page from the navigation menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NavigationMenuLinkEmits, NavigationMenuLinkProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Links to a specific page and marks it when it is the current one. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** One tag: its text and, when removable, a delete button. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TagGroupItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

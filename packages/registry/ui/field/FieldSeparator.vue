@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Separates fields of a form, optionally with a short text in between. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { Separator } from '@library/components/ui/separator'

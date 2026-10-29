@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user limit a numeric value to a range with a slider. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { computed, inject, ref, useId, watch } from 'vue'

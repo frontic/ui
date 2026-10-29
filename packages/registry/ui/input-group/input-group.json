@@ -2,6 +2,14 @@
   "$schema": "../../item.schema.json",
   "title": "Input Group",
   "description": "An input or textarea with addons beside, above or below it, such as a search icon, a unit or a button that submits.",
+  "components": {
+    "InputGroup": "Groups an input with addons such as icons, buttons or text.",
+    "InputGroupAddon": "Places an icon, text or button beside the input of its group.",
+    "InputGroupButton": "Lets the user act on the input of its group, such as submit it.",
+    "InputGroupInput": "Lets the user enter a single line of text inside the group.",
+    "InputGroupText": "Shows fixed text, such as a unit or prefix, inside the group.",
+    "InputGroupTextarea": "Lets the user enter several lines of text inside the group."
+  },
   "recipes": {
     "input-group": {
       "base": {

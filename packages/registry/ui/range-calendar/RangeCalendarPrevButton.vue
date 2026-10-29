@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Moves the range calendar to the previous month. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { RangeCalendarPrevProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

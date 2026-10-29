@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows an image with a loading state and a fallback if it fails to load. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { computed, onMounted, ref, useTemplateRef, watch } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Names what the popover is about. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

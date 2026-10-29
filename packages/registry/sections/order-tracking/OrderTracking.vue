@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows when a parcel arrives and its delivery steps as a timeline, with the tracking number and link. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { TrackingStep } from './types'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user search or filter from within the sidebar. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { Input } from '@library/components/ui/input'

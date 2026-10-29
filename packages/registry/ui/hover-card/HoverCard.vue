@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the hover card. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HoverCardRootEmits, HoverCardRootProps } from 'reka-ui'
 import { HoverCardRoot, useForwardPropsEmits } from 'reka-ui'

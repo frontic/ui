@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the scrollable groups and menus between the sidebar header and footer. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Gives help text for a field, such as what to enter. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { FieldDescriptionProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

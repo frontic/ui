@@ -2,6 +2,12 @@
   "$schema": "../../item.schema.json",
   "title": "Tooltip",
   "description": "A short label that appears beside an element on hover or keyboard focus, such as naming an icon button; announced as the trigger's description.",
+  "components": {
+    "Tooltip": "Groups a trigger with the short hint shown when the user hovers or focuses it.",
+    "TooltipContent": "Holds the short hint the tooltip shows.",
+    "TooltipProvider": "Shares timing settings between all tooltips inside it.",
+    "TooltipTrigger": "Marks the element that shows the tooltip on hover or focus."
+  },
   "recipes": {
     "tooltip-arrow": {
       "base": {

@@ -2,6 +2,12 @@
   "$schema": "../../item.schema.json",
   "title": "Tabs",
   "description": "Switches between panels of related content, such as a product's description and details; a filled or underlined list, in a row or a column, mirrored in a right-to-left page.",
+  "components": {
+    "Tabs": "Groups all parts of the tabs, which switch between panels of content.",
+    "TabsContent": "Holds what its tab shows while that tab is selected.",
+    "TabsList": "Groups the triggers that switch between the tabs.",
+    "TabsTrigger": "Lets the user switch to its tab."
+  },
   "recipes": {
     "tabs": {
       "base": {

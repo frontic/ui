@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups the media, text and actions of one entry, such as a list row. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

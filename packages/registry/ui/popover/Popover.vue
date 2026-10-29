@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the popover. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PopoverRootEmits, PopoverRootProps } from 'reka-ui'
 import { PopoverRoot, useForwardPropsEmits } from 'reka-ui'

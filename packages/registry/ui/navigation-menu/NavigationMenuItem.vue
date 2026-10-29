@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a trigger with the content it opens, or holds a single link. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { NavigationMenuItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

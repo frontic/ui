@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a label, an input, a description and an error of one form field, and validates its input. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { FieldRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

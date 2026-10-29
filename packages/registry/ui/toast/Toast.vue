@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the toasts that toast() shows, short messages that confirm an action such as adding to the cart. Mount it once. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { ToasterProps } from 'vue-sonner'
 import { reactiveOmit } from '@vueuse/core'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Labels a group of options in the select. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { SelectLabelProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the weekday names and days of one month. */
-export default {}
-</script>
-
 <script lang="ts" setup>
 import type { RangeCalendarGridProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

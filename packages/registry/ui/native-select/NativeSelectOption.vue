@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Offers one choice the user can pick in the native select. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

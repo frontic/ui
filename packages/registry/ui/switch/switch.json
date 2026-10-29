@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Switch",
   "description": "Turns one setting on or off the moment it is pressed, such as order emails; sits beside its label in a Field and mirrors in a right-to-left page.",
+  "components": {
+    "Switch": "Lets the user turn a single setting on or off."
+  },
   "recipes": {
     "switch": {
       "composes": ["focus-ring", "invalid", "disabled"],

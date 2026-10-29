@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Stacks several avatars in an overlapping row. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

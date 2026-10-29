@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lists the steps of the breadcrumb in order. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

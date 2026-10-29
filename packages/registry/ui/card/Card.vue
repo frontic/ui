@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups related content, such as a product or an order, into one framed block. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

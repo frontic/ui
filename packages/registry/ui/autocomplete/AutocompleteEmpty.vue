@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows a message when no suggestion matches the text. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxEmptyProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

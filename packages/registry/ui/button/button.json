@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Button",
   "description": "Triggers an action such as adding to the cart: solid, outline, soft, ghost or link, in primary, neutral, destructive, inverse and the commerce colours buy and checkout.",
+  "components": {
+    "Button": "Lets the user trigger an action, such as adding a product to the cart."
+  },
   "recipes": {
     "button": {
       "composes": ["focus-ring", "disabled", "invalid"],

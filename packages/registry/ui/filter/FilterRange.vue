@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user limit a value by typing a lowest and highest number. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { ref, watch } from 'vue'

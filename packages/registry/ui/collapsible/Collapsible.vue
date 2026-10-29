@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a trigger with content that can be shown or hidden. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { CollapsibleRootEmits, CollapsibleRootProps } from 'reka-ui'
 import { CollapsibleRoot, useForwardPropsEmits } from 'reka-ui'

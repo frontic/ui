@@ -3,6 +3,9 @@
   "title": "Search Suggestions",
   "description": "Storefront search with products, categories and brands while the shopper types, and suggested searches and curated picks before; inline under the field or in an overlay.",
   "categories": ["search"],
+  "components": {
+    "SearchSuggestions": "A storefront search: products, categories and brands while the shopper types, suggestions and curated picks before."
+  },
   "recipes": {
     "search-suggestions": {
       "composes": ["line-title", "meta"]

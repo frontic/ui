@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user jump to the last page. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PaginationLastProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

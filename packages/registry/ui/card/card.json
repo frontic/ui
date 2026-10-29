@@ -2,6 +2,16 @@
   "$schema": "../../item.schema.json",
   "title": "Card",
   "description": "Frames related content such as a product or an order, with header, title, description, action, image, content and footer parts.",
+  "components": {
+    "Card": "Groups related content, such as a product or an order, into one framed block.",
+    "CardAction": "Holds a control placed at the end of the card header.",
+    "CardContent": "Holds the main content of the card.",
+    "CardDescription": "Shows secondary text below the card title.",
+    "CardFooter": "Holds the closing content of the card, such as status or buttons.",
+    "CardHeader": "Groups the title, description and action at the top of the card.",
+    "CardImage": "Shows a picture across the top of the card.",
+    "CardTitle": "Names what the card is about."
+  },
   "recipes": {
     "card": {
       "base": {

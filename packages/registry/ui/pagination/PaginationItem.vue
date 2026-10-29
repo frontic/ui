@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Shows one page number in the list that the user can go to. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PaginationListItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

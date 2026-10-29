@@ -2,6 +2,17 @@
   "$schema": "../../item.schema.json",
   "title": "Sheet",
   "description": "Slides a panel in from a screen edge over the page, with a header, a scrolling body and a footer, for carts, filters and menus.",
+  "components": {
+    "Sheet": "Groups all parts of the sheet, a panel that slides in from an edge.",
+    "SheetBody": "Holds the sheet's main content and scrolls it, keeping the header and footer in view.",
+    "SheetClose": "Closes the sheet.",
+    "SheetContent": "Holds what the sheet shows while open.",
+    "SheetDescription": "Explains the purpose of the sheet below its title.",
+    "SheetFooter": "Holds the actions at the bottom of the sheet.",
+    "SheetHeader": "Groups the title and description at the top of the sheet.",
+    "SheetTitle": "Names the sheet.",
+    "SheetTrigger": "Opens the sheet."
+  },
   "recipes": {
     "sheet-body": {
       "base": {

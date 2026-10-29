@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups all parts of the stepper, which guides the user through a sequence of steps. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { StepperRootEmits, StepperRootProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

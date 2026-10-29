@@ -3,6 +3,9 @@
   "title": "Header Centered",
   "description": "Store header with a centred logo between a search slot (inline on wide screens, an overlay button on phones) and account and cart actions, over a full-width navigation slot.",
   "categories": ["header"],
+  "components": {
+    "HeaderCentered": "Shows the logo and navigation with search, account and cart buttons."
+  },
   "recipes": {
     "header-centered": {
       "base": {

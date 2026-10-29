@@ -2,6 +2,12 @@
   "$schema": "../../item.schema.json",
   "title": "Alert",
   "description": "A short message in neutral, info, success, warning or error, with an optional icon, title, description and an action such as dismiss.",
+  "components": {
+    "Alert": "Shows a short message to the shopper, with an optional icon, title and description.",
+    "AlertAction": "Holds a button or link that lets the user act on or dismiss the alert.",
+    "AlertDescription": "Shows the detail text of the alert below its title.",
+    "AlertTitle": "Shows the headline of the alert."
+  },
   "recipes": {
     "alert": {
       "base": {

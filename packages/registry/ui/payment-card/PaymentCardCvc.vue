@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Takes a card's security code, as long as the brand the number shows asks for; or frames a payment provider's hosted code field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import type { PaymentCardHostedField } from './hosted'

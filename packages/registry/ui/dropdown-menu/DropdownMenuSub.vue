@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Groups a submenu trigger with the nested menu it opens. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuSubEmits, DropdownMenuSubProps } from 'reka-ui'
 import { DropdownMenuSub, useForwardPropsEmits } from 'reka-ui'

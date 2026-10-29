@@ -2,6 +2,9 @@
   "$schema": "../../item.schema.json",
   "title": "Label",
   "description": "Names a control that sits outside a Field, such as a sort select in a toolbar, and moves focus to it on click.",
+  "components": {
+    "Label": "Labels a form field and focuses it when the user clicks the label."
+  },
   "recipes": {
     "label-root": {
       "composes": ["disabled"],

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** The promo code field with its hint, the applied codes as removable chips and an optional notice; PromoCode's body, for placing inside another summary. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { AppliedDiscount, PromoNotice } from './types'
 import { useId } from 'vue'

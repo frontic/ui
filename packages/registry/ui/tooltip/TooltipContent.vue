@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the short hint the tooltip shows. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { TooltipContentEmits, TooltipContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

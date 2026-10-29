@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds the content pinned at the top of the sidebar, such as a search field. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { PrimitiveProps } from 'reka-ui'
 import { Primitive } from 'reka-ui'

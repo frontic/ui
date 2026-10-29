@@ -5,9 +5,6 @@ export interface SwatchFallbackProps extends PrimitiveProps {
   /** Waits this many milliseconds before showing the fallback, so a fast image loads without a flash. */
   delayMs?: number
 }
-
-/** Shows the option's colour while its image loads or when there is none. */
-export default {}
 </script>
 
 <script setup lang="ts">

@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Holds one action the user can pick from the dropdown menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DropdownMenuItemProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

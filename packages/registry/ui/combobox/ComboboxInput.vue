@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the user type to filter the combobox options. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ComboboxInputEmits, ComboboxInputProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'

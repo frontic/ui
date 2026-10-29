@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Lets the shopper pick standard or express delivery, a day and a delivery window. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { DateValue } from '@internationalized/date'
 import type { HTMLAttributes } from 'vue'

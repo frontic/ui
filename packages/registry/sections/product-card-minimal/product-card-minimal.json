@@ -3,6 +3,9 @@
   "title": "Product Card Minimal",
   "description": "Quiet product tile with colour pills, name and subtitle, rating, colour count and price; linked as a whole when it has no colour pills.",
   "categories": ["product"],
+  "components": {
+    "ProductCardMinimal": "Shows a product with its image, name, price and number of colours."
+  },
   "recipes": {
     "product-card-minimal": {
       "composes": ["product-card-title", "product-card-lift", "hint", "meta", "focus-ring"]

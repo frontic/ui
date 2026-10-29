@@ -1,8 +1,3 @@
-<script lang="ts">
-/** Separates groups of items in the context menu. */
-export default {}
-</script>
-
 <script setup lang="ts">
 import type { ContextMenuSeparatorProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'
