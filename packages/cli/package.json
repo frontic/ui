@@ -76,6 +76,11 @@
     "access": "public"
   },
   "homepage": "https://ui.frontic.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontic/ui.git",
+    "directory": "packages/cli"
+  },
   "keywords": [
     "vue",
     "nuxt",
