@@ -2,7 +2,7 @@
 import type { CalendarRootEmits, CalendarRootProps, DateValue } from 'reka-ui'
 import type { HTMLAttributes, Ref } from 'vue'
 import type { LayoutTypes } from '.'
-import { getLocalTimeZone, today } from '@internationalized/date'
+import { getLocalTimeZone, toCalendarDate, today } from '@internationalized/date'
 import type { ReuseTemplateComponent } from '@vueuse/core'
 import { createReusableTemplate, reactiveOmit, useVModel } from '@vueuse/core'
 import { CalendarRoot, useDateFormatter, useForwardPropsEmits, useLocale } from 'reka-ui'
@@ -55,9 +55,17 @@ defineSlots<{
 
 const delegatedProps = reactiveOmit(props, 'class', 'layout', 'placeholder')
 
+// Today, or the nearest day minValue and maxValue allow.
+function openingDay() {
+  const now = today(getLocalTimeZone())
+  if (props.minValue && now.compare(props.minValue) < 0) return toCalendarDate(props.minValue)
+  if (props.maxValue && now.compare(props.maxValue) > 0) return toCalendarDate(props.maxValue)
+  return now
+}
+
 const placeholder = useVModel(props, 'placeholder', emits, {
   passive: true,
-  defaultValue: props.defaultPlaceholder ?? today(getLocalTimeZone()),
+  defaultValue: props.defaultPlaceholder ?? openingDay(),
 }) as Ref<DateValue>
 
 const locale = useLocale(toRef(() => props.locale))

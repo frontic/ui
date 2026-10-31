@@ -58,12 +58,34 @@ describe('a DatePicker', () => {
   })
 
   it('opens on a day that can be picked when today cannot', async () => {
-    const tomorrow = today(getLocalTimeZone()).add({ days: 1 })
-    await mount(() => h(DatePicker, { locale: 'en-US', minValue: tomorrow }))
-    await open()
-    const focused = document.activeElement as HTMLElement
-    expect(focused.dataset.slot).toBe('calendar-cell-trigger')
-    expect(focused.hasAttribute('data-disabled')).toBe(false)
+    vi.useFakeTimers({ toFake: ['Date'] })
+    vi.setSystemTime(new Date(2026, 9, 31, 12))
+    try {
+      const tomorrow = today(getLocalTimeZone()).add({ days: 1 })
+      await mount(() => h(DatePicker, { locale: 'en-US', minValue: tomorrow }))
+      await open()
+      const focused = document.activeElement as HTMLElement
+      expect(focused.dataset.slot).toBe('calendar-cell-trigger')
+      expect(focused.hasAttribute('data-disabled')).toBe(false)
+      expect(focused.dataset.value).toBe('2026-11-01')
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('opens on the month of the last day that can be picked when today is past it', async () => {
+    vi.useFakeTimers({ toFake: ['Date'] })
+    vi.setSystemTime(new Date(2026, 10, 1, 12))
+    try {
+      await mount(() => h(DatePicker, { locale: 'en-US', maxValue: new CalendarDate(2026, 10, 31) }))
+      await open()
+      const focused = document.activeElement as HTMLElement
+      expect(focused.dataset.slot).toBe('calendar-cell-trigger')
+      expect(focused.hasAttribute('data-disabled')).toBe(false)
+      expect(focused.dataset.value).toMatch(/^2026-10-/)
+    } finally {
+      vi.useRealTimers()
+    }
   })
 })
 

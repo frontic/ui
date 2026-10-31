@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { join } from 'node:path'
 import { CalendarDate } from '@internationalized/date'
-import { afterEach, describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import { createApp, h, nextTick, ref } from 'vue'
 import { readRegistryRecipes } from '../../scripts/lib/recipes'
 import { Calendar } from '../../ui/calendar'
@@ -25,6 +25,28 @@ describe('a Calendar', () => {
     await nextTick()
     await nextTick()
     expect(month()).toBe('Okt')
+  })
+
+  it('shows the month of the first day that can be picked when today cannot', async () => {
+    vi.useFakeTimers({ toFake: ['Date'] })
+    vi.setSystemTime(new Date(2026, 9, 31, 12))
+    try {
+      await mount(() => h(Calendar, { locale: 'en-US', minValue: new CalendarDate(2026, 11, 1) }))
+      expect(document.querySelector('[data-slot="calendar-heading"]')!.textContent!.trim()).toBe('November 2026')
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('shows the month of the last day that can be picked when today is past it', async () => {
+    vi.useFakeTimers({ toFake: ['Date'] })
+    vi.setSystemTime(new Date(2026, 10, 1, 12))
+    try {
+      await mount(() => h(Calendar, { locale: 'en-US', maxValue: new CalendarDate(2026, 10, 31) }))
+      expect(document.querySelector('[data-slot="calendar-heading"]')!.textContent!.trim()).toBe('October 2026')
+    } finally {
+      vi.useRealTimers()
+    }
   })
 
   it('takes its padding from recipes, not from utilities', async () => {
