@@ -5,7 +5,9 @@
 
 # Frontic UI
 
-Vue components for commerce storefronts that land in your project as source. This repository holds what ends up there:
+Vue components for commerce storefronts, built for teams where an AI agent writes most of the code. `add` copies an item's source into your project; your brand's tokens and recipes set the look. No colour, radius or type style sits in a component: change a design token, run `build`, and every component follows. Interactive items build on Reka UI, so keyboard, focus and ARIA come with them.
+
+This repository holds what lands in your project:
 
 - **`@frontic/ui`**, the CLI: `create`, `init`, `add`, `build`, `check`, `docs` and the rest. It installs items, compiles your brand into `frontic.css`, and sets up the MCP server and agent skills.
 - **The registry items**, in `packages/registry`: components, sections and templates, each with its manifest and recipes. They are served at `registry.ui.frontic.com`.
@@ -36,4 +38,6 @@ Parts of the components derive from [shadcn-vue](https://github.com/unovue/shadc
 
 ## Contributing
 
-Issues and pull requests are welcome. [CONTRIBUTING.md](./CONTRIBUTING.md) explains how a pull request lands.
+Frontic UI takes contributions as issues, not outside pull requests. Bring the problem: a bug you hit, or a job where Frontic UI gets in your way. The team builds the change and credits you as its contributor.
+
+[CONTRIBUTING.md](./CONTRIBUTING.md) explains how an issue becomes a change. Every item is documented at [ui.frontic.com](https://ui.frontic.com).
