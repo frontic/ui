@@ -15,6 +15,16 @@ export interface Recipes {
 /** The recipe files under `dir`, read by `readRecipeFiles`; paths are relative to `root`, the library folder by default
  * (`recipes/card.json`). A missing `dir` holds no recipes. */
 export function readRecipeFolder(dir: string, options?: { root?: string }): Promise<RecipeFiles>
+/** A library's recipes from its files' text, keyed by POSIX path from the library folder (`recipes/card.json`,
+ * `components/ui/tag/tag.json`), whichever layout it is in or between: every JSON file under `recipes/` (its `shared/` folder too) and
+ * the trees in each component manifest (`components/<tier>/<name>/<name>.json`, under `recipes`); a path with a dot-segment and any
+ * other file are skipped. A recipe is a tree or flat by what it holds. A name defined twice is a problem naming both files, and the
+ * newer layout's definition is the one read: a component manifest over `recipes/`, `recipes/` over `recipes/shared/`. A file that is
+ * not JSON is a problem naming it. */
+export function readLibraryRecipeFiles(files: Record<string, string>): RecipeFiles
+/** `readLibraryRecipeFiles` over the files of `<root>/library`; a manifest it cannot read is a problem
+ * (`components/ui/tag/tag.json: cannot be read (EACCES)`). A missing library holds no recipes. */
+export function readLibraryRecipes(root: string): Promise<RecipeFiles>
 /** Converts a library's `recipes/` to recipes by name in place, item names from its `registry.json`; with `check` it writes nothing. */
 export function convertRecipeFolder(libraryDir: string, options?: { check?: boolean }): Promise<RecipeConversion>
 
