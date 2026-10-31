@@ -7,6 +7,7 @@ import {
   brandOpacityProblems,
   brandReferenceLines,
   brandReferenceProblems,
+  colourOwners,
   type ContrastProblem,
   fontPackages as brandFontPackages,
   HOVERED,
@@ -329,17 +330,15 @@ export async function readLibrary(config: Config): Promise<{ tokens: Record<stri
   return { tokens, recipes }
 }
 
-const colourNames = (tokens: Record<string, unknown>) =>
-  new Set(Object.entries((tokens.color ?? {}) as Record<string, unknown>).flatMap(([group, entries]) => (group.startsWith('$') || typeof entries !== 'object' || !entries ? [] : Object.keys(entries))))
-
 /** Why a recipe's token reference does not resolve: a hover the brand leaves out that cannot be derived, the hover of a colour the contract
  * derives none for, or no such token in `brandFile`. */
 export function recipeTokenMessage({ ref, underived }: RecipeTokenProblem, brandFile: string, tokens: Record<string, unknown>): string {
   if (underived) return `${ref} is not derived: a derived hover would fall to ${underived.ratio}:1 against ${underived.against}; set it in ${brandFile}`
   const base = /^\{colors\.([a-z0-9-]+)-hover(?:\/\d+)?\}$/.exec(ref)?.[1]
   const hovered = HOVERED.map((key) => key.split('.')[1])
-  if (!base || !colourNames(tokens).has(base)) return `${ref} is not in ${brandFile}`
-  if (hovered.includes(base)) return `${ref} is not in ${brandFile}: the contract derives none for ${base} here; write ${base}-hover in ${brandFile}`
+  const owner = base ? colourOwners(tokens).get(base) : undefined
+  if (!owner) return `${ref} is not in ${brandFile}`
+  if (HOVERED.includes(`${owner.group}.${base}`)) return `${ref} is not in ${brandFile}: the contract derives none for ${base} here; write ${base}-hover in ${brandFile}`
   return `${ref} is not in ${brandFile}: the contract derives a hover only for the colours a component hovers (${hovered.join(', ')}); write ${base}-hover in ${brandFile} to give ${base} one`
 }
 

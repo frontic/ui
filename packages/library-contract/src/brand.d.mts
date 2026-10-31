@@ -90,8 +90,12 @@ export interface ContrastProblem {
 export function brandOpacityProblems(tokens: unknown): string[]
 /** Each container the brand names like one of Tailwind's own width keywords (`full`, `none`, `screen`, `auto`, …) or a bare number, a spacing step: a container of that name would override `w-`, `min-w-` or `max-w-<name>`. The stylesheet refuses such a brand. */
 export function brandContainerProblems(tokens: unknown): string[]
-/** Each colour name two colour groups outside the chrome ones both hold, a hover the contract derives included, as `<path>, <path>: both declare --fui-<name>; …`: the stylesheet declares one property per name, so one would override the other. The stylesheet refuses such a brand. */
+/** Each colour name two colour groups both hold, a hover the contract derives included, as `<path>, <path>: both declare --fui-<name>; …`: the stylesheet declares one property per name, so one would override the other. The stylesheet refuses such a brand. */
 export function brandColourNameProblems(tokens: unknown): string[]
+/** The same duplicates structured: each name with every path that declares it, in the brand's order, and whether the contract derived that one. `brandColourNameProblems` is these as text. */
+export function brandColourNameDuplicates(tokens: unknown): { name: string; at: { path: string; derived: boolean }[] }[]
+/** Each colour name the stylesheet declares as `--fui-<name>`, with the group and token that own it: of two groups holding a name the later one, as the stylesheet's later declaration wins. It reads `tokens` as given: pass `withBrandStyles(brand)` to count the hovers the contract derives. The recipe token check and the recipe contrast read a colour name through it. */
+export function colourOwners(tokens: unknown): Map<string, { group: string; token: { $value: unknown } }>
 /** Every `<name>` / `<name>-foreground` pair of `color.action`, `status`, `commerce`, `surface` and `accent` below 4.5:1, and every
  * `color.edge` token below 3:1 against `surface.background`, sorted by group then name; a translucent token is composited first.
  * The brand is read through `withBrandStyles`; a derived hover is measured only where its base passes, so a failing base reports once. */

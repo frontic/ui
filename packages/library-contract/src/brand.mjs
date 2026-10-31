@@ -54,20 +54,34 @@ export function brandContainerProblems(tokens) {
     .map((name) => `container.${name}: it would override Tailwind's own ${owner(name)}, so a container cannot take that name`)
 }
 
-/** Each colour name two colour groups both hold, among the brand's own and the hovers the contract derives, as
- * `<path>, <path>: both declare --fui-<name>; <reason>`, a derived hover's path marked `(derived)`: the stylesheet declares one property per
- * name, so the later group would override the earlier. A name only derived hovers share is left to the bases' report. */
-export function brandColourNameProblems(tokens) {
+/** Each colour name two colour groups both hold, among the brand's own and the hovers the contract derives, as `{ name, at }`, each path in
+ * `at` in the brand's order with whether the contract derived it: the stylesheet declares one property per name, so the later group would
+ * override the earlier. A name only derived hovers share is left to the bases' report. */
+export function brandColourNameDuplicates(tokens) {
   const paths = new Map()
   for (const [group, entries] of members(withBrandStyles(isNode(tokens) ? tokens : {}).color)) {
     for (const [name, token] of members(entries)) paths.set(name, [...(paths.get(name) ?? []), { path: `color.${group}.${name}`, derived: !!ext(token).derived }])
   }
-  return [...paths]
-    .filter(([, at]) => at.length > 1 && at.some(({ derived }) => !derived))
-    .map(
-      ([name, at]) =>
-        `${at.map(({ path, derived }) => (derived ? `${path} (derived)` : path)).join(', ')}: ${at.length > 2 ? 'each declares' : 'both declare'} --fui-${name}; a colour name is unique across the colour groups`,
-    )
+  return [...paths].filter(([, at]) => at.length > 1 && at.some(({ derived }) => !derived)).map(([name, at]) => ({ name, at }))
+}
+
+/** Each of `brandColourNameDuplicates` as `<path>, <path>: both declare --fui-<name>; <reason>`, a derived hover's path marked `(derived)`. */
+export function brandColourNameProblems(tokens) {
+  return brandColourNameDuplicates(tokens).map(
+    ({ name, at }) =>
+      `${at.map(({ path, derived }) => (derived ? `${path} (derived)` : path)).join(', ')}: ${at.length > 2 ? 'each declares' : 'both declare'} --fui-${name}; a colour name is unique across the colour groups`,
+  )
+}
+
+/** Each colour name the stylesheet declares as `--fui-<name>`, with the group and token that own it: of two groups holding a name the later
+ * one, as the stylesheet's later declaration wins. It reads `tokens` as given: pass `withBrandStyles(brand)` to count the hovers the contract
+ * derives. */
+export function colourOwners(tokens) {
+  const owners = new Map()
+  for (const [group, entries] of members(isNode(tokens) ? tokens.color : undefined)) {
+    for (const [name, token] of members(entries)) owners.set(name, { group, token })
+  }
+  return owners
 }
 
 const isNode = (v) => typeof v === 'object' && v !== null && !Array.isArray(v)
@@ -522,13 +536,7 @@ function stack(v) {
 }
 
 function colorVars(node) {
-  const rows = []
-  for (const [, entries] of members(node)) {
-    for (const [name, token] of members(entries)) {
-      rows.push(`  --fui-${name}: ${color(token.$value)};`)
-    }
-  }
-  return rows.join('\n')
+  return [...colourOwners({ color: node })].map(([name, { token }]) => `  --fui-${name}: ${color(token.$value)};`).join('\n')
 }
 
 function dimVars(node, prefix) {
@@ -709,13 +717,7 @@ function block(...parts) {
 // value stays single-sourced in the scoped block.
 
 function themeColorVars(node) {
-  const rows = []
-  for (const [, entries] of members(node)) {
-    for (const [name] of members(entries)) {
-      rows.push(`  --color-${name}: var(--fui-${name});`)
-    }
-  }
-  return rows.join('\n')
+  return [...colourOwners({ color: node }).keys()].map((name) => `  --color-${name}: var(--fui-${name});`).join('\n')
 }
 
 function themeFontVars(font, textStyleNames) {
@@ -1180,12 +1182,12 @@ const REF_BRAND_GROUPS = { rounded: 'radius', border: 'border', ring: 'ring', op
 export function recipeTokenProblems(recipes, brand) {
   const tokens = withBrandStyles(isNode(brand) ? brand : {})
   const resolved = resolveBrand(tokens).brand
-  const colours = new Set(members(tokens.color).flatMap(([, entries]) => members(entries).map(([name]) => name)))
+  const colours = colourOwners(tokens)
   // Why a hover of a HOVERED colour the brand leaves out has no derived value: its base passes on its foreground, the derived hover would not.
   const underived = (name) => {
     if (!name.endsWith('-hover')) return undefined
     const base = name.slice(0, -'-hover'.length)
-    const group = TEXT_GROUPS.find((candidate) => isNode(tokens.color?.[candidate]?.[base]))
+    const group = colours.get(base)?.group
     const result = group && HOVERED.includes(`${group}.${base}`) && deriveHover(resolved.color[group], base)
     return result && !result.token ? result : undefined
   }
