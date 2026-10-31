@@ -922,6 +922,95 @@ export async function readRecipeFolder(dir, { root = path.dirname(dir) } = {}) {
   return { ...read, problems: [...problems, ...read.problems] }
 }
 
+/** The folders under `dir`, dot-entries skipped and links followed; none when `dir` is missing. */
+async function folders(dir) {
+  const entries = await readdir(dir, { withFileTypes: true }).catch((error) => {
+    if (error.code === 'ENOENT') return []
+    throw error
+  })
+  const found = []
+  for (const entry of entries) {
+    if (entry.name.startsWith('.')) continue
+    const isDirectory = entry.isSymbolicLink() ? (await stat(path.join(dir, entry.name)).catch(() => null))?.isDirectory() : entry.isDirectory()
+    if (isDirectory) found.push(entry.name)
+  }
+  return found
+}
+
+/** The text of each component manifest (`components/<tier>/<name>/<name>.json`), paths from the library folder, and a problem for
+ * each manifest it cannot read. */
+async function manifestTexts(libraryDir) {
+  const files = []
+  const problems = []
+  for (const tier of await folders(path.join(libraryDir, 'components'))) {
+    for (const name of await folders(path.join(libraryDir, 'components', tier))) {
+      const relative = `components/${tier}/${name}/${name}.json`
+      const text = await readFile(path.join(libraryDir, relative), 'utf8').catch((error) => error)
+      if (!(text instanceof Error)) files.push({ path: relative, text })
+      else if (text.code !== 'ENOENT') problems.push(`${relative}: cannot be read (${text.code})`)
+    }
+  }
+  return { files, problems }
+}
+
+const MANIFEST_PATH = /^components\/([^/]+)\/([^/]+)\/\2\.json$/
+
+/** The trees a component manifest holds under `recipes` as a recipe file, none when it holds no `recipes`, or a problem. */
+function manifestRecipes(file, text) {
+  let manifest
+  try {
+    manifest = JSON.parse(text)
+  } catch {
+    return { problem: `${file}: not JSON` }
+  }
+  if (!manifest || typeof manifest !== 'object' || Array.isArray(manifest)) return { problem: `${file}: holds an item’s manifest, a JSON object` }
+  if (manifest.recipes === undefined) return {}
+  if (!manifest.recipes || typeof manifest.recipes !== 'object' || Array.isArray(manifest.recipes)) return { problem: `${file}: recipes: holds the item’s trees by name, a JSON object` }
+  return { file: { path: file, text: JSON.stringify(manifest.recipes) } }
+}
+
+/** A library's recipes from its files' text by path from the library folder, whichever layout it is in or between: every JSON file
+ * under `recipes/` (the `shared/` folder too) and the trees in each component manifest; a path with a dot-segment and any other file
+ * are skipped. A recipe is a tree or flat by what it holds, not where it sits. A name defined twice is a problem naming both files, and
+ * the newer layout's definition is the one read: a component manifest over `recipes/`, `recipes/` over `recipes/shared/`. */
+export function readLibraryRecipeFiles(files) {
+  const recipes = []
+  const manifests = []
+  const read = { flat: {}, trees: {}, paths: {}, problems: [] }
+  for (const [file, text] of Object.entries(files)) {
+    if (file.split('/').some((part) => part.startsWith('.'))) continue
+    if (file.startsWith('recipes/') && file.endsWith('.json')) recipes.push({ path: file, text })
+    else if (MANIFEST_PATH.test(file)) {
+      const { file: trees, problem } = manifestRecipes(file, text)
+      if (problem) read.problems.push(problem)
+      else if (trees) manifests.push(trees)
+    }
+  }
+  const shared = (file) => file.path.startsWith('recipes/shared/')
+  for (const layout of [manifests, recipes.filter((file) => !shared(file)), recipes.filter(shared)]) {
+    const { flat, trees, paths, problems } = readRecipeFiles(layout)
+    read.problems.push(...problems)
+    for (const [name, file] of Object.entries(paths)) {
+      if (Object.hasOwn(read.paths, name)) read.problems.push(`${file}: ${name}: defined in ${read.paths[name]} too`)
+      else {
+        read.paths[name] = file
+        if (Object.hasOwn(trees, name)) read.trees[name] = trees[name]
+        else read.flat[name] = flat[name]
+      }
+    }
+  }
+  return read
+}
+
+/** `readLibraryRecipeFiles` over the files of `<root>/library`; a file it cannot read is a problem. A missing library holds no recipes. */
+export async function readLibraryRecipes(root) {
+  const libraryDir = path.join(root, 'library')
+  const folder = await jsonFiles(path.join(libraryDir, 'recipes'), libraryDir)
+  const manifests = await manifestTexts(libraryDir)
+  const read = readLibraryRecipeFiles(Object.fromEntries([...folder.files, ...manifests.files].map((file) => [file.path, file.text])))
+  return { ...read, problems: [...folder.problems, ...manifests.problems, ...read.problems] }
+}
+
 function recipeVars(entries) {
   const rows = entries.flatMap(({ recipe, vars }) => vars.filter((v) => !v.reset && !v.local).map(({ suffix, declaration }) => `  --fui-${recipe}-${suffix}: ${declaration};`))
   return rows.length ? `\n  /* recipes */\n${rows.join('\n')}\n` : ''
@@ -1316,7 +1405,7 @@ async function readBrandTokens(tokenPath, log) {
  * A valid-JSON-but-wrong-shape brand.json still throws out of renderBaseCss — callers log that one. */
 export async function buildBrandCss(contentDir, { log = defaultLog, scope } = {}) {
   const tokens = await readBrandTokens(path.join(contentDir, 'library', 'brand.json'), log)
-  const recipes = await readRecipeFolder(path.join(contentDir, 'library', 'recipes'))
+  const recipes = await readLibraryRecipes(contentDir)
   for (const problem of recipes.problems) log(problem)
   const cssPath = path.join(contentDir, 'styles', 'base.css')
   const next = renderBaseCss(tokens, recipes, { scope })

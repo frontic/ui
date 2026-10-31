@@ -394,6 +394,25 @@ test('CL-21 lintLibrary reports each recipe value the contract refuses, as a rec
   )
 })
 
+test('CL-21b lintLibrary reads the trees in component manifests too, and reports a refused value on the manifest that holds it', async () => {
+  const ws = await createContent('.fx-classlint-manifest-', { baseCss: await baseCss() })
+  workspaces.push(ws.ws)
+  const write = async (rel, source) => {
+    const file = path.join(ws.content, rel)
+    await mkdir(path.dirname(file), { recursive: true })
+    await writeFile(file, source)
+  }
+  const runtimeLint = lintFor(ws)
+  await write('library/components/ui/chip/chip.json', '{ "recipes": { "chip": { "base": { "opacity": "0.5" } } } }\n')
+  await write('library/components/ui/chip/Chip.vue', '<template><i class="flex" /></template>\n')
+  const problems = await runtimeLint.lintLibrary(ws.content)
+  assert.deepEqual(
+    problems.map((p) => [p.file, p.line, p.column, p.ruleId, p.severity]),
+    [['library/components/ui/chip/chip.json', 1, 1, 'frontic/recipe-classes', 'error']],
+  )
+  assert.match(problems[0].message, /opacity takes \{opacity\.<name>\}/)
+})
+
 test('CL-22 lintLibrary reports an untyped recipe property as a warning, beside the errors, so it never fails the build alone', async () => {
   const ws = await createContent('.fx-classlint-untyped-', { baseCss: await baseCss() })
   workspaces.push(ws.ws)

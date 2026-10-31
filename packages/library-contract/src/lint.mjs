@@ -7,7 +7,7 @@ import tailwind from 'eslint-plugin-better-tailwindcss'
 import * as vueParser from 'vue-eslint-parser'
 import * as astroParser from 'astro-eslint-parser'
 import * as tsParser from '@typescript-eslint/parser'
-import { buildBrandCss, readRecipeFolder } from './brand.mjs'
+import { buildBrandCss, readLibraryRecipes } from './brand.mjs'
 import { forwardedPropsProblems } from './forwarded-props.mjs'
 import { PACKAGE_DIR, installedDir } from './resolve.mjs'
 import { RAW_TEXT, RAW_TEXT_HINT, rawStringsConfig } from './rawStrings.mjs'
@@ -305,7 +305,7 @@ export const RECIPE_CLASSES = 'frontic/recipe-classes'
  * a recipe file that cannot be read, or a recipe the contract refuses, is a problem on the first line of its file (`library/recipes` when
  * the problem spans files). */
 async function recipeClassProblems(contentDir, files) {
-  const recipes = await readRecipeFolder(path.join(contentDir, 'library', 'recipes'))
+  const recipes = await readLibraryRecipes(contentDir)
   const at = (message, severity, file = recipeFileOf(message, recipes.paths)) => ({ file: `library/${file ?? 'recipes'}`, line: 1, column: 1, ruleId: RECIPE_CLASSES, message, severity })
   if (recipes.problems.length) return recipes.problems.map((message) => at(message, 'error', message.slice(0, message.indexOf(': '))))
   const invalid = designProblems(recipes)

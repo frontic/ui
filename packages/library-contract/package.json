@@ -1,6 +1,6 @@
 {
   "name": "@frontic/library-contract",
-  "version": "0.17.3",
+  "version": "0.18.0",
   "description": "What a Frontic library item is: its shape, its registryDependencies, the brand CSS build, the class lint and the typecheck. Frontic UI's registry and CLI build on it.",
   "license": "FSL-1.1-MIT",
   "type": "module",

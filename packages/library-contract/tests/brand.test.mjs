@@ -17,11 +17,14 @@ import {
   defaultContainers,
   PLATFORM_BREAKPOINTS,
   fontPackages,
+  readLibraryRecipeFiles,
+  readLibraryRecipes,
   readRecipeFolder,
   renderBaseCss,
   renderProjectStylesheet,
   stylePresetPath,
 } from '../src/brand.mjs'
+import { readRecipeFiles } from '../src/recipe.mjs'
 import { writeRecipes, yamlRecipes } from './yaml-recipes.mjs'
 
 const DEFAULT_PRIMARY = new RegExp(`--fui-primary: ${JSON.parse(readFileSync(stylePresetPath('default'), 'utf8')).color.action.primary.$value.hex};`)
@@ -244,6 +247,113 @@ test('BB-07a readRecipeFolder walks the folder for every JSON file, names paths 
     problems: [],
   })
   assert.deepEqual(await readRecipeFolder(path.join(dir, 'nope', 'recipes')), { flat: {}, trees: {}, paths: {}, problems: [] })
+})
+
+/** A library under `dir`: each `files` path, relative to `library/`, holding its JSON. */
+function library(files) {
+  const dir = content()
+  for (const [file, value] of Object.entries(files)) {
+    const full = path.join(dir, 'library', file)
+    mkdirSync(path.dirname(full), { recursive: true })
+    writeFileSync(full, typeof value === 'string' ? value : JSON.stringify(value))
+  }
+  return dir
+}
+
+/** `files` as `readLibraryRecipeFiles` takes them: each path's JSON as text. */
+function texts(files) {
+  return Object.fromEntries(Object.entries(files).map(([file, value]) => [file, typeof value === 'string' ? value : JSON.stringify(value)]))
+}
+
+const HALF_MIGRATED = {
+  'recipes/shared/action.json': { action: { rounded: '{rounded.md}' } },
+  'recipes/card.json': { card: { base: {} } },
+  'recipes/focus-ring.json': { 'focus-ring': { ringWidth: '{ring.2}' } },
+  'recipes/notes.txt': 'not a recipe',
+  'recipes/.hidden.json': '{',
+  'components/ui/tag/tag.json': { title: 'Tag', recipes: { tag: { base: {} } } },
+  'components/ui/tag/Tag.vue': '<template><span /></template>',
+  'components/ui/plain/plain.json': { title: 'Plain' },
+}
+
+test('BB-07c readLibraryRecipeFiles reads a half-migrated library whole: recipes/ in either layout and the trees in component manifests', () => {
+  assert.deepEqual(readLibraryRecipeFiles(texts(HALF_MIGRATED)), {
+    flat: { action: { rounded: '{rounded.md}' }, 'focus-ring': { ringWidth: '{ring.2}' } },
+    trees: { card: { base: {} }, tag: { base: {} } },
+    paths: { action: 'recipes/shared/action.json', card: 'recipes/card.json', 'focus-ring': 'recipes/focus-ring.json', tag: 'components/ui/tag/tag.json' },
+    problems: [],
+  })
+  assert.deepEqual(readLibraryRecipeFiles({}), { flat: {}, trees: {}, paths: {}, problems: [] })
+})
+
+const DUPLICATED = {
+  'recipes/shared/action.json': { action: { rounded: '{rounded.md}' } },
+  'recipes/action.json': { action: { rounded: '{rounded.lg}' } },
+  'recipes/tag.json': { tag: { base: {} } },
+  'recipes/broken.json': '{',
+  'components/ui/tag/tag.json': { recipes: { tag: { base: { opacity: '{opacity.50}' } } } },
+  'components/ui/broken/broken.json': '{',
+  'components/ui/odd/odd.json': { recipes: [] },
+  'components/ui/list/list.json': [],
+}
+
+test('BB-07d readLibraryRecipeFiles names both files of a recipe defined twice, and each file it cannot parse', () => {
+  const { problems } = readLibraryRecipeFiles(texts(DUPLICATED))
+  assert.deepEqual(
+    problems.sort(),
+    [
+      'components/ui/broken/broken.json: not JSON',
+      'components/ui/list/list.json: holds an item’s manifest, a JSON object',
+      'components/ui/odd/odd.json: recipes: holds the item’s trees by name, a JSON object',
+      readRecipeFiles([{ path: 'recipes/broken.json', text: '{' }]).problems[0],
+      'recipes/shared/action.json: action: defined in recipes/action.json too',
+      'recipes/tag.json: tag: defined in components/ui/tag/tag.json too',
+    ].sort(),
+  )
+})
+
+test('BB-07f readLibraryRecipeFiles keeps the new layout’s recipe of a name defined twice, however the paths sort', () => {
+  const read = readLibraryRecipeFiles(
+    texts({
+      'recipes/button.json': { button: { rounded: '{rounded.lg}' } },
+      'recipes/shared/button.json': { button: { rounded: '{rounded.sm}' } },
+      'recipes/tag.json': { tag: { rounded: '{rounded.lg}' } },
+      'recipes/shared/tag.json': { tag: { rounded: '{rounded.sm}' } },
+      'recipes/card.json': { card: { base: { opacity: '{opacity.50}' } } },
+      'components/ui/card/card.json': { recipes: { card: { base: {} } } },
+    }),
+  )
+  assert.deepEqual(read.flat, { button: { rounded: '{rounded.lg}' }, tag: { rounded: '{rounded.lg}' } })
+  assert.deepEqual(read.trees, { card: { base: {} } })
+  assert.deepEqual(read.paths, { button: 'recipes/button.json', tag: 'recipes/tag.json', card: 'components/ui/card/card.json' })
+  assert.deepEqual(read.problems.sort(), [
+    'recipes/card.json: card: defined in components/ui/card/card.json too',
+    'recipes/shared/button.json: button: defined in recipes/button.json too',
+    'recipes/shared/tag.json: tag: defined in recipes/tag.json too',
+  ])
+})
+
+test('BB-07h readLibraryRecipes reads a library folder as readLibraryRecipeFiles reads the same files, and a missing library as none', async () => {
+  for (const files of [HALF_MIGRATED, DUPLICATED]) {
+    const read = await readLibraryRecipes(library(files))
+    const expected = readLibraryRecipeFiles(texts(files))
+    assert.deepEqual({ ...read, problems: read.problems.sort() }, { ...expected, problems: expected.problems.sort() })
+  }
+  assert.deepEqual(await readLibraryRecipes(path.join(content(), 'nope')), { flat: {}, trees: {}, paths: {}, problems: [] })
+})
+
+test('BB-07g readLibraryRecipes names a manifest it cannot read as a problem and reads the rest', async () => {
+  const dir = library({ 'recipes/card.json': { card: { base: {} } } })
+  mkdirSync(path.join(dir, 'library', 'components', 'ui', 'odd', 'odd.json'), { recursive: true })
+  const read = await readLibraryRecipes(dir)
+  assert.deepEqual(read.paths, { card: 'recipes/card.json' })
+  assert.deepEqual(read.problems, ['components/ui/odd/odd.json: cannot be read (EISDIR)'])
+})
+
+test('BB-07e buildBrandCss renders the trees a component manifest holds', async () => {
+  const dir = library({ 'brand.json': tokens('#123456'), 'components/ui/tag/tag.json': { recipes: { tag: { base: { ringColor: '{colors.primary}' } } } } })
+  assert.equal(await buildBrandCss(dir), true)
+  assert.match(readFileSync(path.join(dir, 'styles', 'base.css'), 'utf8'), /--fui-tag-ring-color: var\(--fui-primary\);/)
 })
 
 test('BB-07b readRecipeFolder follows a symlinked folder or file, and a link back into the folder is read once', async () => {
