@@ -1,5 +1,5 @@
 // Every recipe colour against what it sits on, at its WCAG 2.x threshold.
-import { channels, composite, contrastRatio, resolveBrand, withBrandStyles } from './brand.mjs'
+import { channels, colourOwners, composite, contrastRatio, resolveBrand, withBrandStyles } from './brand.mjs'
 import { CONTRAST_PROPERTIES, EXTENDS, parseRef, RECIPE_STATES, resolveValue, treeParts, VALUE_SETS, WITH } from './recipe.mjs'
 
 const isNode = (v) => typeof v === 'object' && v !== null && !Array.isArray(v)
@@ -22,16 +22,12 @@ const SKIPPED = ['disabled']
 
 const css = (c) => `rgb(${[c.r, c.g, c.b].map(Math.round).join(' ')})`
 
-/** Every colour token by its name, as 0–255 channels and alpha. */
+/** Every colour the stylesheet declares, by its name, as 0–255 channels and alpha. */
 function colourIndex(tokens) {
   const index = new Map()
-  const groups = isNode(tokens) && isNode(tokens.color) ? tokens.color : {}
-  for (const [group, members] of Object.entries(groups)) {
-    if (group.startsWith('$') || !isNode(members)) continue
-    for (const [name, token] of Object.entries(members)) {
-      const c = !name.startsWith('$') && isNode(token) ? channels(token.$value) : null
-      if (c) index.set(name, c)
-    }
+  for (const [name, { token }] of colourOwners(tokens)) {
+    const c = channels(token.$value)
+    if (c) index.set(name, c)
   }
   return index
 }

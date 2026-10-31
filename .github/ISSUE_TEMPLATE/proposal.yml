@@ -1,0 +1,32 @@
+name: Proposal
+description: Something's missing. Tell us the job you're trying to get done and where Frontic UI gets in your way.
+body:
+  - type: markdown
+    attributes:
+      value: Describe the problem first. A real use case beats a hypothetical one every time.
+  - type: textarea
+    id: job
+    attributes:
+      label: The job you're trying to get done
+    validations:
+      required: true
+  - type: textarea
+    id: in-the-way
+    attributes:
+      label: Where Frontic UI gets in your way
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Your context
+      description: Your stack, your storefront, your constraints.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: A fix you have in mind (optional)
+      description: Add it as one option, not the answer.
+    validations:
+      required: false

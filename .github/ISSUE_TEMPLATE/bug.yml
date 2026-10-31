@@ -1,0 +1,46 @@
+name: Bug
+description: You hit a bug. Tell us what you did, what you expected and what happened.
+labels: [bug]
+body:
+  - type: textarea
+    id: did
+    attributes:
+      label: What you did
+      description: The steps, or the command you ran.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: What you saw instead, with the output or error.
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: The component, section or template, or the CLI command.
+      placeholder: dialog
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: CLI or package version
+      description: '`npx @frontic/ui --version` prints it.'
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: A repository, a sandbox link or the smallest code that shows the bug.
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contributing to Frontic UI
+    url: https://github.com/frontic/ui/blob/main/CONTRIBUTING.md
+    about: How the Frontic UI team picks up your issue and what a strong contribution looks like.
