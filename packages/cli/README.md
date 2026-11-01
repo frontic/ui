@@ -9,7 +9,7 @@ Vue components for commerce storefronts, built for teams where an AI agent write
 
 Agents write components fast and drift while they do it: a hex code here, a `14px` there, a slightly different radius on every card. Each file is fine on its own. Together they stop looking like one brand.
 
-Frontic UI takes those decisions out of the component. No colour, size or radius ever sits in a component. The agent decides what the UI does; the colour, type and spacing come from the brand and from nowhere else. Change one token in `library/brand.json`, run `build`, and every component in the project follows, including the ones shipped last month.
+Frontic UI takes those decisions out of the component. No colour, size or radius ever sits in a component. The agent decides what the UI does; the colour, type and spacing come from the brand and from nowhere else. Change one design token, run `build`, and every component in the project follows, including the ones shipped last month.
 
 Every item is accessible by design: keyboard, focus, roles and labels are built in, so what an agent assembles from them meets current regulations without anyone auditing it afterwards.
 
