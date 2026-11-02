@@ -9,78 +9,9 @@ import { handleError } from '@/src/utils/handle-error'
 import { highlighter } from '@/src/utils/highlighter'
 import { logger } from '@/src/utils/logger'
 import { spinner } from '@/src/utils/spinner'
+import { MCP_CLIENT_NAMES, MCP_CLIENTS } from '@/src/mcp-clients'
 
-const REMOTE_MCP_URL = 'https://mcp.ui.frontic.com/mcp'
-
-export const MCP_CLIENTS = [
-  {
-    name: 'claude',
-    label: 'Claude Code',
-    configPath: '.mcp.json',
-    config: {
-      mcpServers: {
-        'frontic-ui': {
-          type: 'http',
-          url: REMOTE_MCP_URL,
-        },
-      },
-    },
-  },
-  {
-    name: 'cursor',
-    label: 'Cursor',
-    configPath: '.cursor/mcp.json',
-    config: {
-      mcpServers: {
-        'frontic-ui': {
-          command: 'npx',
-          args: ['mcp-remote', REMOTE_MCP_URL],
-        },
-      },
-    },
-  },
-  {
-    name: 'vscode',
-    label: 'VS Code',
-    configPath: '.vscode/mcp.json',
-    config: {
-      servers: {
-        'frontic-ui': {
-          type: 'http',
-          url: REMOTE_MCP_URL,
-        },
-      },
-    },
-  },
-  {
-    name: 'codex',
-    label: 'Codex',
-    configPath: '.codex/config.toml',
-    config: `[mcp_servers.frontic_ui]
-command = "npx"
-args = ["mcp-remote", "${REMOTE_MCP_URL}"]
-`,
-  },
-  {
-    name: 'opencode',
-    label: 'Opencode',
-    configPath: 'opencode.json',
-    config: {
-      $schema: 'https://opencode.ai/config.json',
-      mcp: {
-        'frontic-ui': {
-          type: 'remote',
-          enabled: true,
-          url: REMOTE_MCP_URL,
-        },
-      },
-    },
-  },
-] as const
-
-export type McpClient = (typeof MCP_CLIENTS)[number]['name']
-
-export const MCP_CLIENT_NAMES = MCP_CLIENTS.map((client) => client.name) as [McpClient, ...McpClient[]]
+export { MCP_CLIENT_NAMES, MCP_CLIENTS, type McpClient } from '@/src/mcp-clients'
 
 const mcpInitOptionsSchema = z.object({
   client: z.enum(MCP_CLIENT_NAMES),
@@ -120,21 +51,21 @@ export const mcp = new Command()
     }
   })
 
-/** Registers the hosted MCP server with the client: its project config file is written and returned; Codex keeps a global config, so its snippet is printed and null returned. */
+/** Registers the hosted MCP server with the client: its project config file is written and returned; a client with a global config gets its file and snippet printed, and null returned. */
 export async function runMcp(options: z.infer<typeof mcpInitOptionsSchema>): Promise<string | null> {
   const clientInfo = MCP_CLIENTS.find((c) => c.name === options.client)
   if (!clientInfo) throw new Error(`Unknown client: ${options.client}. Available clients: ${MCP_CLIENT_NAMES.join(', ')}`)
 
-  if (options.client === 'codex') {
+  if (clientInfo.scope === 'global') {
     logger.break()
-    logger.log('To configure the Frontic UI MCP server in Codex:')
+    logger.log(`To configure the Frontic UI MCP server in ${clientInfo.label}:`)
     logger.break()
-    logger.log(`1. Open or create the file ${highlighter.info('~/.codex/config.toml')}`)
+    logger.log(`1. Open or create the file ${highlighter.info(clientInfo.configPath)}`)
     logger.log('2. Add the following configuration:')
     logger.log()
     logger.info(clientInfo.config as string)
     logger.break()
-    logger.info('3. Restart Codex to load the MCP server')
+    logger.info(`3. Restart ${clientInfo.label} to load the MCP server`)
     logger.break()
     return null
   }
