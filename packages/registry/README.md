@@ -71,7 +71,7 @@ What it does not see:
 
 ## Serving
 
-The build's `public/v1/` is served as static files at `/v1/`, to any origin (`public/_headers`); the root answers with text pointing to ui.frontic.com (`functions/index.ts`). `/r/v2/` serves `public/r/v2/`, the registry as it was before `composes`, frozen until the stack's library-core reads `/v1/`, then goes. Nothing else is served: no other `/r/` path, no item markdown.
+The build's `public/v1/` is served as static files at `/v1/`, to any origin (`public/_headers`); the root answers with text pointing to ui.frontic.com (`functions/index.ts`). Nothing else is served: no `/r/`, no item markdown.
 
 ## Deployment
 
