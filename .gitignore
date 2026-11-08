@@ -32,6 +32,7 @@ packages/registry/public/v1/
 packages/registry/public/recipe.schema.json
 packages/registry/public/item.schema.json
 packages/registry/public/registry.schema.json
+packages/registry/public/r/
 
 # Contract gate scratch libraries
 packages/registry/.contract/

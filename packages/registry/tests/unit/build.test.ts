@@ -43,7 +43,10 @@ describe('buildRegistry', () => {
   it('writes the contract into public/v1/ by default, and nothing of /r/', async () => {
     const root = fixture(['card'])
     const out = join(root, 'public/v1')
+    mkdirSync(join(root, 'public/r/v2'), { recursive: true })
+    writeFileSync(join(root, 'public/r/v2/badge.json'), '{}')
     await buildRegistry({ root, out })
+    expect(existsSync(join(root, 'public/r'))).toBe(false)
     expect(read(join(out, 'index.json'))).toEqual({ items: [{ name: 'badge', type: 'registry:ui', title: 'Badge', parts: ['Badge'] }] })
     const badge = read(join(out, 'badge.json'))
     expect(badge.files.map((f: { path: string; type: string }) => [f.path, f.type])).toEqual([
@@ -105,17 +108,6 @@ describe('buildRegistry', () => {
     const root = fixture(['card'])
     rmSync(join(root, 'ui/badge/badge.json'))
     await expect(buildRegistry({ root, out: join(root, 'o') })).rejects.toThrow('badge has no manifest ui/badge/badge.json')
-  }, 30_000)
-
-  it('writes /v1/ beside public/r/v2/ and leaves that frozen copy as it was, as the deploy builds and ships public/', async () => {
-    expect(OUT.endsWith(join('registry', 'public', 'v1'))).toBe(true)
-    const root = fixture(['card'])
-    const frozen = join(root, 'public/r/v2/badge.json')
-    mkdirSync(join(frozen, '..'), { recursive: true })
-    writeFileSync(frozen, '{ "frozen": true }\n')
-    await buildRegistry({ root, out: join(root, 'public/v1') })
-    expect(readFileSync(frozen, 'utf8')).toBe('{ "frozen": true }\n')
-    expect(existsSync(join(root, 'public/v1/badge.json'))).toBe(true)
   }, 30_000)
 
   it('refuses a manifest or a pending name without a source', async () => {

@@ -93,6 +93,8 @@ export const registrySchemaPath = (root: string) => join(root, 'public', 'regist
 export async function buildRegistry({ root = ROOT, out = OUT }: { root?: string; out?: string } = {}): Promise<ServedItem[]> {
   const { served, files } = await contractFiles(root)
   await rm(out, { recursive: true, force: true })
+  // Pages ships public/ as it is on disk: a checkout's old /r/ build output would be served again.
+  await rm(join(root, 'public', 'r'), { recursive: true, force: true })
   for (const [path, data] of Object.entries(files)) {
     await mkdir(dirname(join(out, path)), { recursive: true })
     await writeFile(join(out, path), typeof data === 'string' ? data : `${JSON.stringify(data, null, 2)}\n`)
