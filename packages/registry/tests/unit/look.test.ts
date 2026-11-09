@@ -65,6 +65,12 @@ describe('the resolver', { timeout: 30_000 }, () => {
     for (const [, value] of borders) expect(value).toBe(DESTRUCTIVE)
   })
 
+  it('reads a group or peer variant the same whichever form Tailwind writes it in: E:is(<ancestor> *) or :is(<ancestor> E)', async () => {
+    const as = (css: string) => resolved(root, ['look-g'], {}, 0, 0, css)
+    expect(await as(':is(:where(.group):hover .look-g) { opacity: 1; }')).toEqual(await as('.look-g:is(:where(.group):hover *) { opacity: 1; }'))
+    expect(await as(':is(:where(.peer):checked ~ .look-g) { opacity: 1; }')).toEqual(await as('.look-g:is(:where(.peer):checked ~ *) { opacity: 1; }'))
+  })
+
   it('reads an outline: none shorthand as no outline', async () => {
     const look = await resolved(root, ['look-outline-none'], {}, 0, 0, '.look-outline-none { outline: none; }')
     expect([...look.values()].flatMap((ctx) => [...ctx.keys()]).filter((p) => p.startsWith('outline'))).toEqual([])
