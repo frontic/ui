@@ -241,7 +241,7 @@ async function specimenCanvas(use) {
   await write(types, 'export declare function swatch(token: string): string\n')
   await write(
     path.join(content, 'library/styleguide/brand/colors.example.vue'),
-    `<script setup lang="ts">\nimport { swatch } from "@frontic/specimens"\n${use}\n</script>\n<template><span /></template>\n`,
+    `<script setup lang="ts">\nimport { swatch } from "@frontic/specimens"\n${use}\n</script>\n<template><span>{{ label }}</span></template>\n`,
   )
   return { workDir, contentDir: content, types }
 }
@@ -358,7 +358,7 @@ test('LT-19 an error a `//` string did not cause stays as vue-tsc reports it', {
       'hero/Hero.vue':
         '<script setup lang="ts">\nimport Pic from "@library/components/ui/pic/Pic.vue"\nconst title = "Basecamp"\n</script>\n<template>\n  <Pic src="https://static.frontic.com/hero.jpg" />\n  <h1>{{ title.lenght }}</h1>\n</template>\n',
       'banner/Banner.vue':
-        '<template>\n  <Pic src="https://static.frontic.com/banner.jpg" />\n</template>\n<script setup lang="ts">\nimport Pic from "@library/components/ui/pic/Pic.vue"\nconst size: number = "large"\n</script>\n',
+        '<template>\n  <Pic src="https://static.frontic.com/banner.jpg" />{{ size }}\n</template>\n<script setup lang="ts">\nimport Pic from "@library/components/ui/pic/Pic.vue"\nconst size: number = "large"\n</script>\n',
     }),
   )
   assert.deepEqual(typeErrors.problems.map((p) => [p.file.split('/').at(-1), p.line, p.ruleId]).sort(), [
@@ -376,5 +376,19 @@ test('LT-19 an error a `//` string did not cause stays as vue-tsc reports it', {
   assert.deepEqual(
     syntaxError.problems.map((p) => [p.file.split('/').at(-1), p.line, p.ruleId]),
     [['Path.vue', 6, 'TS1110']],
+  )
+})
+
+test('LT-20 a local a component declares and never reads is a problem, as in a project with noUnusedLocals', { timeout: 120_000 }, async () => {
+  const { ws, content, workDir } = await createContent('.fx-libtype-')
+  workspaces.push(ws)
+  await write(
+    path.join(content, 'library/components/ui/badge/Badge.vue'),
+    '<script setup lang="ts">\ndefineProps<{ label: string }>()\nconst spare = 1\n</script>\n<template><span>{{ label }}</span></template>\n',
+  )
+  const { problems } = await typecheckLibrary({ workDir, contentDir: content })
+  assert.deepEqual(
+    problems.map((p) => [p.file, p.ruleId]),
+    [['library/components/ui/badge/Badge.vue', 'TS6133']],
   )
 })

@@ -20,10 +20,10 @@ const vueTsc = () => path.join(installedDir('vue-tsc'), 'bin', 'vue-tsc.js')
 function checkFile({ mainPath, examplePath, fromOf }, source, data) {
   const lines = []
   if (mainPath) {
-    lines.push(`import type Main from ${JSON.stringify(mainPath)};`, `type MainProps = InstanceType<typeof Main>["$props"];`)
+    lines.push(`import type Main from ${JSON.stringify(mainPath)};`, `export type MainProps = InstanceType<typeof Main>["$props"];`)
   }
   if (examplePath) {
-    lines.push(`import type Example from ${JSON.stringify(examplePath)};`, `type ExampleProps = InstanceType<typeof Example>["$props"];`)
+    lines.push(`import type Example from ${JSON.stringify(examplePath)};`, `export type ExampleProps = InstanceType<typeof Example>["$props"];`)
   }
   lines.push(`// @source ${source}`)
   const typeOf = (prop) => (mainPath && fromOf.get(prop) !== 'example' ? 'MainProps' : 'ExampleProps')

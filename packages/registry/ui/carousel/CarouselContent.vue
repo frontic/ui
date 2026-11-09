@@ -10,6 +10,10 @@ defineOptions({
 const props = defineProps<WithClassAsProps>()
 
 const { carouselRef, orientation } = useCarousel()
+// A function ref: under noUnusedLocals vue-tsc does not count a string ref as a read.
+const setViewport = (el: unknown) => {
+  carouselRef.value = (el as HTMLElement | null) ?? undefined
+}
 
 const carouselContent = cva('fui-carousel-content', {
   variants: { orientation: { horizontal: 'fui-carousel-content-horizontal', vertical: 'fui-carousel-content-vertical' } },
@@ -18,7 +22,7 @@ const carouselContent = cva('fui-carousel-content', {
 </script>
 
 <template>
-  <div ref="carouselRef" data-slot="carousel-content" class="overflow-hidden">
+  <div :ref="setViewport" data-slot="carousel-content" class="overflow-hidden">
     <div :class="[carouselContent({ orientation }), 'touch-pinch-zoom', orientation === 'horizontal' ? 'touch-pan-y' : 'touch-pan-x', props.class]" v-bind="$attrs">
       <slot />
     </div>
