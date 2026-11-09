@@ -499,7 +499,8 @@ describe('the layout keywords', () => {
 
 describe('the size and margin keywords', () => {
   it('take the keywords of the Tailwind utilities they replace', () => {
-    for (const prop of ['width', 'minWidth', 'height', 'minHeight', 'size']) for (const keyword of ['full', 'fit', 'auto', 'max', 'min']) expect(recipeValueProblem(prop, keyword)).toBeNull()
+    for (const prop of ['width', 'minWidth', 'height', 'minHeight', 'size', 'flexBasis'])
+      for (const keyword of ['full', 'fit', 'auto', 'max', 'min']) expect(recipeValueProblem(prop, keyword)).toBeNull()
     for (const keyword of ['full', 'fit', 'max', 'min']) expect(recipeValueProblem('maxWidth', keyword)).toBeNull()
     expect(recipeValueProblem('height', 'svh')).toBeNull()
     expect(recipeValueProblem('minHeight', 'svh')).toBeNull()

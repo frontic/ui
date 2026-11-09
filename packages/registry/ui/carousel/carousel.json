@@ -60,10 +60,12 @@
       "variants": {
         "orientation": {
           "horizontal": {
-            "paddingStart": "{spacing.4}"
+            "paddingStart": "{spacing.4}",
+            "flexBasis": "full"
           },
           "vertical": {
-            "paddingTop": "{spacing.4}"
+            "paddingTop": "{spacing.4}",
+            "flexBasis": "full"
           }
         }
       },

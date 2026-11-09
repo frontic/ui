@@ -98,6 +98,7 @@ const PASSED: Record<string, string[]> = {
   height: ['h-4', 'size-4'],
   'min-height': ['min-h-4'],
   'min-width': ['min-w-4'],
+  'flex-basis': ['basis-auto', 'basis-1/3', 'basis-[65%]'],
   display: ['block', 'hidden', 'grid'],
   'flex-direction': ['flex-row', 'flex-col'],
   'flex-wrap': ['flex-nowrap', 'flex-wrap'],

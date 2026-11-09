@@ -54,6 +54,7 @@ describe('the tree vocabulary', () => {
       'minWidth',
       'maxWidth',
       'size',
+      'flexBasis',
       'padding',
       'paddingX',
       'paddingY',

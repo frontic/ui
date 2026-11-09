@@ -53,6 +53,7 @@ export type LayoutProperty =
   | 'minWidth'
   | 'maxWidth'
   | 'size'
+  | 'flexBasis'
   | 'padding'
   | 'paddingX'
   | 'paddingY'

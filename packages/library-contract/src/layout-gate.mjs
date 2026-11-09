@@ -25,6 +25,7 @@ const HELD = [
   [/^min-w-/, 'minWidth'],
   [/^min-h-/, 'minHeight'],
   [/^max-w-/, 'maxWidth'],
+  [/^basis-/, 'flexBasis'],
   [/^gap-(?![xy]-)/, 'gap'],
   [/^p-/, 'padding'],
   [/^px-/, 'paddingX'],

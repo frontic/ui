@@ -38,7 +38,7 @@ const position = computed(() => (item.value ? slides.value.indexOf(item.value.$e
     role="group"
     :aria-roledescription="props.roleDescription"
     :aria-label="position < 0 ? undefined : props.label(position + 1, slides.length)"
-    :class="[carouselItem({ orientation }), 'basis-full', props.class]"
+    :class="[carouselItem({ orientation }), props.class]"
   >
     <slot />
   </Primitive>
