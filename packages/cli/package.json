@@ -1,6 +1,6 @@
 {
   "name": "@frontic/ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Install Frontic UI items and build their look from your library",
   "type": "module",
   "bin": {
