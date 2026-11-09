@@ -48,7 +48,7 @@
     "get-tsconfig": "^4.14.3",
     "jsonc-eslint-parser": "3.3.0",
     "nypm": "^0.6.12",
-    "ora": "^9.4.1",
+    "ora": "^10.0.0",
     "pathe": "^2.0.3",
     "prompts": "^2.4.2",
     "semver": "^7.8.6",
