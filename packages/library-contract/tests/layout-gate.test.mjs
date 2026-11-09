@@ -10,11 +10,12 @@ describe('the layout gate', () => {
   })
 
   it('names the file, the line, the utility and the recipe property that holds it', () => {
-    expect(gate(`<div :class="['grid-cols-3 @md:col-span-full gap-2 w-full text-center', props.class]" />`)).toEqual([
+    expect(gate(`<div :class="['grid-cols-3 @md:col-span-full gap-2 w-full basis-1/3 text-center', props.class]" />`)).toEqual([
       { file: 'X.vue', line: 2, utility: 'grid-cols-3', property: 'gridColumns' },
       { file: 'X.vue', line: 2, utility: '@md:col-span-full', property: 'gridColumn' },
       { file: 'X.vue', line: 2, utility: 'gap-2', property: 'gap' },
       { file: 'X.vue', line: 2, utility: 'w-full', property: 'width' },
+      { file: 'X.vue', line: 2, utility: 'basis-1/3', property: 'flexBasis' },
       { file: 'X.vue', line: 2, utility: 'text-center', property: 'textAlign' },
     ])
   })

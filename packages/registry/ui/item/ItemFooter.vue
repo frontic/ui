@@ -14,7 +14,7 @@ const props = withDefaults(
 </script>
 
 <template>
-  <Primitive :as="props.as" :as-child="props.asChild" data-slot="item-footer" :class="['fui-item-footer basis-full', props.class]">
+  <Primitive :as="props.as" :as-child="props.asChild" data-slot="item-footer" :class="['fui-item-footer', props.class]">
     <slot />
   </Primitive>
 </template>

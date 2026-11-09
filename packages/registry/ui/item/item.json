@@ -89,6 +89,7 @@
     },
     "item-footer": {
       "base": {
+        "flexBasis": "full",
         "display": "flex",
         "alignItems": "center",
         "justifyContent": "between",
@@ -105,6 +106,7 @@
     },
     "item-header": {
       "base": {
+        "flexBasis": "full",
         "display": "flex",
         "alignItems": "center",
         "justifyContent": "between",
