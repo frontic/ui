@@ -1,6 +1,6 @@
 // The library lint: theme classes only, container variants in components, no raw text there, props reaching Reka through useForwardProps.
 import { createHash, randomBytes } from 'node:crypto'
-import { glob, mkdir, readFile, readlink, rename, rm, symlink, utimes, writeFile } from 'node:fs/promises'
+import { glob, mkdir, readFile, readlink, rename, rm, stat, symlink, utimes, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { ESLint } from 'eslint'
 import tailwind from 'eslint-plugin-better-tailwindcss'
@@ -169,8 +169,11 @@ function buildConfig({ layout, project, entryPoint, breakpoints, styleClasses, l
 
 async function sourceFiles(contentDir, patterns = SOURCES) {
   const found = []
-  for await (const file of glob(patterns, { cwd: contentDir, exclude: BUILD_OUTPUT })) {
-    found.push(file.split(path.sep).join('/'))
+  // Files only: a folder can match too, such as Playwright's `landing.spec.ts/` snapshots. A link counts by its target.
+  for await (const entry of glob(patterns, { cwd: contentDir, exclude: BUILD_OUTPUT, withFileTypes: true })) {
+    const full = path.join(entry.parentPath, entry.name)
+    const file = entry.isFile() || (entry.isSymbolicLink() && (await stat(full).catch(() => null))?.isFile())
+    if (file) found.push(path.relative(contentDir, full).split(path.sep).join('/'))
   }
   return found.sort()
 }

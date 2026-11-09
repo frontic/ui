@@ -1,6 +1,6 @@
 import { afterAll, beforeAll, test } from 'vitest'
 import assert from 'node:assert/strict'
-import { mkdir, mkdtemp, readFile, rm, utimes, writeFile } from 'node:fs/promises'
+import { mkdir, mkdtemp, readFile, rm, symlink, utimes, writeFile } from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 import { renderBaseCss, stylePresetPath } from '../src/brand.mjs'
@@ -546,8 +546,8 @@ test('CL-18 lintLibrary finds Tailwind for a content and work dir outside any no
 
 const PROJECT = { sources: ['components/**/*.vue', 'app/**/*.vue'], components: 'components', theme: 'frontic.css' }
 
-/** A project laid out as the CLI installs it: components/, app/ and frontic.css at the root. */
-async function projectWith(files, layout = {}) {
+/** A project laid out as the CLI installs it: components/, app/ and frontic.css at the root; `links` maps a path to the target its symlink points at. */
+async function projectWith(files, layout = {}, links = {}) {
   const ws = await mkdtemp(path.join(os.tmpdir(), '.fx-project-lint-'))
   workspaces.push(ws)
   const dir = path.join(ws, 'project')
@@ -557,6 +557,10 @@ async function projectWith(files, layout = {}) {
   for (const [rel, source] of Object.entries(files)) {
     await mkdir(path.dirname(path.join(dir, rel)), { recursive: true })
     await writeFile(path.join(dir, rel), source)
+  }
+  for (const [rel, target] of Object.entries(links)) {
+    await mkdir(path.dirname(path.join(dir, rel)), { recursive: true })
+    await symlink(target, path.join(dir, rel))
   }
   const found = await checks.lintWorkspace(dir, { workDir: path.join(ws, 'work'), layout: { ...PROJECT, ...layout } })
   const of = (file) => found.filter((p) => p.file === file).map((p) => `${p.ruleId} ${p.message.split('.')[0]}`)
@@ -637,4 +641,32 @@ test('CL-42 a component that does not parse is a parse error in a project layout
     found.map(({ file, ruleId, severity }) => ({ file, ruleId, severity })),
     [{ file: 'components/ui/x/Broken.vue', ruleId: 'parse', severity: 'error' }],
   )
+}, 120_000)
+
+test('CL-46 a folder whose name matches the sources, such as a Playwright snapshot folder, is not linted as a file', async () => {
+  const of = await projectWith(
+    {
+      'app/pages/index.vue': '<template><div class="bg-red-600" /></template>\n',
+      'app/e2e/__snapshots__/landing.spec.ts/home.png': 'png',
+    },
+    { sources: ['components/**/*.vue', 'app/**/*.{vue,ts}'] },
+  )
+  assert.deepEqual(
+    of('app/pages/index.vue').map((p) => p.split(' ')[0]),
+    [UNKNOWN],
+  )
+  assert.deepEqual(of('app/e2e/__snapshots__/landing.spec.ts'), [])
+}, 120_000)
+
+test('CL-47 a source that is a link to a file is linted; a link to nothing is skipped', async () => {
+  const of = await projectWith(
+    { 'shared/S.vue': '<template><div class="bg-red-600" /></template>\n' },
+    { sources: ['components/**/*.vue', 'app/**/*.vue'] },
+    { 'app/x/Linked.vue': '../../shared/S.vue', 'app/x/Gone.vue': '../../shared/Missing.vue' },
+  )
+  assert.deepEqual(
+    of('app/x/Linked.vue').map((p) => p.split(' ')[0]),
+    [UNKNOWN],
+  )
+  assert.deepEqual(of('app/x/Gone.vue'), [])
 }, 120_000)
