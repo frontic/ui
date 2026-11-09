@@ -13,6 +13,7 @@
     "skipLibCheck": true,
     "allowJs": true,
     "jsx": "preserve",
-    "strict": true
+    "strict": true,
+    "noUnusedLocals": true
   }
 }
