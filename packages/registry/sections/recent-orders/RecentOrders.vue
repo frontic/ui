@@ -147,9 +147,7 @@ const shown = computed(() => pageRange(page.value, props.pageSize, count.value))
             <TableHead class="hidden @2xl:table-cell">{{ itemsLabel }}</TableHead>
             <TableHead class="hidden @sm:table-cell">{{ statusLabel }}</TableHead>
             <TableHead class="text-end">{{ totalLabel }}</TableHead>
-            <TableHead
-              ><span class="sr-only">{{ actionsLabel }}</span></TableHead
-            >
+            <TableHead><span class="sr-only">{{ actionsLabel }}</span></TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>

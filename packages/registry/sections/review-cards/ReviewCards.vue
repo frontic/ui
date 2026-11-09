@@ -97,9 +97,7 @@ const percentage = (count: number) => percentOf(count, props.totalCount)
           <dl class="flex flex-col gap-2">
             <div v-for="count in counts" :key="count.rating" class="flex items-center gap-3">
               <dt class="flex flex-1 items-center gap-3">
-                <span data-slot="review-cards-star" class="fui-review-cards-star shrink-0 tabular-nums">
-                  {{ count.rating }}<span class="sr-only"> {{ starReviewsLabel }}</span>
-                </span>
+                <span data-slot="review-cards-star" class="fui-review-cards-star shrink-0 tabular-nums"> {{ count.rating }}<span class="sr-only"> {{ starReviewsLabel }}</span> </span>
                 <Progress :model-value="percentage(count.count)" :aria-label="`${count.rating} ${starReviewsLabel}`" />
               </dt>
               <dd data-slot="review-cards-percent" class="fui-review-cards-percent text-end tabular-nums">{{ percentage(count.count) }}%</dd>

@@ -96,9 +96,7 @@ const total = computed(() => discounted(itemsTotal.value, props.discounts).amoun
 <template>
   <Card :surface="surface" :class="props.class">
     <CardHeader v-if="showHeader">
-      <CardTitle
-        ><slot name="title">{{ title }}</slot></CardTitle
-      >
+      <CardTitle><slot name="title">{{ title }}</slot></CardTitle>
       <CardDescription v-if="description">{{ description }}</CardDescription>
       <CardAction v-if="countLabel && count">
         <Badge variant="primary" size="sm">{{ countLabel(count) }}</Badge>
@@ -114,9 +112,7 @@ const total = computed(() => discounted(itemsTotal.value, props.discounts).amoun
               </div>
               <div class="flex min-w-0 flex-1 flex-col gap-1">
                 <h3 data-slot="line-title" class="fui-line-title truncate">{{ line.name }}</h3>
-                <span data-slot="meta" class="fui-meta">
-                  <template v-if="line.variant">{{ line.variant }} · </template>{{ quantityLabel(line.quantity) }}
-                </span>
+                <span data-slot="meta" class="fui-meta"> <template v-if="line.variant">{{ line.variant }} · </template>{{ quantityLabel(line.quantity) }} </span>
               </div>
               <Price align="end" size="sm" :price="lineTotal(line)" :locale="locale" :show-discount="false" class="shrink-0" />
             </div>

@@ -109,9 +109,7 @@ function copy() {
       </Stepper>
       <div v-if="trackingNumber" data-slot="order-tracking-parcel" class="fui-order-tracking-parcel flex items-center justify-between">
         <div class="flex min-w-0 flex-col">
-          <span data-slot="meta" class="fui-meta">
-            <template v-if="carrier">{{ carrier }} · </template>{{ trackingNumberLabel }}
-          </span>
+          <span data-slot="meta" class="fui-meta"> <template v-if="carrier">{{ carrier }} · </template>{{ trackingNumberLabel }} </span>
           <span data-slot="line-title" class="fui-line-title truncate tabular-nums">{{ trackingNumber }}</span>
         </div>
         <TooltipProvider>

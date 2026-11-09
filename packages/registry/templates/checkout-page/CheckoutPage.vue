@@ -460,9 +460,7 @@ function applyDiscount(code: string) {
             <Form class="flex flex-col gap-6" @form-submit="placeOrder">
               <Card>
                 <CardHeader>
-                  <CardTitle
-                    ><h2>{{ contactTitle }}</h2></CardTitle
-                  >
+                  <CardTitle><h2>{{ contactTitle }}</h2></CardTitle>
                   <CardDescription v-if="contactDescription" :class="signInHref && 'col-span-2'">{{ contactDescription }}</CardDescription>
                   <CardAction v-if="signInHref" class="col-start-2 row-start-1">
                     <Button as="a" :href="signInHref" variant="link" size="sm">{{ signInLabel }}</Button>
@@ -500,9 +498,7 @@ function applyDiscount(code: string) {
 
               <Card>
                 <CardHeader>
-                  <CardTitle
-                    ><h2>{{ deliveryTitle }}</h2></CardTitle
-                  >
+                  <CardTitle><h2>{{ deliveryTitle }}</h2></CardTitle>
                   <CardDescription v-if="deliveryDescription">{{ deliveryDescription }}</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -578,9 +574,7 @@ function applyDiscount(code: string) {
 
               <Card>
                 <CardHeader>
-                  <CardTitle
-                    ><h2>{{ shippingTitle }}</h2></CardTitle
-                  >
+                  <CardTitle><h2>{{ shippingTitle }}</h2></CardTitle>
                 </CardHeader>
                 <CardContent class="flex flex-col gap-4">
                   <RadioAccordion v-if="addressComplete" v-model="form.shippingMethod" name="shippingMethod" required variant="outline">
@@ -603,9 +597,7 @@ function applyDiscount(code: string) {
 
               <Card>
                 <CardHeader>
-                  <CardTitle
-                    ><h2>{{ paymentTitle }}</h2></CardTitle
-                  >
+                  <CardTitle><h2>{{ paymentTitle }}</h2></CardTitle>
                   <CardDescription v-if="paymentDescription">{{ paymentDescription }}</CardDescription>
                 </CardHeader>
                 <CardContent>

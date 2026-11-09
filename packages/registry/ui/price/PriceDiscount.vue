@@ -19,9 +19,7 @@ defineSlots<{
 <template>
   <span v-if="ctx?.isDiscounted.value && ctx.discountPercent.value > 0" data-slot="price-discount" :class="['fui-price-discount', props.class]">
     <slot :percent="ctx.discountPercent.value">
-      <Badge variant="discount"
-        ><span data-slot="price-discount-amount" dir="ltr">-{{ ctx.discountPercent.value }}%</span></Badge
-      >
+      <Badge variant="discount"><span data-slot="price-discount-amount" dir="ltr">-{{ ctx.discountPercent.value }}%</span></Badge>
     </slot>
   </span>
 </template>
