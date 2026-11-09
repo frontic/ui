@@ -96,9 +96,7 @@ function clearAll() {
   <Card :surface="surface" :class="props.class">
     <CardHeader>
       <CardTitle>{{ title }}</CardTitle>
-      <CardDescription>
-        <template v-if="description">{{ description }} · </template>{{ resultsLabel(results) }}
-      </CardDescription>
+      <CardDescription> <template v-if="description">{{ description }} · </template>{{ resultsLabel(results) }} </CardDescription>
       <CardAction>
         <Button variant="ghost" color="neutral" size="sm" @click="clearAll">{{ clearLabel }}</Button>
       </CardAction>

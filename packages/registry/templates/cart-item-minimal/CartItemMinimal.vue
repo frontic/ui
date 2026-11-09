@@ -30,9 +30,7 @@ const props = withDefaults(
       </div>
       <div class="flex min-w-0 flex-1 flex-col gap-0.5">
         <h3 data-slot="line-title" class="fui-line-title truncate">{{ line.name }}</h3>
-        <span data-slot="meta" class="fui-meta truncate">
-          <template v-if="line.variant">{{ line.variant }} · </template>{{ quantityLabel(line.quantity) }}
-        </span>
+        <span data-slot="meta" class="fui-meta truncate"> <template v-if="line.variant">{{ line.variant }} · </template>{{ quantityLabel(line.quantity) }} </span>
       </div>
       <Price size="sm" :price="lineTotal(line)" :locale="locale" :show-discount="false" align="end" class="shrink-0" />
     </li>

@@ -103,9 +103,7 @@ const total = computed(() => itemsTotal.value.amount + (props.shippingCents ?? 0
               <a v-if="line.link" :href="line.link.path" class="outline-none hover:underline focus-visible:fui-focus-ring">{{ line.name }}</a>
               <template v-else>{{ line.name }}</template>
             </ItemTitle>
-            <ItemDescription>
-              <template v-if="line.variant">{{ line.variant }} · </template>{{ quantityLabel(line.quantity) }}
-            </ItemDescription>
+            <ItemDescription> <template v-if="line.variant">{{ line.variant }} · </template>{{ quantityLabel(line.quantity) }} </ItemDescription>
           </ItemContent>
           <ItemActions>
             <Price :price="lineTotal(line)" size="sm" :show-discount="false" :locale="locale" align="end" />

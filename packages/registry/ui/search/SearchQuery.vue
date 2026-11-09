@@ -37,10 +37,7 @@ function onSelect(event: Event) {
   >
     <IconPlaceholder lucide="SearchIcon" tabler="IconSearch" hugeicons="SearchIcon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" data-icon />
     <span class="min-w-0 truncate">
-      <slot :query="search.query.value.trim()"
-        >{{ props.label }} "<b class="fui-search-query-term">{{ search.query.value.trim() }}</b
-        >"</slot
-      >
+      <slot :query="search.query.value.trim()">{{ props.label }} "<b class="fui-search-query-term">{{ search.query.value.trim() }}</b>"</slot>
     </span>
   </ComboboxItem>
 </template>
