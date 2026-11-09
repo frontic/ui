@@ -36,7 +36,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^5.20261025.1",
+    "@cloudflare/workers-types": "^5.20261030.1",
     "@frontic/library-contract": "workspace:*",
     "@frontic/registry-client": "workspace:*",
     "@hugeicons/core-free-icons": "4.3.5",
@@ -47,10 +47,10 @@
     "@tailwindcss/vite": "4.3.3",
     "@vitejs/plugin-vue": "^6.0.10",
     "ajv": "8.20.0",
-    "autoprefixer": "^10.6.1",
+    "autoprefixer": "^10.6.2",
     "clsx": "^2.1.1",
     "happy-dom": "21.0.4",
-    "oxfmt": "^0.74.0",
+    "oxfmt": "^0.75.0",
     "serve": "^14.2.6",
     "tailwindcss": "4.3.3",
     "tsx": "^4.23.15",
@@ -58,10 +58,10 @@
     "typescript": "^6.0.3",
     "vite": "^8.3.5",
     "vitest": "^5.0.5",
-    "vue-component-meta": "3.3.13",
+    "vue-component-meta": "3.3.14",
     "vue-metamorph": "4.1.0",
-    "vue-tsc": "^3.3.13",
-    "wrangler": "^4.152.0"
+    "vue-tsc": "^3.3.14",
+    "wrangler": "^4.156.0"
   },
   "repository": {
     "type": "git",
