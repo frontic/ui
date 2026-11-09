@@ -216,6 +216,20 @@ const STATES: [RegExp, string][] = [
   [/ :where\(\[data-icon\]\)| svg(?::not\(\[class\*=['"]?size-['"]?\]\))?/g, ' ICON'],
 ]
 
+/** A group or peer variant in the form `E:is(<ancestor> *)`: Tailwind also writes it `:is(<ancestor> E)`, which selects the same elements. */
+function ancestorFirst(s: string): string {
+  if (!s.startsWith(':is(')) return s
+  let depth = 0
+  for (let i = 3; i < s.length; i++) {
+    if (s[i] === '(') depth++
+    else if (s[i] === ')' && --depth === 0) {
+      const inner = s.slice(4, i)
+      return inner.endsWith(' E') ? `E:is(${inner.slice(0, -1)}*)${s.slice(i + 1)}` : s
+    }
+  }
+  return s
+}
+
 /** A selector as the element's context: its classes as E, states named one way, a combo's own data attribute dropped; null when it is not this element's or another combo's. */
 function context(selector: string, escaped: string[], combo: Record<string, string>): string | null {
   let s = selector
@@ -227,6 +241,7 @@ function context(selector: string, escaped: string[], combo: Record<string, stri
     }
   }
   if (!hit) return null
+  s = ancestorFirst(s)
   // A pair's rule, `.fui-a:where(.fui-b)`: this element when it wears every class named, another combo's when not.
   s = s.replace(/E:where\(E+\)/g, 'E')
   if (/:where\((?:E-|\.fui-)/.test(s)) return null
