@@ -73,10 +73,12 @@
                   "borderColor": "{colors.primary}",
                   "textColor": "{colors.primary}",
                   "hover": {
-                    "backgroundColor": "{colors.primary/10}"
+                    "backgroundColor": "{colors.primary/10}",
+                    "textColor": "{colors.primary-hover}"
                   },
                   "open": {
-                    "backgroundColor": "{colors.primary/10}"
+                    "backgroundColor": "{colors.primary/10}",
+                    "textColor": "{colors.primary-hover}"
                   }
                 },
                 "neutral": {
@@ -104,20 +106,24 @@
                   "borderColor": "{colors.buy}",
                   "textColor": "{colors.buy}",
                   "hover": {
-                    "backgroundColor": "{colors.buy/10}"
+                    "backgroundColor": "{colors.buy/10}",
+                    "textColor": "{colors.buy-hover}"
                   },
                   "open": {
-                    "backgroundColor": "{colors.buy/10}"
+                    "backgroundColor": "{colors.buy/10}",
+                    "textColor": "{colors.buy-hover}"
                   }
                 },
                 "checkout": {
                   "borderColor": "{colors.checkout}",
                   "textColor": "{colors.checkout}",
                   "hover": {
-                    "backgroundColor": "{colors.checkout/10}"
+                    "backgroundColor": "{colors.checkout/10}",
+                    "textColor": "{colors.checkout-hover}"
                   },
                   "open": {
-                    "backgroundColor": "{colors.checkout/10}"
+                    "backgroundColor": "{colors.checkout/10}",
+                    "textColor": "{colors.checkout-hover}"
                   }
                 },
                 "inverse": {
@@ -138,7 +144,7 @@
               "color": {
                 "primary": {
                   "backgroundColor": "{colors.primary/10}",
-                  "textColor": "{colors.primary}",
+                  "textColor": "{colors.primary-hover}",
                   "hover": {
                     "backgroundColor": "{colors.primary}",
                     "textColor": "{colors.primary-foreground}"
@@ -165,7 +171,7 @@
                 },
                 "buy": {
                   "backgroundColor": "{colors.buy/10}",
-                  "textColor": "{colors.buy}",
+                  "textColor": "{colors.buy-hover}",
                   "hover": {
                     "backgroundColor": "{colors.buy}",
                     "textColor": "{colors.buy-foreground}"
@@ -173,7 +179,7 @@
                 },
                 "checkout": {
                   "backgroundColor": "{colors.checkout/10}",
-                  "textColor": "{colors.checkout}",
+                  "textColor": "{colors.checkout-hover}",
                   "hover": {
                     "backgroundColor": "{colors.checkout}",
                     "textColor": "{colors.checkout-foreground}"
@@ -196,10 +202,12 @@
                 "primary": {
                   "textColor": "{colors.primary}",
                   "hover": {
-                    "backgroundColor": "{colors.primary/10}"
+                    "backgroundColor": "{colors.primary/10}",
+                    "textColor": "{colors.primary-hover}"
                   },
                   "open": {
-                    "backgroundColor": "{colors.primary/10}"
+                    "backgroundColor": "{colors.primary/10}",
+                    "textColor": "{colors.primary-hover}"
                   }
                 },
                 "neutral": {
@@ -224,19 +232,23 @@
                 "buy": {
                   "textColor": "{colors.buy}",
                   "hover": {
-                    "backgroundColor": "{colors.buy/10}"
+                    "backgroundColor": "{colors.buy/10}",
+                    "textColor": "{colors.buy-hover}"
                   },
                   "open": {
-                    "backgroundColor": "{colors.buy/10}"
+                    "backgroundColor": "{colors.buy/10}",
+                    "textColor": "{colors.buy-hover}"
                   }
                 },
                 "checkout": {
                   "textColor": "{colors.checkout}",
                   "hover": {
-                    "backgroundColor": "{colors.checkout/10}"
+                    "backgroundColor": "{colors.checkout/10}",
+                    "textColor": "{colors.checkout-hover}"
                   },
                   "open": {
-                    "backgroundColor": "{colors.checkout/10}"
+                    "backgroundColor": "{colors.checkout/10}",
+                    "textColor": "{colors.checkout-hover}"
                   }
                 },
                 "inverse": {

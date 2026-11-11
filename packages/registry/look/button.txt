@@ -50,7 +50,8 @@ button | E | border-top-style: solid
 button | E | border-top-width: 1px
 button | E | color: #09090b [color=inverse variant=solid]
 button | E | color: #18181b [color=neutral variant=soft]
-button | E | color: #7008e7 [color=primary,buy,checkout variant=outline,soft,ghost,link]
+button | E | color: #5d00c4 [color=primary,buy,checkout variant=soft]
+button | E | color: #7008e7 [color=primary,buy,checkout variant=outline,ghost,link]
 button | E | color: #c70009 [color=destructive variant=outline,soft,ghost,link]
 button | E | color: #f5f3ff [color=primary,buy,checkout variant=solid]
 button | E | color: #ffffff [color=destructive variant=solid; color=inverse variant=outline,soft,ghost,link; color=neutral variant=solid]
@@ -123,6 +124,7 @@ button | E:hover | background-color: color-mix(in oklab, #7008e7 10%, transparen
 button | E:hover | background-color: color-mix(in oklab, #c70009 10%, transparent) [color=destructive variant=outline,ghost]
 button | E:hover | background-color: color-mix(in oklab, #ffffff 10%, transparent) [color=inverse variant=outline,ghost]
 button | E:hover | color: #09090b [color=inverse variant=soft; color=neutral variant=outline,ghost]
+button | E:hover | color: #5d00c4 [color=primary,buy,checkout variant=outline,ghost]
 button | E:hover | color: #f5f3ff [color=primary,buy,checkout variant=soft]
 button | E:hover | color: #ffffff [color=destructive variant=soft]
 button | E:invalid | border-bottom-color: #c70009
@@ -136,3 +138,4 @@ button | E:open | background-color: color-mix(in oklab, #c70009 10%, transparent
 button | E:open | background-color: color-mix(in oklab, #ffffff 10%, transparent) [color=inverse variant=outline,ghost]
 button | E:open | color: #09090b [color=neutral variant=outline,ghost]
 button | E:open | color: #18181b [color=neutral variant=soft]
+button | E:open | color: #5d00c4 [color=primary,buy,checkout variant=outline,ghost]
