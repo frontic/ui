@@ -23,8 +23,10 @@ export function readRecipeFolder(dir: string, options?: { root?: string }): Prom
  * not JSON is a problem naming it. */
 export function readLibraryRecipeFiles(files: Record<string, string>): RecipeFiles
 /** `readLibraryRecipeFiles` over the files of `<root>/library`; a manifest it cannot read is a problem
- * (`components/ui/tag/tag.json: cannot be read (EACCES)`). A missing library holds no recipes. */
-export function readLibraryRecipes(root: string): Promise<RecipeFiles>
+ * (`components/ui/tag/tag.json: cannot be read (EACCES)`). A missing library holds no recipes. Given `manifests`, a component manifest's
+ * text by its path from the library folder (`components/ui/tag/tag.json`), those are every manifest and none is read from disk;
+ * `recipes/` is still read from disk. */
+export function readLibraryRecipes(root: string, options?: { manifests?: Record<string, string> }): Promise<RecipeFiles>
 /** Converts a library's `recipes/` to recipes by name in place, item names from its `registry.json`; with `check` it writes nothing. */
 export function convertRecipeFolder(libraryDir: string, options?: { check?: boolean }): Promise<RecipeConversion>
 
