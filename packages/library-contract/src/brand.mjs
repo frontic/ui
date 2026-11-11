@@ -1002,11 +1002,12 @@ export function readLibraryRecipeFiles(files) {
   return read
 }
 
-/** `readLibraryRecipeFiles` over the files of `<root>/library`; a file it cannot read is a problem. A missing library holds no recipes. */
-export async function readLibraryRecipes(root) {
+/** `readLibraryRecipeFiles` over the files of `<root>/library`; a file it cannot read is a problem. A missing library holds no recipes.
+ * Given `manifests`, a component manifest's text by its path from the library folder, those are every manifest and none is read from disk. */
+export async function readLibraryRecipes(root, { manifests: given } = {}) {
   const libraryDir = path.join(root, 'library')
   const folder = await jsonFiles(path.join(libraryDir, 'recipes'), libraryDir)
-  const manifests = await manifestTexts(libraryDir)
+  const manifests = given ? { files: Object.entries(given).flatMap(([file, text]) => (MANIFEST_PATH.test(file) ? [{ path: file, text }] : [])), problems: [] } : await manifestTexts(libraryDir)
   const read = readLibraryRecipeFiles(Object.fromEntries([...folder.files, ...manifests.files].map((file) => [file.path, file.text])))
   return { ...read, problems: [...folder.problems, ...manifests.problems, ...read.problems] }
 }

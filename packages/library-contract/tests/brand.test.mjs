@@ -1,7 +1,7 @@
 import { compile } from 'tailwindcss'
 import { test } from 'vitest'
 import assert from 'node:assert/strict'
-import { mkdirSync, mkdtempSync, readFileSync, symlinkSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, symlinkSync, writeFileSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { tmpdir } from 'node:os'
 import path from 'node:path'
@@ -348,6 +348,37 @@ test('BB-07g readLibraryRecipes names a manifest it cannot read as a problem and
   const read = await readLibraryRecipes(dir)
   assert.deepEqual(read.paths, { card: 'recipes/card.json' })
   assert.deepEqual(read.problems, ['components/ui/odd/odd.json: cannot be read (EISDIR)'])
+})
+
+const REGISTRY = path.join(import.meta.dirname, '..', '..', 'registry')
+const TIERS = ['ui', 'sections', 'templates']
+
+test('BB-07i readLibraryRecipes over manifests already read equals a disk read of the registry’s own library', async () => {
+  const dir = content()
+  mkdirSync(path.join(dir, 'library', 'components'), { recursive: true })
+  symlinkSync(path.join(REGISTRY, 'recipes'), path.join(dir, 'library', 'recipes'))
+  const manifests = {}
+  for (const tier of TIERS) {
+    symlinkSync(path.join(REGISTRY, tier), path.join(dir, 'library', 'components', tier))
+    for (const name of readdirSync(path.join(REGISTRY, tier))) {
+      const file = path.join(REGISTRY, tier, name, `${name}.json`)
+      if (existsSync(file)) manifests[`components/${tier}/${name}/${name}.json`] = readFileSync(file, 'utf8')
+    }
+  }
+  const fromDisk = await readLibraryRecipes(dir)
+  assert.ok(Object.keys(fromDisk.trees).length > 50)
+  assert.deepEqual(await readLibraryRecipes(dir, { manifests }), fromDisk)
+})
+
+test('BB-07j readLibraryRecipes given manifests reads none from disk and still reads recipes/ there', async () => {
+  const dir = library({
+    'recipes/shared/action.json': { action: { rounded: '{rounded.md}' } },
+    'components/ui/tag/tag.json': { recipes: { tag: { base: {} } } },
+  })
+  mkdirSync(path.join(dir, 'library', 'components', 'ui', 'odd', 'odd.json'), { recursive: true })
+  const read = await readLibraryRecipes(dir, { manifests: texts({ 'components/ui/card/card.json': { recipes: { card: { base: {} } } } }) })
+  assert.deepEqual(read.paths, { card: 'components/ui/card/card.json', action: 'recipes/shared/action.json' })
+  assert.deepEqual(read.problems, [])
 })
 
 test('BB-07e buildBrandCss renders the trees a component manifest holds', async () => {
