@@ -24,6 +24,8 @@
     "**/.frontic-local/**",
     "pnpm-lock.yaml",
     "design/*/data/**",
+    "design/*/tokens/**",
+    "design/*/brand.json",
     "packages/cli/src/**",
     "packages/registry/legacy/**",
     "packages/registry/public/schema/registry-item.json",
