@@ -46,15 +46,3 @@ coverage
 # Vercel
 .vercel
 .wrangler
-
-# Design bridge
-.design-bridge.local.json
-.design-bridge/
-design/*/data/live.json
-design/*/data/fixtures/
-design/*/STATUS.md
-design/*/signals/refresh-*.md
-!design/*/signals/refresh-*.done.md
-design/*/support/S-d-*.md
-!design/*/support/S-d-*.answer.md
-design/*/support/S-c-*.answer.md
