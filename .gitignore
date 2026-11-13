@@ -50,5 +50,5 @@ coverage
 # Design bridge
 .design-bridge.local.json
 .design-bridge/
-design/data/live.json
-design/data/fixtures/
+design/*/data/live.json
+design/*/data/fixtures/
