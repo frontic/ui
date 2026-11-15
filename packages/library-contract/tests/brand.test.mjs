@@ -1515,3 +1515,33 @@ test('RT-03 a token the contract fills in by default is never missing; a radius 
   const recipes = { flat: { probe: { shadow: '{shadow.xs}', typography: '{typography.heading}', rounded: '{rounded.huge}', opacity: '{opacity.50}' } } }
   assert.deepEqual(recipeTokenProblems(recipes, { radius: { md: { $value: '0.5rem' } } }), [{ recipe: 'probe', at: 'rounded', ref: '{rounded.huge}' }])
 })
+
+// A colour family nested by step, as a designer's export writes a palette: color.<group>.<family>.<step>.
+const PALETTE_STEPS = { wash: '#e6f0ff', soft: '#99c2ff', vivid: '#0066ff', deep: '#0047b3', night: '#001a40' }
+const withPalette = () => {
+  const brand = JSON.parse(readFileSync(stylePresetPath('default'), 'utf8'))
+  brand.color.brand = {
+    blue: Object.fromEntries(
+      Object.entries(PALETTE_STEPS).map(([step, hex]) => [step, { $type: 'color', $value: { colorSpace: 'srgb', components: [1, 3, 5].map((at) => parseInt(hex.slice(at, at + 2), 16) / 255), hex } }]),
+    ),
+  }
+  return brand
+}
+
+test('a colour family nested by step declares one --fui-<family>-<step> per step, Tailwind reads each as a colour, and the family declares nothing', async () => {
+  const css = renderBaseCss(withPalette())
+  for (const [step, hex] of Object.entries(PALETTE_STEPS)) {
+    assert.match(css, new RegExp(`\\n {2}--fui-blue-${step}: ${hex};`))
+    assert.match(css, new RegExp(`\\n {2}--color-blue-${step}: var\\(--fui-blue-${step}\\);`))
+  }
+  assert.doesNotMatch(css, /--fui-blue:/)
+  assert.doesNotMatch(css, /--fui-[a-z0-9-]+: ;/)
+  const built = await withTailwind(css.replace(/^@import[^;]*;\n?/gm, ''), ['bg-blue-deep'])
+  assert.match(built, /\.bg-blue-deep \{\s*background-color: var\(--fui-blue-deep\);/)
+})
+
+test('a stepped name two colours declare is a problem', () => {
+  const brand = withPalette()
+  brand.color.accent['blue-deep'] = { $value: { colorSpace: 'srgb', components: [0, 0, 0], hex: '#000000' } }
+  assert.throws(() => renderBaseCss(brand), /color\.accent\.blue-deep, color\.brand\.blue\.deep: both declare --fui-blue-deep/)
+})
