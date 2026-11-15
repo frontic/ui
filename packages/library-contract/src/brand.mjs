@@ -59,8 +59,8 @@ export function brandContainerProblems(tokens) {
  * override the earlier. A name only derived hovers share is left to the bases' report. */
 export function brandColourNameDuplicates(tokens) {
   const paths = new Map()
-  for (const [group, entries] of members(withBrandStyles(isNode(tokens) ? tokens : {}).color)) {
-    for (const [name, token] of members(entries)) paths.set(name, [...(paths.get(name) ?? []), { path: `color.${group}.${name}`, derived: !!ext(token).derived }])
+  for (const { name, path, token } of colourTokens(withBrandStyles(isNode(tokens) ? tokens : {}).color)) {
+    paths.set(name, [...(paths.get(name) ?? []), { path, derived: !!ext(token).derived }])
   }
   return [...paths].filter(([, at]) => at.length > 1 && at.some(({ derived }) => !derived)).map(([name, at]) => ({ name, at }))
 }
@@ -78,10 +78,21 @@ export function brandColourNameProblems(tokens) {
  * derives. */
 export function colourOwners(tokens) {
   const owners = new Map()
-  for (const [group, entries] of members(isNode(tokens) ? tokens.color : undefined)) {
-    for (const [name, token] of members(entries)) owners.set(name, { group, token })
-  }
+  for (const { group, name, token } of colourTokens(isNode(tokens) ? tokens.color : undefined)) owners.set(name, { group, token })
   return owners
+}
+
+/** Each colour token in brand order, as `{ group, name, path, token }`: `color.<group>.<name>`, or a family nested by step,
+ * `color.<group>.<family>.<step>`, named `<family>-<step>`. */
+function colourTokens(color) {
+  const out = []
+  for (const [group, entries] of members(color)) {
+    for (const [name, token] of members(entries)) {
+      if (Object.hasOwn(token, '$value')) out.push({ group, name, path: `color.${group}.${name}`, token })
+      else for (const [step, inner] of members(token)) if (Object.hasOwn(inner, '$value')) out.push({ group, name: `${name}-${step}`, path: `color.${group}.${name}.${step}`, token: inner })
+    }
+  }
+  return out
 }
 
 const isNode = (v) => typeof v === 'object' && v !== null && !Array.isArray(v)
