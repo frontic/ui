@@ -54,12 +54,12 @@ export function brandContainerProblems(tokens) {
     .map((name) => `container.${name}: it would override Tailwind's own ${owner(name)}, so a container cannot take that name`)
 }
 
-/** Each colour name two colour groups both hold, among the brand's own and the hovers the contract derives, as `{ name, at }`, each path in
- * `at` in the brand's order with whether the contract derived it: the stylesheet declares one property per name, so the later group would
- * override the earlier. A name only derived hovers share is left to the bases' report. */
+/** Each role colour name two colour groups both hold, among the brand's own and the hovers the contract derives, as `{ name, at }`, each
+ * path in `at` in the brand's order with whether the contract derived it: the stylesheet declares one property per name, so the later group
+ * would override the earlier. A name only derived hovers share is left to the bases' report. */
 export function brandColourNameDuplicates(tokens) {
   const paths = new Map()
-  for (const { name, path, token } of colourTokens(withBrandStyles(isNode(tokens) ? tokens : {}).color)) {
+  for (const { name, path, token } of roleColours(withBrandStyles(isNode(tokens) ? tokens : {}).color)) {
     paths.set(name, [...(paths.get(name) ?? []), { path, derived: !!ext(token).derived }])
   }
   return [...paths].filter(([, at]) => at.length > 1 && at.some(({ derived }) => !derived)).map(([name, at]) => ({ name, at }))
@@ -73,27 +73,30 @@ export function brandColourNameProblems(tokens) {
   )
 }
 
-/** Each colour name the stylesheet declares as `--fui-<name>`, with the group and token that own it: of two groups holding a name the later
- * one, as the stylesheet's later declaration wins. It reads `tokens` as given: pass `withBrandStyles(brand)` to count the hovers the contract
- * derives. */
+/** Each role colour name the stylesheet declares as `--fui-<name>`, with the group and token that own it: of two groups holding a name the
+ * later one, as the stylesheet's later declaration wins. It reads `tokens` as given: pass `withBrandStyles(brand)` to count the hovers the
+ * contract derives. */
 export function colourOwners(tokens) {
   const owners = new Map()
-  for (const { group, name, token } of colourTokens(isNode(tokens) ? tokens.color : undefined)) owners.set(name, { group, token })
+  for (const { group, name, token } of roleColours(isNode(tokens) ? tokens.color : undefined)) owners.set(name, { group, token })
   return owners
 }
 
-/** Each colour token in brand order, as `{ group, name, path, token }`: `color.<group>.<name>`, or a family nested by step,
- * `color.<group>.<family>.<step>`, named `<family>-<step>`. */
+/** Each colour token in brand order, as `{ group, name, path, token, step }`: a role, `color.<group>.<name>`, or a step of a family nested by
+ * step, `color.<group>.<family>.<step>`. */
 function colourTokens(color) {
   const out = []
   for (const [group, entries] of members(color)) {
     for (const [name, token] of members(entries)) {
       if (Object.hasOwn(token, '$value')) out.push({ group, name, path: `color.${group}.${name}`, token })
-      else for (const [step, inner] of members(token)) if (Object.hasOwn(inner, '$value')) out.push({ group, name: `${name}-${step}`, path: `color.${group}.${name}.${step}`, token: inner })
+      else for (const [step, inner] of members(token)) if (Object.hasOwn(inner, '$value')) out.push({ group, name, step, path: `color.${group}.${name}.${step}`, token: inner })
     }
   }
   return out
 }
+
+/** The role colours of `colourTokens`: the ones the stylesheet declares. A palette step is a source roles point at and declares nothing. */
+const roleColours = (color) => colourTokens(color).filter(({ step }) => step === undefined)
 
 const isNode = (v) => typeof v === 'object' && v !== null && !Array.isArray(v)
 

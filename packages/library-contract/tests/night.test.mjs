@@ -33,7 +33,7 @@ const rule = (css, opener) => {
   return Object.fromEntries([...body.matchAll(/^ {2}(--[\w-]+): (.*);$/gm)].map(([, name, value]) => [name, value]))
 }
 
-test("a brand's night colours land in a .dark block after the day block, palette steps included, over the same names", () => {
+test("a brand's night colours land in a .dark block after the day block, over the same names, and palette steps reach it only through roles", () => {
   const css = renderBaseCss(brandWith(NIGHT))
   const day = rule(css, ':where(.frontic-experience-root, :host) {')
   const night = rule(css, EXPERIENCE_NIGHT)
@@ -43,13 +43,12 @@ test("a brand's night colours land in a .dark block after the day block, palette
   assert.equal(night['--fui-foreground'], '#f8f9fa')
   assert.equal(night['--fui-primary'], '#99c2ff')
   assert.equal(night['--fui-primary-foreground'], '#000d20', 'a night reference reads the night value of a palette step')
-  assert.equal(night['--fui-blue-night'], '#000d20')
+  assert.doesNotMatch(css, /--(fui|color)-(blue|grey)[-:]/)
   // A role that points at a role recomputes from it on the same element: it is not written again.
   assert.equal(day['--fui-card'], 'var(--fui-background)')
   assert.equal(night['--fui-card'], undefined)
   assert.equal(night['--fui-buy'], undefined)
   // Only what changes at night.
-  assert.equal(night['--fui-blue-soft'], undefined)
   assert.equal(night['--fui-destructive'], undefined)
   for (const [name, value] of Object.entries(night)) assert.notEqual(value, day[name], `${name} is written at night with its day value`)
 })
