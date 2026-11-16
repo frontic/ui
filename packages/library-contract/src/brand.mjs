@@ -1157,10 +1157,19 @@ const EXPERIENCE_CONTAINER = `@layer base {
 
 const BODY_CONTAINER = `body {\n  container-type: inline-size;\n}`
 
+// `nightSelector` puts a brand's night values on the element that holds its day values, so a var reading another recomputes there; the
+// experience one has the day selector's zero specificity and wins by coming after it. A shadow host carries .dark itself: no selector
+// inside its shadow tree reaches an ancestor's class in every browser.
 const SCOPES = {
-  experience: { selector: ':where(.frontic-experience-root, :host)', reset: true, container: EXPERIENCE_CONTAINER, host: true },
-  root: { selector: ':root', reset: true, container: BODY_CONTAINER },
-  project: { selector: ':root', reset: false, container: BODY_CONTAINER },
+  experience: {
+    selector: ':where(.frontic-experience-root, :host)',
+    nightSelector: ':where(.dark .frontic-experience-root, .frontic-experience-root.dark, :host(.dark))',
+    reset: true,
+    container: EXPERIENCE_CONTAINER,
+    host: true,
+  },
+  root: { selector: ':root', nightSelector: ':root.dark', reset: true, container: BODY_CONTAINER },
+  project: { selector: ':root', nightSelector: ':root.dark', reset: false, container: BODY_CONTAINER },
 }
 
 /** The text styles, borders and shadows generic recipes may name; a brand without one renders this. */
@@ -1293,6 +1302,18 @@ export function recipeTokenProblems(recipes, brand) {
     return result && !result.token ? result : undefined
   }
   const defined = (ref) => (ref.group === 'colors' ? colours.has(ref.name) : !Object.hasOwn(REF_BRAND_GROUPS, ref.group) || isNode(tokens[REF_BRAND_GROUPS[ref.group]]?.[ref.name]))
+  // A hover the day defines that night cannot derive: the stylesheet gives it its night base, and the brand is told where to write one.
+  const night = nightOf(isNode(brand) ? brand : {})
+  const nightTokens = night && withBrandStyles(night.brand)
+  const nightColours = nightTokens && colourOwners(nightTokens)
+  const nightResolved = nightTokens && resolveBrand(nightTokens).brand
+  const underivedAtNight = (name) => {
+    if (!nightColours || !name.endsWith('-hover') || !colours.has(name) || nightColours.has(name)) return undefined
+    const base = name.slice(0, -'-hover'.length)
+    const group = nightColours.get(base)?.group
+    const result = group && deriveHover(nightResolved.color[group], base)
+    return result && !result.token ? { path: `${NIGHT}.color.${group}.${name}`, underived: result } : undefined
+  }
   const found = []
   const walk = (recipe, value, at) => {
     if (typeof value === 'string') {
@@ -1300,6 +1321,9 @@ export function recipeTokenProblems(recipes, brand) {
       if (ref && !ref.problem && !defined(ref)) {
         const why = ref.group === 'colors' ? underived(ref.name) : undefined
         found.push({ recipe, at: at.join('.'), ref: value.trim(), ...(why && { underived: why }) })
+      } else if (ref && !ref.problem && ref.group === 'colors') {
+        const atNight = underivedAtNight(ref.name)
+        if (atNight) found.push({ recipe, at: at.join('.'), ref: value.trim(), ...atNight })
       }
     } else if (isNode(value) || Array.isArray(value)) for (const [key, inner] of Object.entries(value)) walk(recipe, inner, [...at, key])
   }
@@ -1314,6 +1338,64 @@ export function brandReferenceProblems(brand) {
   return resolveBrand(brand).problems
 }
 
+const NIGHT = '$extensions.com.frontic.brand.modes.dark'
+
+/** The brand's night set as `{ brand, written, unknown }`: the brand with each night colour laid over the day one at its path, so a night
+ * reference reads night values where the night set writes them and day values elsewhere; the paths it writes; and those the day brand
+ * declares no colour at, a hover it derives counting as declared. Null for a brand whose night set holds no colour: anything else in it is
+ * not read. */
+function nightOf(brand) {
+  const color = ext(brand).modes?.dark?.color
+  const night = colourTokens(isNode(color) ? color : undefined)
+  if (!night.length) return null
+  const declared = new Set(colourTokens(withBrandStyles(brand).color).map(({ path }) => path))
+  const laid = JSON.parse(JSON.stringify(brand))
+  const unknown = []
+  for (const { path, token } of night) {
+    const keys = path.split('.')
+    const parent = keys.slice(0, -1).reduce((node, key) => (isNode(node) ? node[key] : undefined), laid)
+    if (!declared.has(path) || !isNode(parent)) unknown.push(path)
+    else parent[keys.at(-1)] = { ...parent[keys.at(-1)], ...JSON.parse(JSON.stringify(token)) }
+  }
+  // A hover the day writes for a base night changes, that night leaves as it is, is the day's colour: night derives it again.
+  const written = new Set(night.map(({ path }) => path))
+  const dayValues = resolveBrand(brand).brand.color
+  const nightValues = resolveBrand(laid).brand.color
+  const same = (a, b) => JSON.stringify(a?.$value) === JSON.stringify(b?.$value)
+  for (const [group, base] of HOVERED.map((key) => key.split('.'))) {
+    const hover = `${base}-hover`
+    if (!isNode(laid.color?.[group]?.[hover]) || written.has(`color.${group}.${hover}`)) continue
+    if (!same(dayValues[group]?.[base], nightValues[group]?.[base]) && same(dayValues[group][hover], nightValues[group][hover])) delete laid.color[group][hover]
+  }
+  return { brand: laid, written: night.map(({ path }) => path), unknown }
+}
+
+/** Each declaration of a colour var, a border, a ring or a shadow, by property: the declarations a night value can change. */
+const colourDeclarations = (tokens) =>
+  new Map(
+    [colorVars(tokens.color), borderVars(tokens.border), ringVars(tokens.ring), shadowVars(tokens.shadow)]
+      .join('\n')
+      .split('\n')
+      .flatMap((line) => {
+        const match = /^ {2}(--[\w-]+): (.*);$/.exec(line)
+        return match ? [[match[1], match[2]]] : []
+      }),
+  )
+
+/** The night block's declarations: each one whose night value differs from the day's. Night values sit on the element that holds the day
+ * ones, so a declaration that reads another var recomputes there and is not written again. A hover derived by day that night cannot derive
+ * takes its night base, rather than keep the day colour. */
+function nightDeclarations(day, night) {
+  const rows = []
+  for (const [property, value] of day) {
+    if (night.has(property)) {
+      if (night.get(property) !== value) rows.push(`  ${property}: ${night.get(property)};`)
+    } else if (property.endsWith('-hover')) rows.push(`  ${property}: var(${property.slice(0, -'-hover'.length)});`)
+  }
+  for (const [property, value] of night) if (!day.has(property)) rows.push(`  ${property}: ${value};`)
+  return rows.join('\n')
+}
+
 /** Throws on a brand reference that does not resolve, every one listed at its path, on a colour name two groups hold, and on a token declaration that would still hold a
  * brace, rather than write either into the stylesheet. A logo URL and the recipes are not token values, and a brace there is theirs. */
 export function renderBaseCss(brand, recipes = {}, { scope = 'experience' } = {}) {
@@ -1324,7 +1406,12 @@ export function renderBaseCss(brand, recipes = {}, { scope = 'experience' } = {}
   const tokens = cssTokens(withBrandStyles(brand))
   const target = SCOPES[scope]
   if (!target) throw new Error(`unknown brand CSS scope: ${scope}`)
-  const { selector, reset, container, host } = target
+  const { selector, nightSelector, reset, container, host } = target
+  const nightSet = nightOf(brand)
+  if (nightSet?.unknown.length) throw new Error(`brand night colours the day brand lacks:\n${nightSet.unknown.map((path) => `${NIGHT}.${path}: the day brand declares no such colour`).join('\n')}`)
+  const nightProblems = nightSet ? resolveBrand(nightSet.brand).problems.filter(({ path }) => nightSet.written.some((at) => path === at || path.startsWith(`${at}.`))) : []
+  if (nightProblems.length) throw new Error(`brand night references that do not resolve:\n${brandReferenceLines(nightProblems.map((p) => ({ ...p, path: `${NIGHT}.${p.path}` }))).join('\n')}`)
+  const night = nightSet ? nightDeclarations(colourDeclarations(tokens), colourDeclarations(cssTokens(withBrandStyles(nightSet.brand)))) : ''
   const recipeData = recipeEntries(recipes)
   const utilities = recipeUtilities(recipeData, Object.fromEntries(LAYOUT_STEPS.map((step) => [step, containerWidth(tokens.container, step)])))
   const steps = textStepBlocks(tokens.text, selector, tokens.breakpoint)
@@ -1333,7 +1420,7 @@ export function renderBaseCss(brand, recipes = {}, { scope = 'experience' } = {}
   const shape = block(radiusVars(tokens.radius), borderVars(tokens.border), ringVars(tokens.ring), opacityVars(tokens.opacity), shadowVars(tokens.shadow))
   const layout = spacingVar(tokens.spacing)
   const theme = renderThemeBlock(tokens, { reset })
-  const braced = [...[color, type, shape, layout, steps, theme].join('\n').matchAll(BRACED_DECLARATION)].map(([line]) => line.trim())
+  const braced = [...[color, night, type, shape, layout, steps, theme].join('\n').matchAll(BRACED_DECLARATION)].map(([line]) => line.trim())
   if (braced.length) throw new Error(`brand values that are not CSS:\n${braced.join('\n')}`)
   return `${HEADER}
 ${selector} {
@@ -1351,7 +1438,7 @@ ${shape}
   /* layout */
 ${layout}
 ${logoVars(ext(tokens).logo)}${recipeVars(recipeData)}}
-${steps ? `\n${steps}\n` : ''}
+${night ? `\n${nightSelector} {\n${night}\n}\n` : ''}${steps ? `\n${steps}\n` : ''}
 ${theme}
 
 ${container}

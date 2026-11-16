@@ -120,6 +120,8 @@ export interface RecipeTokenProblem {
   ref: string
   /** A hover the brand leaves out that is not derived, because the derived hover would fall below AA on the foreground its base passes on. */
   underived?: { against: string; ratio: number }
+  /** Set on a hover the brand defines by day that night cannot derive: the path in the brand file where its night value goes. */
+  path?: string
 }
 
 /** Every recipe reference to a token the brand does not define, one per recipe and reference at its first path, sorted by recipe then path. A token the contract fills in by default, and a spacing, container or component reference, is never missing. */
