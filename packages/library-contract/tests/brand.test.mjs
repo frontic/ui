@@ -1528,20 +1528,19 @@ const withPalette = () => {
   return brand
 }
 
-test('a colour family nested by step declares one --fui-<family>-<step> per step, Tailwind reads each as a colour, and the family declares nothing', async () => {
-  const css = renderBaseCss(withPalette())
-  for (const [step, hex] of Object.entries(PALETTE_STEPS)) {
-    assert.match(css, new RegExp(`\\n {2}--fui-blue-${step}: ${hex};`))
-    assert.match(css, new RegExp(`\\n {2}--color-blue-${step}: var\\(--fui-blue-${step}\\);`))
-  }
-  assert.doesNotMatch(css, /--fui-blue:/)
+test('a colour family nested by step is a source roles point at: it declares no variable of its own, by step or by family', () => {
+  const brand = withPalette()
+  brand.color.action.primary = { $value: '{color.brand.blue.deep}' }
+  const css = renderBaseCss(brand)
+  assert.doesNotMatch(css, /--(fui|color)-blue[-:]/)
   assert.doesNotMatch(css, /--fui-[a-z0-9-]+: ;/)
-  const built = await withTailwind(css.replace(/^@import[^;]*;\n?/gm, ''), ['bg-blue-deep'])
-  assert.match(built, /\.bg-blue-deep \{\s*background-color: var\(--fui-blue-deep\);/)
+  assert.match(css, /\n {2}--fui-primary: #0047b3;/)
 })
 
-test('a stepped name two colours declare is a problem', () => {
+test('a flat colour named like a step takes its name alone, and a role two groups write is still a problem beside a nested family', () => {
   const brand = withPalette()
   brand.color.accent['blue-deep'] = { $value: { colorSpace: 'srgb', components: [0, 0, 0], hex: '#000000' } }
-  assert.throws(() => renderBaseCss(brand), /color\.accent\.blue-deep, color\.brand\.blue\.deep: both declare --fui-blue-deep/)
+  assert.match(renderBaseCss(brand), /\n {2}--fui-blue-deep: #000000;/)
+  brand.color.tone = { primary: { $value: '{color.brand.blue.soft}' } }
+  assert.throws(() => renderBaseCss(brand), /^Error: brand colours that share a name:\ncolor\.action\.primary, color\.tone\.primary: both declare --fui-primary;[^\n]*$/)
 })
